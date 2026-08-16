@@ -1,0 +1,17 @@
+# Company index
+
+Company folders use lowercase tickers and serve as durable landing pages. The detailed target price lives in the latest dated valuation—not in this index—to avoid conflicting copies.
+
+| Ticker | Company | Focus | Coverage | Research | Position disclosure | Last reviewed | Dossier |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| SNAP | Snap Inc. | Social media and digital advertising | Active | Researching | Not disclosed | 2026-08-17 | [Open](snap/README.md) |
+
+## Lifecycle vocabulary
+
+- Coverage: `active`, `watching`, `paused`, `archived`
+- Research: `researching`, `published`, `superseded`, `withdrawn`
+- Position: `long`, `short`, `no_position`, `not_disclosed`
+
+When this index reaches roughly ten companies, metadata validation and generated tables will be worth adding. Until then, this manual index and consistent front matter keep the repository legible without a build system.
+
+Use the [company template](../templates/company-readme.md) to start another dossier.

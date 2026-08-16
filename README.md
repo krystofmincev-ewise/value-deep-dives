@@ -1,0 +1,85 @@
+# Value Deep Dives
+
+Value Deep Dives is a public, time-stamped investment research notebook for company valuations, market and sector screens, decision reviews, and technical experiments that test business claims.
+
+> Independent research for education and documentation—not investment advice or a solicitation. I may hold securities discussed here. See the [full disclaimer](DISCLAIMER.md).
+
+## Why this exists
+
+This repository grew out of a small but encouraging set of LLM-assisted idea-generation exercises. I started with a rough screening heuristic: companies whose trailing revenue was near their equity market value (a price-to-sales ratio around 1×), then used deep-research tools to compare candidates across a consistent set of rebound and survival indicators.
+
+That work surfaced Wix, Snap, and Amplitude. I supplemented the model output with primary and qualitative research, including a 20VC interview with Wix's founder and roughly four hours of interviews and other material featuring Evan Spiegel. I bought all three; Amplitude was purchased one day before earnings, and each subsequently appreciated after its next reported results. In a separate exercise, I studied Leopold Aschenbrenner's publicly disclosed holdings and asked LLMs to propose adjacent companies he might plausibly own. Deeper research on one of the results led me to IREN, which also appreciated after purchase.
+
+Those outcomes are motivation, not proof. The sample is tiny and selected, the holding periods are short, the research was not prospectively registered, and the results may reflect market exposure, event timing, selection bias, or luck. They are not an audited or benchmark-adjusted track record. The point of this repository is to move from memorable anecdotes to a prospective, falsifiable record: what I believed, why I believed it, what would prove me wrong, and what happened.
+
+## What changes with this repository
+
+From 17 August 2026 onward, formal ideas can be judged from contemporaneous records rather than reconstructed memories:
+
+- Initial theses, valuations, and decisions are dated and preserved.
+- Bull, base, and bear cases state their assumptions and time horizon.
+- Screens retain the full candidate set, including passes and abandoned ideas.
+- Updates supersede prior work without silently rewriting it.
+- Outcomes are assessed against predeclared benchmarks and rules.
+- Sources, LLM assistance, uncertainty, position disclosures, and conflicts are made explicit.
+- Mistakes and negative results belong here alongside successes.
+
+The [prospective scorecard](track-record/README.md) starts empty. Wix, Snap, Amplitude, and IREN are retrospective origin stories and are not counted as prospective calls.
+
+## Research process
+
+```text
+market / sector / theme research
+              ↓
+       reproducible screen
+              ↓
+       company deep dive
+              ↓
+   scenarios + target prices
+              ↓
+      decision + monitoring
+              ↓
+        dated retrospective
+```
+
+The detailed process lives in [methodology](methodology/README.md). A completed deep dive should make it easy to find the source cutoff, reference price, target horizon, bull/base/bear valuation, variant view, key assumptions, catalysts, risks, falsifiers, confidence, and position disclosure.
+
+## Current research
+
+| Company | Ticker | Status | Current target | Workspace |
+| --- | --- | --- | --- | --- |
+| Snap Inc. | SNAP | Researching | Not yet published | [Open the Snap deep dive](companies/snap/README.md) |
+
+The Snap workspace is intentionally an open research plan, not a backfilled recommendation. Its first technical study is scoped around [ad-ranking feasibility](companies/snap/experiments/ad-ranking-feasibility/README.md): what a small reproducible prototype can reveal about ranking systems, and what it cannot establish about Snap's ability to reproduce Meta's advertising performance.
+
+## Repository map
+
+| Area | Purpose |
+| --- | --- |
+| [Companies](companies/README.md) | Self-contained company dossiers and dated research history |
+| [Discovery](discovery/README.md) | Screens, sector maps, and cross-company themes |
+| [Track record](track-record/README.md) | Prospective forecasts, decisions, and retrospectives |
+| [Experiments](experiments/README.md) | Reusable or cross-company software and empirical work |
+| [Data](data/README.md) | Shared, redistributable datasets and provenance rules |
+| [Methodology](methodology/README.md) | Investment process, valuation, evidence, and scoring rules |
+| [Templates](templates/README.md) | Standard starting points for new research |
+
+Company-specific notes, data, and experiments stay inside that company's folder. Root-level experiments and data are reserved for work that genuinely serves several companies or studies.
+
+## Navigation conventions
+
+- Company paths use lowercase tickers, for example `companies/snap/`.
+- Historical research uses `YYYY-MM-DD-descriptive-slug.md`.
+- Flat YAML front matter makes status, dates, tickers, tags, and disclosures searchable.
+- Each company landing page points to its current view and its dated history.
+- Discovery studies link to the companies they surfaced, and company pages link back to their originating studies.
+
+GitHub Markdown and search are the canonical interface. A generated index or website can be added when the archive is large enough to justify one.
+
+## How LLMs are used
+
+LLMs help with discovery, synthesis, source finding, adversarial critique, and experiment design. They can hallucinate, misread documents, and hide uncertainty behind fluent prose. Material factual claims and valuation inputs therefore remain the author's responsibility and should be checked against cited primary sources. See the [research standards](methodology/RESEARCH_STANDARDS.md).
+
+## License and reuse
+
+Original research is shared under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), and original experiment code is available under the MIT License. Third-party material remains the property of its respective owners. See [license details](LICENSE.md) and the [data policy](DATA_POLICY.md).

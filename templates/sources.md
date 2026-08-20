@@ -2,9 +2,9 @@
 
 Source cutoff: {YYYY-MM-DD}
 
-| ID | Publisher | Title | Published | Accessed | Evidence type | Used for | URL / notes |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| S-001 | | | | | | | |
+| ID | Publisher | Title | Published | Accessed | Evidence type | Access | Rights | Retrieval | Used for | Verification | Capture | URL / notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| S-001 | | | | | | public / signed-in | public / licensed-local-only / link-only / unknown | web search / in-app Browser / Chrome / Computer Use / CLI / API | | unchecked / checked-against-source / triangulated | none / local-note / local-source-copy / committed-derived | |
 
 ## Derived data and calculations
 

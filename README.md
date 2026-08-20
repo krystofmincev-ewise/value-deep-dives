@@ -62,6 +62,7 @@ The Snap workspace is intentionally an open research plan, not a backfilled reco
 | [Experiments](experiments/README.md) | Reusable or cross-company software and empirical work |
 | [Data](data/README.md) | Shared, redistributable datasets and provenance rules |
 | [Methodology](methodology/README.md) | Investment process, valuation, evidence, and scoring rules |
+| [Research tooling](methodology/RESEARCH_TOOLING.md) | Layered APIs, CLIs, authenticated Chrome, Browser, and Computer Use workflows |
 | [Templates](templates/README.md) | Standard starting points for new research |
 
 Company-specific notes, data, and experiments stay inside that company's folder. Root-level experiments and data are reserved for work that genuinely serves several companies or studies.

@@ -23,6 +23,8 @@ Authority does not guarantee truth. Company materials and founder interviews are
 
 See the repository-wide [data policy](../DATA_POLICY.md).
 
+For APIs, authenticated sources, browser sessions, and temporary captures, also follow the [research tooling runbook](RESEARCH_TOOLING.md).
+
 ## LLM-assisted research
 
 LLMs can support:

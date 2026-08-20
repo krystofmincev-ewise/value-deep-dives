@@ -1,0 +1,4 @@
+interface:
+  display_name: "Revelio Workforce Research"
+  short_description: "Analyze company workforce trends in Revelio"
+  default_prompt: "Use $revelio-workforce-research to investigate company-level hiring, departures, and workforce trends."

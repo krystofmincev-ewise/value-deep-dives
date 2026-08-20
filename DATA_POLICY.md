@@ -31,7 +31,12 @@ Source logs should record:
 | Access date | When it was retrieved for the research |
 | URL | Prefer the original publisher |
 | Evidence type | Filing, investor material, regulator, dataset, interview, press, or secondary analysis |
+| Access | Whether retrieval was public or required a signed-in session |
+| Rights | Public, licensed-local-only, link-only, or unknown |
+| Retrieval | API, CLI, Chrome, Browser, Computer Use, or another documented route |
 | Use | Which claim, input, or question it informs |
+| Verification | Whether and how the claim was checked |
+| Capture | None, local note, local source copy, or a permitted committed derivative |
 | Notes | Limitations, conflicts, restatements, or transformations |
 
 For a non-redistributable or large dataset, commit a manifest or build instructions with its URL, license, version, checksum when useful, and exact transformation steps—not the data itself.
@@ -39,3 +44,5 @@ For a non-redistributable or large dataset, commit a manifest or build instructi
 ## LLM handling
 
 LLM output is not a source. When an LLM surfaces a claim, cite the underlying document after checking it. Record the provider/model, date, task summary, source set, and verification status when AI assistance materially affects the work.
+
+Authenticated sources, browser sessions, APIs, and local captures must also follow the [research tooling runbook](methodology/RESEARCH_TOOLING.md).

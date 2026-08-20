@@ -1,0 +1,4 @@
+interface:
+  display_name: "FT Source Discovery"
+  short_description: "Find and log targeted FT article metadata"
+  default_prompt: "Use $ft-source-discovery to find Financial Times coverage relevant to this company and record source metadata."

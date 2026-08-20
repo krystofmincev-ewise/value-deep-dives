@@ -17,6 +17,24 @@ private/
 downloads/
 **/downloads/
 
+# Machine-local research tooling and browser/authentication state
+/.local/
+/.codex/local/
+/.gemini/
+/.mcp.local.json
+.envrc
+.direnv/
+**/.auth/
+**/storage-state*.json
+**/storageState*.json
+**/cookies.json
+**/cookies.txt
+**/*.har
+*.p12
+*.pfx
+client_secret*.json
+oauth_credentials*.json
+
 # JavaScript / TypeScript
 node_modules/
 dist/

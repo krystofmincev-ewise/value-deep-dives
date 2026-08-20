@@ -2,9 +2,9 @@
 
 The source cutoff has not yet been declared. Add sources as they are read; do not add a link merely because it may be useful later.
 
-| ID | Publisher | Title | Published | Accessed | Evidence type | Used for | URL / notes |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| — | — | No sources logged yet | — | — | — | — | — |
+| ID | Publisher | Title | Published | Accessed | Evidence type | Access | Rights | Retrieval | Used for | Verification | Capture | URL / notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| — | — | No sources logged yet | — | — | — | — | — | — | — | — | — | — |
 
 ## Source hierarchy for this study
 

@@ -1,4 +1,4 @@
 interface:
   display_name: "Gemini Deep Research"
-  short_description: "Run one Gemini research pass in Chrome"
-  default_prompt: "Use $gemini-deep-research to run one first-pass research report and review its plan before starting."
+  short_description: "Run one reviewed Gemini subscription workflow"
+  default_prompt: "Use $gemini-deep-research and its workflow CLI to run one first-pass report through my signed-in Gemini subscription, reviewing the plan before starting."

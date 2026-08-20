@@ -1,7 +1,18 @@
 #!/usr/bin/env node
 
 import { constants as fsConstants } from "node:fs";
-import { access, chmod, mkdir, open, readFile, rename, stat, unlink, writeFile } from "node:fs/promises";
+import {
+  access,
+  chmod,
+  mkdir,
+  open,
+  readFile,
+  readdir,
+  rename,
+  stat,
+  unlink,
+  writeFile,
+} from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { setTimeout as delay } from "node:timers/promises";
@@ -17,8 +28,11 @@ const requestTimeoutMilliseconds = 30_000;
 const localStateDirectories = [
   join(repositoryRoot, ".local"),
   join(repositoryRoot, ".local", "cache"),
+  join(repositoryRoot, ".local", "cache", "biomed"),
   join(repositoryRoot, ".local", "cache", "sec"),
   join(repositoryRoot, ".local", "captures"),
+  join(repositoryRoot, ".local", "captures", "archive-ph"),
+  join(repositoryRoot, ".local", "captures", "biomed"),
   join(repositoryRoot, ".local", "captures", "gemini"),
   join(repositoryRoot, ".local", "captures", "youtube"),
   join(repositoryRoot, ".local", "captures", "revelio"),
@@ -35,18 +49,30 @@ Usage:
   node scripts/research-browser.mjs list [--json]
   node scripts/research-browser.mjs open <source> [--query "..."] [--dry-run]
   node scripts/research-browser.mjs workspace --company "..." [--ticker SNAP] [--dry-run]
+  node scripts/research-workflow.mjs gemini --prompt "..." [--plan-only] [--json]
+  node scripts/research-workflow.mjs revelio --company "..." --question "..." [--json]
+  node scripts/research-workflow.mjs youtube --query "..." [--max-videos 3] [--json]
+  node scripts/research-archive.mjs open <url> [--dry-run] [--json]
+  node scripts/research-archive.mjs open-extension <url> [--dry-run] [--json]
+  node scripts/research-biomed.mjs landscape --query "..." [--limit 10] [--json]
+  node scripts/research-biomed.mjs preprints search --query "..." [--json]
+  node scripts/research-biomed.mjs literature search --query "..." [--open-access] [--json]
+  node scripts/research-biomed.mjs trials search --query "..." [--json]
   node scripts/research-tools.mjs sec filings <ticker> [--forms 10-K,10-Q,8-K] [--limit 20] [--json]
   node scripts/research-tools.mjs sec facts <ticker> --concept <XBRL concept> [--unit USD] [--limit 20] [--json]
 
 Required for SEC commands:
   SEC_USER_AGENT="Project Name monitored-contact@example.com"
 
+Authenticated workflow commands emit semantic Chrome recipes; they never read browser state.
 The CLI never prints credential values. SEC responses are cached under .local/cache/sec/.`);
 }
 
 function parseOptions(argumentsList) {
   const positionals = [];
   const options = new Map();
+  const booleanOptions = new Set(["help", "json"]);
+  const valueOptions = new Set(["concept", "forms", "limit", "unit"]);
 
   for (let index = 0; index < argumentsList.length; index += 1) {
     const argument = argumentsList[index];
@@ -57,14 +83,19 @@ function parseOptions(argumentsList) {
     }
 
     const name = argument.slice(2);
-    const next = argumentsList[index + 1];
-
-    if (next && !next.startsWith("--")) {
-      options.set(name, next);
-      index += 1;
-    } else {
+    if (booleanOptions.has(name)) {
       options.set(name, true);
+      continue;
     }
+    if (!valueOptions.has(name)) {
+      throw new Error(`Unknown option: --${name}`);
+    }
+    const next = argumentsList[index + 1];
+    if (!next || next.startsWith("--")) {
+      throw new Error(`--${name} requires a value.`);
+    }
+    options.set(name, next);
+    index += 1;
   }
 
   return { positionals, options };
@@ -116,12 +147,15 @@ async function getCapabilityStatus() {
     .split(/\r?\n/)
     .map((line) => line.trim())
     .some((line) => line === "/.local/" || line === ".local/");
-  const repositorySkills = [
-    "gemini-deep-research",
-    "ft-source-discovery",
-    "youtube-interview-research",
-    "revelio-workforce-research",
-  ];
+  const skillsDirectory = join(repositoryRoot, ".agents", "skills");
+  const repositorySkills = await readdir(skillsDirectory, { withFileTypes: true })
+    .then((entries) =>
+      entries
+        .filter((entry) => entry.isDirectory())
+        .map((entry) => entry.name)
+        .sort(),
+    )
+    .catch(() => []);
   const skillStatus = Object.fromEntries(
     await Promise.all(
       repositorySkills.map(async (skill) => [
@@ -509,6 +543,9 @@ async function main() {
   }
 
   if (command === "status") {
+    if (positionals.length !== 1) throw new Error("The status command accepts no positional values.");
+    const unsupported = [...options.keys()].filter((name) => !["help", "json"].includes(name));
+    if (unsupported.length > 0) throw new Error(`--${unsupported[0]} is not supported for status.`);
     const status = await getCapabilityStatus();
     if (options.has("json")) console.log(JSON.stringify(status, null, 2));
     else printCapabilityStatus(status);
@@ -516,6 +553,9 @@ async function main() {
   }
 
   if (command === "init") {
+    if (positionals.length !== 1) throw new Error("The init command accepts no positional values.");
+    const unsupported = [...options.keys()].filter((name) => !["help", "json"].includes(name));
+    if (unsupported.length > 0) throw new Error(`--${unsupported[0]} is not supported for init.`);
     const result = await initializeLocalState();
     if (options.has("json")) console.log(JSON.stringify(result, null, 2));
     else {
@@ -525,11 +565,17 @@ async function main() {
     return;
   }
 
-  if (command !== "sec" || !subcommand || !ticker) {
+  if (command !== "sec" || !subcommand || !ticker || positionals.length !== 3) {
     throw new Error("Expected `sec filings <ticker>` or `sec facts <ticker>`. Use --help for details.");
   }
 
   if (subcommand === "filings") {
+    const unsupported = [...options.keys()].filter(
+      (name) => !["forms", "help", "json", "limit"].includes(name),
+    );
+    if (unsupported.length > 0) {
+      throw new Error(`--${unsupported[0]} is not supported for SEC filings.`);
+    }
     const result = await listFilings(ticker, options);
     if (options.has("json")) console.log(JSON.stringify(result, null, 2));
     else printFilings(result);
@@ -537,6 +583,12 @@ async function main() {
   }
 
   if (subcommand === "facts") {
+    const unsupported = [...options.keys()].filter(
+      (name) => !["concept", "help", "json", "limit", "unit"].includes(name),
+    );
+    if (unsupported.length > 0) {
+      throw new Error(`--${unsupported[0]} is not supported for SEC facts.`);
+    }
     const result = await listFacts(ticker, options);
     if (options.has("json")) console.log(JSON.stringify(result, null, 2));
     else printFacts(result);

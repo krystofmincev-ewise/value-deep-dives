@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/krystofmincev/value_deep_dives/schemas/source-record.schema.json",
+  "title": "Research source record",
+  "type": "object",
+  "required": [
+    "type",
+    "id",
+    "canonical_url",
+    "publisher",
+    "title",
+    "first_public_at",
+    "retrieved_at",
+    "evidence_type",
+    "intended_use",
+    "rights",
+    "access_state",
+    "retrieval",
+    "verification",
+    "capture"
+  ],
+  "properties": {
+    "type": { "const": "source_record" },
+    "id": { "type": "string", "pattern": "^S-[0-9]{3,}$" },
+    "canonical_url": { "type": "string", "format": "uri", "pattern": "^https?://[^/@?#\\s]+(?:[/?#][^\\s]*)?$" },
+    "publisher": { "type": "string", "minLength": 1 },
+    "title": { "type": "string", "minLength": 1 },
+    "published_at": { "type": ["string", "null"], "format": "date-time" },
+    "first_public_at": { "type": "string", "format": "date-time" },
+    "retrieved_at": { "type": "string", "format": "date-time" },
+    "effective_at": { "type": ["string", "null"], "format": "date-time" },
+    "provider_version": { "type": ["string", "null"] },
+    "checksum": { "type": ["string", "null"], "pattern": "^[A-Za-z0-9:_-]+$" },
+    "evidence_type": {
+      "enum": ["primary_filing", "primary_regulatory", "company_ir", "official_statistics", "academic", "industry", "expert", "market_data", "alternative_data", "secondary", "other"]
+    },
+    "intended_use": { "type": "string", "minLength": 1 },
+    "rights": { "enum": ["public", "licensed-local-only", "link-only", "unknown"] },
+    "access_state": { "enum": ["public", "signed-in", "local-authorized"] },
+    "retrieval": { "type": "string", "minLength": 1 },
+    "verification": { "enum": ["unchecked", "checked_against_source", "triangulated"] },
+    "capture": { "enum": ["none", "local-note", "local-source-copy", "committed-derived"] },
+    "supersedes_source_id": { "type": ["string", "null"], "pattern": "^S-[0-9]{3,}$" }
+  },
+  "additionalProperties": false
+}

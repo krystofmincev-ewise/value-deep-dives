@@ -8,9 +8,16 @@
   },
   "scripts": {
     "research:check": "node scripts/research-tools.mjs status",
+    "research:gemini": "node scripts/research-workflow.mjs gemini",
     "research:init": "node scripts/research-tools.mjs init",
+    "research:archive": "node scripts/research-archive.mjs",
+    "research:biomed": "node scripts/research-biomed.mjs",
     "research:browser": "node scripts/research-browser.mjs",
+    "research:revelio": "node scripts/research-workflow.mjs revelio",
+    "research:records": "node scripts/research-records.mjs",
     "research:sec": "node scripts/research-tools.mjs sec",
+    "research:validate": "node scripts/research-validate.mjs",
+    "research:youtube": "node scripts/research-workflow.mjs youtube",
     "test": "node --test scripts/*.test.mjs"
   }
 }

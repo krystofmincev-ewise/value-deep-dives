@@ -47,7 +47,7 @@ Formal valuation work uses bull, base, and bear cases with explicit assumptions,
 
 ## 5. Decide
 
-An investment decision is distinct from a research conclusion. A decision record may document buy, add, reduce, exit, watch, or pass. It should link to the research available at the time and state:
+An investment decision is distinct from a research conclusion. First record the research stance as `attractive`, `neutral`, `unattractive`, or `insufficient_evidence`. A decision record may then document buy, add, hold, reduce, exit, watch, or pass. It should link to the research available at the time and state:
 
 - action and timestamp;
 - reference price or actual fill, clearly labelled;
@@ -55,6 +55,8 @@ An investment decision is distinct from a research conclusion. A decision record
 - catalyst and horizon;
 - falsifiers and review triggers;
 - position disclosure and any omitted private information.
+
+Use `reduce` or `exit` for the portfolio action often described as “sell.” A sell research rating without a current position should normally map to `pass`; a short position requires its own downside, borrow, liquidity, and risk case. `Hold` requires an existing position. Without one, use `watch` or `pass`.
 
 Personal sizing can remain private. If omitted, say so rather than implying an equal-weight portfolio.
 
@@ -80,7 +82,7 @@ Both misses and successes belong in the archive.
 
 - Company folders: `companies/<lowercase-ticker>/`
 - Historical documents: `YYYY-MM-DD-descriptive-slug.md`
-- Forecast IDs: `YYYY-NNN`, assigned sequentially in the [forecast ledger](../track-record/forecast-ledger.csv)
+- Company forecast IDs: `YYYY-TNNN` (for example `2026-T001`), assigned sequentially in the [forecast ledger](../track-record/forecast-ledger.csv)
 - Discovery studies: `discovery/<kind>/YYYY-MM-DD-descriptive-slug/`
 - Dates and timestamps: ISO 8601; include timezone for decisions and formal publication timestamps
 - Currencies: ISO 4217 codes such as `USD` or `EUR`

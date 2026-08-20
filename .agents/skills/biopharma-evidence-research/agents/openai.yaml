@@ -1,0 +1,4 @@
+interface:
+  display_name: "Biopharma Evidence Research"
+  short_description: "Trace drugs, trials, targets, and papers"
+  default_prompt: "Use $biopharma-evidence-research to build a source-grounded evidence pack for this drug candidate and its clinical trial."

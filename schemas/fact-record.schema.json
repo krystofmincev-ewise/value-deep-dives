@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/krystofmincev/value_deep_dives/schemas/fact-record.schema.json",
+  "title": "Point-in-time research fact",
+  "type": "object",
+  "required": [
+    "type",
+    "id",
+    "subject_id",
+    "metric",
+    "value",
+    "unit",
+    "valid_from",
+    "known_from",
+    "source_id"
+  ],
+  "properties": {
+    "type": { "const": "fact_record" },
+    "id": { "type": "string", "pattern": "^F-[0-9]{3,}$" },
+    "subject_id": { "type": "string", "minLength": 1 },
+    "metric": { "type": "string", "minLength": 1 },
+    "value": {
+      "oneOf": [
+        { "type": "number" },
+        { "type": "string", "minLength": 1 },
+        { "type": "boolean" }
+      ]
+    },
+    "unit": { "type": "string", "minLength": 1 },
+    "currency": { "type": ["string", "null"], "pattern": "^[A-Z]{3}$" },
+    "period_start": { "type": ["string", "null"], "format": "date" },
+    "period_end": { "type": ["string", "null"], "format": "date" },
+    "valid_from": { "type": "string", "format": "date-time" },
+    "valid_to": { "type": ["string", "null"], "format": "date-time" },
+    "known_from": { "type": "string", "format": "date-time" },
+    "known_to": { "type": ["string", "null"], "format": "date-time" },
+    "source_id": { "type": "string", "pattern": "^S-[0-9]{3,}$" },
+    "derivation": { "type": ["string", "null"] },
+    "restatement_of": { "type": ["string", "null"], "pattern": "^F-[0-9]{3,}$" }
+  },
+  "additionalProperties": false
+}

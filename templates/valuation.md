@@ -2,10 +2,14 @@
 type: valuation
 company: "{Company}"
 ticker: "{TICKER}"
+identity_path: "{relative path to verified company identity}"
+identity_hash: "{sha256 digest of the frozen identity record}"
+security_id: "{stable repository security ID}"
+listing_id: "{stable repository listing ID}"
 status: draft
 as_of: "{YYYY-MM-DD}"
 published_at: null
-source_cutoff: "{YYYY-MM-DD}"
+source_cutoff_at: "{ISO-8601 timestamp}"
 currency: USD
 reference_price: null
 reference_price_at: null

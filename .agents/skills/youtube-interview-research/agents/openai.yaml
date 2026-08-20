@@ -1,4 +1,4 @@
 interface:
   display_name: "YouTube Interview Research"
-  short_description: "Research interviews with visible transcripts"
-  default_prompt: "Use $youtube-interview-research to find and analyze relevant executive interviews with timestamped evidence."
+  short_description: "Run repeatable YouTube interview research"
+  default_prompt: "Use $youtube-interview-research and its workflow CLI to find and analyze relevant executive interviews with timestamped evidence."

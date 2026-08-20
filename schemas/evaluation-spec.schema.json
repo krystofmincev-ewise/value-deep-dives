@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/krystofmincev/value_deep_dives/schemas/evaluation-spec.schema.json",
+  "title": "Event evaluation specification front matter",
+  "type": "object",
+  "required": [
+    "type", "evaluation_spec_id", "status", "created_at", "price_provider_id",
+    "benchmark_price_provider_id", "exchange_calendar_id", "exchange_calendar_version",
+    "calendar_source_id", "calendar_source_path", "calendar_verification_fixture", "calendar_fixture_hash", "price_provider_rule",
+    "benchmark_price_provider_rule", "market_timezone_rule", "exchange_calendar_rule",
+    "entry_observation_rule", "exit_observation_rule", "price_adjustment_rule", "benchmark_price_adjustment_rule",
+    "corporate_action_rule", "halt_rule", "delisting_rule", "missing_price_rule",
+    "cost_rule", "borrow_rule"
+  ],
+  "properties": {
+    "type": { "const": "event_evaluation_spec" },
+    "evaluation_spec_id": { "type": "string", "pattern": "^event-v[1-9][0-9]*$" },
+    "status": { "enum": ["draft", "published", "superseded"] },
+    "created_at": { "type": "string", "format": "date-time" },
+    "published_at": { "type": ["string", "null"], "format": "date-time" },
+    "price_provider_id": { "type": ["string", "null"], "pattern": "^[a-z0-9][a-z0-9._-]*$" },
+    "benchmark_price_provider_id": { "type": ["string", "null"], "pattern": "^[a-z0-9][a-z0-9._-]*$" },
+    "exchange_calendar_id": { "type": ["string", "null"], "pattern": "^[a-z0-9][a-z0-9._-]*$" },
+    "exchange_calendar_version": { "type": ["string", "null"], "pattern": "^[a-z0-9][a-z0-9._-]*$" },
+    "calendar_source_id": { "type": ["string", "null"], "pattern": "^S-[0-9]{3,}$" },
+    "calendar_source_path": { "type": ["string", "null"] },
+    "calendar_verification_fixture": { "type": ["string", "null"] },
+    "calendar_fixture_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" },
+    "price_provider_rule": { "type": "string", "minLength": 1 },
+    "benchmark_price_provider_rule": { "type": "string", "minLength": 1 },
+    "market_timezone_rule": { "type": "string", "minLength": 1 },
+    "exchange_calendar_rule": { "type": "string", "minLength": 1 },
+    "entry_observation_rule": { "type": "string", "minLength": 1 },
+    "exit_observation_rule": { "type": "string", "minLength": 1 },
+    "price_adjustment_rule": { "enum": ["unadjusted", "split_adjusted", "split_adjusted_with_dividends"] },
+    "benchmark_price_adjustment_rule": { "enum": ["unadjusted", "split_adjusted", "split_adjusted_with_dividends"] },
+    "corporate_action_rule": { "type": "string", "minLength": 1 },
+    "halt_rule": { "type": "string", "minLength": 1 },
+    "delisting_rule": { "type": "string", "minLength": 1 },
+    "missing_price_rule": { "type": "string", "minLength": 1 },
+    "cost_rule": { "type": "string", "minLength": 1 },
+    "borrow_rule": { "type": "string", "minLength": 1 }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "status": { "enum": ["published", "superseded"] } }, "required": ["status"] },
+      "then": {
+        "required": [
+          "published_at", "price_provider_id", "benchmark_price_provider_id", "exchange_calendar_id",
+          "exchange_calendar_version", "calendar_source_id", "calendar_source_path", "calendar_verification_fixture", "calendar_fixture_hash"
+        ],
+        "properties": {
+          "published_at": { "type": "string", "format": "date-time" },
+          "price_provider_id": { "type": "string", "minLength": 1 },
+          "benchmark_price_provider_id": { "type": "string", "minLength": 1 },
+          "exchange_calendar_id": { "type": "string", "minLength": 1 },
+          "exchange_calendar_version": { "type": "string", "minLength": 1 },
+          "calendar_source_id": { "type": "string", "pattern": "^S-[0-9]{3,}$" },
+          "calendar_source_path": { "type": "string", "minLength": 1 },
+          "calendar_verification_fixture": { "type": "string", "minLength": 1 },
+          "calendar_fixture_hash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "status": { "const": "draft" } }, "required": ["status"] },
+      "then": { "properties": { "published_at": { "type": "null" } } }
+    }
+  ],
+  "additionalProperties": false
+}

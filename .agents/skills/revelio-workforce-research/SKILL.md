@@ -1,6 +1,6 @@
 ---
 name: revelio-workforce-research
-description: "Investigate company-level hiring, departures, workforce composition, tenure, skills, geography, and competitor flows through the user's authorized Revelio Labs access. Use for targeted workforce diligence, hiring or firing questions, organizational change, talent-density proxies, and peer comparisons. Prefer licensed structured exports when available; otherwise use the visible signed-in dashboard. Do not use for credential handling or bulk person-level collection."
+description: "Investigate company-level hiring, departures, workforce composition, tenure, skills, geography, and competitor flows through the user's authorized Revelio Labs access, using the repository's validated workflow CLI for reproducible prompts, filters, and semantic Chrome controls. Use for targeted workforce diligence, hiring or firing questions, organizational change, talent-density proxies, and peer comparisons. Prefer licensed structured exports when available; otherwise use the visible signed-in dashboard. Do not use for credential handling or bulk person-level collection."
 ---
 
 # Revelio Workforce Research
@@ -18,22 +18,34 @@ Before opening Revelio, define:
 - the expected direction if the thesis is correct;
 - at least one alternative explanation.
 
+Generate the validated job and deterministic aggregate prompt:
+
+```bash
+npm run research:revelio -- \
+  --company "{company}" \
+  --question "{workforce_question}" \
+  [--peers "Peer A,Peer B"] \
+  [--functions "Engineering,Sales"] \
+  [--geographies "US,Europe"] \
+  [--date-from YYYY-MM-DD] [--date-to YYYY-MM-DD] \
+  [--plan-only] --json
+```
+
+Use the returned `renderedPrompt`, normalized filters, `analysisPlan`, and `uiContract`. The analysis plan fixes the metric definitions to resolve, comparable-period and peer design, neutral expected direction, alternative explanations, and output fields. Add `--open` only for a full run when opening the dashboard in the intended Chrome profile is safe; `plan_only` never opens Chrome.
+
 ## Choose the access route
 
 1. Read `methodology/RESEARCH_TOOLING.md` and `chrome:control-chrome` before browser work.
 2. Use a documented licensed export, API, SDK, MCP, or flat-file delivery when it is already available and authorized for the requested work.
-3. Otherwise generate the dashboard URL with:
-
-   ```bash
-   npm run research:browser -- open revelio --query "{company}" --dry-run --json
-   ```
-
-4. Use the visible signed-in Chrome dashboard. Verify the intended service and company through visible page state without inspecting credentials, cookies, storage, hidden endpoints, or account identity.
+3. Otherwise use the dashboard URL from the generated workflow.
+4. Use the visible signed-in Chrome dashboard. Verify the **Ask about the workforce** textbox and **Send** button from a fresh DOM snapshot without inspecting credentials, cookies, storage, hidden endpoints, or account identity. Treat the **AI Chat** heading as a helpful optional signal because the current dashboard does not expose it consistently.
 5. If the session is signed out or the required product is unavailable, ask the user to sign in or confirm entitlement and stop.
+
+If these semantic controls are absent, report UI-contract drift and stop rather than replaying coordinates.
 
 ## Run targeted analysis
 
-Use visible dashboard filters or company-level AI Chat for focused aggregate questions. Depending on the thesis, inspect:
+Use visible dashboard filters or company-level AI Chat for focused aggregate questions. For AI Chat, fill **Ask about the workforce** with `inputs.renderedPrompt`, verify **Send** becomes enabled, and submit once. Depending on the thesis, inspect:
 
 - headcount growth and contraction;
 - hires, departures, and net flows over time;

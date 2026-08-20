@@ -1,0 +1,22 @@
+{
+  "type": "market_data_capture",
+  "schema_version": 1,
+  "source_id": "S-001",
+  "provider_id": "provider-id-frozen-before-the-event",
+  "provider_version": "provider-version-or-dataset-vintage",
+  "retrieved_at": "2026-08-24T22:30:00Z",
+  "instrument_id": "sec-example-common",
+  "adjustment_rule": "split_adjusted_with_dividends",
+  "observations": [
+    {
+      "observed_at": "2026-08-20T09:30:00Z",
+      "value": 12.5,
+      "kind": "reference_snapshot"
+    },
+    {
+      "observed_at": "2026-08-24T20:00:00Z",
+      "value": 14,
+      "kind": "official_close"
+    }
+  ]
+}

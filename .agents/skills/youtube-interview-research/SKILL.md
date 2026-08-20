@@ -1,6 +1,6 @@
 ---
 name: youtube-interview-research
-description: "Find and analyze a small number of company or executive interviews through the user's signed-in YouTube session, using visible transcripts and playback to produce timestamped research notes. Use for founder interviews, 20VC and venture-firm conversations, management statements, product history, strategy, culture, and qualitative diligence. Do not use for bulk video downloading or full-transcript collection."
+description: "Find and analyze a small number of company or executive interviews through the user's signed-in YouTube session, using the repository's validated workflow CLI plus visible transcripts and playback to produce timestamped research notes. Use for founder interviews, 20VC and venture-firm conversations, management statements, product history, strategy, culture, and qualitative diligence. Do not use for bulk video downloading or full-transcript collection."
 ---
 
 # YouTube Interview Research
@@ -14,22 +14,29 @@ Require a company, executive, or research question. Accept optional channels, da
 ## Find and select interviews
 
 1. Read `methodology/RESEARCH_TOOLING.md` and `chrome:control-chrome` before browser work.
-2. Generate a search URL with:
+2. Generate the normalized query, video limit, date/channel filters, search URL, and reviewed semantic-control recipe with:
 
    ```bash
-   npm run research:browser -- open youtube --query "{company executive topic channel}" --dry-run --json
+   npm run research:youtube -- \
+     --query "{company executive topic}" \
+     [--channels "20VC,Sequoia"] \
+     [--date-from YYYY-MM-DD] [--date-to YYYY-MM-DD] \
+     [--max-videos 3] [--plan-only] --json
    ```
 
-3. Use the user's authorized Chrome session and verify the expected signed-in YouTube context through visible controls only.
-4. Search narrowly. Record title, channel, publication date, duration, video URL, and why each selected interview matters.
-5. Prefer channels and formats likely to contain first-hand information, including company channels, investor events, 20VC, Sequoia, Kleiner Perkins, Andreessen Horowitz, and Prof G when relevant.
+3. Use the returned `selectionPlan` for the ranking rubric, exact channel/date post-filters, result limit, and expected evidence fields. A channel name appended to the search query is discovery input, not proof of an uploader match.
+4. Use the returned search URL in the user's authorized Chrome session and verify **YouTube Premium Home** and the **Search** combobox through visible controls only. Add `--open` only for a full run when the correct Chrome profile is unambiguous.
+5. Read search cards through the generated `ytd-video-renderer` contract. Record title, channel, publication date, duration, video URL, and why each selected interview matters. Enforce the `selectionPlan.postFilters`; open a candidate to resolve its exact date when the search card shows only relative time.
+6. Prefer channels and formats likely to contain first-hand information, including company channels, investor events, 20VC, Sequoia, Kleiner Perkins, Andreessen Horowitz, and Prof G when relevant.
+
+If the recorded semantic controls or result-card structure are absent after a fresh DOM snapshot, report UI-contract drift and stop rather than replaying coordinates.
 
 ## Inspect the transcript
 
 For each selected video:
 
-1. Open the video and use **Show transcript** when available.
-2. Search or scroll the visible transcript for the research questions.
+1. Open the video. If **Show transcript** is absent, expand **...more** once; then click **Show transcript** and verify the **Transcript** tab is selected.
+2. Search or scroll the visible `transcript-segment-view-model` entries for the research questions, using the older `ytd-transcript-segment-renderer` only as the recorded fallback.
 3. Check material passages against playback so timestamps, speaker identity, and context are correct.
 4. Record concise notes and short attributed excerpts only. Never save or commit a full transcript.
 5. Separate management claims, interviewer framing, and the researcher's inference. Note the speaker's incentives and the interview date relative to later events.

@@ -1,0 +1,22 @@
+{
+  "type": "exchange_calendar_snapshot",
+  "schema_version": 1,
+  "provider_id": "exchange_calendars",
+  "provider_version": "{pinned-version}",
+  "generated_at": "{ISO-8601 timestamp}",
+  "coverage_start": "{YYYY-MM-DD}",
+  "coverage_end": "{YYYY-MM-DD}",
+  "calendars": {
+    "XNYS": {
+      "timezone": "America/New_York",
+      "exchange_aliases": ["NYSE"],
+      "sessions": [
+        {
+          "session_date": "{YYYY-MM-DD}",
+          "open_at": "{ISO-8601 timestamp}",
+          "close_at": "{ISO-8601 timestamp}"
+        }
+      ]
+    }
+  }
+}

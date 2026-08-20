@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/krystofmincev/value_deep_dives/schemas/exchange-calendar-snapshot.schema.json",
+  "title": "Frozen exchange calendar snapshot",
+  "type": "object",
+  "required": ["type", "schema_version", "provider_id", "provider_version", "generated_at", "coverage_start", "coverage_end", "calendars"],
+  "properties": {
+    "type": { "const": "exchange_calendar_snapshot" },
+    "schema_version": { "const": 1 },
+    "provider_id": { "type": "string", "minLength": 1 },
+    "provider_version": { "type": "string", "minLength": 1 },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "coverage_start": { "type": "string", "format": "date" },
+    "coverage_end": { "type": "string", "format": "date" },
+    "calendars": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "required": ["timezone", "exchange_aliases", "sessions"],
+        "properties": {
+          "timezone": { "type": "string", "minLength": 1 },
+          "exchange_aliases": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+          "sessions": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["session_date", "open_at", "close_at"],
+              "properties": {
+                "session_date": { "type": "string", "format": "date" },
+                "open_at": { "type": "string", "format": "date-time" },
+                "close_at": { "type": "string", "format": "date-time" }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -29,6 +29,13 @@ Use these skills for the corresponding authenticated workflows:
 - `$youtube-interview-research`: small-volume interview selection, visible transcripts, playback checks, and timestamped notes.
 - `$ft-source-discovery`: FT search-result metadata and canonical URLs only.
 
+Use these skills for analysis and prospective records:
+
+- `$company-investment-research`: decision-oriented company diligence, valuation, and stance/action separation.
+- `$event-driven-investment-research`: leakage-safe catalyst research and pre-registration.
+- `$forecast-evaluation`: outcome resolution, calibration, scoring, and track-record audit.
+- `$biopharma-evidence-research`: drug, target, trial, regulatory, and probability evidence.
+
 Each skill requires the applicable Chrome or Computer Use skill before UI interaction. Treat browser availability and sign-in as runtime state; a repository capability check never proves an authenticated session is usable.
 
 ## Trust boundary

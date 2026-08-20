@@ -59,11 +59,14 @@ The Snap workspace is intentionally an open research plan, not a backfilled reco
 | [Companies](companies/README.md) | Self-contained company dossiers and dated research history |
 | [Discovery](discovery/README.md) | Screens, sector maps, and cross-company themes |
 | [Track record](track-record/README.md) | Prospective forecasts, decisions, and retrospectives |
+| [Research schemas](schemas/README.md) | Machine-readable identity, evidence, event, and evaluation contracts |
 | [Experiments](experiments/README.md) | Reusable or cross-company software and empirical work |
 | [Data](data/README.md) | Shared, redistributable datasets and provenance rules |
 | [Methodology](methodology/README.md) | Investment process, valuation, evidence, and scoring rules |
 | [Research tooling](methodology/RESEARCH_TOOLING.md) | Layered APIs, CLIs, authenticated Chrome, Browser, and Computer Use workflows |
 | [Templates](templates/README.md) | Standard starting points for new research |
+
+Run `npm run research:validate` before publishing or committing research-system changes. It discovers every repository skill, validates skill metadata and referenced resources, parses all JSON schemas and templates, checks required CLI routes and public-data contracts, rejects separately billable API markers in runtime code, and then runs the complete automated test suite. Runtime subscription sign-in is deliberately a visible Chrome check rather than a credential inspection.
 
 Company-specific notes, data, and experiments stay inside that company's folder. Root-level experiments and data are reserved for work that genuinely serves several companies or studies.
 

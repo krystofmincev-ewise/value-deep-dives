@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/krystofmincev/value_deep_dives/schemas/market-observation-bundle.schema.json",
+  "title": "Committed event market observations",
+  "type": "object",
+  "required": ["type", "schema_version", "forecast_id", "captured_at", "security", "benchmark"],
+  "$defs": {
+    "observation": {
+      "type": "object",
+      "required": ["observed_at", "value", "kind"],
+      "properties": {
+        "observed_at": { "type": "string", "format": "date-time" },
+        "value": { "type": "number", "exclusiveMinimum": 0 },
+        "kind": { "enum": ["reference_snapshot", "official_close"] }
+      },
+      "additionalProperties": false
+    }
+  },
+  "properties": {
+    "type": { "const": "event_market_observations" },
+    "schema_version": { "const": 1 },
+    "forecast_id": { "type": "string", "pattern": "^\\d{4}-E\\d{3,}$" },
+    "captured_at": { "type": "string", "format": "date-time" },
+    "security": {
+      "type": "object",
+      "required": ["security_id", "provider_id", "provider_version", "adjustment_rule", "source_id", "source_path", "capture_path", "capture_hash", "start", "end"],
+      "properties": {
+        "security_id": { "type": "string", "minLength": 1 },
+        "provider_id": { "type": "string", "minLength": 1 },
+        "provider_version": { "type": "string", "minLength": 1 },
+        "adjustment_rule": { "enum": ["unadjusted", "split_adjusted", "split_adjusted_with_dividends"] },
+        "source_id": { "type": "string", "pattern": "^S-[0-9]{3,}$" },
+        "source_path": { "type": "string", "minLength": 1 },
+        "capture_path": { "type": "string", "minLength": 1 },
+        "capture_hash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+        "start": { "$ref": "#/$defs/observation" },
+        "end": { "$ref": "#/$defs/observation" }
+      },
+      "additionalProperties": false
+    },
+    "benchmark": {
+      "type": "object",
+      "required": ["benchmark_id", "provider_id", "provider_version", "adjustment_rule", "source_id", "source_path", "capture_path", "capture_hash", "start", "end"],
+      "properties": {
+        "benchmark_id": { "type": "string", "minLength": 1 },
+        "provider_id": { "type": "string", "minLength": 1 },
+        "provider_version": { "type": "string", "minLength": 1 },
+        "adjustment_rule": { "enum": ["unadjusted", "split_adjusted", "split_adjusted_with_dividends"] },
+        "source_id": { "type": "string", "pattern": "^S-[0-9]{3,}$" },
+        "source_path": { "type": "string", "minLength": 1 },
+        "capture_path": { "type": "string", "minLength": 1 },
+        "capture_hash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+        "start": { "$ref": "#/$defs/observation" },
+        "end": { "$ref": "#/$defs/observation" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

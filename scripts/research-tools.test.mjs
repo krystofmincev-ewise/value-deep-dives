@@ -29,6 +29,12 @@ test("help documents the supported commands", () => {
   assert.match(result.stdout, /sec facts <ticker>/);
   assert.match(result.stdout, /research-tools\.mjs init/);
   assert.match(result.stdout, /research-browser\.mjs workspace/);
+  assert.match(result.stdout, /research-workflow\.mjs gemini/);
+  assert.match(result.stdout, /research-workflow\.mjs revelio/);
+  assert.match(result.stdout, /research-workflow\.mjs youtube/);
+  assert.match(result.stdout, /research-archive\.mjs open/);
+  assert.match(result.stdout, /research-biomed\.mjs landscape/);
+  assert.match(result.stdout, /research-biomed\.mjs preprints search/);
 });
 
 test("status reports only configuration presence, never values", () => {
@@ -44,6 +50,11 @@ test("status reports only configuration presence, never values", () => {
   });
   assert.deepEqual(status.repository.skills, {
     "gemini-deep-research": true,
+    "archive-ph-research": true,
+    "biopharma-evidence-research": true,
+    "company-investment-research": true,
+    "event-driven-investment-research": true,
+    "forecast-evaluation": true,
     "ft-source-discovery": true,
     "youtube-interview-research": true,
     "revelio-workforce-research": true,
@@ -61,6 +72,19 @@ test("SEC limits reject partially numeric values", () => {
 
   assert.equal(result.status, 1);
   assert.match(result.stderr, /Expected a positive integer/);
+});
+
+test("SEC commands reject unknown, irrelevant, and extra arguments", () => {
+  const unknown = runCli(["sec", "filings", "SNAP", "--unknown", "value"]);
+  const irrelevant = runCli(["sec", "filings", "SNAP", "--concept", "Revenue"]);
+  const extra = runCli(["sec", "facts", "SNAP", "EXTRA", "--concept", "Revenue"]);
+
+  assert.equal(unknown.status, 1);
+  assert.match(unknown.stderr, /Unknown option/);
+  assert.equal(irrelevant.status, 1);
+  assert.match(irrelevant.stderr, /not supported for SEC filings/);
+  assert.equal(extra.status, 1);
+  assert.match(extra.stderr, /Expected `sec filings/);
 });
 
 test("SEC access fails closed without a declared user agent", () => {

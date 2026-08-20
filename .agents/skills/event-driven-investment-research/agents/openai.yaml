@@ -1,0 +1,4 @@
+interface:
+  display_name: "Event-Driven Investment Research"
+  short_description: "Pre-register and assess company catalysts"
+  default_prompt: "Use $event-driven-investment-research to assess this catalyst and pre-register an event forecast."

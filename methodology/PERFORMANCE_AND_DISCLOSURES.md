@@ -4,13 +4,15 @@
 
 The prospective record begins on 17 August 2026. Earlier examples—including Wix, Snap, Amplitude, and IREN—are retrospective motivation and are excluded from formal scorecard statistics.
 
-The live record is the append-only [`forecast-ledger.csv`](../track-record/forecast-ledger.csv). Ordinary Git history helps establish chronology but is not cryptographic proof. Public commit links, releases, or signed tags published before catalysts provide stronger provenance.
+There are two append-only prospective indexes: [`forecast-ledger.csv`](../track-record/forecast-ledger.csv) for company theses and [`event-forecast-ledger.csv`](../track-record/event-forecast-ledger.csv) for binary event and security-reaction forecasts. A thesis that contains a catalyst belongs in the company ledger; only a separately preregistered, independently resolvable event enters the event ledger. Never count one record twice in an aggregate.
+
+Ordinary Git history helps establish chronology but is not cryptographic proof. Public commit links, releases, or signed tags published before catalysts provide stronger provenance. The event scorer verifies locally available committed content and commit timestamps; it cannot prove when a remote host first received a deliberately backdated Git commit.
 
 ## Formal forecast requirements
 
 A forecast enters the scorecard only when it has:
 
-- a stable ID and published thesis path;
+- a stable ID, verified identity path/hash/security/listing IDs, and published thesis path;
 - a publication timestamp and public commit;
 - a security, reference price, price source, and currency;
 - base target, horizon, and evaluation rule;
@@ -19,6 +21,8 @@ A forecast enters the scorecard only when it has:
 - status and eventual outcome date.
 
 The ledger must include misses, invalidated theses, and closed or passed formal calls—not only winners.
+
+Event forecasts additionally require a prospectively committed declared-cohort candidate, the identity hash and stable security/listing IDs, schedule-known and event-window timestamps, named event and target baselines, two proposition probabilities and statuses, an already-published evaluation specification with a hashed calendar snapshot, and independently committed outcome and market-observation records. Use `npm run research:records -- score-events track-record/event-forecast-ledger.csv` to enforce that contract.
 
 ## Returns and outcomes
 
@@ -46,4 +50,4 @@ The disclosure is dated. Positions can change without notice. Preserve prior dis
 
 ## Aggregate reporting
 
-Until the record is large enough, the scorecard should say “insufficient observations.” Later reviews may report hit rate, calibration by confidence bucket, absolute and benchmark-relative returns, and recurring research errors. Portfolio-level returns or drawdowns should appear only when a complete, consistently weighted portfolio rule exists.
+Until the record is large enough, the scorecard should say “insufficient observations.” The event ledger supports deterministic Brier and baseline comparisons; the company ledger does not yet have a reproducible adjusted-price adapter or automated return scorer, so company performance remains uncalculated. Later reviews may report hit rate, calibration by confidence bucket, absolute and benchmark-relative returns, and recurring research errors. Portfolio-level returns or drawdowns should appear only when a complete, consistently weighted portfolio rule exists.

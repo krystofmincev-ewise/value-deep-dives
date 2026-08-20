@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/krystofmincev/value_deep_dives/schemas/market-data-capture.schema.json",
+  "title": "Committed normalized market-data capture",
+  "type": "object",
+  "required": ["type", "schema_version", "source_id", "provider_id", "provider_version", "retrieved_at", "instrument_id", "adjustment_rule", "observations"],
+  "properties": {
+    "type": { "const": "market_data_capture" },
+    "schema_version": { "const": 1 },
+    "source_id": { "type": "string", "pattern": "^S-[0-9]{3,}$" },
+    "provider_id": { "type": "string", "minLength": 1 },
+    "provider_version": { "type": "string", "minLength": 1 },
+    "retrieved_at": { "type": "string", "format": "date-time" },
+    "instrument_id": { "type": "string", "minLength": 1 },
+    "adjustment_rule": { "enum": ["unadjusted", "split_adjusted", "split_adjusted_with_dividends"] },
+    "observations": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["observed_at", "value", "kind"],
+        "properties": {
+          "observed_at": { "type": "string", "format": "date-time" },
+          "value": { "type": "number", "exclusiveMinimum": 0 },
+          "kind": { "enum": ["reference_snapshot", "official_close"] }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

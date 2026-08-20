@@ -9,20 +9,24 @@ The goal is complete company research, not allegiance to one interface.
 | Need | First choice | Fallback | Why |
 | --- | --- | --- | --- |
 | Filings, filing indexes, XBRL facts | SEC CLI / official public endpoints | EDGAR in Chrome or in-app Browser | Reproducible and source-native |
-| Gemini Deep Research | Repo-local `$gemini-deep-research` skill using authenticated Chrome | Computer Use | Replays one plan → review → start → collect workflow through the user's subscription UI |
-| Hiring, departures, workforce mix | Revelio structured export/API when already entitled; otherwise authenticated Chrome dashboard | Computer Use | Preserve the useful subscribed product without inventing a scraper |
-| Founder interviews and transcripts | Authenticated YouTube in Chrome | Computer Use for playback/transcript controls | Uses the user's Premium session and visible transcripts |
+| Biopharma papers, preprints, and trials | `research:biomed` (arXiv + Europe PMC + ClinicalTrials.gov) | Official Open Targets MCP, NCBI EDirect, then permitted browser access | Identifier-first, provenance-rich, evidence-state-labelled, and licence-gated |
+| Gemini Deep Research | `research:gemini` job builder + `$gemini-deep-research` in authenticated Chrome | Computer Use | Validates one prompt and replays plan → review → start → collect through the user's subscription UI |
+| Hiring, departures, workforce mix | Revelio export/API when entitled; otherwise `research:revelio` + authenticated Chrome | Computer Use | Normalizes aggregate questions and filters without inventing a scraper |
+| Founder interviews and transcripts | `research:youtube` + authenticated YouTube in Chrome | Computer Use for playback/transcript controls | Produces repeatable searches and uses the user's Premium session for visible transcripts |
 | Quick quote and company cross-check | Google Finance in Chrome | Public market source in the in-app Browser | Interactive secondary source |
-| FT | Direct authenticated Chrome for navigation and source discovery | Public corroborating sources or user notes | Standard subscriber terms restrict AI processing of article text |
+| FT | Direct authenticated Chrome for navigation and source discovery | `$archive-ph-research` for one permitted existing snapshot; otherwise public corroboration or user notes | Keep search metadata, archive retrieval, and verification as separate provenance steps |
 | Other paid research | Direct authenticated publisher page in Chrome where agent processing is permitted | Public corroborating sources | Uses the user's personal subscription without copying the publication |
 | SemiAnalysis | Authenticated Chrome for articles; documented API for public InferenceX data | In-app Browser for public pages | Article research and structured benchmark data are different jobs |
 | Company IR pages and public web | In-app Browser or Chrome | Computer Use | Public, source-native research |
 
-Do not build a brittle pseudo-API around a changing website just to call it a CLI. The repository CLI opens repeatable research workspaces and handles genuinely structured retrieval; the agent's Chrome integration performs the authenticated UI work.
+Do not build a brittle pseudo-API around a changing website just to call it a CLI. The authenticated workflow CLIs validate inputs, normalize URLs and filters, and emit reviewed semantic-control contracts; the matching skills execute those contracts through the user's Chrome session. They do not export browser state, call hidden endpoints, or replay screen coordinates.
 
 ## Repository commands
 
 ```bash
+# Validate all skills, schemas, CLI routes, billing boundaries, and automated tests
+npm run research:validate
+
 # See local capabilities without reading credentials or account data
 npm run research:check
 
@@ -35,6 +39,11 @@ npm run research:browser -- list
 # Preview the Gemini handoff; use the skill for account-safe launch
 npm run research:browser -- guide gemini
 
+# Build one authenticated workflow contract; the matching skill executes it in Chrome
+npm run research:gemini -- --prompt "Research Snap's advertising recovery and strongest falsifiers" --json
+npm run research:revelio -- --company "Snap Inc" --question "How has engineering hiring changed?" --peers "Meta,Pinterest" --json
+npm run research:youtube -- --query "Snap Evan Spiegel advertising interview" --channels "20VC" --max-videos 3 --json
+
 # Ask macOS to open one non-Gemini source in Chrome
 npm run research:browser -- open youtube --query "Evan Spiegel 20VC"
 npm run research:browser -- open revelio --query "Snap Inc"
@@ -46,10 +55,24 @@ npm run research:browser -- workspace --company "Snap Inc" --ticker SNAP
 # Open only the sources needed for the current question
 npm run research:browser -- workspace --company "Snap Inc" --ticker SNAP --sources youtube,revelio,sec --open
 
+# Open one canonical publisher URL through archive.ph without extension-popup clicks
+npm run research:archive -- open "https://www.ft.com/content/example" --json
+
+# Exercise the installed Archive News extension's automatic redirect instead
+npm run research:archive -- open-extension "https://www.ft.com/content/example" --json
+
 # Optional structured SEC retrieval
 npm run research:sec -- filings SNAP --forms 10-K,10-Q,8-K --limit 20
 npm run research:sec -- facts SNAP --concept RevenueFromContractWithCustomerExcludingAssessedTax --unit USD --limit 20
+
+# Biomedical literature and clinical-trial evidence
+npm run research:biomed -- landscape --query "intismeran melanoma" --json
+npm run research:biomed -- preprints search --query '"protein language model" drug discovery' --json
+npm run research:biomed -- literature search --query "V940 pembrolizumab" --open-access --json
+npm run research:biomed -- trials get NCT05933577 --json
 ```
+
+`research:validate` is the repeatable release gate. It discovers skills dynamically, checks their `SKILL.md` and `agents/openai.yaml` contracts, parses every JSON schema and JSON template, verifies required research commands and methodology files, rejects runtime markers for separately credentialed Gemini, OpenAI, YouTube, Revelio, or brokerage APIs, and runs the full Node test suite. It reports—but never reads—the presence of `SEC_USER_AGENT`. Authenticated Chrome state remains a runtime check because a repository command must never inspect account identity, cookies, or browser storage.
 
 From a Codex task, call the authenticated Gemini workflow directly:
 
@@ -57,7 +80,7 @@ From a Codex task, call the authenticated Gemini workflow directly:
 Use $gemini-deep-research to run one first-pass report on Snap's advertising recovery, including the strongest falsifiers and primary-source citations.
 ```
 
-The browser CLI contains no passwords, cookies, or session tokens. A workspace is preview-only unless `--open` is passed, and `--sources` limits it to the providers needed for the current question. When URLs are opened, macOS may select Chrome's default or last-active profile, so the agent must verify the required session; if the profile is ambiguous, navigate an already claimed, authorized tab through the Chrome integration instead.
+The browser and workflow CLIs contain no passwords, cookies, or session tokens. A workspace or workflow is preview-only unless its command supports and receives `--open`, and `--sources` limits a workspace to the providers needed for the current question. `research:gemini` deliberately never opens a tab because the skill must preserve the user-selected Google account context. When another URL is opened, macOS may select Chrome's default or last-active profile, so the agent must verify the required session; if the profile is ambiguous, navigate an already claimed, authorized tab through the Chrome integration instead.
 
 ## Agent UI skills
 
@@ -69,9 +92,17 @@ When the corresponding capability is available, load its instructions before fir
 
 Normal research actions are authorized: searches, prompts, Deep Research runs, report views, video playback, transcript controls, filters, pagination, and downloads the user asks for. Posting, messaging, purchasing, trading, changing account settings, or accepting new terms remains outside normal research scope.
 
-Repository-local authenticated workflows are `$gemini-deep-research`, `$revelio-workforce-research`, `$youtube-interview-research`, and `$ft-source-discovery`. Invoke the narrow skill instead of improvising a generic browser macro.
+Repository-local browser workflows are `$gemini-deep-research`, `$revelio-workforce-research`, `$youtube-interview-research`, `$ft-source-discovery`, and `$archive-ph-research`. Invoke the narrow skill instead of improvising a generic browser macro. The first three consume the reviewed contracts produced by `research:gemini`, `research:revelio`, and `research:youtube`.
 
 ## Provider playbooks
+
+### Biopharma literature, targets, and trials
+
+Invoke `$biopharma-evidence-research` for a drug candidate, pipeline, readout, or probability-of-success question. The repository CLI uses the public arXiv, Europe PMC, and ClinicalTrials.gov v2 APIs, records API versions and data timestamps, caches responses locally, and stores full-text XML only for records with an acceptable article-level licence. arXiv records remain a separate preprint layer until a linked publication is independently verified.
+
+Use the official Open Targets MCP or GraphQL API for target-disease, genetics, tractability, safety, mechanism, and known-drug evidence. Treat it as an evidence index and verify material claims at their underlying sources. Use a signed-in publisher or SciSpace surface only for content the user may lawfully process. Do not use Sci-Hub, pirate mirrors, hidden endpoints, or an authenticated UI as a pseudo-API.
+
+The complete source matrix, commands, probability workflow, and connector roadmap are in [Biopharma evidence research](BIOPHARMA_RESEARCH.md).
 
 ### SEC EDGAR and company filings
 
@@ -86,17 +117,17 @@ Official reference: [EDGAR APIs](https://www.sec.gov/search-filings/edgar-applic
 
 ### Gemini Deep Research
 
-Invoke `$gemini-deep-research` with one company-specific brief. The repo-local skill uses the signed-in Gemini app through Chrome, selects **Deep Research**, submits the brief once, reviews the generated plan, makes at most one material correction, starts the research, waits for completion, and collects the report and its cited links under ignored `.local/` storage.
+Run `research:gemini` to validate one company-specific brief and emit the observed semantic-control contract, then invoke `$gemini-deep-research` to execute it. The repo-local skill uses the signed-in Gemini app through Chrome, selects **Deep Research**, submits the brief once, reviews the generated plan, makes at most one material correction, starts the research, waits for completion, and collects the report and its cited links under ignored `.local/` storage.
 
 The skill deliberately runs one prompt per invocation. It does not perform bulk research, upload files without explicit approval, switch Google accounts silently, or use screen coordinates when semantic Chrome controls are available. Raw Gemini reports remain local-only; independently verified findings can later be promoted into the company research.
 
 Gemini is a second analyst, not primary evidence. Follow its citations and independently verify material claims. Upload a repository file or a licensed source only when the user's request requires that exact transfer.
 
-The consumer UI is the preferred route because it uses the user's existing subscription. Google's programmatic [Deep Research Agent](https://ai.google.dev/gemini-api/docs/deep-research) is an optional separately billed route, not a prerequisite. Google's June 2026 [Gemini CLI transition](https://github.com/google-gemini/gemini-cli/discussions/28017) means the old consumer-subscription CLI is not a dependable substitute for this UI workflow.
+The consumer UI is the route used here because it is included in the user's existing subscription. The workflow CLI neither calls the Gemini API nor creates API charges. Google's programmatic [Deep Research Agent](https://ai.google.dev/gemini-api/docs/deep-research) is a separate, potentially billed route and is out of scope unless the user explicitly requests it.
 
 ### Revelio Labs
 
-For targeted company research, use the visible signed-in dashboard through Chrome to inspect hiring, departures, tenure, functions, geography, skills, and comparable-company movement. Run focused queries and record aggregate findings, dates, applied filters, and screenshots or exports only under `.local/`.
+For targeted company research, run `research:revelio` to normalize the company, question, peers, functions, geographies, and date range. Then use `$revelio-workforce-research` with the visible signed-in dashboard through Chrome to inspect hiring, departures, tenure, functions, geography, skills, and comparable-company movement. Run focused queries and record aggregate findings, dates, applied filters, and screenshots or exports only under `.local/`.
 
 If the account already includes a documented export, API, SDK, MCP, or flat-file delivery, prefer it for repeatable aggregate analysis. Do not script username/password login, extract browser state, or reverse-engineer hidden endpoints. Avoid bulk person-level collection unless a specific research question requires it.
 
@@ -104,7 +135,7 @@ Official reference: [Revelio API documentation](https://dashboard.reveliolabs.co
 
 ### YouTube Premium and interview transcripts
 
-Use the signed-in YouTube site through Chrome for small-volume, company-specific research:
+Run `research:youtube` to normalize the query, optional channel/date filters, result limit, search URL, and semantic-control contract. Then use `$youtube-interview-research` with the signed-in YouTube site through Chrome for small-volume, company-specific research:
 
 1. search for the executive, company, and relevant channels such as 20VC;
 2. open the interview and inspect channel, publication date, duration, and description;
@@ -122,7 +153,7 @@ Use Google Finance through Chrome for quick company pages, comparisons, news dis
 
 Use the direct signed-in FT site through Chrome for navigation and source discovery. Record the headline, author, publication/access dates, canonical FT URL, and corroborating primary source. FT's standard policy restricts AI use of subscriber content, so an agent must not ingest or summarize article text unless the applicable subscription or licence grants that right. The user can provide their own notes, and the agent can build the thesis from those notes plus public primary evidence.
 
-The toolkit does not automate archive mirrors or access-control circumvention. If a browser extension redirects a direct FT page elsewhere, the user controls that extension; agents should use direct publisher access or public corroboration.
+For one user-selected canonical URL, `$archive-ph-research` may open an existing public archive snapshot and collect focused evidence when agent processing is permitted. It uses the same deterministic archive route as the user's Archive News extension, does not create snapshots, and does not bypass CAPTCHAs, interstitials, or other access controls. An archive copy does not expand reuse or redistribution rights.
 
 Reference: [FT copyright policy](https://help.ft.com/legal-privacy/copyright-policy/).
 
@@ -160,7 +191,7 @@ authorized source or structured response
 
 ## Local state and credentials
 
-`.local/` is ignored and reserved for caches, focused temporary captures, authorized downloads, and logs. Run `npm run research:init` after cloning to create its fixed subdirectories with owner-only permissions. Keep full publication archives out of it; retain only what the current research task needs and delete stale temporary captures. It is not a password store. Browser authentication stays in Chrome; provider-managed CLI authentication stays in its supported store; API secrets, when genuinely needed, belong in an OS credential store or user-controlled environment.
+`.local/` is ignored and reserved for caches, focused temporary captures, authorized downloads, and logs. Run `npm run research:init` after cloning to create its fixed subdirectories with owner-only permissions, including `.local/captures/archive-ph/` for focused archive notes. Keep full publication archives out of it; retain only what the current research task needs and delete stale temporary captures. It is not a password store. Browser authentication stays in Chrome; provider-managed CLI authentication stays in its supported store; API secrets, when genuinely needed, belong in an OS credential store or user-controlled environment.
 
 Never put a password, API key, MFA code, cookie, token, browser profile, HAR, authenticated URL, or account identity in a tracked file. Agents may check whether a required environment variable exists but must not print its value.
 

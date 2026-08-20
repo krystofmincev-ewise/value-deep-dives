@@ -1,6 +1,6 @@
 ---
 name: ft-source-discovery
-description: "Find targeted Financial Times coverage and record search-result metadata through the user's signed-in Chrome session. Use when company research needs FT headlines, authors, dates, snippets, or canonical FT URLs for source discovery. This skill is metadata-only: it does not read article bodies, summarize subscriber text, or use archive mirrors."
+description: "Find targeted Financial Times coverage and record search-result metadata through the user's signed-in Chrome session. Use when company research needs FT headlines, authors, dates, snippets, or canonical FT URLs for source discovery. Keep FT discovery metadata-only; hand a user-selected canonical URL to $archive-ph-research when a permitted existing archive snapshot is needed."
 ---
 
 # FT Source Discovery
@@ -35,7 +35,11 @@ Read only the search-results interface. For each relevant result, collect what t
 - access date and the search query that surfaced it;
 - likely research question or claim to investigate.
 
-Extract a result link's visible destination without navigating into the article. If an extension redirects an article click, do not follow or read the redirected page. Never capture authenticated query parameters, account details, article bodies, or bulk result pages.
+Extract a result link's visible destination without navigating into the article. Do not let an automatic extension redirect mix article content into the search-metadata pass. Never capture authenticated query parameters, account details, article bodies, or bulk result pages.
+
+## Optional archive handoff
+
+After the user or research task selects one canonical URL, invoke `$archive-ph-research` for a targeted existing snapshot when source processing is permitted. Keep discovery and archive retrieval as separate provenance steps; do not bulk-open all search results.
 
 ## Assess and log
 
@@ -54,4 +58,4 @@ Do not store article text or screenshots in the tracked tree.
 
 ## Return
 
-Return the query, access time, result count, ranked metadata table, and the next primary-source checks. State explicitly that search snippets and FT URLs are discovery aids, not verified evidence.
+Return the query, access time, result count, ranked metadata table, and the next primary-source checks. State explicitly that search snippets and FT URLs are discovery aids, not verified evidence. When relevant, identify the selected canonical URL that is ready for `$archive-ph-research`.

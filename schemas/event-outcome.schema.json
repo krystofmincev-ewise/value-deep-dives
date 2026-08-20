@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/krystofmincev/value_deep_dives/schemas/event-outcome.schema.json",
+  "title": "Event outcome front matter",
+  "type": "object",
+  "required": [
+    "type", "forecast_id", "company", "ticker", "status", "as_of", "outcome_at",
+    "release_status", "resolution_deadline_at", "resolution_reason", "original_forecast", "evaluation_spec_id",
+    "event_outcome_status", "target_outcome_status", "position_disclosure"
+  ],
+  "properties": {
+    "type": { "const": "event_outcome" },
+    "forecast_id": { "type": "string", "pattern": "^\\d{4}-E\\d{3,}$" },
+    "company": { "type": "string", "minLength": 1 },
+    "ticker": { "type": "string", "pattern": "^[A-Z0-9.-]+$" },
+    "status": { "enum": ["draft", "partial", "resolved", "unresolvable"] },
+    "as_of": { "type": "string", "format": "date" },
+    "outcome_at": { "type": "string", "format": "date-time" },
+    "release_status": { "enum": ["released", "no_release", "unknown"] },
+    "resolution_deadline_at": { "type": "string", "format": "date-time" },
+    "actual_release_at": { "type": ["string", "null"], "format": "date-time" },
+    "resolution_reason": { "type": "string", "minLength": 1 },
+    "original_forecast": { "type": "string", "minLength": 1 },
+    "evaluation_spec_id": { "type": "string", "pattern": "^event-v[1-9][0-9]*$" },
+    "event_outcome_status": { "enum": ["pending", "resolved", "unresolvable"] },
+    "event_outcome": { "type": ["integer", "null"], "minimum": 0, "maximum": 1 },
+    "event_outcome_source_id": { "type": ["string", "null"], "pattern": "^S-[0-9]{3,}$" },
+    "event_outcome_source_path": { "type": ["string", "null"] },
+    "target_outcome_status": { "enum": ["pending", "resolved", "unresolvable"] },
+    "target_outcome": { "type": ["integer", "null"], "minimum": 0, "maximum": 1 },
+    "security_start_price": { "type": ["number", "null"], "exclusiveMinimum": 0 },
+    "security_start_at": { "type": ["string", "null"], "format": "date-time" },
+    "security_end_price": { "type": ["number", "null"], "minimum": 0 },
+    "security_end_at": { "type": ["string", "null"], "format": "date-time" },
+    "security_end_session_number": { "type": ["integer", "null"], "minimum": 1 },
+    "security_price_source": { "type": ["string", "null"] },
+    "security_price_adjustment_rule": {
+      "enum": ["unadjusted", "split_adjusted", "split_adjusted_with_dividends", null]
+    },
+    "benchmark_start_value": { "type": ["number", "null"], "exclusiveMinimum": 0 },
+    "benchmark_end_value": { "type": ["number", "null"], "minimum": 0 },
+    "benchmark_price_source": { "type": ["string", "null"] },
+    "benchmark_price_adjustment_rule": {
+      "enum": ["unadjusted", "split_adjusted", "split_adjusted_with_dividends", null]
+    },
+    "market_observation_path": { "type": ["string", "null"] },
+    "market_observation_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" },
+    "position_disclosure": { "enum": ["long", "short", "no_position", "not_disclosed"] }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "status": { "const": "draft" } }, "required": ["status"] },
+      "then": {
+        "properties": {
+          "event_outcome_status": { "const": "pending" },
+          "target_outcome_status": { "const": "pending" }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "status": { "const": "resolved" } }, "required": ["status"] },
+      "then": {
+        "properties": {
+          "event_outcome_status": { "const": "resolved" },
+          "target_outcome_status": { "const": "resolved" }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "status": { "const": "unresolvable" } }, "required": ["status"] },
+      "then": {
+        "properties": {
+          "event_outcome_status": { "const": "unresolvable" },
+          "target_outcome_status": { "const": "unresolvable" }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "event_outcome_status": { "const": "resolved" } }, "required": ["event_outcome_status"] },
+      "then": {
+        "required": ["event_outcome", "event_outcome_source_id", "event_outcome_source_path"],
+        "properties": {
+          "event_outcome": { "type": "integer", "minimum": 0, "maximum": 1 },
+          "event_outcome_source_id": { "type": "string", "pattern": "^S-[0-9]{3,}$" },
+          "event_outcome_source_path": { "type": "string", "minLength": 1 }
+        }
+      },
+      "else": { "properties": { "event_outcome": { "type": "null" } } }
+    },
+    {
+      "if": { "properties": { "release_status": { "const": "released" } }, "required": ["release_status"] },
+      "then": {
+        "required": ["actual_release_at", "event_outcome_source_id", "event_outcome_source_path"],
+        "properties": {
+          "actual_release_at": { "type": "string", "format": "date-time" },
+          "event_outcome_source_id": { "type": "string", "pattern": "^S-[0-9]{3,}$" },
+          "event_outcome_source_path": { "type": "string", "minLength": 1 }
+        }
+      },
+      "else": { "properties": { "actual_release_at": { "type": "null" } } }
+    },
+    {
+      "if": { "properties": { "release_status": { "const": "no_release" } }, "required": ["release_status"] },
+      "then": {
+        "required": ["event_outcome_source_id", "event_outcome_source_path"],
+        "properties": {
+          "event_outcome_status": { "enum": ["resolved", "unresolvable"] },
+          "event_outcome_source_id": { "type": "string", "pattern": "^S-[0-9]{3,}$" },
+          "event_outcome_source_path": { "type": "string", "minLength": 1 },
+          "target_outcome_status": { "enum": ["pending", "unresolvable"] }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "release_status": { "const": "no_release" },
+          "event_outcome_status": { "const": "resolved" }
+        },
+        "required": ["release_status", "event_outcome_status"]
+      },
+      "then": { "properties": { "event_outcome": { "const": 0 } } }
+    },
+    {
+      "if": { "properties": { "target_outcome_status": { "const": "resolved" } }, "required": ["target_outcome_status"] },
+      "then": {
+        "required": [
+          "target_outcome", "security_start_price", "security_start_at", "security_end_price",
+          "security_end_at", "security_end_session_number", "security_price_source", "security_price_adjustment_rule", "benchmark_start_value",
+          "benchmark_end_value", "benchmark_price_source", "benchmark_price_adjustment_rule", "market_observation_path",
+          "market_observation_hash", "actual_release_at"
+        ],
+        "properties": {
+          "target_outcome": { "type": "integer", "minimum": 0, "maximum": 1 },
+          "security_start_price": { "type": "number", "exclusiveMinimum": 0 },
+          "security_start_at": { "type": "string", "format": "date-time" },
+          "security_end_price": { "type": "number", "exclusiveMinimum": 0 },
+          "security_end_at": { "type": "string", "format": "date-time" },
+          "security_end_session_number": { "type": "integer", "minimum": 1 },
+          "security_price_source": { "type": "string", "minLength": 1 },
+          "security_price_adjustment_rule": { "enum": ["unadjusted", "split_adjusted", "split_adjusted_with_dividends"] },
+          "benchmark_start_value": { "type": "number", "exclusiveMinimum": 0 },
+          "benchmark_end_value": { "type": "number", "exclusiveMinimum": 0 },
+          "benchmark_price_source": { "type": "string", "minLength": 1 },
+          "benchmark_price_adjustment_rule": { "enum": ["unadjusted", "split_adjusted", "split_adjusted_with_dividends"] },
+          "market_observation_path": { "type": "string", "minLength": 1 },
+          "market_observation_hash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" }
+        }
+      },
+      "else": { "properties": { "target_outcome": { "type": "null" } } }
+    }
+  ],
+  "additionalProperties": false
+}

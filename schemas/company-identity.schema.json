@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/krystofmincev/value_deep_dives/schemas/company-identity.schema.json",
+  "title": "Company identity front matter",
+  "type": "object",
+  "required": [
+    "type",
+    "company",
+    "ticker",
+    "exchange",
+    "issuer_id",
+    "security_id",
+    "listing_id",
+    "status",
+    "as_of",
+    "known_at",
+    "valid_from",
+    "domicile",
+    "reporting_currency",
+    "primary_security_type"
+  ],
+  "properties": {
+    "type": { "const": "company_identity" },
+    "company": { "type": "string", "minLength": 1 },
+    "ticker": { "type": "string", "pattern": "^[A-Z0-9.-]+$" },
+    "exchange": { "type": "string", "minLength": 1 },
+    "issuer_id": { "type": "string", "minLength": 1 },
+    "security_id": { "type": "string", "minLength": 1 },
+    "listing_id": { "type": "string", "minLength": 1 },
+    "status": { "enum": ["draft", "verified", "superseded"] },
+    "as_of": { "type": "string", "format": "date" },
+    "known_at": { "type": "string", "format": "date-time" },
+    "valid_from": { "type": "string", "format": "date" },
+    "valid_to": { "type": ["string", "null"], "format": "date" },
+    "domicile": { "type": "string", "pattern": "^[A-Z]{2}$" },
+    "reporting_currency": { "type": "string", "pattern": "^[A-Z]{3}$" },
+    "fiscal_year_end": { "type": ["string", "null"], "pattern": "^\\d{2}-\\d{2}$" },
+    "cik": { "type": ["string", "null"], "pattern": "^\\d{10}$" },
+    "lei": { "type": ["string", "null"], "pattern": "^[A-Z0-9]{20}$" },
+    "primary_security_type": {
+      "enum": ["common_stock", "adr", "depositary_receipt", "unit", "fund", "other"]
+    },
+    "source_version": { "type": ["string", "null"] },
+    "source_checksum": { "type": ["string", "null"], "pattern": "^[A-Za-z0-9:_-]+$" }
+  },
+  "additionalProperties": true
+}

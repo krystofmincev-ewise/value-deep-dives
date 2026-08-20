@@ -1,0 +1,30 @@
+{
+  "type": "event_market_observations",
+  "schema_version": 1,
+  "forecast_id": "{YYYY-E001}",
+  "captured_at": "{ISO-8601 timestamp}",
+  "security": {
+    "security_id": "{stable repository security ID}",
+    "provider_id": "{frozen provider ID}",
+    "provider_version": "{version}",
+    "adjustment_rule": "split_adjusted_with_dividends",
+    "source_id": "S-001",
+    "source_path": "{relative source-record path}",
+    "capture_path": "{relative normalized market-data capture path}",
+    "capture_hash": "sha256:{64 lowercase hexadecimal characters}",
+    "start": { "observed_at": "{ISO-8601 timestamp}", "value": 1, "kind": "reference_snapshot" },
+    "end": { "observed_at": "{ISO-8601 timestamp}", "value": 1, "kind": "official_close" }
+  },
+  "benchmark": {
+    "benchmark_id": "{benchmark ID}",
+    "provider_id": "{frozen provider ID}",
+    "provider_version": "{version}",
+    "adjustment_rule": "split_adjusted_with_dividends",
+    "source_id": "S-002",
+    "source_path": "{relative source-record path}",
+    "capture_path": "{relative normalized market-data capture path}",
+    "capture_hash": "sha256:{64 lowercase hexadecimal characters}",
+    "start": { "observed_at": "{ISO-8601 timestamp}", "value": 1, "kind": "reference_snapshot" },
+    "end": { "observed_at": "{ISO-8601 timestamp}", "value": 1, "kind": "official_close" }
+  }
+}

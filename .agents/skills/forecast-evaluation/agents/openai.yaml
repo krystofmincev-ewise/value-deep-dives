@@ -1,0 +1,4 @@
+interface:
+  display_name: "Forecast Evaluation"
+  short_description: "Score forecasts without hindsight leakage"
+  default_prompt: "Use $forecast-evaluation to score the prospective forecast record and assess calibration."

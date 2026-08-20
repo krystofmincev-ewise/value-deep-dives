@@ -1,6 +1,6 @@
 ---
 name: gemini-deep-research
-description: "Run one first-pass Gemini Deep Research job through the user's signed-in Chrome UI, review its generated plan, start the research, wait for completion, and return the report with unverified source links. Use for requests to use Gemini Deep Research, get a Gemini second opinion, or produce a preliminary external research pass. Do not use for ordinary web search, bulk or multi-company runs, the Gemini API, or unsupervised recurring research."
+description: "Run one first-pass Gemini Deep Research job through the user's signed-in Chrome subscription UI, using the repository's validated workflow CLI and semantic control contract to review the generated plan, start research, wait for completion, and return the report with unverified source links. Use for requests to use Gemini Deep Research, get a Gemini second opinion, or produce a preliminary external research pass. Do not use for ordinary web search, bulk or multi-company runs, the Gemini API, or unsupervised recurring research."
 ---
 
 # Gemini Deep Research
@@ -16,26 +16,37 @@ Require a research prompt. Accept an optional `plan_only` instruction. Raw repor
 - Never fan out into additional prompts, companies, or follow-up runs without a new invocation.
 - Never upload files unless the user explicitly asks to send those exact files to Gemini.
 
+## Build the reviewed job
+
+Generate the validated inputs and reviewed semantic-control recipe before opening or changing Chrome:
+
+```bash
+npm run research:gemini -- --prompt "{research_prompt}" [--plan-only] --json
+```
+
+Use the returned `inputs`, `mode`, `capture`, and `uiContract` as the execution contract. This command does not call the Gemini API, create API charges, inspect Chrome, or open a generic Gemini tab. The browser steps use the user's existing signed-in Gemini subscription.
+
 ## Use the authenticated Chrome session
 
 1. Read and follow `chrome:control-chrome` before browser work. Use `computer-use:computer-use` only when Chrome's semantic controls cannot complete a visible step.
 2. Name the Chrome session for the research topic.
 3. List the user's open Chrome tabs and find a Gemini tab the user has made available. Claim the exact tab from that fresh list.
 4. Inspect visible state. Do not inspect cookies, storage, browser profiles, or account identifiers.
-5. Verify the selected Gemini context exposes **Pro** and **Deep Research**. A generic `https://gemini.google.com/app` may open a different Google account.
+5. Verify the selected Gemini context exposes **Pro** and **Deep Research**. The current chat may still be on **Flash** even when the subscription includes **Pro**. A generic `https://gemini.google.com/app` may open a different Google account.
 6. Prefer a fresh agent tab using the verified Gemini tab's `/u/<number>/` account prefix. If no eligible signed-in tab exists, ask the user to open the intended Gemini account and stop.
 
-Do not submit a prompt until the eligible account and Deep Research control are visible.
+Do not submit a prompt until the eligible account and the workflow's `signed_in_context`, `pro_active`, and `deep_research_active` checkpoints are visible. If a recorded semantic control is absent after a fresh DOM snapshot, report UI-contract drift and stop rather than guessing a coordinate.
 
 ## Select Deep Research and submit
 
-Use role/name locators from a fresh DOM snapshot; tolerate minor wording variants such as `&` versus `and`.
+Use the role/name locators in the generated `uiContract` against a fresh DOM snapshot; tolerate only harmless wording variants such as `&` versus `and`.
 
-1. If **Deselect Deep Research** is visible, the mode is already active.
-2. Otherwise click **Upload and tools**, then **More tools**, then the **Deep Research** menu item.
-3. Verify **Deselect Deep Research** is visible and the prompt placeholder changed to **What do you want to research?**.
-4. Fill the prompt textbox and submit once.
-5. Wait for an enabled **Start research** button. Do not resubmit the prompt when plan generation is merely slow.
+1. If the mode picker does not say **currently Pro**, open it, select the enabled **Pro — Advanced reasoning** item, and verify **currently Pro**. Seeing the menu item establishes entitlement; it does not establish that Pro is active.
+2. If **Deselect Deep Research** is visible, the research tool is already active.
+3. Otherwise click **Upload & tools**, then **More tools**, then the **Deep Research** menu item.
+4. Verify **Deselect Deep Research** is visible and the prompt placeholder changed to **What do you want to research?**.
+5. Fill **Enter a prompt for Gemini** from `inputs.prompt`, then click **Send message** once.
+6. Wait for the newest enabled **Start research** button. Ignore disabled controls belonging to earlier plans. Do not resubmit the prompt when plan generation is merely slow.
 
 If Gemini shows login, CAPTCHA, quota, or availability trouble, stop and report the visible blocker. Never switch to another Google account silently.
 
@@ -51,7 +62,7 @@ Read the complete visible plan before starting. Check whether it:
 
 If the plan is adequate, continue. If it has a material omission or mismatch, click **Edit plan**, wait for Gemini to ask for changes, submit one concise correction, and assess the revised plan. Make at most one revision; record any remaining limitation rather than looping.
 
-For a full run, click the enabled **Start research** button without requesting another confirmation. The repository authorizes one requested Deep Research run as a normal research action.
+For a full run, click the newest enabled **Start research** button without requesting another confirmation. The repository authorizes one requested Deep Research run through the existing subscription as a normal research action.
 
 ## Wait and collect
 

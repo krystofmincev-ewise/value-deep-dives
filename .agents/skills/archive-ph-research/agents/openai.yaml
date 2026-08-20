@@ -1,0 +1,4 @@
+interface:
+  display_name: "Archive.ph Research"
+  short_description: "Retrieve targeted archive.ph source content"
+  default_prompt: "Use $archive-ph-research to open this source’s existing archive.ph snapshot and extract focused research evidence."

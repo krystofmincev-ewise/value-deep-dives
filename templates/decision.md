@@ -3,6 +3,11 @@ type: decision
 decision_id: "{YYYY-NNN}"
 company: "{Company}"
 ticker: "{TICKER}"
+identity_path: "{relative path to verified company identity}"
+identity_hash: "{sha256 digest of the frozen identity record}"
+security_id: "{stable repository security ID}"
+listing_id: "{stable repository listing ID}"
+research_stance: insufficient_evidence
 action: watch
 decided_at: "{ISO-8601 timestamp}"
 research_cutoff: "{ISO-8601 timestamp}"
@@ -13,6 +18,11 @@ price_source: null
 position_disclosure: not_disclosed
 thesis_path: "{relative path}"
 valuation_path: "{relative path}"
+benchmark: null
+target_horizon: null
+expected_return_pct: null
+expected_excess_return_pct: null
+action_hurdle_pct: null
 review_by: null
 ---
 
@@ -20,7 +30,7 @@ review_by: null
 
 ## Decision
 
-Action and concise rationale. State whether sizing and actual fills are omitted.
+Research stance (`attractive`, `neutral`, `unattractive`, or `insufficient_evidence`), portfolio action, and concise rationale. State the horizon, benchmark, hurdle, portfolio context, and whether sizing and actual fills are omitted. Use `hold` only for an existing position; use `reduce` or `exit` for the portfolio action often called sell.
 
 ## Evidence available at the time
 

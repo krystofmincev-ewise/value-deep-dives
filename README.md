@@ -80,6 +80,48 @@ Company-specific notes, data, and experiments stay inside that company's folder.
 
 GitHub Markdown and search are the canonical interface. A generated index or website can be added when the archive is large enough to justify one.
 
+## Recreate the research environment
+
+The public repository contains the code, schemas, templates, methodology, and
+repository-local agent skills needed to reproduce the research workflow. It
+does not contain passwords, subscription details, cookies, browser profiles,
+or private source captures.
+
+Requirements:
+
+- Git and Node.js 22 or newer.
+- Codex with the repository opened as its workspace for the instructions in
+  `AGENTS.md` and the skills in `.agents/skills/`.
+- Chrome, plus your own signed-in accounts for any optional subscription
+  services you use, such as Gemini, YouTube Premium, Revelio Labs, FT, or
+  SemiAnalysis.
+- The optional open-source
+  [Archive News Chrome extension](https://github.com/krystofmincev-ewise/archive-news-extension)
+  for the extension-backed archive route.
+
+Start from a fresh machine with:
+
+```sh
+git clone https://github.com/krystofmincev-ewise/value-deep-dives.git
+cd value-deep-dives
+npm run research:init
+npm run research:validate
+npm run research:check
+```
+
+Follow the extension repository's installation instructions if you want to use
+`npm run research:archive -- open-extension ...`. Sign in to subscription
+services directly in Chrome; never put their credentials in this repository.
+Set `SEC_USER_AGENT` in your local environment to a truthful project name and
+monitored contact before using the SEC CLI.
+
+GitHub is the recovery copy for tracked research, tooling, and documentation.
+The ignored `.local/` directory is deliberately machine-local and can contain
+caches, temporary captures, and licensed material that must not be published.
+Chrome authentication and extension settings are also local-only. Back up any
+of that private state separately in encrypted storage if you need to preserve
+it; a fresh clone will recreate the directory structure, not those contents.
+
 ## How LLMs are used
 
 LLMs help with discovery, synthesis, source finding, adversarial critique, and experiment design. They can hallucinate, misread documents, and hide uncertainty behind fluent prose. Material factual claims and valuation inputs therefore remain the author's responsibility and should be checked against cited primary sources. See the [research standards](methodology/RESEARCH_STANDARDS.md).

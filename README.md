@@ -48,9 +48,9 @@ The detailed process lives in [methodology](methodology/README.md). A completed 
 
 | Company | Ticker | Status | Current target | Workspace |
 | --- | --- | --- | --- | --- |
-| Snap Inc. | SNAP | Researching | Not yet published | [Open the Snap deep dive](companies/snap/README.md) |
+| Snap Inc. | SNAP | Draft deep dive complete; prospective registration pending | [Draft valuation available](companies/snap/valuation/2026-08-21-reunderwritten-valuation.md) | [Open the Snap deep dive](companies/snap/README.md) |
 
-The Snap workspace is intentionally an open research plan, not a backfilled recommendation. Its first technical study is scoped around [ad-ranking feasibility](companies/snap/experiments/ad-ranking-feasibility/README.md): what a small reproducible prototype can reveal about ranking systems, and what it cannot establish about Snap's ability to reproduce Meta's advertising performance.
+The Snap dossier is self-contained under [`companies/snap/`](companies/snap/README.md), including identity, sources, research modules, dated theses, valuations, decisions, and company-specific experiments. The current records remain drafts until the documented market-price and prospective-registration gates are complete. Future company valuations should follow the same `companies/<lowercase-ticker>/` structure.
 
 ## Repository map
 

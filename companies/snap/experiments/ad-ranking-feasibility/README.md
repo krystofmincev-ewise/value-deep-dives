@@ -11,6 +11,8 @@ tags: [ad-tech, ranking, recommendation-systems, machine-learning]
 
 # Ad-ranking feasibility
 
+> **Reader key:** This experiment is scoped, not yet implemented. Advertising and model terminology is defined in the [Snap glossary](../../GLOSSARY.md).
+
 ## Investment question
 
 Which parts of a modern advertising recommendation and ranking system can a smaller platform reproduce with competent engineering, and which advantages depend on proprietary scale, data, auction liquidity, measurement, distribution, or organization?

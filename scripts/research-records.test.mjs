@@ -936,7 +936,7 @@ restatement_of: null
       provider_id: "test_calendar",
       provider_version: "v1",
       generated_at: new Date(Date.parse(specificationPublishedAt) - day).toISOString(),
-      coverage_start: new Date(Date.parse(actualReleaseAt) - day).toISOString().slice(0, 10),
+      coverage_start: calendarSessions[0].session_date,
       coverage_end: new Date(Date.parse(calendarSessions.at(-1).session_date) + day).toISOString().slice(0, 10),
       calendars: {
         XNAS: {

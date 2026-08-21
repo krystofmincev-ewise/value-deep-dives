@@ -3,13 +3,15 @@ type: research_plan
 company: Snap Inc.
 ticker: SNAP
 status: active
-as_of: 2026-08-17
-source_cutoff: null
+as_of: 2026-08-21
+source_cutoff_at: 2026-08-21T03:30:00+02:00
 owner: Krystof Mincev
 tags: [social-media, digital-advertising, ad-tech]
 ---
 
 # Snap research plan
+
+> Terminology is expanded at first use; the [glossary and formula guide](GLOSSARY.md) collects every recurring term in one place.
 
 ## Objective
 
@@ -19,9 +21,9 @@ Determine whether Snap offers an attractive risk-adjusted return at the eventual
 
 ### 1. Market expectations and history
 
-- Reconstruct revenue, daily active users, ARPU, gross margin, operating expense, cash flow, stock-based compensation, dilution, and net cash.
+- Reconstruct revenue, daily active users (DAU), average revenue per user (ARPU), gross margin, operating expense, cash flow, stock-based compensation, dilution, and net cash.
 - Separate reported free cash flow from economic owner earnings and identify recurring adjustments.
-- Map major narrative and valuation shifts since the IPO.
+- Map major narrative and valuation shifts since the initial public offering (IPO).
 - Estimate what growth and margin path the current enterprise value appears to discount.
 
 ### 2. Product and user behavior
@@ -46,14 +48,14 @@ Determine whether Snap offers an attractive risk-adjusted return at the eventual
 ### 5. Industry and competitive structure
 
 - Map digital advertising growth, brand versus direct-response budgets, platform bargaining power, regulation, and mobile operating-system dependence.
-- Compare engagement quality, advertiser ROI, measurement, and incremental margins across peers.
+- Compare engagement quality, advertiser return on investment (ROI), measurement, and incremental margins across peers.
 - Build relevant base rates for subscale consumer platforms that attempted an advertising turnaround.
 
 ### 6. Valuation
 
 - Reconcile enterprise and equity value, diluted share count, net cash, and expected dilution.
 - Build bull, base, and bear operating scenarios with a declared horizon.
-- Cross-check a DCF or cash-flow framework against revenue and mature-margin multiples.
+- Cross-check a discounted cash flow (DCF) framework against revenue and mature-margin multiples.
 - Stress test slower monetization, higher infrastructure costs, continued dilution, recession, and platform restrictions.
 
 ### 7. Falsification and monitoring
@@ -64,16 +66,17 @@ Determine whether Snap offers an attractive risk-adjusted return at the eventual
 
 ## Planned outputs
 
-1. Initial thesis with explicit variant perception
-2. Dated bull/base/bear valuation snapshot
-3. Source log and key calculation notes
-4. Competitive advertising-system map
-5. Scoped [ad-ranking feasibility experiment](experiments/ad-ranking-feasibility/README.md)
-6. Decision record or documented pass
+1. [Initial thesis with explicit variant perception](thesis/2026-08-20-initial-thesis.md) — draft complete
+2. [Dated bull/base/bear valuation snapshot](valuation/2026-08-20-valuation.md) — draft complete
+3. [Source log](sources.md), calculation notes, [independent audit trail](research/2026-08-20-integrated-audit.md), and [post-correction verification](research/2026-08-20-post-correction-verification.md) — complete
+4. [Competitive advertising-system map](research/2026-08-20-ads-ai-competition.md) — complete
+5. Scoped [ad-ranking feasibility experiment](experiments/ad-ranking-feasibility/README.md) — retained as a future mechanism study; not used as valuation evidence
+6. [Decision record](decisions/2026-08-20-hold.md) — draft complete
 
-## Open decisions
+## Resolved and open publication decisions
 
-- Select the formal target horizon and benchmarks.
-- Decide which market-data source will provide reproducible reference prices.
-- Determine whether the current position will be disclosed as `long`, `no_position`, or `not_disclosed` at publication.
-- Pre-register experiment metrics only after the public/synthetic dataset is selected.
+- Target horizon: 20 August 2027, with the Invesco QQQ Trust (QQQ), a Nasdaq-100 exchange-traded fund, as the adjusted-close total-return benchmark and a six-month analytical checkpoint.
+- Position disclosure: `long`, based on the user's unverified report; size and cost details are intentionally omitted from the public repository.
+- Research stance and position-aware action: attractive / hold-no-add, conditional on explicit portfolio loss capacity and third-quarter proof.
+- Publication gate: replace the draft public reference with a reproducible official-close record and register the forecast only after human review.
+- Experiment gate: pre-register metrics only after a public or synthetic dataset is selected; no experiment result supports the current valuation.

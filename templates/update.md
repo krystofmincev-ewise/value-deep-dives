@@ -1,5 +1,5 @@
 ---
-type: company_update
+type: company_monitoring_note
 company: "{Company}"
 ticker: "{TICKER}"
 coverage_cycle_id: "{TICKER}-{YYYY-Www}-{NN}"
@@ -9,23 +9,25 @@ as_of: "{YYYY-MM-DD}"
 published_at: "{ISO-8601 timestamp}"
 source_cutoff: "{YYYY-MM-DD}"
 position_disclosure: not_disclosed
-prior_thesis: "{relative path}"
-prior_valuation: "{relative path}"
-supersedes: null
+canonical_report_path: "{relative path to this cycle's final report}"
+canonical_valuation_path: "{relative path to this cycle's valuation}"
+incorporated_into_report_at: null
 tags: []
 ---
 
-# {Company} update — {event or date}
+# {Company} monitoring note — {event or date}
+
+> Supporting evidence only. This is not a parallel thesis or valuation. Integrate any material conclusion into the active cycle's canonical report.
 
 ## What happened
 
 New facts with citations and a clear information cutoff.
 
-## What changed in my view
+## Implication for the canonical report
 
 Separate business evidence, valuation inputs, confidence, and position disclosure.
 
-## What did not change
+## What does not change
 
 Identify parts of the original thesis that remain supported.
 
@@ -35,7 +37,7 @@ State the strongest new evidence against the thesis.
 
 ## Valuation impact
 
-Link a new dated valuation if the target changes. Never silently replace the prior target.
+Update the active cycle's canonical valuation if the cycle is still a draft. If the prior cycle is finalized, start a new ISO-week coverage cycle rather than publishing a competing same-cycle valuation.
 
 ## Decision and monitoring
 

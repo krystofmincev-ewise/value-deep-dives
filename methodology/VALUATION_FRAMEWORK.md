@@ -58,7 +58,7 @@ Cross-check with at least one independent lens when practical.
 
 ## Target lifecycle
 
-Valuation snapshots are dated and immutable once published. A new snapshot may supersede an old one, but it must link back to it and explain the change.
+Each coverage cycle has one canonical valuation. It evolves in place while the cycle is an active draft. Once finalized or prospectively registered it is immutable; a new valuation belongs to a new ISO-week coverage cycle, links to the prior finalized valuation, and explains the cross-cycle change.
 
 Each target has a status:
 

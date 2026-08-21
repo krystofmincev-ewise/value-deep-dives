@@ -38,6 +38,8 @@ LLM output is not evidence. For material work, record the provider/model, date, 
 
 ## Publication standard
 
+Each coverage cycle has one canonical company report and one canonical valuation. While the cycle is an active draft, new evidence should improve those files in place; same-cycle working drafts must not be cited or exposed as prior theses. Git history is the working-draft audit trail. Once the cycle is finalized or prospectively registered, its canonical records are immutable and a later revaluation belongs to a new ISO-week coverage cycle.
+
 A formal thesis or target price should include:
 
 - `as_of` and `source_cutoff` dates;
@@ -49,9 +51,9 @@ A formal thesis or target price should include:
 - variant perception and key assumptions;
 - catalysts, risks, falsifiers, and review date;
 - confidence and material unknowns;
-- links to sources and prior records.
+- links to sources and, when applicable, the prior finalized coverage-cycle report.
 
-Drafts must be visibly marked. Backfilled work must say `retrospective` and must not enter the prospective scorecard.
+Drafts must be visibly marked. A same-cycle draft is working state, not a historical report. Backfilled work must say `retrospective` and must not enter the prospective scorecard.
 
 ## Intellectual honesty
 

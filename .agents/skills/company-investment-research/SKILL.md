@@ -13,7 +13,7 @@ Build one decision-oriented dossier from canonical evidence. Keep facts, author 
 2. Record the company, security, decision to support, horizon, source cutoff, reporting currency, benchmark, and desired depth: triage, initial deep dive, update, or adversarial review.
 3. Copy `templates/company-identity.md` when no verified identity record exists. Resolve legal entity, listing, CIK/LEI, aliases, fiscal calendar, security type, corporate actions, and the economic perimeter before joining sources.
 4. Run `npm run research:records -- validate-identity <path>` after completing the record. Do not use ticker alone as a canonical entity key.
-5. For an initial deep dive or full revaluation, assign the next company coverage-cycle number and copy `templates/coverage-cycle-readme.md` into `companies/<ticker>/coverage-cycles/<YYYY-Www>-<NN>-<kind>/README.md`. Use the ISO week-year. Keep `identity.md` and the company landing page at the durable company root, link the prior cycle, and put new cycle-specific research, sources, theses, valuations, decisions, models, and reviews inside the cycle folder. A narrow monitoring update can remain in the active cycle; a replacement formal thesis or valuation starts a new cycle.
+5. For an initial deep dive or full revaluation, assign the next company coverage-cycle number and copy `templates/coverage-cycle-readme.md` into `companies/<ticker>/coverage-cycles/<YYYY-Www>-<NN>-<kind>/README.md`. Use the ISO week-year. Keep `identity.md` and the company landing page at the durable company root. Maintain one canonical `YYYY-Www-final-report.md`, valuation, and decision for the active cycle; update them in place as research develops and never cite same-cycle working drafts. Once the cycle is finalized or prospectively registered, a material revaluation starts a new cycle that links only to the prior finalized cycle.
 
 If the request lacks a personalized hurdle, risk limit, tax context, or current position, produce a research stance and clearly labelled illustrative action mapping—not personalized advice.
 
@@ -94,6 +94,6 @@ Return:
 7. research stance: `attractive`, `neutral`, `unattractive`, or `insufficient_evidence`;
 8. portfolio action only when context permits: `buy`, `add`, `hold`, `reduce`, `exit`, `watch`, or `pass`;
 9. confidence, material unknowns, next review, and monitoring plan;
-10. links to the company landing page, coverage-cycle manifest, identity, source log, thesis, valuation, decision, and public commit when published.
+10. links to the company landing page, coverage-cycle manifest, identity, source log, canonical final report, valuation, decision, and public commit when published.
 
 Use `$event-driven-investment-research` for any catalyst that merits a prospective probability and price-reaction record. Never let a single near-term catalyst replace survival, capital structure, or long-term value analysis.

@@ -68,12 +68,12 @@ Determine whether Snap offers an attractive risk-adjusted return at the eventual
 
 ## Planned outputs
 
-1. [Initial thesis with explicit variant perception](thesis/2026-08-20-initial-thesis.md) — draft complete
-2. [Dated bull/base/bear valuation snapshot](valuation/2026-08-20-valuation.md) — draft complete
-3. [Source log](sources.md), calculation notes, [independent audit trail](research/2026-08-20-integrated-audit.md), and [post-correction verification](research/2026-08-20-post-correction-verification.md) — complete
+1. [Canonical final report with explicit variant perception](thesis/2026-W34-final-report.md) — draft complete
+2. [Canonical bull/base/bear valuation](valuation/2026-W34-valuation.md) — draft complete
+3. [Source log](sources.md), calculation notes, and [independent final review](research/2026-08-21-independent-review.md) — complete
 4. [Competitive advertising-system map](research/2026-08-20-ads-ai-competition.md) — complete
 5. Scoped [ad-ranking feasibility experiment](experiments/ad-ranking-feasibility/README.md) — retained as a future mechanism study; not used as valuation evidence
-6. [Decision record](decisions/2026-08-20-hold.md) — draft complete
+6. [Canonical decision record](decisions/2026-W34-decision.md) — draft complete
 
 ## Resolved and open publication decisions
 

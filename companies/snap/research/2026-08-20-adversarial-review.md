@@ -15,7 +15,7 @@ tags: [investment-committee, bear-case, valuation, position-sizing, pre-mortem]
 
 # Snap adversarial investment-committee review
 
-> **Reader key:** This is the deliberately skeptical review of the 20 August fact set. Its preliminary ranges are preserved as an audit trail; the [21 August re-underwritten thesis](../thesis/2026-08-21-reunderwritten-thesis.md) is the current draft view, and the [20 August thesis](../thesis/2026-08-20-initial-thesis.md) shows the intermediate integration step. Acronyms are expanded at first use and collected in the [glossary](../GLOSSARY.md).
+> **Reader key:** This is deliberately skeptical input to the [canonical final report](../thesis/2026-W34-final-report.md), not a parallel thesis or target. Its preliminary ranges are challenge cases used by the final integration. Acronyms are expanded at first use and collected in the [glossary](../GLOSSARY.md).
 
 ## Committee conclusion
 

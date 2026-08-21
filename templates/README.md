@@ -8,7 +8,7 @@ Copy the smallest template that fits the work, then delete instructions and sect
 | [Company identity](company-identity.md) | Resolve the legal entity, security, identifiers, aliases, and data-join perimeter |
 | [Coverage-cycle manifest](coverage-cycle-readme.md) | Package an initial or repeat valuation under an ISO-week and sequence identifier |
 | [Research plan](research-plan.md) | Define questions and publication gates |
-| [Initial thesis](initial-thesis.md) | Publish a formal, falsifiable company view |
+| [Canonical company report](company-report.md) | Integrate the final thesis, valuation summary, stance, risks, and monitoring plan for one coverage cycle |
 | [Valuation](valuation.md) | Record a dated bull/base/bear target |
 | [Source log](sources.md) | Track source provenance and AI assistance |
 | [Source record](source-record.md) | Validate one source's timing, rights, retrieval, verification, and intended use |
@@ -25,4 +25,4 @@ Copy the smallest template that fits the work, then delete instructions and sect
 | [Market-data capture](market-data-capture.json) | Preserve the normalized provider observations whose SHA-256 digest is bound to a market-data source record |
 | [Experiment README](experiment-readme.md) | Scope and reproduce technical work |
 
-Use ISO 8601 dates and filenames such as `YYYY-MM-DD-descriptive-slug.md`. Store a full company review under a path such as `companies/example/coverage-cycles/2026-W34-01-initial/`; use the ISO week-year, not the calendar year around New Year boundaries.
+Use ISO 8601 dates and filenames such as `YYYY-MM-DD-descriptive-slug.md`. Store a full company review under a path such as `companies/example/coverage-cycles/2026-W34-01-initial/`; use the ISO week-year, not the calendar year around New Year boundaries. Each cycle exposes one `YYYY-Www-final-report.md`; drafts evolve in that file until finalization.

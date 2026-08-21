@@ -24,7 +24,7 @@ One paragraph explaining why the company deserves research. State clearly if no 
 | --- | --- |
 | Coverage | Watching |
 | Research | Researching |
-| Published thesis | None |
+| Canonical final report | None |
 | Current coverage cycle | [{YYYY-Www}-{NN}-{kind}](coverage-cycles/{YYYY-Www}-{NN}-{kind}/README.md) |
 | Current target | Not set |
 | Target horizon | Not set |
@@ -51,8 +51,8 @@ One paragraph explaining why the company deserves research. State clearly if no 
 
 ## Current view
 
-Link the latest published thesis and valuation. Do not duplicate target values in several places.
+Link the latest finalized coverage-cycle report and valuation. Do not duplicate target values in several places.
 
 ## Coverage-cycle history
 
-List each immutable initial or repeat valuation package in chronological order. For every cycle show the ISO week, company cycle number, kind, source cutoff, status, thesis, valuation, decision, and predecessor. Keep dated notes within their applicable cycle.
+List each immutable initial or repeat valuation package in chronological order. For every cycle show the ISO week, company cycle number, kind, source cutoff, status, final report, valuation, decision, and predecessor. Do not list same-cycle working drafts as prior reports.

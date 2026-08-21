@@ -22,12 +22,12 @@ target_bull: 14.25
 target_horizon: 2027-08-20
 target_status: active
 review_by: 2026-11-15
-supersedes: 2026-08-20-valuation.md
+supersedes: null
 ---
 
-# Snap valuation — 21 August 2026 re-underwrite
+# Snap valuation — 2026-W34
 
-> Draft valuation, not a registered forecast or personalized investment advice. It supersedes the assumptions in the [20 August draft](2026-08-20-valuation.md) for the revised thesis. Later same-day [confidence-gap](../research/2026-08-21-confidence-gap-estimates.md) and [regional advertising economics](../research/2026-08-21-regional-ad-economics.md) passes corrected the advertising-price record, bounded regional contribution, and updated probabilities without changing the three scenario values.
+> Draft valuation, not a registered forecast or personalized investment advice. This is the single canonical valuation for coverage cycle `SNAP-2026-W34-01`; all evidence gathered during the cycle is incorporated here.
 
 > **Reader key:** Enterprise value (**EV**), free cash flow (**FCF**), stock-based compensation (**SBC**), adjusted earnings before interest, taxes, depreciation, and amortization (**adjusted EBITDA**), sum of the parts (**SOTP**), and discounted cash flow (**DCF**) are written out at first use. The [glossary and formula guide](../GLOSSARY.md) explains every recurring term.
 
@@ -40,7 +40,7 @@ supersedes: 2026-08-20-valuation.md
 | Bull | **$14.25** | +174% | 20% | $10.81 |
 | **Probability-weighted** | **$7.74** | **+49%** | 100% | **$6.79** |
 
-The revised value is materially above the prior $5.44 probability-weighted draft. The change is not a decision to give Snap Meta's multiple. It comes from four revalidated inputs:
+The current value does not require giving Snap Meta's multiple. It comes from four central inputs:
 
 - much stronger near-term cost leverage;
 - conservative recent adjusted-profit guidance;
@@ -110,7 +110,7 @@ This is why Snap can be cheap on revenue but not obviously cheap on clean curren
 
 ## Revised operating scenarios
 
-The detailed quarter-by-quarter build is in the [21 August forecast](../research/2026-08-21-quarterly-forecast.md).
+The detailed quarter-by-quarter build is in the [21 August forecast](../research/2026-W34-quarterly-forecast.md).
 
 | Third quarter 2026 through second quarter 2027 | Bear | Base | Bull |
 | --- | ---: | ---: | ---: |
@@ -250,7 +250,7 @@ Probability-weighted value =
 
 The 25% bear weight remains substantial. Snap is founder-controlled, the public shares have no vote, advertising price repair has been observed for only one quarter, high-value users are shrinking, and legal outcomes have a fat tail. The 20% bull weight reflects real product, direct-revenue, and cost evidence rather than merely multiple optimism; it is unchanged because second-quarter impressions were roughly flat and World Cup spending helped demand.
 
-These probabilities are analyst judgment, not a calibrated reference-class frequency. Relative to the initial same-day re-underwrite, bear falls from 30% to 25%, base rises from 50% to 55%, and bull remains 20%. Since expected value is highly sensitive to both probabilities and multiples, $7.74 should be read as a decision aid, not revalidated precision.
+These probabilities are analyst judgment, not a calibrated reference-class frequency. The completed evidence pass supports 25% bear, 55% base, and 20% bull. Since expected value is highly sensitive to both probabilities and multiples, $7.74 should be read as a decision aid, not false precision.
 
 ### Recommendation-upside sensitivity—not an add-on
 
@@ -280,7 +280,7 @@ The [peer valuation memo](../research/2026-08-21-meta-reddit-relative-valuation.
 | --- | ---: | ---: | ---: | ---: |
 | Meta Platforms | 6.11 times | 28% | 38.1% | $605 versus $545.83 reference |
 | Reddit | 10.19 times | 61% | 28.2% | $176 versus $150.31 reference |
-| Snap | 1.68 times | 19% | -5.1% | **$7.74 versus $5.21 reference** in this re-underwrite |
+| Snap | 1.68 times | 19% | -5.1% | **$7.74 versus $5.21 reference** in the current valuation |
 
 Meta is not obviously cheap after adjusting for approximately $130–$145 billion of planned 2026 capital expenditure and massive infrastructure commitments. Reddit is growing much faster but its 10 times revenue multiple is fragile. The comparison nevertheless matters: Snap can remain heavily discounted and still produce strong equity upside.
 
@@ -369,14 +369,13 @@ That supports an attractive research stance. It does not make a concentrated pos
 - **Horizon:** 20 August 2027.
 - **Evaluation rule if later registered:** Snap's unadjusted regular-session close on 20 August 2027, or the immediately preceding New York Stock Exchange session.
 - **Review:** immediately after third-quarter 2026 results and no later than 15 November 2026.
-- **Prior record:** this draft supersedes the assumptions in the [20 August valuation](2026-08-20-valuation.md), which remains as a historical draft.
 - **Scorecard-registration blockers:** replace the dynamic $5.21 quote with a reproducible official-close record, freeze the matching benchmark observation and rule, assign the formal identifier, and obtain explicit prospective-registration approval before writing the immutable ledger record.
 
 ## Sources and verification
 
 - [Central source log](../sources.md)
 - [Financials and capital structure](../research/2026-08-20-financials-capital-structure.md)
-- [Four-quarter forecast and capital bridge](../research/2026-08-21-quarterly-forecast.md)
+- [Four-quarter forecast and capital bridge](../research/2026-W34-quarterly-forecast.md)
 - [Advertising-price and recommendation-system revalidation](../research/2026-08-21-ads-pricing-recommenders-revalidation.md)
 - [Meta and Reddit peer valuation](../research/2026-08-21-meta-reddit-relative-valuation.md)
 - [Regulation and cost revalidation](../research/2026-08-21-regulation-costs-revalidation.md)

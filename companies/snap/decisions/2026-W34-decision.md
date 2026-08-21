@@ -18,15 +18,15 @@ price: 5.21
 price_at: 2026-08-20T20:59:05Z
 price_source: integrated_public_market_data_feed
 position_disclosure: long
-thesis_path: companies/snap/thesis/2026-08-21-reunderwritten-thesis.md
-valuation_path: companies/snap/valuation/2026-08-21-reunderwritten-valuation.md
+thesis_path: companies/snap/thesis/2026-W34-final-report.md
+valuation_path: companies/snap/valuation/2026-W34-valuation.md
 benchmark: QQQ_adjusted_close_total_return_same_session_rule
 target_horizon: 2027-08-20
 expected_return_pct: 48.5
 expected_excess_return_pct: null
 action_hurdle_pct: 8.0
 review_by: 2026-11-15
-supersedes: "2026-001"
+supersedes: null
 ---
 
 # SNAP — attractive research stance; hold / no add before third-quarter proof
@@ -35,7 +35,7 @@ supersedes: "2026-001"
 
 ## Decision
 
-The revised research stance is **attractive**. The exact scenario-weighted value before display rounding is $7.7375 versus a $5.21 reference, an expected return of approximately 48.5%; the displayed value is $7.74. The same-day [confidence-gap evidence pass](../research/2026-08-21-confidence-gap-estimates.md) moved five probability points from bear to base after Snap's Form 10-Q showed second-quarter advertising price per impression up approximately 10%; it did not change any scenario value.
+The research stance is **attractive**. The exact scenario-weighted value before display rounding is $7.7375 versus a $5.21 reference, an expected return of approximately 48.5%; the displayed value is $7.74. The [confidence-gap evidence pass](../research/2026-08-21-confidence-gap-estimates.md) supports the completed 25% bear / 55% base / 20% bull distribution after Snap's Form 10-Q showed second-quarter advertising price per impression up approximately 10%.
 
 The 8% action hurdle in the metadata is an **illustrative absolute-return hurdle**, not a forecast for the Nasdaq-100 exchange-traded fund benchmark (**QQQ**). Expected benchmark excess return is left blank because this record does not forecast QQQ. QQQ remains named so eventual performance can be measured against the same-session benchmark return.
 
@@ -83,9 +83,9 @@ Review immediately after third-quarter 2026 results and no later than 15 Novembe
 
 ## Evidence
 
-- [Main thesis and industry explainer](../thesis/2026-08-21-reunderwritten-thesis.md)
-- [Valuation](../valuation/2026-08-21-reunderwritten-valuation.md)
-- [Four-quarter forecast](../research/2026-08-21-quarterly-forecast.md)
+- [Main thesis and industry explainer](../thesis/2026-W34-final-report.md)
+- [Valuation](../valuation/2026-W34-valuation.md)
+- [Four-quarter forecast](../research/2026-W34-quarterly-forecast.md)
 - [Advertising and recommendation-system revalidation](../research/2026-08-21-ads-pricing-recommenders-revalidation.md)
 - [Open-source recommendation systems, current team evidence, and quantified upside](../research/2026-08-21-open-source-recommender-gap.md)
 - [Confidence-gap estimates](../research/2026-08-21-confidence-gap-estimates.md)

@@ -12,7 +12,7 @@ scope: independent-valuation-publication-review
 
 ## Conclusion
 
-**Analytical dossier: pass. Public prospective registration: pending.** Three independent review tracks examined the 21 August re-underwrite for valuation arithmetic and capital structure, evidence and source quality, and public-repository safety and lifecycle consistency. Same-day confidence-gap, regional-economics, Gemini/recommender, and licensed-workforce passes then corrected the advertising-price and Universal User Model records, bounded additional inputs, and updated probability weights. The bear, base, bull, probability-weighted, and six-month values reconstruct without a central arithmetic error. The final findings described below were resolved before release.
+**Analytical dossier: pass. Public prospective registration: pending.** Three independent review tracks examined the final coverage-cycle analysis for valuation arithmetic and capital structure, evidence and source quality, and public-repository safety and lifecycle consistency. Confidence-gap, regional-economics, Gemini/recommender, and licensed-workforce work corrected the advertising-price and Universal User Model records, bounded additional inputs, and informed probability weights. The bear, base, bull, probability-weighted, and six-month values reconstruct without a central arithmetic error. The final findings described below were resolved before release.
 
 This pass means the research can be preserved as a clearly labeled draft under `companies/snap/`. It does not turn the record into a registered forecast: the reference price and matching benchmark observation still require reproducible official-close provenance, followed by a formal identifier and human approval.
 
@@ -36,7 +36,7 @@ This pass means the research can be preserved as a clearly labeled draft under `
 | Licensed evidence | A workforce memo reproduced exact licensed-local-only aggregates | Removed all licensed figures from tracked files; the public memo now contains source metadata, a rights boundary, public facts, and original qualitative analysis only |
 | Personal financial data | Drafts disclosed exact position size, cost basis, and inferable portfolio value | Reduced public disclosure to `long`; sizing and cost basis are omitted |
 | Source provenance | Filing dates and source-log structure were inconsistent in several places | Corrected the filing date, repaired the central table, and clarified that module-specific citations retain specialist provenance |
-| Record lifecycle | Superseded 20 August records still appeared machine-active | Marked prior thesis and valuation targets superseded and clarified the draft/unregistered state throughout |
+| Record lifecycle | Same-cycle working files could be mistaken for parallel theses or valuations | Exposed one canonical report, valuation, forecast, and decision; Git history retains working-draft evolution |
 | Repository layout | Research filenames were inconsistent and top-level navigation was stale | Standardized dated research filenames and kept all company-specific work inside the self-contained SNAP folder |
 
 ## Recalculation checks

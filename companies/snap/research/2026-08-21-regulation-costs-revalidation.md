@@ -11,7 +11,7 @@ tags: [snapchat, regulation, litigation, youth-safety, australia, united-states,
 
 # Snap regulation and cost-structure revalidation
 
-> **Purpose:** re-underwrite the child-safety regulation, litigation, and cost-efficiency risks that matter to Snap's next 12 months and longer-term value. This is analyst research, not legal advice or a trade instruction.
+> **Purpose:** evaluate the child-safety regulation, litigation, and cost-efficiency risks that matter to Snap's next 12 months and longer-term value. This is analyst research, not legal advice or a trade instruction.
 >
 > **Reader rule:** a **Fact** is reported by Snap, a court, a legislature, or a regulator; a **Calculation** is arithmetic from stated inputs; an **Assumption** is an uncertain model input. Full terms appear before acronyms at first use in this memo.
 >

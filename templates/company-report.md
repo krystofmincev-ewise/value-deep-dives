@@ -1,7 +1,7 @@
 ---
 type: company_thesis
 forecast_id: null
-title: "{Company}: initial thesis"
+title: "{Company}: coverage-cycle investment report"
 company: "{Company}"
 ticker: "{TICKER}"
 exchange: "{Exchange}"
@@ -37,9 +37,9 @@ supersedes: null
 tags: []
 ---
 
-# {Company}: initial thesis
+# {Company}: coverage-cycle investment report
 
-> Draft until `research_status` is `published` and `published_at` is populated.
+> This is the cycle's single canonical report. Update it in place while `research_status` is `draft`; once published, start a new ISO-week cycle for any material revaluation.
 
 ## One-paragraph view
 

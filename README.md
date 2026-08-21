@@ -16,7 +16,7 @@ Those outcomes are motivation, not proof. The sample is tiny and selected, the h
 
 From 17 August 2026 onward, formal ideas can be judged from contemporaneous records rather than reconstructed memories:
 
-- Initial theses, valuations, and decisions are dated and preserved.
+- Each coverage cycle culminates in one canonical final report, valuation, and decision; same-cycle draft evolution remains in Git history.
 - Bull, base, and bear cases state their assumptions and time horizon.
 - Screens retain the full candidate set, including passes and abandoned ideas.
 - Updates supersede prior work without silently rewriting it.
@@ -48,9 +48,9 @@ The detailed process lives in [methodology](methodology/README.md). A completed 
 
 | Company | Ticker | Status | Current target | Workspace |
 | --- | --- | --- | --- | --- |
-| Snap Inc. | SNAP | Draft deep dive complete; prospective registration pending | [Draft valuation available](companies/snap/valuation/2026-08-21-reunderwritten-valuation.md) | [Open the Snap deep dive](companies/snap/README.md) |
+| Snap Inc. | SNAP | Draft deep dive complete; prospective registration pending | [Draft valuation available](companies/snap/valuation/2026-W34-valuation.md) | [Open the Snap deep dive](companies/snap/README.md) |
 
-The Snap dossier is self-contained under [`companies/snap/`](companies/snap/README.md), including identity, sources, research modules, dated theses, valuations, decisions, and company-specific experiments. Its [first coverage-cycle manifest](companies/snap/coverage-cycles/2026-W34-01-initial/README.md) binds the current records into one dated valuation generation. The records remain drafts until the documented market-price and prospective-registration gates are complete.
+The Snap dossier is self-contained under [`companies/snap/`](companies/snap/README.md), including identity, sources, research modules, one canonical final report and valuation for each coverage cycle, decisions, and company-specific experiments. Its [first coverage-cycle manifest](companies/snap/coverage-cycles/2026-W34-01-initial/README.md) binds the current records into one valuation generation. The records remain drafts until the documented market-price and prospective-registration gates are complete.
 
 ## Repository map
 

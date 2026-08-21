@@ -17,10 +17,10 @@ As of 2026-08-20, this repository has a provenance-aware acquisition layer but n
 | --- | --- | --- |
 | Company and security identity | `companies/<ticker>/identity.md` | Resolve legal entity, listing, currency, fiscal calendar, CIK/LEI, aliases, and source coverage before joining data. |
 | Company landing page | `companies/<ticker>/README.md` | Preserve one durable URL for the current view and the chronological coverage-cycle index. |
-| Coverage cycle | `companies/<ticker>/coverage-cycles/<YYYY-Www>-<NN>-<kind>/README.md` | Freeze the scope, cutoff, canonical outputs, predecessor, and change summary for each initial or repeat valuation round. |
+| Coverage cycle | `companies/<ticker>/coverage-cycles/<YYYY-Www>-<NN>-<kind>/README.md` | Define the scope, cutoff, single canonical report, predecessor, and outputs for each initial or repeat valuation round. |
 | Source and claim | Coverage-cycle or study source log | Connect a claim or model input to an original source, access state, rights class, retrieval method, and verification state. |
-| Thesis | Dated thesis inside the applicable coverage cycle | State the variant view, falsifiers, uncertainty, and horizon. |
-| Valuation | Dated valuation inside the applicable coverage cycle | Reconcile operating cases, capital structure, scenario values, and sensitivities. |
+| Final company report | One `YYYY-Www-final-report.md` inside the applicable coverage cycle | Integrate the thesis, variant view, valuation summary, stance, falsifiers, uncertainty, and horizon; evolve in place until the cycle is finalized. |
+| Valuation | One canonical valuation inside the applicable coverage cycle | Reconcile operating cases, capital structure, scenario values, and sensitivities; compare only to prior finalized cycles. |
 | Decision | Dated decision inside the applicable coverage cycle | Map the research view and portfolio context to buy/add/reduce/exit/watch/pass. |
 | Event forecast | Dated event forecast plus event ledger | Pre-register an observable event outcome and a separate security-return outcome. |
 | Outcome | Dated event outcome or retrospective | Resolve the original rule without rewriting it, then attribute insight, market exposure, timing, and luck. |
@@ -73,7 +73,7 @@ Position size, taxes, liquidity, constraints, and actual fills may remain privat
 - SEC submissions and Company Facts retrieval with caching and rate controls.
 - Europe PMC, arXiv, and ClinicalTrials.gov evidence retrieval with licence-aware capture.
 - Authenticated browser workflows for Gemini, Revelio, YouTube, FT discovery, and focused archive retrieval.
-- Dated thesis, valuation, decision, update, source, experiment, and retrospective templates.
+- Canonical coverage-cycle report, valuation, decision, monitoring-note, source, experiment, and retrospective templates.
 - Flat identity, source, fact, event-forecast, event-outcome, evaluation-spec, and ledger schemas with dependency-free validators.
 - Repository-native company, event, and forecast-evaluation skills with sector playbooks and explicit fail-closed gates.
 - Independent event/security Brier scoring, frozen-baseline comparison, per-proposition resolution, and committed-record linkage auditing.

@@ -1,7 +1,7 @@
 ---
 type: company_thesis
 forecast_id: null
-title: "Snap Inc.: re-underwritten investment thesis and industry explainer"
+title: "Snap Inc.: final investment report and industry explainer"
 company: Snap Inc.
 ticker: SNAP
 exchange: NYSE
@@ -33,24 +33,24 @@ confidence: medium
 research_stance: attractive
 position_disclosure: long
 originating_study: ../research-plan.md
-supersedes: 2026-08-20-initial-thesis.md
+supersedes: null
 tags: [social-media, digital-advertising, subscriptions, augmented-reality, founder-control]
 ---
 
-# Snap: re-underwritten investment thesis and industry explainer
+# Snap: final investment report and industry explainer
 
 > Draft research, not personalized investment advice. Source cutoff: 21 August 2026. Reference price: **$5.21**.
 
 > **Terminology promise:** this document deliberately repeats the full term with the acronym in brackets—for example, daily active users (**DAU**)—instead of expecting you to remember shorthand. The separate [plain-English glossary and formula guide](../GLOSSARY.md) is there when you want a definition without interrupting the argument.
 
-> **What changed:** this is a fresh re-underwrite, not a light edit of the [20 August draft](2026-08-20-initial-thesis.md). It gives more weight to cost leverage, recent guidance behavior, direct revenue, and relative valuation; it also deepens advertising prices, recommendation engines, regulation, and founder history. Same-day [confidence-gap](../research/2026-08-21-confidence-gap-estimates.md), [regional-economics](../research/2026-08-21-regional-ad-economics.md), and [open-source recommender](../research/2026-08-21-open-source-recommender-gap.md) passes corrected the advertising-price and Universal User Model records, bounded regional profitability and five other missing inputs, incorporated an audited Gemini second opinion and licensed workforce signals, and translated recommendation progress into an explicit sensitivity. The consolidated scenario values are unchanged; the evidence-gap pass shifted probability from bear to base.
+> **Coverage-cycle status:** this is the single canonical report for `SNAP-2026-W34-01`. It integrates the full research cycle, including [confidence-gap](../research/2026-08-21-confidence-gap-estimates.md), [regional-economics](../research/2026-08-21-regional-ad-economics.md), and [open-source recommender](../research/2026-08-21-open-source-recommender-gap.md) work. Working drafts from the same cycle are not separate research records; Git history preserves their evolution.
 
 ## Read this in layers
 
 If attention is limited, use this order:
 
 1. **2 minutes:** [the answer, valuation, required conditions, and break case](#two-minute-answer).
-2. **10 minutes:** [why the valuation changed](#why-the-valuation-changed-from-the-earlier-draft) and [valuation in plain English](#valuation-in-plain-english).
+2. **10 minutes:** [what drives the current valuation](#what-drives-the-current-valuation) and [valuation in plain English](#valuation-in-plain-english).
 3. **25 minutes:** [users](#users-enormous-scale-uneven-economics), [advertising prices](#is-snap-actually-cheaper-than-facebook-or-instagram), [recommendation engines](#why-metas-recommendation-engine-is-harder-to-copy-than-it-looks), [subscriptions](#subscriptions-and-other-revenue), and [cost structure](#cost-structure-is-serving-almost-500-million-daily-users-expensive).
 4. **Risk review:** [Specs](#specs-option-value-capital-allocation-risk-and-the-missing-glasses), [regulation and litigation](#regulation-and-litigation), [strongest bear case](#strongest-bear-case), and [falsifiers](#evidence-that-would-change-the-thesis).
 5. **Decision and monitoring:** [position framework](#position-size-framework), [next-results checklist](#what-to-watch-in-the-next-results), and [final judgment](#final-judgment).
@@ -100,13 +100,13 @@ It requires four more modest things:
 
 ### Confidence
 
-Confidence is **medium, materially improved**, not high. The second-quarter Form 10-Q reports advertising price per impression up approximately 10%, eliminating the most important purported disclosure gap in the earlier draft. Recent country-level ad prices, format observations, subscription prices, and a Q2-reconciled cost allocation now support North America / Europe / Rest-of-World base gross contribution margins near **72% / 60% / 13%**, with Rest of World approximately breakeven after directly attributable cash-like sales and support. Public evidence also supports a company-selected subscription-retention uplift, consumer-subscription base-rate sensitivities, an $8 million school-district settlement term, and a current Specs spending estimate. These narrow and reorder the unknowns; they do not replace company-reported subscriber cohorts, regional costs, Specs unit economics, or aggregate legal remedies. See the [confidence-gap evidence pass](../research/2026-08-21-confidence-gap-estimates.md) and [regional advertising economics model](../research/2026-08-21-regional-ad-economics.md).
+Confidence is **medium**, not high. The second-quarter Form 10-Q reports advertising price per impression up approximately 10%, resolving an important disclosure question. Recent country-level ad prices, format observations, subscription prices, and a Q2-reconciled cost allocation support North America / Europe / Rest-of-World base gross contribution margins near **72% / 60% / 13%**, with Rest of World approximately breakeven after directly attributable cash-like sales and support. Public evidence also supports a company-selected subscription-retention uplift, consumer-subscription base-rate sensitivities, an $8 million school-district settlement term, and a current Specs spending estimate. These narrow and reorder the unknowns; they do not replace company-reported subscriber cohorts, regional costs, Specs unit economics, or aggregate legal remedies. See the [confidence-gap evidence pass](../research/2026-08-21-confidence-gap-estimates.md) and [regional advertising economics model](../research/2026-08-21-regional-ad-economics.md).
 
 ---
 
 ## Your original purchase map—context, not claims to grade
 
-Your opening figures were rough recollections used to explain **why the opportunity felt compelling**. They were not a set of precise claims you were asking to have marked right or wrong. This re-underwrite treats them as an approximate investment map.
+Your opening figures were rough recollections used to explain **why the opportunity felt compelling**. They were not a set of precise claims you were asking to have marked right or wrong. This report treats them as an approximate investment map.
 
 | Approximate idea behind the purchase | What current evidence adds |
 | --- | --- |
@@ -124,9 +124,9 @@ Your opening figures were rough recollections used to explain **why the opportun
 
 ---
 
-## Why the valuation changed from the earlier draft
+## What drives the current valuation
 
-The earlier probability-weighted value was $5.44. The re-underwrite initially produced $7.48; the same-day evidence-gap correction increases it to $7.74 by shifting five probability points from bear to base. The scenario values themselves are unchanged. The total change is large enough that it needs an explicit bridge.
+The current probability-weighted value is $7.74. It reflects a 25% bear, 55% base, and 20% bull distribution around unchanged scenario values of $2.50, $7.75, and $14.25. Four operating and valuation judgments explain most of the result.
 
 ### 1. Recent adjusted-profit guidance has been conservative
 
@@ -141,7 +141,7 @@ Revenue was different: across five recent quarters with formal guidance, the med
 
 Snap now guides third-quarter revenue to $1.70–$1.74 billion and adjusted earnings before interest, taxes, depreciation, and amortization (**adjusted EBITDA**) to $300–$350 million. The revised base forecasts $1.76 billion and $390 million—modestly above the revenue high end and 11% above the adjusted-profit high end, not a mechanical repetition of the historical median beat.
 
-### 2. Cost leverage is stronger than the earlier thesis acknowledged
+### 2. Cost leverage is central to the current case
 
 In the second quarter of 2026:
 
@@ -168,7 +168,7 @@ The peer valuations are intentionally short, not full theses. Meta Platforms loo
 
 Snap does not deserve 6 or 10 times revenue. But the revised base requires only an implied multiple near 2.05 times. Snap can remain heavily discounted and still produce meaningful upside.
 
-### 4. The earlier model was right to distrust headline free cash flow (FCF)—but too slow to credit the margin path
+### 4. Headline free cash flow (FCF) remains suspect, but the reported margin path is real
 
 Trailing free cash flow (**FCF**) was $706 million while trailing stock-based compensation (**SBC**) was $1.031 billion. Headline free cash flow (**FCF**) therefore overstates current owner earnings if share count keeps rising.
 
@@ -1094,7 +1094,7 @@ Dollar figures are billions of United States dollars.
 | First quarter of 2027 | $1.803 billion | $361 million | continued low-teens advertising and 35% Other Revenue growth |
 | Second quarter of 2027 | $1.880 billion | $395 million | high-value-user stabilization and approximately 60% gross margin |
 
-The [revised quarterly model](../research/2026-08-21-quarterly-forecast.md) contains the quarterly revenue and adjusted-profit build, an annual cost and cash-flow bridge, the capital bridge, formulas, and upgrade/downgrade checkpoints. Working capital and target share count remain analyst assumptions because Snap does not disclose enough detail for a fully mechanical forecast.
+The [revised quarterly model](../research/2026-W34-quarterly-forecast.md) contains the quarterly revenue and adjusted-profit build, an annual cost and cash-flow bridge, the capital bridge, formulas, and upgrade/downgrade checkpoints. Working capital and target share count remain analyst assumptions because Snap does not disclose enough detail for a fully mechanical forecast.
 
 ---
 
@@ -1143,7 +1143,7 @@ Probability-weighted value =
 | Discounted-cash-flow method | $2.24 | $7.07 | $14.22 |
 | **Adopted** | **$2.50** | **$7.75** | **$14.25** |
 
-The [full valuation](../valuation/2026-08-21-reunderwritten-valuation.md) shows the enterprise-value bridge, five-year discounted cash flow, sum of the parts, regulation treatment, relative peers, and sensitivities.
+The [full valuation](../valuation/2026-W34-valuation.md) shows the enterprise-value bridge, five-year discounted cash flow, sum of the parts, regulation treatment, relative peers, and sensitivities.
 
 ### Why $7.75 is not an aggressive peer multiple
 
@@ -1322,7 +1322,7 @@ Base expectations:
 
 The original purchase intuition—an enormous user asset trading at a severe relative discount with obvious monetization headroom—was not careless as a thesis. The important correction is that **headroom is an opportunity, not an entitlement**.
 
-The new evidence is more positive than the earlier draft:
+The evidence supports the attractive stance because:
 
 - direct revenue is large enough to change the company growth rate;
 - cost leverage is visible in reported gross margin and adjusted profit;
@@ -1347,7 +1347,7 @@ At $5.21, the expected return is high enough for an **attractive research stance
 
 ## Research process and source trail
 
-This re-underwrite used parallel specialist workstreams for:
+This coverage cycle used parallel specialist workstreams for:
 
 - Meta Platforms and Reddit relative valuations;
 - advertising costs and recommendation engines;
@@ -1367,8 +1367,8 @@ Licensed Revelio Labs aggregates were used as a lower-weight organizational-capa
 
 Start with these supporting files if you want to challenge one part:
 
-- [Full valuation and formulas](../valuation/2026-08-21-reunderwritten-valuation.md)
-- [Four-quarter forecast](../research/2026-08-21-quarterly-forecast.md)
+- [Full valuation and formulas](../valuation/2026-W34-valuation.md)
+- [Four-quarter forecast](../research/2026-W34-quarterly-forecast.md)
 - [Meta Platforms and Reddit quick valuations](../research/2026-08-21-meta-reddit-relative-valuation.md)
 - [Advertising prices and recommendation engines](../research/2026-08-21-ads-pricing-recommenders-revalidation.md)
 - [Open-source recommendation systems, current team evidence, and quantified upside](../research/2026-08-21-open-source-recommender-gap.md)

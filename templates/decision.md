@@ -36,7 +36,7 @@ Research stance (`attractive`, `neutral`, `unattractive`, or `insufficient_evide
 
 ## Evidence available at the time
 
-Links to the exact thesis, valuation, sources, and commit.
+Links to the exact canonical final report, valuation, sources, and commit.
 
 ## Expected value and downside
 

@@ -46,7 +46,7 @@ Sources: [second-quarter 2025 letter containing third-quarter guidance](https://
 
 Snap guides third-quarter revenue to $1.70 billion to $1.74 billion and adjusted EBITDA to $300 million to $350 million. Personnel savings should be more fully visible from this quarter.
 
-The re-underwrite should therefore use:
+The canonical forecast should therefore use:
 
 - **Bear:** revenue below or near the low end and adjusted EBITDA around the low end;
 - **Base:** revenue modestly above the midpoint or high end, with adjusted EBITDA moderately above $350 million;

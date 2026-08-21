@@ -57,7 +57,7 @@ State a tentative hypothesis without presenting it as a conclusion.
 
 ## Planned outputs
 
-1. Initial thesis
+1. Canonical coverage-cycle report
 2. Dated valuation
 3. Decision or documented pass
 

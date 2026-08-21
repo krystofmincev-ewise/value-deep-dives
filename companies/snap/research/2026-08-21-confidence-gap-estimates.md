@@ -11,13 +11,13 @@ tags: [snapchat, subscriptions, retention, advertising, specs, litigation, regio
 
 # Snap valuation confidence-gap estimates
 
-> **Purpose:** determine whether public filings, independent data, signed-in research services, publisher discovery, interviews, and transparent calculations can replace or bound the six missing inputs identified in the re-underwritten thesis.
+> **Purpose:** determine whether public filings, independent data, signed-in research services, publisher discovery, interviews, and transparent calculations can replace or bound six material inputs identified during the coverage cycle.
 >
 > **Evidence rule:** reported facts, calculations, external estimates, and assumptions are kept separate. A proxy is not relabeled as a company disclosure. This memo updates the same-day draft; it is not personalized investment advice.
 
 ## Answer first
 
-The additional work materially improves the valuation record. The biggest result is not an estimate: Snap's second-quarter 2026 Form 10-Q says average advertising price per impression **rose approximately 10% year over year**. The earlier draft incorrectly called second-quarter price undisclosed. With advertising revenue up 9.3%, delivered impressions were approximately flat to slightly down on a simple revenue/price identity. This is the first clear quarter of company-wide yield repair in the recent series.
+The biggest result is not an estimate: Snap's second-quarter 2026 Form 10-Q says average advertising price per impression **rose approximately 10% year over year**. That resolves the initial disclosure question. With advertising revenue up 9.3%, delivered impressions were approximately flat to slightly down on a simple revenue/price identity. This is the first clear quarter of company-wide yield repair in the recent series.
 
 Five other gaps can be narrowed, but not eliminated:
 
@@ -128,7 +128,7 @@ Q2 ≈ 1.0929 / 1.10 - 1 = -0.65%
 
 Because Snap rounded price to "approximately 10%" and mix sits inside the average-price measure, the correct description is **roughly flat to slightly negative impressions**, not a precise -0.65% observation.
 
-This is materially more constructive than the earlier draft. Q2 reversed the recent pattern of double-digit impression growth and falling price. It also introduces a new caution: 9% advertising growth came from price/mix while volume did not grow. Sustainable low-to-mid-teens advertising growth now requires price repair to persist, impression delivery to resume without dilution, or both.
+Q2 reversed the recent pattern of double-digit impression growth and falling price. It also introduces a new caution: 9% advertising growth came from price/mix while volume did not grow. Sustainable low-to-mid-teens advertising growth now requires price repair to persist, impression delivery to resume without dilution, or both.
 
 Cost per install (-8%), cost per purchase (-18%), app-purchase volume (+128%), and the issuer-sponsored incremental-return study are advertiser-outcome metrics. They support a mechanism for higher demand but are not substitutes for the company-wide price disclosure. [Snap Q2 2026 prepared remarks](https://s25.q4cdn.com/442043304/files/doc_financials/2026/q2/Q2-2026-Prepared-Remarks.pdf)
 
@@ -194,7 +194,7 @@ Confidence remains below high because:
 - one $8 million school settlement does not price the wider litigation or remedy tail;
 - founder control, dilution, high-value-user decline, debt, and regulatory product changes still widen the distribution.
 
-The correct wording is therefore **medium confidence, materially improved from the earlier draft**. The new work increases confidence in the central scenario calibration more than it increases the precision of the point target.
+The correct wording is therefore **medium confidence**. The evidence supports the central scenario calibration more strongly than it supports precision in the point target.
 
 ---
 

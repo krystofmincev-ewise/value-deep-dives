@@ -13,7 +13,7 @@ scope: meta_reddit_relative_valuation_and_snap_guidance_history
 
 > **Draft research memo.** This is a peer-valuation exercise, not a recommendation to trade Meta Platforms, Reddit, or Snap. Prices can move after the recorded timestamps. All dollars are United States dollars. Figures are in billions unless stated otherwise.
 
-> **Integration note:** The peer work was completed before the final 21 August Snap re-underwrite. The Snap summary row and links below point to the current draft valuation; the peer facts and scenario work retain this memo's earlier 02:30 CEST cutoff.
+> **Integration note:** The peer work retains its 02:30 CEST source cutoff. The Snap summary row and links below point to the coverage cycle's canonical valuation.
 
 > **Reader key:** A numbered quarter is abbreviated after first use: first quarter (**Q1**), second quarter (**Q2**), third quarter (**Q3**), and fourth quarter (**Q4**). Financial and operating shorthand is otherwise expanded when it first appears.
 
@@ -25,7 +25,7 @@ Snap is **genuinely cheap on revenue and user-value ratios**. It is not obviousl
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | **Meta Platforms** | $545.83 | 6.11x | Q2 total +28%; ads +27% | 38.1% | 16.6% | 11.0% | First-half diluted weighted-average shares -0.6% year over year | **$605** |
 | **Reddit** | $150.31 | 10.19x | Q2 total +61%; ads +64% | 28.2% | 36.7% | 12.2% | Fully diluted shares +0.2% year over year after repurchases | **$176** |
-| **Snap** | $5.21 | 1.68x | Q2 total +19%; ads +9% | **-5.1%** | 11.1% | **16.2%** | Fully diluted proxy +3.0% year over year | Current [re-underwritten valuation](../valuation/2026-08-21-reunderwritten-valuation.md): **$7.74** |
+| **Snap** | $5.21 | 1.68x | Q2 total +19%; ads +9% | **-5.1%** | 11.1% | **16.2%** | Fully diluted proxy +3.0% year over year | Current [canonical valuation](../valuation/2026-W34-valuation.md): **$7.74** |
 
 **Interpretation:** Snap trades at a 72% discount to Meta and an 84% discount to Reddit on enterprise value / trailing revenue. The discount is too large to dismiss, but most of it has an economic explanation: weaker advertising growth, negative accounting profit, lower monetization, higher dilution, net debt, and weaker governance rights. The valuation question is not whether Snap should receive Meta's or Reddit's multiple today. It is whether Snap can earn even a modest **2.0x–2.5x** multiple by proving durable advertising growth, positive owner earnings, and contained dilution. A 2.4x target-date revenue multiple is still 61% below Meta's current multiple and 76% below Reddit's.
 
@@ -179,7 +179,7 @@ The **$176 probability-weighted twelve-month value** is about 17% above $150.31.
 
 ### The strongest case that the market is too pessimistic
 
-1. **The revenue discount is extreme.** Snap's 1.68x EV/revenue multiple is less than one-third of Meta's and less than one-fifth of Reddit's. Snap need not become Meta to rerate: applying 2.20x to the re-underwritten base revenue case produces approximately $8.34 per share before cross-method triangulation.
+1. **The revenue discount is extreme.** Snap's 1.68x EV/revenue multiple is less than one-third of Meta's and less than one-fifth of Reddit's. Snap need not become Meta to rerate: applying 2.20x to the base revenue case produces approximately $8.34 per share before cross-method triangulation.
 2. **Snap's total growth is no longer weak.** Q2 total revenue grew 19%, global average revenue per user rose 13%, North American average revenue per user rose 23%, Europe rose 36%, and direct revenue grew 85%. Those are credible monetization proof points even though advertising grew only 9%. [Snap Q2 2026 results](https://investor.snap.com/news/news-details/2026/Snap-Inc--Announces-Second-Quarter-2026-Financial-Results/default.aspx)
 3. **Cost leverage is visible.** TTM adjusted earnings before interest, taxes, depreciation, and amortization (adjusted EBITDA) reached $1.02 billion and TTM FCF reached $706 million. The April 2026 restructuring targets more than $500 million of annualized savings, and the cleaner run-rate should appear from Q3 onward. [Snap Q2 2026 investor letter](https://s25.q4cdn.com/442043304/files/doc_financials/2026/q2/Q2-2026-Prepared-Remarks.pdf), [April 2026 investor update](https://www.sec.gov/Archives/edgar/data/1564408/000119312526155861/d36756dex992.htm)
 4. **Management has recently guided conservatively on adjusted profit.** The guide-history appendix shows repeated adjusted-EBITDA outcomes $51–$63 million above initial midpoints. That supports modest cost upside in scenario probabilities.

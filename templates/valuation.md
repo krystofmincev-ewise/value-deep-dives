@@ -80,7 +80,7 @@ What this model omits or treats simplistically.
 
 ## Target lifecycle
 
-Horizon, evaluation rule, next review, falsifiers, and link to the file this supersedes.
+Horizon, evaluation rule, next review, and falsifiers. Link a prior valuation only when it belongs to a different finalized coverage cycle; same-cycle working drafts are not separate records.
 
 ## Sources
 

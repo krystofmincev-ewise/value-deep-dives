@@ -5,26 +5,26 @@ ticker: SNAP
 status: draft
 as_of: 2026-08-21
 source_cutoff_at: 2026-08-21T16:15:00+02:00
-scope: reunderwritten-four-quarter-operating-forecast
+scope: coverage-cycle-four-quarter-operating-forecast
 tags: [forecast, advertising, direct-revenue, profitability, guidance]
 ---
 
-# Snap four-quarter operating forecast — 21 August 2026 re-underwrite
+# Snap four-quarter operating forecast — 2026-W34
 
-> Draft analyst model, not company guidance, a registered forecast, or personalized investment advice. This replaces the operating assumptions in the [20 August draft](2026-08-20-quarterly-forecast.md) for purposes of the revised thesis. The same-day [confidence-gap pass](2026-08-21-confidence-gap-estimates.md) updates probability weighting but leaves these operating scenarios unchanged.
+> Draft analyst model, not company guidance, a registered forecast, or personalized investment advice. This is the single canonical operating forecast for coverage cycle `SNAP-2026-W34-01`.
 
 > **Reader key:** Adjusted earnings before interest, taxes, depreciation, and amortization (**adjusted EBITDA**); free cash flow (**FCF**); daily active users (**DAU**); stock-based compensation (**SBC**); and effective cost per thousand advertising impressions (**eCPM**) are written out at their first use. See the [plain-English glossary](../GLOSSARY.md).
 
-## What changed
+## Forecast rationale
 
-The earlier forecast was too cautious about near-term profit and slightly too cautious about the range of outcomes for revenue. The revised model gives more weight to four observations:
+The model gives greatest weight to four observations:
 
 1. Snap's adjusted-profit guidance has beaten the top of its initial range by approximately 15%–35% in each of the last four guided quarters. Revenue guidance was much tighter; the median revenue beat versus the initial midpoint was only approximately 1.3% across the last five guided quarters.
 2. Revenue rose 19% year over year in the second quarter of 2026 while the total adjusted cost structure rose only 4%. Adjusted gross margin reached 58%, up seven percentage points.
 3. The April restructuring targets more than $500 million of annualized cost reduction, with the cleaner run rate beginning in the third quarter. It is a run-rate statement, not $500 million of immediate FCF.
 4. Other Revenue grew 85% in the second quarter and now represents nearly 20% of revenue. Advertising remains the valuation-defining engine, but total company growth no longer has to equal advertising growth.
 
-The model is more optimistic than the 20 August draft, but it does not assume that Snap's advertisements become as valuable as Meta's. The base advertising case only requires eCPM to stop falling.
+The model does not assume that Snap's advertisements become as valuable as Meta's. The base advertising case only requires eCPM to stop falling.
 
 ## Formulas
 
@@ -213,7 +213,7 @@ Capital expenditure is kept near Snap's recent approximately $195 million–$219
 
 The residual is an explicit scenario assumption, not a reported line or a forecast produced by an award-by-award treasury schedule. Snap used more cash for first-half repurchases than it generated in first-half FCF, and awards still increased. The row can include repurchases, financing effects, movements in financial assets, and cash that is otherwise not retained. It **excludes** the incremental legal and compliance cash allowances because headline FCF already includes them. The model does not credit every dollar of FCF as balance-sheet improvement and then separately credit buybacks.
 
-The bear deliberately assumes that almost all FCF is consumed while the share count still rises: repurchases fail to offset awards, and cash leaves the simplified net-debt perimeter through other uses. That is conservative and uncertain, not a claim about one identified use. If any scenario retains $250 million more or less cash than shown, its revenue-multiple value changes by approximately $0.13 per share at 1.92 billion shares; the [valuation sensitivity](../valuation/2026-08-21-reunderwritten-valuation.md#sensitivities) keeps this residual visible rather than hiding it inside the multiple.
+The bear deliberately assumes that almost all FCF is consumed while the share count still rises: repurchases fail to offset awards, and cash leaves the simplified net-debt perimeter through other uses. That is conservative and uncertain, not a claim about one identified use. If any scenario retains $250 million more or less cash than shown, its revenue-multiple value changes by approximately $0.13 per share at 1.92 billion shares; the [valuation sensitivity](../valuation/2026-W34-valuation.md#sensitivities) keeps this residual visible rather than hiding it inside the multiple.
 
 The target share counts are net scenario outcomes rather than a mechanical award-by-award schedule. Snap does not disclose future grant volume, vesting, forfeitures, repurchase price, or repurchase dollars. The bear assumes continuing net dilution, the base assumes repurchases offset most awards, and the bull assumes awards and repurchases approximately balance. Share-count sensitivity is therefore as important as the cash bridge.
 

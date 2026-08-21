@@ -39,7 +39,7 @@ A company dossier should cover only the modules necessary for the question, typi
 - valuation scenarios and sensitivities;
 - unresolved questions and disconfirming evidence.
 
-The company landing page is the current navigation layer. Initial theses, valuation snapshots, and material changes are dated records.
+The company landing page is the current navigation layer. Each coverage cycle exposes one canonical report and valuation plus dated supporting evidence. The report evolves while the cycle is a draft; same-cycle working versions are not separate records.
 
 ## 4. Value
 
@@ -62,9 +62,9 @@ Personal sizing can remain private. If omitted, say so rather than implying an e
 
 ## 6. Monitor and update
 
-New evidence creates a new dated update. Do not silently edit a published thesis or target after a material event. An update should state what changed, what did not, and which earlier record it supersedes.
+During an active draft cycle, new evidence updates the one canonical report, valuation, and decision. A dated monitoring memo can preserve supporting evidence, but it must not be presented as a competing thesis. Git history preserves the report's development; reader-facing navigation points only to the current canonical files.
 
-A routine monitoring note can remain in the active coverage cycle. Start a new coverage cycle when the company is re-underwritten, a new formal valuation replaces the prior one, coverage resumes after a meaningful pause, or the decision question changes materially. The new cycle links to—but never rewrites—the prior cycle.
+Once a cycle is finalized or prospectively registered, do not silently edit its report or target after material new information. Start a new ISO-week coverage cycle when the company is revalued, coverage resumes after a meaningful pause, or the decision question changes materially. The new final report explains changes against the prior finalized cycle—not against intermediate drafts from its own week.
 
 Target statuses are `active`, `reached`, `expired`, `invalidated`, or `superseded`. Coverage statuses are `active`, `watching`, `paused`, or `archived`.
 
@@ -86,9 +86,10 @@ Both misses and successes belong in the archive.
 - Stable company records: keep `README.md` and `identity.md` at the company root so links and entity joins survive every revisit.
 - Coverage-cycle folders: `companies/<lowercase-ticker>/coverage-cycles/<YYYY-Www>-<NN>-<kind>/`, using the ISO week-year and zero-padded company cycle number. Examples: `2026-W34-01-initial` and `2027-W05-02-revaluation`.
 - Coverage-cycle kinds: use a short descriptive value such as `initial`, `revaluation`, or `restart`. A narrow monitoring note does not require a new cycle; a replacement thesis or valuation does.
-- Coverage-cycle manifest: every cycle has a `README.md` that records its cycle ID, sequence, kind, cutoff, status, prior cycle, exact canonical outputs, and what changed. Once a cycle is superseded, preserve it as an immutable audit package.
-- Cycle contents: keep cycle-specific plans, source logs, research, theses, valuations, decisions, models, and reviews inside that cycle. Shared identity records and genuinely reusable company material may remain at the company root.
-- Historical documents within a cycle: `YYYY-MM-DD-descriptive-slug.md`.
+- Coverage-cycle manifest: every cycle has a `README.md` that records its cycle ID, sequence, kind, cutoff, status, prior cycle, and exact canonical outputs. Once a cycle is finalized, preserve it as an immutable audit package.
+- Canonical report: one `YYYY-Www-final-report.md` per cycle. It integrates the thesis, valuation summary, stance, decision context, falsifiers, and monitoring plan. Do not retain same-cycle working theses as reader-facing records.
+- Cycle contents: keep cycle-specific plans, source logs, supporting research, the canonical report, valuation, decision, models, and reviews inside that cycle. Shared identity records and genuinely reusable company material may remain at the company root.
+- Supporting documents within a cycle: `YYYY-MM-DD-descriptive-slug.md`.
 - Company forecast IDs: `YYYY-TNNN` (for example `2026-T001`), assigned sequentially in the [forecast ledger](../track-record/forecast-ledger.csv)
 - Discovery studies: `discovery/<kind>/YYYY-MM-DD-descriptive-slug/`
 - Dates and timestamps: ISO 8601; include timezone for decisions and formal publication timestamps
@@ -96,4 +97,4 @@ Both misses and successes belong in the archive.
 
 The company landing page is the stable current-view pointer and chronological cycle index. Copying the complete company root transfers its identity plus every valuation generation without relying on an external index. If a company changes its ticker, retain the original folder to preserve links and add the new ticker and aliases to metadata.
 
-Do not move already-public records solely to adopt this convention. Add a coverage-cycle manifest that indexes their existing paths, then place the next full revaluation in the new structure. This preserves public URLs while making all future rounds explicit.
+Do not cite or maintain multiple same-cycle reports merely because a draft was committed during research. Keep only the canonical cycle report in reader-facing navigation; Git history supplies the draft audit trail. Preserve and compare an older report only when it belongs to a different finalized ISO-week coverage cycle.

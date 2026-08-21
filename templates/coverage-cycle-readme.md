@@ -13,12 +13,13 @@ as_of: "{YYYY-MM-DD}"
 source_cutoff_at: null
 prior_cycle_path: null
 supersedes: []
+final_report_path: "{relative path to YYYY-Www-final-report.md}"
 tags: []
 ---
 
 # {Company} coverage cycle {NN} — {YYYY-Www} — {kind}
 
-> This manifest defines one initial or repeat valuation generation. Published records are immutable; later evidence belongs in a dated update or a new linked cycle.
+> This manifest defines one initial or repeat valuation generation. While active, research evolves one canonical report and valuation in place. Once finalized, they are immutable and later revaluation belongs in a new linked cycle.
 
 ## Cycle contract
 
@@ -38,7 +39,7 @@ tags: []
 
 | Depth | Record | Purpose |
 | --- | --- | --- |
-| Summary | [Thesis]({path}) | View, variant perception, valuation range, and falsifiers |
+| Summary | [Final report]({path}) | View, variant perception, valuation range, stance, and falsifiers |
 | Decision | [Decision]({path}) | Stance, action mapping, hurdle, and review trigger |
 | Model | [Valuation]({path}) | Assumptions, scenarios, sensitivities, and arithmetic |
 | Audit | [Sources]({path}) | Provenance, rights, retrieval, and verification |
@@ -46,21 +47,21 @@ tags: []
 ## What this cycle must answer
 
 - The decision and horizon being reassessed.
-- What changed since the prior cycle and what evidence carried forward.
-- Which prior thesis or valuation this cycle supersedes.
+- What changed since the prior finalized cycle and what evidence carried forward.
+- Which prior finalized report and valuation this cycle supersedes, if any.
 - Which material uncertainties remain unresolved.
 
 ## Canonical outputs
 
-| Artifact | Path | Status | Supersedes |
-| --- | --- | --- | --- |
-| Research plan | | | |
-| Source log | | | |
-| Thesis | | | |
-| Valuation | | | |
-| Decision | | | |
-| Independent or adversarial review | | | |
-| Deterministic verifier | | | |
+| Artifact | Path | Status |
+| --- | --- | --- |
+| Research plan | | |
+| Source log | | |
+| Final report | | |
+| Valuation | | |
+| Decision | | |
+| Independent or adversarial review | | |
+| Deterministic verifier | | |
 
 ## Change ledger
 
@@ -75,7 +76,7 @@ tags: []
 
 ## Cycle boundary and transfer notes
 
-Keep cycle-specific plans, sources, research, theses, valuations, decisions, models, and reviews in this folder. Link stable company identity from the company root. A complete copy of `companies/<ticker>/` should preserve the identity, every cycle manifest, all public research artifacts, and their relative links; licensed local-only captures remain excluded under the data policy.
+Keep cycle-specific plans, sources, research, one canonical final report, one valuation, one decision, models, and reviews in this folder. Same-cycle working drafts remain only in Git history and are not cited. Link stable company identity from the company root. A complete copy of `companies/<ticker>/` should preserve the identity, every cycle manifest, all public research artifacts, and their relative links; licensed local-only captures remain excluded under the data policy.
 
 ## Next review
 

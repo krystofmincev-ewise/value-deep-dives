@@ -10,6 +10,7 @@ position_disclosure: not_disclosed
 as_of: "{YYYY-MM-DD}"
 last_reviewed: "{YYYY-MM-DD}"
 review_by: null
+current_coverage_cycle: "coverage-cycles/{YYYY-Www}-{NN}-{kind}/README.md"
 tags: []
 ---
 
@@ -24,6 +25,7 @@ One paragraph explaining why the company deserves research. State clearly if no 
 | Coverage | Watching |
 | Research | Researching |
 | Published thesis | None |
+| Current coverage cycle | [{YYYY-Www}-{NN}-{kind}](coverage-cycles/{YYYY-Www}-{NN}-{kind}/README.md) |
 | Current target | Not set |
 | Target horizon | Not set |
 | Position disclosure | Not disclosed |
@@ -39,9 +41,10 @@ One paragraph explaining why the company deserves research. State clearly if no 
 
 ## Workspace
 
-- Research plan
-- Source log
-- Valuation history
+- Current coverage-cycle manifest
+- Stable company identity
+- Current cycle's research plan and source log
+- Valuation-cycle history
 - Related discovery studies
 - Related experiments
 - Decisions and retrospectives
@@ -50,6 +53,6 @@ One paragraph explaining why the company deserves research. State clearly if no 
 
 Link the latest published thesis and valuation. Do not duplicate target values in several places.
 
-## Research history
+## Coverage-cycle history
 
-List dated theses, updates, decisions, and retrospectives in chronological order.
+List each immutable initial or repeat valuation package in chronological order. For every cycle show the ISO week, company cycle number, kind, source cutoff, status, thesis, valuation, decision, and predecessor. Keep dated notes within their applicable cycle.

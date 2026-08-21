@@ -64,6 +64,8 @@ Personal sizing can remain private. If omitted, say so rather than implying an e
 
 New evidence creates a new dated update. Do not silently edit a published thesis or target after a material event. An update should state what changed, what did not, and which earlier record it supersedes.
 
+A routine monitoring note can remain in the active coverage cycle. Start a new coverage cycle when the company is re-underwritten, a new formal valuation replaces the prior one, coverage resumes after a meaningful pause, or the decision question changes materially. The new cycle links to—but never rewrites—the prior cycle.
+
 Target statuses are `active`, `reached`, `expired`, `invalidated`, or `superseded`. Coverage statuses are `active`, `watching`, `paused`, or `archived`.
 
 ## 7. Review
@@ -80,11 +82,18 @@ Both misses and successes belong in the archive.
 
 ## File and identifier conventions
 
-- Company folders: `companies/<lowercase-ticker>/`
-- Historical documents: `YYYY-MM-DD-descriptive-slug.md`
+- Durable company root: `companies/<lowercase-ticker>/`
+- Stable company records: keep `README.md` and `identity.md` at the company root so links and entity joins survive every revisit.
+- Coverage-cycle folders: `companies/<lowercase-ticker>/coverage-cycles/<YYYY-Www>-<NN>-<kind>/`, using the ISO week-year and zero-padded company cycle number. Examples: `2026-W34-01-initial` and `2027-W05-02-revaluation`.
+- Coverage-cycle kinds: use a short descriptive value such as `initial`, `revaluation`, or `restart`. A narrow monitoring note does not require a new cycle; a replacement thesis or valuation does.
+- Coverage-cycle manifest: every cycle has a `README.md` that records its cycle ID, sequence, kind, cutoff, status, prior cycle, exact canonical outputs, and what changed. Once a cycle is superseded, preserve it as an immutable audit package.
+- Cycle contents: keep cycle-specific plans, source logs, research, theses, valuations, decisions, models, and reviews inside that cycle. Shared identity records and genuinely reusable company material may remain at the company root.
+- Historical documents within a cycle: `YYYY-MM-DD-descriptive-slug.md`.
 - Company forecast IDs: `YYYY-TNNN` (for example `2026-T001`), assigned sequentially in the [forecast ledger](../track-record/forecast-ledger.csv)
 - Discovery studies: `discovery/<kind>/YYYY-MM-DD-descriptive-slug/`
 - Dates and timestamps: ISO 8601; include timezone for decisions and formal publication timestamps
 - Currencies: ISO 4217 codes such as `USD` or `EUR`
 
-If a company changes its ticker, retain the original folder to preserve links and add the new ticker and aliases to metadata.
+The company landing page is the stable current-view pointer and chronological cycle index. Copying the complete company root transfers its identity plus every valuation generation without relying on an external index. If a company changes its ticker, retain the original folder to preserve links and add the new ticker and aliases to metadata.
+
+Do not move already-public records solely to adopt this convention. Add a coverage-cycle manifest that indexes their existing paths, then place the next full revaluation in the new structure. This preserves public URLs while making all future rounds explicit.

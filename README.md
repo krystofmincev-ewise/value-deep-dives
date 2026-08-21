@@ -50,7 +50,7 @@ The detailed process lives in [methodology](methodology/README.md). A completed 
 | --- | --- | --- | --- | --- |
 | Snap Inc. | SNAP | Draft deep dive complete; prospective registration pending | [Draft valuation available](companies/snap/valuation/2026-08-21-reunderwritten-valuation.md) | [Open the Snap deep dive](companies/snap/README.md) |
 
-The Snap dossier is self-contained under [`companies/snap/`](companies/snap/README.md), including identity, sources, research modules, dated theses, valuations, decisions, and company-specific experiments. The current records remain drafts until the documented market-price and prospective-registration gates are complete. Future company valuations should follow the same `companies/<lowercase-ticker>/` structure.
+The Snap dossier is self-contained under [`companies/snap/`](companies/snap/README.md), including identity, sources, research modules, dated theses, valuations, decisions, and company-specific experiments. Its [first coverage-cycle manifest](companies/snap/coverage-cycles/2026-W34-01-initial/README.md) binds the current records into one dated valuation generation. The records remain drafts until the documented market-price and prospective-registration gates are complete.
 
 ## Repository map
 
@@ -73,9 +73,11 @@ Company-specific notes, data, and experiments stay inside that company's folder.
 ## Navigation conventions
 
 - Company paths use lowercase tickers, for example `companies/snap/`.
-- Historical research uses `YYYY-MM-DD-descriptive-slug.md`.
+- The company root remains the durable identity and current-view URL.
+- Each initial or repeat valuation has an ISO-week coverage package such as `coverage-cycles/2026-W34-01-initial/` or `coverage-cycles/2027-W05-02-revaluation/`.
+- Historical research within a coverage cycle uses `YYYY-MM-DD-descriptive-slug.md`.
 - Flat YAML front matter makes status, dates, tickers, tags, and disclosures searchable.
-- Each company landing page points to its current view and its dated history.
+- Each company landing page points to its current view and chronological coverage-cycle history.
 - Discovery studies link to the companies they surfaced, and company pages link back to their originating studies.
 
 GitHub Markdown and search are the canonical interface. A generated index or website can be added when the archive is large enough to justify one.

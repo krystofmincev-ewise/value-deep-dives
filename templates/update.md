@@ -2,6 +2,8 @@
 type: company_update
 company: "{Company}"
 ticker: "{TICKER}"
+coverage_cycle_id: "{TICKER}-{YYYY-Www}-{NN}"
+coverage_cycle_path: "{relative path to coverage-cycle manifest}"
 status: published
 as_of: "{YYYY-MM-DD}"
 published_at: "{ISO-8601 timestamp}"

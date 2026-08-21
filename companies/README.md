@@ -1,6 +1,6 @@
 # Company index
 
-Company folders use lowercase tickers and serve as durable landing pages. The detailed target price lives in the latest dated valuation—not in this index—to avoid conflicting copies.
+Company folders use lowercase tickers and serve as durable landing pages. Each full research or revaluation round receives an ISO-week coverage package under `companies/<ticker>/coverage-cycles/<YYYY-Www>-<NN>-<kind>/`; the company root points to the current cycle and preserves the full chronology. The detailed target price lives in the latest dated valuation—not in this index—to avoid conflicting copies.
 
 | Ticker | Company | Focus | Coverage | Research | Position disclosure | Last reviewed | Dossier |
 | --- | --- | --- | --- | --- | --- | --- | --- |

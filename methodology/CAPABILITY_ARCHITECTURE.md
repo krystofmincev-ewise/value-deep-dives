@@ -16,10 +16,12 @@ As of 2026-08-20, this repository has a provenance-aware acquisition layer but n
 | Entity | Canonical home | Purpose |
 | --- | --- | --- |
 | Company and security identity | `companies/<ticker>/identity.md` | Resolve legal entity, listing, currency, fiscal calendar, CIK/LEI, aliases, and source coverage before joining data. |
-| Source and claim | Company or study source log | Connect a claim or model input to an original source, access state, rights class, retrieval method, and verification state. |
-| Thesis | Dated company thesis | State the variant view, falsifiers, uncertainty, and horizon. |
-| Valuation | Dated valuation | Reconcile operating cases, capital structure, scenario values, and sensitivities. |
-| Decision | Dated decision | Map the research view and portfolio context to buy/add/reduce/exit/watch/pass. |
+| Company landing page | `companies/<ticker>/README.md` | Preserve one durable URL for the current view and the chronological coverage-cycle index. |
+| Coverage cycle | `companies/<ticker>/coverage-cycles/<YYYY-Www>-<NN>-<kind>/README.md` | Freeze the scope, cutoff, canonical outputs, predecessor, and change summary for each initial or repeat valuation round. |
+| Source and claim | Coverage-cycle or study source log | Connect a claim or model input to an original source, access state, rights class, retrieval method, and verification state. |
+| Thesis | Dated thesis inside the applicable coverage cycle | State the variant view, falsifiers, uncertainty, and horizon. |
+| Valuation | Dated valuation inside the applicable coverage cycle | Reconcile operating cases, capital structure, scenario values, and sensitivities. |
+| Decision | Dated decision inside the applicable coverage cycle | Map the research view and portfolio context to buy/add/reduce/exit/watch/pass. |
 | Event forecast | Dated event forecast plus event ledger | Pre-register an observable event outcome and a separate security-return outcome. |
 | Outcome | Dated event outcome or retrospective | Resolve the original rule without rewriting it, then attribute insight, market exposure, timing, and luck. |
 | Dataset or experiment | Manifest plus experiment record | Preserve cutoff, licence, transformations, leakage controls, runtime, and negative results. |

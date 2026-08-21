@@ -2,6 +2,8 @@
 type: valuation
 company: Snap Inc.
 ticker: SNAP
+coverage_cycle_id: SNAP-2026-W34-01
+coverage_cycle_path: ../coverage-cycles/2026-W34-01-initial/README.md
 identity_path: companies/snap/identity.md
 identity_hash: sha256:d09ac6123bc50705e9193b94196e0d56445228609ac1309221ed92a940447157
 security_id: snap-class-a-common

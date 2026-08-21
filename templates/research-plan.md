@@ -2,6 +2,8 @@
 type: research_plan
 company: "{Company}"
 ticker: "{TICKER}"
+coverage_cycle_id: "{TICKER}-{YYYY-Www}-{NN}"
+coverage_cycle_path: "coverage-cycles/{YYYY-Www}-{NN}-{kind}/README.md"
 status: active
 as_of: "{YYYY-MM-DD}"
 source_cutoff: null

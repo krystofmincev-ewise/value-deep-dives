@@ -3,6 +3,8 @@ type: decision
 decision_id: "{YYYY-NNN}"
 company: "{Company}"
 ticker: "{TICKER}"
+coverage_cycle_id: "{TICKER}-{YYYY-Www}-{NN}"
+coverage_cycle_path: "{relative path to coverage-cycle manifest}"
 identity_path: "{relative path to verified company identity}"
 identity_hash: "{sha256 digest of the frozen identity record}"
 security_id: "{stable repository security ID}"

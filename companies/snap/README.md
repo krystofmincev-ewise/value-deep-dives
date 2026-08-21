@@ -10,6 +10,7 @@ position_disclosure: long
 as_of: 2026-08-21
 last_reviewed: 2026-08-21
 review_by: 2026-11-15
+current_coverage_cycle: coverage-cycles/2026-W34-01-initial/README.md
 tags: [social-media, digital-advertising, consumer, ad-tech]
 ---
 
@@ -18,6 +19,8 @@ tags: [social-media, digital-advertising, consumer, ad-tech]
 > **Read this first:** [the two-minute conclusion](thesis/2026-08-21-reunderwritten-thesis.md#two-minute-answer). Continue into the same thesis for the full explanation, or use the maps below to jump directly to the assumption you want to challenge. The [plain-English glossary and formula guide](GLOSSARY.md) defines recurring terms without interrupting the argument.
 
 Snap Inc. trades on the New York Stock Exchange under the ticker `SNAP`. This is the first active company deep dive in the repository. The analytical dossier, operating forecast, valuation, and decision memo are complete and reviewable. They remain explicitly **draft and unregistered** for prospective scorekeeping until the reference price and benchmark receive reproducible official-close provenance.
+
+This work is indexed as [coverage cycle `SNAP-2026-W34-01`](coverage-cycles/2026-W34-01-initial/README.md), the initial valuation generation. The company root remains the permanent current-view URL; a later secondary or tertiary revaluation will receive a new ISO-week and company-cycle folder rather than overwriting this record.
 
 ## Choose your depth
 
@@ -35,6 +38,7 @@ Snap Inc. trades on the New York Stock Exchange under the ticker `SNAP`. This is
 | --- | --- |
 | Coverage | Active |
 | Research | Analytical dossier complete; specialist, adversarial, arithmetic, and public-safety review complete; prospective registration pending |
+| Current coverage cycle | [`SNAP-2026-W34-01` — initial](coverage-cycles/2026-W34-01-initial/README.md) |
 | Main thesis | [Attractive research stance; position-aware hold / no add before third-quarter proof](thesis/2026-08-21-reunderwritten-thesis.md) |
 | Unregistered bear / base / bull | $2.50 / $7.75 / $14.25; probability-weighted $7.74 |
 | Target horizon | 20 August 2027; six-month checkpoint $3.70 / $6.73 / $10.81 |
@@ -131,7 +135,13 @@ Before an initial thesis is called published, it should include:
 
 The [initial 20 August thesis](thesis/2026-08-20-initial-thesis.md) is preserved as a superseded draft. Material later changes use new dated files; earlier records remain intact as an audit trail.
 
-## Research history
+## Coverage-cycle history
+
+| Cycle | ISO week | Kind | Status | Canonical package |
+| --- | --- | --- | --- | --- |
+| `SNAP-2026-W34-01` | 2026-W34 | Initial | Analytical dossier complete; prospective registration pending | [Open cycle manifest](coverage-cycles/2026-W34-01-initial/README.md) |
+
+### Activity inside cycle 01
 
 - 20 August 2026: initial draft thesis, valuation, operating forecast, founder/culture history, authenticated aggregate workforce review, YouTube interview synthesis, Gemini Deep Research cross-check, and independent audit completed.
 - 21 August 2026: fresh re-underwrite completed with Meta and Reddit valuation anchors, advertising-price and recommendation-engine analysis, quantified regulation and cost work, conservative-guidance study, revised quarterly forecast, and a new plain-English main thesis. A follow-up open-source recommender review raised confidence in Snap's technical stack without changing the valuation or the hold/no-add decision.

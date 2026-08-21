@@ -2,6 +2,8 @@
 type: research_plan
 company: Snap Inc.
 ticker: SNAP
+coverage_cycle_id: SNAP-2026-W34-01
+coverage_cycle_path: coverage-cycles/2026-W34-01-initial/README.md
 status: active
 as_of: 2026-08-21
 source_cutoff_at: 2026-08-21T03:30:00+02:00

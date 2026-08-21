@@ -53,6 +53,8 @@ The evidence-gap pass found that Snap's Form 10-Q reports second-quarter average
 
 The model remains skeptical of 20%–30% base-case advertising growth. The base uses **13.5% advertising growth** and now requires the observed price repair to persist while impression delivery resumes, not Meta-like monetization.
 
+Read this in layers: [operating scenarios](#revised-operating-scenarios) → [three valuation methods](#method-1-target-date-revenue-multiple) → [probability weighting](#probability-weighting) → [reverse expectations](#reverse-expectations) → [sensitivities](#sensitivities). The [canonical report](../thesis/2026-W34-final-report.md) supplies the story; this document supplies the arithmetic.
+
 ## Core formulas
 
 ```text
@@ -207,6 +209,10 @@ Terminal per-share growth =
 
 For reproducibility, the model linearly interpolates FCF margin from the year-one value to the displayed year-five value. Revenue growth and net dilution then follow the paths above.
 
+<details>
+<summary><strong>Open the five-year bear, base, and bull DCF schedules</strong></summary>
+
+
 | Bear annual schedule | Year 1 | Year 2 | Year 3 | Year 4 | Year 5 |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | Revenue, billions | 6.831 | 7.104 | 7.317 | 7.464 | 7.613 |
@@ -227,6 +233,8 @@ For reproducibility, the model linearly interpolates FCF margin from the year-on
 | FCF margin | 18.63% | 18.98% | 19.32% | 19.66% | 20.00% |
 | Diluted shares, billions | 1.880 | 1.880 | 1.880 | 1.880 | 1.880 |
 | FCF per share | $0.80 | $0.98 | $1.17 | $1.37 | $1.56 |
+
+</details>
 
 The terminal value represents approximately 50%, 63%, and 71% of the three values. The DCF is therefore a cross-check, not a precision instrument.
 
@@ -394,3 +402,5 @@ That supports an attractive absolute expected-value assessment. The formal QQQ-r
 - [Recommendation-upside verifier](verify-2026-08-21-recommender-upside.mjs)
 
 The displayed capitalization, revenue-multiple, sum-of-the-parts, discounted-cash-flow, scenario-weighting, sensitivity, and six-month calculations were independently recomputed during the 21 August review. The deterministic verifier asserts the principal displayed results. The official-close provenance gap prevents prospective publication, not arithmetic review of this draft.
+
+Return to the [canonical investment report](../thesis/2026-W34-final-report.md), inspect the [four-quarter forecast](../research/2026-W34-quarterly-forecast.md), or review the [portfolio action](../decisions/2026-W34-decision.md#portfolio-action).

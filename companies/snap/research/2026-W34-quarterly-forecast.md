@@ -15,6 +15,19 @@ tags: [forecast, advertising, direct-revenue, profitability, guidance]
 
 > **Reader key:** Adjusted earnings before interest, taxes, depreciation, and amortization (**adjusted EBITDA**); free cash flow (**FCF**); daily active users (**DAU**); stock-based compensation (**SBC**); and effective cost per thousand advertising impressions (**eCPM**) are written out at their first use. See the [plain-English glossary](../GLOSSARY.md).
 
+## Answer first
+
+| Forecast question | Base answer |
+| --- | --- |
+| Third quarter of 2026 | **$1.760 billion revenue; $390 million adjusted EBITDA; advertising +12%** |
+| Next four quarters | **$7.483 billion revenue; $1.676 billion adjusted EBITDA; $1.10 billion headline FCF** |
+| Central advertising assumption | Impressions resume growing while ad price stops falling; Snap does **not** approach Meta-like monetization |
+| Most important falsifier | Advertising below 8% while impressions grow by double digits, or a total-revenue beat driven mainly by Other Revenue |
+
+The forecast tells a simple story: **subscriptions and cost cuts buy Snap time, but the valuation only works if the advertising auction stops destroying price as inventory grows.** Q2 offered one encouraging observation, not proof. It lapped a weak comparison and benefited from World Cup demand, so the model preserves a 30% bear case.
+
+Read the [quarterly scenarios](#quarterly-scenarios) for the outputs, the [seasonality bridge](#seasonality-and-event-normalization) for the comparison-base audit, the [profit bridge](#why-the-profit-forecast-rises-faster-than-revenue) for cost leverage, and the [evidence checklist](#quarterly-evidence-checklist) for what would change the forecast.
+
 ## Forecast rationale
 
 The model gives greatest weight to four observations:
@@ -292,3 +305,5 @@ The target share counts are net scenario outcomes rather than a mechanical award
 ## Conclusion
 
 The revised forecast's highest-confidence change is **better near-term adjusted profit**. Its most important positive revenue assumption is merely that advertising price dilution stops. The model becomes wrong if eCPM keeps falling materially, high-value users continue shrinking without faster monetization, direct revenue rolls over, or savings are recycled into dilution, litigation, or unbounded hardware spending.
+
+Return to the [canonical investment report](../thesis/2026-W34-final-report.md), continue to the [valuation](../valuation/2026-W34-valuation.md), or review the [portfolio action](../decisions/2026-W34-decision.md#portfolio-action).

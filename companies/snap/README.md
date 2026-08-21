@@ -5,7 +5,7 @@ ticker: SNAP
 exchange: NYSE
 aliases: [Snapchat]
 coverage_status: active
-research_status: researching
+research_status: draft
 position_disclosure: long
 as_of: 2026-08-21
 last_reviewed: 2026-08-21
@@ -16,60 +16,50 @@ tags: [social-media, digital-advertising, consumer, ad-tech]
 
 # Snap Inc. (NYSE: SNAP)
 
-> **Read this first:** [the two-minute conclusion](thesis/2026-W34-final-report.md#two-minute-answer). Continue into the same final report for the full explanation, or use the maps below to jump directly to the assumption you want to challenge. The [plain-English glossary and formula guide](GLOSSARY.md) defines recurring terms without interrupting the argument.
+## Bottom line
 
-Snap Inc. trades on the New York Stock Exchange under the ticker `SNAP`. This is the first active company deep dive in the repository. The analytical dossier, operating forecast, valuation, and decision memo are complete and reviewable. They remain explicitly **draft and unregistered** for prospective scorekeeping until the reference price and benchmark receive reproducible official-close provenance.
+| Question | Current answer |
+| --- | --- |
+| Valuation verdict | **Attractive at $5.21:** probability-weighted twelve-month value of **$7.48** |
+| New investor | **Watch through the third-quarter operating checkpoint** |
+| Existing long | **Conditional hold / no add**; reduce if the severe-loss case exceeds the investor's private risk budget |
+| Core uncertainty | Was Q2 durable advertising-auction repair, or an easy comparison helped by World Cup demand? |
 
-This work is indexed as [coverage cycle `SNAP-2026-W34-01`](coverage-cycles/2026-W34-01-initial/README.md), the initial valuation generation. The company root remains the permanent current-view URL; a later secondary or tertiary revaluation will receive a new ISO-week and company-cycle folder rather than overwriting this record.
+Snap reaches almost half a billion people daily, but its most valuable users are shrinking and its advertising auction has only one quarter of price recovery. The opportunity is that subscriptions, lower costs, and a credible recommendation stack may allow **modest** advertising improvement—not Meta-like success—to create substantial upside. The next results must show whether that improvement is real.
 
 ## Choose your depth
 
 | Time or purpose | Start here | What it answers |
 | --- | --- | --- |
 | **2 minutes** | [Investment conclusion](thesis/2026-W34-final-report.md#two-minute-answer) | Stance, action, valuation range, what must work, and what could break. |
-| **10 minutes** | [What drives the current valuation](thesis/2026-W34-final-report.md#what-drives-the-current-valuation) → [valuation in plain English](thesis/2026-W34-final-report.md#valuation-in-plain-english) | The operating and valuation judgments behind $7.75. |
-| **25 minutes** | [Users](thesis/2026-W34-final-report.md#users-enormous-scale-uneven-economics) → [advertising](thesis/2026-W34-final-report.md#is-snap-actually-cheaper-than-facebook-or-instagram) → [recommendation engines](thesis/2026-W34-final-report.md#why-metas-recommendation-engine-is-harder-to-copy-than-it-looks) → [cost structure](thesis/2026-W34-final-report.md#cost-structure-is-serving-almost-500-million-daily-users-expensive) | The operating mechanism behind the central case. |
+| **10 minutes** | [Ten-minute thesis](thesis/2026-W34-final-report.md#ten-minute-thesis-why-snap-may-be-too-cheap) | Why Snap may be too cheap, what the market already knows, and what must change. |
+| **25 minutes** | [Users](thesis/2026-W34-final-report.md#users-enormous-scale-uneven-economics) → [advertising](thesis/2026-W34-final-report.md#is-snap-actually-cheaper-than-facebook-or-instagram) → [recommendation engines](thesis/2026-W34-final-report.md#why-metas-recommendation-engine-is-harder-to-copy-than-it-looks) → [subscriptions](thesis/2026-W34-final-report.md#subscriptions-and-other-revenue) → [cost structure](thesis/2026-W34-final-report.md#cost-structure-is-serving-almost-500-million-daily-users-expensive) | The operating mechanism behind the central case. |
 | **Risk review** | [Strongest bear case](thesis/2026-W34-final-report.md#strongest-bear-case) → [falsifiers](thesis/2026-W34-final-report.md#evidence-that-would-change-the-thesis) → [next-results checklist](thesis/2026-W34-final-report.md#what-to-watch-in-the-next-results) | Permanent-loss paths, disconfirming evidence, and the next proof points. |
-| **Full audit** | [Valuation model](valuation/2026-W34-valuation.md) → [forecast](research/2026-W34-quarterly-forecast.md) → [independent review](research/2026-08-21-independent-review.md) → [source log](sources.md) → [post-Snap research audit](../../methodology/2026-W34-POST-SNAP-RESEARCH-AUDIT.md) | Assumptions, arithmetic, provenance, limitations, release status, and the three independent harness reviews. |
+| **Full audit** | [Forecast](research/2026-W34-quarterly-forecast.md) → [valuation model](valuation/2026-W34-valuation.md) → [independent review](research/2026-08-21-independent-review.md) → [source log](sources.md) | Assumptions, arithmetic, provenance, limitations, and release status. |
+
+The analysis is complete. Prospective scorecard registration remains pending because the price and benchmark observations have not yet been frozen from reproducible official-close sources. This work belongs to [coverage cycle `SNAP-2026-W34-01`](coverage-cycles/2026-W34-01-initial/README.md); a future revaluation will receive a new ISO-week cycle instead of overwriting this one.
 
 ## At a glance
 
 | Field | Current state |
 | --- | --- |
 | Coverage | Active |
-| Research | Analytical dossier complete; specialist, adversarial, arithmetic, and public-safety review complete; prospective registration pending |
+| Research | Analysis complete; prospective scorecard registration pending |
 | Current coverage cycle | [`SNAP-2026-W34-01` — initial](coverage-cycles/2026-W34-01-initial/README.md) |
-| Canonical final report | [Snap at $5.21: current valuation, risks, and action mapping](thesis/2026-W34-final-report.md) |
-| Unregistered bear / base / bull | $2.50 / $7.75 / $14.25; probability-weighted $7.48 |
+| Canonical final report | [Snap at $5.21: cheap for a reason—but perhaps too cheap](thesis/2026-W34-final-report.md) |
+| Modeled twelve-month values | Bear $2.50 / base $7.75 / bull $14.25; probability-weighted $7.48 |
 | Target horizon | 20 August 2027; six-month checkpoint $3.70 / $6.73 / $10.81 |
 | Decision frame | Current value and action from $5.21; historical cost basis excluded from the analysis |
 | Source cutoff | 21 August 2026, 16:15 Central European Summer Time (CEST) |
 | Next review | Q3 2026 results; no later than 15 November 2026 |
 
-At the $5.21 public reference, the 12-month probability-weighted value is approximately 43% higher, so the absolute expected-value assessment is **attractive**. The formal QQQ-relative research stance is **insufficient evidence** because no expected QQQ return was forecast. From current evidence alone, the no-position action is **watch before the third-quarter operating checkpoint**. Applied to the user-reported existing long, the conditional action is **hold / no add** only if the position fits an independently chosen loss budget; otherwise reduce. Public sizing, tax, liquidity, and portfolio-correlation context is intentionally omitted, so the dossier cannot determine that private risk budget. No trade was placed as a result of this coverage-cycle decision.
-
-## Why Snap is interesting
-
-The starting investment question is whether the market underestimates Snap's ability to improve monetization and remain strategically relevant while it competes with much larger advertising platforms.
-
-The technical branch of the research asks a narrower question: what would it take to build a useful ad-ranking system, and which parts of Meta's advantage are reproducible engineering versus proprietary data, auction liquidity, measurement, distribution, and organizational execution? The [open-source recommender review](research/2026-08-21-open-source-recommender-gap.md) puts medium-high confidence on Snap remaining a technically credible fast follower, but concludes that content quality should narrow the gap faster than advertising yield. Its central two-to-three-year estimate is a 3%–7% advertising-revenue uplift versus no further recommendation improvement, with roughly $0.24 per share of probability-weighted recommender value already embedded in the current valuation. A prototype can inform mechanism-level understanding; it cannot prove competitive parity.
-
-## Initial questions
-
-- What expectations about revenue growth, margins, dilution, and survival are embedded in the current valuation?
-- Is Snap's user engagement durable, and where does monetization per user still lag?
-- Which recent advertising improvements are visible in reported outcomes rather than management narrative?
-- How strong are advertiser demand, conversion measurement, targeting, and auction density?
-- Can the company fund the required infrastructure and research and development (R&D) while limiting dilution?
-- What do management incentives and capital allocation imply for outside shareholders?
-- Which product, privacy, regulatory, platform, and competitive risks can permanently impair the thesis?
-- What evidence would disconfirm the view before price does?
+The formal QQQ-relative research stance remains **insufficient evidence** because no expected QQQ return was forecast. That scorekeeping label is separate from Snap's attractive absolute valuation. Public sizing, tax, liquidity, and portfolio-correlation context is intentionally omitted, so the dossier cannot determine the investor's private risk budget. No trade was placed.
 
 ## Find the question, then drill down
 
 | Question | Integrated explanation | Detailed evidence or model |
 | --- | --- | --- |
-| Why is the stock potentially mispriced? | [What drives the current valuation](thesis/2026-W34-final-report.md#what-drives-the-current-valuation) | [Relative valuation](research/2026-08-21-meta-reddit-relative-valuation.md), [full valuation](valuation/2026-W34-valuation.md) |
+| Why is the stock potentially mispriced? | [Ten-minute thesis](thesis/2026-W34-final-report.md#ten-minute-thesis-why-snap-may-be-too-cheap) | [Relative valuation](research/2026-08-21-meta-reddit-relative-valuation.md), [full valuation](valuation/2026-W34-valuation.md) |
 | Are high-value users weakening? | [Users and regional economics](thesis/2026-W34-final-report.md#users-enormous-scale-uneven-economics) | [Product and users](research/2026-08-20-product-users-regulation.md), [regional contribution](research/2026-08-21-regional-ad-economics.md) |
 | Are Snap advertisements really cheap? | [Advertising-price explanation](thesis/2026-W34-final-report.md#is-snap-actually-cheaper-than-facebook-or-instagram) | [Advertising revalidation](research/2026-08-21-ads-pricing-recommenders-revalidation.md) |
 | How are holiday seasonality, the World Cup, and the 2026 election handled? | [Quarterly base case](thesis/2026-W34-final-report.md#quarterly-base-case) | [Seasonality and event normalization](research/2026-W34-quarterly-forecast.md#seasonality-and-event-normalization) |
@@ -88,7 +78,7 @@ The technical branch of the research asks a narrower question: what would it tak
 - [Plain-English glossary and formula guide](GLOSSARY.md)
 - [Research plan](research-plan.md)
 - [Source log](sources.md)
-- [Canonical final report and industry explainer](thesis/2026-W34-final-report.md)
+- [Canonical investment report](thesis/2026-W34-final-report.md)
 - [Canonical valuation](valuation/2026-W34-valuation.md)
 - [Canonical decision](decisions/2026-W34-decision.md)
 
@@ -96,30 +86,40 @@ The technical branch of the research asks a narrower question: what would it tak
 
 - [User-reported position history and brief earlier rationale](disclosures/2026-08-21-user-reported-position-history.md)
 
-### Specialist evidence
+### Business and users
+
+- [Product, users, subscriptions, Specs, and regulation](research/2026-08-20-product-users-regulation.md)
+- [Market and peers](research/2026-08-20-market-peers.md)
+- [Interview synthesis](research/2026-08-20-interviews.md)
+
+### Advertising and technology
+
+- [Advertising, artificial intelligence, and competition](research/2026-08-20-ads-ai-competition.md)
+- [Advertising prices and recommendation-engine revalidation](research/2026-08-21-ads-pricing-recommenders-revalidation.md)
+- [Open-source recommendation systems and the Meta gap](research/2026-08-21-open-source-recommender-gap.md)
+- [Regional advertising prices and contribution economics](research/2026-08-21-regional-ad-economics.md)
+- [Ad-ranking feasibility experiment](experiments/ad-ranking-feasibility/README.md)
+
+### Financials and valuation
 
 - [Financials and capital structure](research/2026-08-20-financials-capital-structure.md)
-- [Advertising, artificial intelligence (AI), and competition](research/2026-08-20-ads-ai-competition.md)
-- [Advertising prices and recommendation engines — 21 August revalidation](research/2026-08-21-ads-pricing-recommenders-revalidation.md)
-- [Open-source recommendation systems and the Meta gap — 21 August deep dive](research/2026-08-21-open-source-recommender-gap.md)
-- [Meta and Reddit relative valuations — 21 August](research/2026-08-21-meta-reddit-relative-valuation.md)
-- [Regulation and cost structure — 21 August revalidation](research/2026-08-21-regulation-costs-revalidation.md)
-- [Valuation confidence-gap estimates — 21 August](research/2026-08-21-confidence-gap-estimates.md)
-- [Regional advertising prices and contribution economics — 21 August](research/2026-08-21-regional-ad-economics.md)
-- [Guidance behavior and cost efficiency — 21 August](research/2026-08-21-guidance-cost-efficiency.md)
-- [Market and peers](research/2026-08-20-market-peers.md)
-- [Product, users, subscriptions, Specs, and regulation](research/2026-08-20-product-users-regulation.md)
+- [Four-quarter forecast](research/2026-W34-quarterly-forecast.md)
+- [Guidance behavior and cost efficiency](research/2026-08-21-guidance-cost-efficiency.md)
+- [Meta and Reddit relative valuations](research/2026-08-21-meta-reddit-relative-valuation.md)
+- [Valuation confidence-gap estimates](research/2026-08-21-confidence-gap-estimates.md)
+
+### Governance and risks
+
+- [Regulation and cost-structure revalidation](research/2026-08-21-regulation-costs-revalidation.md)
 - [Management and governance](research/2026-08-20-management-governance.md)
 - [Founder history and culture](research/2026-08-20-founder-history-culture.md)
 - [Workforce evidence](research/2026-08-20-workforce.md)
-- [Interview synthesis](research/2026-08-20-interviews.md)
 - [Adversarial challenge input—not a separate target](research/2026-08-20-adversarial-review.md)
 
-### Models, audits, and experiments
+### Audit trail
 
-- [Four-quarter forecast](research/2026-W34-quarterly-forecast.md)
 - [Independent valuation and publication review](research/2026-08-21-independent-review.md)
-- [Ad-ranking feasibility experiment](experiments/ad-ranking-feasibility/README.md)
+- [Post-Snap research-harness audit](../../methodology/2026-W34-POST-SNAP-RESEARCH-AUDIT.md)
 
 ## Publication gate
 

@@ -31,29 +31,22 @@ review_by: 2026-11-15
 supersedes: null
 ---
 
-# SNAP at $5.21 — attractive absolute value; QQQ-relative stance insufficient evidence
+# SNAP at $5.21 — watch if new; conditional hold if already long
 
 > Draft research decision, not a trade instruction or personalized investment advice. No trade was placed as a result of this coverage-cycle decision. Full terms and formulas are in the [plain-English glossary](../GLOSSARY.md).
 
 ## Decision
 
-The absolute expected-value assessment is **attractive**. The exact scenario-weighted value before display rounding is $7.475 versus a $5.21 reference, an expected return of approximately 43.5%; the displayed value is $7.48. The [confidence-gap evidence pass](../research/2026-08-21-confidence-gap-estimates.md) supports a 30% bear / 50% base / 20% bull distribution. Snap's Form 10-Q showed second-quarter advertising price per impression up approximately 10%, but that result laps a bug-affected quarter, compounds to roughly flat price over two years, and includes World Cup demand; it is not clean enough to reduce the bear weight.
+| Question | Answer |
+| --- | --- |
+| Valuation verdict | **Attractive:** probability-weighted value of $7.48 versus $5.21 |
+| New investor | **Watch through the third-quarter operating checkpoint** |
+| Existing long | **Conditional hold / no add** if the severe-loss case fits the investor's private risk budget; otherwise reduce |
+| Next review | Third-quarter 2026 results; no later than 15 November 2026 |
 
-The 8% action hurdle in the metadata is an **illustrative absolute-return hurdle**, not a forecast for the Nasdaq-100 exchange-traded fund benchmark (**QQQ**). Expected benchmark excess return is left blank because this record does not forecast QQQ. QQQ remains named so eventual performance can be measured against the same-session benchmark return.
+The entire decision turns on one unresolved question: **was the second-quarter improvement in Snap's advertising auction durable, or was it an easy comparison helped by temporary World Cup demand?** Snap reported average advertising price per impression up about 10%, but the result lapped a 10% decline and a temporary Ads Manager pricing problem. The two-year price index is therefore roughly flat, and the evidence is not yet strong enough to initiate or add.
 
-### Hurdle and evidence gate
-
-The 43.5% probability-weighted absolute return clears illustrative 8%, 15%, and 25% one-year hurdles, but that sensitivity is not a benchmark-relative forecast. The formal research stance is therefore **insufficient evidence** under the repository's QQQ-relative decision contract while `expected_excess_return_pct` remains null. This is separate from the attractive absolute expected-value assessment.
-
-The draft evidence gate passes verified identity, public financial statements, capital structure, three-method valuation arithmetic, dilution treatment, counter-thesis, and observable review triggers. It fails the **formal publication gate** until the $5.21 reference and QQQ starting value have reproducible official-close records and the prospective chronology controls are completed. That failure blocks registration, not preservation of this visibly labeled draft.
-
-The current action mapping is:
-
-- **No existing position:** watch rather than buy before the third-quarter operating checkpoint.
-- **Existing long:** conditional hold / no add only if the position fits an independently chosen loss budget; otherwise reduce.
-- **Material permanent-impairment falsifier:** pass, reduce, or exit according to current exposure.
-
-The reason is evidence and risk control, not weak expected value. Position size, taxes, liquidity, and other holdings are intentionally omitted, so this public record cannot determine hold versus reduce conclusively. Every mapping starts from the $5.21 reference and current evidence; cost basis and earlier rationale are excluded.
+The restraint is about proof and loss control—not weak modeled upside. The exact scenario-weighted value is $7.475, displayed as $7.48, or 43.5% above $5.21. Cost leverage and direct revenue make the upside plausible; shrinking high-value users, dilution, founder control, litigation, and Specs create severe and below-bear loss paths.
 
 ## Scenario distribution
 
@@ -67,17 +60,17 @@ The reason is evidence and risk control, not weak expected value. Position size,
 | Bull | 20% | $14.25 | +174% |
 | **Probability-weighted** | **100%** | **$7.48** | **+43.5%** using the unrounded $7.475 value |
 
-## Evidence supporting the absolute expected-value assessment
+## Why the valuation is attractive
 
 - Snap's recent adjusted-profit guidance has repeatedly beaten the top of its initial range.
 - Second-quarter revenue grew 19% while total adjusted costs grew 4% and gross margin reached 58%.
-- The second-quarter Form 10-Q reports average advertising price per impression up approximately 10%, the first clear company-wide yield-repair quarter in the recent series.
+- The second-quarter Form 10-Q reports average advertising price per impression up approximately 10%, the first clear company-wide yield-repair quarter in the recent series—although not yet a clean durability test.
 - Current production research, public open-source systems, and licensed aggregate workforce evidence make a technically competent fast-follower outcome more likely than either technical failure or Meta-like parity; the estimated recommendation contribution is already embedded in the forecast.
 - The direct-revenue business is now large enough to change total company growth.
 - Meta Platforms and Reddit confirm that Snap's 1.68 times revenue multiple is an extreme discount; the base requires only approximately 2.05 times after triangulation.
 - Australia appears small in direct company-level dollars, while the larger United States and European tails can be reserved rather than assumed as certain.
 
-## Why the action is not “add”
+## Why the action is still “wait”
 
 - The third-quarter cost improvement is already public. A beat now requires advertising/revenue execution, not merely layoffs appearing in expense.
 - Advertising effective price has improved for one quarter, but the implied impression volume was roughly flat/slightly negative and persistence after World Cup spending is unproved.
@@ -85,9 +78,23 @@ The reason is evidence and risk control, not weak expected value. Position size,
 - Headline free cash flow still does not cleanly cover stock-based compensation and dilution.
 - Adding before the operating checkpoint would concentrate unresolved evidence risk without new operating proof.
 
+## Portfolio action
+
+- **No existing position:** watch rather than buy before the third-quarter operating checkpoint.
+- **Existing long:** hold / no add only if the position fits an independently chosen loss budget; otherwise reduce.
+- **Material permanent-impairment falsifier:** pass, reduce, or exit according to current exposure.
+
+Position size, taxes, liquidity, and other holdings are intentionally omitted, so this public record cannot determine hold versus reduce conclusively. Every mapping starts from $5.21 and current evidence; historical cost basis and earlier rationale are excluded.
+
+## Benchmark and scorekeeping note
+
+The 8% metadata hurdle is an **illustrative absolute-return hurdle**, not a forecast for the Nasdaq-100 exchange-traded fund benchmark (**QQQ**). Because this record does not forecast QQQ, expected benchmark excess return remains blank and the formal QQQ-relative research stance is **insufficient evidence**. This methodological label does not change the attractive absolute valuation verdict.
+
+The analytical evidence gate passes verified identity, public financial statements, capital structure, three-method valuation arithmetic, dilution treatment, a counter-thesis, and observable review triggers. Prospective scorecard registration remains pending until the $5.21 reference and QQQ starting value are frozen from reproducible official-close sources.
+
 ## Review trigger
 
-Review immediately after third-quarter 2026 results and no later than 15 November 2026. Upgrade the action only if advertising growth, effective price, high-value users, gross margin, free cash flow per diluted share, and share count improve together. Reduce confidence immediately for a structural product remedy, unbounded Specs spending, or advertising growth below 8% with double-digit impression growth.
+Review immediately after third-quarter 2026 results and no later than 15 November 2026. **Q3 is a mandatory review point, not automatically an upgrade point:** if Snap does not disclose a credible post-World-Cup advertising split or August–September evidence, the clean durability test moves to Q4 or Q1. Upgrade the action only if advertising growth, effective price, high-value users, gross margin, free cash flow per diluted share, and share count improve together. Reduce confidence immediately for a structural product remedy, unbounded Specs spending, or advertising growth below 8% with double-digit impression growth.
 
 ## Evidence
 

@@ -13,7 +13,7 @@ research_status: draft
 coverage_status: active
 as_of: 2026-08-21
 published_at: null
-source_cutoff_at: 2026-08-21T03:30:00+02:00
+source_cutoff_at: 2026-08-21T16:15:00+02:00
 currency: USD
 reference_price: 5.21
 reference_price_at: 2026-08-20T20:59:05Z
@@ -41,19 +41,19 @@ tags: [social-media, digital-advertising, subscriptions, augmented-reality, foun
 
 > **Terminology promise:** this document deliberately repeats the full term with the acronym in brackets—for example, daily active users (**DAU**)—instead of expecting you to remember shorthand. The separate [plain-English glossary and formula guide](../GLOSSARY.md) is there when you want a definition without interrupting the argument.
 
-> **What changed:** this is a fresh re-underwrite, not a light edit of the [20 August draft](2026-08-20-initial-thesis.md). It gives more weight to cost leverage, recent guidance behavior, direct revenue, and relative valuation; it also deepens advertising prices, recommendation engines, regulation, and founder history.
+> **What changed:** this is a fresh re-underwrite, not a light edit of the [20 August draft](2026-08-20-initial-thesis.md). It gives more weight to cost leverage, recent guidance behavior, direct revenue, and relative valuation; it also deepens advertising prices, recommendation engines, regulation, and founder history. Same-day [confidence-gap](../research/2026-08-21-confidence-gap-estimates.md), [regional-economics](../research/2026-08-21-regional-ad-economics.md), and [open-source recommender](../research/2026-08-21-open-source-recommender-gap.md) passes corrected the advertising-price and Universal User Model records, bounded regional profitability and five other missing inputs, incorporated an audited Gemini second opinion and licensed workforce signals, and translated recommendation progress into an explicit sensitivity. The consolidated scenario values are unchanged; the evidence-gap pass shifted probability from bear to base.
 
 ## Read this in layers
 
 If attention is limited, use this order:
 
-1. **Two-minute answer** — the decision and valuation.
-2. **Why the valuation changed** — what the earlier work underweighted.
-3. **Advertising and recommendation engines** — the core business question.
-4. **Regulation and costs** — the main downside and the clearest operational improvement.
-5. **Position framework** — how a security drawdown translates into portfolio loss at illustrative weights.
+1. **2 minutes:** [the answer, valuation, required conditions, and break case](#two-minute-answer).
+2. **10 minutes:** [why the valuation changed](#why-the-valuation-changed-from-the-earlier-draft) and [valuation in plain English](#valuation-in-plain-english).
+3. **25 minutes:** [users](#users-enormous-scale-uneven-economics), [advertising prices](#is-snap-actually-cheaper-than-facebook-or-instagram), [recommendation engines](#why-metas-recommendation-engine-is-harder-to-copy-than-it-looks), [subscriptions](#subscriptions-and-other-revenue), and [cost structure](#cost-structure-is-serving-almost-500-million-daily-users-expensive).
+4. **Risk review:** [Specs](#specs-option-value-capital-allocation-risk-and-the-missing-glasses), [regulation and litigation](#regulation-and-litigation), [strongest bear case](#strongest-bear-case), and [falsifiers](#evidence-that-would-change-the-thesis).
+5. **Decision and monitoring:** [position framework](#position-size-framework), [next-results checklist](#what-to-watch-in-the-next-results), and [final judgment](#final-judgment).
 
-Everything after that is the full evidence trail.
+The [company landing page](../README.md#find-the-question-then-drill-down) maps each question to its specialist memo, model, or audit trail.
 
 ---
 
@@ -65,10 +65,10 @@ Snap looks **undervalued at $5.21**, but it remains a high-variance security wit
 
 | Time horizon | Bear | Base | Bull | Probability-weighted |
 | --- | ---: | ---: | ---: | ---: |
-| Six-month checkpoint | $3.70 | $6.73 | $10.81 | **$6.64** |
-| Twelve-month value | $2.50 | $7.75 | $14.25 | **$7.48** |
+| Six-month checkpoint | $3.70 | $6.73 | $10.81 | **$6.79** |
+| Twelve-month value | $2.50 | $7.75 | $14.25 | **$7.74** |
 
-The twelve-month probability-weighted value is approximately **44% above** $5.21. The base value is approximately **49% above** $5.21. The expected-value case is therefore positive.
+The twelve-month probability-weighted value is approximately **49% above** $5.21. The base value is approximately **49% above** $5.21. The expected-value case is therefore positive.
 
 The position-aware conclusion is more restrained:
 
@@ -84,7 +84,7 @@ The thesis does **not** require Snap to become Meta Platforms.
 It requires four more modest things:
 
 1. Advertising revenue grows in the low-to-mid teens over the next four quarters.
-2. Effective cost per thousand advertising impressions (**eCPM**) stops falling materially.
+2. The second-quarter effective cost per thousand advertising impressions (**eCPM**) improvement persists.
 3. More than $500 million of annualized cost savings produces free cash flow (**FCF**) per diluted share rather than being recycled into hardware, litigation, or new dilution.
 4. Other Revenue remains a durable second engine rather than a temporary partnership boost.
 
@@ -98,7 +98,7 @@ It requires four more modest things:
 
 ### Confidence
 
-Confidence is **medium**, not high. The financial statements and reported operating metrics are solid. The most important missing data—subscription churn, age-cohort retention, regional contribution profit, second-quarter advertising price, Specs economics, and legal settlement terms—are exactly the data that would make the distribution narrower.
+Confidence is **medium, materially improved**, not high. The second-quarter Form 10-Q reports advertising price per impression up approximately 10%, eliminating the most important purported disclosure gap in the earlier draft. Recent country-level ad prices, format observations, subscription prices, and a Q2-reconciled cost allocation now support North America / Europe / Rest-of-World base gross contribution margins near **72% / 60% / 13%**, with Rest of World approximately breakeven after directly attributable cash-like sales and support. Public evidence also supports a company-selected subscription-retention uplift, consumer-subscription base-rate sensitivities, an $8 million school-district settlement term, and a current Specs spending estimate. These narrow and reorder the unknowns; they do not replace company-reported subscriber cohorts, regional costs, Specs unit economics, or aggregate legal remedies. See the [confidence-gap evidence pass](../research/2026-08-21-confidence-gap-estimates.md) and [regional advertising economics model](../research/2026-08-21-regional-ad-economics.md).
 
 ---
 
@@ -115,7 +115,7 @@ Your opening figures were rough recollections used to explain **why the opportun
 | Snap advertisements often looked cheaper than Meta advertisements. | This can be true for particular campaigns and for cost per acquisition (**CPA**), but it is not universal for cost per thousand impressions (**CPM**) or cost per click (**CPC**). Some public series specifically measure a link click rather than every kind of click. The distinction matters and is explained below. |
 | Meta's artificial intelligence (**AI**) improvements suggested Snap could improve monetization too. | The algorithms are broadly copyable; Meta's conversion history, advertiser density, **auction liquidity**—enough relevant advertisers and bids competing for each impression—compute efficiency, and agency workflows are much harder to copy. Snap can improve without reaching parity. |
 | The restructuring could unlock about $500 million of savings. | Snap targets **more than $500 million of annualized cost-base savings** from the second half of 2026. The official plan involved roughly 16% of full-time employees (**FTE**), not a precise 20%, and the savings are not immediate free cash flow (**FCF**). |
-| Specs had consumed billions but perhaps only a few hundred million per year. | Snap has verified more than $3 billion over 11 years. Current annual spending and a separate Specs profit-and-loss statement are not disclosed. |
+| Specs had consumed billions but perhaps only a few hundred million per year. | Snap has verified more than $3 billion over 11 years. Activist investor Irenic estimates roughly $500 million of current annual cash spending; Snap still does not disclose a separate Specs profit-and-loss statement or unit economics. |
 | The third quarter should show more of the organizational changes than the second quarter. | Supported. Personnel savings should be more fully visible beginning in the third quarter. The market already knows this, so the relevant question is whether Snap exceeds the new higher bar. |
 
 **Bottom line:** the original purchase logic was directionally coherent. The strongest parts were the enormous monetization gap, direct-revenue optionality, and operating leverage. The weakest part was treating a low user or revenue multiple as a floor without fully charging for dilution, governance, auction weakness, and legal/hardware tails.
@@ -124,7 +124,7 @@ Your opening figures were rough recollections used to explain **why the opportun
 
 ## Why the valuation changed from the earlier draft
 
-The earlier probability-weighted value was $5.44. The revised value is $7.48. The change is large enough that it needs an explicit bridge.
+The earlier probability-weighted value was $5.44. The re-underwrite initially produced $7.48; the same-day evidence-gap correction increases it to $7.74 by shifting five probability points from bear to base. The scenario values themselves are unchanged. The total change is large enough that it needs an explicit bridge.
 
 ### 1. Recent adjusted-profit guidance has been conservative
 
@@ -160,7 +160,7 @@ The 60% gross-margin goal is not automatic. At $6.8 billion of 2026 revenue, the
 | --- | ---: | ---: | ---: | ---: |
 | Meta Platforms | 6.11 times | 28% | 38.1% | $605 versus $545.83 reference |
 | Reddit | 10.19 times | 61% | 28.2% | $176 versus $150.31 reference |
-| Snap | 1.68 times | 19% | -5.1% | **$7.48 versus $5.21 reference** |
+| Snap | 1.68 times | 19% | -5.1% | **$7.74 versus $5.21 reference** |
 
 The peer valuations are intentionally short, not full theses. Meta Platforms looks approximately fairly valued after discounting its $605 twelve-month outcome at a 10% required return; Reddit looks mildly attractive after discounting its $176 outcome at 11%. Their [full quick valuations](../research/2026-08-21-meta-reddit-relative-valuation.md) include capital intensity, dilution, and cash-flow quality.
 
@@ -230,7 +230,7 @@ Snap is monetizing high-value users much better. North American revenue rose 15%
 
 All net user growth comes from Rest of World (**RoW**), which represents approximately 61% of daily active users (**DAU**) but only 19% of revenue. At current quarterly average revenue per user (**ARPU**), roughly ten Rest of World (**RoW**) users produce the same revenue as one North American user.
 
-That does **not** prove Rest of World (**RoW**) users are unprofitable. Snap does not disclose regional infrastructure, support, moderation, payment, or sales costs. It does prove that global daily active users (**DAU**) can rise while the economic mix deteriorates.
+That does **not** prove Rest of World (**RoW**) users are unprofitable. A Q2-reconciled model using recent country ad-yield observations estimates approximately 13% Rest-of-World gross contribution and approximately 3% after directly attributable cash-like sales and support, with wide sensitivity ranges of 4%–24% and -6%–14%, respectively. The [regional advertising economics memo](../research/2026-08-21-regional-ad-economics.md) shows the assumptions and exact bridge. Snap still does not disclose regional infrastructure, subscription, support, moderation, payment, or sales costs. Global daily active users (**DAU**) can therefore rise while the economic mix deteriorates even if the marginal region is modestly positive.
 
 ### Why users stay—and why they age out
 
@@ -395,13 +395,13 @@ The investable question is whether good advertiser outcomes cause effective cost
 | Third quarter of 2025 | +22% | approximately -14% | +5% |
 | Fourth quarter of 2025 | +14% | -8% | +5% |
 | First quarter of 2026 | +17% | -12% | +3% |
-| Second quarter of 2026 | not disclosed | not disclosed | +9% |
+| Second quarter of 2026 | approximately -1% implied | approximately +10% reported | +9.3% |
 
-Sources: Snap's [second-quarter 2025 letter](https://www.sec.gov/Archives/edgar/data/1564408/000156440825000047/q22025investorletterex99.htm), [third-quarter 2025 letter](https://www.sec.gov/Archives/edgar/data/1564408/000156440825000063/q32025investorletter.htm), [fourth-quarter 2025 letter](https://www.sec.gov/Archives/edgar/data/1564408/000156440826000011/snapincq42025investorlet.htm), and [first-quarter 2026 letter](https://www.sec.gov/Archives/edgar/data/1564408/000156440826000024/snapincq12026investorlet.htm).
+Sources: Snap's [second-quarter 2025 letter](https://www.sec.gov/Archives/edgar/data/1564408/000156440825000047/q22025investorletterex99.htm), [third-quarter 2025 letter](https://www.sec.gov/Archives/edgar/data/1564408/000156440825000063/q32025investorletter.htm), [fourth-quarter 2025 letter](https://www.sec.gov/Archives/edgar/data/1564408/000156440826000011/snapincq42025investorlet.htm), [first-quarter 2026 letter](https://www.sec.gov/Archives/edgar/data/1564408/000156440826000024/snapincq12026investorlet.htm), and [second-quarter 2026 Form 10-Q](https://www.sec.gov/Archives/edgar/data/1564408/000156440826000052/snap-20260630.htm).
 
 Meta Platforms produced the opposite pattern in the second quarter of 2026: advertising impressions rose 14% and average price per advertisement rose 12%, producing 27% advertising growth. Snap's marketplace needs better prediction **and** more advertiser demand. [Meta Platforms second-quarter 2026 results](https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx)
 
-The absence of second-quarter Snap impression and effective-price disclosure is not proof of deterioration. It is a reason not to declare yield repair complete.
+Second-quarter advertising revenue of $1,282.5 million was 9.29% above the prior year. Dividing that growth by the approximately 10% reported price increase implies about -0.65% impression growth. Because price was rounded and mix sits inside the average, the correct description is **roughly flat to slightly negative impressions**. Yield repair is now observed for one quarter, but it is not yet durable and did not coincide with volume growth.
 
 ---
 
@@ -477,6 +477,28 @@ The mathematical architecture is not Meta's deepest moat. Research papers descri
 
 Snap's [Bento platform](https://eng.snap.com/introducing-bento) says it supports more than 500 models, more than one billion predictions per second, more than 100,000 training-compute hours per day, and an approximately 800-terabyte feature store. Snap's [Universal User Modeling](https://eng.snap.com/universal_user_modeling) combines eligible signals across content, advertisements, growth surfaces, and augmented reality (**AR**) Lenses. These issuer-selected figures support the conclusion that Snap operates an industrial-scale system; they are not independent proof of efficiency or competitive parity.
 
+The [underlying Universal User Modeling paper](https://arxiv.org/abs/2504.21838) provides stronger production evidence than the engineering summary alone. It reports a 2.78% increase in long-form video open rate and a 19.2% increase in aggregate long-form view-time sum, but only 0.28% more long-form view time per user, alongside changes of 0.04% in application-open daily users and 0.08% in content-view daily users. The correct reading is that the architecture can improve individual surfaces without automatically transforming platform-wide engagement.
+
+A dedicated [open-source recommendation-system review](../research/2026-08-21-open-source-recommender-gap.md) changes the risk framing. Public work from Meta, Google, ByteDance, Alibaba, Baidu, Tencent, and Kuaishou now covers much of retrieval, ranking, distributed training, sequence modelling, multimodal understanding, and generative recommendation. Snap can adopt those methods and rent accelerators instead of financing its own chip. Its reported move to Google tensor processing units cut advertising-model training cost by more than two-thirds. This raises confidence that Snap can continue improving absolute recommendation quality.
+
+It does **not** raise confidence by the same amount in advertising parity. Unlike a downloadable language model, a recommender does not arrive with Meta's changing user-item histories, purchase labels, bids, budgets, experiment archive, or auction liquidity. Architecture is becoming cheaper; the economic feedback loop is not. Content recommendations should therefore narrow the gap faster than advertising yield.
+
+Current execution evidence strengthens the middle outcome. A [July 2026 Snap paper](https://research.snap.com/publications/semantic-ids-for-recommender-systems-at-snapchat-use-cases-technical-challenges-and-design-choices.html) lists 18 authors and says semantic-identifier variants have reached multiple production models after offline and online tests with positive metric impact, although no exact lift is disclosed. A targeted licensed workforce review is consistent with a technically intact but much smaller engineering organization: Snap's covered global engineering footprint was broadly stable over the latest six months and had comparable median tenure, but Meta and ByteDance were each more than 20 times larger in the same provider view and Snap's latest modeled attrition exceeded hiring. Detailed provider counts remain local-only and are not audited payroll.
+
+### How much more can Snap plausibly extract?
+
+The [quantified technical scenario](../research/2026-08-21-open-source-recommender-gap.md#8-how-much-recommendation-upside-remains) estimates the following cumulative two-to-three-year lift versus a counterfactual with no further material recommendation improvement:
+
+| Technical outcome | Platform-wide engagement | Advertiser conversion/value at fixed spend | Advertising-revenue uplift | Subjective probability |
+| --- | ---: | ---: | ---: | ---: |
+| Stalled | 0%–1% | 0%–3% | 0%–2% | 20% |
+| Competent fast follower | **1%–3%** | **5%–10%** | **3%–7%** | **65%** |
+| Meaningful frontier narrowing | 3%–6% | 10%–20% | 8%–15% | 15% |
+
+These are analyst ranges, not company guidance, and the probabilities apply only to the recommendation subsystem. The valuation's 25% / 55% / 20% company probabilities remain unchanged because they also contain users, subscriptions, costs, regulation, litigation, Specs, and dilution.
+
+The next-four-quarter base forecast already attributes approximately **$240 million**, or a 4.1% lift over its no-further-improvement advertising path, to recommendation, measurement, creative understanding, and lower-funnel automation. The comparable bear/base/bull sum-of-the-parts values are approximately $0.01 / $0.23 / $0.64 per share; probability-weighted, about **$0.25 per share is already embedded** in the $7.74 value. It is not additional upside.
+
 ### The parts Snap can copy
 
 - multi-stage candidate retrieval and ranking;
@@ -521,7 +543,7 @@ The limitation is that private messages cannot simply be mined like public conte
 | Strongest signal | communication-adjacent behavior, Stories, Spotlight, Map, augmented reality (**AR**) | cross-application social, creator, business, and commerce behavior | rapid watch, skip, replay, search, and share feedback | explicit communities, topics, and research conversations |
 | Main advantage | differentiated close-friend and camera graph | conversion history, advertiser liquidity, placement breadth, compute | fast interest feedback and native short-video demand | explicit context and commercial research intent |
 | Main weakness | sticky messaging is not automatically purchase intent | enormous capital intensity and mature-market scale | private financial disclosure is limited; regulatory exposure | smaller daily scale and less mature automation |
-| Current advertising read-through | improving products; effective-price repair unproven | impressions and price both growing | credible real-time recommender capability | very fast growth from a smaller base |
+| Current advertising read-through | improving products; one quarter of effective-price repair but roughly flat volume | impressions and price both growing | credible real-time recommender capability | very fast growth from a smaller base |
 
 This table deliberately combines unlike public evidence. Meta Platforms supplies audited financial outcomes and issuer engineering results; Snap supplies product and issuer disclosures; ByteDance research is only a technical proxy for TikTok and does not establish TikTok's exact current production stack; Reddit's growth starts from a smaller marketplace, and Reddit Max was still a limited beta supported by issuer tests. It is a capability map, not a controlled benchmark. Primary references: [Snap ad ranking](https://eng.snap.com/machine-learning-snap-ad-ranking), [Meta Andromeda](https://engineering.fb.com/2024/12/02/production-engineering/meta-andromeda-advantage-automation-next-gen-personalized-ads-retrieval-engine/), [ByteDance Monolith paper](https://arxiv.org/abs/2209.07663), and [Reddit Max](https://www.business.reddit.com/blog/max-campaigns).
 
@@ -533,9 +555,9 @@ This table deliberately combines unlike public evidence. Meta Platforms supplies
 - Application purchases grew 128% and cost per application purchase fell 18% in the second quarter of 2026.
 - Sponsored Snaps and Promoted Places add differentiated communication and Map inventory.
 
-Sources: Snap's [first-quarter 2026 investor letter](https://www.sec.gov/Archives/edgar/data/1564408/000156440826000024/snapincq12026investorlet.htm) and [second-quarter 2026 prepared remarks](https://s25.q4cdn.com/442043304/files/doc_financials/2026/q2/Q2-2026-Prepared-Remarks.pdf). These are issuer-selected operating metrics; the missing company-wide effective-price disclosure remains the more demanding test.
+Sources: Snap's [first-quarter 2026 investor letter](https://www.sec.gov/Archives/edgar/data/1564408/000156440826000024/snapincq12026investorlet.htm), [second-quarter 2026 prepared remarks](https://s25.q4cdn.com/442043304/files/doc_financials/2026/q2/Q2-2026-Prepared-Remarks.pdf), and [second-quarter 2026 Form 10-Q](https://www.sec.gov/Archives/edgar/data/1564408/000156440826000052/snap-20260630.htm). The lower-funnel metrics are issuer-selected; the company-wide price increase is a separate filing disclosure and is the more demanding evidence.
 
-These are meaningful product signals. The missing proof is company-wide effective cost per thousand advertising impressions (**eCPM**).
+These are meaningful product signals. The remaining proof is persistence: company-wide effective cost per thousand advertising impressions (**eCPM**) must remain near flat or positive while impression volume resumes healthy growth.
 
 ### Has Snap Ads Manager caught up?
 
@@ -662,7 +684,7 @@ At the midpoint of Snap's 16%–17% guide for other adjusted cost of revenue:
 | Other adjusted cost of revenue | ($2.15) |
 | **Adjusted gross profit before operating expenses** | **$7.45** |
 
-This is a global average, not a regional profit table. A Rest of World (**RoW**) user produces only approximately $4 of annualized revenue at the second-quarter rate, but marginal cloud cost, engagement intensity, support, moderation, and content costs differ. Public data cannot establish regional profitability.
+This is a global average, not a regional profit table. A Rest of World (**RoW**) user produces only approximately $4 of annualized revenue at the second-quarter rate, but marginal cloud cost, engagement intensity, support, moderation, and content costs differ. Public country-price and campaign evidence can now **bound** regional contribution, but it cannot establish reported regional profitability.
 
 ### Cost per user is stable—not collapsing
 
@@ -722,9 +744,9 @@ These are issuer-selected metrics. They make higher output with fewer employees 
 
 ### Workforce evidence after the cut
 
-Licensed aggregate workforce data were reviewed through an authorized signed-in session, but exact observations and derived tables remain local-only because redistribution rights were not established. The review was directionally consistent with selective reallocation and did not establish that specific advertising, subscription, or Specs teams strengthened.
+Licensed aggregate workforce data were reviewed through an authorized signed-in session. The provider's global engineering-role view covered Snap, Meta Platforms, ByteDance, Pinterest, and Reddit across a consistent latest-six-month window, plus a longer Snap history. It showed a broadly stable recent Snap footprint, a modest increase from August 2024 but a decline from the mid-2025 peak, median tenure broadly comparable with Meta and ByteDance, substantial data-analytics skill overlap, and a latest modeled attrition rate above hiring. It also showed the decisive scale limitation: Meta and ByteDance were each more than 20 times larger in covered engineering roles, while Snap's classified management-and-director bench was proportionally thinner than Meta's.
 
-The most defensible public conclusion is that official operating results show enough capability remained to keep shipping; the workforce evidence contributes no numerical forecast or valuation input. The [public-safe workforce memo](../research/2026-08-20-workforce.md) documents the rights boundary and limitations.
+Exact provider observations and derived tables remain local-only because redistribution rights were not established, and the classifications are modeled rather than official payroll. The workforce evidence therefore informs the 20% / 65% / 15% technical probabilities qualitatively; no provider count enters revenue or valuation arithmetic directly. Together with the 18-author production paper and current shipped results, it supports **competent fast follower**, not a hollowed-out team and not Meta-scale parity. The [public-safe workforce memo](../research/2026-08-20-workforce.md) documents the rights boundary and limitations.
 
 ### What would confirm durable efficiency
 
@@ -940,7 +962,7 @@ The operating scenarios are already net of the following incremental allowances:
 | Settlement, fine, and court-remedy cash below adjusted earnings before interest, taxes, depreciation, and amortization (**adjusted EBITDA**) | $275 million | $125 million | $35 million |
 | **Total legal and compliance cash effect** | **$300 million** | **$150 million** | **$50 million** |
 
-At 30% / 50% / 20% scenario weights, the cash allowances average $175 million and revenue drag averages approximately $50 million. Capitalizing the revenue effect at the specialist memo's 1.6-times diagnostic multiple produces a combined check of approximately $254 million, at the high end of the $180 million–$260 million central range.
+At the updated 25% / 55% / 20% scenario weights, the cash allowances average $167.5 million and revenue drag averages $47.5 million. Capitalizing the revenue effect at the specialist memo's 1.6-times diagnostic multiple produces a combined check of approximately $243.5 million, inside the $180 million–$260 million central range.
 
 The forecast's revenue and free cash flow (**FCF**) are **after** these amounts. The target net-debt bridge also starts from that after-allowance free cash flow (**FCF**). Nothing subtracts another $0.09–$0.14 per share later. Only a discontinuous outcome beyond these allowances—such as an intrusive injunction or unusually large settlement cycle—affects the tail scenario and valuation multiple.
 
@@ -1098,16 +1120,16 @@ Target value per share =
 
 | Scenario | Operating story | Implied enterprise value (**EV**) / revenue near adopted value | Twelve-month target | Probability |
 | --- | --- | ---: | ---: | ---: |
-| Bear | advertising price keeps falling; high-value users weaken; savings partly rebuild; dilution continues | approximately 0.85 times | **$2.50** | 30% |
-| Base | total revenue +17.8%; advertising +13.5%; margin and free cash flow (**FCF**) improve; risk remains discounted | approximately 2.05 times | **$7.75** | 50% |
+| Bear | second-quarter advertising-price repair reverses; high-value users weaken; savings partly rebuild; dilution continues | approximately 0.85 times | **$2.50** | 25% |
+| Base | total revenue +17.8%; advertising +13.5%; price remains near flat/positive; margin and free cash flow (**FCF**) improve; risk remains discounted | approximately 2.05 times | **$7.75** | 55% |
 | Bull | advertising price turns positive; direct revenue scales; users stabilize; dilution stops | approximately 3.3 times | **$14.25** | 20% |
 
 ```text
 Probability-weighted value =
-    30% × $2.50
-    + 50% × $7.75
+    25% × $2.50
+    + 55% × $7.75
     + 20% × $14.25
-    = $7.48
+    = $7.7375, displayed as $7.74
 ```
 
 ### Cross-checks
@@ -1133,7 +1155,7 @@ The base remains approximately two-thirds below Meta Platforms and four-fifths b
 
 ### Six-month checkpoint
 
-The six-month bear, base, and bull values are $3.70, $6.73, and $10.81. Their probability-weighted value is $6.64.
+The six-month bear, base, and bull values are $3.70, $6.73, and $10.81. Their updated probability-weighted value is $6.79.
 
 Six months should show the third and fourth quarters. That is enough to test guidance behavior, cost savings, advertising price direction, and the first Specs launch response. It is not enough to prove multi-year subscription retention or durable legal outcomes.
 
@@ -1260,7 +1282,7 @@ Base expectations:
 - no new unbounded Specs spending;
 - no material new legal reserve beyond the modeled range.
 
-The most valuable disclosure would be global impression growth and effective cost per thousand advertising impressions (**eCPM**). Without it, investors cannot tell whether advertising growth came from more supply or better yield.
+The most valuable disclosure would be third-quarter global and regional impression growth and effective cost per thousand advertising impressions (**eCPM**). The second quarter came from price/mix with roughly flat volume; the next test is persistence after World Cup spending and whether volume can resume without renewed price dilution.
 
 ### Fourth quarter of 2026
 
@@ -1305,18 +1327,19 @@ The new evidence is more positive than the earlier draft:
 - formal adjusted-profit guidance has been conservative over the short recent sample, while revenue guidance was much tighter and one result had already been pre-announced;
 - Meta Platforms and Reddit show how extreme Snap's revenue discount is;
 - Australia appears financially small at company scale;
-- recommendation and advertising infrastructure is credible, not experimental.
+- recommendation and advertising infrastructure is credible, not experimental;
+- open research and cloud accelerators reduce the risk that Snap becomes permanently obsolete at the architecture layer, although they do not reproduce Meta's data or marketplace.
 
 The remaining risk is also clear:
 
-- Snap has not proved advertising price repair;
+- Snap has proved advertising price repair for one quarter, not through a full demand cycle;
 - the best advertiser studies are selected and low-allocation;
 - high-value users are shrinking;
 - stock-based compensation (**SBC**) still exceeds headline free cash flow (**FCF**);
 - founders control the vote;
 - Specs and litigation produce fat tails.
 
-At $5.21, the expected return is high enough for an **attractive research stance**. The existing-position action remains **hold / no add before the third-quarter proof point**, without a public sizing recommendation. The next result needs to show more than cost cuts: it needs the first convincing evidence that advertiser demand is beginning to catch the supply of impressions.
+At $5.21, the expected return is high enough for an **attractive research stance**. The existing-position action remains **hold / no add before the third-quarter proof point**, without a public sizing recommendation. The next result needs to show more than cost cuts: it needs the second consecutive quarter of healthy price and evidence that impression delivery can resume without dilution.
 
 ---
 
@@ -1330,10 +1353,15 @@ This re-underwrite used parallel specialist workstreams for:
 - cost structure and artificial intelligence (**AI**) productivity;
 - financial statements and capital structure;
 - users, subscriptions, Specs, and product risk;
+- subscription, age, regional-profitability, advertising-price, Specs, and legal confidence gaps;
+- country-level Snap/Meta/Reddit advertising prices and regional contribution economics;
+- open-source recommendation systems, Chinese public research, current Snap production work, and recommender-workforce capacity;
 - management, founder history, culture, and workforce;
 - adversarial review and arithmetic audit.
 
-A Gemini Deep Research report was used as a bullish hypothesis generator, not as evidence. Its underlying citations were rechecked; several capitalization, debt, diluted-share, Specs-spending, subscriber, and cash-flow assumptions were not reliable enough to use. That second opinion helped test whether the main work had become too negative without outsourcing the conclusion.
+Gemini Deep Research reports were used for adversarial source discovery, not as evidence. The final open-source-recommender report was recovered from its saved conversation after an earlier automation snapshot incorrectly treated it as incomplete. Underlying citations were rechecked; unsupported capitalization, debt, diluted-share, Specs-spending, subscriber, cash-flow, Monolith-lift, cloud-lock-in, and regional-margin claims were rejected or corrected. The useful result was broader source coverage and a genuine second opinion without outsourcing the conclusion.
+
+Licensed Revelio Labs aggregates were used as a lower-weight organizational-capacity check. Detailed provider counts and tables remain local-only because redistribution rights were not established. Only qualitative conclusions—broad recent stability, comparable tenure, a more-than-20-fold Meta/ByteDance engineering-scale gap, and a negative latest hiring/attrition spread—inform the tracked technical probabilities. They are not treated as audited payroll or a direct revenue input.
 
 Start with these supporting files if you want to challenge one part:
 
@@ -1341,6 +1369,9 @@ Start with these supporting files if you want to challenge one part:
 - [Four-quarter forecast](../research/2026-08-21-quarterly-forecast.md)
 - [Meta Platforms and Reddit quick valuations](../research/2026-08-21-meta-reddit-relative-valuation.md)
 - [Advertising prices and recommendation engines](../research/2026-08-21-ads-pricing-recommenders-revalidation.md)
+- [Open-source recommendation systems, current team evidence, and quantified upside](../research/2026-08-21-open-source-recommender-gap.md)
+- [Confidence-gap estimates](../research/2026-08-21-confidence-gap-estimates.md)
+- [Regional advertising prices and contribution economics](../research/2026-08-21-regional-ad-economics.md)
 - [Regulation and cost structure](../research/2026-08-21-regulation-costs-revalidation.md)
 - [Financials and capital structure](../research/2026-08-20-financials-capital-structure.md)
 - [Product, users, subscriptions, Specs, and regulation](../research/2026-08-20-product-users-regulation.md)
@@ -1348,6 +1379,8 @@ Start with these supporting files if you want to challenge one part:
 - [Management and governance](../research/2026-08-20-management-governance.md)
 - [Workforce evidence](../research/2026-08-20-workforce.md)
 - [Adversarial review](../research/2026-08-20-adversarial-review.md)
+- [Independent release review](../research/2026-08-21-independent-review.md)
+- [Valuation verification index](../valuation/README.md)
 - [Central source log](../sources.md); specialist memos retain additional module-specific citations and provenance tables
 
 ## Disclosure

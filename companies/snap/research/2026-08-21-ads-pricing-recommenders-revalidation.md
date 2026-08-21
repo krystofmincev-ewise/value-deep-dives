@@ -643,11 +643,11 @@ Holding the multiple and all other inputs fixed:
 
 ## 10. Final investment interpretation
 
-### What the user’s original intuition gets right
+### What current evidence supports
 
 Snap owns a very large attention asset, reaches differentiated younger users, and monetises far below Meta. Independent-measurement vendors and commerce datasets provide credible evidence that some advertisers are under-allocating to Snap. Better retrieval, ranking, automation, and conversion measurement can turn that under-allocation into demand. Snap’s engineering disclosures and 2026 lower-funnel product metrics show a plausible mechanism, not merely a valuation story.
 
-### Where the intuition needs correction
+### What current evidence does not support
 
 Low advertising prices are not proof of hidden value. They can be the symptom of the problem. Snap’s marketplace has repeatedly added impressions faster than advertiser demand, pushing effective prices down. Meta’s superiority is not reducible to one recommendation algorithm that Snap can reproduce. Meta’s advertiser liquidity, rare-event conversion history, placement breadth, compute, measurement, and workflow position compound with its models.
 

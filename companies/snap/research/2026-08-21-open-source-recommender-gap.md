@@ -30,8 +30,8 @@ The most likely investment consequence is asymmetric:
 
 - **Content recommendation should improve materially.** Snap owns frequent watch, skip, replay, share, favourite, search, and creator-interaction signals on Spotlight and Stories. Public vision-language encoders and sequence architectures help cold start and content understanding.
 - **Advertising recommendation should improve, but relative economic parity is less likely.** Better models can raise return on advertising spend, yet sparse purchase labels and thinner auctions constrain the benefit.
-- **Technical-obsolescence risk is lower than the previous memo implied.** Confidence that Snap has a credible production stack rises from medium to **medium-high**.
-- **Confidence in closing Meta's monetisation gap remains medium-low.** The valuation and hold/no-add decision do not change until product gains appear in North American engagement, effective advertising price, conversion economics, and infrastructure efficiency.
+- **Technical-obsolescence risk is not the central bottleneck.** Confidence that Snap has a credible production stack is **medium-high**.
+- **Confidence in closing Meta's monetisation gap remains medium-low.** The current valuation probabilities do not change until product gains appear in North American engagement, effective advertising price, conversion economics, and infrastructure efficiency.
 
 In one sentence: **the architecture gap can narrow faster than the revenue gap**.
 
@@ -274,7 +274,7 @@ The operating model starts from approximately $5.328 billion of trailing adverti
 | Base | $6.048bn | 13.5% | 9.0% | 4.1% | $240m | $0.23 |
 | Bull | $6.422bn | 20.5% | 12.5% | 7.1% | $428m | $0.64 |
 
-The probability-weighted sum-of-the-parts diagnostic is approximately **$0.25 per share**. It is already inside the $7.74 probability-weighted value and must not be added to it. A failure to make further progress would therefore remove about $0.25 from this narrow diagnostic before any secondary effect on free cash flow or the valuation multiple; a visible technical failure could have a larger effect because it would also weaken confidence in the broader advertising path.
+The probability-weighted sum-of-the-parts diagnostic is approximately **$0.24 per share**. It is already inside the $7.48 probability-weighted value and must not be added to it. A failure to make further progress would therefore remove about $0.24 from this narrow diagnostic before any secondary effect on free cash flow or the valuation multiple; a visible technical failure could have a larger effect because it would also weaken confidence in the broader advertising path.
 
 ### Updated technical probabilities
 
@@ -284,7 +284,7 @@ For the recommendation subsystem alone—not for the total company scenarios—t
 - Snap's current 18-author production paper, Bento scale, UUM launches, Spotlight retrieval, and lower-funnel results shift probability from technical failure into the fast-follower case.
 - The licensed workforce review, Snap's more-than-20-fold peer scale gap, negative latest hiring/attrition spread, Meta's custom infrastructure, and the missing auction data shift probability from frontier narrowing into the fast-follower case.
 
-The main valuation remains at 25% bear / 55% base / 20% bull because those scenarios also bundle user mix, subscriptions, cost savings, regulation, litigation, Specs, and dilution. Replacing the company probabilities with the subsystem probabilities would double-count the same evidence.
+The main valuation uses 30% bear / 50% base / 20% bull because those scenarios also bundle user mix, subscriptions, cost savings, regulation, litigation, Specs, dilution, and the contaminated Q2 advertising-price comparison. Replacing the company probabilities with the subsystem probabilities would double-count the same evidence.
 
 ---
 

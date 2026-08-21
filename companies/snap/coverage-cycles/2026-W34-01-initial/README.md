@@ -32,7 +32,7 @@ tags: [social-media, digital-advertising, initial-coverage]
 | ISO week | `2026-W34` |
 | Company cycle number | `01` |
 | Kind | Initial coverage |
-| Decision supported | Whether Snap is sufficiently mispriced to justify buying or adding over a 12-month horizon |
+| Decision supported | Current watch / buy / hold / reduce / exit mapping at $5.21 over a 12-month horizon, independent of purchase history |
 | Started | 20 August 2026 |
 | Source cutoff | 21 August 2026, 16:15 Central European Summer Time |
 | Research status | Draft analytical dossier complete; prospective registration pending |
@@ -43,7 +43,7 @@ tags: [social-media, digital-advertising, initial-coverage]
 | Depth | Record | Purpose |
 | --- | --- | --- |
 | Two-minute view | [Integrated conclusion](../../thesis/2026-W34-final-report.md#two-minute-answer) | Stance, action, valuation range, central requirements, and break cases |
-| Decision | [Hold / no add before third-quarter proof](../../decisions/2026-W34-decision.md) | Position-aware action, hurdle, and review trigger |
+| Decision | [Current action mapping at $5.21](../../decisions/2026-W34-decision.md) | Absolute value, formal stance, conditional action, hurdle, and review trigger |
 | Final report | [Canonical cycle report](../../thesis/2026-W34-final-report.md) | Business, industry, users, advertising, recommendation systems, risks, valuation summary, and variant view |
 | Valuation | [Canonical valuation](../../valuation/2026-W34-valuation.md) | Bear/base/bull assumptions, sensitivities, and enterprise-to-equity bridge |
 | Audit | [Independent review](../../research/2026-08-21-independent-review.md) | Arithmetic, reconciliation, adversarial checks, and publication gates |
@@ -57,14 +57,14 @@ tags: [social-media, digital-advertising, initial-coverage]
 | Source log | [Sources](../../sources.md) | Current through cutoff |
 | Final report | [Coverage-cycle report](../../thesis/2026-W34-final-report.md) | Draft, release-ready |
 | Valuation | [Coverage-cycle valuation](../../valuation/2026-W34-valuation.md) | Draft, release-ready |
-| Decision | [Coverage-cycle decision](../../decisions/2026-W34-decision.md) | Draft, position-aware |
+| Decision | [Coverage-cycle decision](../../decisions/2026-W34-decision.md) | Draft, current-opportunity frame |
 | Operating forecast | [Coverage-cycle forecast](../../research/2026-W34-quarterly-forecast.md) | Complete |
 | Independent review | [Final review](../../research/2026-08-21-independent-review.md) | Passed |
 | Deterministic checks | [Valuation verification index](../../valuation/README.md) | Passed |
 
 ## Integrated conclusion
 
-The completed cycle incorporates current filings, advertising-price and regional-economics work, Meta and Reddit anchors, recommendation-system and workforce research, confidence-gap estimates, the operating forecast, scenario probabilities, and independent verification. The absolute expected-value assessment is attractive. The formal QQQ-relative stance is insufficient evidence because the dossier does not forecast QQQ, while the position-aware action is hold / no add before the next operating proof point.
+The completed cycle incorporates current filings, advertising-price and regional-economics work, Meta and Reddit anchors, recommendation-system and workforce research, confidence-gap estimates, the operating forecast, scenario probabilities, and independent verification. The absolute expected-value assessment is attractive. The formal QQQ-relative stance is insufficient evidence because the dossier does not forecast QQQ. From current evidence alone, the no-position action is watch before the next operating checkpoint. The user-reported existing-long action is conditional hold / no add only if exposure fits a private loss budget; otherwise reduce. Purchase history does not support any conclusion.
 
 ## Cycle boundary
 

@@ -25,7 +25,7 @@ Snap is **genuinely cheap on revenue and user-value ratios**. It is not obviousl
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | **Meta Platforms** | $545.83 | 6.11x | Q2 total +28%; ads +27% | 38.1% | 16.6% | 11.0% | First-half diluted weighted-average shares -0.6% year over year | **$605** |
 | **Reddit** | $150.31 | 10.19x | Q2 total +61%; ads +64% | 28.2% | 36.7% | 12.2% | Fully diluted shares +0.2% year over year after repurchases | **$176** |
-| **Snap** | $5.21 | 1.68x | Q2 total +19%; ads +9% | **-5.1%** | 11.1% | **16.2%** | Fully diluted proxy +3.0% year over year | Current [canonical valuation](../valuation/2026-W34-valuation.md): **$7.74** |
+| **Snap** | $5.21 | 1.68x | Q2 total +19%; ads +9% | **-5.1%** | 11.1% | **16.2%** | Fully diluted proxy +3.0% year over year | Current [canonical valuation](../valuation/2026-W34-valuation.md): **$7.48** |
 
 **Interpretation:** Snap trades at a 72% discount to Meta and an 84% discount to Reddit on enterprise value / trailing revenue. The discount is too large to dismiss, but most of it has an economic explanation: weaker advertising growth, negative accounting profit, lower monetization, higher dilution, net debt, and weaker governance rights. The valuation question is not whether Snap should receive Meta's or Reddit's multiple today. It is whether Snap can earn even a modest **2.0x–2.5x** multiple by proving durable advertising growth, positive owner earnings, and contained dilution. A 2.4x target-date revenue multiple is still 61% below Meta's current multiple and 76% below Reddit's.
 

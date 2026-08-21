@@ -51,7 +51,7 @@ At [Norges, 08:03](https://www.youtube.com/watch?v=i4LjivMgK9w&t=483s), Spiegel 
 
 ### Design structure and founder concentration
 
-Spiegel describes a core design group of roughly 9–12 people with no elaborate title hierarchy, weekly direct reviews, many ideas, and frequent rotation: [David Senra, 28:34](https://www.youtube.com/watch?v=Sr6n-9mzYnk&t=1714s), [Lenny, 21:34](https://www.youtube.com/watch?v=-7Yol5vX5xw&t=1294s), and [Norges, 05:00](https://www.youtube.com/watch?v=i4LjivMgK9w&t=300s). This supports the user's recollection of a very small design team, though it is not an audited company-wide design headcount.
+Spiegel describes a core design group of roughly 9–12 people with no elaborate title hierarchy, weekly direct reviews, many ideas, and frequent rotation: [David Senra, 28:34](https://www.youtube.com/watch?v=Sr6n-9mzYnk&t=1714s), [Lenny, 21:34](https://www.youtube.com/watch?v=-7Yol5vX5xw&t=1294s), and [Norges, 05:00](https://www.youtube.com/watch?v=i4LjivMgK9w&t=300s). The interviews support a very small core design group, though not an audited company-wide design headcount.
 
 The structure can create coherence, speed, and founder-quality control. It can also make Spiegel a bottleneck and weaken dissent. Stories, Lenses, the Android rebuild, and Snapchat+ are positive outcomes; the 2018 redesign, early Spectacles inventory, and Pixy are negative ones. The operating record, not the elegance of the design ritual, should set the multiple.
 

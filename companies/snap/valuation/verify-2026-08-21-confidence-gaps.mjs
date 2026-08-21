@@ -9,6 +9,7 @@ function close(actual, expected, tolerance, label) {
 
 const q2AdvertisingRevenue = { current: 1_282_522, prior: 1_173_548 };
 const q2AdvertisingPriceGrowth = 0.10;
+const q2PriorYearAdvertisingPriceGrowth = -0.10;
 const q2AdvertisingRevenueGrowth =
   q2AdvertisingRevenue.current / q2AdvertisingRevenue.prior - 1;
 const q2ImpressionGrowth =
@@ -16,6 +17,13 @@ const q2ImpressionGrowth =
 
 close(q2AdvertisingRevenueGrowth, 0.0928586, 0.000_000_1, "Q2 ad revenue growth");
 close(q2ImpressionGrowth, -0.0064922, 0.000_000_1, "Q2 implied impression growth");
+close(
+  (1 + q2PriorYearAdvertisingPriceGrowth) *
+    (1 + q2AdvertisingPriceGrowth),
+  0.99,
+  0.000_001,
+  "two-year Q2 advertising-price index",
+);
 
 const regionalInputs = {
   northAmerica: { arpu: 10.26, revenue: 942.9 },
@@ -74,7 +82,7 @@ close(specsBreakevenUnits(250_000_000, 0.40), 284_738, 1, "Specs $250m/40%");
 close(specsBreakevenUnits(500_000_000, 0.20), 1_138_952, 1, "Specs $500m/20%");
 close(specsBreakevenUnits(500_000_000, 0.40), 569_476, 1, "Specs $500m/40%");
 
-const probabilities = { bear: 0.25, base: 0.55, bull: 0.20 };
+const probabilities = { bear: 0.30, base: 0.50, bull: 0.20 };
 const targets = { bear: 2.50, base: 7.75, bull: 14.25 };
 const legalCashAllowances = { bear: 300, base: 150, bull: 50 };
 const regulatoryRevenueDrags = { bear: 75, base: 45, bull: 20 };
@@ -101,14 +109,14 @@ const weightedRegulatoryRevenueDrag = Object.keys(probabilities).reduce(
   0,
 );
 
-close(weightedTarget, 7.7375, 0.000_001, "updated weighted target");
-close(weightedCheckpoint, 6.7902, 0.000_1, "updated weighted checkpoint");
-close(weightedTarget / 5.21 - 1, 0.4851, 0.000_1, "updated expected return");
-close(weightedLegalCash, 167.5, 0.000_001, "updated legal cash allowance");
-close(weightedRegulatoryRevenueDrag, 47.5, 0.000_001, "updated revenue drag");
+close(weightedTarget, 7.475, 0.000_001, "audited weighted target");
+close(weightedCheckpoint, 6.6388, 0.000_1, "audited weighted checkpoint");
+close(weightedTarget / 5.21 - 1, 0.4347, 0.000_1, "audited expected return");
+close(weightedLegalCash, 175, 0.000_001, "weighted legal cash allowance");
+close(weightedRegulatoryRevenueDrag, 49, 0.000_001, "weighted revenue drag");
 close(
   weightedLegalCash + weightedRegulatoryRevenueDrag * 1.6,
-  243.5,
+  253.4,
   0.000_001,
   "updated regulation value check",
 );

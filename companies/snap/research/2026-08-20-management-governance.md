@@ -152,7 +152,7 @@ The most concrete 2026 evidence comes from Snap engineers, not executive adjecti
 
 ### Evidence against concluding it is contained
 
-1. **Fact plus disclosure gap:** Snap said in June 2025 that it had spent **more than $3 billion over 11 years** to invent its AR-computing platform. It does not disclose Specs revenue, operating loss, annual research and development (R&D), headcount, manufacturing commitments, inventory, expected launch units, a current cumulative figure, or a segment P&L. The user's more precise approximately $3.5 billion cumulative and $300 million annual figures therefore cannot be verified. [June 2025 Specs announcement](https://newsroom.snap.com/launch-specs-2026)
+1. **Fact plus disclosure gap:** Snap said in June 2025 that it had spent **more than $3 billion over 11 years** to invent its AR-computing platform. It does not disclose Specs revenue, operating loss, annual research and development (R&D), headcount, manufacturing commitments, inventory, expected launch units, a current cumulative figure, or a segment P&L. The initial brief's more precise approximately $3.5 billion cumulative and $300 million annual estimates therefore cannot be verified. [June 2025 Specs announcement](https://newsroom.snap.com/launch-specs-2026)
 2. **Fact/statement:** Spiegel says Snap has worked on Specs since roughly 2014; a twelve-year commitment can reflect technical compounding, but it also demonstrates extreme persistence before product-market fit. [Stripe/Cheeky Pint, 1:05](https://www.youtube.com/watch?v=8fZNK-M-77I&t=65s)
 3. **Historical outcome:** First-generation Spectacles generated $39.9 million of inventory-related charges in 2017; Pixy was discontinued in 2022. Snap has not demonstrated scaled hardware supply, distribution, or support economics.
 4. **Governance:** No outside shareholder can enforce the milestones, replace Spiegel, or compel a spinout. The subsidiary remains wholly owned and fully within founder control.
@@ -241,7 +241,7 @@ These are the management-specific conditions that should change the investment s
 7. Related-party legal, aircraft, or philanthropic transactions increase materially without competitive-process detail.
 8. Founder Class A sales accelerate while voting power remains effectively unchanged.
 
-## User-claim audit
+## Initial-brief claim audit
 
 | Claim | Verdict | Correction or nuance |
 |---|---|---|

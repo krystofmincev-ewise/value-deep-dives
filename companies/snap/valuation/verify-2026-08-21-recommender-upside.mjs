@@ -4,14 +4,14 @@ const trailingAdvertisingRevenue = 5.328;
 
 const scenarios = {
   bear: {
-    weight: 0.25,
+    weight: 0.30,
     forecastAdvertisingRevenue: 5.545,
     growthWithoutFurtherRecommenderProgress: 0.035,
     advertisingRevenueMultiple: 0.7,
     dilutedShares: 1.98,
   },
   base: {
-    weight: 0.55,
+    weight: 0.50,
     forecastAdvertisingRevenue: 6.048,
     growthWithoutFurtherRecommenderProgress: 0.09,
     advertisingRevenueMultiple: 1.8,
@@ -67,7 +67,7 @@ assert.ok(Math.abs(rows[0].embedded_revenue_usd_m - 30.52) < 0.01);
 assert.ok(Math.abs(rows[1].embedded_revenue_usd_m - 240.48) < 0.01);
 assert.ok(Math.abs(rows[2].embedded_revenue_usd_m - 428.0) < 0.01);
 assert.ok(Math.abs(rows[1].embedded_sotp_value_per_share - 0.2255) < 0.001);
-assert.ok(Math.abs(probabilityWeightedValuePerShare - 0.2542) < 0.001);
+assert.ok(Math.abs(probabilityWeightedValuePerShare - 0.2435) < 0.001);
 
 console.table(
   rows.map((row) => ({

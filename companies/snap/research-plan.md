@@ -78,7 +78,7 @@ Determine whether Snap offers an attractive risk-adjusted return at the eventual
 ## Resolved and open publication decisions
 
 - Target horizon: 20 August 2027, with the Invesco QQQ Trust (QQQ), a Nasdaq-100 exchange-traded fund, as the adjusted-close total-return benchmark and a six-month analytical checkpoint.
-- Position disclosure: `long`, based on the user's unverified report; size and cost details are intentionally omitted from the public repository.
-- Absolute expected-value assessment and position-aware action: attractive / hold-no-add, conditional on explicit portfolio loss capacity and third-quarter proof. The formal QQQ-relative research stance is `insufficient_evidence` because the dossier does not forecast QQQ.
+- Position disclosure: `long`, based on the user's unverified report. A rounded historical price and brief earlier rationale are isolated in a non-analytical disclosure addendum; size and other private financial details are omitted.
+- Present-tense output: absolute expected-value assessment `attractive`; no-position action `watch`; existing-long action conditional `hold-no-add` only if exposure fits an independently chosen loss budget, otherwise `reduce`. The formal QQQ-relative research stance is `insufficient_evidence` because the dossier does not forecast QQQ. Purchase history is excluded from every conclusion.
 - Publication gate: replace the draft public reference with a reproducible official-close record and register the forecast only after human review.
 - Experiment gate: pre-register metrics only after a public or synthetic dataset is selected; no experiment result supports the current valuation.

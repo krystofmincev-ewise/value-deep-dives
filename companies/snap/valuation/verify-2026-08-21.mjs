@@ -12,7 +12,7 @@ const current = {
 
 const scenarios = {
   bear: {
-    probability: 0.25,
+    probability: 0.30,
     advertising: [1.409, 1.558, 1.269, 1.309],
     other: [0.291, 0.290, 0.342, 0.363],
     adjustedEbitda: [0.310, 0.370, 0.193, 0.201],
@@ -35,7 +35,7 @@ const scenarios = {
     checkpointShares: 1.940,
   },
   base: {
-    probability: 0.55,
+    probability: 0.50,
     advertising: [1.475, 1.692, 1.418, 1.463],
     other: [0.285, 0.348, 0.385, 0.417],
     adjustedEbitda: [0.390, 0.530, 0.361, 0.395],
@@ -189,9 +189,9 @@ const weightedCheckpoint = sum(
   Object.entries(scenarios).map(([name, scenario]) => scenario.probability * results[name].checkpointValue),
 );
 
-assertClose(weightedTarget, 7.7375, 0.000_001, "probability-weighted target");
-assertClose(weightedCheckpoint, 6.79, 0.006, "probability-weighted checkpoint");
-assertClose(weightedTarget / referencePrice - 1, 0.4851, 0.0001, "expected target return");
+assertClose(weightedTarget, 7.475, 0.000_001, "probability-weighted target");
+assertClose(weightedCheckpoint, 6.6388, 0.000_1, "probability-weighted checkpoint");
+assertClose(weightedTarget / referencePrice - 1, 0.4347, 0.0001, "expected target return");
 
 console.table(
   Object.fromEntries(

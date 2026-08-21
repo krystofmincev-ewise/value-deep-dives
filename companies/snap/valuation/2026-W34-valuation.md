@@ -29,16 +29,18 @@ supersedes: null
 
 > Draft valuation, not a registered forecast or personalized investment advice. This is the single canonical valuation for coverage cycle `SNAP-2026-W34-01`; all evidence gathered during the cycle is incorporated here.
 
+> **Current-opportunity frame:** every return begins from the $5.21 public reference. No personal entry price or earlier purchase rationale enters the model.
+
 > **Reader key:** Enterprise value (**EV**), free cash flow (**FCF**), stock-based compensation (**SBC**), adjusted earnings before interest, taxes, depreciation, and amortization (**adjusted EBITDA**), sum of the parts (**SOTP**), and discounted cash flow (**DCF**) are written out at first use. The [glossary and formula guide](../GLOSSARY.md) explains every recurring term.
 
 ## Answer first
 
 | Scenario | Twelve-month value per share | Return from $5.21 | Probability | Six-month checkpoint |
 | --- | ---: | ---: | ---: | ---: |
-| Bear | **$2.50** | -52% | 25% | $3.70 |
-| Base | **$7.75** | +49% | 55% | $6.73 |
+| Bear | **$2.50** | -52% | 30% | $3.70 |
+| Base | **$7.75** | +49% | 50% | $6.73 |
 | Bull | **$14.25** | +174% | 20% | $10.81 |
-| **Probability-weighted** | **$7.74** | **+49%** | 100% | **$6.79** |
+| **Probability-weighted** | **$7.48** | **+43%** | 100% | **$6.64** |
 
 The current value does not require giving Snap Meta's multiple. It comes from four central inputs:
 
@@ -47,7 +49,7 @@ The current value does not require giving Snap Meta's multiple. It comes from fo
 - a real direct-revenue engine that can keep total growth above advertising growth;
 - relative valuation evidence showing that a 2.0–2.5 times revenue multiple would still leave Snap at a large discount to Meta and Reddit.
 
-The same-day evidence-gap pass then found that Snap's Form 10-Q reports second-quarter average advertising price per impression up approximately 10%. Advertising revenue grew 9.3%, implying roughly flat/slightly negative impressions after rounding. This moves five probability points from bear to base; it does not raise any scenario's revenue, multiple, or target.
+The evidence-gap pass found that Snap's Form 10-Q reports second-quarter average advertising price per impression up approximately 10%. Advertising revenue grew 9.3%, implying roughly flat/slightly negative impressions after rounding. The comparison-base audit prevents that observation from reducing bear probability: Q2 2025 price fell 10% and included a temporary Ads Manager pricing problem, so the two-year index is roughly flat, while Q2 2026 also benefited from World Cup demand.
 
 The model remains skeptical of 20%–30% base-case advertising growth. The base uses **13.5% advertising growth** and now requires the observed price repair to persist while impression delivery resumes, not Meta-like monetization.
 
@@ -242,19 +244,23 @@ The adopted values are rounded judgments inside the cross-check range. The base 
 
 ```text
 Probability-weighted value =
-    25% × $2.50 + 55% × $7.75 + 20% × $14.25
-    = $7.7375, displayed as $7.74 per share
+    30% × $2.50 + 50% × $7.75 + 20% × $14.25
+    = $7.475, displayed as $7.48 per share
 ```
 
-The 25% bear weight remains substantial. Snap is founder-controlled, the public shares have no vote, advertising price repair has been observed for only one quarter, high-value users are shrinking, and legal outcomes have a fat tail. The 20% bull weight reflects real product, direct-revenue, and cost evidence rather than merely multiple optimism; it is unchanged because second-quarter impressions were roughly flat and World Cup spending helped demand.
+The 30% bear weight remains substantial. Snap is founder-controlled, the public shares have no vote, the advertising-price observation is not clean across the comparison base, high-value users are shrinking, and legal outcomes have a fat tail. The 20% bull weight reflects real product, direct-revenue, and cost evidence rather than merely multiple optimism; it is constrained because second-quarter impressions were roughly flat and World Cup spending helped demand.
 
-These probabilities are analyst judgment, not a calibrated reference-class frequency. The completed evidence pass supports 25% bear, 55% base, and 20% bull. Since expected value is highly sensitive to both probabilities and multiples, $7.74 should be read as a decision aid, not false precision.
+These probabilities are analyst judgment, not a calibrated reference-class frequency. The completed evidence and comparison-base pass supports 30% bear, 50% base, and 20% bull. Since expected value is highly sensitive to both probabilities and multiples, $7.48 should be read as a decision aid, not false precision.
+
+### Seasonality and one-off events—not extra upside
+
+The probability distribution uses the quarter-specific schedule rather than applying one annual growth rate to every quarter. The base retains Snap's normal fourth-quarter advertising peak and first-quarter reversal. It assigns zero explicit value to the November 2026 United States election, adds no World Cup uplift to the third quarter because management said guidance already reflected normalization, and measures second-quarter 2027 against the reported World Cup-aided denominator. Easter shifts from Q2 2026 to Q1 2027, and Q1 2027 laps a $20 million–$25 million geopolitical headwind; those alter quarterly interpretation, not the four-quarter total. See the [seasonality and event bridge](../research/2026-W34-quarterly-forecast.md#seasonality-and-event-normalization) and [`verify-2026-08-21-seasonality.mjs`](verify-2026-08-21-seasonality.mjs).
 
 ### Recommendation-upside sensitivity—not an add-on
 
-The recommendation-system follow-up decomposes the existing next-four-quarter advertising forecasts rather than raising them. In the bear/base/bull cases, an estimated $31 million / $240 million / $428 million of forecast advertising revenue depends on continued recommendation, measurement, creative-understanding, and lower-funnel progress. Applying the scenario's existing advertising multiple and diluted share count produces a narrow sum-of-the-parts contribution of approximately **$0.01 / $0.23 / $0.64 per share**, or about **$0.25 probability-weighted**.
+The recommendation-system follow-up decomposes the existing next-four-quarter advertising forecasts rather than raising them. In the bear/base/bull cases, an estimated $31 million / $240 million / $428 million of forecast advertising revenue depends on continued recommendation, measurement, creative-understanding, and lower-funnel progress. Applying the scenario's existing advertising multiple and diluted share count produces a narrow sum-of-the-parts contribution of approximately **$0.01 / $0.23 / $0.64 per share**, or about **$0.24 probability-weighted**.
 
-That $0.25 is already inside $7.74. It is a “no further improvement” sensitivity, not a new target increment. A visible technical failure could reduce value by more because it could also weaken the advertising multiple and cash-flow path; strong production progress should first increase confidence in the existing base/bull forecasts rather than be added mechanically. See the [technical memo](../research/2026-08-21-open-source-recommender-gap.md#8-how-much-recommendation-upside-remains) and [`verify-2026-08-21-recommender-upside.mjs`](verify-2026-08-21-recommender-upside.mjs).
+That $0.24 is already inside $7.48. It is a “no further improvement” sensitivity, not a new target increment. A visible technical failure could reduce value by more because it could also weaken the advertising multiple and cash-flow path; strong production progress should first increase confidence in the existing base/bull forecasts rather than be added mechanically. See the [technical memo](../research/2026-08-21-open-source-recommender-gap.md#8-how-much-recommendation-upside-remains) and [`verify-2026-08-21-recommender-upside.mjs`](verify-2026-08-21-recommender-upside.mjs).
 
 ## Six-month checkpoint
 
@@ -268,7 +274,7 @@ By approximately 20 February 2027, investors should have the third- and fourth-q
 | Diluted shares | 1.940 billion | 1.910 billion | 1.890 billion |
 | **Value per share** | **$3.70** | **$6.73** | **$10.81** |
 
-Using the updated 25% / 55% / 20% probabilities produces a probability-weighted six-month checkpoint of **$6.79**, approximately 30% above $5.21. The checkpoint net-debt and share-count rows are standalone scenario assumptions rather than a forecasted half-year award-by-award or cash-use schedule. It is illustrative and not a registered six-month target.
+Using the 30% / 50% / 20% probabilities produces a probability-weighted six-month checkpoint of **$6.64**, approximately 27% above $5.21. The checkpoint net-debt and share-count rows are standalone scenario assumptions rather than a forecasted half-year award-by-award or cash-use schedule. It is illustrative and not a registered six-month target.
 
 ## Meta and Reddit relative anchors
 
@@ -278,7 +284,7 @@ The [peer valuation memo](../research/2026-08-21-meta-reddit-relative-valuation.
 | --- | ---: | ---: | ---: | ---: |
 | Meta Platforms | 6.11 times | 28% | 38.1% | $605 versus $545.83 reference |
 | Reddit | 10.19 times | 61% | 28.2% | $176 versus $150.31 reference |
-| Snap | 1.68 times | 19% | -5.1% | **$7.74 versus $5.21 reference** in the current valuation |
+| Snap | 1.68 times | 19% | -5.1% | **$7.48 versus $5.21 reference** in the current valuation |
 
 Meta is not obviously cheap after adjusting for approximately $130–$145 billion of planned 2026 capital expenditure and massive infrastructure commitments. Reddit is growing much faster but its 10 times revenue multiple is fragile. The comparison nevertheless matters: Snap can remain heavily discounted and still produce strong equity upside.
 
@@ -299,11 +305,11 @@ The operating model books the central exposure exactly once through scenario-spe
 | **Total incremental legal and compliance cash effect** | **($300 million)** | **($150 million)** | **($50 million)** |
 | **FCF used in the DCF and capital bridge** | **$650 million** | **$1.100 billion** | **$1.500 billion** |
 
-At the updated 25% / 55% / 20% scenario weights, cash allowances average $167.5 million and revenue drag averages $47.5 million. Capitalizing the latter at the regulation memo's 1.6-times diagnostic multiple produces $76 million, for a combined check of approximately $243.5 million. This sits inside the specialist memo's central range.
+At the 30% / 50% / 20% scenario weights, cash allowances average $175 million and revenue drag averages $49 million. Capitalizing the latter at the regulation memo's 1.6-times diagnostic multiple produces $78.4 million, for a combined check of approximately $253.4 million. This sits inside the specialist memo's central range.
 
 The target net-debt bridge begins with this after-allowance FCF. Compliance operating expense reduces adjusted EBITDA and FCF; settlements, fines, and court-remedy cash are deducted below adjusted EBITDA. Its separate cash-not-retained residual covers repurchases, financing effects, financial assets, and other uses—not legal cash already deducted above. The owner-economics dilution check is unrelated to regulation.
 
-No separate $0.09–$0.14 per-share amount is subtracted after these operating inputs. The approximately $600 million–$1.2 billion discontinuous adverse tail affects the scenario narrative and multiple only to the extent it is **beyond** the central allowances. The 25% bear case is not a one-for-one mapping of the specialist memo's severe regulatory probability; it also contains advertising, user, cost, governance, and dilution failures. Correlations among those risks are judgmental. A structural product injunction could still produce a value below $2.50.
+No separate $0.09–$0.14 per-share amount is subtracted after these operating inputs. The approximately $600 million–$1.2 billion discontinuous adverse tail affects the scenario narrative and multiple only to the extent it is **beyond** the central allowances. The 30% bear case is not a one-for-one mapping of the specialist memo's severe regulatory probability; it also contains advertising, user, cost, governance, and dilution failures. Correlations among those risks are judgmental. A structural product injunction could still produce a value below $2.50.
 
 ## Reverse expectations
 
@@ -334,7 +340,8 @@ The multiple and persistence of advertising price repair matter more than small 
 - third-quarter revenue modestly exceeds the high end of guidance;
 - adjusted profit beats guidance for operating reasons, not a one-time accounting item;
 - advertising grows in the low-to-mid teens over the next four quarters;
-- eCPM stops falling materially;
+- the Q3 total-revenue result includes a credible advertising / Other Revenue split rather than hiding a weak auction behind direct revenue;
+- eCPM stops falling materially and shows non-World-Cup-dependent persistence in Q4 2026 or Q1 2027;
 - Other Revenue remains above 30% growth without hidden margin deterioration;
 - adjusted gross margin approaches 60%;
 - legal and safety expense stays inside the modeled reserve;

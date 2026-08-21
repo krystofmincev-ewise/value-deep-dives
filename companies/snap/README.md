@@ -6,31 +6,33 @@ exchange: NYSE
 aliases: [Snapchat]
 coverage_status: active
 research_status: researching
-position_disclosure: not_disclosed
-as_of: 2026-08-17
-last_reviewed: 2026-08-17
-review_by: null
+position_disclosure: long
+as_of: 2026-08-21
+last_reviewed: 2026-08-21
+review_by: 2026-11-15
 tags: [social-media, digital-advertising, consumer, ad-tech]
 ---
 
 # Snap Inc. (NYSE: SNAP)
 
-Snap is the first active company deep dive in this repository. This workspace begins with questions and a research plan; it does not yet contain a published recommendation or target price.
+> **Read this first:** [the re-underwritten thesis and industry explainer](thesis/2026-08-21-reunderwritten-thesis.md). It repeats full terms, explains recommendation engines and advertising economics from first principles, and contains the decision framework. Use the [plain-English glossary and formula guide](GLOSSARY.md) when you want a quick definition.
 
-## Status
+Snap Inc. trades on the New York Stock Exchange under the ticker `SNAP`. This is the first active company deep dive in the repository. The evidence pack, operating forecast, valuation, and decision memo are complete as drafts; they are not yet registered as published prospective records.
+
+## At a glance
 
 | Field | Current state |
 | --- | --- |
 | Coverage | Active |
-| Research | Researching |
-| Published thesis | None |
-| Current target | Not set |
-| Target horizon | Not set |
-| Current position disclosure | Not disclosed |
-| Source cutoff | Not set |
-| Last reviewed | 17 August 2026 |
+| Research | Re-underwritten draft complete; specialist and arithmetic review complete; prospective registration gate still pending |
+| Main thesis | [Attractive research stance; position-aware hold / no add before third-quarter proof](thesis/2026-08-21-reunderwritten-thesis.md) |
+| Draft bear / base / bull | $2.50 / $7.75 / $14.25; probability-weighted $7.48 |
+| Target horizon | 20 August 2027; six-month checkpoint $3.70 / $6.73 / $10.81 |
+| Current position disclosure | Long; position size and cost basis intentionally omitted |
+| Source cutoff | 21 August 2026, 03:30 Central European Summer Time (CEST) |
+| Next review | Q3 2026 results; no later than 15 November 2026 |
 
-The repository's [origin story](../../README.md#why-this-exists) discloses a prior personal purchase of Snap. That is not a statement about the current position.
+At the $5.21 public reference, the revised 12-month probability-weighted value is approximately 44% higher. The research stance is **attractive**, while the position-aware conclusion remains **hold / no add before the third-quarter proof point**. Public sizing, tax, liquidity, and portfolio-correlation context is intentionally omitted, so the dossier does not map the stance to a personalized position size. No trade was placed.
 
 ## Why Snap is interesting
 
@@ -44,16 +46,55 @@ The technical branch of the research asks a narrower question: what would it tak
 - Is Snap's user engagement durable, and where does monetization per user still lag?
 - Which recent advertising improvements are visible in reported outcomes rather than management narrative?
 - How strong are advertiser demand, conversion measurement, targeting, and auction density?
-- Can the company fund the required infrastructure and R&D while limiting dilution?
+- Can the company fund the required infrastructure and research and development (R&D) while limiting dilution?
 - What do management incentives and capital allocation imply for outside shareholders?
 - Which product, privacy, regulatory, platform, and competitive risks can permanently impair the thesis?
 - What evidence would disconfirm the view before price does?
 
-## Workspace
+## Suggested reading order
 
+1. [Re-underwritten thesis and industry explainer](thesis/2026-08-21-reunderwritten-thesis.md) — the integrated view, written for a terminology learner.
+2. [Re-underwritten valuation](valuation/2026-08-21-reunderwritten-valuation.md) — formulas, relative anchors, and six- and twelve-month scenarios.
+3. [Updated draft decision record](decisions/2026-08-21-attractive-hold-no-add.md) — why an attractive security view does not automatically justify adding to an already large position.
+4. [Revised four-quarter forecast](research/2026-08-21-quarterly-forecast.md) — quarterly revenue, profit, cash, and share-count checkpoints.
+5. The specialist evidence modules below for the assumptions you want to challenge.
+
+## Research library
+
+### Core records
+
+- [Plain-English glossary and formula guide](GLOSSARY.md)
 - [Research plan](research-plan.md)
 - [Source log](sources.md)
-- [Valuation workspace](valuation/README.md)
+- [Main thesis and industry explainer](thesis/2026-08-21-reunderwritten-thesis.md)
+- [Re-underwritten valuation](valuation/2026-08-21-reunderwritten-valuation.md)
+- [Updated decision](decisions/2026-08-21-attractive-hold-no-add.md)
+- [Superseded 20 August thesis draft](thesis/2026-08-20-initial-thesis.md)
+- [Superseded 20 August valuation draft](valuation/2026-08-20-valuation.md)
+
+### Specialist evidence
+
+- [Financials and capital structure](research/2026-08-20-financials-capital-structure.md)
+- [Advertising, artificial intelligence (AI), and competition](research/2026-08-20-ads-ai-competition.md)
+- [Advertising prices and recommendation engines — 21 August revalidation](research/2026-08-21-ads-pricing-recommenders-revalidation.md)
+- [Meta and Reddit relative valuations — 21 August](research/2026-08-21-meta-reddit-relative-valuation.md)
+- [Regulation and cost structure — 21 August revalidation](research/2026-08-21-regulation-costs-revalidation.md)
+- [Guidance behavior and cost efficiency — 21 August](research/2026-08-21-guidance-cost-efficiency.md)
+- [Market and peers](research/2026-08-20-market-peers.md)
+- [Product, users, subscriptions, Specs, and regulation](research/2026-08-20-product-users-regulation.md)
+- [Management and governance](research/2026-08-20-management-governance.md)
+- [Founder history and culture](research/2026-08-20-founder-history-culture.md)
+- [Workforce evidence](research/2026-08-20-workforce.md)
+- [Interview synthesis](research/2026-08-20-interviews.md)
+- [Adversarial review](research/2026-08-20-adversarial-review.md)
+
+### Models, audits, and experiments
+
+- [Revised four-quarter forecast](research/2026-08-21-quarterly-forecast.md)
+- [Independent valuation and publication review](research/2026-08-21-independent-review.md)
+- [Superseded 20 August four-quarter forecast](research/2026-08-20-quarterly-forecast.md)
+- [Post-correction model verification](research/2026-08-20-post-correction-verification.md)
+- [Pre-correction independent audit trail](research/2026-08-20-integrated-audit.md)
 - [Ad-ranking feasibility experiment](experiments/ad-ranking-feasibility/README.md)
 
 ## Publication gate
@@ -68,8 +109,10 @@ Before an initial thesis is called published, it should include:
 - a dated position disclosure and LLM-use note;
 - unresolved questions that could materially change the conclusion.
 
-The initial thesis will be added as `thesis/YYYY-MM-DD-initial-thesis.md`. Material later changes will be new dated update files; the original will remain intact.
+The [initial 20 August thesis](thesis/2026-08-20-initial-thesis.md) is preserved as a superseded draft. Material later changes use new dated files; earlier records remain intact as an audit trail.
 
 ## Research history
 
-No formal thesis, valuation, update, decision, or retrospective has been published yet.
+- 20 August 2026: initial draft thesis, valuation, operating forecast, founder/culture history, authenticated aggregate workforce review, YouTube interview synthesis, Gemini Deep Research cross-check, and independent audit completed.
+- 21 August 2026: fresh re-underwrite completed with Meta and Reddit valuation anchors, advertising-price and recommendation-engine analysis, quantified regulation and cost work, conservative-guidance study, revised quarterly forecast, and a new plain-English main thesis.
+- Formal publication remains gated on a reproducible official-close capture, final record registration, and human review. The underlying analytical conclusion is complete; the remaining gate concerns prospective scorekeeping provenance.

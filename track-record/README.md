@@ -2,7 +2,7 @@
 
 The prospective record begins on **17 August 2026**. It currently contains **zero completed formal forecasts**, so there are insufficient observations for performance conclusions.
 
-Wix, Snap, Amplitude, and IREN are part of the repository's retrospective [origin story](../README.md#why-this-exists). They are deliberately excluded from prospective statistics because the original research was not registered here before the outcomes.
+Wix, Snap, Amplitude, and IREN are part of the repository's retrospective [origin story](../README.md#why-this-exists). Those original calls are deliberately excluded from prospective statistics because the research was not registered here before the outcomes. A later, genuinely prospective update on one of those companies may enter the ledger only after satisfying the current publication and chronology gates; the 21 August 2026 Snap re-underwrite remains an unregistered draft.
 
 ## Records
 

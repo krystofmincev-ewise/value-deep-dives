@@ -4,7 +4,7 @@ Company folders use lowercase tickers and serve as durable landing pages. The de
 
 | Ticker | Company | Focus | Coverage | Research | Position disclosure | Last reviewed | Dossier |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| SNAP | Snap Inc. | Social media and digital advertising | Active | Researching | Not disclosed | 2026-08-17 | [Open](snap/README.md) |
+| SNAP | Snap Inc. | Social media and digital advertising | Active | Draft complete; registration pending | Long | 2026-08-21 | [Open](snap/README.md) |
 
 ## Lifecycle vocabulary
 

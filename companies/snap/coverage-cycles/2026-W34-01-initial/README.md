@@ -13,6 +13,10 @@ as_of: 2026-08-21
 source_cutoff_at: 2026-08-21T16:15:00+02:00
 prior_cycle_path: null
 supersedes: []
+final_report_path: ../../thesis/2026-W34-final-report.md
+valuation_path: ../../valuation/2026-W34-valuation.md
+decision_path: ../../decisions/2026-W34-decision.md
+forecast_path: ../../research/2026-W34-quarterly-forecast.md
 tags: [social-media, digital-advertising, initial-coverage]
 ---
 
@@ -60,7 +64,7 @@ tags: [social-media, digital-advertising, initial-coverage]
 
 ## Integrated conclusion
 
-The completed cycle incorporates current filings, advertising-price and regional-economics work, Meta and Reddit anchors, recommendation-system and workforce research, confidence-gap estimates, the operating forecast, scenario probabilities, and independent verification. The research stance is attractive, while the position-aware action is hold / no add before the next operating proof point.
+The completed cycle incorporates current filings, advertising-price and regional-economics work, Meta and Reddit anchors, recommendation-system and workforce research, confidence-gap estimates, the operating forecast, scenario probabilities, and independent verification. The absolute expected-value assessment is attractive. The formal QQQ-relative stance is insufficient evidence because the dossier does not forecast QQQ, while the position-aware action is hold / no add before the next operating proof point.
 
 ## Cycle boundary
 

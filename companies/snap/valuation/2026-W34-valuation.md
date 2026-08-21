@@ -125,11 +125,9 @@ The detailed quarter-by-quarter build is in the [21 August forecast](../research
 
 The revenue and FCF rows are **after** the explicit regulatory and legal allowances shown later in this document. The target net-debt figures exclude operating leases, begin with that after-allowance FCF, and then apply a separate conservative assumption for repurchases, financing effects, movements in financial assets, and other cash not retained.
 
-### Why the base is higher than before
+### What supports the base case
 
-The prior base used $7.30 billion of revenue, $1.385 billion of adjusted EBITDA, and $840 million of FCF. The revised base uses $7.483 billion, $1.676 billion, and $1.10 billion.
-
-The revenue increase is modest. The profit increase is larger because:
+The base uses $7.483 billion of revenue, $1.676 billion of adjusted EBITDA, and $1.10 billion of FCF. The profit path is supported by:
 
 - revenue rose 19% while the adjusted cost structure rose 4% in the second quarter;
 - gross margin reached 58%;
@@ -346,7 +344,7 @@ The multiple and persistence of advertising price repair matter more than small 
 ## What would make the model too optimistic
 
 - advertising growth remains below 8% while impressions continue growing in the teens;
-- the second-quarter omission of eCPM data was the beginning of another material decline;
+- the reported second-quarter approximately 10% advertising-price improvement reverses while impression growth resumes without enough demand;
 - North American daily users fall below 90 million;
 - direct revenue decelerates sharply or its artificial-intelligence partnership is temporary;
 - adjusted gross margin falls below 55%;
@@ -360,7 +358,7 @@ The multiple and persistence of advertising price repair matter more than small 
 
 At $5.21, Snap now looks **undervalued on a probability-weighted basis**, but it remains a high-variance, low-governance security. The expected value is attractive because the business does not need Meta-like monetization or a Meta-like multiple. It needs continued direct-revenue growth, cost discipline, and proof that the second-quarter advertising-price repair can persist while impression delivery resumes.
 
-That supports an attractive research stance. It does not make a concentrated position low risk; public sizing context is intentionally omitted.
+That supports an attractive absolute expected-value assessment. The formal QQQ-relative research stance remains insufficient evidence because the valuation does not forecast QQQ. Neither conclusion makes a concentrated position low risk; public sizing context is intentionally omitted.
 
 ## Target lifecycle and publication status
 

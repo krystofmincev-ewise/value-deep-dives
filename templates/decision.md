@@ -10,6 +10,7 @@ identity_hash: "{sha256 digest of the frozen identity record}"
 security_id: "{stable repository security ID}"
 listing_id: "{stable repository listing ID}"
 research_stance: insufficient_evidence
+absolute_value_assessment: null
 action: watch
 decided_at: "{ISO-8601 timestamp}"
 research_cutoff: "{ISO-8601 timestamp}"
@@ -32,7 +33,7 @@ review_by: null
 
 ## Decision
 
-Research stance (`attractive`, `neutral`, `unattractive`, or `insufficient_evidence`), portfolio action, and concise rationale. State the horizon, benchmark, hurdle, portfolio context, and whether sizing and actual fills are omitted. Use `hold` only for an existing position; use `reduce` or `exit` for the portfolio action often called sell.
+Research stance (`attractive`, `neutral`, `unattractive`, or `insufficient_evidence`), optional absolute-value assessment, portfolio action, and concise rationale. State the horizon, benchmark, hurdle, portfolio context, and whether sizing and actual fills are omitted. If a named benchmark has no expected return, the benchmark-relative stance is `insufficient_evidence` even when the absolute-value assessment is attractive. Use `hold` only for an existing position; use `reduce` or `exit` for the portfolio action often called sell.
 
 ## Evidence available at the time
 

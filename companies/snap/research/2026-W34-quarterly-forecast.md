@@ -230,7 +230,7 @@ The target share counts are net scenario outcomes rather than a mechanical award
 
 - Snap does not disclose subscription churn, subscriber geography, plan mix, or a clean subscription gross margin.
 - Snap does not disclose how much Other Revenue comes from its artificial-intelligence platform partnership.
-- Snap did not disclose second-quarter 2026 impression or eCPM growth.
+- Snap disclosed that second-quarter 2026 average advertising price per impression rose approximately 10%. Combined with 9.3% advertising-revenue growth, this implies roughly flat to slightly negative impressions after allowing for rounding; the exact impression change and regional split were not disclosed.
 - Snap does not publish advertising revenue or contribution profit by region or product surface.
 - The model has no separate Specs profit-and-loss statement.
 - Legal outcomes have discontinuous tails that cannot be represented by a smooth revenue curve.

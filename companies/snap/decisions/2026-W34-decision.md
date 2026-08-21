@@ -9,7 +9,8 @@ identity_path: companies/snap/identity.md
 identity_hash: sha256:d09ac6123bc50705e9193b94196e0d56445228609ac1309221ed92a940447157
 security_id: snap-class-a-common
 listing_id: nyse-snap
-research_stance: attractive
+research_stance: insufficient_evidence
+absolute_value_assessment: attractive
 action: hold
 decided_at: 2026-08-21T16:15:00+02:00
 research_cutoff: 2026-08-21T16:15:00+02:00
@@ -29,19 +30,19 @@ review_by: 2026-11-15
 supersedes: null
 ---
 
-# SNAP — attractive research stance; hold / no add before third-quarter proof
+# SNAP — attractive absolute value; formal QQQ-relative stance insufficient evidence; hold / no add
 
 > Draft research decision, not a trade instruction or personalized investment advice. No trade was placed. Full terms and formulas are in the [plain-English glossary](../GLOSSARY.md).
 
 ## Decision
 
-The research stance is **attractive**. The exact scenario-weighted value before display rounding is $7.7375 versus a $5.21 reference, an expected return of approximately 48.5%; the displayed value is $7.74. The [confidence-gap evidence pass](../research/2026-08-21-confidence-gap-estimates.md) supports the completed 25% bear / 55% base / 20% bull distribution after Snap's Form 10-Q showed second-quarter advertising price per impression up approximately 10%.
+The absolute expected-value assessment is **attractive**. The exact scenario-weighted value before display rounding is $7.7375 versus a $5.21 reference, an expected return of approximately 48.5%; the displayed value is $7.74. The [confidence-gap evidence pass](../research/2026-08-21-confidence-gap-estimates.md) supports the completed 25% bear / 55% base / 20% bull distribution after Snap's Form 10-Q showed second-quarter advertising price per impression up approximately 10%.
 
 The 8% action hurdle in the metadata is an **illustrative absolute-return hurdle**, not a forecast for the Nasdaq-100 exchange-traded fund benchmark (**QQQ**). Expected benchmark excess return is left blank because this record does not forecast QQQ. QQQ remains named so eventual performance can be measured against the same-session benchmark return.
 
 ### Hurdle and evidence gate
 
-The 48.5% probability-weighted absolute return clears illustrative 8%, 15%, and 25% one-year hurdles, but that sensitivity is not a benchmark-relative forecast. The `attractive` label is therefore an absolute expected-value research stance; it must not be described as having passed a QQQ excess-return hurdle while `expected_excess_return_pct` remains null.
+The 48.5% probability-weighted absolute return clears illustrative 8%, 15%, and 25% one-year hurdles, but that sensitivity is not a benchmark-relative forecast. The formal research stance is therefore **insufficient evidence** under the repository's QQQ-relative decision contract while `expected_excess_return_pct` remains null. This is separate from the attractive absolute expected-value assessment.
 
 The draft evidence gate passes verified identity, public financial statements, capital structure, three-method valuation arithmetic, dilution treatment, counter-thesis, and observable review triggers. It fails the **formal publication gate** until the $5.21 reference and QQQ starting value have reproducible official-close records and the prospective chronology controls are completed. That failure blocks registration, not preservation of this visibly labeled draft.
 
@@ -59,7 +60,7 @@ The action for the disclosed existing position remains **hold / no add before th
 | Bull | 20% | $14.25 | +174% |
 | **Probability-weighted** | **100%** | **$7.74** | **+48.5%** using the unrounded $7.7375 value |
 
-## Why the stance changed
+## Evidence supporting the absolute expected-value assessment
 
 - Snap's recent adjusted-profit guidance has repeatedly beaten the top of its initial range.
 - Second-quarter revenue grew 19% while total adjusted costs grew 4% and gross margin reached 58%.

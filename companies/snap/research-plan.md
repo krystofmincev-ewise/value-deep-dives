@@ -6,7 +6,7 @@ coverage_cycle_id: SNAP-2026-W34-01
 coverage_cycle_path: coverage-cycles/2026-W34-01-initial/README.md
 status: active
 as_of: 2026-08-21
-source_cutoff_at: 2026-08-21T03:30:00+02:00
+source_cutoff_at: 2026-08-21T16:15:00+02:00
 owner: Krystof Mincev
 tags: [social-media, digital-advertising, ad-tech]
 ---
@@ -79,6 +79,6 @@ Determine whether Snap offers an attractive risk-adjusted return at the eventual
 
 - Target horizon: 20 August 2027, with the Invesco QQQ Trust (QQQ), a Nasdaq-100 exchange-traded fund, as the adjusted-close total-return benchmark and a six-month analytical checkpoint.
 - Position disclosure: `long`, based on the user's unverified report; size and cost details are intentionally omitted from the public repository.
-- Research stance and position-aware action: attractive / hold-no-add, conditional on explicit portfolio loss capacity and third-quarter proof.
+- Absolute expected-value assessment and position-aware action: attractive / hold-no-add, conditional on explicit portfolio loss capacity and third-quarter proof. The formal QQQ-relative research stance is `insufficient_evidence` because the dossier does not forecast QQQ.
 - Publication gate: replace the draft public reference with a reproducible official-close record and register the forecast only after human review.
 - Experiment gate: pre-register metrics only after a public or synthetic dataset is selected; no experiment result supports the current valuation.

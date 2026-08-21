@@ -31,6 +31,7 @@ benchmark: null
 sector_benchmark: null
 confidence: null
 research_stance: insufficient_evidence
+absolute_value_assessment: null
 position_disclosure: not_disclosed
 originating_study: null
 supersedes: null

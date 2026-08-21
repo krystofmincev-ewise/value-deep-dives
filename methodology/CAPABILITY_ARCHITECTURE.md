@@ -19,9 +19,9 @@ As of 2026-08-20, this repository has a provenance-aware acquisition layer but n
 | Company landing page | `companies/<ticker>/README.md` | Preserve one durable URL for the current view and the chronological coverage-cycle index. |
 | Coverage cycle | `companies/<ticker>/coverage-cycles/<YYYY-Www>-<NN>-<kind>/README.md` | Define the scope, cutoff, single canonical report, predecessor, and outputs for each initial or repeat valuation round. |
 | Source and claim | Coverage-cycle or study source log | Connect a claim or model input to an original source, access state, rights class, retrieval method, and verification state. |
-| Final company report | One `YYYY-Www-final-report.md` inside the applicable coverage cycle | Integrate the thesis, variant view, valuation summary, stance, falsifiers, uncertainty, and horizon; evolve in place until the cycle is finalized. |
-| Valuation | One canonical valuation inside the applicable coverage cycle | Reconcile operating cases, capital structure, scenario values, and sensitivities; compare only to prior finalized cycles. |
-| Decision | Dated decision inside the applicable coverage cycle | Map the research view and portfolio context to buy/add/reduce/exit/watch/pass. |
+| Final company report | One `YYYY-Www-final-report.md` referenced by the applicable cycle manifest | Integrate the thesis, variant view, valuation summary, stance, falsifiers, uncertainty, and horizon; evolve in place until the cycle is finalized. |
+| Valuation | One canonical valuation referenced by the applicable cycle manifest | Reconcile operating cases, capital structure, scenario values, and sensitivities; compare only to prior finalized cycles. |
+| Decision | One canonical decision referenced by the applicable cycle manifest | Map the research view and portfolio context to buy/add/reduce/exit/watch/pass. |
 | Event forecast | Dated event forecast plus event ledger | Pre-register an observable event outcome and a separate security-return outcome. |
 | Outcome | Dated event outcome or retrospective | Resolve the original rule without rewriting it, then attribute insight, market exposure, timing, and luck. |
 | Dataset or experiment | Manifest plus experiment record | Preserve cutoff, licence, transformations, leakage controls, runtime, and negative results. |
@@ -54,6 +54,8 @@ Use two outputs rather than one overloaded label:
 
 - **Research stance:** `attractive`, `neutral`, `unattractive`, or `insufficient_evidence`.
 - **Portfolio action:** `buy`, `add`, `hold`, `reduce`, `exit`, `watch`, or `pass`.
+
+An optional absolute-value assessment may describe modeled security return separately. It does not satisfy a benchmark-relative stance contract: if a named benchmark has no expected return, expected excess return is unknown and the formal research stance is `insufficient_evidence`.
 
 Predeclare the horizon, benchmark, required excess-return hurdle, acceptable downside or permanent-loss case, and minimum evidence gate. Do not infer a universal threshold. A defensible mapping is:
 

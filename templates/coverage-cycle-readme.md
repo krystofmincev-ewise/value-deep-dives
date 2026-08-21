@@ -14,6 +14,9 @@ source_cutoff_at: null
 prior_cycle_path: null
 supersedes: []
 final_report_path: "{relative path to YYYY-Www-final-report.md}"
+valuation_path: "{relative path to YYYY-Www-valuation.md}"
+decision_path: "{relative path to YYYY-Www-decision.md}"
+forecast_path: null
 tags: []
 ---
 
@@ -76,7 +79,7 @@ tags: []
 
 ## Cycle boundary and transfer notes
 
-Keep cycle-specific plans, sources, research, one canonical final report, one valuation, one decision, models, and reviews in this folder. Same-cycle working drafts remain only in Git history and are not cited. Link stable company identity from the company root. A complete copy of `companies/<ticker>/` should preserve the identity, every cycle manifest, all public research artifacts, and their relative links; licensed local-only captures remain excluded under the data policy.
+The manifest paths are authoritative. Cycle-specific artifacts may live inside the cycle folder or in stable company subfolders when those paths are recorded here and validate correctly. Same-cycle working drafts remain only in Git history and are not cited. Link stable company identity from the company root. A complete copy of `companies/<ticker>/` should preserve the identity, every cycle manifest, all public research artifacts, and their relative links; licensed local-only captures remain excluded under the data policy.
 
 ## Next review
 

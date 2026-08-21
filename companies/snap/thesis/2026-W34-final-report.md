@@ -30,7 +30,8 @@ review_by: 2026-11-15
 benchmark: QQQ_adjusted_close_total_return_same_session_rule
 sector_benchmark: disclosed_social_and_digital_ad_peer_revenue_growth
 confidence: medium
-research_stance: attractive
+research_stance: insufficient_evidence
+absolute_value_assessment: attractive
 position_disclosure: long
 originating_study: ../research-plan.md
 supersedes: null
@@ -74,7 +75,8 @@ The twelve-month probability-weighted value is approximately **49% above** $5.21
 
 The position-aware conclusion is more restrained:
 
-- **Research stance:** attractive.
+- **Absolute expected-value assessment:** attractive.
+- **Formal QQQ-relative research stance:** insufficient evidence because the dossier does not forecast QQQ's return; this is a benchmark-input gap, not a change to Snap's valuation.
 - **Existing position:** hold / do not add before the third-quarter proof point.
 - **Reason:** an attractive expected value does not make a concentrated, founder-controlled, litigation-exposed security low risk.
 - **Sizing test:** maximum position weight should be derived from the investor's explicit loss budget and a severe Snap drawdown, not from the upside target.
@@ -1248,14 +1250,14 @@ Approximate portfolio impact = position weight × security drawdown
 
 ### What the valuation says about action
 
-- The security is attractive on expected value at $5.21.
+- The security is attractive on absolute expected value at $5.21.
 - Position size must be tested against the investor's private loss budget; no public sizing conclusion is made.
 - The third-quarter cost improvement is already known; adding before the result means betting on an advertising and revenue surprise, not merely on layoffs showing up.
 - Holding can be coherent if the severe-loss contribution fits the private risk budget.
 - Reducing can be coherent even with a positive target if that contribution does not fit the risk budget.
 - Adding is easier to justify after advertising-price proof or at a materially wider price-to-value gap, not because the share price has merely fallen.
 
-This is why the research stance can be attractive while the position-aware stance is **hold / no add before the third-quarter proof point**.
+This is why the absolute expected-value assessment can be attractive while the position-aware action is **hold / no add before the third-quarter proof point**. The formal QQQ-relative research stance remains **insufficient evidence** until an expected benchmark return is supplied.
 
 ### Research value zones—not personalized orders
 
@@ -1301,7 +1303,7 @@ Base expectations:
 
 ## Open questions management should answer
 
-1. What were second-quarter global impression and effective-price growth?
+1. Will the reported second-quarter approximately 10% advertising-price improvement persist, and what was the exact global and regional impression change?
 2. How do external incremental returns change when advertisers double their Snap budget?
 3. What share of advertising revenue—not spend—uses all Smart tools together?
 4. What share of Other Revenue comes from subscriptions versus the artificial intelligence (**AI**) partnership?
@@ -1322,7 +1324,7 @@ Base expectations:
 
 The original purchase intuition—an enormous user asset trading at a severe relative discount with obvious monetization headroom—was not careless as a thesis. The important correction is that **headroom is an opportunity, not an entitlement**.
 
-The evidence supports the attractive stance because:
+The evidence supports an attractive absolute expected-value assessment because:
 
 - direct revenue is large enough to change the company growth rate;
 - cost leverage is visible in reported gross margin and adjusted profit;
@@ -1341,7 +1343,7 @@ The remaining risk is also clear:
 - founders control the vote;
 - Specs and litigation produce fat tails.
 
-At $5.21, the expected return is high enough for an **attractive research stance**. The existing-position action remains **hold / no add before the third-quarter proof point**, without a public sizing recommendation. The next result needs to show more than cost cuts: it needs the second consecutive quarter of healthy price and evidence that impression delivery can resume without dilution.
+At $5.21, the modeled absolute expected return is high enough for an **attractive absolute-value assessment**. The formal QQQ-relative research stance is **insufficient evidence** because no expected QQQ return was forecast. The existing-position action remains **hold / no add before the third-quarter proof point**, without a public sizing recommendation. The next result needs to show more than cost cuts: it needs the second consecutive quarter of healthy price and evidence that impression delivery can resume without dilution.
 
 ---
 

@@ -88,7 +88,7 @@ Both misses and successes belong in the archive.
 - Coverage-cycle kinds: use a short descriptive value such as `initial`, `revaluation`, or `restart`. A narrow monitoring note does not require a new cycle; a replacement thesis or valuation does.
 - Coverage-cycle manifest: every cycle has a `README.md` that records its cycle ID, sequence, kind, cutoff, status, prior cycle, and exact canonical outputs. Once a cycle is finalized, preserve it as an immutable audit package.
 - Canonical report: one `YYYY-Www-final-report.md` per cycle. It integrates the thesis, valuation summary, stance, decision context, falsifiers, and monitoring plan. Do not retain same-cycle working theses as reader-facing records.
-- Cycle contents: keep cycle-specific plans, source logs, supporting research, the canonical report, valuation, decision, models, and reviews inside that cycle. Shared identity records and genuinely reusable company material may remain at the company root.
+- Cycle contents: the cycle manifest logically owns its plan, source log, supporting research, canonical report, valuation, decision, models, and reviews. The manifest's relative paths are authoritative; artifacts may live inside the cycle folder or in stable company subfolders. Shared identity records and genuinely reusable company material may remain at the company root.
 - Supporting documents within a cycle: `YYYY-MM-DD-descriptive-slug.md`.
 - Company forecast IDs: `YYYY-TNNN` (for example `2026-T001`), assigned sequentially in the [forecast ledger](../track-record/forecast-ledger.csv)
 - Discovery studies: `discovery/<kind>/YYYY-MM-DD-descriptive-slug/`

@@ -30,7 +30,7 @@ This work is indexed as [coverage cycle `SNAP-2026-W34-01`](coverage-cycles/2026
 | **10 minutes** | [What drives the current valuation](thesis/2026-W34-final-report.md#what-drives-the-current-valuation) → [valuation in plain English](thesis/2026-W34-final-report.md#valuation-in-plain-english) | The operating and valuation judgments behind $7.75. |
 | **25 minutes** | [Users](thesis/2026-W34-final-report.md#users-enormous-scale-uneven-economics) → [advertising](thesis/2026-W34-final-report.md#is-snap-actually-cheaper-than-facebook-or-instagram) → [recommendation engines](thesis/2026-W34-final-report.md#why-metas-recommendation-engine-is-harder-to-copy-than-it-looks) → [cost structure](thesis/2026-W34-final-report.md#cost-structure-is-serving-almost-500-million-daily-users-expensive) | The operating mechanism behind the central case. |
 | **Risk review** | [Strongest bear case](thesis/2026-W34-final-report.md#strongest-bear-case) → [falsifiers](thesis/2026-W34-final-report.md#evidence-that-would-change-the-thesis) → [next-results checklist](thesis/2026-W34-final-report.md#what-to-watch-in-the-next-results) | Permanent-loss paths, disconfirming evidence, and the next proof points. |
-| **Full audit** | [Valuation model](valuation/2026-W34-valuation.md) → [forecast](research/2026-W34-quarterly-forecast.md) → [independent review](research/2026-08-21-independent-review.md) → [source log](sources.md) | Assumptions, arithmetic, provenance, limitations, and release status. |
+| **Full audit** | [Valuation model](valuation/2026-W34-valuation.md) → [forecast](research/2026-W34-quarterly-forecast.md) → [independent review](research/2026-08-21-independent-review.md) → [source log](sources.md) → [post-Snap research audit](../../methodology/2026-W34-POST-SNAP-RESEARCH-AUDIT.md) | Assumptions, arithmetic, provenance, limitations, release status, and the three independent harness reviews. |
 
 ## At a glance
 
@@ -39,14 +39,14 @@ This work is indexed as [coverage cycle `SNAP-2026-W34-01`](coverage-cycles/2026
 | Coverage | Active |
 | Research | Analytical dossier complete; specialist, adversarial, arithmetic, and public-safety review complete; prospective registration pending |
 | Current coverage cycle | [`SNAP-2026-W34-01` — initial](coverage-cycles/2026-W34-01-initial/README.md) |
-| Canonical final report | [Attractive research stance; position-aware hold / no add before third-quarter proof](thesis/2026-W34-final-report.md) |
+| Canonical final report | [Attractive absolute value; formal QQQ-relative stance insufficient evidence; position-aware hold / no add](thesis/2026-W34-final-report.md) |
 | Unregistered bear / base / bull | $2.50 / $7.75 / $14.25; probability-weighted $7.74 |
 | Target horizon | 20 August 2027; six-month checkpoint $3.70 / $6.73 / $10.81 |
 | Current position disclosure | Long; position size and cost basis intentionally omitted |
 | Source cutoff | 21 August 2026, 16:15 Central European Summer Time (CEST) |
 | Next review | Q3 2026 results; no later than 15 November 2026 |
 
-At the $5.21 public reference, the revised 12-month probability-weighted value is approximately 49% higher. The research stance is **attractive**, while the position-aware conclusion remains **hold / no add before the third-quarter proof point**. Public sizing, tax, liquidity, and portfolio-correlation context is intentionally omitted, so the dossier does not map the stance to a personalized position size. No trade was placed.
+At the $5.21 public reference, the revised 12-month probability-weighted value is approximately 49% higher, so the absolute expected-value assessment is **attractive**. The formal QQQ-relative research stance is **insufficient evidence** because no expected QQQ return was forecast. The position-aware conclusion remains **hold / no add before the third-quarter proof point**. Public sizing, tax, liquidity, and portfolio-correlation context is intentionally omitted, so the dossier does not map the assessment to a personalized position size. No trade was placed.
 
 ## Why Snap is interesting
 
@@ -77,7 +77,7 @@ The technical branch of the research asks a narrower question: what would it tak
 | Do the cost cuts create owner earnings? | [Cost structure](thesis/2026-W34-final-report.md#cost-structure-is-serving-almost-500-million-daily-users-expensive) | [Guidance and cost efficiency](research/2026-08-21-guidance-cost-efficiency.md), [financial statements](research/2026-08-20-financials-capital-structure.md) |
 | How dangerous are Specs, litigation, and regulation? | [Specs](thesis/2026-W34-final-report.md#specs-option-value-capital-allocation-risk-and-the-missing-glasses) and [regulation](thesis/2026-W34-final-report.md#regulation-and-litigation) | [Regulation/cost revalidation](research/2026-08-21-regulation-costs-revalidation.md), [confidence gaps](research/2026-08-21-confidence-gap-estimates.md) |
 | Can the organization still execute? | [Workforce after the cut](thesis/2026-W34-final-report.md#workforce-evidence-after-the-cut) | [Public-safe workforce memo](research/2026-08-20-workforce.md), [founder/culture](research/2026-08-20-founder-history-culture.md) |
-| Why attractive but hold/no add? | [Position framework](thesis/2026-W34-final-report.md#position-size-framework) | [Decision record](decisions/2026-W34-decision.md) |
+| Why attractive on absolute value but hold/no add—and why is the formal QQQ-relative stance still unresolved? | [Position framework](thesis/2026-W34-final-report.md#position-size-framework) | [Decision record](decisions/2026-W34-decision.md) |
 | Can I reproduce the numbers? | [Valuation sources and verification](valuation/2026-W34-valuation.md#sources-and-verification) | [Valuation verifier](valuation/verify-2026-08-21.mjs) and three specialist verifiers in the same folder |
 
 ## Research library

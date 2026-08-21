@@ -4,14 +4,14 @@ company: Snap Inc.
 ticker: SNAP
 status: draft
 as_of: 2026-08-21
-source_cutoff_at: 2026-08-21T03:30:00+02:00
+source_cutoff_at: 2026-08-21T16:15:00+02:00
 scope: reunderwritten-four-quarter-operating-forecast
 tags: [forecast, advertising, direct-revenue, profitability, guidance]
 ---
 
 # Snap four-quarter operating forecast — 21 August 2026 re-underwrite
 
-> Draft analyst model, not company guidance, a registered forecast, or personalized investment advice. This replaces the operating assumptions in the [20 August draft](2026-08-20-quarterly-forecast.md) for purposes of the revised thesis.
+> Draft analyst model, not company guidance, a registered forecast, or personalized investment advice. This replaces the operating assumptions in the [20 August draft](2026-08-20-quarterly-forecast.md) for purposes of the revised thesis. The same-day [confidence-gap pass](2026-08-21-confidence-gap-estimates.md) updates probability weighting but leaves these operating scenarios unchanged.
 
 > **Reader key:** Adjusted earnings before interest, taxes, depreciation, and amortization (**adjusted EBITDA**); free cash flow (**FCF**); daily active users (**DAU**); stock-based compensation (**SBC**); and effective cost per thousand advertising impressions (**eCPM**) are written out at their first use. See the [plain-English glossary](../GLOSSARY.md).
 
@@ -117,11 +117,11 @@ The revenue and headline FCF lines already include rounded, scenario-specific al
 | **Total incremental legal and compliance cash effect** | **($300 million)** | **($150 million)** | **($50 million)** |
 | **Headline FCF forecast above** | **$650 million** | **$1.100 billion** | **$1.500 billion** |
 
-Weighting those cash allowances at 30% / 50% / 20% gives $175 million. Weighting the revenue drags gives approximately $50 million; capitalized at the regulation memo's 1.6-times diagnostic multiple, that is approximately $79 million. The resulting approximately $254 million check sits at the high end of the specialist memo's $180 million–$260 million central range. The much larger injunction or settlement tail belongs in the bear narrative and valuation multiple, not in another cash subtraction.
+Weighting those cash allowances at the updated 25% / 55% / 20% gives $167.5 million. Weighting the revenue drags gives $47.5 million; capitalized at the regulation memo's 1.6-times diagnostic multiple, that is $76 million. The resulting approximately $243.5 million check sits inside the specialist memo's $180 million–$260 million central range. The much larger injunction or settlement tail belongs in the bear narrative and valuation multiple, not in another cash subtraction.
 
 ## What each advertising case requires
 
-The [advertising-price and recommendation-system revalidation](2026-08-21-ads-pricing-recommenders-revalidation.md) finds that the technical stack is credible but auction yield remains unproven.
+The [advertising-price and recommendation-system revalidation](2026-08-21-ads-pricing-recommenders-revalidation.md) finds that the technical stack is credible and second-quarter price repair is reported, but persistence and simultaneous volume growth remain unproven.
 
 | Advertising case | Approximate impression growth | Implied eCPM change | Required story |
 | --- | ---: | ---: | --- |
@@ -130,6 +130,12 @@ The [advertising-price and recommendation-system revalidation](2026-08-21-ads-pr
 | Bull | approximately 14% | approximately +6% | Advertisers deepen budgets and Snap grows both supply and price. |
 
 The base does **not** require Meta-like pricing. It requires the repeated high-single- to low-double-digit eCPM declines to stop. The bull requires clear price repair. Sustained advertising growth of 30% would require a much larger change in price and is not modeled.
+
+### Recommendation-engine contribution already embedded
+
+The [technical follow-up](2026-08-21-open-source-recommender-gap.md#8-how-much-recommendation-upside-remains) now makes the implicit model contribution explicit. Against approximately $5.328 billion of trailing advertising revenue, the existing bear/base/bull forecasts embed approximately **$31 million / $240 million / $428 million** from continued recommendation, measurement, creative-understanding, and lower-funnel improvement. That is an estimated **0.6% / 4.1% / 7.1%** lift over scenario paths that assume 3.5% / 9.0% / 12.5% underlying growth without further model progress.
+
+This is an analyst decomposition, not company-reported attribution. It does not add revenue to the forecasts above. The base therefore already assumes meaningful improvement; treating new recommendation research as separate upside would double-count it. The transparent arithmetic is checked by [`verify-2026-08-21-recommender-upside.mjs`](../valuation/verify-2026-08-21-recommender-upside.mjs).
 
 ## Why the profit forecast rises faster than revenue
 

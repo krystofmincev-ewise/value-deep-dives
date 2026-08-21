@@ -9,7 +9,7 @@ listing_id: nyse-snap
 status: draft
 as_of: 2026-08-21
 published_at: null
-source_cutoff_at: 2026-08-21T03:30:00+02:00
+source_cutoff_at: 2026-08-21T16:15:00+02:00
 currency: USD
 reference_price: 5.21
 reference_price_at: 2026-08-20T20:59:05Z
@@ -25,7 +25,7 @@ supersedes: 2026-08-20-valuation.md
 
 # Snap valuation — 21 August 2026 re-underwrite
 
-> Draft valuation, not a registered forecast or personalized investment advice. It supersedes the assumptions in the [20 August draft](2026-08-20-valuation.md) for the revised thesis.
+> Draft valuation, not a registered forecast or personalized investment advice. It supersedes the assumptions in the [20 August draft](2026-08-20-valuation.md) for the revised thesis. Later same-day [confidence-gap](../research/2026-08-21-confidence-gap-estimates.md) and [regional advertising economics](../research/2026-08-21-regional-ad-economics.md) passes corrected the advertising-price record, bounded regional contribution, and updated probabilities without changing the three scenario values.
 
 > **Reader key:** Enterprise value (**EV**), free cash flow (**FCF**), stock-based compensation (**SBC**), adjusted earnings before interest, taxes, depreciation, and amortization (**adjusted EBITDA**), sum of the parts (**SOTP**), and discounted cash flow (**DCF**) are written out at first use. The [glossary and formula guide](../GLOSSARY.md) explains every recurring term.
 
@@ -33,10 +33,10 @@ supersedes: 2026-08-20-valuation.md
 
 | Scenario | Twelve-month value per share | Return from $5.21 | Probability | Six-month checkpoint |
 | --- | ---: | ---: | ---: | ---: |
-| Bear | **$2.50** | -52% | 30% | $3.70 |
-| Base | **$7.75** | +49% | 50% | $6.73 |
+| Bear | **$2.50** | -52% | 25% | $3.70 |
+| Base | **$7.75** | +49% | 55% | $6.73 |
 | Bull | **$14.25** | +174% | 20% | $10.81 |
-| **Probability-weighted** | **$7.48** | **+44%** | 100% | **$6.64** |
+| **Probability-weighted** | **$7.74** | **+49%** | 100% | **$6.79** |
 
 The revised value is materially above the prior $5.44 probability-weighted draft. The change is not a decision to give Snap Meta's multiple. It comes from four revalidated inputs:
 
@@ -45,7 +45,9 @@ The revised value is materially above the prior $5.44 probability-weighted draft
 - a real direct-revenue engine that can keep total growth above advertising growth;
 - relative valuation evidence showing that a 2.0–2.5 times revenue multiple would still leave Snap at a large discount to Meta and Reddit.
 
-The model remains skeptical of 20%–30% base-case advertising growth. The base uses **13.5% advertising growth** and requires effective advertising price to become approximately flat, not Meta-like.
+The same-day evidence-gap pass then found that Snap's Form 10-Q reports second-quarter average advertising price per impression up approximately 10%. Advertising revenue grew 9.3%, implying roughly flat/slightly negative impressions after rounding. This moves five probability points from bear to base; it does not raise any scenario's revenue, multiple, or target.
+
+The model remains skeptical of 20%–30% base-case advertising growth. The base uses **13.5% advertising growth** and now requires the observed price repair to persist while impression delivery resumes, not Meta-like monetization.
 
 ## Core formulas
 
@@ -158,7 +160,7 @@ The bull 3.30 times multiple remains approximately 46% below Meta and 68% below 
 
 ## Method 2: sum of the parts
 
-Other Revenue deserves a separate multiple because it grows faster and includes recurring subscriptions. It does not deserve a software-as-a-service multiple because subscriber churn, geography, plan mix, partnership revenue, and gross margin are not disclosed.
+Other Revenue deserves a separate multiple because it grows faster and includes recurring subscriptions. It does not deserve a software-as-a-service multiple because subscriber churn, geography, plan mix, partnership revenue, and gross margin are not disclosed. Current country-level subscription prices and the regional contribution model improve the allocation range but do not reveal subscriber geography or plan mix, so they do not change this multiple.
 
 | Sum-of-the-parts bridge | Bear | Base | Bull |
 | --- | ---: | ---: | ---: |
@@ -240,13 +242,19 @@ The adopted values are rounded judgments inside the cross-check range. The base 
 
 ```text
 Probability-weighted value =
-    30% × $2.50 + 50% × $7.75 + 20% × $14.25
-    = $7.48 per share
+    25% × $2.50 + 55% × $7.75 + 20% × $14.25
+    = $7.7375, displayed as $7.74 per share
 ```
 
-The 30% bear weight is intentionally substantial. Snap is founder-controlled, the public shares have no vote, advertising price repair is not proven, high-value users are shrinking, and legal outcomes have a fat tail. The 20% bull weight reflects real product, direct-revenue, and cost evidence rather than merely multiple optimism.
+The 25% bear weight remains substantial. Snap is founder-controlled, the public shares have no vote, advertising price repair has been observed for only one quarter, high-value users are shrinking, and legal outcomes have a fat tail. The 20% bull weight reflects real product, direct-revenue, and cost evidence rather than merely multiple optimism; it is unchanged because second-quarter impressions were roughly flat and World Cup spending helped demand.
 
-These probabilities are analyst judgment, not a calibrated reference-class frequency. Relative to the 20 August draft, the bear weight remains 30%, the base falls from 55% to 50%, and the bull rises from 15% to 20% because the revalidated cost leverage, direct revenue, and adjusted-profit delivery widen the credible upside path. Since the expected value is highly sensitive to both probabilities and multiples, $7.48 should be read as a decision aid, not revalidated precision.
+These probabilities are analyst judgment, not a calibrated reference-class frequency. Relative to the initial same-day re-underwrite, bear falls from 30% to 25%, base rises from 50% to 55%, and bull remains 20%. Since expected value is highly sensitive to both probabilities and multiples, $7.74 should be read as a decision aid, not revalidated precision.
+
+### Recommendation-upside sensitivity—not an add-on
+
+The recommendation-system follow-up decomposes the existing next-four-quarter advertising forecasts rather than raising them. In the bear/base/bull cases, an estimated $31 million / $240 million / $428 million of forecast advertising revenue depends on continued recommendation, measurement, creative-understanding, and lower-funnel progress. Applying the scenario's existing advertising multiple and diluted share count produces a narrow sum-of-the-parts contribution of approximately **$0.01 / $0.23 / $0.64 per share**, or about **$0.25 probability-weighted**.
+
+That $0.25 is already inside $7.74. It is a “no further improvement” sensitivity, not a new target increment. A visible technical failure could reduce value by more because it could also weaken the advertising multiple and cash-flow path; strong production progress should first increase confidence in the existing base/bull forecasts rather than be added mechanically. See the [technical memo](../research/2026-08-21-open-source-recommender-gap.md#8-how-much-recommendation-upside-remains) and [`verify-2026-08-21-recommender-upside.mjs`](verify-2026-08-21-recommender-upside.mjs).
 
 ## Six-month checkpoint
 
@@ -260,7 +268,7 @@ By approximately 20 February 2027, investors should have the third- and fourth-q
 | Diluted shares | 1.940 billion | 1.910 billion | 1.890 billion |
 | **Value per share** | **$3.70** | **$6.73** | **$10.81** |
 
-Using the same 30% / 50% / 20% probabilities produces a probability-weighted six-month checkpoint of **$6.64**, approximately 27% above $5.21. The checkpoint net-debt and share-count rows are standalone scenario assumptions rather than a forecasted half-year award-by-award or cash-use schedule. It is illustrative and not a registered six-month target.
+Using the updated 25% / 55% / 20% probabilities produces a probability-weighted six-month checkpoint of **$6.79**, approximately 30% above $5.21. The checkpoint net-debt and share-count rows are standalone scenario assumptions rather than a forecasted half-year award-by-award or cash-use schedule. It is illustrative and not a registered six-month target.
 
 ## Meta and Reddit relative anchors
 
@@ -270,7 +278,7 @@ The [peer valuation memo](../research/2026-08-21-meta-reddit-relative-valuation.
 | --- | ---: | ---: | ---: | ---: |
 | Meta Platforms | 6.11 times | 28% | 38.1% | $605 versus $545.83 reference |
 | Reddit | 10.19 times | 61% | 28.2% | $176 versus $150.31 reference |
-| Snap | 1.68 times | 19% | -5.1% | **$7.48 versus $5.21 reference** in this re-underwrite |
+| Snap | 1.68 times | 19% | -5.1% | **$7.74 versus $5.21 reference** in this re-underwrite |
 
 Meta is not obviously cheap after adjusting for approximately $130–$145 billion of planned 2026 capital expenditure and massive infrastructure commitments. Reddit is growing much faster but its 10 times revenue multiple is fragile. The comparison nevertheless matters: Snap can remain heavily discounted and still produce strong equity upside.
 
@@ -291,11 +299,11 @@ The operating model books the central exposure exactly once through scenario-spe
 | **Total incremental legal and compliance cash effect** | **($300 million)** | **($150 million)** | **($50 million)** |
 | **FCF used in the DCF and capital bridge** | **$650 million** | **$1.100 billion** | **$1.500 billion** |
 
-At the 30% / 50% / 20% scenario weights, cash allowances average $175 million and revenue drag averages approximately $50 million. Capitalizing the latter at the regulation memo's 1.6-times diagnostic multiple produces approximately $79 million, for a combined check of approximately $254 million. This sits at the upper end of the specialist memo's central range.
+At the updated 25% / 55% / 20% scenario weights, cash allowances average $167.5 million and revenue drag averages $47.5 million. Capitalizing the latter at the regulation memo's 1.6-times diagnostic multiple produces $76 million, for a combined check of approximately $243.5 million. This sits inside the specialist memo's central range.
 
 The target net-debt bridge begins with this after-allowance FCF. Compliance operating expense reduces adjusted EBITDA and FCF; settlements, fines, and court-remedy cash are deducted below adjusted EBITDA. Its separate cash-not-retained residual covers repurchases, financing effects, financial assets, and other uses—not legal cash already deducted above. The owner-economics dilution check is unrelated to regulation.
 
-No separate $0.09–$0.14 per-share amount is subtracted after these operating inputs. The approximately $600 million–$1.2 billion discontinuous adverse tail affects the scenario narrative and multiple only to the extent it is **beyond** the central allowances. The 30% bear case is not a one-for-one mapping of the specialist memo's severe regulatory probability; it also contains advertising, user, cost, governance, and dilution failures. Correlations among those risks are judgmental. A structural product injunction could still produce a value below $2.50.
+No separate $0.09–$0.14 per-share amount is subtracted after these operating inputs. The approximately $600 million–$1.2 billion discontinuous adverse tail affects the scenario narrative and multiple only to the extent it is **beyond** the central allowances. The 25% bear case is not a one-for-one mapping of the specialist memo's severe regulatory probability; it also contains advertising, user, cost, governance, and dilution failures. Correlations among those risks are judgmental. A structural product injunction could still produce a value below $2.50.
 
 ## Reverse expectations
 
@@ -319,7 +327,7 @@ At $7.483 billion of base target revenue and 1.92 billion target shares:
 
 Mechanically subtracting the current $691 million operating-lease liability from target equity value would reduce scenario values by approximately $0.35–$0.37 per share. That is a diagnostic, not an alternative target: applying it without also adjusting rent-bearing cash flows and peer multiples would double count part of the lease burden.
 
-The multiple and advertising price repair matter more than small forecast changes.
+The multiple and persistence of advertising price repair matter more than small forecast changes.
 
 ## What must happen for $7.75 to be reasonable
 
@@ -348,18 +356,19 @@ The multiple and advertising price repair matter more than small forecast change
 
 ## Valuation conclusion
 
-At $5.21, Snap now looks **undervalued on a probability-weighted basis**, but it remains a high-variance, low-governance security. The expected value is attractive because the business does not need Meta-like monetization or a Meta-like multiple. It needs continued direct-revenue growth, cost discipline, and the first convincing evidence that advertiser demand is finally catching impression supply.
+At $5.21, Snap now looks **undervalued on a probability-weighted basis**, but it remains a high-variance, low-governance security. The expected value is attractive because the business does not need Meta-like monetization or a Meta-like multiple. It needs continued direct-revenue growth, cost discipline, and proof that the second-quarter advertising-price repair can persist while impression delivery resumes.
 
 That supports an attractive research stance. It does not make a concentrated position low risk; public sizing context is intentionally omitted.
 
 ## Target lifecycle and publication status
 
-- **Status:** draft and unregistered; `published_at` and a prospective forecast identifier remain unset.
+- **Analytical release status:** complete, internally reviewed, and ready for repository publication as a clearly labeled draft.
+- **Prospective scorecard status:** unregistered; `published_at` and a prospective forecast identifier remain unset.
 - **Horizon:** 20 August 2027.
 - **Evaluation rule if later registered:** Snap's unadjusted regular-session close on 20 August 2027, or the immediately preceding New York Stock Exchange session.
 - **Review:** immediately after third-quarter 2026 results and no later than 15 November 2026.
 - **Prior record:** this draft supersedes the assumptions in the [20 August valuation](2026-08-20-valuation.md), which remains as a historical draft.
-- **Publication blockers:** replace the dynamic $5.21 quote with a reproducible official-close record, freeze the matching benchmark observation and rule, assign the formal identifier, and complete human review before ledger registration.
+- **Scorecard-registration blockers:** replace the dynamic $5.21 quote with a reproducible official-close record, freeze the matching benchmark observation and rule, assign the formal identifier, and obtain explicit prospective-registration approval before writing the immutable ledger record.
 
 ## Sources and verification
 
@@ -369,7 +378,13 @@ That supports an attractive research stance. It does not make a concentrated pos
 - [Advertising-price and recommendation-system revalidation](../research/2026-08-21-ads-pricing-recommenders-revalidation.md)
 - [Meta and Reddit peer valuation](../research/2026-08-21-meta-reddit-relative-valuation.md)
 - [Regulation and cost revalidation](../research/2026-08-21-regulation-costs-revalidation.md)
+- [Confidence-gap estimates](../research/2026-08-21-confidence-gap-estimates.md)
+- [Regional advertising contribution model](../research/2026-08-21-regional-ad-economics.md)
+- [Open-source recommender and quantified-upside review](../research/2026-08-21-open-source-recommender-gap.md)
 - [Independent valuation and publication review](../research/2026-08-21-independent-review.md)
 - [Deterministic valuation verifier](verify-2026-08-21.mjs)
+- [Confidence-gap verifier](verify-2026-08-21-confidence-gaps.mjs)
+- [Regional-economics verifier](verify-2026-08-21-regional-economics.mjs)
+- [Recommendation-upside verifier](verify-2026-08-21-recommender-upside.mjs)
 
 The displayed capitalization, revenue-multiple, sum-of-the-parts, discounted-cash-flow, scenario-weighting, sensitivity, and six-month calculations were independently recomputed during the 21 August review. The deterministic verifier asserts the principal displayed results. The official-close provenance gap prevents prospective publication, not arithmetic review of this draft.

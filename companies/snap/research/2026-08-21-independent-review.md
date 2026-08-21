@@ -4,7 +4,7 @@ company: Snap Inc.
 ticker: SNAP
 status: draft
 as_of: 2026-08-21
-source_cutoff_at: 2026-08-21T03:30:00+02:00
+source_cutoff_at: 2026-08-21T16:15:00+02:00
 scope: independent-valuation-publication-review
 ---
 
@@ -12,9 +12,17 @@ scope: independent-valuation-publication-review
 
 ## Conclusion
 
-**Analytical draft: pass. Public prospective registration: pending.** Three independent review tracks examined the 21 August re-underwrite for valuation arithmetic and capital structure, evidence and source quality, and public-repository safety and lifecycle consistency. The bear, base, bull, probability-weighted, and six-month values reconstruct without a central arithmetic error. The review findings described below were resolved before this dossier was committed.
+**Analytical dossier: pass. Public prospective registration: pending.** Three independent review tracks examined the 21 August re-underwrite for valuation arithmetic and capital structure, evidence and source quality, and public-repository safety and lifecycle consistency. Same-day confidence-gap, regional-economics, Gemini/recommender, and licensed-workforce passes then corrected the advertising-price and Universal User Model records, bounded additional inputs, and updated probability weights. The bear, base, bull, probability-weighted, and six-month values reconstruct without a central arithmetic error. The final findings described below were resolved before release.
 
 This pass means the research can be preserved as a clearly labeled draft under `companies/snap/`. It does not turn the record into a registered forecast: the reference price and matching benchmark observation still require reproducible official-close provenance, followed by a formal identifier and human approval.
+
+### Final same-day reconciliation
+
+- The completed Gemini Deep Research report was recovered and audited as a source-discovery aid; retained claims were rechecked at their underlying publishers.
+- The 19.2% Universal User Model figure was corrected to aggregate long-form view-time sum; the same table reports only 0.28% more view time per user and 0.04% more application-open daily users.
+- Current Snap semantic-ID research and licensed aggregate workforce comparisons support a competent-fast-follower technical case, while the scale gap and latest attrition/hiring signal constrain frontier-parity confidence.
+- Recommendation progress is now an explicit, non-additive sensitivity: approximately $31 million / $240 million / $428 million of next-four-quarter advertising revenue and $0.01 / $0.23 / $0.64 of sum-of-the-parts value in bear/base/bull.
+- The landing page and thesis now expose two-minute, ten-minute, operating-mechanism, risk-review, and full-audit paths into the same evidence set.
 
 ## Review scope and disposition
 
@@ -43,7 +51,7 @@ This pass means the research can be preserved as a clearly labeled draft under `
 | Adopted 12-month target | $2.50 | $7.75 | $14.25 |
 | Six-month checkpoint | $3.704 | $6.733 | $10.806 |
 
-At 30% / 50% / 20% probabilities, the adopted targets produce a **$7.475** probability-weighted value, displayed as **$7.48**. The six-month checkpoints weight to **$6.639**, displayed as **$6.64**.
+The same-day [confidence-gap evidence pass](2026-08-21-confidence-gap-estimates.md) changed only the probabilities after recovering Snap's reported second-quarter advertising price. At the updated 25% / 55% / 20% probabilities, the unchanged adopted targets produce a **$7.7375** probability-weighted value, displayed as **$7.74**. The six-month checkpoints weight to **$6.790**, displayed as **$6.79**. The scenario-method recalculations above remain unchanged.
 
 ## Public-data boundary
 

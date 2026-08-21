@@ -15,9 +15,11 @@ The strongest publicly visible cross-platform price series does not show Snap as
 
 The strongest bullish counter-evidence measures business outcomes rather than media prices. Measured reports that, across 130 commerce brands already using Snapchat, the median **incremental return on advertising spend (iROAS)** on Snapchat was **$2.84**, or **19.3% above** those brands’ blended social result, while Snapchat represented only about **5% of social spend**. Triple Whale reports that, in a roughly 20,000-advertiser commerce dataset, Snapchat had the lowest **cost per acquisition (CPA)** among the platforms studied. Both findings are useful, but neither public release provides enough matched-platform detail to establish that Snap would remain superior when budgets scale. [Measured summary](https://www.measured.com/guide-research/snapchat-lifts-search-social-iroas/), [Forbes description of the Measured cohort](https://www.forbes.com/sites/sharonedelson/2026/07/21/undervalued-snapchat-worth-another-look-says-study/), [Triple Whale study distributed by Snap](https://forbusiness.snapchat.com/blog/triple-whale-ecommerce-research-2025?_sid=ADAGE)
 
-For an advertiser, low incremental cost can be excellent. For a Snap shareholder, low advertising prices are not automatically good: they can mean the auction lacks enough competing budgets. Snap’s first-quarter 2026 global advertising impressions rose **17%**, while effective price per impression fell **12%**. Meta’s second-quarter 2026 advertising impressions rose **14%** while average price per advertisement rose **12%**. That is the central monetisation gap. [Snap first-quarter 2026 investor letter](https://www.sec.gov/Archives/edgar/data/1564408/000156440826000024/snapincq12026investorlet.htm), [Meta second-quarter 2026 results](https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx)
+For an advertiser, low incremental cost can be excellent. For a Snap shareholder, low advertising prices are not automatically good: they can mean the auction lacks enough competing budgets. Snap’s first-quarter 2026 global advertising impressions rose **17%**, while effective price per impression fell **12%**. The second-quarter Form 10-Q then reported an approximately **10% increase in average price per advertising impression**. Advertising revenue grew 9.3%, implying roughly flat to slightly negative impression delivery after rounding. Meta’s second-quarter 2026 advertising impressions rose **14%** while average price per advertisement rose **12%**. Snap has now produced one clear quarter of yield repair, but not Meta-like simultaneous price and volume growth. [Snap first-quarter 2026 investor letter](https://www.sec.gov/Archives/edgar/data/1564408/000156440826000024/snapincq12026investorlet.htm), [Snap second-quarter 2026 Form 10-Q](https://www.sec.gov/Archives/edgar/data/1564408/000156440826000052/snap-20260630.htm), [Meta second-quarter 2026 results](https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx)
 
-**My underwriting conclusion:** Snap has a real, production-scale machine-learning stack and improving lower-funnel advertising products. It does not merely need to “build Meta’s algorithm.” It must turn better prediction into denser advertiser demand, more conversion history, greater trust in measurement, and higher bids without destroying advertiser returns. A roughly **12% next-four-quarter advertising-growth case is reasonable** if effective price per thousand impressions stabilises. Growth around **20% is a credible bull case**, but it requires visible price repair. Sustained **30% advertising growth is a stretch case**, not a base case.
+**My underwriting conclusion:** Snap has a real, production-scale machine-learning stack and improving lower-funnel advertising products. It does not merely need to “build Meta’s algorithm.” It must turn better prediction into denser advertiser demand, more conversion history, greater trust in measurement, and higher bids without destroying advertiser returns. The reported second-quarter price inflection makes a roughly **12% next-four-quarter advertising-growth case more credible**, but volume was approximately flat and the quarter included World Cup demand. Growth around **20% remains a credible bull case** if price repair persists while impression delivery resumes. Sustained **30% advertising growth is a stretch case**, not a base case.
+
+A later same-day [country-level regional advertising economics pass](2026-08-21-regional-ad-economics.md) adds Snap format/country observations, Meta and Reddit geographic anchors, subscription storefront prices, and a Q2-reconciled regional contribution model. It does not change the global “not always cheaper” verdict.
 
 ---
 
@@ -32,7 +34,7 @@ For an advertiser, low incremental cost can be excellent. For a Snap shareholder
 | A cheaper Snap auction proves Snap has an under-monetised asset | **Partly true** | Low price can create advertiser opportunity and attract demand. It can also reveal weak auction density, lower-intent inventory, inferior measurement, or low conversion rates. |
 | Meta’s recommendation gains should be easy for Snap to copy | **False** | Architectures can be copied. Historical conversion labels, advertiser budgets, cross-placement signals, compute, agency workflows, and marketplace liquidity cannot be copied quickly. |
 | Snap lacks a serious machine-learning platform | **False** | Snap describes more than 500 models, more than one billion predictions per second, a large feature store, long-sequence universal user models, and a multi-stage advertising-ranking system. These are issuer claims, but they describe industrial rather than experimental scale. |
-| Snap’s advertising recovery is proven | **Not yet** | Second-quarter 2026 advertising revenue grew 9% and lower-funnel outcomes improved. Snap did not disclose global impression or effective-price growth for that quarter after reporting a 12% effective-price decline in the first quarter. Yield repair remains the key missing proof. |
+| Snap’s advertising recovery is proven | **One-quarter evidence** | Second-quarter 2026 advertising revenue grew 9.3%, and the Form 10-Q reported average price per impression up approximately 10%. Impressions were therefore roughly flat/slightly negative after rounding. Yield repair is now observed once, not yet proved durable. |
 
 ---
 
@@ -214,9 +216,9 @@ More user time and more available placements increase impression supply. Better 
 | Third quarter 2025 | +22% | approximately -13% | +5% | Strong inventory growth, weak yield. |
 | Fourth quarter 2025 | +14% | -8% | +5% | Still dilutive pricing, though less severe than the third quarter. |
 | First quarter 2026 | +17% | -12% | +3% | The monetisation problem persisted despite product progress. |
-| Second quarter 2026 | not disclosed | not disclosed | +9% | Better growth, but no direct evidence yet that price stopped falling. |
+| Second quarter 2026 | approximately -1% implied | approximately +10% reported | +9.3% | Clear price repair, but no volume growth; the implied impression figure is approximate because price was rounded. |
 
-Sources: [Snap second-quarter 2025 investor letter](https://www.sec.gov/Archives/edgar/data/1564408/000156440825000047/q22025investorletterex99.htm), [third-quarter 2025 investor letter](https://www.sec.gov/Archives/edgar/data/1564408/000156440825000063/q32025investorletter.htm), [fourth-quarter 2025 investor letter](https://www.sec.gov/Archives/edgar/data/1564408/000156440826000011/snapincq42025investorlet.htm), [first-quarter 2026 investor letter](https://www.sec.gov/Archives/edgar/data/1564408/000156440826000024/snapincq12026investorlet.htm), [second-quarter 2026 prepared remarks](https://s25.q4cdn.com/442043304/files/doc_financials/2026/q2/Q2-2026-Prepared-Remarks.pdf)
+Sources: [Snap second-quarter 2025 investor letter](https://www.sec.gov/Archives/edgar/data/1564408/000156440825000047/q22025investorletterex99.htm), [third-quarter 2025 investor letter](https://www.sec.gov/Archives/edgar/data/1564408/000156440825000063/q32025investorletter.htm), [fourth-quarter 2025 investor letter](https://www.sec.gov/Archives/edgar/data/1564408/000156440826000011/snapincq42025investorlet.htm), [first-quarter 2026 investor letter](https://www.sec.gov/Archives/edgar/data/1564408/000156440826000024/snapincq12026investorlet.htm), [second-quarter 2026 Form 10-Q](https://www.sec.gov/Archives/edgar/data/1564408/000156440826000052/snap-20260630.htm)
 
 The approximate third-quarter price change is the residual of reported advertising-revenue and impression growth, before mix and rounding:
 
@@ -227,6 +229,14 @@ The approximate third-quarter price change is the residual of reported advertisi
 \[
 \frac{1.05}{1.22} - 1 = -13.9\%
 \]
+
+For the second quarter, reported advertising revenue was $1,282.5 million versus $1,173.5 million, or +9.29%, and reported price growth was approximately 10%:
+
+\[
+\frac{1.0929}{1.10} - 1 = -0.65\%
+\]
+
+The correct description is approximately flat to slightly negative impressions, not a precise -0.65% observation, because Snap rounded the price change and mix sits inside the average.
 
 **Fact:** Snap’s 2025 advertising revenue was approximately **$5.19 billion**, up 5.8%, while global impressions increased around 17% and cost per impression declined about 10%. [Snap 2025 annual report](https://www.sec.gov/Archives/edgar/data/1564408/000156440826000013/snap-20251231.htm)
 
@@ -347,9 +357,13 @@ Attribution asks whether an advertisement appeared before a purchase. Incrementa
 
 **Interpretation:** These claims do not prove competitive parity or attractive returns on infrastructure spending. They do refute the idea that Snap is attempting to solve recommendations with a small experimental team and a toy system.
 
+A same-day [open-source recommender follow-up](2026-08-21-open-source-recommender-gap.md) reviewed public work from Meta, Google, ByteDance, Alibaba, Baidu, Tencent, Kuaishou, and Snap itself. It strengthens this conclusion: architecture risk is lower than this memo originally implied. Retrieval, multi-task ranking, distributed embeddings, long-sequence models, multimodal features, and generative-recommendation recipes are increasingly public. The non-transferable constraints remain Snap's interaction and conversion history, advertiser and auction liquidity, cross-placement breadth, experiment throughput, safety/policy operation, and serving economics.
+
 ### Universal user modelling is the right architectural direction
 
 Snap’s **Universal User Modeling** work combines signals across content, advertisements, growth surfaces, and augmented-reality Lenses, uses more than a year of behavioural sequences, and trains multiple prediction tasks together. The work describes transformer and attention-based models that produce reusable user representations. [Snap Universal User Modeling](https://eng.snap.com/universal_user_modeling)
+
+The underlying Snap-authored paper also reports production A/B results. Long-form video open rate increased 2.78%, aggregate long-form view-time sum increased 19.2%, but long-form view time per user increased only 0.28%; Lens play time increased 1.76% and notification open rate increased 0.87%. The corresponding platform-wide daily-user changes were much smaller at 0.04% for application opens and 0.08% for content views. These issuer-selected tests show real production value, but the per-user and daily-user changes prevent a large aggregate surface metric from being mistaken for a company-wide engagement transformation. [Universal User Modeling paper](https://arxiv.org/abs/2504.21838)
 
 In plain English, this attempts to let one part of Snap learn from another. A user’s Spotlight viewing, Lens use, advertisement interaction, and other eligible behaviours can inform a richer representation than a separate model for every surface.
 
@@ -397,16 +411,16 @@ In plain English, this attempts to let one part of Snap learn from another. A us
 
 **Fact:** Snap increased its expected 2026 infrastructure-cost range from $1.60–$1.65 billion to $1.65–$1.70 billion in the second quarter, explicitly to support machine-learning and artificial-intelligence revenue growth. This is evidence of commitment, not cost-free leverage. [Snap second-quarter 2026 prepared remarks](https://s25.q4cdn.com/442043304/files/doc_financials/2026/q2/Q2-2026-Prepared-Remarks.pdf)
 
-### The most important missing disclosure
+### The most important remaining test is persistence
 
-Snap disclosed 9% advertising growth in the second quarter of 2026, up from 3% in the first quarter, but did not disclose global impression or effective-price growth in its prepared materials. After four quarters of substantial price dilution, investors cannot yet tell whether:
+Snap's prepared materials omitted global impression and effective-price growth, but the second-quarter Form 10-Q reports average advertising price per impression up approximately 10%. Against 9.3% advertising-revenue growth, that implies roughly flat to slightly negative impression delivery after rounding. After four prior quarters of substantial price dilution, this is real yield repair—but investors still cannot tell whether:
 
-- effective price stabilised;
-- impression growth accelerated enough to mask another price decline;
-- regional or product mix improved;
-- a few lower-funnel products grew rapidly from small bases while the wider auction remained weak.
+- the price improvement will persist after World Cup spending;
+- impression volume can resume growth without renewed price dilution;
+- regional or product mix drove an unusual portion of the increase;
+- lower-funnel products can retain their performance as advertiser budgets scale.
 
-**Opinion:** The omission is not evidence of deterioration, but it should prevent a thesis from claiming that monetisation repair is already proven.
+**Opinion:** Monetisation repair is demonstrated for one quarter, not yet through a full demand cycle. The third quarter must show a second healthy price result and renewed volume discipline.
 
 ---
 
@@ -417,7 +431,7 @@ Snap disclosed 9% advertising growth in the second quarter of 2026, up from 3% i
 | Core consumer signal | Communication-adjacent behaviour, Stories, Spotlight, Map and augmented-reality interaction | Cross-application social graph, content, creator, business and commerce interactions across Facebook and Instagram | Rapid content-consumption feedback and a strong short-video interest graph | Explicit community, topic, conversation and research context |
 | Public recommendation evidence | Bento, Universal User Modeling, multi-stage ad ranking, embedding retrieval, language and vision models | Andromeda retrieval, GEM generative ads model, long-sequence learning, specialised hardware | ByteDance’s Monolith paper and open-source implementation describe collisionless embeddings and real-time learning; this is a public technical proxy, not proof of the exact current production stack | Max campaigns automate targeting, placement, budget and creative; Community Intelligence uses first-party conversation context |
 | Advertising-marketplace scale | 2025 advertising revenue approximately $5.19 billion | 2025 advertising revenue approximately $196.18 billion | Private-company platform; comparable audited advertising revenue is not publicly available | Much smaller than Meta; Tinuiti says spend among dual-active advertisers was 15% of their Meta spend in fourth-quarter 2025 |
-| Lower-funnel status | Improving DPA, application bidding, CAPI, Smart products and Sponsored Snaps; price repair unproven | Mature cross-placement automation and deep conversion history; currently growing impressions and price | Mature automated bidding and native video commerce; public auction docs support optimised CPM and learning-phase mechanics | Conversion stack exists; Max campaigns only entered limited beta in January 2026 |
+| Lower-funnel status | Improving DPA, application bidding, CAPI, Smart products and Sponsored Snaps; one quarter of price repair, roughly flat volume | Mature cross-placement automation and deep conversion history; currently growing impressions and price | Mature automated bidding and native video commerce; public auction docs support optimised CPM and learning-phase mechanics | Conversion stack exists; Max campaigns only entered limited beta in January 2026 |
 | Main advantage over Snap | — | Auction liquidity, conversion volume, cross-placement scale, agency habit, compute and infrastructure | Fast interest feedback, native short-video demand and real-time trend adaptation | Explicit communities and text-rich commercial research signals |
 | Snap’s differentiated counter-position | — | Younger incremental reach, camera/augmented-reality formats, close-friend and Map surfaces | Communication graph and direct-response formats outside an entertainment-only feed | Much larger daily consumer scale and a more mature performance-ad stack |
 
@@ -474,6 +488,8 @@ These are engineering and product patterns, not exclusive assets:
 - sequence models spanning content and advertising events.
 
 Snap is already implementing many of them. The question is execution speed and result, not conceptual awareness.
+
+Public software makes the list cheaper to implement, but the open-large-language-model analogy is incomplete. A language model can arrive with broadly useful learned knowledge. A recommender's most valuable knowledge is a changing record of platform-specific users, items, impressions, bids, and conversions. Open source supplies the learning machinery, not Meta's event history or marketplace. The likely result is therefore faster improvement in Spotlight and Stories, where Snap owns frequent content feedback, than in advertising yield, where rare conversion labels and auction density are decisive.
 
 ### Not quickly copyable
 
@@ -612,7 +628,7 @@ Holding the multiple and all other inputs fixed:
 
 ### High-value questions for management
 
-1. What were global impression and effective-price growth in the second quarter of 2026, and why were they not disclosed?
+1. What were global and regional impression and effective-price growth in the third quarter of 2026, and did the second-quarter price inflection persist after World Cup spending?
 2. How does external incremental return change when an advertiser raises Snapchat from 5% to 10% or 15% of social spend?
 3. What percentage of advertising revenue, not merely spend, uses all three Smart Audience, Smart Budget, and Smart Placement products together?
 4. How many advertisers send purchase-quality events through CAPI, and how has event match quality changed?
@@ -637,15 +653,15 @@ Low advertising prices are not proof of hidden value. They can be the symptom of
 
 ### The cleanest way to hold the thesis
 
-> Snap does not need to become Meta. It needs to demonstrate that product and measurement gains can stop effective-price dilution while preserving healthy impression growth.
+> Snap does not need to become Meta. It needs to demonstrate that the second-quarter effective-price inflection can persist while healthy impression growth resumes.
 
 That makes the next stage unusually observable:
 
-- If eCPM stabilises, the roughly 12% advertising base case becomes credible and the market may rerate the revenue.
-- If eCPM turns positive while DPA and application-purchase products retain good external returns, the approximately 19% bull case becomes credible.
+- If eCPM remains near flat or positive, the roughly 12% advertising base case is credible and the market may rerate the revenue.
+- If eCPM stays positive while impression delivery resumes and DPA/application-purchase products retain good external returns, the approximately 19% bull case becomes credible.
 - If impressions continue growing in the teens while eCPM remains down high single or double digits, “cheap Snap ads” should be read as weak marketplace demand, and the relative-cheapness thesis is weakened rather than strengthened.
 
-**Bottom line:** The advertising evidence is more constructive than a simple comparison with Meta’s current monetisation would suggest, but less constructive than “Snap ads are always cheapest.” The investable opportunity is a **yield-repair option**. The company has built enough technical capability for that option to be real; it has not yet published the effective-price evidence needed to call it exercised.
+**Bottom line:** The advertising evidence is more constructive than a simple comparison with Meta’s current monetisation would suggest, but less constructive than “Snap ads are always cheapest.” The investable opportunity is a **yield-repair option**. The second-quarter Form 10-Q shows that option was exercised for one quarter. Persistence and simultaneous volume growth remain the proof required for a durable rerating.
 
 ---
 

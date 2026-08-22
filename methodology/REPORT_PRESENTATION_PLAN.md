@@ -170,6 +170,46 @@ fallback and distinguish the adopted report from user-adjusted sensitivities.
 - Check the staged site and assets against the repository public-data and
   source-rights policy before publication.
 
+### Phase 6: extract the proven workflow into a skill
+
+After the first Snap presentation passes the release criteria, create a
+repository-local `company-report-presentation` skill under `.agents/skills/`.
+Do not scaffold it earlier: its instructions should encode a workflow proven by
+the working site rather than turn design assumptions into permanent rules.
+
+The skill should apply when an agent creates, upgrades, or republishes the main
+presentation for a canonical company report. It should preserve these
+non-negotiable invariants:
+
+- canonical research records and verified models remain the only source of
+  thesis and valuation data;
+- a generated presentation never becomes a parallel editable thesis;
+- published coverage-cycle dates, reference prices, cutoffs, disclosures, and
+  commit provenance remain frozen;
+- charts and summary values are generated from or checked against the same
+  deterministic outputs used by repository validation;
+- interactive sensitivities are visibly separate from the adopted report;
+- every material visual retains a source, calculation path, and accessible
+  static or tabular fallback; and
+- repository validation, presentation validation, visual checks, and the
+  public-data safety gate run before publication.
+
+Keep the skill entrypoint concise. Put the implemented presentation contract,
+component/data mappings, and release checklist in focused references only when
+they are needed. Add a deterministic helper script only if the implementation
+reveals a repeated validation or generation step that should not be rewritten
+by each agent.
+
+Before treating the skill as the default for future reports:
+
+1. validate its metadata and resources with the repository skill validator;
+2. test it against a second company report or an isolated representative
+   fixture, not only the Snap report from which it was derived;
+3. verify that the result reuses the presentation system without copying Snap's
+   company-specific content or assumptions; and
+4. link the skill from the company-investment research workflow so completing a
+   canonical report naturally routes into presentation and release checks.
+
 ## Acceptance criteria for the first release
 
 - A reader can reach the current presented company report from the repository
@@ -185,6 +225,8 @@ fallback and distinguish the adopted report from user-adjusted sensitivities.
 - The site deploys from a clean GitHub Actions run only after repository
   research validation passes.
 - Published coverage-cycle URLs and displayed historical inputs remain stable.
+- The verified presentation workflow has been captured in and independently
+  exercised through the repository-local `company-report-presentation` skill.
 
 ## Non-goals
 

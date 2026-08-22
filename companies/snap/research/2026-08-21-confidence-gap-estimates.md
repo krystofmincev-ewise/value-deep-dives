@@ -30,7 +30,7 @@ Five other gaps can be narrowed, but not eliminated:
 | Specs economics | $2,195 price, $200 refundable deposit, fall launch, more than $3bn cumulative spend, an activist estimate of about $500m annual cash spend, and transparent breakeven thresholds | bill of materials, preorder count, returns, production commitments, gross margin, and outside funding | medium-low |
 | Legal settlement terms | Snap's $8m Breathitt County payment, no admission or product-change covenant, a separate insured $65m securities settlement, and disputed coverage on platform-harm claims | individual bellwether terms, a scalable school-district framework, coverage result, and remedies | medium for known cases; low for aggregate tail |
 
-Overall valuation confidence is **medium with materially better calibration**, but not high. The reported advertising-price inflection resolves one disclosure gap, yet it does not justify moving probability from bear to base: Q2 2025 effective price fell 10% and included a temporary Ads Manager pricing problem, Q2 2026 price rose approximately 10% and included World Cup demand, and the two-year price index is roughly `0.90 × 1.10 = 0.99`. The canonical probabilities therefore remain **30% bear / 50% base / 20% bull**, and the probability-weighted value remains **$7.48**. The bear, base, and bull values remain **$2.50, $7.75, and $14.25**; no forecast revenue or multiple was changed.
+Overall valuation confidence is **medium with materially better calibration**, but not high. The reported advertising-price inflection resolves one disclosure gap, yet it does not justify moving probability from bear to base: Q2 2025 effective price fell 10% and the comparison included a temporary Ads Manager pricing problem, Ramadan timing, and de minimis effects; Q2 2026 price rose approximately 10% and included World Cup demand; and the two-year price index is roughly `0.90 × 1.10 = 0.99`. Snap did not size those effects, so no add-back is modeled. The canonical probabilities therefore remain **30% bear / 50% base / 20% bull**, and the probability-weighted value remains **$7.48**. The bear, base, and bull values remain **$2.50, $7.75, and $14.25**; no forecast revenue or multiple was changed.
 
 ---
 
@@ -174,7 +174,7 @@ The existing central regulatory/legal reserve remains appropriate. The new $8 mi
 
 ## 7. Valuation calibration and confidence
 
-The Q2 advertising-price disclosure validates the base case's required direction, but it is not a clean structural step-up. The comparison quarter was affected by a temporary Ads Manager change that caused some campaigns to clear at substantially reduced prices; the current quarter also benefited from World Cup spending. Q2 2025 effective cost per thousand advertising impressions (**eCPM**) fell 10%, so Q2 2026's approximately 10% increase leaves a two-year index near 0.99. Impressions were also roughly flat. The evidence is insufficient to reduce the bear weight before a cleaner price-and-volume quarter.
+The Q2 advertising-price disclosure validates the base case's required direction, but it is not a clean structural step-up. The comparison quarter was affected by a temporary Ads Manager change that caused some campaigns to clear at substantially reduced prices, Ramadan timing, and de minimis effects; the current quarter also benefited from World Cup spending. Snap did not quantify the individual effects. Q2 2025 effective cost per thousand advertising impressions (**eCPM**) fell 10%, so Q2 2026's approximately 10% increase leaves a two-year index near 0.99. Impressions were also roughly flat. The evidence is insufficient to reduce the bear weight before a cleaner price-and-volume quarter.
 
 | Scenario | Canonical probability | Value per share |
 | --- | ---: | ---: |
@@ -187,7 +187,7 @@ The six-month probability-weighted checkpoint is **$6.64**. The twelve-month wei
 
 Confidence remains below high because:
 
-- the +10% advertising-price observation laps a weak, bug-affected quarter, compounds to roughly flat over two years, includes World Cup demand, and coincided with approximately flat volume;
+- the +10% advertising-price observation laps a weak pricing/Ramadan/de minimis-affected quarter, compounds to roughly flat over two years, includes World Cup demand, and coincided with approximately flat volume;
 - subscriber retention evidence is selected and relative, not an absolute cohort curve;
 - the regional result is a hybrid ad-yield/cost-allocation model, not a company disclosure, and the Rest-of-World point remains wide;
 - the Specs annual-spend figure is an activist estimate and unit economics remain absent;

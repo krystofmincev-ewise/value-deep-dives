@@ -19,6 +19,22 @@ const baseRevenue = {
   q2_2027: 1.880,
 };
 
+const historicalAdvertising = {
+  q2_2025: 1.1735,
+  q3_2025: 1.317,
+  q4_2025: 1.484,
+  q1_2026: 1.244,
+  q2_2026: 1.2825,
+};
+
+const baseAdvertising = {
+  q2_2026: 1.2825,
+  q3_2026: 1.475,
+  q4_2026: 1.692,
+  q1_2027: 1.418,
+  q2_2027: 1.463,
+};
+
 const change = (current, prior) => current / prior - 1;
 
 const transitions = {
@@ -54,6 +70,38 @@ const transitions = {
   base_q3_to_q4_2026: change(baseRevenue.q4_2026, baseRevenue.q3_2026),
   base_q4_to_q1_2027: change(baseRevenue.q1_2027, baseRevenue.q4_2026),
   base_q1_to_q2_2027: change(baseRevenue.q2_2027, baseRevenue.q1_2027),
+  reported_ads_q2_to_q3_2025: change(
+    historicalAdvertising.q3_2025,
+    historicalAdvertising.q2_2025,
+  ),
+  reported_ads_q3_to_q4_2025: change(
+    historicalAdvertising.q4_2025,
+    historicalAdvertising.q3_2025,
+  ),
+  reported_ads_q4_to_q1_2026: change(
+    historicalAdvertising.q1_2026,
+    historicalAdvertising.q4_2025,
+  ),
+  reported_ads_q1_to_q2_2026: change(
+    historicalAdvertising.q2_2026,
+    historicalAdvertising.q1_2026,
+  ),
+  base_ads_q2_to_q3_2026: change(
+    baseAdvertising.q3_2026,
+    baseAdvertising.q2_2026,
+  ),
+  base_ads_q3_to_q4_2026: change(
+    baseAdvertising.q4_2026,
+    baseAdvertising.q3_2026,
+  ),
+  base_ads_q4_to_q1_2027: change(
+    baseAdvertising.q1_2027,
+    baseAdvertising.q4_2026,
+  ),
+  base_ads_q1_to_q2_2027: change(
+    baseAdvertising.q2_2027,
+    baseAdvertising.q1_2027,
+  ),
 };
 
 assert.ok(Math.abs(transitions.reported_q2_to_q3_2025 - 0.12045) < 0.0001);
@@ -67,6 +115,14 @@ assert.ok(Math.abs(transitions.base_q2_to_q3_2026 - 0.10069) < 0.0001);
 assert.ok(Math.abs(transitions.base_q3_to_q4_2026 - 0.15909) < 0.0001);
 assert.ok(Math.abs(transitions.base_q4_to_q1_2027 + 0.11618) < 0.0001);
 assert.ok(Math.abs(transitions.base_q1_to_q2_2027 - 0.04271) < 0.0001);
+assert.ok(Math.abs(transitions.reported_ads_q2_to_q3_2025 - 0.12228) < 0.0001);
+assert.ok(Math.abs(transitions.reported_ads_q3_to_q4_2025 - 0.12680) < 0.0001);
+assert.ok(Math.abs(transitions.reported_ads_q4_to_q1_2026 + 0.16173) < 0.0001);
+assert.ok(Math.abs(transitions.reported_ads_q1_to_q2_2026 - 0.03095) < 0.0001);
+assert.ok(Math.abs(transitions.base_ads_q2_to_q3_2026 - 0.15010) < 0.0001);
+assert.ok(Math.abs(transitions.base_ads_q3_to_q4_2026 - 0.14712) < 0.0001);
+assert.ok(Math.abs(transitions.base_ads_q4_to_q1_2027 + 0.16194) < 0.0001);
+assert.ok(Math.abs(transitions.base_ads_q1_to_q2_2027 - 0.03173) < 0.0001);
 
 const reportedQ2Advertising = 1.2825;
 const baseQ2_2027Advertising = 1.463;
@@ -120,6 +176,81 @@ const electionValuePerShare =
   baseDilutedShares;
 assert.ok(Math.abs(electionValuePerShare - 0.02748) < 0.00001);
 
+const annualRevenue = {
+  total: { y2023: 4.606, y2024: 5.361, y2025: 5.931 },
+  advertising: { y2023: 4.408, y2024: 4.904, y2025: 5.186 },
+};
+const politicalArchiveProxy = {
+  y2023: 0.003194148,
+  y2024: politicalArchiveUsdBillions.y2024,
+  y2025: politicalArchiveUsdBillions.y2025,
+};
+const politicalNormalizedGrowth = (series, currentYear, priorYear) =>
+  (series[currentYear] - politicalArchiveProxy[currentYear]) /
+    (series[priorYear] - politicalArchiveProxy[priorYear]) -
+  1;
+
+const electionComparisonBase = {
+  total2024Reported: change(annualRevenue.total.y2024, annualRevenue.total.y2023),
+  total2024Normalized: politicalNormalizedGrowth(
+    annualRevenue.total,
+    "y2024",
+    "y2023",
+  ),
+  total2025Reported: change(annualRevenue.total.y2025, annualRevenue.total.y2024),
+  total2025Normalized: politicalNormalizedGrowth(
+    annualRevenue.total,
+    "y2025",
+    "y2024",
+  ),
+  advertising2024Reported: change(
+    annualRevenue.advertising.y2024,
+    annualRevenue.advertising.y2023,
+  ),
+  advertising2024Normalized: politicalNormalizedGrowth(
+    annualRevenue.advertising,
+    "y2024",
+    "y2023",
+  ),
+  advertising2025Reported: change(
+    annualRevenue.advertising.y2025,
+    annualRevenue.advertising.y2024,
+  ),
+  advertising2025Normalized: politicalNormalizedGrowth(
+    annualRevenue.advertising,
+    "y2025",
+    "y2024",
+  ),
+};
+
+assert.ok(Math.abs(electionComparisonBase.total2024Reported - 0.16392) < 0.0001);
+assert.ok(Math.abs(electionComparisonBase.total2024Normalized - 0.15871) < 0.0001);
+assert.ok(Math.abs(electionComparisonBase.total2025Reported - 0.10632) < 0.0001);
+assert.ok(Math.abs(electionComparisonBase.total2025Normalized - 0.11137) < 0.0001);
+assert.ok(Math.abs(electionComparisonBase.advertising2024Reported - 0.11252) < 0.0001);
+assert.ok(Math.abs(electionComparisonBase.advertising2024Normalized - 0.10704) < 0.0001);
+assert.ok(Math.abs(electionComparisonBase.advertising2025Reported - 0.05750) < 0.0001);
+assert.ok(Math.abs(electionComparisonBase.advertising2025Normalized - 0.06275) < 0.0001);
+
+const calendarTiming = {
+  thanksgiving2025: "2025-11-27",
+  thanksgiving2026: "2026-11-26",
+  christmas2025: "2025-12-25",
+  christmas2026: "2026-12-25",
+  easter2026: "2026-04-05",
+  easter2027: "2027-03-28",
+};
+const daysBetween = (later, earlier) =>
+  (Date.parse(`${later}T00:00:00Z`) - Date.parse(`${earlier}T00:00:00Z`)) /
+  86_400_000;
+assert.equal(
+  daysBetween(calendarTiming.christmas2026, calendarTiming.thanksgiving2026) -
+    daysBetween(calendarTiming.christmas2025, calendarTiming.thanksgiving2025),
+  1,
+);
+assert.equal(new Date(`${calendarTiming.easter2026}T00:00:00Z`).getUTCMonth(), 3);
+assert.equal(new Date(`${calendarTiming.easter2027}T00:00:00Z`).getUTCMonth(), 2);
+
 const q1_2026Advertising = 1.244;
 const q1_2027BaseAdvertising = 1.418;
 const normalizedQ1Growth = [0.020, 0.025].map(
@@ -160,6 +291,32 @@ assert.ok(
     ) - 0.09643,
   ) < 0.0001,
 );
+
+const q3WorldCupCapitalization = [0, 0.01, 0.02, 0.03].map(
+  (assumedShare) => {
+    const eventRevenue = baseAdvertising.q3_2026 * assumedShare;
+    return {
+      assumedShare,
+      eventNormalizedNextFourQuarterRevenue: 7.483 - eventRevenue,
+      revenueMultipleValueReduction:
+        (eventRevenue * diagnosticRevenueMultiple) / baseDilutedShares,
+      sotpValueReduction: (eventRevenue * 1.8) / baseDilutedShares,
+    };
+  },
+);
+
+assert.ok(
+  Math.abs(
+    q3WorldCupCapitalization[1].eventNormalizedNextFourQuarterRevenue - 7.46825,
+  ) < 0.00001,
+);
+assert.ok(
+  Math.abs(q3WorldCupCapitalization[3].revenueMultipleValueReduction - 0.05070) <
+    0.0001,
+);
+assert.ok(
+  Math.abs(q3WorldCupCapitalization[3].sotpValueReduction - 0.04148) < 0.0001,
+);
 assert.ok(
   Math.abs(
     change(
@@ -184,6 +341,16 @@ console.table(
   })),
 );
 console.table(
+  q3WorldCupCapitalization.map((row) => ({
+    assumed_q3_world_cup_share_pct: (row.assumedShare * 100).toFixed(0),
+    event_normalized_next_four_quarter_revenue_usd_b:
+      row.eventNormalizedNextFourQuarterRevenue.toFixed(3),
+    revenue_multiple_value_reduction_per_share:
+      row.revenueMultipleValueReduction.toFixed(3),
+    sotp_value_reduction_per_share: row.sotpValueReduction.toFixed(3),
+  })),
+);
+console.table(
   worldCupSensitivity.map((row) => ({
     assumed_world_cup_share_pct: (row.assumedShare * 100).toFixed(0),
     normalized_q2_2026_ad_revenue_usd_b:
@@ -200,3 +367,4 @@ console.log(
 console.log(
   `Flat-sequential Q3 Other implies $${q3MixSensitivity.flatSequentialAdvertising.toFixed(3)}bn advertising, ${(change(q3MixSensitivity.flatSequentialAdvertising, q3MixSensitivity.reportedQ3_2025Advertising) * 100).toFixed(2)}% YoY.`,
 );
+console.log("SNAP seasonality and event normalization verification: PASS");

@@ -3,8 +3,8 @@ type: research_memo
 company: Snap Inc.
 ticker: SNAP
 status: draft
-as_of: 2026-08-21
-source_cutoff_at: 2026-08-21T16:15:00+02:00
+as_of: 2026-08-22
+source_cutoff_at: 2026-08-22T23:57:00+02:00
 scope: coverage-cycle-four-quarter-operating-forecast
 tags: [forecast, advertising, direct-revenue, profitability, guidance]
 ---
@@ -70,27 +70,38 @@ Sources: Snap's [third-quarter 2025 letter](https://www.sec.gov/Archives/edgar/d
 
 Snap's [2025 Form 10-K](https://www.sec.gov/Archives/edgar/data/1564408/000156440826000013/snap-20251231.htm) says advertising demand has historically been strongest in the fourth quarter; engagement can soften during summer and strengthen in December. The forecast therefore does not extrapolate second-quarter revenue sequentially. Its year-over-year growth rates compare like quarters, while its dollar schedule preserves the recurring fourth-quarter peak and first-quarter reversal.
 
-| Sequential total-revenue transition | Recent reported pattern | Base forecast | Interpretation |
-| --- | ---: | ---: | --- |
-| Second quarter to third quarter | +12.0% in 2025 | +10.1% in 2026 | Below the only recent comparison despite a modest guide beat |
-| Third quarter to fourth quarter | +13.4% in 2024; +13.9% in 2025 | +15.9% in 2026 | Seasonal peak plus continued Other Revenue growth; modestly above the two-year advertising-seasonality prior |
-| Fourth quarter to first quarter | -12.5% in 2025; -10.9% in 2026 | -11.6% in 2027 | Almost exactly the two-year post-holiday mean |
-| First quarter to second quarter | -1.3% in 2025; +4.6% in 2026 | +4.3% in 2027 | Near the stronger recent observation, supported by Other Revenue |
+| Sequential transition | Recent reported total revenue | Base total revenue | Recent reported advertising | Base advertising | Interpretation |
+| --- | ---: | ---: | ---: | ---: | --- |
+| Second quarter to third quarter | +12.0% in 2025 | +10.1% in 2026 | +12.2% in 2025 | +15.0% in 2026 | Total revenue is below the recent comparison; advertising is above it and therefore needs the disclosed segment split to validate the forecast. |
+| Third quarter to fourth quarter | +13.4% in 2024; +13.9% in 2025 | +15.9% in 2026 | +12.7% in 2025 | +14.7% in 2026 | Seasonal peak plus continued Other Revenue growth; both forecast steps are modestly above the recent advertising-seasonality prior. |
+| Fourth quarter to first quarter | -12.5% in 2025; -10.9% in 2026 | -11.6% in 2027 | -16.2% in 2026 | -16.2% in 2027 | The modeled post-holiday advertising reset matches the latest observed cycle. |
+| First quarter to second quarter | -1.3% in 2025; +4.6% in 2026 | +4.3% in 2027 | +3.1% in 2026 | +3.2% in 2027 | The total and advertising paths both preserve the latest spring recovery. |
 
-This is a two-cycle reasonableness check, not a statistical seasonal adjustment. Like-quarter growth reduces ordinary recurring seasonality; it does not remove one-off events or changes in product mix.
+This is a two-cycle total-revenue and one-complete-cycle advertising reasonableness check, not a statistical seasonal adjustment. Like-quarter growth reduces ordinary recurring seasonality; it does not remove one-off events or changes in product mix.
 
 ### Event and comparison-base treatment
 
 | Period | Evidence | Base-case treatment |
 | --- | --- | --- |
-| Second quarter of 2025 comparison | eCPM fell 10%. Snap also said a temporary Ads Manager change caused some campaigns to clear at substantially reduced prices before it reversed the change. | Do not treat Q2 2026's approximately 10% price increase as a clean structural step-up. The two-year price index is roughly `0.90 × 1.10 = 0.99`, which supports retaining the 30% bear probability. |
+| Second quarter of 2025 comparison | eCPM fell 10%. Snap also attributed pressure to a temporary Ads Manager change that caused some campaigns to clear at substantially reduced prices, Ramadan timing, and de minimis changes; it did not size the three effects. | Do not invent an add-back or treat Q2 2026's approximately 10% price increase as a clean structural step-up. The two-year price index is roughly `0.90 × 1.10 = 0.99`, which supports retaining the 30% bear probability. |
 | Second quarter of 2026 | Snap said World Cup-related advertiser spending contributed to growth. | Retain the reported result; do not invent a company-absent dollar allocation. |
 | Third quarter of 2026 | The tournament ran through 19 July, but management said its third-quarter guide reflected expected normalization of World Cup spending and a harder comparison. | Anchor to management's post-event guide and add **no separate World Cup uplift**. Because 19 tournament days fell in Q3, quarter-wide eCPM is not a clean post-event test; August–September, Q4, or Q1 evidence is cleaner. |
-| Fourth quarter of 2026 | Normal holiday demand is historically strongest. The United States general election is 3 November 2026. Snap's official political-ad archive shows approximately $27.7 million of 2024 United States / United States dollar spend versus $3.7 million in 2025 and $2.7 million through the cutoff in 2026; the archive includes advocacy, so these are not pure election-revenue figures. | Preserve normal fourth-quarter seasonality; assign **zero explicit election uplift** in the base. A 2024-like versus 2025 archive difference would be only about $0.03 per share at the diagnostic multiple. |
-| First quarter of 2027 | Post-holiday advertising normally falls sequentially. The comparison also laps a disclosed $20 million–$25 million Q1 2026 Middle East headwind, while Easter shifts from Q2 2026 to Q1 2027. | Model an 11.6% total-revenue decline from Q4. Treat reported +14% advertising growth as only about 11.7%–12.2% on a prior-year-headwind-normalized basis, before Easter timing. |
-| Second quarter of 2027 | The comparison laps the World Cup-aided second quarter of 2026; Easter moves out of Q2. | Keep the reported denominator. Base advertising growth of 14% is therefore a demanding reported-growth test. Treat Easter as a Q1/Q2 timing reallocation, not four-quarter growth. |
+| Fourth quarter of 2026 | Normal holiday demand is historically strongest. The United States general election is 3 November 2026. Snap's official political-ad archive shows approximately $27.7 million of 2024 United States / United States dollar spend versus $3.7 million in 2025 and $2.7 million through the 21 August archive cutoff; the archive includes advocacy, so these are not pure election-revenue figures. Thanksgiving falls on 26 November 2026 versus 27 November 2025, creating one additional calendar day before Christmas. | Preserve normal fourth-quarter seasonality; assign **zero explicit election or holiday-calendar uplift** in the base. A 2024-like versus 2025 archive difference would be only about $0.03 per share at the diagnostic multiple, and Snap has not quantified a one-day holiday-timing effect. |
+| First quarter of 2027 | Post-holiday advertising normally falls sequentially. The comparison also laps a disclosed $20 million–$25 million Q1 2026 Middle East headwind, while Easter shifts from 5 April 2026 in Q2 to 28 March 2027 in Q1. | Model an 11.6% total-revenue decline from Q4. Treat reported +14% advertising growth as only about 11.7%–12.2% on a prior-year-headwind-normalized basis, before Easter timing. |
+| Second quarter of 2027 | The comparison laps the World Cup-aided second quarter of 2026; Easter moves out of Q2 because it occurred in Q1 2027. | Keep the reported denominator. Base advertising growth of 14% is therefore a demanding reported-growth test. Treat Easter as a Q1/Q2 timing reallocation, not four-quarter growth. |
 
-The Q2 2025 pricing comparison comes from Snap's [investor letter](https://www.sec.gov/Archives/edgar/data/1564408/000156440825000047/q22025investorletterex99.htm). World Cup timing comes from [FIFA's official schedule](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fifa-world-cup-26-match-schedule-revealed); the election date comes from the [Federal Election Commission](https://www.fec.gov/documents/5910/2026pdates.pdf), and spend history comes from Snap's [Political Ads Library](https://www.snap.com/political-ads). Snap's [prepared remarks](https://s25.q4cdn.com/442043304/files/doc_financials/2026/q2/Q2-2026-Prepared-Remarks.pdf) identify the second-quarter World Cup benefit, the [earnings Q&A](https://s25.q4cdn.com/442043304/files/doc_financials/2026/q2/Q2-2026-Earnings-Call-Q-A-Transcript_Final.pdf) identifies the normalization already inside third-quarter guidance, and the [Q1 2026 investor letter](https://www.sec.gov/Archives/edgar/data/1564408/000156440826000024/snapincq12026investorlet.htm) sizes the Middle East headwind.
+The Q2 2025 comparison factors come from Snap's [investor letter](https://www.sec.gov/Archives/edgar/data/1564408/000156440825000047/q22025investorletterex99.htm). World Cup timing comes from [FIFA's official schedule](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fifa-world-cup-26-match-schedule-revealed); the election date comes from the [Federal Election Commission](https://www.fec.gov/documents/5910/2026pdates.pdf), and spend history comes from Snap's [Political Ads Library](https://www.snap.com/political-ads). The [United States Code](https://uscode.house.gov/view.xhtml?req=granuleid%3AUSC-prelim-title5-section6103&num=0&edition=prelim) fixes Thanksgiving on the fourth Thursday of November, and the United States Conference of Catholic Bishops' official [2026](https://www.usccb.org/resources/2026cal.pdf) and [2027](https://www.usccb.org/resources/2027cal.pdf) calendars verify the Easter dates. Snap's [prepared remarks](https://s25.q4cdn.com/442043304/files/doc_financials/2026/q2/Q2-2026-Prepared-Remarks.pdf) identify the second-quarter World Cup benefit, the [earnings Q&A](https://s25.q4cdn.com/442043304/files/doc_financials/2026/q2/Q2-2026-Earnings-Call-Q-A-Transcript_Final.pdf) identifies the normalization already inside third-quarter guidance, and the [Q1 2026 investor letter](https://www.sec.gov/Archives/edgar/data/1564408/000156440826000024/snapincq12026investorlet.htm) sizes the Middle East headwind.
+
+The political archive is not a revenue ledger, so subtracting its United States / United States dollar spend from reported revenue is only a diagnostic upper-bound normalization. It shows the election-cycle comparison distortion is small rather than zero:
+
+| Annual growth comparison | Reported | After subtracting the archive-spend proxy from both years | Difference |
+| --- | ---: | ---: | ---: |
+| 2024 total revenue | 16.4% | 15.9% | -0.5 percentage point |
+| 2024 advertising revenue | 11.3% | 10.7% | -0.6 percentage point |
+| 2025 total revenue | 10.6% | 11.1% | +0.5 percentage point |
+| 2025 advertising revenue | 5.8% | 6.3% | +0.5 percentage point |
+
+The calculation uses reported revenue of $4.606 billion / $5.361 billion / $5.931 billion and advertising revenue of $4.408 billion / $4.904 billion / $5.186 billion in 2023 / 2024 / 2025, then subtracts the archive's $3.19 million / $27.69 million / $3.70 million proxy. Because the archive includes advocacy and may not equal recognized revenue, these adjusted rates are deliberately not used as forecast inputs.
 
 Because Snap did not size the World Cup benefit, the useful exercise is a denominator sensitivity—not a fabricated point estimate:
 
@@ -102,6 +113,17 @@ Because Snap did not size the World Cup benefit, the useful exercise is a denomi
 | 3% | $1.244 billion | 17.6% |
 
 The base forecast uses the reported 14.1% comparison. The higher figures only show that, if some second-quarter 2026 demand was temporary, the underlying improvement required in 2027 is larger. A 1% / 2% / 3% World Cup share would reduce a like-for-like 14% Q2 2027 revenue forecast by approximately $15 million / $29 million / $44 million, or roughly $0.02 / $0.03 / $0.05 per share at a 2.2-times diagnostic revenue multiple and 1.92 billion shares. These are sensitivities, not forecast credits or deductions. The quarterly targets stay unchanged; the comparison-base weakness instead prevents the Q2 price observation from reducing the bear probability.
+
+Q3 needs a separate capitalization check because 19 tournament days fall inside the next-four-quarter valuation period. Management's guidance already reflected expected sequential normalization, but the quarter can still contain event-linked dollars. Holding every other base input fixed:
+
+| Assumed World Cup share of Q3 2026 base advertising | Event-normalized next-four-quarter revenue | Base revenue-multiple value reduction | Base sum-of-the-parts value reduction |
+| ---: | ---: | ---: | ---: |
+| 0% | $7.483 billion | $0.00 per share | $0.00 per share |
+| 1% | $7.468 billion | $0.02 per share | $0.01 per share |
+| 2% | $7.454 billion | $0.03 per share | $0.03 per share |
+| 3% | $7.439 billion | $0.05 per share | $0.04 per share |
+
+This does not warrant a mechanical deduction: Snap did not size the event, and the 30% bear weight already reflects the weak comparison and event uncertainty. It does define a recalculation trigger. If Snap later discloses that World Cup demand exceeded 3% of Q2 or Q3 advertising revenue, normalize the affected Year-one revenue and rerun every valuation method rather than capitalizing it as recurring.
 
 ## Why the third-quarter forecast is above formal guidance
 
@@ -118,7 +140,7 @@ The [five-quarter guide history and pre-announcement audit](2026-08-21-meta-redd
 
 ## Quarterly scenarios
 
-All parenthetical growth rates in the next two tables are **year over year**. Sequential changes are shown separately in the seasonality bridge and the Q3 mix sensitivity.
+All parenthetical growth rates in the quarterly scenario table are **same-quarter year over year**. Sequential changes are shown separately in the seasonality bridge and the Q3 mix sensitivity.
 
 | Quarter and metric | Bear | Base | Bull |
 | --- | ---: | ---: | ---: |
@@ -156,6 +178,8 @@ The base $285 million Other Revenue forecast is up 50% year over year but down 9
 The sum-of-the-parts effect is only about $0.02 per share because Other Revenue carries a higher multiple. The analytical implication is larger: a Q3 total-revenue beat does not validate 12% advertising growth unless Snap discloses or permits a credible segment split.
 
 ## Next-four-quarter totals
+
+Parenthetical growth in this table compares forecast Q3 2026–Q2 2027 with reported Q3 2025–Q2 2026. It is a next-four-quarter-versus-prior-four-quarter comparison, not sequential quarterly growth.
 
 | Third quarter 2026 through second quarter 2027 | Bear | Base | Bull |
 | --- | ---: | ---: | ---: |
@@ -291,6 +315,14 @@ The target share counts are net scenario outcomes rather than a mechanical award
 | Fourth quarter of 2026 | $2.04 billion revenue; $530 million adjusted EBITDA | Advertising growth above 15%, exact paid-user progress, high-value users stabilize | Advertising remains single digit, direct revenue decelerates without explanation, or savings are reinvested without return |
 | First quarter of 2027 | $1.80 billion revenue; $361 million adjusted EBITDA | North American DAU stabilizes and FCF per diluted share rises | North American DAU below 90 million, gross margin below 55%, or dilution accelerates |
 | Second quarter of 2027 | $1.88 billion revenue; $395 million adjusted EBITDA | Two quarters of positive eCPM and contained share count | More impressions still coincide with falling price, or legal/product remedies impair acquisition |
+
+### Normalization falsifiers
+
+- Treat Q4 2026 or Q1 2027—not Q2 plus quarter-wide Q3—as the clean price-and-volume durability test unless Snap discloses August–September detail.
+- Recompute Year-one revenue and valuation if disclosed World Cup-related demand exceeds 3% of Q2 or Q3 advertising revenue.
+- Reject the election-immateriality assumption if political and advocacy spending exceeds 1% of quarterly advertising revenue.
+- Lower the quarterly revenue path or multiple if sequential advertising materially misses the recent approximately +12% Q2-to-Q3 / +13% Q3-to-Q4 pattern, or if the Q1 post-holiday reset is materially worse than approximately -16% without an explained mix change.
+- Interpret Q1 2027 advertising growth below approximately 12% as weaker than the headline suggests because it laps the geopolitical headwind and gains Easter timing; interpret Q2 2027 only after considering the World Cup-aided and Easter-shifted comparison.
 
 ## What the model does not know
 

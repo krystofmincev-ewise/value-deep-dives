@@ -7,8 +7,8 @@ aliases: [Snapchat]
 coverage_status: active
 research_status: draft
 position_disclosure: long
-as_of: 2026-08-21
-last_reviewed: 2026-08-21
+as_of: 2026-08-22
+last_reviewed: 2026-08-22
 review_by: 2026-11-15
 current_coverage_cycle: coverage-cycles/2026-W34-01-initial/README.md
 tags: [social-media, digital-advertising, consumer, ad-tech]
@@ -50,7 +50,7 @@ The analysis is complete. Prospective scorecard registration remains pending bec
 | Modeled twelve-month values | Bear $2.50 / base $7.75 / bull $14.25; probability-weighted $7.48 |
 | Target horizon | 20 August 2027; six-month checkpoint $3.70 / $6.73 / $10.81 |
 | Decision frame | Current value and action from $5.21; historical cost basis excluded from the analysis |
-| Source cutoff | 21 August 2026, 16:15 Central European Summer Time (CEST) |
+| Source cutoff | 22 August 2026, 23:57 Central European Summer Time (CEST) |
 | Next review | Q3 2026 results; no later than 15 November 2026 |
 
 The formal QQQ-relative research stance remains **insufficient evidence** because no expected QQQ return was forecast. That scorekeeping label is separate from Snap's attractive absolute valuation. Public sizing, tax, liquidity, and portfolio-correlation context is intentionally omitted, so the dossier cannot determine the investor's private risk budget. No trade was placed.
@@ -144,7 +144,8 @@ During an active cycle, research updates the one canonical report in place. Same
 ### Research incorporated into cycle 01
 
 - 20–21 August 2026: the final report integrated the operating forecast, founder/culture history, authenticated aggregate workforce review, YouTube interview synthesis, Gemini Deep Research cross-check, Meta and Reddit valuation anchors, advertising-price and recommendation-engine analysis, regulation and cost work, conservative-guidance study, adversarial review, and independent audit.
-- 21 August 2026: the integrated evidence and comparison-base pass incorporated the Form 10-Q's approximately 10% second-quarter advertising-price increase, the bug-affected Q2 2025 comparison, World Cup demand, an $8 million school-district settlement term, and regional-contribution bounds. The canonical scenario values are $2.50 / $7.75 / $14.25 and the probability-weighted value is $7.48.
+- 21 August 2026: the integrated evidence and comparison-base pass incorporated the Form 10-Q's approximately 10% second-quarter advertising-price increase, the Q2 2025 pricing/Ramadan/de minimis comparison, World Cup demand, an $8 million school-district settlement term, and regional-contribution bounds. The canonical scenario values are $2.50 / $7.75 / $14.25 and the probability-weighted value is $7.48.
 - 21 August 2026: a country-level Snap, Meta, and Reddit advertising-price pass replaced the uniform regional-cost proxy with a Q2-reconciled contribution model; North America and Europe remain clearly positive, while Rest of World is estimated positive before direct selling/support and near breakeven afterward. The interpretation improved without changing consolidated valuation.
 - 21 August 2026: the completed Gemini recommender report was recovered and audited, current Snap semantic-ID production research and a targeted licensed peer-workforce review were added, the Universal User Model's aggregate/per-user distinction was corrected, and the technical scenarios were translated into an explicit advertising and per-share sensitivity without changing the consolidated target.
+- 22 August 2026: an independent seasonality and one-off-event audit added the advertising-specific sequential bridge, Ramadan/de minimis comparison factors, political-spend growth normalization, exact Easter and holiday-calendar timing, and a Q3 World Cup capitalization sensitivity. Those checks retained the $2.50 / $7.75 / $14.25 scenario values and 30% / 50% / 20% probabilities; the weighted value remains $7.48.
 - The analytical dossier is complete and release-ready. Separate prospective scorecard registration remains gated on a reproducible official-close capture, matching benchmark provenance, and an immutable ledger record.

@@ -13,9 +13,9 @@ security_id: snap-class-a-common
 listing_id: nyse-snap
 research_status: draft
 coverage_status: active
-as_of: 2026-08-21
+as_of: 2026-08-22
 published_at: null
-source_cutoff_at: 2026-08-21T16:15:00+02:00
+source_cutoff_at: 2026-08-22T23:57:00+02:00
 currency: USD
 reference_price: 5.21
 reference_price_at: 2026-08-20T20:59:05Z
@@ -40,7 +40,7 @@ tags: [social-media, digital-advertising, subscriptions, augmented-reality, foun
 
 # Snap at $5.21: cheap for a reason—but perhaps too cheap
 
-> Draft research, not personalized investment advice. Source cutoff: 21 August 2026. Reference price: **$5.21**.
+> Draft research, not personalized investment advice. Source cutoff: 22 August 2026 at 23:57 Central European Summer Time. Reference price: **$5.21**.
 
 > **The question:** what is Snap worth now, and what action—if any—is justified at $5.21? Historical purchase price and rationale are excluded from the analysis and isolated in the [disclosure](#disclosure).
 
@@ -88,7 +88,7 @@ If those four conditions hold, Snap need only re-rate from 1.68 times trailing r
 
 ### Why confidence is only medium
 
-Q2 advertising price rose about 10%, but it lapped a 10% decline and a temporary pricing problem in Q2 2025. On a two-year basis, price was roughly flat, and World Cup demand helped. One good quarter is evidence of repair—not proof of a repaired auction. Snap also does not disclose subscriber cohorts, regional costs, Specs unit economics, or aggregate legal remedies. The model therefore keeps a 30% bear weight. The [confidence-gap review](../research/2026-08-21-confidence-gap-estimates.md) and [regional model](../research/2026-08-21-regional-ad-economics.md) separate measured facts, estimates, and unknowns.
+Q2 advertising price rose about 10%, but it lapped a 10% decline and a comparison affected by a temporary pricing problem, Ramadan timing, and de minimis changes in Q2 2025. On a two-year basis, price was roughly flat, and World Cup demand helped. Snap did not size those effects, so the model does not invent an add-back. One good quarter is evidence of repair—not proof of a repaired auction. Snap also does not disclose subscriber cohorts, regional costs, Specs unit economics, or aggregate legal remedies. The model therefore keeps a 30% bear weight. The [confidence-gap review](../research/2026-08-21-confidence-gap-estimates.md) and [regional model](../research/2026-08-21-regional-ad-economics.md) separate measured facts, estimates, and unknowns.
 
 ---
 
@@ -100,7 +100,7 @@ Snap's low price is not mysterious. Investors have endured falling advertising y
 
 For four quarters through Q1 2026, Snap grew advertising inventory while effective price fell 8%–14%. Q2 reversed the pattern: advertising price rose about 10% and advertising revenue grew 9.3%, implying roughly flat to slightly negative impressions after rounding.
 
-That is encouraging, but the comparison was unusually forgiving. Q2 2025 price had fallen 10% and included a temporary Ads Manager pricing problem, leaving the two-year price index roughly flat. World Cup demand also helped Q2 2026. The base case therefore asks for **13.5% next-four-quarter advertising growth with roughly flat price**, not a leap toward Meta's economics. The detailed [advertising evidence](../research/2026-08-21-ads-pricing-recommenders-revalidation.md) explains why better models can help while Meta's conversion history and auction liquidity remain hard to copy.
+That is encouraging, but the comparison was unusually forgiving. Q2 2025 price had fallen 10% and included a temporary Ads Manager pricing problem, Ramadan timing, and de minimis effects, leaving the two-year price index roughly flat. World Cup demand also helped Q2 2026. The base case therefore asks for **13.5% next-four-quarter advertising growth with roughly flat price**, not a leap toward Meta's economics. The detailed [advertising evidence](../research/2026-08-21-ads-pricing-recommenders-revalidation.md) explains why better models can help while Meta's conversion history and auction liquidity remain hard to copy.
 
 ### 2. Direct revenue has become a meaningful second engine
 
@@ -305,7 +305,7 @@ Meta Platforms produced the opposite pattern in the second quarter of 2026: adve
 
 Second-quarter advertising revenue of $1,282.5 million was 9.29% above the prior year. Dividing that growth by the approximately 10% reported price increase implies about -0.65% impression growth. Because price was rounded and mix sits inside the average, the correct description is **roughly flat to slightly negative impressions**.
 
-This is the unresolved question at the center of the report: **was Q2 the start of durable auction repair, or an easy comparison helped by World Cup demand?** Price improved, but against a Q2 2025 period with a 10% decline and a temporary Ads Manager pricing problem; the two-year price index is roughly flat. And repair arrived without volume growth. The third and fourth quarters must separate a genuine turn from a favorable comparison.
+This is the unresolved question at the center of the report: **was Q2 the start of durable auction repair, or an easy comparison helped by World Cup demand?** Price improved, but against a Q2 2025 period with a 10% decline, a temporary Ads Manager pricing problem, Ramadan timing, and de minimis effects; the two-year price index is roughly flat. And repair arrived without volume growth. The third and fourth quarters must separate a genuine turn from a favorable comparison.
 
 ---
 
@@ -835,6 +835,8 @@ Competitor harm is an upside option, not an offset to Snap's own risk.
 
 Dollar figures are billions of United States dollars.
 
+Parenthetical growth below compares forecast Q3 2026–Q2 2027 with reported Q3 2025–Q2 2026. It is not sequential quarterly growth.
+
 | Third quarter 2026 through second quarter 2027 | Bear | Base | Bull |
 | --- | ---: | ---: | ---: |
 | Advertising revenue | $5.545 (+4.1%) | $6.048 (+13.5%) | $6.422 (+20.5%) |
@@ -855,7 +857,11 @@ Dollar figures are billions of United States dollars.
 | First quarter of 2027 | $1.803 billion | $361 million | continued low-teens advertising and 35% Other Revenue growth |
 | Second quarter of 2027 | $1.880 billion | $395 million | high-value-user stabilization and approximately 60% gross margin, despite lapping World Cup-aided Q2 2026 |
 
-The quarterly path is seasonality-aware. Like-quarter growth reduces ordinary recurring seasonality, while the dollar schedule preserves the historical fourth-quarter advertising peak and first-quarter reversal. The third-quarter forecast adds no World Cup uplift because management said its guidance already reflected normalization, but Q3 contains 19 tournament days and is not a clean quarter-wide post-event price test. The fourth-quarter base preserves normal holiday strength but gives no explicit credit for the November 2026 United States election; Snap's official political-ad archive suggests even a 2024-like election swing is only about $0.03 per share at the diagnostic multiple. First-quarter 2027 laps a $20 million–$25 million geopolitical headwind and gains Easter timing; second-quarter 2027 loses that Easter timing and laps the World Cup-aided comparison. These timing effects change quarterly interpretation, not the four-quarter total.
+The quarterly path is seasonality-aware. Like-quarter growth reduces ordinary recurring seasonality, while the dollar schedule preserves the historical fourth-quarter advertising peak and first-quarter reversal. The advertising path itself moves +15.0% from Q2 to Q3, +14.7% from Q3 to Q4, -16.2% from Q4 to Q1, and +3.2% from Q1 to Q2, versus the latest observed +12.2% / +12.7% / -16.2% / +3.1% cycle. The first two steps are modestly more demanding; the latter two reproduce the recent post-holiday reset and spring recovery.
+
+The third-quarter forecast adds no World Cup uplift beyond management's guide, which already reflected expected normalization, but Q3 contains 19 tournament days and is not a clean quarter-wide post-event price test. If 1%–3% of base Q3 advertising were event-linked and nonrecurring, removing it would reduce the base revenue-multiple value by approximately $0.02–$0.05 per share and the base sum-of-the-parts value by approximately $0.01–$0.04. The model makes no deduction because Snap did not quantify the event; disclosure above 3% requires recalculation.
+
+The fourth-quarter base preserves normal holiday strength but gives no explicit credit for the November 2026 United States election or the one additional calendar day between Thanksgiving and Christmas. A political-archive diagnostic changes reported 2024–2025 annual growth by only about 0.5–0.6 percentage point and suggests even a 2024-like election swing is only about $0.03 per share at the diagnostic multiple. First-quarter 2027 laps a $20 million–$25 million geopolitical headwind and gains Easter timing as Easter moves from 5 April 2026 to 28 March 2027; second-quarter 2027 loses that Easter timing and laps the World Cup-aided comparison. These timing effects change quarterly interpretation, not the four-quarter total.
 
 The [revised quarterly model](../research/2026-W34-quarterly-forecast.md#seasonality-and-event-normalization) contains the historical sequential bridge, event-denominator sensitivities, quarterly revenue and adjusted-profit build, annual cost and cash-flow bridge, capital bridge, formulas, and upgrade/downgrade checkpoints. Working capital and target share count remain analyst assumptions because Snap does not disclose enough detail for a fully mechanical forecast.
 
@@ -972,6 +978,7 @@ In that world, a 0.85 times revenue multiple and a $2.50 target are not extreme.
 - two quarters of advertising growth at or above 15%;
 - effective cost per thousand advertising impressions (**eCPM**) flat or positive with resumed impression growth in Q4 2026 or Q1 2027; Q2 plus quarter-wide Q3 is not a clean World-Cup-independent pair;
 - separate Q3 advertising and Other Revenue show that a total-revenue beat is not merely a direct-revenue mix shift;
+- Q1 2027 reported advertising growth at or above approximately 12% after recognizing the easier geopolitical and Easter comparison, followed by a Q2 result that survives World Cup/Easter normalization;
 - North American daily active users (**DAU**) stable at 92 million or higher;
 - exact subscriber growth plus churn or margin disclosure;
 - gross margin at or above 60%;
@@ -984,6 +991,8 @@ In that world, a 0.85 times revenue multiple and a $2.50 target are not extreme.
 
 - advertising growth below 8% with double-digit impression growth;
 - Q3 total revenue beats but advertising grows below approximately 10%, indicating that Other Revenue—not auction repair—drove the result;
+- disclosed World Cup-related demand exceeds 3% of Q2 or Q3 advertising revenue without a Year-one normalization, or political/advocacy spend exceeds 1% of quarterly advertising revenue;
+- sequential advertising materially misses the recent approximately +12% Q2-to-Q3 / +13% Q3-to-Q4 pattern, or resets by materially more than approximately 16% in Q1 without an explained mix change;
 - North American daily active users (**DAU**) below 90 million;
 - another infrastructure-guide increase without matching revenue or gross-margin gains;
 - gross margin below 55%;
@@ -1053,7 +1062,7 @@ Base expectations:
 - no new unbounded Specs spending;
 - no material new legal reserve beyond the modeled range.
 
-The most valuable disclosure would be third-quarter advertising and Other Revenue separately, plus global and regional impression growth and effective cost per thousand advertising impressions (**eCPM**). The published base assumes $1.475 billion of Q3 advertising and $285 million of Other Revenue; keeping Other Revenue flat sequentially would instead imply only $1.444 billion of advertising and 9.6% year-over-year growth at the same total revenue. Because the World Cup ran through 19 July, quarter-wide Q3 eCPM is not wholly post-event. August–September detail, Q4, or Q1 is the cleaner durability test.
+The most valuable disclosure would be third-quarter advertising and Other Revenue separately, plus global and regional impression growth, effective cost per thousand advertising impressions (**eCPM**), and the dollar or percentage contribution from World Cup spending. The published base assumes $1.475 billion of Q3 advertising and $285 million of Other Revenue; keeping Other Revenue flat sequentially would instead imply only $1.444 billion of advertising and 9.6% year-over-year growth at the same total revenue. Because the World Cup ran through 19 July, quarter-wide Q3 eCPM is not wholly post-event. August–September detail, Q4, or Q1 is the cleaner durability test. A disclosed World Cup contribution above 3% of Q3 advertising requires normalizing the next-four-quarter revenue used in valuation.
 
 ### Fourth quarter of 2026
 

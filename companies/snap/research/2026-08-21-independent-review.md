@@ -3,8 +3,8 @@ type: research_memo
 company: Snap Inc.
 ticker: SNAP
 status: draft
-as_of: 2026-08-21
-source_cutoff_at: 2026-08-21T16:15:00+02:00
+as_of: 2026-08-22
+source_cutoff_at: 2026-08-22T23:57:00+02:00
 scope: independent-valuation-publication-review
 ---
 
@@ -22,7 +22,7 @@ This pass means the research can be preserved as a clearly labeled draft under `
 - The 19.2% Universal User Model figure was corrected to aggregate long-form view-time sum; the same table reports only 0.28% more view time per user and 0.04% more application-open daily users.
 - Current Snap semantic-ID research and licensed aggregate workforce comparisons support a competent-fast-follower technical case, while the scale gap and latest attrition/hiring signal constrain frontier-parity confidence.
 - Recommendation progress is now an explicit, non-additive sensitivity: approximately $31 million / $240 million / $428 million of next-four-quarter advertising revenue and $0.01 / $0.23 / $0.64 of sum-of-the-parts value in bear/base/bull.
-- The quarterly path now exposes normal Q4/Q1 seasonality, the Q2 2025 pricing-comparison problem, World Cup and Easter timing, election-spend materiality, and a Q3 advertising / Other Revenue mix sensitivity. Those findings retain the operating targets but set company probabilities at 30% / 50% / 20%.
+- The quarterly path now exposes total and advertising Q4/Q1 seasonality, the Q2 2025 pricing/Ramadan/de minimis comparison problem, World Cup and exact Easter/holiday timing, election-spend materiality, and Q3 advertising / Other Revenue and event-capitalization sensitivities. Those findings retain the operating targets and company probabilities at 30% / 50% / 20%.
 - The landing page and thesis now expose two-minute, ten-minute, operating-mechanism, risk-review, and full-audit paths into the same evidence set.
 
 ## Review scope and disposition
@@ -34,7 +34,7 @@ This pass means the research can be preserved as a clearly labeled draft under `
 | Leases and debt | The draft did not display its operating-lease exclusion and used debt carrying value without enough convention detail | Added the $691 million lease line, lease-excluded bridges and sensitivity, and carrying-value versus principal disclosure |
 | Dilution | A rounded 3% equity-value shortcut overstated the illustrative dilution transfer | Recomputed from the disclosed 54.5 million incremental-share proxy |
 | Capital bridge | Cash not retained and six-month capital assumptions were insufficiently explicit | Labeled as scenario assumptions, explained the bear case, and added sensitivity/provenance language |
-| Seasonality and event bases | Ordinary Q4/Q1 seasonality was implicit, while World Cup, election, Easter, Q2 2025 pricing, and Q3 mix effects were not fully visible | Added a sourced event bridge and deterministic verifier; retained forecast dollars, restored a 30% bear weight, and tightened clean-evidence falsifiers |
+| Seasonality and event bases | Ordinary Q4/Q1 seasonality was implicit, while advertising-specific transitions, World Cup, election, Easter/holiday timing, Q2 2025 pricing/Ramadan/de minimis factors, and Q3 mix effects were not fully visible | Added sourced normalization tables and a deterministic verifier; retained forecast dollars and 30% bear weight, quantified Q3 event-capitalization sensitivity, and tightened clean-evidence falsifiers |
 | Licensed evidence | A workforce memo reproduced exact licensed-local-only aggregates | Removed all licensed figures from tracked files; the public memo now contains source metadata, a rights boundary, public facts, and original qualitative analysis only |
 | Personal financial data | Drafts disclosed exact position size, cost basis, and inferable portfolio value | Exact fills, size, and inferable portfolio value remain excluded; only the explicitly authorized rounded, unverified $4.70 history appears in the non-analytical addendum |
 | Source provenance | Filing dates and source-log structure were inconsistent in several places | Corrected the filing date, repaired the central table, and clarified that module-specific citations retain specialist provenance |
@@ -53,7 +53,7 @@ This pass means the research can be preserved as a clearly labeled draft under `
 | Adopted 12-month target | $2.50 | $7.75 | $14.25 |
 | Six-month checkpoint | $3.704 | $6.733 | $10.806 |
 
-The [confidence-gap evidence pass](2026-08-21-confidence-gap-estimates.md) recovered Snap's reported second-quarter advertising price, and the final seasonality audit then tested its comparison base. Because Q2 2025 included a temporary Ads Manager pricing problem, Q2 2026 compounded price is roughly flat over two years and the current quarter included World Cup demand. The canonical 30% / 50% / 20% probabilities therefore produce a **$7.475** probability-weighted value, displayed as **$7.48**. The six-month checkpoints weight to **$6.639**, displayed as **$6.64**. The scenario-method recalculations above remain unchanged.
+The [confidence-gap evidence pass](2026-08-21-confidence-gap-estimates.md) recovered Snap's reported second-quarter advertising price, and the final seasonality audit then tested its comparison base. Because Q2 2025 included a temporary Ads Manager pricing problem, Ramadan timing, and de minimis effects, Q2 2026 compounded price is roughly flat over two years and the current quarter included World Cup demand. Snap did not size any of those effects, so no add-back was invented. A hypothetical 1%–3% nonrecurring World Cup share of Q3 advertising would reduce the base revenue-multiple value by approximately $0.02–$0.05 per share and the base sum-of-the-parts value by approximately $0.01–$0.04, but it is not deducted absent issuer quantification. The canonical 30% / 50% / 20% probabilities therefore produce a **$7.475** probability-weighted value, displayed as **$7.48**. The six-month checkpoints weight to **$6.639**, displayed as **$6.64**. The scenario-method recalculations above remain unchanged.
 
 ## Public-data boundary
 

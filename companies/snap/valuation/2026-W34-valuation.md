@@ -9,9 +9,9 @@ identity_hash: sha256:d09ac6123bc50705e9193b94196e0d56445228609ac1309221ed92a940
 security_id: snap-class-a-common
 listing_id: nyse-snap
 status: draft
-as_of: 2026-08-21
+as_of: 2026-08-22
 published_at: null
-source_cutoff_at: 2026-08-21T16:15:00+02:00
+source_cutoff_at: 2026-08-22T23:57:00+02:00
 currency: USD
 reference_price: 5.21
 reference_price_at: 2026-08-20T20:59:05Z
@@ -49,7 +49,7 @@ The current value does not require giving Snap Meta's multiple. It comes from fo
 - a real direct-revenue engine that can keep total growth above advertising growth;
 - relative valuation evidence showing that a 2.0–2.5 times revenue multiple would still leave Snap at a large discount to Meta and Reddit.
 
-The evidence-gap pass found that Snap's Form 10-Q reports second-quarter average advertising price per impression up approximately 10%. Advertising revenue grew 9.3%, implying roughly flat/slightly negative impressions after rounding. The comparison-base audit prevents that observation from reducing bear probability: Q2 2025 price fell 10% and included a temporary Ads Manager pricing problem, so the two-year index is roughly flat, while Q2 2026 also benefited from World Cup demand.
+The evidence-gap pass found that Snap's Form 10-Q reports second-quarter average advertising price per impression up approximately 10%. Advertising revenue grew 9.3%, implying roughly flat/slightly negative impressions after rounding. The comparison-base audit prevents that observation from reducing bear probability: Q2 2025 price fell 10% and included a temporary Ads Manager pricing problem, Ramadan timing, and de minimis effects, so the two-year index is roughly flat, while Q2 2026 also benefited from World Cup demand. Snap did not size those effects, so the model makes no fabricated add-back.
 
 The model remains skeptical of 20%–30% base-case advertising growth. The base uses **13.5% advertising growth** and now requires the observed price repair to persist while impression delivery resumes, not Meta-like monetization.
 
@@ -114,7 +114,9 @@ This is why Snap can be cheap on revenue but not obviously cheap on clean curren
 
 ## Revised operating scenarios
 
-The detailed quarter-by-quarter build is in the [21 August forecast](../research/2026-W34-quarterly-forecast.md).
+The detailed quarter-by-quarter build is in the [canonical four-quarter forecast](../research/2026-W34-quarterly-forecast.md).
+
+Parenthetical growth below compares forecast Q3 2026–Q2 2027 with reported Q3 2025–Q2 2026. It is not sequential quarterly growth.
 
 | Third quarter 2026 through second quarter 2027 | Bear | Base | Bull |
 | --- | ---: | ---: | ---: |
@@ -258,11 +260,15 @@ Probability-weighted value =
 
 The 30% bear weight remains substantial. Snap is founder-controlled, the public shares have no vote, the advertising-price observation is not clean across the comparison base, high-value users are shrinking, and legal outcomes have a fat tail. The 20% bull weight reflects real product, direct-revenue, and cost evidence rather than merely multiple optimism; it is constrained because second-quarter impressions were roughly flat and World Cup spending helped demand.
 
-These probabilities are analyst judgment, not a calibrated reference-class frequency. The completed evidence and comparison-base pass supports 30% bear, 50% base, and 20% bull. Since expected value is highly sensitive to both probabilities and multiples, $7.48 should be read as a decision aid, not false precision.
+These probabilities are analyst judgment, not a calibrated reference-class frequency. The completed evidence and comparison-base pass supports 30% bear, 50% base, and 20% bull. Confidence is **high** in the reported price and deterministic arithmetic but only **medium-low** in durable auction repair because the comparison and event effects are not quantified. Since expected value is highly sensitive to both probabilities and multiples, $7.48 should be read as a decision aid, not false precision.
 
 ### Seasonality and one-off events—not extra upside
 
-The probability distribution uses the quarter-specific schedule rather than applying one annual growth rate to every quarter. The base retains Snap's normal fourth-quarter advertising peak and first-quarter reversal. It assigns zero explicit value to the November 2026 United States election, adds no World Cup uplift to the third quarter because management said guidance already reflected normalization, and measures second-quarter 2027 against the reported World Cup-aided denominator. Easter shifts from Q2 2026 to Q1 2027, and Q1 2027 laps a $20 million–$25 million geopolitical headwind; those alter quarterly interpretation, not the four-quarter total. See the [seasonality and event bridge](../research/2026-W34-quarterly-forecast.md#seasonality-and-event-normalization) and [`verify-2026-08-21-seasonality.mjs`](verify-2026-08-21-seasonality.mjs).
+The probability distribution uses the quarter-specific schedule rather than applying one annual growth rate to every quarter. The base retains Snap's normal fourth-quarter advertising peak and first-quarter reversal. Same-quarter year-over-year growth already removes ordinary recurring seasonality; it does not remove one-offs. The model assigns zero explicit value to the November 2026 United States election, and political-archive normalization changes 2024–2025 annual growth by only about 0.5–0.6 percentage point. It also assigns zero explicit holiday-calendar uplift even though Thanksgiving falls one day earlier in 2026.
+
+Management said third-quarter guidance already reflected expected World Cup normalization, so the model adds no uplift beyond that guide. However, 19 tournament days remain inside Q3 and therefore inside next-four-quarter revenue. If 1% / 2% / 3% of base Q3 advertising were event-linked and nonrecurring, the base revenue-multiple value would fall by approximately $0.02 / $0.03 / $0.05 per share and the base sum-of-the-parts value by approximately $0.01 / $0.03 / $0.04. No deduction is made because Snap did not quantify the effect; disclosure above 3% is a model-recalculation trigger.
+
+Easter shifts from 5 April 2026 in Q2 to 28 March 2027 in Q1, and Q1 2027 laps a $20 million–$25 million geopolitical headwind. Those alter quarterly interpretation rather than the four-quarter total. Second-quarter 2027 is still measured against the reported World Cup-aided denominator. See the [seasonality and event bridge](../research/2026-W34-quarterly-forecast.md#seasonality-and-event-normalization) and [`verify-2026-08-21-seasonality.mjs`](verify-2026-08-21-seasonality.mjs).
 
 ### Recommendation-upside sensitivity—not an add-on
 
@@ -338,6 +344,7 @@ At $7.483 billion of base target revenue and 1.92 billion target shares:
 - every $100 million of revenue changes value by approximately **$0.11 per share** at a 2.20 times multiple;
 - every $250 million of net debt changes value by approximately **$0.13 per share**;
 - a 2% increase in target shares reduces the base revenue-multiple value by approximately **$0.16 per share**.
+- removing a 3% World Cup-linked share of base Q3 advertising reduces the base revenue-multiple value by approximately **$0.05 per share** and the base sum-of-the-parts value by approximately **$0.04 per share**.
 
 Mechanically subtracting the current $691 million operating-lease liability from target equity value would reduce scenario values by approximately $0.35–$0.37 per share. That is a diagnostic, not an alternative target: applying it without also adjusting rent-bearing cash flows and peer multiples would double count part of the lease burden.
 
@@ -350,6 +357,7 @@ The multiple and persistence of advertising price repair matter more than small 
 - advertising grows in the low-to-mid teens over the next four quarters;
 - the Q3 total-revenue result includes a credible advertising / Other Revenue split rather than hiding a weak auction behind direct revenue;
 - eCPM stops falling materially and shows non-World-Cup-dependent persistence in Q4 2026 or Q1 2027;
+- Q1 2027 reported advertising growth remains at least approximately 12% despite its easier geopolitical and Easter comparison, and Q2 2027 withstands World Cup/Easter normalization;
 - Other Revenue remains above 30% growth without hidden margin deterioration;
 - adjusted gross margin approaches 60%;
 - legal and safety expense stays inside the modeled reserve;
@@ -360,6 +368,8 @@ The multiple and persistence of advertising price repair matter more than small 
 
 - advertising growth remains below 8% while impressions continue growing in the teens;
 - the reported second-quarter approximately 10% advertising-price improvement reverses while impression growth resumes without enough demand;
+- disclosed World Cup-related demand exceeds 3% of Q2 or Q3 advertising revenue without a corresponding Year-one normalization, or political/advocacy spend exceeds 1% of quarterly advertising revenue;
+- sequential advertising materially misses the recent approximately +12% Q2-to-Q3 / +13% Q3-to-Q4 pattern or resets by materially more than approximately 16% in Q1 without an explained mix shift;
 - North American daily users fall below 90 million;
 - direct revenue decelerates sharply or its artificial-intelligence partnership is temporary;
 - adjusted gross margin falls below 55%;
@@ -400,7 +410,8 @@ That supports an attractive absolute expected-value assessment. The formal QQQ-r
 - [Confidence-gap verifier](verify-2026-08-21-confidence-gaps.mjs)
 - [Regional-economics verifier](verify-2026-08-21-regional-economics.mjs)
 - [Recommendation-upside verifier](verify-2026-08-21-recommender-upside.mjs)
+- [Seasonality and event-normalization verifier](verify-2026-08-21-seasonality.mjs)
 
-The displayed capitalization, revenue-multiple, sum-of-the-parts, discounted-cash-flow, scenario-weighting, sensitivity, and six-month calculations were independently recomputed during the 21 August review. The deterministic verifier asserts the principal displayed results. The official-close provenance gap prevents prospective publication, not arithmetic review of this draft.
+The displayed capitalization, revenue-multiple, sum-of-the-parts, discounted-cash-flow, scenario-weighting, sensitivity, six-month, quarterly-seasonality, comparison-base, and event-normalization calculations were independently recomputed through 22 August. The deterministic verifiers assert the principal displayed results. The official-close provenance gap prevents prospective publication, not arithmetic review of this draft.
 
 Return to the [canonical investment report](../thesis/2026-W34-final-report.md), inspect the [four-quarter forecast](../research/2026-W34-quarterly-forecast.md), or review the [portfolio action](../decisions/2026-W34-decision.md#portfolio-action).

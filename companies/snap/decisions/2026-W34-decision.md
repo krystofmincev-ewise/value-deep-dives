@@ -12,8 +12,8 @@ listing_id: nyse-snap
 research_stance: insufficient_evidence
 absolute_value_assessment: attractive
 action: hold
-decided_at: 2026-08-21T16:15:00+02:00
-research_cutoff: 2026-08-21T16:15:00+02:00
+decided_at: 2026-08-22T23:57:00+02:00
+research_cutoff: 2026-08-22T23:57:00+02:00
 price_kind: public_reference
 price: 5.21
 price_at: 2026-08-20T20:59:05Z
@@ -44,7 +44,7 @@ supersedes: null
 | Existing long | **Conditional hold / no add** if the severe-loss case fits the investor's private risk budget; otherwise reduce |
 | Next review | Third-quarter 2026 results; no later than 15 November 2026 |
 
-The entire decision turns on one unresolved question: **was the second-quarter improvement in Snap's advertising auction durable, or was it an easy comparison helped by temporary World Cup demand?** Snap reported average advertising price per impression up about 10%, but the result lapped a 10% decline and a temporary Ads Manager pricing problem. The two-year price index is therefore roughly flat, and the evidence is not yet strong enough to initiate or add.
+The entire decision turns on one unresolved question: **was the second-quarter improvement in Snap's advertising auction durable, or was it an easy comparison helped by temporary World Cup demand?** Snap reported average advertising price per impression up about 10%, but the result lapped a 10% decline and a comparison affected by a temporary Ads Manager pricing problem, Ramadan timing, and de minimis changes. The two-year price index is therefore roughly flat. Snap did not size those effects, so the model makes no add-back and the evidence is not yet strong enough to initiate or add.
 
 The restraint is about proof and loss control—not weak modeled upside. The exact scenario-weighted value is $7.475, displayed as $7.48, or 43.5% above $5.21. Cost leverage and direct revenue make the upside plausible; shrinking high-value users, dilution, founder control, litigation, and Specs create severe and below-bear loss paths.
 
@@ -94,7 +94,7 @@ The analytical evidence gate passes verified identity, public financial statemen
 
 ## Review trigger
 
-Review immediately after third-quarter 2026 results and no later than 15 November 2026. **Q3 is a mandatory review point, not automatically an upgrade point:** if Snap does not disclose a credible post-World-Cup advertising split or August–September evidence, the clean durability test moves to Q4 or Q1. Upgrade the action only if advertising growth, effective price, high-value users, gross margin, free cash flow per diluted share, and share count improve together. Reduce confidence immediately for a structural product remedy, unbounded Specs spending, or advertising growth below 8% with double-digit impression growth.
+Review immediately after third-quarter 2026 results and no later than 15 November 2026. **Q3 is a mandatory review point, not automatically an upgrade point:** if Snap does not disclose a credible post-World-Cup advertising split or August–September evidence, the clean durability test moves to Q4 or Q1. Recompute Year-one revenue and valuation if disclosed World Cup demand exceeds 3% of Q2 or Q3 advertising revenue; reject the election-immateriality assumption if political/advocacy spend exceeds 1% of quarterly advertising revenue. Upgrade the action only if advertising growth, effective price, high-value users, gross margin, free cash flow per diluted share, and share count improve together. Reduce confidence immediately for a structural product remedy, unbounded Specs spending, advertising growth below 8% with double-digit impression growth, or a sequential ad path materially weaker than the recent seasonal pattern without an explained mix change.
 
 ## Evidence
 

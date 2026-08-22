@@ -9,8 +9,8 @@ iso_week: 2026-W34
 status: active
 research_status: draft
 started_at: 2026-08-20
-as_of: 2026-08-21
-source_cutoff_at: 2026-08-21T16:15:00+02:00
+as_of: 2026-08-22
+source_cutoff_at: 2026-08-22T23:57:00+02:00
 prior_cycle_path: null
 supersedes: []
 final_report_path: ../../thesis/2026-W34-final-report.md
@@ -34,7 +34,7 @@ tags: [social-media, digital-advertising, initial-coverage]
 | Kind | Initial coverage |
 | Decision supported | Current watch / buy / hold / reduce / exit mapping at $5.21 over a 12-month horizon, independent of purchase history |
 | Started | 20 August 2026 |
-| Source cutoff | 21 August 2026, 16:15 Central European Summer Time |
+| Source cutoff | 22 August 2026, 23:57 Central European Summer Time |
 | Research status | Draft analytical dossier complete; prospective registration pending |
 | Prior cycle | None |
 

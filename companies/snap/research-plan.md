@@ -5,8 +5,8 @@ ticker: SNAP
 coverage_cycle_id: SNAP-2026-W34-01
 coverage_cycle_path: coverage-cycles/2026-W34-01-initial/README.md
 status: active
-as_of: 2026-08-21
-source_cutoff_at: 2026-08-21T16:15:00+02:00
+as_of: 2026-08-22
+source_cutoff_at: 2026-08-22T23:57:00+02:00
 owner: Krystof Mincev
 tags: [social-media, digital-advertising, ad-tech]
 ---

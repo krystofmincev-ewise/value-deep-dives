@@ -68,7 +68,24 @@ State what is probably already priced, what evidence would prove the market righ
 
 ## Value and challenge the company
 
-Build coherent bear, base, and bull operating narratives. Choose methods that fit the economics; use an independent cross-check with different failure modes. Reconcile enterprise to equity value and diluted per-share value explicitly.
+Build coherent bear, base, and bull operating narratives. Treat them as
+unweighted reader-facing paths unless their buckets are mutually exclusive and
+collectively exhaustive, their probabilities have a defensible reference class,
+and their values are conditional means. Never probability-weight P10/P50/P90
+representative points.
+
+When material mixed paths, dependencies, or discontinuous tails make three
+bundled cases inadequate, apply `methodology/VALUATION_FRAMEWORK.md` and build a
+transparent distribution-first valuation. Record empirical-versus-elicited
+status, marginal anchors, dependencies, tail branches, overlap controls,
+deterministic seed/sample count, method cross-checks, and calibration status.
+Report mean, median, material quantiles, loss probabilities, and lower-tail
+expected shortfall. Monte Carlo does not convert unsupported inputs into
+evidence.
+
+Choose methods that fit the economics; use an independent cross-check with
+different failure modes. Reconcile enterprise to equity value and diluted
+per-share value explicitly.
 
 Run an adversarial pass on the same frozen fact set:
 
@@ -89,7 +106,8 @@ Return:
 2. one-paragraph view and variant perception;
 3. claim/evidence table with verification state;
 4. financial and sector-driver history;
-5. bear/base/bull valuation and sensitivities;
+5. bear/base/bull valuation and sensitivities, plus distributional outputs when
+   scenario weights are not defensible;
 6. catalysts, risks, strongest countercase, falsifiers, and open questions;
 7. research stance: `attractive`, `neutral`, `unattractive`, or `insufficient_evidence`;
 8. portfolio action only when context permits: `buy`, `add`, `hold`, `reduce`, `exit`, `watch`, or `pass`;

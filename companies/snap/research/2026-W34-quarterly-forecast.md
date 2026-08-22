@@ -24,9 +24,9 @@ tags: [forecast, advertising, direct-revenue, profitability, guidance]
 | Central advertising assumption | Impressions resume growing while ad price stops falling; Snap does **not** approach Meta-like monetization |
 | Most important falsifier | Advertising below 8% while impressions grow by double digits, or a total-revenue beat driven mainly by Other Revenue |
 
-The forecast tells a simple story: **subscriptions and cost cuts buy Snap time, but the valuation only works if the advertising auction stops destroying price as inventory grows.** Q2 offered one encouraging observation, not proof. It lapped a weak comparison and benefited from World Cup demand, so the model preserves a 30% bear case.
+The forecast tells a simple story: **subscriptions and cost cuts buy Snap time, but the valuation only works if the advertising auction stops destroying price as inventory grows.** Q2 offered one encouraging observation, not proof. It lapped a weak comparison and benefited from World Cup demand, so the model preserves a wide downside path.
 
-Read the [quarterly scenarios](#quarterly-scenarios) for the outputs, the [seasonality bridge](#seasonality-and-event-normalization) for the comparison-base audit, the [profit bridge](#why-the-profit-forecast-rises-faster-than-revenue) for cost leverage, and the [evidence checklist](#quarterly-evidence-checklist) for what would change the forecast.
+Read the [quarterly anchor paths](#quarterly-anchor-paths) for the outputs, the [seasonality bridge](#seasonality-and-event-normalization) for the comparison-base audit, the [profit bridge](#why-the-profit-forecast-rises-faster-than-revenue) for cost leverage, and the [evidence checklist](#quarterly-evidence-checklist) for what would change the forecast.
 
 ## Forecast rationale
 
@@ -83,7 +83,7 @@ This is a two-cycle total-revenue and one-complete-cycle advertising reasonablen
 
 | Period | Evidence | Base-case treatment |
 | --- | --- | --- |
-| Second quarter of 2025 comparison | eCPM fell 10%. Snap also attributed pressure to a temporary Ads Manager change that caused some campaigns to clear at substantially reduced prices, Ramadan timing, and de minimis changes; it did not size the three effects. | Do not invent an add-back or treat Q2 2026's approximately 10% price increase as a clean structural step-up. The two-year price index is roughly `0.90 × 1.10 = 0.99`, which supports retaining the 30% bear probability. |
+| Second quarter of 2025 comparison | eCPM fell 10%. Snap also attributed pressure to a temporary Ads Manager change that caused some campaigns to clear at substantially reduced prices, Ramadan timing, and de minimis changes; it did not size the three effects. | Do not invent an add-back or treat Q2 2026's approximately 10% price increase as a clean structural step-up. The two-year price index is roughly `0.90 × 1.10 = 0.99`, which supports retaining wide downside dispersion. |
 | Second quarter of 2026 | Snap said World Cup-related advertiser spending contributed to growth. | Retain the reported result; do not invent a company-absent dollar allocation. |
 | Third quarter of 2026 | The tournament ran through 19 July, but management said its third-quarter guide reflected expected normalization of World Cup spending and a harder comparison. | Anchor to management's post-event guide and add **no separate World Cup uplift**. Because 19 tournament days fell in Q3, quarter-wide eCPM is not a clean post-event test; August–September, Q4, or Q1 evidence is cleaner. |
 | Fourth quarter of 2026 | Normal holiday demand is historically strongest. The United States general election is 3 November 2026. Snap's official political-ad archive shows approximately $27.7 million of 2024 United States / United States dollar spend versus $3.7 million in 2025 and $2.7 million through the 21 August archive cutoff; the archive includes advocacy, so these are not pure election-revenue figures. Thanksgiving falls on 26 November 2026 versus 27 November 2025, creating one additional calendar day before Christmas. | Preserve normal fourth-quarter seasonality; assign **zero explicit election or holiday-calendar uplift** in the base. A 2024-like versus 2025 archive difference would be only about $0.03 per share at the diagnostic multiple, and Snap has not quantified a one-day holiday-timing effect. |
@@ -112,7 +112,7 @@ Because Snap did not size the World Cup benefit, the useful exercise is a denomi
 | 2% | $1.257 billion | 16.4% |
 | 3% | $1.244 billion | 17.6% |
 
-The base forecast uses the reported 14.1% comparison. The higher figures only show that, if some second-quarter 2026 demand was temporary, the underlying improvement required in 2027 is larger. A 1% / 2% / 3% World Cup share would reduce a like-for-like 14% Q2 2027 revenue forecast by approximately $15 million / $29 million / $44 million, or roughly $0.02 / $0.03 / $0.05 per share at a 2.2-times diagnostic revenue multiple and 1.92 billion shares. These are sensitivities, not forecast credits or deductions. The quarterly targets stay unchanged; the comparison-base weakness instead prevents the Q2 price observation from reducing the bear probability.
+The central forecast uses the reported 14.1% comparison. The higher figures only show that, if some second-quarter 2026 demand was temporary, the underlying improvement required in 2027 is larger. A 1% / 2% / 3% World Cup share would reduce a like-for-like 14% Q2 2027 revenue forecast by approximately $15 million / $29 million / $44 million, or roughly $0.02 / $0.03 / $0.05 per share at a 2.2-times diagnostic revenue multiple and 1.92 billion shares. These are sensitivities, not forecast credits or deductions. The quarterly targets stay unchanged; the comparison-base weakness instead preserves downside dispersion in the distribution model.
 
 Q3 needs a separate capitalization check because 19 tournament days fall inside the next-four-quarter valuation period. Management's guidance already reflected expected sequential normalization, but the quarter can still contain event-linked dollars. Holding every other base input fixed:
 
@@ -123,7 +123,7 @@ Q3 needs a separate capitalization check because 19 tournament days fall inside 
 | 2% | $7.454 billion | $0.03 per share | $0.03 per share |
 | 3% | $7.439 billion | $0.05 per share | $0.04 per share |
 
-This does not warrant a mechanical deduction: Snap did not size the event, and the 30% bear weight already reflects the weak comparison and event uncertainty. It does define a recalculation trigger. If Snap later discloses that World Cup demand exceeded 3% of Q2 or Q3 advertising revenue, normalize the affected Year-one revenue and rerun every valuation method rather than capitalizing it as recurring.
+This does not warrant a mechanical deduction: Snap did not size the event, and the distribution already retains a wide lower tail for weak comparisons and event uncertainty. It does define a recalculation trigger. If Snap later discloses that World Cup demand exceeded 3% of Q2 or Q3 advertising revenue, normalize the affected year-one revenue and rerun every valuation method rather than capitalizing it as recurring.
 
 ## Why the third-quarter forecast is above formal guidance
 
@@ -138,9 +138,9 @@ That is not a mechanical repetition of the historical beat:
 
 The [five-quarter guide history and pre-announcement audit](2026-08-21-meta-reddit-relative-valuation.md#appendix-does-snap-habitually-guide-low-and-beat) contains the complete guide-to-actual record. The [cost-efficiency memo](2026-08-21-guidance-cost-efficiency.md) explains the four most recent adjusted-profit beats.
 
-## Quarterly scenarios
+## Quarterly anchor paths
 
-All parenthetical growth rates in the quarterly scenario table are **same-quarter year over year**. Sequential changes are shown separately in the seasonality bridge and the Q3 mix sensitivity.
+All parenthetical growth rates in the next two tables are **year over year**. Sequential changes are shown separately in the seasonality bridge and the Q3 mix sensitivity. The three paths are unweighted, interpretable operating anchors; the [distribution model](../valuation/2026-W34-valuation.md#distribution-first-valuation) samples continuous driver curves around them.
 
 | Quarter and metric | Bear | Base | Bull |
 | --- | ---: | ---: | ---: |
@@ -207,7 +207,7 @@ The revenue and headline FCF lines already include rounded, scenario-specific al
 | **Total incremental legal and compliance cash effect** | **($300 million)** | **($150 million)** | **($50 million)** |
 | **Headline FCF forecast above** | **$650 million** | **$1.100 billion** | **$1.500 billion** |
 
-Weighting those cash allowances at 30% / 50% / 20% gives $175 million. Weighting the revenue drags gives $49 million; capitalized at the regulation memo's 1.6-times diagnostic multiple, that is $78.4 million. The resulting approximately $253.4 million check sits inside the specialist memo's $180 million–$260 million central range. The much larger injunction or settlement tail belongs in the bear narrative and valuation multiple, not in another cash subtraction.
+The valuation's exhaustive legal-state simulation averages approximately $177 million of incremental cash effect and $45 million of incremental revenue drag. Capitalizing the latter at the regulation memo's 1.6-times diagnostic multiple produces an approximately $248 million combined check, inside the specialist memo's $180 million–$260 million central range. The much larger injunction or settlement tail sits in the severe and extreme legal states, not in another cash subtraction.
 
 ## What each advertising case requires
 

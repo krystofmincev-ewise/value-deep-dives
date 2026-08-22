@@ -82,51 +82,8 @@ close(specsBreakevenUnits(250_000_000, 0.40), 284_738, 1, "Specs $250m/40%");
 close(specsBreakevenUnits(500_000_000, 0.20), 1_138_952, 1, "Specs $500m/20%");
 close(specsBreakevenUnits(500_000_000, 0.40), 569_476, 1, "Specs $500m/40%");
 
-const probabilities = { bear: 0.30, base: 0.50, bull: 0.20 };
-const targets = { bear: 2.50, base: 7.75, bull: 14.25 };
-const legalCashAllowances = { bear: 300, base: 150, bull: 50 };
-const regulatoryRevenueDrags = { bear: 75, base: 45, bull: 20 };
-const checkpoints = {
-  bear: (6.676 * 1.20 - 0.825) / 1.940,
-  base: (6.928 * 1.95 - 0.650) / 1.910,
-  bull: (7.163 * 2.90 - 0.350) / 1.890,
-};
-
-const weightedTarget = Object.keys(probabilities).reduce(
-  (total, scenario) => total + probabilities[scenario] * targets[scenario],
-  0,
-);
-const weightedCheckpoint = Object.keys(probabilities).reduce(
-  (total, scenario) => total + probabilities[scenario] * checkpoints[scenario],
-  0,
-);
-const weightedLegalCash = Object.keys(probabilities).reduce(
-  (total, scenario) => total + probabilities[scenario] * legalCashAllowances[scenario],
-  0,
-);
-const weightedRegulatoryRevenueDrag = Object.keys(probabilities).reduce(
-  (total, scenario) => total + probabilities[scenario] * regulatoryRevenueDrags[scenario],
-  0,
-);
-
-close(weightedTarget, 7.475, 0.000_001, "audited weighted target");
-close(weightedCheckpoint, 6.6388, 0.000_1, "audited weighted checkpoint");
-close(weightedTarget / 5.21 - 1, 0.4347, 0.000_1, "audited expected return");
-close(weightedLegalCash, 175, 0.000_001, "weighted legal cash allowance");
-close(weightedRegulatoryRevenueDrag, 49, 0.000_001, "weighted revenue drag");
-close(
-  weightedLegalCash + weightedRegulatoryRevenueDrag * 1.6,
-  253.4,
-  0.000_001,
-  "updated regulation value check",
-);
-
 console.table({
   q2AdvertisingRevenueGrowth,
   q2ImpressionGrowth,
-  weightedTarget,
-  weightedCheckpoint,
-  weightedLegalCash,
-  weightedRegulatoryRevenueDrag,
 });
 console.log("SNAP confidence-gap verification: PASS");

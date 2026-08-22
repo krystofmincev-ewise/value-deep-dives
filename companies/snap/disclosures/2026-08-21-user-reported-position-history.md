@@ -11,7 +11,7 @@ tags: [position-disclosure, historical-context]
 
 # Historical position context—user-reported and unverified
 
-> This is conflict and historical-context disclosure, not part of the current investment thesis. None of the information below enters the operating forecast, scenario probabilities, hurdle, valuation, stance, or action mapping.
+> This is conflict and historical-context disclosure, not part of the current investment thesis. None of the information below enters the operating forecast, valuation distribution, hurdle, stance, or action mapping.
 
 The user reports an existing SNAP long purchased at approximately **$4.70 per share**. This rounded recollection is not broker-verified and is not an exact fill or audited cost basis. The purchase date, share count, position size, account value, tax lot, personal return, and other holdings are intentionally omitted.
 

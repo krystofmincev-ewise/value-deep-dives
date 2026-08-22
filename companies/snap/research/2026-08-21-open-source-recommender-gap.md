@@ -31,7 +31,7 @@ The most likely investment consequence is asymmetric:
 - **Content recommendation should improve materially.** Snap owns frequent watch, skip, replay, share, favourite, search, and creator-interaction signals on Spotlight and Stories. Public vision-language encoders and sequence architectures help cold start and content understanding.
 - **Advertising recommendation should improve, but relative economic parity is less likely.** Better models can raise return on advertising spend, yet sparse purchase labels and thinner auctions constrain the benefit.
 - **Technical-obsolescence risk is not the central bottleneck.** Confidence that Snap has a credible production stack is **medium-high**.
-- **Confidence in closing Meta's monetisation gap remains medium-low.** The current valuation probabilities do not change until product gains appear in North American engagement, effective advertising price, conversion economics, and infrastructure efficiency.
+- **Confidence in closing Meta's monetisation gap remains medium-low.** The current valuation marginals do not narrow until product gains appear in North American engagement, effective advertising price, conversion economics, and infrastructure efficiency.
 
 In one sentence: **the architecture gap can narrow faster than the revenue gap**.
 
@@ -274,17 +274,17 @@ The operating model starts from approximately $5.328 billion of trailing adverti
 | Base | $6.048bn | 13.5% | 9.0% | 4.1% | $240m | $0.23 |
 | Bull | $6.422bn | 20.5% | 12.5% | 7.1% | $428m | $0.64 |
 
-The probability-weighted sum-of-the-parts diagnostic is approximately **$0.24 per share**. It is already inside the $7.48 probability-weighted value and must not be added to it. A failure to make further progress would therefore remove about $0.24 from this narrow diagnostic before any secondary effect on free cash flow or the valuation multiple; a visible technical failure could have a larger effect because it would also weaken confidence in the broader advertising path.
+The former **$0.24 hand-weighted diagnostic is retired**. The $0.01 / $0.23 / $0.64 path values remain useful attribution anchors, but the distribution model already samples recommendation-sensitive advertising revenue and valuation multiples. They must not be added to its $8.23 mean or subtracted as a separate average. A visible technical failure could have a larger effect because it would weaken both the broader advertising path and its multiple.
 
-### Updated technical probabilities
+### Updated technical confidence ranking
 
-For the recommendation subsystem alone—not for the total company scenarios—the evidence supports **20% stalled/bear, 65% competent-fast-follower/base, and 15% frontier-narrowing/bull**. These are subjective, uncalibrated probabilities.
+For the recommendation subsystem alone, the evidence makes **competent fast follower** the dominant narrative, with stalled progress a material downside and frontier narrowing a less-supported upside. No numeric subsystem probabilities are used because there is no validated reference class or calibration record.
 
 - The recovered Gemini report and public Chinese/Meta work mainly strengthen the proposition that architecture diffuses; Gemini's claims were not used as evidence until their underlying sources were checked.
-- Snap's current 18-author production paper, Bento scale, UUM launches, Spotlight retrieval, and lower-funnel results shift probability from technical failure into the fast-follower case.
-- The licensed workforce review, Snap's more-than-20-fold peer scale gap, negative latest hiring/attrition spread, Meta's custom infrastructure, and the missing auction data shift probability from frontier narrowing into the fast-follower case.
+- Snap's current 18-author production paper, Bento scale, UUM launches, Spotlight retrieval, and lower-funnel results support the fast-follower case over technical failure.
+- The licensed workforce review, Snap's more-than-20-fold peer scale gap, negative latest hiring/attrition spread, Meta's custom infrastructure, and the missing auction data make frontier narrowing less supported than competent fast following.
 
-The main valuation uses 30% bear / 50% base / 20% bull because those scenarios also bundle user mix, subscriptions, cost savings, regulation, litigation, Specs, dilution, and the contaminated Q2 advertising-price comparison. Replacing the company probabilities with the subsystem probabilities would double-count the same evidence.
+The main valuation does not map these labels one-for-one into company paths. It samples advertising, subscriptions, cost savings, regulation, litigation, Specs, dilution, and multiples jointly; separately adding technical-path weights would double-count the same evidence.
 
 ---
 
@@ -308,7 +308,7 @@ The best proof is not another architecture announcement. It is the conjunction o
 4. **External measurement:** incremental return remains attractive when average client spend increases, not only at very low allocation.
 5. **Cost outcome:** infrastructure cost per daily user remains stable or improves as model use and engagement expand.
 
-If those appear together, the evidence would support moving probability from the low-growth/base cases toward the higher-growth scenario. If technical announcements continue while price, North American attention, or cost efficiency deteriorate, the correct conclusion is that open-source capability is not translating into economic value.
+If those appear together, the evidence would support shifting the advertising-revenue and valuation-multiple marginals upward. If technical announcements continue while price, North American attention, or cost efficiency deteriorate, the correct conclusion is that open-source capability is not translating into economic value.
 
 ---
 

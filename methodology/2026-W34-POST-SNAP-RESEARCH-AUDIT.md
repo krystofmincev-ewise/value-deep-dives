@@ -1,7 +1,7 @@
 ---
 type: research_harness_audit
 title: "Post-Snap research and valuation audit"
-as_of: 2026-08-21
+as_of: 2026-08-23
 baseline_commit: f5fe247ca69cf5052d8541a421ea7b86bbd62405
 scope: [evidence-acquisition, valuation-calibration, lifecycle, agent-harness]
 status: complete
@@ -11,7 +11,7 @@ status: complete
 
 ## Answer first
 
-The Snap dossier is suitable for a full human analytical review. Its filings, operating history, advertising and recommendation-system work, regional estimates, scenario arithmetic, capital bridge, counter-thesis, and source log are materially stronger than the initial evidence set. The canonical investment report remains a **draft, not a prospectively registered forecast**, because its reference price and benchmark still need reproducible official-close records and the user has not approved registration.
+The Snap dossier is suitable for a full human analytical review. Its filings, operating history, advertising and recommendation-system work, regional estimates, scenario arithmetic, capital bridge, counter-thesis, and source log are materially stronger than the initial evidence set. The canonical investment report remains a **draft, not a prospectively registered forecast**. Its fair-value distribution is not directly resolvable by market price; any future return record also needs an explicit convergence model, reproducible official-close and benchmark records, and user approval.
 
 Three independent review tasks examined the completed work from different angles: evidence acquisition and source coverage; valuation methodology and calibration; and the repository's skills, tools, agents, lifecycle, and validation harness. They made no repository edits. This document consolidates their findings, records the immediate corrections made after review, and separates current-report limitations from future harness work.
 
@@ -21,7 +21,9 @@ The most important interpretive distinction is:
 - The formal **QQQ-relative research stance is insufficient evidence** because the dossier does not forecast QQQ and therefore cannot calculate expected benchmark excess return.
 - The disclosed existing-position action remains **hold / no add before the third-quarter proof point**.
 
-This distinction changes no bear, base, bull, or probability-weighted value. It makes the decision contract honest.
+This distinction changes no operating evidence. It makes the decision contract honest.
+
+> **23 August remediation:** the audit's probability critique is now implemented. The canonical Snap valuation retires the hand-weighted three-point expected value and uses a deterministic 100,000-draw structured-elicitation model with continuous marginals, explicit dependencies, exhaustive legal states, full downside metrics, and shadow-model calibration status. No post-cutoff Snap facts were introduced.
 
 ## What is already strong
 
@@ -61,22 +63,22 @@ These limitations are disclosed and should be actively challenged during human r
 | Regional contribution profit | Q2-reconciled yield/cost allocation and 2,673-case sensitivity grid | Company-reported regional cloud, moderation, support, content, payment, and sales costs | Regional signs/order are more reliable than the precise Rest-of-World margin |
 | Advertising-yield persistence | Approximately +10% Q2 price, lower-funnel issuer metrics, agency and vendor benchmarks | Q3 price and impressions, regional price/volume, advertiser cohort spend retention, larger-budget incremental returns | The base advertising path fails if price repair reverses as volume returns |
 | Specs economics | Price, deposit, launch scope, cumulative research spending, spending estimate and breakeven thresholds | Orders, conversion, bill of materials, manufacturing commitments, returns, gross margin, support and outside capital | Capital consumption could exceed the modeled envelope and impair the multiple |
-| Legal remedies and insurance | Known proceedings, jurisdictional cases, selected settlement terms and central allowances | Confidential bellwether terms, scalable settlement framework, final coverage rulings, product-remedy scope | A structural remedy can produce value below the $2.50 modeled bear |
+| Legal remedies and insurance | Known proceedings, jurisdictional cases, selected settlement terms and central allowances | Confidential bellwether terms, scalable settlement framework, final coverage rulings, product-remedy scope | A structural remedy can produce value below the $2.86 modeled P10 |
 | Point-in-time expectations | Guidance history, reverse valuation and current peer multiples | Lawful frozen consensus distribution, revisions, options-implied comparator and expected QQQ return | The report can estimate value but cannot fully prove variant perception or benchmark-relative attractiveness |
 
 ## Valuation and calibration limitations
 
-### Scenario probabilities are judgments
+### Company-scenario weights have been retired
 
-The 25% bear / 55% base / 20% bull weights are explicitly analyst judgments, not frequencies learned from a defensible reference class. The Q2 advertising-price disclosure justifies moving weight from bear to base directionally, but it does not calibrate the exact five-point shift. During review, treat $7.74 as a structured decision aid and inspect the full distribution and sensitivities instead of accepting its displayed precision.
+The earlier company-scenario weights were analyst judgments, not frequencies learned from a defensible reference class. The canonical valuation now samples declared five-point driver marginals and reports an $8.23 mean, $7.90 median, $2.86 P10, and $13.78 P90. This is a more auditable decision aid, but still **uncalibrated structured elicitation**. Reviewers should inspect and replace its marginals, dependence, and legal-state assumptions rather than accepting displayed precision.
 
-### The legal and product tail is not a fourth modeled state
+### The legal and product tail is explicitly modeled
 
-The $2.50 bear includes distress, dilution, weak advertising, and substantial legal/cost pressure. The report nevertheless acknowledges that an intrusive product remedy, uninsured settlement cycle, or unbounded hardware commitment can produce a value below $2.50. That discontinuous tail is disclosed but is not assigned a separate probability/value state. A reviewer who believes this tail is more than low-single-digit should reduce expected value or add a fourth scenario.
+The model samples four mutually exclusive legal states: manageable 60%, material 30%, severe 8%, and extreme 2%. Legal cash and revenue effects can coincide with weak operating and multiple draws, so the left tail is no longer truncated at a single bear point. The state weights remain structured judgment and should be stress-tested until a relevant outcomes record exists.
 
 ### The three methods are cross-checks, not independent experiments
 
-Revenue multiple, sum of the parts, and discounted cash flow share revenue, margin, dilution, net-debt, and terminal assumptions. Agreement among them is useful arithmetic reconciliation, but it is not three independent confirmations. Peer multiples are anchors, not a growth/margin/dilution regression, and the adopted targets remain analyst judgments inside their cross-check ranges.
+Revenue multiple, sum of the parts, and discounted cash flow share revenue, margin, dilution, net-debt, and terminal assumptions. Agreement among them is useful arithmetic reconciliation, but it is not three independent confirmations. The stochastic engine therefore takes their per-draw median as triangulation rather than averaging them as independent estimates. Peer multiples remain anchors, not a growth/margin/dilution regression.
 
 ### Correlated evidence can look stronger than it is
 
@@ -112,7 +114,7 @@ The remaining risk is that this policy is convention rather than a fully executa
 | P1 | Independent-review binding | Review records exact fact, model, report, valuation, and decision hashes so a later edit invalidates the approval |
 | P1 | Browser research receipts | Gemini, Revelio, YouTube, and similar jobs retain local-only prompt/filter/cutoff/route/completion receipts and fail visibly on sign-out or user-interface drift |
 | P1 | Evidence-dependency representation | Flags correlated claims so one mechanism is not counted as several independent confirmations |
-| P1 | Reference-class probability worksheet | Requires a named base rate, adjustment logic, range, and calibration caveat before publishing scenario probabilities |
+| P1 | Reference-class probability worksheet | Structured-elicitation fallback implemented; a learned reference class still requires a named base rate, adjustment logic, range, and calibration record before claiming calibrated probabilities |
 | P2 | Retrospective-to-regression loop | Every escaped factual, arithmetic, lifecycle, or provenance defect becomes a fixture or rule after review |
 | P2 | Company scorecard and calibration history | Tracks target returns, benchmark returns, scenario coverage, thesis outcomes, and confidence calibration without rewriting old records |
 
@@ -156,7 +158,7 @@ New integrations should be added only for a named gap. The Snap work did not rev
 - More validators can create false confidence. They prove consistency and provenance, not that operating assumptions are correct; human adversarial review remains essential.
 - Reference classes may be too heterogeneous for a company like Snap. In that case probabilities should remain broad judgment ranges and the report should emphasize scenario sensitivities rather than manufacture precision.
 - Alternative data can be expensive, modeled, stale, and difficult to redistribute. It should be used only when it changes a named valuation input and its limitations survive into the report.
-- A fourth tail state may imply more knowledge than exists. The minimum requirement is to disclose that the three-state expected value truncates the tail and show how conclusions change under reviewer-supplied tail assumptions.
+- Explicit tail states can imply more knowledge than exists. The model therefore publishes state assumptions and conditional results and requires reviewer-supplied stress tests rather than treating the map as observed truth.
 
 ## How to evaluate the Snap work
 
@@ -168,11 +170,11 @@ The central questions for a human reviewer are:
 2. Is 40.3% Other Revenue growth too aggressive without subscriber cohorts and partnership mix?
 3. Does the base convert too much of reported savings into adjusted profit and FCF?
 4. Are 1.92 billion target diluted shares and $0.45 billion target net debt plausible given awards and buybacks?
-5. Are the 2.05-times adopted base revenue multiple and terminal assumptions appropriate for Snap's governance, dilution, and legal risk?
-6. Should the below-bear legal/product tail receive a separate modeled probability?
-7. Do the 25% / 55% / 20% weights reflect your beliefs, or only the analyst's narrative?
-8. Is the estimated 3%–7% two-to-three-year recommendation uplift versus no further improvement credible—and is the $0.25 probability-weighted contribution already embedded correctly?
+5. Are the revenue-multiple and terminal-value marginal curves appropriate for Snap's governance, dilution, and legal risk?
+6. Are the manageable/material/severe/extreme legal-state weights and severities conservative enough?
+7. Do the driver marginals and common-factor dependencies reflect your beliefs, or only the analyst's narrative?
+8. Is the estimated 3%–7% two-to-three-year recommendation uplift versus no further improvement credible—and is it already embedded in the advertising and multiple marginals?
 9. Are the regional economics useful as signs and bounds, or too assumption-sensitive to influence confidence?
 10. Does hold/no-add fit the private position's loss budget even if absolute expected value is attractive?
 
-Agreement with the $7.74 expected value is not required to judge the work successful. The standard is whether a reviewer can identify the assumptions, replace them, reproduce the arithmetic, trace the evidence, and see exactly why the conclusion changes.
+Agreement with the $8.23 mean or $7.90 median is not required to judge the work successful. The standard is whether a reviewer can identify the assumptions, replace them, reproduce the arithmetic, trace the evidence, and see exactly why the conclusion changes.

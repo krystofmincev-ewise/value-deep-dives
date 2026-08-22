@@ -45,7 +45,7 @@ tags: [social-media, digital-advertising, initial-coverage]
 | Two-minute view | [Integrated conclusion](../../thesis/2026-W34-final-report.md#two-minute-answer) | Stance, action, valuation range, central requirements, and break cases |
 | Decision | [Current action mapping at $5.21](../../decisions/2026-W34-decision.md) | Absolute value, formal stance, conditional action, hurdle, and review trigger |
 | Final report | [Canonical cycle report](../../thesis/2026-W34-final-report.md) | Business, industry, users, advertising, recommendation systems, risks, valuation summary, and variant view |
-| Valuation | [Canonical valuation](../../valuation/2026-W34-valuation.md) | Bear/base/bull assumptions, sensitivities, and enterprise-to-equity bridge |
+| Valuation | [Canonical valuation](../../valuation/2026-W34-valuation.md) | Distribution, operating anchors, sensitivities, and enterprise-to-equity bridge |
 | Audit | [Independent review](../../research/2026-08-21-independent-review.md) | Arithmetic, reconciliation, adversarial checks, and publication gates |
 | Provenance | [Source log](../../sources.md) | Sources, access state, rights, retrieval method, and verification |
 
@@ -60,11 +60,12 @@ tags: [social-media, digital-advertising, initial-coverage]
 | Decision | [Coverage-cycle decision](../../decisions/2026-W34-decision.md) | Draft, current-opportunity frame |
 | Operating forecast | [Coverage-cycle forecast](../../research/2026-W34-quarterly-forecast.md) | Complete |
 | Independent review | [Final review](../../research/2026-08-21-independent-review.md) | Passed |
+| Distribution-method review | [Distribution-first memo](../../research/2026-08-23-distribution-first-valuation.md) | Implemented as uncalibrated shadow model |
 | Deterministic checks | [Valuation verification index](../../valuation/README.md) | Passed |
 
 ## Integrated conclusion
 
-The completed cycle incorporates current filings, advertising-price and regional-economics work, Meta and Reddit anchors, recommendation-system and workforce research, confidence-gap estimates, the operating forecast, scenario probabilities, and independent verification. The absolute expected-value assessment is attractive. The formal QQQ-relative stance is insufficient evidence because the dossier does not forecast QQQ. From current evidence alone, the no-position action is watch before the next operating checkpoint. The user-reported existing-long action is conditional hold / no add only if exposure fits a private loss budget; otherwise reduce. Purchase history does not support any conclusion.
+The completed cycle incorporates current filings, advertising-price and regional-economics work, Meta and Reddit anchors, recommendation-system and workforce research, confidence-gap estimates, the operating forecast, a full stochastic valuation distribution, and independent verification. The absolute expected-value assessment is attractive. The formal QQQ-relative stance is insufficient evidence because the dossier does not forecast QQQ. From current evidence alone, the no-position action is watch before the next operating checkpoint. The user-reported existing-long action is conditional hold / no add only if exposure fits a private loss budget; otherwise reduce. Purchase history does not support any conclusion.
 
 ## Cycle boundary
 

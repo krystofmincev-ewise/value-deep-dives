@@ -34,6 +34,10 @@ Separate insight, implementation, market exposure, event timing, and luck.
 - What evidence was weighted correctly?
 - What was missed or rationalized?
 - Were confidence and downside calibrated?
+- Did the realized value or operating outcome fall inside the predeclared
+  distribution intervals, and what were the CRPS or weighted interval score?
+- Did each probability-bearing scenario or event pass its frozen Brier-score
+  evaluation, and how did it compare with the declared baseline?
 - Did the monitoring plan work?
 
 ## Lessons

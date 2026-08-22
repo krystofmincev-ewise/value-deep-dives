@@ -6,6 +6,8 @@
 
 > **Reader key:** This memo defines financial shorthand at first use. The full [glossary and formula guide](../GLOSSARY.md) is available for quick reference. In this memo, **OCF** always means operating cash flow; **CFO** is reserved for the chief financial officer role.
 
+> **Supersession note:** the probability-weighted preliminary valuation below is preserved as a dated input to the coverage cycle, not the current target. The [canonical distributional valuation](../valuation/2026-W34-valuation.md) supersedes it.
+
 ## Executive read-through
 
 Snap's financial trajectory has improved materially, but the quality of that improvement is mixed.

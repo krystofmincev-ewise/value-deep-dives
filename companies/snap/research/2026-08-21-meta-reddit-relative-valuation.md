@@ -13,7 +13,7 @@ scope: meta_reddit_relative_valuation_and_snap_guidance_history
 
 > **Draft research memo.** This is a peer-valuation exercise, not a recommendation to trade Meta Platforms, Reddit, or Snap. Prices can move after the recorded timestamps. All dollars are United States dollars. Figures are in billions unless stated otherwise.
 
-> **Integration note:** The peer work retains its 02:30 CEST source cutoff. The Snap summary row and links below point to the coverage cycle's canonical valuation.
+> **Integration note:** The peer work retains its 21 August 02:30 CEST source cutoff. The Snap summary row and links below point to the coverage cycle's canonical distributional valuation, whose company source cutoff is 22 August; its 23 August change was methodological. The Meta and Reddit point estimates remain uncalibrated hand-weighted diagnostics and are not probability forecasts.
 
 > **Reader key:** A numbered quarter is abbreviated after first use: first quarter (**Q1**), second quarter (**Q2**), third quarter (**Q3**), and fourth quarter (**Q4**). Financial and operating shorthand is otherwise expanded when it first appears.
 
@@ -21,11 +21,11 @@ scope: meta_reddit_relative_valuation_and_snap_guidance_history
 
 Snap is **genuinely cheap on revenue and user-value ratios**. It is not obviously cheap on clean owner earnings because its reported free cash flow still includes an add-back for stock-based compensation while its diluted share count continues to grow.
 
-| Company | Reference price | Current enterprise value / trailing revenue | Latest revenue growth | Trailing Generally Accepted Accounting Principles operating margin | Trailing free-cash-flow margin | Stock-based compensation / revenue | Recent dilution signal | Twelve-month probability-weighted value |
+| Company | Reference price | Current enterprise value / trailing revenue | Latest revenue growth | Trailing Generally Accepted Accounting Principles operating margin | Trailing free-cash-flow margin | Stock-based compensation / revenue | Recent dilution signal | Twelve-month valuation reference |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | **Meta Platforms** | $545.83 | 6.11x | Q2 total +28%; ads +27% | 38.1% | 16.6% | 11.0% | First-half diluted weighted-average shares -0.6% year over year | **$605** |
 | **Reddit** | $150.31 | 10.19x | Q2 total +61%; ads +64% | 28.2% | 36.7% | 12.2% | Fully diluted shares +0.2% year over year after repurchases | **$176** |
-| **Snap** | $5.21 | 1.68x | Q2 total +19%; ads +9% | **-5.1%** | 11.1% | **16.2%** | Fully diluted proxy +3.0% year over year | Current [canonical valuation](../valuation/2026-W34-valuation.md): **$7.48** |
+| **Snap** | $5.21 | 1.68x | Q2 total +19%; ads +9% | **-5.1%** | 11.1% | **16.2%** | Fully diluted proxy +3.0% year over year | Current [canonical valuation](../valuation/2026-W34-valuation.md): **$8.23 mean / $7.90 median** |
 
 **Interpretation:** Snap trades at a 72% discount to Meta and an 84% discount to Reddit on enterprise value / trailing revenue. The discount is too large to dismiss, but most of it has an economic explanation: weaker advertising growth, negative accounting profit, lower monetization, higher dilution, net debt, and weaker governance rights. The valuation question is not whether Snap should receive Meta's or Reddit's multiple today. It is whether Snap can earn even a modest **2.0x–2.5x** multiple by proving durable advertising growth, positive owner earnings, and contained dilution. A 2.4x target-date revenue multiple is still 61% below Meta's current multiple and 76% below Reddit's.
 
@@ -47,7 +47,7 @@ Snap is **genuinely cheap on revenue and user-value ratios**. It is not obviousl
 >
 > `Twelve-month value/share = (target operating metric × target multiple + target net cash) / target diluted shares`
 >
-> `Probability-weighted value = Σ(scenario value × scenario probability)`
+> `Illustrative peer hand-weighted value = Σ(scenario value × elicited weight)`
 >
 > `Present value today = expected twelve-month value / (1 + required return)`
 
@@ -118,7 +118,7 @@ The target date is approximately 20 August 2027. The primary method applies a mu
 
 **Calculation:** `25% × $357 + 55% × $611 + 20% × $896 = approximately $605`.
 
-The **$605 probability-weighted twelve-month value** is about 11% above $545.83. Discounted at an illustrative 10% required return, it is worth about **$550 today**. That makes Meta approximately fairly valued in this quick model: a superb business whose current price already assumes meaningful artificial-intelligence execution. The $357–$896 range is wide because infrastructure returns, depreciation, and new-product monetization are unusually uncertain.
+The **$605 illustrative hand-weighted twelve-month value** is about 11% above $545.83. Discounted at an illustrative 10% required return, it is worth about **$550 today**. That makes Meta approximately fairly valued in this quick model: a superb business whose current price already assumes meaningful artificial-intelligence execution. The $357–$896 range is wide because infrastructure returns, depreciation, and new-product monetization are unusually uncertain.
 
 ## Reddit valuation
 
@@ -171,7 +171,7 @@ The primary method applies a target-date trailing enterprise-value/revenue multi
 
 **Calculation:** `25% × $114 + 55% × $174 + 20% × $261 = approximately $176`.
 
-The **$176 probability-weighted twelve-month value** is about 17% above $150.31. Discounted at an illustrative 11% required return, it is worth approximately **$159 today**. Reddit therefore screens neutral to mildly attractive, but the current price offers only a small present-value margin in this quick model. The bull case is powerful; the bear case is a normal growth-stock de-rating, not a failure of the community.
+The **$176 illustrative hand-weighted twelve-month value** is about 17% above $150.31. Discounted at an illustrative 11% required return, it is worth approximately **$159 today**. Reddit therefore screens neutral to mildly attractive, but the current price offers only a small present-value margin in this quick model. The bull case is powerful; the bear case is a normal growth-stock de-rating, not a failure of the community.
 
 ## Is Snap too cheap relative to these companies?
 
@@ -182,7 +182,7 @@ The **$176 probability-weighted twelve-month value** is about 17% above $150.31.
 1. **The revenue discount is extreme.** Snap's 1.68x EV/revenue multiple is less than one-third of Meta's and less than one-fifth of Reddit's. Snap need not become Meta to rerate: applying 2.20x to the base revenue case produces approximately $8.34 per share before cross-method triangulation.
 2. **Snap's total growth is no longer weak.** Q2 total revenue grew 19%, global average revenue per user rose 13%, North American average revenue per user rose 23%, Europe rose 36%, and direct revenue grew 85%. Those are credible monetization proof points even though advertising grew only 9%. [Snap Q2 2026 results](https://investor.snap.com/news/news-details/2026/Snap-Inc--Announces-Second-Quarter-2026-Financial-Results/default.aspx)
 3. **Cost leverage is visible.** TTM adjusted earnings before interest, taxes, depreciation, and amortization (adjusted EBITDA) reached $1.02 billion and TTM FCF reached $706 million. The April 2026 restructuring targets more than $500 million of annualized savings, and the cleaner run-rate should appear from Q3 onward. [Snap Q2 2026 investor letter](https://s25.q4cdn.com/442043304/files/doc_financials/2026/q2/Q2-2026-Prepared-Remarks.pdf), [April 2026 investor update](https://www.sec.gov/Archives/edgar/data/1564408/000119312526155861/d36756dex992.htm)
-4. **Management has recently guided conservatively on adjusted profit.** The guide-history appendix shows repeated adjusted-EBITDA outcomes $51–$63 million above initial midpoints. That supports modest cost upside in scenario probabilities.
+4. **Management has recently guided conservatively on adjusted profit.** The guide-history appendix shows repeated adjusted-EBITDA outcomes $51–$63 million above initial midpoints. That supports modest cost upside in the valuation's cash-flow marginal.
 
 ### Why the discount is not a free lunch
 
@@ -224,7 +224,7 @@ The table compares **initial management guidance** with reported results. It doe
 - Meta's infrastructure largely appears in capital expenditure and leases; Reddit and Snap use more third-party infrastructure recorded as operating expense. FCF margins do not have identical reinvestment boundaries.
 - All three have founder-influence and multi-class-governance concerns. Snap's publicly traded Class A shares carry no vote, making an acquisition-value floor especially unreliable.
 - Reddit's rapid growth and short public-company history make its 10.19x revenue multiple fragile. Meta's multiple includes profitable scale and several unmonetized products. Neither is a clean multiple donor for Snap.
-- Scenario probabilities are analyst judgments, not measured frequencies. They are included to show the distribution, not to manufacture precision.
+- The peer scenario weights are analyst judgments, not measured frequencies. They are retained only as quick historical diagnostics in this peer memo and must not be read as calibrated distributions or transplanted into Snap's model.
 
 ## Primary source trail
 

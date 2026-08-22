@@ -15,6 +15,8 @@ tags: [snapchat, subscriptions, retention, advertising, specs, litigation, regio
 >
 > **Evidence rule:** reported facts, calculations, external estimates, and assumptions are kept separate. A proxy is not relabeled as a company disclosure. This memo updates the same-day draft; it is not personalized investment advice.
 
+> **23 August method note:** the evidence cutoff and company facts in this memo are unchanged. Its former 30% / 50% / 20% scenario weighting has been superseded by the coverage cycle's [distribution-first valuation](2026-08-23-distribution-first-valuation.md).
+
 ## Answer first
 
 The biggest result is not an estimate: Snap's second-quarter 2026 Form 10-Q says average advertising price per impression **rose approximately 10% year over year**. That resolves the initial disclosure question. With advertising revenue up 9.3%, delivered impressions were approximately flat to slightly down on a simple revenue/price identity. This is the first clear quarter of company-wide yield repair in the recent series.
@@ -30,7 +32,7 @@ Five other gaps can be narrowed, but not eliminated:
 | Specs economics | $2,195 price, $200 refundable deposit, fall launch, more than $3bn cumulative spend, an activist estimate of about $500m annual cash spend, and transparent breakeven thresholds | bill of materials, preorder count, returns, production commitments, gross margin, and outside funding | medium-low |
 | Legal settlement terms | Snap's $8m Breathitt County payment, no admission or product-change covenant, a separate insured $65m securities settlement, and disputed coverage on platform-harm claims | individual bellwether terms, a scalable school-district framework, coverage result, and remedies | medium for known cases; low for aggregate tail |
 
-Overall valuation confidence is **medium with materially better calibration**, but not high. The reported advertising-price inflection resolves one disclosure gap, yet it does not justify moving probability from bear to base: Q2 2025 effective price fell 10% and the comparison included a temporary Ads Manager pricing problem, Ramadan timing, and de minimis effects; Q2 2026 price rose approximately 10% and included World Cup demand; and the two-year price index is roughly `0.90 × 1.10 = 0.99`. Snap did not size those effects, so no add-back is modeled. The canonical probabilities therefore remain **30% bear / 50% base / 20% bull**, and the probability-weighted value remains **$7.48**. The bear, base, and bull values remain **$2.50, $7.75, and $14.25**; no forecast revenue or multiple was changed.
+Overall evidence confidence is **medium**, but not high. The reported advertising-price inflection resolves one disclosure gap, yet it does not justify narrowing the downside distribution: Q2 2025 effective price fell 10% and the comparison included a temporary Ads Manager pricing problem, Ramadan timing, and de minimis effects; Q2 2026 price rose approximately 10% and included World Cup demand; and the two-year price index is roughly `0.90 × 1.10 = 0.99`. Snap did not size those effects, so no add-back is modeled. The distribution model therefore retains wide operating and multiple marginals. Its outputs are **$2.86 P10 / $7.90 P50 / $13.78 P90 and an $8.23 mean**; the 23 August method update changed no company fact or forecast anchor.
 
 ---
 
@@ -156,7 +158,7 @@ At a $2,195 selling price, annual unit volume needed to cover illustrative annua
 
 The $500 million row is anchored to Irenic's estimate; the $250 million row is a sensitivity, not a sourced spending forecast. Neither includes returns, working capital, channel costs, future research, or a service-revenue stream. The table demonstrates the hurdle: a premium early-adopter product does not self-fund a large research program at tens of thousands of units.
 
-The current valuation remains appropriately conservative: no hardware profit is forecast, and Specs carries only $0/$250m/$750m of net option value across bear/base/bull cases.
+The current valuation remains appropriately conservative: no hardware profit is forecast, and the downside/central/upside Specs anchors carry only $0/$250m/$750m of net option value.
 
 ---
 
@@ -164,7 +166,7 @@ The current valuation remains appropriately conservative: no hardware profit is 
 
 Reuters obtained the Breathitt County settlement agreements through a public-records request. Snap paid **$8 million**; TikTok paid $8 million, Meta $9 million, and YouTube $2.01 million. The companies admitted no liability and agreed to no platform changes. The settlement covers one roughly 1,600-student rural district; plaintiffs said approximately 1,200 other school-district cases remained. [Reuters report distributed by Investing.com](https://www.investing.com/news/stock-market-news/meta-paid-9-million-to-settle-kentucky-school-districts-lawsuit-over-social-media-harms-records-show-4717510) [Bloomberg Law report](https://news.bloomberglaw.com/business-and-practice/social-media-giants-to-pay-27-million-to-settle-school-lawsuit)
 
-At 1.92 billion diluted shares, Snap's $8 million payment is approximately **$0.004 per share**. It is far below the existing probability-weighted United States legal reserve and supports the view that a small bellwether can settle for a manageable amount. It cannot be multiplied by 1,200: district size, alleged costs, evidence, plaintiffs, and remedies vary radically, and the next scheduled district is much larger.
+At 1.92 billion diluted shares, Snap's $8 million payment is approximately **$0.004 per share**. It is far below the modeled United States legal allowance and supports the view that a small bellwether can settle for a manageable amount. It cannot be multiplied by 1,200: district size, alleged costs, evidence, plaintiffs, and remedies vary radically, and the next scheduled district is much larger.
 
 Separately, Snap's $65 million securities settlement over Apple tracking changes was covered by insurance and received final approval in April 2026. That is not evidence that platform-harm claims are insured; Snap's filing says carriers dispute defense or indemnity for some or all of those claims. Individual youth-harm bellwether settlements remain confidential. [Snap Q2 2026 Form 10-Q](https://www.sec.gov/Archives/edgar/data/1564408/000156440826000052/snap-20260630.htm)
 
@@ -172,18 +174,18 @@ The existing central regulatory/legal reserve remains appropriate. The new $8 mi
 
 ---
 
-## 7. Valuation calibration and confidence
+## 7. Valuation distribution and confidence
 
-The Q2 advertising-price disclosure validates the base case's required direction, but it is not a clean structural step-up. The comparison quarter was affected by a temporary Ads Manager change that caused some campaigns to clear at substantially reduced prices, Ramadan timing, and de minimis effects; the current quarter also benefited from World Cup spending. Snap did not quantify the individual effects. Q2 2025 effective cost per thousand advertising impressions (**eCPM**) fell 10%, so Q2 2026's approximately 10% increase leaves a two-year index near 0.99. Impressions were also roughly flat. The evidence is insufficient to reduce the bear weight before a cleaner price-and-volume quarter.
+The Q2 advertising-price disclosure validates the central path's required direction, but it is not a clean structural step-up. The comparison quarter was affected by a temporary Ads Manager change that caused some campaigns to clear at substantially reduced prices, Ramadan timing, and de minimis effects; the current quarter also benefited from World Cup spending. Snap did not quantify the individual effects. Q2 2025 effective cost per thousand advertising impressions (**eCPM**) fell 10%, so Q2 2026's approximately 10% increase leaves a two-year index near 0.99. Impressions were also roughly flat. The evidence is insufficient to narrow downside before a cleaner price-and-volume quarter.
 
-| Scenario | Canonical probability | Value per share |
-| --- | ---: | ---: |
-| Bear | **30%** | $2.50 |
-| Base | **50%** | $7.75 |
-| Bull | **20%** | $14.25 |
-| **Probability-weighted** | **100%** | **$7.48** |
+| Distribution output | Value per share | Meaning |
+| --- | ---: | --- |
+| Bear narrative / P10 | **$2.86** | 10% of modeled values are lower |
+| Base narrative / P50 | **$7.90** | Median modeled value |
+| Bull narrative / P90 | **$13.78** | 10% of modeled values are higher |
+| **Mean** | **$8.23** | Average across 100,000 draws |
 
-The six-month probability-weighted checkpoint is **$6.64**. The twelve-month weighted value is 43.5% above the $5.21 reference price.
+The model assigns 28.6% of values below $5.21, 16.0% to a loss of at least 30%, and 8.2% to a loss of at least 50%. Six-month checkpoints remain unweighted because the model does not estimate six-month price convergence.
 
 Confidence remains below high because:
 
@@ -194,7 +196,7 @@ Confidence remains below high because:
 - one $8 million school settlement does not price the wider litigation or remedy tail;
 - founder control, dilution, high-value-user decline, debt, and regulatory product changes still widen the distribution.
 
-The correct wording is therefore **medium confidence**. The evidence supports the central scenario calibration more strongly than it supports precision in the point target.
+The correct wording is therefore **medium evidence confidence and uncalibrated model status**. The evidence supports the central operating anchor more strongly than it supports precision in any point target or frequency.
 
 ---
 

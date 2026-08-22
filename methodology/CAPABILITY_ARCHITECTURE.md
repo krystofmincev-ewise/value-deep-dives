@@ -79,6 +79,9 @@ Position size, taxes, liquidity, constraints, and actual fills may remain privat
 - Flat identity, source, fact, event-forecast, event-outcome, evaluation-spec, and ledger schemas with dependency-free validators.
 - Repository-native company, event, and forecast-evaluation skills with sector playbooks and explicit fail-closed gates.
 - Independent event/security Brier scoring, frozen-baseline comparison, per-proposition resolution, and committed-record linkage auditing.
+- Transparent structured-elicitation valuation distributions with deterministic
+  sampling, declared dependencies and tail branches, method cross-checks, and
+  company-specific verification hooks.
 
 ### Build first
 

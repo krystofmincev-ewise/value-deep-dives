@@ -56,6 +56,10 @@ This page translates the shorthand used across the Snap research dossier. Each s
 | `VWAP` | Volume-weighted average price | Average traded share price weighted by trading volume over the stated period. |
 | `SOFR` | Secured Overnight Financing Rate | A benchmark United States dollar interest rate used in floating-rate debt. |
 | `SaaS` | Software as a service | Subscription software delivered as an ongoing service; not a clean valuation analogue for Snapchat+. |
+| `P10` / `P50` / `P90` | Distribution percentiles | Values below which 10%, 50%, or 90% of simulated outcomes fall. P50 is the median. These are not scenario probabilities. |
+| Monte Carlo simulation | Repeated model draws | A method that samples declared input distributions and dependencies to produce a valuation distribution. |
+| Structured elicitation | Explicit analyst uncertainty inputs | A transparent set of judgmental marginals and dependencies used when no calibrated reference class exists; it is not historical calibration. |
+| Bottom-tail expected value | Mean within a downside tail | The average modeled value among outcomes at or below a stated percentile, such as the bottom decile. |
 
 ## Advertising, measurement, and technology
 
@@ -162,8 +166,11 @@ Fully diluted equity value = share price × fully diluted shares
 EV = fully diluted equity value + net debt
 EV/revenue = enterprise value / revenue
 
-Scenario expected value = Σ (scenario probability × scenario value per share)
-Expected return = expected value / reference price - 1
+Simulated value per draw = median(revenue-multiple value, SOTP value, DCF value)
+Distribution mean = Σ simulated values / number of draws
+Expected return = distribution mean / reference price - 1
+P10 / P50 / P90 = value below which 10% / 50% / 90% of draws fall
+Bottom-tail expected value = mean value among draws at or below the stated tail quantile
 
 Portfolio loss contribution ≈ position weight × security drawdown
 

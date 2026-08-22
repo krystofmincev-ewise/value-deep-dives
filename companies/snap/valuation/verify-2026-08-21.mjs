@@ -12,7 +12,6 @@ const current = {
 
 const scenarios = {
   bear: {
-    probability: 0.30,
     advertising: [1.409, 1.558, 1.269, 1.309],
     other: [0.291, 0.290, 0.342, 0.363],
     adjustedEbitda: [0.310, 0.370, 0.193, 0.201],
@@ -28,14 +27,12 @@ const scenarios = {
     annualDilution: 0.03,
     costOfEquity: 0.14,
     terminalCompanyGrowth: 0.02,
-    adoptedTarget: 2.50,
     checkpointRevenue: 6.676,
     checkpointMultiple: 1.20,
     checkpointNetDebt: 0.825,
     checkpointShares: 1.940,
   },
   base: {
-    probability: 0.50,
     advertising: [1.475, 1.692, 1.418, 1.463],
     other: [0.285, 0.348, 0.385, 0.417],
     adjustedEbitda: [0.390, 0.530, 0.361, 0.395],
@@ -51,14 +48,12 @@ const scenarios = {
     annualDilution: 0.01,
     costOfEquity: 0.13,
     terminalCompanyGrowth: 0.025,
-    adoptedTarget: 7.75,
     checkpointRevenue: 6.928,
     checkpointMultiple: 1.95,
     checkpointNetDebt: 0.650,
     checkpointShares: 1.910,
   },
   bull: {
-    probability: 0.20,
     advertising: [1.528, 1.811, 1.518, 1.565],
     other: [0.302, 0.394, 0.442, 0.490],
     adjustedEbitda: [0.435, 0.684, 0.490, 0.534],
@@ -74,7 +69,6 @@ const scenarios = {
     annualDilution: 0,
     costOfEquity: 0.12,
     terminalCompanyGrowth: 0.03,
-    adoptedTarget: 14.25,
     checkpointRevenue: 7.163,
     checkpointMultiple: 2.90,
     checkpointNetDebt: 0.350,
@@ -175,23 +169,9 @@ for (const [name, scenario] of Object.entries(scenarios)) {
     multipleValue,
     sotpValue,
     dcfValue,
-    adoptedTarget: scenario.adoptedTarget,
     checkpointValue,
   };
 }
-
-assertClose(sum(Object.values(scenarios).map(({ probability }) => probability)), 1, 0, "probabilities");
-
-const weightedTarget = sum(
-  Object.entries(scenarios).map(([name, scenario]) => scenario.probability * results[name].adoptedTarget),
-);
-const weightedCheckpoint = sum(
-  Object.entries(scenarios).map(([name, scenario]) => scenario.probability * results[name].checkpointValue),
-);
-
-assertClose(weightedTarget, 7.475, 0.000_001, "probability-weighted target");
-assertClose(weightedCheckpoint, 6.6388, 0.000_1, "probability-weighted checkpoint");
-assertClose(weightedTarget / referencePrice - 1, 0.4347, 0.0001, "expected target return");
 
 console.table(
   Object.fromEntries(
@@ -203,6 +183,4 @@ console.table(
     ]),
   ),
 );
-console.log(`Weighted target: $${weightedTarget.toFixed(3)}`);
-console.log(`Weighted six-month checkpoint: $${weightedCheckpoint.toFixed(3)}`);
-console.log("SNAP 2026-08-21 valuation verification: PASS");
+console.log("SNAP 2026-08-21 unweighted anchor-path verification: PASS");

@@ -596,16 +596,16 @@ Holding the multiple and all other inputs fixed:
 
 **Important:** The larger valuation effect is likely to come from the market changing the multiple when price repair is proven. The existing model estimates that every 0.25 turn of enterprise-value-to-revenue multiple is worth roughly $0.95 per share. Revenue upside and a rerating must be modelled separately to avoid double-counting.
 
-### Probability view for advertising outcomes
+### Advertising outcome anchors—not probability buckets
 
-| Outcome | Specialist probability | Meaning |
-|---|---:|---|
-| Effective price remains materially negative; advertising growth stays below 8% | 30% | Bear evidence wins; low price reflects insufficient demand rather than a temporary arbitrage. |
-| Effective price stabilises around flat; advertising growth reaches roughly 8–15% | 45% | Most likely: product progress is real, but demand and measurement repair take time. |
-| Effective price turns mid-single-digit positive; advertising growth reaches roughly 15–22% | 20% | Bull: lower-funnel outcomes scale and advertisers deepen budget. |
-| Effective price rises high single digits or more; advertising growth exceeds 22% | 5% | Upside tail requiring unusually fast auction densification. |
+| Outcome | Distribution role | Meaning |
+|---|---|---|
+| Effective price remains materially negative; advertising growth stays below 8% | Lower-tail anchor | Bear evidence wins; low price reflects insufficient demand rather than a temporary arbitrage. |
+| Effective price stabilises around flat; advertising growth reaches roughly 8–15% | Central range | Product progress is real, but demand and measurement repair take time. |
+| Effective price turns mid-single-digit positive; advertising growth reaches roughly 15–22% | Upper-central range | Lower-funnel outcomes scale and advertisers deepen budget. |
+| Effective price rises high single digits or more; advertising growth exceeds 22% | Upside-tail anchor | Requires unusually fast auction densification. |
 
-**Assumption:** These probabilities are analytical judgements based on current disclosed product metrics and marketplace evidence; they are not statistical estimates. Their purpose is to expose the belief embedded in valuation.
+These are interpretable checkpoints, not exhaustive conditional states and not statistically estimated frequencies. The canonical [distributional valuation](../valuation/2026-W34-valuation.md#distribution-first-valuation) expresses advertising uncertainty through a continuous five-point marginal, dependency structure, and explicit tail diagnostics.
 
 ---
 

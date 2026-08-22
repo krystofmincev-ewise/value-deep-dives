@@ -43,7 +43,13 @@ The company landing page is the current navigation layer. Each coverage cycle ex
 
 ## 4. Value
 
-Formal valuation work uses bull, base, and bear cases with explicit assumptions, a source cutoff, reference price, target date or horizon, and sensitivity analysis. The [valuation framework](VALUATION_FRAMEWORK.md) defines the minimum standard.
+Formal valuation work uses bull, base, and bear cases with explicit assumptions,
+a source cutoff, reference price, target date or horizon, and sensitivity
+analysis. When scenario weights cannot be tied to exhaustive outcome buckets
+and a defensible reference class, keep the three cases as unweighted narratives
+and derive expected value and downside metrics from a transparent full
+distribution. The [valuation framework](VALUATION_FRAMEWORK.md) defines the
+minimum standard.
 
 ## 5. Decide
 

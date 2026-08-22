@@ -17,6 +17,8 @@ tags: [snapchat, regulation, litigation, youth-safety, australia, united-states,
 >
 > **Number key:** `$m` means millions of United States dollars; `$bn` means billions of United States dollars; `A$` means Australian dollars. Percentages in scenario tables are analyst probabilities, not company guidance.
 
+> **23 August integration note:** the canonical valuation now samples the exhaustive 60% manageable / 30% material / 8% severe / 2% extreme tail map in this memo directly. Its simulated mean legal effects replace the former company-scenario-weighted reserve check; no legal amount is deducted twice.
+
 ## The one-minute answer
 
 The risk is material, but the evidence does **not** support treating a global Snapchat ban, a European fine, or a U.S. mass settlement as certain.

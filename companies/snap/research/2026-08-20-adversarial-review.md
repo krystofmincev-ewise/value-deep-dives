@@ -17,6 +17,8 @@ tags: [investment-committee, bear-case, valuation, position-sizing, pre-mortem]
 
 > **Reader key:** This is deliberately skeptical input to the [canonical final report](../thesis/2026-W34-final-report.md), not a parallel thesis or target. Its preliminary ranges are challenge cases used by the final integration. Acronyms are expanded at first use and collected in the [glossary](../GLOSSARY.md).
 
+> **Method note:** the illustrative weights below are preserved as a dated adversarial stress, not a calibrated forecast. The canonical valuation now uses a continuous distribution with explicit dependencies and legal-tail states.
+
 ## Committee conclusion
 
 The strongest coherent bear case is not that Snapchat disappears. It is that Snap remains a large, culturally relevant, subscale advertising platform whose best users slowly shrink, whose incremental users are difficult to monetize, whose direct-revenue success partly taxes user goodwill, and whose cost savings are recycled into artificial-intelligence (AI) infrastructure, litigation, stock compensation, and Specs. In that world revenue still grows, adjusted earnings before interest, taxes, depreciation, and amortization (adjusted EBITDA) improves, and the stock still produces a poor return because the low multiple reflects weak owner economics and governance rather than imminent insolvency.

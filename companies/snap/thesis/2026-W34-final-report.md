@@ -20,11 +20,11 @@ currency: USD
 reference_price: 5.21
 reference_price_at: 2026-08-20T20:59:05Z
 reference_price_source: integrated_public_market_data_feed
-target_bear: 2.50
-target_base: 7.75
-target_bull: 14.25
+target_bear: 2.86
+target_base: 7.90
+target_bull: 13.78
 target_horizon: 2027-08-20
-evaluation_rule: unadjusted_regular_session_close_on_2027-08-20_or_immediately_preceding_nyse_session
+evaluation_rule: not_applicable_fair_value_distribution_not_target_price_forecast
 target_status: active
 review_by: 2026-11-15
 benchmark: QQQ_adjusted_close_total_return_same_session_rule
@@ -35,6 +35,11 @@ absolute_value_assessment: attractive
 position_disclosure: long
 originating_study: ../research-plan.md
 supersedes: null
+distribution_method: structured_elicitation_monte_carlo_v1
+distribution_calibration_status: uncalibrated_shadow
+distribution_seed: 20260821
+distribution_sample_count: 100000
+method_reviewed_at: 2026-08-23
 tags: [social-media, digital-advertising, subscriptions, augmented-reality, founder-control]
 ---
 
@@ -62,14 +67,14 @@ The [company landing page](../README.md#find-the-question-then-drill-down) links
 
 ## Two-minute answer
 
-Snap appears **undervalued at $5.21**. The model gives it a probability-weighted twelve-month value of **$7.48**, but the evidence is not yet strong enough to treat that upside as dependable. The simplest summary is: **attractive value, incomplete proof, asymmetric risk**.
+Snap appears **undervalued at $5.21**. The model gives it a twelve-month **mean value of $8.23 and median of $7.90**, but the evidence is not yet strong enough to treat that upside as dependable. The simplest summary is: **attractive value, incomplete proof, asymmetric risk**.
 
-| Time horizon | Bear | Base | Bull | Probability-weighted |
+| Time horizon | Downside / P10 | Central / P50 | Upside / P90 | Mean |
 | --- | ---: | ---: | ---: | ---: |
-| Six-month checkpoint | $3.70 | $6.73 | $10.81 | **$6.64** |
-| Twelve-month value | $2.50 | $7.75 | $14.25 | **$7.48** |
+| Six-month narrative checkpoint | $3.70 | $6.73 | $10.81 | Not modeled |
+| Twelve-month value distribution | $2.86 | $7.90 | $13.78 | **$8.23** |
 
-The probability-weighted value is about **44% above** $5.21. That upside sits beside a $2.50 bear value, no voting rights for public shareholders, and legal or product outcomes that could fall below the modeled bear case. The action is therefore restrained:
+The mean is about **58% above** $5.21 and the median about **52% above**. That upside sits beside a modeled **28.6% probability of fair value below $5.21**, an **8.2% probability of fair-value impairment of at least 50%**, no voting rights for public shareholders, and legal or product outcomes below the P10. The action is therefore restrained:
 
 - **Value:** attractive on an absolute basis.
 - **No current position:** watch through the third-quarter operating checkpoint.
@@ -84,17 +89,17 @@ The thesis does **not** require Snap to become Meta. It requires:
 3. cost savings reaching free cash flow per diluted share rather than being consumed by hardware, litigation, or dilution; and
 4. Specs spending and legal remedies remaining bounded.
 
-If those four conditions hold, Snap need only re-rate from 1.68 times trailing revenue to roughly 2.05 times—not anywhere near Meta's multiple—to reach the $7.75 base value.
+If those four conditions hold, Snap need only re-rate from 1.68 times trailing revenue toward the low-2-times area—not anywhere near Meta's multiple—to support the $7.90 median.
 
 ### Why confidence is only medium
 
-Q2 advertising price rose about 10%, but it lapped a 10% decline and a comparison affected by a temporary pricing problem, Ramadan timing, and de minimis changes in Q2 2025. On a two-year basis, price was roughly flat, and World Cup demand helped. Snap did not size those effects, so the model does not invent an add-back. One good quarter is evidence of repair—not proof of a repaired auction. Snap also does not disclose subscriber cohorts, regional costs, Specs unit economics, or aggregate legal remedies. The model therefore keeps a 30% bear weight. The [confidence-gap review](../research/2026-08-21-confidence-gap-estimates.md) and [regional model](../research/2026-08-21-regional-ad-economics.md) separate measured facts, estimates, and unknowns.
+Q2 advertising price rose about 10%, but it lapped a 10% decline and a comparison affected by a temporary pricing problem, Ramadan timing, and de minimis changes in Q2 2025. On a two-year basis, price was roughly flat, and World Cup demand helped. Snap did not size those effects, so the model does not invent an add-back. One good quarter is evidence of repair—not proof of a repaired auction. Snap also does not disclose subscriber cohorts, regional costs, Specs unit economics, or aggregate legal remedies. The model therefore retains wide downside marginals and explicit legal-tail states. The [confidence-gap review](../research/2026-08-21-confidence-gap-estimates.md), [regional model](../research/2026-08-21-regional-ad-economics.md), and [distribution-method memo](../research/2026-08-23-distribution-first-valuation.md) separate measured facts, estimates, and structured judgments.
 
 ---
 
 ## Ten-minute thesis: why Snap may be too cheap
 
-Snap's low price is not mysterious. Investors have endured falling advertising yield, dilution, repeated restructurings, an unproven hardware ambition, and founder control. The opportunity rests on six linked judgments that challenge the idea that none of this can improve. Together they produce a $7.48 probability-weighted value from 30% bear, 50% base, and 20% bull weights around $2.50, $7.75, and $14.25.
+Snap's low price is not mysterious. Investors have endured falling advertising yield, dilution, repeated restructurings, an unproven hardware ambition, and founder control. The opportunity rests on six linked judgments that challenge the idea that none of this can improve. A 100,000-draw model turns those judgments into continuous operating and valuation marginals, explicit dependencies, and legal-tail states rather than hand-weighting three rounded narratives.
 
 ### 1. The advertising auction has shown repair—but only once
 
@@ -118,13 +123,13 @@ Recent adjusted-profit guidance supports the near-term forecast: actual adjusted
 
 Open research and cloud tools make recommendation architecture cheaper to reproduce. Snap also has a real friend graph, camera and messaging context, production semantic models, and enough engineering evidence to support a **competent fast-follower** case.
 
-What it cannot cheaply copy is Meta's conversion history, advertiser density, budget already embedded in agency workflows, and marketplace feedback loop. The base forecast already attributes about **$240 million**, or a 4.1% lift over a no-further-improvement path, to continued recommendation, measurement, creative, and lower-funnel progress. About **$0.24 per share of probability-weighted recommender value is already inside $7.48**; it is not extra upside. The [technical deep dive](../research/2026-08-21-open-source-recommender-gap.md) shows the evidence and sensitivity.
+What it cannot cheaply copy is Meta's conversion history, advertiser density, budget already embedded in agency workflows, and marketplace feedback loop. The central forecast already attributes about **$240 million**, or a 4.1% lift over a no-further-improvement path, to continued recommendation, measurement, creative, and lower-funnel progress. The former $0.24 hand-weighted diagnostic is retired: recommendation progress is already inside the sampled advertising and multiple drivers and is not extra upside. The [technical deep dive](../research/2026-08-21-open-source-recommender-gap.md) shows the evidence and sensitivity.
 
 ### 5. The discount survives dilution and risk reserves
 
 Snap trades at about **1.68 times trailing revenue**, versus 6.11 times for Meta and 10.19 times for Reddit. Snap does not deserve either peer multiple: its auction is weaker, margins are lower, dilution is heavier, and shareholders have no vote. The case does not require parity.
 
-The primary revenue method uses 2.20 times and produces $8.34. Triangulating that result with the sum-of-the-parts and discounted-cash-flow methods lowers the adopted base to **$7.75**, equivalent to roughly **2.05 times revenue**. Legal and regulatory allowances are already inside the forecast; dilution is in the denominator; Specs receives only bounded option value. Snap can remain deeply discounted and still rise.
+The central revenue anchor uses 2.20 times and produces $8.34. Its sum-of-the-parts and discounted-cash-flow cross-checks are $7.81 and $7.07. Across the full distribution, the per-draw median of the three methods produces a **$7.90 median and $8.23 mean**. Legal and regulatory allowances are already inside the forecast; dilution is in the denominator; Specs receives only bounded option value. Snap can remain deeply discounted and still rise.
 
 ### 6. Q3 is a review point—not automatically an upgrade point
 
@@ -369,15 +374,15 @@ Current execution evidence strengthens the middle outcome. A [July 2026 Snap pap
 
 The [quantified technical scenario](../research/2026-08-21-open-source-recommender-gap.md#8-how-much-recommendation-upside-remains) estimates the following cumulative two-to-three-year lift versus a counterfactual with no further material recommendation improvement:
 
-| Technical outcome | Platform-wide engagement | Advertiser conversion/value at fixed spend | Advertising-revenue uplift | Subjective probability |
-| --- | ---: | ---: | ---: | ---: |
-| Stalled | 0%–1% | 0%–3% | 0%–2% | 20% |
-| Competent fast follower | **1%–3%** | **5%–10%** | **3%–7%** | **65%** |
-| Meaningful frontier narrowing | 3%–6% | 10%–20% | 8%–15% | 15% |
+| Technical outcome | Platform-wide engagement | Advertiser conversion/value at fixed spend | Advertising-revenue uplift |
+| --- | ---: | ---: | ---: |
+| Stalled | 0%–1% | 0%–3% | 0%–2% |
+| Competent fast follower | **1%–3%** | **5%–10%** | **3%–7%** |
+| Meaningful frontier narrowing | 3%–6% | 10%–20% | 8%–15% |
 
-These are analyst ranges, not company guidance, and the probabilities apply only to the recommendation subsystem. The valuation's 30% / 50% / 20% company probabilities are separate because they also contain users, subscriptions, costs, regulation, litigation, Specs, and dilution.
+These are analyst ranges, not company guidance. Competent fast follower is the dominant narrative; stalled progress is a material downside and frontier narrowing a less-supported upside. Numeric subsystem probabilities are not used because there is no validated reference class or calibration record.
 
-The next-four-quarter base forecast already attributes approximately **$240 million**, or a 4.1% lift over its no-further-improvement advertising path, to recommendation, measurement, creative understanding, and lower-funnel automation. The comparable bear/base/bull sum-of-the-parts values are approximately $0.01 / $0.23 / $0.64 per share; probability-weighted, about **$0.24 per share is already embedded** in the $7.48 value. It is not additional upside.
+The next-four-quarter central forecast already attributes approximately **$240 million**, or a 4.1% lift over its no-further-improvement advertising path, to recommendation, measurement, creative understanding, and lower-funnel automation. The comparable downside/central/upside sum-of-the-parts anchors are approximately $0.01 / $0.23 / $0.64 per share. The stochastic model already samples the underlying drivers; none of these values is an additional target increment.
 
 ### What becomes cheaper—and what does not
 
@@ -593,7 +598,7 @@ These are issuer-selected metrics. They make higher output with fewer employees 
 
 Licensed aggregate workforce data were reviewed through an authorized signed-in session. The provider's global engineering-role view covered Snap, Meta Platforms, ByteDance, Pinterest, and Reddit across a consistent latest-six-month window, plus a longer Snap history. It showed a broadly stable recent Snap footprint, a modest increase from August 2024 but a decline from the mid-2025 peak, median tenure broadly comparable with Meta and ByteDance, substantial data-analytics skill overlap, and a latest modeled attrition rate above hiring. It also showed the decisive scale limitation: Meta and ByteDance were each more than 20 times larger in covered engineering roles, while Snap's classified management-and-director bench was proportionally thinner than Meta's.
 
-Exact provider observations and derived tables remain local-only because redistribution rights were not established, and the classifications are modeled rather than official payroll. The workforce evidence therefore informs the 20% / 65% / 15% technical probabilities qualitatively; no provider count enters revenue or valuation arithmetic directly. Together with the 18-author production paper and current shipped results, it supports **competent fast follower**, not a hollowed-out team and not Meta-scale parity. The [public-safe workforce memo](../research/2026-08-20-workforce.md) documents the rights boundary and limitations.
+Exact provider observations and derived tables remain local-only because redistribution rights were not established, and the classifications are modeled rather than official payroll. The workforce evidence therefore informs the qualitative technical ranking; no provider count enters revenue or valuation arithmetic directly. Together with the 18-author production paper and current shipped results, it supports **competent fast follower**, not a hollowed-out team and not Meta-scale parity. The [public-safe workforce memo](../research/2026-08-20-workforce.md) documents the rights boundary and limitations.
 
 ### What would confirm durable efficiency
 
@@ -770,26 +775,26 @@ Private family details receive **zero valuation weight**. Only observable conseq
 
 ### The answer before the detail
 
-Regulation is material but not an automatic global ban. The central probability-weighted value reserve across Australia, the United States, the European Union (**EU**), and the United Kingdom (**UK**) is approximately **$180–$260 million**, or **$0.09–$0.14 per diluted share**, after overlap controls.
+Regulation is material but not an automatic global ban. The specialist jurisdiction memo's central hand-weighted value reserve across Australia, the United States, the European Union (**EU**), and the United Kingdom (**UK**) is approximately **$180–$260 million**, or **$0.09–$0.14 per diluted share**, after overlap controls. The canonical valuation now represents the aggregate exposure through exhaustive legal states rather than company-scenario weights.
 
 The adverse 12-month tail is approximately $600 million–$1.2 billion, or $0.32–$0.63 per share. A structural product remedy can damage the valuation multiple by more than the direct cash amount.
 
-The [full regulation and cost revalidation](../research/2026-08-21-regulation-costs-revalidation.md) labels every jurisdictional probability and prevents double-counting shared age-assurance and safety work.
+The [full regulation and cost revalidation](../research/2026-08-21-regulation-costs-revalidation.md) labels jurisdictional event judgments and prevents double-counting shared age-assurance and safety work.
 
 ### How the valuation books regulation exactly once
 
-The operating scenarios are already net of the following incremental allowances:
+The deterministic operating anchors are already net of the following incremental allowances:
 
-| Embedded next-12-month allowance | Bear | Base | Bull |
+| Embedded next-12-month allowance | Downside anchor | Central anchor | Upside anchor |
 | --- | ---: | ---: | ---: |
 | Regulatory revenue drag | $75 million | $45 million | $20 million |
 | Compliance operating expense inside adjusted operating expense and adjusted earnings before interest, taxes, depreciation, and amortization (**adjusted EBITDA**) | $25 million | $25 million | $15 million |
 | Settlement, fine, and court-remedy cash below adjusted earnings before interest, taxes, depreciation, and amortization (**adjusted EBITDA**) | $275 million | $125 million | $35 million |
 | **Total legal and compliance cash effect** | **$300 million** | **$150 million** | **$50 million** |
 
-At the 30% / 50% / 20% scenario weights, the cash allowances average $175 million and revenue drag averages $49 million. Capitalizing the revenue effect at the specialist memo's 1.6-times diagnostic multiple produces a combined check of approximately $253.4 million, inside the $180 million–$260 million central range.
+Across 100,000 draws, the legal-state simulation averages approximately **$177 million of incremental cash effect** and **$45 million of incremental revenue drag**. Capitalizing the revenue effect at the specialist memo's 1.6-times diagnostic multiple produces an approximately **$248 million** combined check, inside the $180 million–$260 million central range. The mutually exclusive state weights are manageable 60%, material 30%, severe 8%, and extreme 2%.
 
-The forecast's revenue and free cash flow (**FCF**) are **after** these amounts. The target net-debt bridge also starts from that after-allowance free cash flow (**FCF**). Nothing subtracts another $0.09–$0.14 per share later. Only a discontinuous outcome beyond these allowances—such as an intrusive injunction or unusually large settlement cycle—affects the tail scenario and valuation multiple.
+Those three anchor paths use the displayed after-allowance revenue and free cash flow (**FCF**). The stochastic engine instead begins with pre-legal revenue and FCF marginals and subtracts exactly one sampled legal state; it does not deduct the anchor allowances again. Its net-debt bridge then uses the after-state FCF. Nothing subtracts another $0.09–$0.14 per share later.
 
 ### Risk map
 
@@ -808,7 +813,7 @@ Snap says it locked more than 450,000 suspected under-16 accounts after Australi
 
 Snap has confidentially settled two individual bellwethers and the first school-district case set for trial. The exact October case count remains uncertain after one plaintiff requested dismissal, and insurance coverage is disputed. The Ninth Circuit [allowed federal claims to continue](https://cdn.ca9.uscourts.gov/datastore/opinions/2026/08/10/24-7265.pdf), a procedural decision rather than a liability finding; the latest case-count reporting is from [Bloomberg Law](https://news.bloomberglaw.com/health-law-and-business/app-addiction-plaintiff-drops-case-against-meta-google-snap).
 
-Possible product remedies—age assurance, private defaults, or limits on recommendations, Streaks, notifications, autoplay, and personalization—matter more than one damages headline because they can weaken the friend graph. The central model uses $120–$150 million of probability-weighted incremental cash or reserve and $20–$35 million of annualized revenue drag. A tail above $750 million receives a low-single-digit probability, not zero.
+Possible product remedies—age assurance, private defaults, or limits on recommendations, Streaks, notifications, autoplay, and personalization—matter more than one damages headline because they can weaken the friend graph. The specialist memo's central United States estimate is $120–$150 million of incremental cash or reserve and $20–$35 million of annualized revenue drag. The canonical legal-state model preserves a low-single-digit extreme tail rather than treating the central estimate as a cap.
 
 ### European Union: a maximum fine is not the forecast
 
@@ -837,7 +842,7 @@ Dollar figures are billions of United States dollars.
 
 Parenthetical growth below compares forecast Q3 2026–Q2 2027 with reported Q3 2025–Q2 2026. It is not sequential quarterly growth.
 
-| Third quarter 2026 through second quarter 2027 | Bear | Base | Bull |
+| Third quarter 2026 through second quarter 2027 | Downside anchor | Central anchor | Upside anchor |
 | --- | ---: | ---: | ---: |
 | Advertising revenue | $5.545 (+4.1%) | $6.048 (+13.5%) | $6.422 (+20.5%) |
 | Other Revenue | $1.286 (+25.7%) | $1.435 (+40.3%) | $1.628 (+59.1%) |
@@ -863,7 +868,7 @@ The third-quarter forecast adds no World Cup uplift beyond management's guide, w
 
 The fourth-quarter base preserves normal holiday strength but gives no explicit credit for the November 2026 United States election or the one additional calendar day between Thanksgiving and Christmas. A political-archive diagnostic changes reported 2024–2025 annual growth by only about 0.5–0.6 percentage point and suggests even a 2024-like election swing is only about $0.03 per share at the diagnostic multiple. First-quarter 2027 laps a $20 million–$25 million geopolitical headwind and gains Easter timing as Easter moves from 5 April 2026 to 28 March 2027; second-quarter 2027 loses that Easter timing and laps the World Cup-aided comparison. These timing effects change quarterly interpretation, not the four-quarter total.
 
-The [revised quarterly model](../research/2026-W34-quarterly-forecast.md#seasonality-and-event-normalization) contains the historical sequential bridge, event-denominator sensitivities, quarterly revenue and adjusted-profit build, annual cost and cash-flow bridge, capital bridge, formulas, and upgrade/downgrade checkpoints. Working capital and target share count remain analyst assumptions because Snap does not disclose enough detail for a fully mechanical forecast.
+These paths are unweighted operating narratives. The stochastic valuation samples continuous curves around them rather than treating them as exhaustive probability buckets. The [revised quarterly model](../research/2026-W34-quarterly-forecast.md#seasonality-and-event-normalization) contains the historical sequential bridge, event-denominator sensitivities, quarterly revenue and adjusted-profit build, annual cost and cash-flow bridge, capital bridge, formulas, and upgrade/downgrade checkpoints. Working capital and target share count remain analyst assumptions because Snap does not disclose enough detail for a fully mechanical forecast.
 
 ---
 
@@ -887,46 +892,41 @@ Target value per share =
     / target diluted shares
 ```
 
-### Scenario values
+### Distribution values
 
-| Scenario | Operating story | Implied enterprise value (**EV**) / revenue near adopted value | Twelve-month target | Probability |
-| --- | --- | ---: | ---: | ---: |
-| Bear | second-quarter advertising-price repair proves temporary; high-value users weaken; savings partly rebuild; dilution continues | approximately 0.85 times | **$2.50** | 30% |
-| Base | total revenue +17.8%; advertising +13.5%; price becomes durably flat/positive; margin and free cash flow (**FCF**) improve; risk remains discounted | approximately 2.05 times | **$7.75** | 50% |
-| Bull | advertising price turns positive; direct revenue scales; users stabilize; dilution stops | approximately 3.3 times | **$14.25** | 20% |
+| Distribution output | Operating interpretation | Twelve-month value | Fair-value change from $5.21 |
+| --- | --- | ---: | ---: |
+| Bear narrative / P10 | advertising repair proves temporary; high-value users weaken; savings partly rebuild; dilution continues | **$2.86** | -45% |
+| Base narrative / P50 | total revenue grows in the mid-to-high teens; price becomes durably flat/positive; margin and free cash flow (**FCF**) improve; risk remains discounted | **$7.90** | +52% |
+| Bull narrative / P90 | advertising price turns positive; direct revenue scales; users stabilize; dilution stops | **$13.78** | +165% |
+| **Mean** | average across all modeled outcomes | **$8.23** | **+58%** |
 
-```text
-Probability-weighted value =
-    30% × $2.50
-    + 50% × $7.75
-    + 20% × $14.25
-    = $7.475, displayed as $7.48
-```
+The old 30% / 50% / 20% weighting was retired because the three points were neither calibrated frequencies nor exhaustive conditional means. The replacement samples five-point marginal curves for operating, capital, and valuation drivers; adds explicit common-factor dependence; and branches through mutually exclusive legal states. It takes the median of the three method values in each draw, not the average of three supposedly independent methods.
 
 ### Cross-checks
 
-| Method | Bear | Base | Bull |
+| Method | Downside anchor | Central anchor | Upside anchor |
 | --- | ---: | ---: | ---: |
 | Revenue-multiple method | $2.68 | $8.34 | $14.13 |
 | Sum-of-the-parts method | $2.51 | $7.81 | $14.29 |
 | Discounted-cash-flow method | $2.24 | $7.07 | $14.22 |
-| **Adopted** | **$2.50** | **$7.75** | **$14.25** |
+| **Per-path method median** | **$2.51** | **$7.81** | **$14.22** |
 
-The [full valuation](../valuation/2026-W34-valuation.md) shows the enterprise-value bridge, five-year discounted cash flow, sum of the parts, regulation treatment, relative peers, and sensitivities.
+The [full valuation](../valuation/2026-W34-valuation.md) shows the enterprise-value bridge, five-year discounted cash flow, sum of the parts, regulation treatment, relative peers, full distribution, and dependency sensitivities. The [method memo](../research/2026-08-23-distribution-first-valuation.md) records every marginal, the legal-state map, deterministic seed, calibration status, and verifier.
 
-### Why $7.75 is not an aggressive peer multiple
+### Why the $7.90 median is not an aggressive peer assumption
 
-The base is approximately 2.05 times revenue after triangulation:
+The central deterministic cross-check is approximately 2.05 times revenue after triangulation:
 
 - Meta Platforms trades near 6.11 times;
 - Reddit trades near 10.19 times;
 - Snap currently trades near 1.68 times.
 
-The base remains approximately two-thirds below Meta Platforms and four-fifths below Reddit. The valuation is driven by proof of better economics, not full convergence.
+The central path remains approximately two-thirds below Meta Platforms and four-fifths below Reddit. The valuation is driven by proof of better economics, not full convergence.
 
 ### Six-month checkpoint
 
-The six-month bear, base, and bull values are $3.70, $6.73, and $10.81. Their probability-weighted value is $6.64.
+The six-month downside, central, and upside values are $3.70, $6.73, and $10.81. They remain unweighted narrative checkpoints because the twelve-month valuation model does not estimate six-month price convergence.
 
 Six months should show the third and fourth quarters. That is enough to test guidance behavior, cost savings, advertising price direction, and the first Specs launch response. It is not enough to prove multi-year subscription retention or durable legal outcomes.
 
@@ -967,7 +967,7 @@ The bear story is:
 8. Founder control prevents outside shareholders from changing capital allocation.
 9. Litigation or youth regulation damages the friend graph before it damages reported revenue.
 
-In that world, a 0.85 times revenue multiple and a $2.50 target are not extreme. A structural injunction can produce a value below the modeled bear.
+In that world, a sub-1-times revenue multiple and values below the $2.86 P10 are not extreme. A structural injunction can produce a value well into the modeled left tail.
 
 ---
 
@@ -1039,7 +1039,7 @@ The formal QQQ-relative research stance remains **insufficient evidence** until 
 
 | Price zone | Interpretation if the thesis is otherwise unchanged |
 | --- | --- |
-| Below approximately $3.75 | wide discount to the probability-weighted value; verify that price did not reveal a new legal or advertising break |
+| Below approximately $3.75 | wide discount to the distribution mean and median; verify that price did not reveal a new legal or advertising break |
 | Approximately $3.75–$6.25 | attractive expected value; position size remains decisive |
 | Approximately $6.25–$8.50 | near the six- to twelve-month central range; require continued proof |
 | Above approximately $10 | market is beginning to price the bull path; advertising yield and dilution must support it |
@@ -1103,7 +1103,7 @@ Use the [company research home](../README.md#find-the-question-then-drill-down) 
 
 ## Disclosure
 
-The user disclosed an existing long position. No trade was placed. The [separate position-history addendum](../disclosures/2026-08-21-user-reported-position-history.md) is not research evidence; neither the reported purchase price nor the original rationale enters the forecast, probabilities, valuation, or action threshold. All targets remain analyst estimates with a wide error range.
+The user disclosed an existing long position. No trade was placed. The [separate position-history addendum](../disclosures/2026-08-21-user-reported-position-history.md) is not research evidence; neither the reported purchase price nor the original rationale enters the forecast, valuation distribution, or action threshold. All targets remain analyst estimates with a wide error range.
 
 ---
 
@@ -1113,7 +1113,7 @@ Snap has already done three things that the low valuation gives it little credit
 
 It has not yet done the decisive thing: prove that Q2 was durable auction repair. The price improvement lapped a weak comparison, benefited from World Cup demand, and arrived with roughly flat volume. Meanwhile high-value users are shrinking, stock compensation still exceeds headline free cash flow, founders control the vote, and Specs and litigation preserve outcomes below the modeled bear.
 
-At $5.21, Snap is **attractive on absolute expected value**, with a probability-weighted value of $7.48. The no-position action is **watch**. The existing-long action is **hold / no add**, or reduce if the severe-loss contribution exceeds the investor's private risk budget.
+At $5.21, Snap is **attractive on absolute expected value**, with an $8.23 distribution mean and $7.90 median. The modeled probability below $5.21 is 28.6%, and the model remains uncalibrated structured elicitation rather than a historical frequency claim. The no-position action is **watch**. The existing-long action is **hold / no add**, or reduce if the severe-loss contribution exceeds the investor's private risk budget.
 
 Q3 is a mandatory review, not automatically an upgrade. The result must show that advertising—not merely Other Revenue—can grow while impression delivery resumes without renewed price dilution. Because the World Cup ran through 19 July, separately disclosed August–September evidence, Q4, or Q1 may be the cleaner test. If that advertising proof appears while the user, cash-flow, and dilution guardrails hold, the case may become strong enough to initiate or add. If it does not, the low multiple will look less like an opportunity and more like the correct price.
 

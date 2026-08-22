@@ -24,11 +24,13 @@ thesis_path: companies/snap/thesis/2026-W34-final-report.md
 valuation_path: companies/snap/valuation/2026-W34-valuation.md
 benchmark: QQQ_adjusted_close_total_return_same_session_rule
 target_horizon: 2027-08-20
-expected_return_pct: 43.5
+expected_return_pct: null
 expected_excess_return_pct: null
+modeled_mean_fair_value_upside_pct: 57.9
 action_hurdle_pct: 8.0
 review_by: 2026-11-15
 supersedes: null
+method_reviewed_at: 2026-08-23
 ---
 
 # SNAP at $5.21 — watch if new; conditional hold if already long
@@ -39,26 +41,28 @@ supersedes: null
 
 | Question | Answer |
 | --- | --- |
-| Valuation verdict | **Attractive:** probability-weighted value of $7.48 versus $5.21 |
+| Valuation verdict | **Attractive:** $8.23 distribution mean and $7.90 median versus $5.21 |
 | New investor | **Watch through the third-quarter operating checkpoint** |
 | Existing long | **Conditional hold / no add** if the severe-loss case fits the investor's private risk budget; otherwise reduce |
 | Next review | Third-quarter 2026 results; no later than 15 November 2026 |
 
 The entire decision turns on one unresolved question: **was the second-quarter improvement in Snap's advertising auction durable, or was it an easy comparison helped by temporary World Cup demand?** Snap reported average advertising price per impression up about 10%, but the result lapped a 10% decline and a comparison affected by a temporary Ads Manager pricing problem, Ramadan timing, and de minimis changes. The two-year price index is therefore roughly flat. Snap did not size those effects, so the model makes no add-back and the evidence is not yet strong enough to initiate or add.
 
-The restraint is about proof and loss control—not weak modeled upside. The exact scenario-weighted value is $7.475, displayed as $7.48, or 43.5% above $5.21. Cost leverage and direct revenue make the upside plausible; shrinking high-value users, dilution, founder control, litigation, and Specs create severe and below-bear loss paths.
+The restraint is about proof and loss control—not weak modeled upside. The deterministic 100,000-draw model produces an $8.23 mean, 57.9% above $5.21, and a $7.90 median. It also assigns 28.6% of modeled fair values below $5.21, 16.0% to fair-value impairment of at least 30%, and 8.2% to impairment of at least 50%. Cost leverage and direct revenue make the upside plausible; shrinking high-value users, dilution, founder control, litigation, and Specs create a material left tail.
 
-## Scenario distribution
+## Valuation distribution
 
-> `Probability-weighted value = Σ(scenario probability × scenario value)`
+> `Distribution mean = Σ(simulated values) / number of draws`
 > `Portfolio impact ≈ position weight × security drawdown`
 
-| Scenario | Probability | Value per share | Return from $5.21 |
-| --- | ---: | ---: | ---: |
-| Bear | 30% | $2.50 | -52% |
-| Base | 50% | $7.75 | +49% |
-| Bull | 20% | $14.25 | +174% |
-| **Probability-weighted** | **100%** | **$7.48** | **+43.5%** using the unrounded $7.475 value |
+| Output | Value per share | Fair-value change from $5.21 | Interpretation |
+| --- | ---: | ---: | --- |
+| Bear narrative / P10 | $2.86 | -45% | 10% of modeled values are lower |
+| Base narrative / P50 | $7.90 | +52% | Median modeled value |
+| Bull narrative / P90 | $13.78 | +165% | 10% of modeled values are higher |
+| **Mean** | **$8.23** | **+57.9%** | Average across all draws |
+
+The old 30% / 50% / 20% hand-weighted scenario calculation is retired. The replacement samples continuous operating and valuation drivers, explicit dependencies, and exhaustive legal-tail states. It remains uncalibrated structured elicitation in shadow-model status, so its frequencies are decision aids rather than historical claims. See the [distribution-method memo](../research/2026-08-23-distribution-first-valuation.md).
 
 ## Why the valuation is attractive
 
@@ -88,9 +92,9 @@ Position size, taxes, liquidity, and other holdings are intentionally omitted, s
 
 ## Benchmark and scorekeeping note
 
-The 8% metadata hurdle is an **illustrative absolute-return hurdle**, not a forecast for the Nasdaq-100 exchange-traded fund benchmark (**QQQ**). Because this record does not forecast QQQ, expected benchmark excess return remains blank and the formal QQQ-relative research stance is **insufficient evidence**. This methodological label does not change the attractive absolute valuation verdict.
+The 8% metadata hurdle is an **illustrative absolute-return hurdle**, not a forecast for the Nasdaq-100 exchange-traded fund benchmark (**QQQ**). The model estimates fair value, not the probability or timing of market-price convergence, so `expected_return_pct` also remains blank. Because this record does not forecast QQQ, expected benchmark excess return remains blank and the formal QQQ-relative research stance is **insufficient evidence**. This methodological label does not change the attractive absolute valuation verdict.
 
-The analytical evidence gate passes verified identity, public financial statements, capital structure, three-method valuation arithmetic, dilution treatment, a counter-thesis, and observable review triggers. Prospective scorecard registration remains pending until the $5.21 reference and QQQ starting value are frozen from reproducible official-close sources.
+The analytical evidence gate passes verified identity, public financial statements, capital structure, three-method valuation arithmetic, dilution treatment, a counter-thesis, and observable review triggers. This fair-value model is not itself a target-price forecast. Any later prospective return record must separately define market convergence, then freeze the $5.21 reference and QQQ starting value from reproducible official-close sources.
 
 ## Review trigger
 
@@ -107,6 +111,7 @@ Review immediately after third-quarter 2026 results and no later than 15 Novembe
 - [Regional advertising economics](../research/2026-08-21-regional-ad-economics.md)
 - [Regulation and cost revalidation](../research/2026-08-21-regulation-costs-revalidation.md)
 - [Meta Platforms and Reddit relative valuations](../research/2026-08-21-meta-reddit-relative-valuation.md)
+- [Distribution-first valuation method and diagnostics](../research/2026-08-23-distribution-first-valuation.md)
 
 The long-position disclosure and approximate purchase history are user-provided and not broker-verified. They are isolated in the [position-history addendum](../disclosures/2026-08-21-user-reported-position-history.md) and excluded from the valuation and action thresholds. OpenAI Codex agents and several narrowly scoped Gemini Deep Research runs assisted. Their output was treated as analyst aid, not evidence; retained claims were checked at the underlying source.
 

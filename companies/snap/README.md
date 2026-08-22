@@ -8,7 +8,7 @@ coverage_status: active
 research_status: draft
 position_disclosure: long
 as_of: 2026-08-22
-last_reviewed: 2026-08-22
+last_reviewed: 2026-08-23
 review_by: 2026-11-15
 current_coverage_cycle: coverage-cycles/2026-W34-01-initial/README.md
 tags: [social-media, digital-advertising, consumer, ad-tech]
@@ -20,7 +20,7 @@ tags: [social-media, digital-advertising, consumer, ad-tech]
 
 | Question | Current answer |
 | --- | --- |
-| Valuation verdict | **Attractive at $5.21:** probability-weighted twelve-month value of **$7.48** |
+| Valuation verdict | **Attractive at $5.21:** **$8.23 mean / $7.90 median** twelve-month value |
 | New investor | **Watch through the third-quarter operating checkpoint** |
 | Existing long | **Conditional hold / no add**; reduce if the severe-loss case exceeds the investor's private risk budget |
 | Core uncertainty | Was Q2 durable advertising-auction repair, or an easy comparison helped by World Cup demand? |
@@ -37,7 +37,7 @@ Snap reaches almost half a billion people daily, but its most valuable users are
 | **Risk review** | [Strongest bear case](thesis/2026-W34-final-report.md#strongest-bear-case) → [falsifiers](thesis/2026-W34-final-report.md#evidence-that-would-change-the-thesis) → [next-results checklist](thesis/2026-W34-final-report.md#what-to-watch-in-the-next-results) | Permanent-loss paths, disconfirming evidence, and the next proof points. |
 | **Full audit** | [Forecast](research/2026-W34-quarterly-forecast.md) → [valuation model](valuation/2026-W34-valuation.md) → [independent review](research/2026-08-21-independent-review.md) → [source log](sources.md) | Assumptions, arithmetic, provenance, limitations, and release status. |
 
-The analysis is complete. Prospective scorecard registration remains pending because the price and benchmark observations have not yet been frozen from reproducible official-close sources. This work belongs to [coverage cycle `SNAP-2026-W34-01`](coverage-cycles/2026-W34-01-initial/README.md); a future revaluation will receive a new ISO-week cycle instead of overwriting this one.
+The analysis is complete. The fair-value distribution is not itself a target-price forecast. Any future prospective return record must separately model market convergence and freeze reproducible official-close price and benchmark observations. This work belongs to [coverage cycle `SNAP-2026-W34-01`](coverage-cycles/2026-W34-01-initial/README.md); a future revaluation will receive a new ISO-week cycle instead of overwriting this one.
 
 ## At a glance
 
@@ -47,8 +47,8 @@ The analysis is complete. Prospective scorecard registration remains pending bec
 | Research | Analysis complete; prospective scorecard registration pending |
 | Current coverage cycle | [`SNAP-2026-W34-01` — initial](coverage-cycles/2026-W34-01-initial/README.md) |
 | Canonical final report | [Snap at $5.21: cheap for a reason—but perhaps too cheap](thesis/2026-W34-final-report.md) |
-| Modeled twelve-month values | Bear $2.50 / base $7.75 / bull $14.25; probability-weighted $7.48 |
-| Target horizon | 20 August 2027; six-month checkpoint $3.70 / $6.73 / $10.81 |
+| Modeled twelve-month values | P10 $2.86 / P50 $7.90 / P90 $13.78; mean $8.23; 28.6% below $5.21 |
+| Target horizon | 20 August 2027; unweighted six-month paths $3.70 / $6.73 / $10.81 |
 | Decision frame | Current value and action from $5.21; historical cost basis excluded from the analysis |
 | Source cutoff | 22 August 2026, 23:57 Central European Summer Time (CEST) |
 | Next review | Q3 2026 results; no later than 15 November 2026 |
@@ -69,7 +69,7 @@ The formal QQQ-relative research stance remains **insufficient evidence** becaus
 | How dangerous are Specs, litigation, and regulation? | [Specs](thesis/2026-W34-final-report.md#specs-option-value-capital-allocation-risk-and-the-missing-glasses) and [regulation](thesis/2026-W34-final-report.md#regulation-and-litigation) | [Regulation/cost revalidation](research/2026-08-21-regulation-costs-revalidation.md), [confidence gaps](research/2026-08-21-confidence-gap-estimates.md) |
 | Can the organization still execute? | [Workforce after the cut](thesis/2026-W34-final-report.md#workforce-evidence-after-the-cut) | [Public-safe workforce memo](research/2026-08-20-workforce.md), [founder/culture](research/2026-08-20-founder-history-culture.md) |
 | Why attractive on absolute value but watch/hold—and why is the formal QQQ-relative stance still unresolved? | [Action framework](thesis/2026-W34-final-report.md#action-framework-at-521) | [Decision record](decisions/2026-W34-decision.md) |
-| Can I reproduce the numbers? | [Valuation sources and verification](valuation/2026-W34-valuation.md#sources-and-verification) | [Valuation verifier](valuation/verify-2026-08-21.mjs) and four specialist verifiers in the same folder |
+| Can I reproduce the numbers? | [Valuation sources and verification](valuation/2026-W34-valuation.md#sources-and-verification) | [Distribution verifier](valuation/verify-2026-08-21-distribution.mjs), [anchor verifier](valuation/verify-2026-08-21.mjs), and specialist verifiers in the same folder |
 
 ## Research library
 
@@ -107,6 +107,7 @@ The formal QQQ-relative research stance remains **insufficient evidence** becaus
 - [Guidance behavior and cost efficiency](research/2026-08-21-guidance-cost-efficiency.md)
 - [Meta and Reddit relative valuations](research/2026-08-21-meta-reddit-relative-valuation.md)
 - [Valuation confidence-gap estimates](research/2026-08-21-confidence-gap-estimates.md)
+- [Distribution-first valuation design, diagnostics, and calibration status](research/2026-08-23-distribution-first-valuation.md)
 
 ### Governance and risks
 
@@ -128,7 +129,7 @@ Before the canonical coverage-cycle report is called published, it should includ
 - a declared source cutoff and public reference price;
 - business and industry evidence with primary-source citations;
 - a clear variant view and strongest counterargument;
-- bull, base, and bear valuation scenarios;
+- a valuation distribution with interpretable downside, central, and upside narratives;
 - target horizon, review date, and falsifiers;
 - a dated position disclosure and LLM-use note;
 - unresolved questions that could materially change the conclusion.
@@ -144,8 +145,9 @@ During an active cycle, research updates the one canonical report in place. Same
 ### Research incorporated into cycle 01
 
 - 20–21 August 2026: the final report integrated the operating forecast, founder/culture history, authenticated aggregate workforce review, YouTube interview synthesis, Gemini Deep Research cross-check, Meta and Reddit valuation anchors, advertising-price and recommendation-engine analysis, regulation and cost work, conservative-guidance study, adversarial review, and independent audit.
-- 21 August 2026: the integrated evidence and comparison-base pass incorporated the Form 10-Q's approximately 10% second-quarter advertising-price increase, the Q2 2025 pricing/Ramadan/de minimis comparison, World Cup demand, an $8 million school-district settlement term, and regional-contribution bounds. The canonical scenario values are $2.50 / $7.75 / $14.25 and the probability-weighted value is $7.48.
+- 21 August 2026: the integrated evidence and comparison-base pass incorporated the Form 10-Q's approximately 10% second-quarter advertising-price increase, the Q2 2025 pricing/Ramadan/de minimis comparison, World Cup demand, an $8 million school-district settlement term, and regional-contribution bounds. Those operating anchors remain inputs to the subsequent distributional valuation.
 - 21 August 2026: a country-level Snap, Meta, and Reddit advertising-price pass replaced the uniform regional-cost proxy with a Q2-reconciled contribution model; North America and Europe remain clearly positive, while Rest of World is estimated positive before direct selling/support and near breakeven afterward. The interpretation improved without changing consolidated valuation.
 - 21 August 2026: the completed Gemini recommender report was recovered and audited, current Snap semantic-ID production research and a targeted licensed peer-workforce review were added, the Universal User Model's aggregate/per-user distinction was corrected, and the technical scenarios were translated into an explicit advertising and per-share sensitivity without changing the consolidated target.
-- 22 August 2026: an independent seasonality and one-off-event audit added the advertising-specific sequential bridge, Ramadan/de minimis comparison factors, political-spend growth normalization, exact Easter and holiday-calendar timing, and a Q3 World Cup capitalization sensitivity. Those checks retained the $2.50 / $7.75 / $14.25 scenario values and 30% / 50% / 20% probabilities; the weighted value remains $7.48.
-- The analytical dossier is complete and release-ready. Separate prospective scorecard registration remains gated on a reproducible official-close capture, matching benchmark provenance, and an immutable ledger record.
+- 22 August 2026: an independent seasonality and one-off-event audit added the advertising-specific sequential bridge, Ramadan/de minimis comparison factors, political-spend growth normalization, exact Easter and holiday-calendar timing, and a Q3 World Cup capitalization sensitivity. Those checks retained the operating anchors and preserved wide downside dispersion.
+- 23 August 2026: the unsupported 30% / 50% / 20% company-scenario weighting was retired. A deterministic 100,000-draw structured-elicitation model now reports a $2.86 P10, $7.90 median, $13.78 P90, $8.23 mean, explicit downside probabilities, legal-tail states, and dependency stress. The Snap fact cutoff remains 22 August; this was a method change, not a post-cutoff evidence update.
+- The analytical dossier is complete and release-ready. A separate prospective return record remains gated on an explicit market-convergence forecast, reproducible official-close capture, matching benchmark provenance, and an immutable ledger record.

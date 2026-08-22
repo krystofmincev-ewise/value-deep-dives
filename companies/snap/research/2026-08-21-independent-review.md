@@ -12,9 +12,11 @@ scope: independent-valuation-publication-review
 
 ## Conclusion
 
-**Analytical dossier: pass. Public prospective registration: pending.** Three independent review tracks examined the final coverage-cycle analysis for valuation arithmetic and capital structure, evidence and source quality, and public-repository safety and lifecycle consistency. Confidence-gap, regional-economics, Gemini/recommender, and licensed-workforce work corrected the advertising-price and Universal User Model records, bounded additional inputs, and informed probability weights. The bear, base, bull, probability-weighted, and six-month values reconstruct without a central arithmetic error. The final findings described below were resolved before release.
+**Analytical dossier: pass. Public prospective registration: pending.** Three independent review tracks examined the final coverage-cycle analysis for valuation arithmetic and capital structure, evidence and source quality, and public-repository safety and lifecycle consistency. Confidence-gap, regional-economics, Gemini/recommender, and licensed-workforce work corrected the advertising-price and Universal User Model records and bounded additional inputs. The unweighted downside, central, and upside operating paths and six-month checkpoints reconstruct without a central arithmetic error.
 
-This pass means the research can be preserved as a clearly labeled draft under `companies/snap/`. It does not turn the record into a registered forecast: the reference price and matching benchmark observation still require reproducible official-close provenance, followed by a formal identifier and human approval.
+On 23 August, a method-hardening pass retired the unsupported 30% / 50% / 20% company-scenario weighting and added a deterministic 100,000-draw distribution model. Its separate verifier asserts the model contract, legal-state frequencies, cross-method values, quantiles, mean, and downside metrics. The Snap fact cutoff remains 22 August; this was a method review, not a new company-evidence pass.
+
+This pass means the research can be preserved as a clearly labeled draft under `companies/snap/`. It does not turn the record into a registered forecast. The 23 August method review also establishes that the fair-value distribution cannot be resolved by market price alone; a separate return forecast would first need an explicit convergence model, then reproducible official-close and benchmark provenance, a formal identifier, and human approval.
 
 ### Final same-day reconciliation
 
@@ -22,19 +24,19 @@ This pass means the research can be preserved as a clearly labeled draft under `
 - The 19.2% Universal User Model figure was corrected to aggregate long-form view-time sum; the same table reports only 0.28% more view time per user and 0.04% more application-open daily users.
 - Current Snap semantic-ID research and licensed aggregate workforce comparisons support a competent-fast-follower technical case, while the scale gap and latest attrition/hiring signal constrain frontier-parity confidence.
 - Recommendation progress is now an explicit, non-additive sensitivity: approximately $31 million / $240 million / $428 million of next-four-quarter advertising revenue and $0.01 / $0.23 / $0.64 of sum-of-the-parts value in bear/base/bull.
-- The quarterly path now exposes total and advertising Q4/Q1 seasonality, the Q2 2025 pricing/Ramadan/de minimis comparison problem, World Cup and exact Easter/holiday timing, election-spend materiality, and Q3 advertising / Other Revenue and event-capitalization sensitivities. Those findings retain the operating targets and company probabilities at 30% / 50% / 20%.
+- The quarterly path now exposes total and advertising Q4/Q1 seasonality, the Q2 2025 pricing/Ramadan/de minimis comparison problem, World Cup and exact Easter/holiday timing, election-spend materiality, and Q3 advertising / Other Revenue and event-capitalization sensitivities. Those findings retain the operating anchors and preserve wide downside dispersion.
 - The landing page and thesis now expose two-minute, ten-minute, operating-mechanism, risk-review, and full-audit paths into the same evidence set.
 
 ## Review scope and disposition
 
 | Area | Finding | Disposition |
 | --- | --- | --- |
-| Scenario arithmetic | Quarterly revenue, adjusted EBITDA, FCF, three valuation methods, scenario weights, and six-month values needed independent reconstruction | Passed; principal displayed results are also asserted by the [deterministic verifier](../valuation/verify-2026-08-21.mjs) |
+| Valuation arithmetic | Quarterly revenue, adjusted EBITDA, FCF, three valuation methods, stochastic distribution, and six-month paths needed independent reconstruction | Passed; anchors are asserted by the [deterministic verifier](../valuation/verify-2026-08-21.mjs) and distribution outputs by the [stochastic verifier](../valuation/verify-2026-08-21-distribution.mjs) |
 | Cash-flow metric pairing | Enterprise value had been paired with levered issuer FCF in one reverse-expectations line | Corrected to equity value / FCF |
 | Leases and debt | The draft did not display its operating-lease exclusion and used debt carrying value without enough convention detail | Added the $691 million lease line, lease-excluded bridges and sensitivity, and carrying-value versus principal disclosure |
 | Dilution | A rounded 3% equity-value shortcut overstated the illustrative dilution transfer | Recomputed from the disclosed 54.5 million incremental-share proxy |
 | Capital bridge | Cash not retained and six-month capital assumptions were insufficiently explicit | Labeled as scenario assumptions, explained the bear case, and added sensitivity/provenance language |
-| Seasonality and event bases | Ordinary Q4/Q1 seasonality was implicit, while advertising-specific transitions, World Cup, election, Easter/holiday timing, Q2 2025 pricing/Ramadan/de minimis factors, and Q3 mix effects were not fully visible | Added sourced normalization tables and a deterministic verifier; retained forecast dollars and 30% bear weight, quantified Q3 event-capitalization sensitivity, and tightened clean-evidence falsifiers |
+| Seasonality and event bases | Ordinary Q4/Q1 seasonality was implicit, while advertising-specific transitions, World Cup, election, Easter/holiday timing, Q2 2025 pricing/Ramadan/de minimis factors, and Q3 mix effects were not fully visible | Added sourced normalization tables and a deterministic verifier; retained forecast dollars, preserved downside dispersion, quantified Q3 event-capitalization sensitivity, and tightened clean-evidence falsifiers |
 | Licensed evidence | A workforce memo reproduced exact licensed-local-only aggregates | Removed all licensed figures from tracked files; the public memo now contains source metadata, a rights boundary, public facts, and original qualitative analysis only |
 | Personal financial data | Drafts disclosed exact position size, cost basis, and inferable portfolio value | Exact fills, size, and inferable portfolio value remain excluded; only the explicitly authorized rounded, unverified $4.70 history appears in the non-analytical addendum |
 | Source provenance | Filing dates and source-log structure were inconsistent in several places | Corrected the filing date, repaired the central table, and clarified that module-specific citations retain specialist provenance |
@@ -50,10 +52,10 @@ This pass means the research can be preserved as a clearly labeled draft under `
 | Revenue-multiple value/share | $2.676 | $8.340 | $14.130 |
 | Sum-of-the-parts value/share | $2.505 | $7.808 | $14.293 |
 | Levered-equity DCF value/share | $2.244 | $7.072 | $14.223 |
-| Adopted 12-month target | $2.50 | $7.75 | $14.25 |
+| Per-path method median | $2.505 | $7.808 | $14.223 |
 | Six-month checkpoint | $3.704 | $6.733 | $10.806 |
 
-The [confidence-gap evidence pass](2026-08-21-confidence-gap-estimates.md) recovered Snap's reported second-quarter advertising price, and the final seasonality audit then tested its comparison base. Because Q2 2025 included a temporary Ads Manager pricing problem, Ramadan timing, and de minimis effects, Q2 2026 compounded price is roughly flat over two years and the current quarter included World Cup demand. Snap did not size any of those effects, so no add-back was invented. A hypothetical 1%–3% nonrecurring World Cup share of Q3 advertising would reduce the base revenue-multiple value by approximately $0.02–$0.05 per share and the base sum-of-the-parts value by approximately $0.01–$0.04, but it is not deducted absent issuer quantification. The canonical 30% / 50% / 20% probabilities therefore produce a **$7.475** probability-weighted value, displayed as **$7.48**. The six-month checkpoints weight to **$6.639**, displayed as **$6.64**. The scenario-method recalculations above remain unchanged.
+The [confidence-gap evidence pass](2026-08-21-confidence-gap-estimates.md) recovered Snap's reported second-quarter advertising price, and the seasonality audit then tested its comparison base. Because Q2 2025 included a temporary Ads Manager pricing problem, Ramadan timing, and de minimis effects, Q2 2026 compounded price is roughly flat over two years and the current quarter included World Cup demand. Snap did not size any of those effects, so no add-back was invented. A hypothetical 1%–3% nonrecurring World Cup share of Q3 advertising would reduce the central revenue-multiple value by approximately $0.02–$0.05 per share and the central sum-of-the-parts value by approximately $0.01–$0.04, but it is not deducted absent issuer quantification. The subsequent [distribution-first model](2026-08-23-distribution-first-valuation.md) converts that uncertainty into continuous driver marginals and dependent tail draws. It produces a **$2.86 P10, $7.90 P50, $13.78 P90, and $8.23 mean**. The path-method and six-month recalculations above remain unweighted cross-checks.
 
 ## Public-data boundary
 
@@ -61,7 +63,7 @@ No exact licensed workforce dataset values, source copies, account details, auth
 
 ## Remaining publication gates
 
-- Replace the dynamic $5.21 reference with a reproducible official SNAP close and freeze the matching QQQ benchmark observation and evaluation rule.
+- For any future return forecast, define market convergence, replace the dynamic $5.21 reference with a reproducible official SNAP close, and freeze the matching QQQ benchmark observation and evaluation rule.
 - Assign a formal forecast identifier only after the observations are immutable and human review is complete.
 - Register the record in the prospective ledger only then; until that point, expected benchmark-relative return remains intentionally unset.
 
@@ -69,6 +71,7 @@ No exact licensed workforce dataset values, source copies, account details, auth
 
 ```text
 node companies/snap/valuation/verify-2026-08-21.mjs
+node companies/snap/valuation/verify-2026-08-21-distribution.mjs
 node companies/snap/valuation/verify-2026-08-21-confidence-gaps.mjs
 node companies/snap/valuation/verify-2026-08-21-regional-economics.mjs
 node companies/snap/valuation/verify-2026-08-21-recommender-upside.mjs
@@ -76,6 +79,7 @@ node companies/snap/valuation/verify-2026-08-21-seasonality.mjs
 npm run research:records -- validate-identity companies/snap/identity.md --json
 npm run research:records -- validate-company-ledger track-record/forecast-ledger.csv --json
 npm test
+node --test scripts/snap-distribution.test.mjs
 npm run research:validate
 git diff --check
 ```

@@ -18,6 +18,14 @@ tags: []
 
 One paragraph explaining why the company deserves research. State clearly if no thesis or target has been published.
 
+## New to investment research? Start here
+
+When a canonical report exists, provide a short guided path through the business
+model, pivotal operating mechanism, owner economics, valuation range, and the
+difference between value and action. Link directly to the relevant in-place
+`Plain-English aside` callouts. The glossary should be a deeper reference, not a
+prerequisite for reading the report.
+
 ## Status
 
 | Field | Current state |

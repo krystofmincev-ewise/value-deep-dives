@@ -54,6 +54,8 @@ A formal thesis or target price should include:
 - confidence and material unknowns;
 - links to sources and, when applicable, the prior finalized coverage-cycle report.
 
+Canonical reports must also be understandable to an intelligent non-specialist. Explain decision-critical finance, accounting, sector, and probability mechanics where the reader first needs them; a glossary alone is insufficient. Prefer short `Plain-English aside` callouts tied to the adjacent claim, with a small example or formula when helpful. The explanation must preserve evidentiary labels and must not introduce unaudited facts or model assumptions. Avoid patronizing language and avoid burying the core story under definitions of nonessential terms.
+
 If a report presents more than one valuation horizon, it must link one
 schema-backed valuation-horizon contract. Every horizon described as modeled
 must be complete for its declared quantity. Narrative scenarios must not be

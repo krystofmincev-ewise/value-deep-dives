@@ -27,6 +27,20 @@ tags: [social-media, digital-advertising, consumer, ad-tech]
 
 Snap reaches almost half a billion people daily, but its most valuable users are shrinking and its advertising auction has only one quarter of price recovery. The opportunity is that subscriptions, lower costs, and a credible recommendation stack may allow **modest** advertising improvement—not Meta-like success—to create substantial upside. The next results must show whether that improvement is real.
 
+## New to investment research? Start here
+
+You do not need an advertising or finance background. The canonical report now uses short **Plain-English asides** beside the numbers that need translation; they can be skipped without breaking the story.
+
+Keep five questions in mind:
+
+1. **How does Snap make money?** Mostly by auctioning advertisements, plus a fast-growing subscription and partnership business.
+2. **What is repairing?** Q2 advertisement price rose, but the comparison was easy and volume did not grow. The [in-place auction explainer](thesis/2026-W34-final-report.md#1-the-advertising-auction-has-shown-repairbut-only-once) walks through the exact math.
+3. **Why don't more users automatically mean a better business?** A North American user currently produces roughly ten times the revenue of a Rest-of-World user. The [user-economics aside](thesis/2026-W34-final-report.md#users-enormous-scale-uneven-economics) separates audience growth from economic growth.
+4. **Why can cash flow rise without shareholders receiving the full benefit?** Stock compensation can create more shares, dividing the company into more ownership slices. The [owner-cash explanation](thesis/2026-W34-final-report.md#financial-quality-and-capital-structure) shows the effect.
+5. **Why “attractive” but “watch”?** The business looks cheap in the model, but the advertising proof is incomplete and downside depends on position size. The [action aside](thesis/2026-W34-final-report.md#what-the-valuation-says-about-action) separates valuation from the decision to act.
+
+For unfamiliar abbreviations or formulas, use the [plain-English glossary](GLOSSARY.md). The asides are meant to keep you in the story; the glossary is the deeper reference.
+
 ## Choose your depth
 
 | Time or purpose | Start here | What it answers |

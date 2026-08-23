@@ -45,6 +45,8 @@ method_reviewed_at: 2026-08-23
 
 > **Reader key:** Enterprise value (**EV**), free cash flow (**FCF**), stock-based compensation (**SBC**), adjusted earnings before interest, taxes, depreciation, and amortization (**adjusted EBITDA**), sum of the parts (**SOTP**), and discounted cash flow (**DCF**) are written out at first use. The [glossary and formula guide](../GLOSSARY.md) explains every recurring term.
 
+> **How to use the plain-English asides:** The tables preserve the full valuation audit trail. The asides translate the decision-critical mechanics in place, so a reader does not need to learn finance vocabulary before following the argument.
+
 ## Answer first
 
 The [valuation-horizon contract](2026-W34-valuation-contract.json) is the exact
@@ -57,6 +59,8 @@ verifier paths, and transition diagnostics.
 | **Twelve months — 20 August 2027** | **$2.86** | **$7.90** | **$13.78** | **$8.23** | **28.6%** |
 
 The six- and twelve-month values come from the same 100,000 linked draws, not two unrelated scenario tables. The twelve-month model estimates a **16.0% probability of fair-value impairment of at least 30%** and an **8.2% probability of impairment of at least 50%**; the corresponding six-month figures are **9.0%** and **4.1%**. Bottom-decile expected value is **$2.79 at six months** and **$2.06 at twelve months**. These are model-implied frequencies, not historically calibrated frequencies or market-price return forecasts.
+
+> **Plain-English aside — how to read P10, P50, P90, and mean:** Sort all 100,000 modeled fair values from lowest to highest. P10 is one-tenth of the way up the list, P50 is the middle, and P90 is nine-tenths of the way up. P10 is a serious downside marker, not the worst case. The mean adds every value and divides by 100,000, so unusually large upside paths can pull it above the median. These numbers describe the model's fair-value range; they do not promise that SNAP's quoted share price will reach those values on either date.
 
 The current value does not require giving Snap Meta's multiple. It comes from four central inputs:
 
@@ -95,6 +99,8 @@ Distribution mean = Σ simulated values / number of draws
 
 P10 / P50 / P90 = the 10th / 50th / 90th percentiles of simulated value
 ```
+
+> **Plain-English aside — enterprise value versus what shareholders own:** Equity value is the value of all shares. Enterprise value is the value of the operating business before deciding how it is financed. Here, `EV = diluted equity value + debt - cash and marketable securities`. To move back to shareholders, the model subtracts target net debt and then divides by diluted shares. Including the debt on the way in and forgetting to subtract it on the way out would overstate what belongs to shareholders.
 
 ## Current capitalization
 
@@ -136,6 +142,8 @@ Illustrative owner-cash multiple = $9.80 billion / $422 million
 
 This is why Snap can be cheap on revenue but not obviously cheap on clean current owner earnings.
 
+> **Plain-English aside — why dilution changes the cash-flow story:** Stock compensation saves cash today but can create more ownership slices. If total cash flow rises 10% while diluted shares also rise 10%, cash flow per share is roughly unchanged. Buybacks first have to replace employee-issued shares before they reduce the total slice count. The $284 million proxy is not a second cash expense; it is a way to make the ownership transfer visible.
+
 ## Revised operating anchor paths
 
 The detailed quarter-by-quarter build is in the [canonical four-quarter forecast](../research/2026-W34-quarterly-forecast.md).
@@ -168,6 +176,8 @@ The base uses $7.483 billion of revenue, $1.676 billion of adjusted EBITDA, and 
 
 The model does not add $500 million directly to FCF. Legal, safety, infrastructure, cash interest, post-restructuring transition or contractor substitution, and Specs can absorb part of it. Most announced restructuring cash had already been paid by 30 June 2026 and is not deducted again.
 
+> **Plain-English aside — why use three valuation methods?** The revenue-multiple method asks what the whole business might be worth relative to sales. Sum of the parts values advertising, direct revenue, and Specs separately. Discounted cash flow converts future per-share cash into today's dollars. All three depend on the same underlying company, so they are cross-checks with different weaknesses—not three independent votes.
+
 ## Method 1: target-date revenue multiple
 
 This method capitalizes the latest twelve months of revenue expected to be known at the August 2027 target date.
@@ -188,6 +198,8 @@ This is a scenario judgment, not the output of a peer regression or a reliable h
 
 The bull 3.30 times multiple remains approximately 46% below Meta and 68% below Reddit. It requires clear advertising-price repair, high-value-user stabilization, durable direct revenue, contained dilution, and bounded Specs/legal spending.
 
+> **Plain-English aside — a revenue multiple is shorthand, not a magic conversion:** The base `2.20×` multiple says the operating business would be worth $2.20 for every $1 of forecast annual revenue. It does not say revenue is profit or cash. Investors award higher multiples when growth is durable, margins can become attractive, and risk is lower. Snap's multiple stays far below Meta's because Snap is weaker on all three.
+
 ## Method 2: sum of the parts
 
 Other Revenue deserves a separate multiple because it grows faster and includes recurring subscriptions. It does not deserve a software-as-a-service multiple because subscriber churn, geography, plan mix, partnership revenue, and gross margin are not disclosed. Current country-level subscription prices and the regional contribution model improve the allocation range but do not reveal subscriber geography or plan mix, so they do not change this multiple.
@@ -203,6 +215,8 @@ Other Revenue deserves a separate multiple because it grows faster and includes 
 | **Value per share** | **$2.51** | **$7.81** | **$14.29** |
 
 No hardware profit is modeled. The Specs line is an option value after expected negative carry, not a reimbursement of more than $3 billion of historical spending.
+
+> **Plain-English aside — sum of the parts:** Imagine a property with a house, a shop, and undeveloped land. A single price per square metre may hide their different economics, so you value each piece separately and add them. SOTP does that here: slower, weaker advertising gets one multiple; faster direct revenue gets another; Specs receives only a bounded option value; net debt is then subtracted.
 
 ## Method 3: discounted cash flow
 
@@ -264,6 +278,8 @@ For reproducibility, the model linearly interpolates FCF margin from the year-on
 
 The terminal value represents approximately 50%, 63%, and 71% of the three values. The DCF is therefore a cross-check, not a precision instrument.
 
+> **Plain-English aside — what a DCF does, and why the terminal value matters:** A dollar received years from now is worth less than a dollar today, so the DCF discounts future cash back to the present. The “terminal value” stands in for all cash after year five. When it supplies 63% of the base answer, small changes to distant growth or the required return can move the valuation substantially. That is why the DCF checks the other methods instead of pretending to produce a precise truth.
+
 ## Deterministic anchor cross-check
 
 | Operating anchor | Revenue-multiple method | Sum-of-the-parts method | Discounted-cash-flow method | Median cross-check |
@@ -273,6 +289,8 @@ The terminal value represents approximately 50%, 63%, and 71% of the three value
 | Upside | $14.13 | $14.29 | $14.22 | **$14.22** |
 
 These are deterministic cross-checks, not the P10, P50, and P90 distribution outputs. The stochastic engine uses the same three valuation methods on every draw and takes their per-draw median so that shared fundamentals are not mistaken for three independent estimates. The central legal and regulatory allowances are already inside revenue and FCF and are not deducted again.
+
+> **Plain-English aside — “per-draw median”:** In one simulated future, the model calculates all three method values and keeps the middle one. For example, if they produce $6, $8, and $14, the combined value is $8. Repeating that process for every draw stops one extreme method from dominating, while still recognizing that all three methods are looking at the same simulated business.
 
 ## Distribution-first valuation
 
@@ -288,6 +306,8 @@ The replacement is a transparent, deterministic-seed Monte Carlo model. It elici
 | **Per-draw median triangulation** | **$8.23** | **$2.86** | **$7.90** | **$13.78** | **28.6%** |
 
 The output remains **uncalibrated structured elicitation** and therefore runs in shadow-model status. Its improvement is transparency, dependency handling, and full-distribution risk reporting—not a claim that 28.6% is an observed historical frequency. The complete contract, marginals, tail map, diagnostics, and limitations are in the [distribution-first valuation memo](../research/2026-08-23-distribution-first-valuation.md).
+
+> **Plain-English aside — what Monte Carlo adds, and what it cannot add:** Instead of calculating only three bundled stories, the model mixes many plausible values for growth, margins, debt, dilution, multiples, and legal outcomes 100,000 times. This shows how risks can cluster and produces a fuller range. But simulation does not turn analyst assumptions into historical facts. “28.6% below $5.21” means 28.6% of these modeled draws—not that Snap has failed 28.6% of the time in a proven reference class.
 
 ### Seasonality and one-off events—not extra upside
 
@@ -327,6 +347,8 @@ These deterministic paths remain arithmetic cross-checks. Their revenue, multipl
 The link is explicit rather than a straight-line interpolation from $5.21. Six-month revenue rank is correlated **0.85** with the weighted twelve-month advertising/Other-Revenue state, the valuation-multiple rank **0.80**, and capital/share-count rank **0.90**. The same legal branch continues across both horizons, with 50% of its modeled cash and trailing-revenue effect recognized by six months. Separate checkpoint shocks allow third- and fourth-quarter evidence to differ from the final twelve-month state. These transition coefficients are analyst judgments, not measured serial correlations.
 
 The resulting six-/twelve-month fair-value correlation is **0.81**, and twelve-month value exceeds its linked six-month value in **63.4%** of draws. Sorting paths by their six-month value gives the following forward bridge:
+
+> **Plain-English aside — linked horizons:** Each simulated company has one continuous story that passes through February and then August. Strong February paths usually remain stronger in August; weak paths usually remain weaker. The 0.81 correlation measures that relationship—it is **not** an 81% probability of success. The 63.4% figure says the August fair value finished above the same path's February fair value in roughly 63 out of 100 draws.
 
 | Six-month value band | Twelve-month mean | Twelve-month median | Probability twelve-month value is below $5.21 |
 | --- | ---: | ---: | ---: |
@@ -372,6 +394,8 @@ Each anchor's target net-debt bridge begins with its after-allowance FCF. The st
 
 No separate $0.09–$0.14 per-share amount is subtracted after these operating inputs. The approximately $600 million–$1.2 billion discontinuous adverse tail is represented in the severe and extreme legal states and can coincide with weak operating and multiple draws. Correlations among those risks are structured judgment, not observed calibration. A structural product injunction can still produce a value below the reported P10.
 
+> **Plain-English aside — why the legal reserve is not subtracted twice:** The deterministic narratives already use revenue and cash flow after their stated legal allowances. The simulation instead starts before the allowance and subtracts one sampled legal state. Adding another per-share deduction afterward would charge the same risk twice. The direct cash cost and the possibility of a lower valuation multiple are still allowed to arrive together in a severe path.
+
 ## Reverse expectations
 
 The current lease-excluded enterprise value of $10.675 billion equals:
@@ -392,6 +416,8 @@ At $7.483 billion of base target revenue and 1.92 billion target shares:
 - every $250 million of net debt changes value by approximately **$0.13 per share**;
 - a 2% increase in target shares reduces the base revenue-multiple value by approximately **$0.16 per share**.
 - removing a 3% World Cup-linked share of base Q3 advertising reduces the base revenue-multiple value by approximately **$0.05 per share** and the base sum-of-the-parts value by approximately **$0.04 per share**.
+
+> **Plain-English aside — “one turn of the multiple”:** A turn means one full multiple point: for example, moving from `2.0× revenue` to `3.0×`. A quarter-turn is 0.25. At the base revenue and share count, that seemingly small 0.25 change moves value by about $0.97 per share—far more than most small forecast adjustments. The market's confidence in the durability of Snap's economics is therefore one of the largest valuation drivers.
 
 Mechanically subtracting the current $691 million operating-lease liability from target equity value would reduce scenario values by approximately $0.35–$0.37 per share. That is a diagnostic, not an alternative target: applying it without also adjusting rent-bearing cash flows and peer multiples would double count part of the lease burden.
 

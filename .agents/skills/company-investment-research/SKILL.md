@@ -55,6 +55,21 @@ Reconcile periods, fiscal calendars, units, currencies, segments, restatements, 
 
 Use deterministic calculations for statement bridges, growth, margins, unit economics, enterprise value, per-share values, expected return, and sensitivities. Fail closed when an input is missing; never hide an opinion inside a default constant.
 
+## Explain the decision-critical mechanics in place
+
+Write canonical company reports for an intelligent reader who may not know finance, accounting, auctions, the sector, or forecasting terminology. A glossary is a reference, not a substitute for an explanation where the concept changes the interpretation of an adjacent number.
+
+Use short blockquoted callouts titled `Plain-English aside — <concept>` when a reader must understand a mechanism to follow the investment story. Each aside should:
+
+- explain one decision-critical idea in concrete language without sounding patronizing;
+- connect directly to the number, table, or claim beside it;
+- use a small 100-unit example, formula, or analogy when that removes abstraction;
+- preserve the distinction among reported fact, author calculation, model assumption, and interpretation;
+- state what the term does **not** mean when confusion is likely; and
+- add no new evidence or assumption that is absent from the audited analysis.
+
+Prioritize revenue mechanics, unit economics, comparison bases, mix, operating leverage, stock compensation and dilution, enterprise-to-equity bridges, valuation multiples, discounted cash flow, probability/percentile language, linked horizons, seasonality, benchmark-relative versus absolute value, and the difference between valuation and portfolio action. Do not explain every acronym merely because it exists, repeat the same full aside in every paragraph, or force the reader to leave the report for a definition essential to the conclusion. Define the mechanism once at first decision-critical use, then link back or use a one-line reminder. Make tables readable without relying on color, hover states, or unstated finance conventions.
+
 ## Infer expectations and variant perception
 
 Use at least two lenses when practical:
@@ -130,6 +145,8 @@ Return:
 8. portfolio action only when context permits: `buy`, `add`, `hold`, `reduce`, `exit`, `watch`, or `pass`;
 9. confidence, material unknowns, next review, and monitoring plan;
 10. links to the company landing page, coverage-cycle manifest, identity, source log, canonical final report, valuation, decision, and public commit when published.
+
+Before handoff, perform a novice-reader pass on the landing page, canonical report, valuation, and decision. Check whether a non-specialist can explain how the company makes money, what the pivotal operating change means, how enterprise value becomes per-share value, how to read the reported range, why the stance can differ from the action, and what evidence would change the conclusion. Add in-place asides where the answer otherwise depends on unexplained jargon.
 
 Run `npm run research:company -- validate companies/<ticker>` before calling a
 dossier reviewed or release-ready. A material change to a model, horizon

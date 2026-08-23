@@ -70,6 +70,8 @@ Choose the depth that suits you:
 
 The [company landing page](../README.md#find-the-question-then-drill-down) links every important claim to its specialist memo, model, and audit trail. The [glossary](../GLOSSARY.md) defines unfamiliar terms without interrupting the story.
 
+> **How to use the plain-English asides:** They translate a nearby number or finance/ad-tech concept at the moment it matters. Skip any aside you already understand. The asides add no new evidence or model assumptions; they are a second way of reading the same analysis.
+
 ---
 
 ## Two-minute answer
@@ -114,17 +116,27 @@ For four quarters through Q1 2026, Snap grew advertising inventory while effecti
 
 That is encouraging, but the comparison was unusually forgiving. Q2 2025 price had fallen 10% and included a temporary Ads Manager pricing problem, Ramadan timing, and de minimis effects, leaving the two-year price index roughly flat. World Cup demand also helped Q2 2026. The base case therefore asks for **13.5% next-four-quarter advertising growth with roughly flat price**, not a leap toward Meta's economics. The detailed [advertising evidence](../research/2026-08-21-ads-pricing-recommenders-revalidation.md) explains why better models can help while Meta's conversion history and auction liquidity remain hard to copy.
 
+> **Plain-English aside — what happened in the advertising auction?**
+>
+> Think of Snap as selling tiny moments of attention. Its advertising revenue is roughly **the number of advertisements shown × the average price of each advertisement**. During the four quarters through Q1, Snap showed more advertisements but received less for each one: volume rose, price fell. In Q2, the pattern flipped. The price was about 10% higher and revenue was 9.3% higher, so the implied number shown was approximately `1.093 ÷ 1.10 = 0.994`, or about 0.6% lower. Because the reported price is rounded, “roughly flat to slightly negative” is the honest description.
+>
+> The easy-comparison warning is just as important. If price moves from 100 to 90 one year and then rises 10%, it reaches 99—not 110. The apparent Q2 rebound therefore mostly returned price to where it had been two years earlier. World Cup demand may also have temporarily added more advertisers to the auction. The base case is asking for stabilization and healthy volume growth, not Meta-like pricing power.
+
 ### 2. Direct revenue has become a meaningful second engine
 
 Other Revenue reached **$316 million in Q2**, up 85%, and now contributes almost one-fifth of company revenue. Snap reports more than 25 million paying subscribers and a direct-revenue run rate above $1 billion. This proves real willingness to pay and allows total revenue to grow faster than advertising.
 
 It does not yet prove software-like quality. Snap does not disclose subscriber churn, plan or geographic mix, subscription margin, or how much Other Revenue comes from its AI partnership. The base forecasts **$1.435 billion of Other Revenue over the next four quarters, up about 40%**—large enough to matter, but valued below a pure software subscription business. See the [confidence-gap review](../research/2026-08-21-confidence-gap-estimates.md).
 
+> **Plain-English aside — why 85% growth is exciting but not enough:** A small business can grow very quickly in percentage terms without yet carrying the whole company. Other Revenue is now large enough—about one dollar in every five of Q2 revenue—to matter. But investors still need to know how many subscribers cancel, what it costs to serve them, and how much revenue comes from a potentially temporary partnership. Growth tells us the engine is accelerating; churn and margin tell us how good the engine is.
+
 ### 3. The leaner cost base must become per-share cash flow
 
 In Q2, revenue grew 19% while total adjusted costs grew 4%; GAAP gross margin rose from 51.4% to 58.2%; and full-time employees fell from 5,381 to 4,723 sequentially. Snap also targets more than $500 million of annualized savings. That is visible operating leverage, not yet a promise of owner earnings.
 
 Recent adjusted-profit guidance supports the near-term forecast: actual adjusted EBITDA beat the top of guidance by 15%–35% in each of the last four guided quarters. Revenue guidance was much tighter, with a median beat of only about 1.3% across five recent quarters. The base therefore gives more credit to cost execution than to surprise demand. It forecasts $1.10 billion of next-four-quarter headline free cash flow, but still raises diluted shares from 1.881 billion to 1.920 billion because stock compensation and buybacks remain unresolved. The [guidance audit](../research/2026-08-21-meta-reddit-relative-valuation.md#appendix-does-snap-habitually-guide-low-and-beat) and [cost memo](../research/2026-08-21-guidance-cost-efficiency.md) contain the full bridge.
+
+> **Plain-English aside — operating leverage versus owner benefit:** “Operating leverage” means revenue grows faster than costs, so profit can grow faster than revenue. That is good. But a shareholder owns a percentage of the company, not the headline profit total. If Snap keeps issuing shares to employees, the same company is divided into more pieces. The decisive test is therefore **free cash flow per diluted share**: cash generated for the whole company, divided by all shares that could economically exist.
 
 ### 4. Better models help, but they do not erase Meta's moat
 
@@ -166,6 +178,8 @@ Second-quarter 2026 revenue was $1.599 billion:
 
 This mix matters. Snap can grow total revenue in the high teens even if advertising grows only in the low teens. It also means investors need to understand the quality of Other Revenue rather than treating it as a rounding error.
 
+> **Plain-English aside — “revenue mix”:** This simply means where each dollar comes from. If advertising grows slowly but subscriptions grow quickly, total revenue can still look strong. That is not deceptive, but it answers a different question. The advertising line tells us whether Snap's main marketplace is repairing; Other Revenue tells us whether a second business is emerging.
+
 The market opportunity is not the constraint. Depending on definition, global digital advertising is approximately $700–$800 billion. Snap's annualized advertising revenue remains below 1% of that pool. The constraint is whether advertisers bid enough for each unit of attention.
 
 ### Is Snap gaining or losing advertising share?
@@ -205,6 +219,8 @@ Snap is monetizing high-value users much better. North American revenue rose 15%
 All net user growth comes from Rest of World (**RoW**), which represents approximately 61% of daily active users (**DAU**) but only 19% of revenue. At current quarterly average revenue per user (**ARPU**), roughly ten Rest of World (**RoW**) users produce the same revenue as one North American user.
 
 That does **not** prove Rest of World (**RoW**) users are unprofitable. A Q2-reconciled model using recent country ad-yield observations estimates approximately 13% Rest-of-World gross contribution and approximately 3% after directly attributable cash-like sales and support, with wide sensitivity ranges of 4%–24% and -6%–14%, respectively. The [regional advertising economics memo](../research/2026-08-21-regional-ad-economics.md) shows the assumptions and exact bridge. Snap still does not disclose regional infrastructure, subscription, support, moderation, payment, or sales costs. Global daily active users (**DAU**) can therefore rise while the economic mix deteriorates even if the marginal region is modestly positive.
+
+> **Plain-English aside — why one user is not one economic unit:** A daily user in North America produced about $10.26 of Q2 revenue; a Rest-of-World user produced about $1.00. So adding ten Rest-of-World users can add roughly the same revenue as retaining one North American user, before considering different costs. This is why a record global user count can coexist with concern about the business. **DAU measures audience size; ARPU helps measure the economic value of that audience.**
 
 ### Why users stay—and why they age out
 
@@ -300,6 +316,8 @@ Low advertising prices are not automatically bullish for Snap shareholders. They
 - the platform added supply faster than demand.
 
 The investable question is whether good advertiser outcomes cause effective cost per thousand advertising impressions (**eCPM**) to stabilize and rise.
+
+> **Plain-English aside — cheap can mean “bargain” or “weak demand”:** A cheap advertisement is great for the buyer only if it produces sales. For Snap, a low price can mean advertisers have found an overlooked bargain—or that too few advertisers want the inventory. The bullish sequence is: advertisers get good results → more advertisers bid → the auction becomes more competitive → Snap earns more per 1,000 impressions without needing to overload users with advertisements.
 
 ### What Snap's own yield says
 
@@ -451,6 +469,8 @@ Older advertiser tutorials that described Snap Ads Manager as materially behind 
 
 The feature-checkbox problem is largely solved. The remaining disadvantage is **closed-loop scale**: more advertisers create more bids and conversions; more conversions improve models; better models improve returns; better returns attract more budget. A redesigned interface or a new Smart feature cannot instantly create that loop.
 
+> **Plain-English aside — “auction liquidity”:** Imagine selling a house with two interested buyers versus twenty. More serious bidders make it easier to find a fair price and less likely that the house sells cheaply. An advertising auction works similarly, except it happens millions of times. Meta has far more advertisers, campaigns, and recorded purchase outcomes competing inside the system. Snap can copy software features; it cannot instantly copy that crowd of buyers or the learning produced by their purchases.
+
 Several 2026 Snap advertising tools are still early, beta, or planned. A current valuation should credit the capabilities that are in production and treat the rest as milestones—not assume every announcement already affects revenue.
 
 ### Forecast translation
@@ -585,6 +605,8 @@ Savings can be consumed by:
 
 The proof measure is free cash flow (**FCF**) per diluted share, not adjusted expense alone.
 
+> **Plain-English aside — why a cost cut does not flow dollar-for-dollar into cash:** “$500 million of annualized savings” describes a lower cost run rate, not a $500 million cheque arriving in the bank. Some savings may fund computing, legal work, interest, taxes, contractors, or Specs. Free cash flow is what remains after the company's real cash needs; free cash flow **per diluted share** asks how much of that remainder belongs to each ownership slice.
+
 One more cash-flow correction matters: by 30 June, most restructuring cash had already been paid. The April estimate of $75–$100 million of future cash spending should not be deducted again from a forecast that starts from the second-quarter balance sheet.
 
 ### Artificial-intelligence productivity evidence
@@ -645,6 +667,8 @@ Illustrative owner cash = $706 million headline free cash flow (FCF)
 ```
 
 That produces an illustrative 23.2 times owner-cash multiple, not the 13.9 times headline free cash flow (**FCF**) multiple.
+
+> **Plain-English aside — stock compensation and the pizza:** Stock-based compensation does not use cash on the day it is granted, which helps headline free cash flow. But it can create more shares. Imagine the company as a pizza: cash flow can make the pizza larger while new shares cut it into more slices. Buybacks help owners only after replacing the slices issued to employees. This is why Snap can report real free cash flow while the cash attributable to each existing share improves much less.
 
 ### Debt—the historical skill and the current reality
 
@@ -803,6 +827,8 @@ Across 100,000 draws, the legal-state simulation averages approximately **$177 m
 
 Those three anchor paths use the displayed after-allowance revenue and free cash flow (**FCF**). The stochastic engine instead begins with pre-legal revenue and FCF marginals and subtracts exactly one sampled legal state; it does not deduct the anchor allowances again. Its net-debt bridge then uses the after-state FCF. Nothing subtracts another $0.09–$0.14 per share later.
 
+> **Plain-English aside — “count it once”:** Suppose a likely legal cost is $150 million. If the cash-flow forecast already includes that cost, subtracting another $150 million from the final valuation would charge shareholders twice for the same risk. The narrative anchor model starts after an allowance; the simulation starts before it and subtracts one sampled legal outcome. They are two routes to the same destination, not two deductions stacked together.
+
 ### Risk map
 
 | Jurisdiction | Current status | Central next event | Central probability judgment | Central incremental value effect |
@@ -875,6 +901,8 @@ The third-quarter forecast adds no World Cup uplift beyond management's guide, w
 
 The fourth-quarter base preserves normal holiday strength but gives no explicit credit for the November 2026 United States election or the one additional calendar day between Thanksgiving and Christmas. A political-archive diagnostic changes reported 2024–2025 annual growth by only about 0.5–0.6 percentage point and suggests even a 2024-like election swing is only about $0.03 per share at the diagnostic multiple. First-quarter 2027 laps a $20 million–$25 million geopolitical headwind and gains Easter timing as Easter moves from 5 April 2026 to 28 March 2027; second-quarter 2027 loses that Easter timing and laps the World Cup-aided comparison. These timing effects change quarterly interpretation, not the four-quarter total.
 
+> **Plain-English aside — seasonality:** Advertisers usually spend heavily before the holidays, so Snap's Q4 is normally strong and Q1 normally falls back. Comparing Q1 directly with the preceding Q4 can therefore make a normal reset look alarming. The cleaner comparison is usually the same quarter a year earlier. One-off events such as a World Cup can still distort even that comparison, which is why the model separates recurring seasonal shape from temporary event demand.
+
 These paths are unweighted operating narratives. The stochastic valuation samples continuous curves around them rather than treating them as exhaustive probability buckets. The [revised quarterly model](../research/2026-W34-quarterly-forecast.md#seasonality-and-event-normalization) contains the historical sequential bridge, event-denominator sensitivities, quarterly revenue and adjusted-profit build, annual cost and cash-flow bridge, capital bridge, formulas, and upgrade/downgrade checkpoints. Working capital and target share count remain analyst assumptions because Snap does not disclose enough detail for a fully mechanical forecast.
 
 ---
@@ -894,6 +922,8 @@ At $5.21:
 - trailing revenue is $6.351 billion;
 - enterprise value (**EV**) / trailing revenue is approximately 1.68 times.
 
+> **Plain-English aside — equity value, enterprise value, and a revenue multiple:** Equity value is the market value of all shareholder slices. Enterprise value adds net debt because a buyer of the whole operating business effectively takes on the debt and receives the cash. In this report, `EV = diluted equity value + net debt`. An `EV/revenue` multiple of 1.68 times means the operating business is valued at $1.68 for each $1 of trailing annual sales. It does **not** mean each sales dollar is profit; the multiple only makes sense alongside growth, margins, risk, and dilution.
+
 ### Primary formula
 
 ```text
@@ -904,14 +934,18 @@ Target value per share =
 
 ### Distribution values
 
-| Distribution output | Operating interpretation | Twelve-month value | Fair-value change from $5.21 |
+| Distribution output | Statistical meaning | Twelve-month value | Fair-value change from $5.21 |
 | --- | --- | ---: | ---: |
-| Bear narrative / P10 | advertising repair proves temporary; high-value users weaken; savings partly rebuild; dilution continues | **$2.86** | -45% |
-| Base narrative / P50 | total revenue grows in the mid-to-high teens; price becomes durably flat/positive; margin and free cash flow (**FCF**) improve; risk remains discounted | **$7.90** | +52% |
-| Bull narrative / P90 | advertising price turns positive; direct revenue scales; users stabilize; dilution stops | **$13.78** | +165% |
-| **Mean** | average across all modeled outcomes | **$8.23** | **+58%** |
+| P10 | 10% of modeled values are lower; 90% are higher | **$2.86** | -45% |
+| P50 / median | half of modeled values are lower and half are higher | **$7.90** | +52% |
+| P90 | 90% of modeled values are lower; 10% are higher | **$13.78** | +165% |
+| **Mean** | arithmetic average across all modeled outcomes | **$8.23** | **+58%** |
+
+> **Plain-English aside — this is a range, not three named futures:** P10 is not “the bear case,” and P90 is not “the bull case.” They are positions in the full simulated distribution. P10 means one in ten modeled values fell below $2.86; it is not the worst possible outcome. P50 is the middle draw. The mean averages every draw and can be pulled upward by large upside outcomes. Here the $8.23 mean sits above the $7.90 median, which tells us the upside tail pulls the average higher.
 
 The old 30% / 50% / 20% weighting was retired because the three points were neither calibrated frequencies nor exhaustive conditional means. The replacement samples five-point marginal curves for operating, capital, and valuation drivers; adds explicit common-factor dependence; and branches through mutually exclusive legal states. It takes the median of the three method values in each draw, not the average of three supposedly independent methods.
+
+The downside, central, and upside operating narratives remain separate deterministic cross-checks in the table below. They help readers understand coherent stories; they are not relabeled percentiles or assigned probabilities.
 
 ### Cross-checks
 
@@ -939,6 +973,8 @@ The central path remains approximately two-thirds below Meta Platforms and four-
 The model now carries every draw through both horizons. The six-month distribution is **$3.81 P10 / $6.77 P50 / $10.64 P90 with a $7.09 mean**, compared with **$2.86 / $7.90 / $13.78 and an $8.23 mean** at twelve months. The former $3.70 / $6.73 / $10.81 downside, central, and upside calculations remain deterministic cross-checks whose revenue, multiple, net-debt, and share assumptions anchor the six-month driver marginals after their assumed embedded legal allowances are reconciled; they are no longer presented as if they were distribution percentiles.
 
 The link is not a straight-line interpolation. Each path carries correlated revenue, valuation-multiple, capital, dilution, and legal states from the February checkpoint into August. The resulting fair-value correlation is **0.81**, and twelve-month fair value exceeds its linked six-month value in **63.4%** of draws. A bottom-quartile six-month value leads to a $4.04 twelve-month mean and a 74.8% probability that twelve-month value remains below $5.21; a top-quartile six-month value leads to a $12.89 mean and only a 0.7% probability below $5.21. The coefficients are structured analyst judgments rather than empirically estimated transition frequencies, and neither horizon predicts literal market-price convergence.
+
+> **Plain-English aside — how the six-month value leads to twelve months:** Every simulated company travels through both dates. A path with strong advertising, cash, and dilution at six months usually remains better at twelve months; a weak path usually remains worse. A correlation of 0.81 describes that strong relationship—it does **not** mean “an 81% chance of success.” The paths can still change direction when new evidence arrives. The 63.4% figure means the twelve-month fair value finished above its own earlier six-month value in roughly 63 out of 100 modeled paths.
 
 Six months should show the third and fourth quarters. That is enough to test guidance behavior, cost savings, advertising price direction, and the first Specs launch response. It is not enough to prove multi-year subscription retention or durable legal outcomes.
 
@@ -1032,11 +1068,15 @@ Approximate portfolio impact = position weight × security drawdown
 | -50% | -2.5 percentage points | -5.0 percentage points |
 | -70% | -3.5 percentage points | -7.0 percentage points |
 
+> **Plain-English aside — position size turns a stock loss into a portfolio loss:** If Snap is 10% of a portfolio and falls 50%, the portfolio loses about 5% from Snap (`10% × 50% = 5%`). This is why an attractive valuation can still justify reducing an oversized position. “Cheap” describes the security; position size determines how much damage being wrong can do.
+
 ### What the valuation says about action
 
 - The stock is attractive on absolute expected value, but position size must be tested against a private loss budget.
 - The cost improvement is already known. Acting before Q3 means betting that advertising—not merely layoffs or Other Revenue—surprises positively.
 - Holding is coherent if the severe-loss contribution fits the risk budget; reducing is coherent if it does not. Adding becomes easier after advertising-price proof or at a materially wider price-to-value gap.
+
+> **Plain-English aside — how “attractive” and “watch” can both be true:** Valuation asks, “Does the stock look cheap relative to the modeled business value?” Action asks, “Is the evidence strong enough, and can the portfolio survive the downside?” Snap can pass the first test and fail the second for now. Waiting for Q3 gives up some possible upside in exchange for information about whether the advertising repair is real. Cheapness is a valuation conclusion; watch/hold is an evidence-and-risk decision.
 
 | Portfolio context | Current research action at $5.21 |
 | --- | --- |

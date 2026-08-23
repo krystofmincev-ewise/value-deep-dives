@@ -185,7 +185,7 @@ The Q2 advertising-price disclosure validates the central path's required direct
 | Bull narrative / P90 | **$13.78** | 10% of modeled values are higher |
 | **Mean** | **$8.23** | Average across 100,000 draws |
 
-The model assigns 28.6% of values below $5.21, 16.0% to a loss of at least 30%, and 8.2% to a loss of at least 50%. Six-month checkpoints remain unweighted because the model does not estimate six-month price convergence.
+The linked model produces a six-month $3.81 P10 / $6.77 P50 / $10.64 P90 and $7.09 mean, then a twelve-month $2.86 / $7.90 / $13.78 and $8.23 mean. It assigns 28.5% and 28.6% of the respective horizon values below $5.21. The twelve-month probabilities of at least 30% and 50% fair-value impairment remain 16.0% and 8.2%. Six- and twelve-month fair values have 0.81 correlation because the model carries linked revenue, multiple, capital, dilution, and legal states across each draw; it does not claim market-price convergence.
 
 Confidence remains below high because:
 

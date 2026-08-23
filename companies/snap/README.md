@@ -20,7 +20,7 @@ tags: [social-media, digital-advertising, consumer, ad-tech]
 
 | Question | Current answer |
 | --- | --- |
-| Valuation verdict | **Attractive at $5.21:** **$8.23 mean / $7.90 median** twelve-month value |
+| Valuation verdict | **Attractive at $5.21:** six-month **$7.09 mean / $6.77 median** leading to twelve-month **$8.23 / $7.90** |
 | New investor | **Watch through the third-quarter operating checkpoint** |
 | Existing long | **Conditional hold / no add**; reduce if the severe-loss case exceeds the investor's private risk budget |
 | Core uncertainty | Was Q2 durable advertising-auction repair, or an easy comparison helped by World Cup demand? |
@@ -47,8 +47,9 @@ The analysis is complete. The fair-value distribution is not itself a target-pri
 | Research | Analysis complete; prospective scorecard registration pending |
 | Current coverage cycle | [`SNAP-2026-W34-01` — initial](coverage-cycles/2026-W34-01-initial/README.md) |
 | Canonical final report | [Snap at $5.21: cheap for a reason—but perhaps too cheap](thesis/2026-W34-final-report.md) |
+| Modeled six-month values | P10 $3.81 / P50 $6.77 / P90 $10.64; mean $7.09; 28.5% below $5.21 |
 | Modeled twelve-month values | P10 $2.86 / P50 $7.90 / P90 $13.78; mean $8.23; 28.6% below $5.21 |
-| Target horizon | 20 August 2027; unweighted six-month paths $3.70 / $6.73 / $10.81 |
+| Target horizons | 20 February 2027 and 20 August 2027; linked fair-value correlation 0.81 |
 | Decision frame | Current value and action from $5.21; historical cost basis excluded from the analysis |
 | Source cutoff | 22 August 2026, 23:57 Central European Summer Time (CEST) |
 | Next review | Q3 2026 results; no later than 15 November 2026 |
@@ -149,5 +150,5 @@ During an active cycle, research updates the one canonical report in place. Same
 - 21 August 2026: a country-level Snap, Meta, and Reddit advertising-price pass replaced the uniform regional-cost proxy with a Q2-reconciled contribution model; North America and Europe remain clearly positive, while Rest of World is estimated positive before direct selling/support and near breakeven afterward. The interpretation improved without changing consolidated valuation.
 - 21 August 2026: the completed Gemini recommender report was recovered and audited, current Snap semantic-ID production research and a targeted licensed peer-workforce review were added, the Universal User Model's aggregate/per-user distinction was corrected, and the technical scenarios were translated into an explicit advertising and per-share sensitivity without changing the consolidated target.
 - 22 August 2026: an independent seasonality and one-off-event audit added the advertising-specific sequential bridge, Ramadan/de minimis comparison factors, political-spend growth normalization, exact Easter and holiday-calendar timing, and a Q3 World Cup capitalization sensitivity. Those checks retained the operating anchors and preserved wide downside dispersion.
-- 23 August 2026: the unsupported 30% / 50% / 20% company-scenario weighting was retired. A deterministic 100,000-draw structured-elicitation model now reports a $2.86 P10, $7.90 median, $13.78 P90, $8.23 mean, explicit downside probabilities, legal-tail states, and dependency stress. The Snap fact cutoff remains 22 August; this was a method change, not a post-cutoff evidence update.
+- 23 August 2026: the unsupported 30% / 50% / 20% company-scenario weighting was retired. A deterministic 100,000-draw structured-elicitation model now links a six-month $3.81 P10 / $6.77 median / $10.64 P90 / $7.09 mean to the twelve-month $2.86 / $7.90 / $13.78 / $8.23 distribution, with explicit downside probabilities, legal-tail states, dependency stress, and transition diagnostics. The Snap fact cutoff remains 22 August; this was a method change, not a post-cutoff evidence update.
 - The analytical dossier is complete and release-ready. A separate prospective return record remains gated on an explicit market-convergence forecast, reproducible official-close capture, matching benchmark provenance, and an immutable ledger record.

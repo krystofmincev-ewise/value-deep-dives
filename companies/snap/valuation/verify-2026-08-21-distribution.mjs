@@ -2,12 +2,15 @@ import assert from "node:assert/strict";
 
 import {
   dependencyLoadings,
+  horizonLinkages,
   interpolateMarginal,
   legalStates,
   marginalCurves,
   modelContract,
   printableSummary,
   runDistributionModel,
+  sixMonthEmbeddedLegalAllowances,
+  sixMonthMarginalCurves,
 } from "./model-2026-W34-distribution.mjs";
 
 function assertClose(actual, expected, tolerance, label) {
@@ -17,27 +20,107 @@ function assertClose(actual, expected, tolerance, label) {
   );
 }
 
+assert.equal(
+  modelContract.modelVersion,
+  "structured_elicitation_monte_carlo_v2_joint_horizons",
+);
 assert.equal(modelContract.asOf, "2026-08-22");
 assert.equal(modelContract.sourceCutoffAt, "2026-08-22T23:57:00+02:00");
 assert.equal(modelContract.referencePrice, 5.21);
+assert.equal(modelContract.sixMonthHorizon, "2027-02-20");
 assert.equal(modelContract.targetHorizon, "2027-08-20");
 assert.equal(modelContract.sampleCount, 100_000);
 
-for (const [name, curve] of Object.entries(marginalCurves)) {
-  assert.equal(curve.length, 5, `${name} must have five probability anchors`);
-  assert.ok(curve.every(Number.isFinite), `${name} must contain finite numbers`);
-  assert.ok(
-    curve.every((value, index) => index === 0 || value >= curve[index - 1]),
-    `${name} must be in numeric percentile order`,
-  );
-  assertClose(interpolateMarginal(curve, 0.10), curve[1], 1e-12, `${name} P10`);
-  assertClose(interpolateMarginal(curve, 0.50), curve[2], 1e-12, `${name} P50`);
-  assertClose(interpolateMarginal(curve, 0.90), curve[3], 1e-12, `${name} P90`);
+for (const [horizon, curves] of Object.entries({
+  twelveMonth: marginalCurves,
+  sixMonth: sixMonthMarginalCurves,
+})) {
+  for (const [name, curve] of Object.entries(curves)) {
+    const label = `${horizon}.${name}`;
+    assert.equal(
+      curve.length,
+      5,
+      `${label} must have five probability anchors`,
+    );
+    assert.ok(
+      curve.every(Number.isFinite),
+      `${label} must contain finite numbers`,
+    );
+    assert.ok(
+      curve.every((value, index) => index === 0 || value >= curve[index - 1]),
+      `${label} must be in numeric percentile order`,
+    );
+    assertClose(
+      interpolateMarginal(curve, 0.10),
+      curve[1],
+      1e-12,
+      `${label} P10`,
+    );
+    assertClose(
+      interpolateMarginal(curve, 0.50),
+      curve[2],
+      1e-12,
+      `${label} P50`,
+    );
+    assertClose(
+      interpolateMarginal(curve, 0.90),
+      curve[3],
+      1e-12,
+      `${label} P90`,
+    );
+  }
 }
 
 for (const [name, loading] of Object.entries(dependencyLoadings)) {
   assert.ok(loading >= 0 && loading < 1, `${name} must be in [0, 1)`);
 }
+
+for (const [name, linkage] of Object.entries(horizonLinkages)) {
+  assert.ok(linkage >= 0 && linkage <= 1, `${name} must be in [0, 1]`);
+}
+
+assertClose(
+  sixMonthMarginalCurves.trailingRevenueBeforeRegulatoryDrag[1] -
+    sixMonthEmbeddedLegalAllowances.revenueDrag.downside,
+  6.676,
+  1e-12,
+  "six-month downside revenue anchor after embedded legal drag",
+);
+assertClose(
+  sixMonthMarginalCurves.trailingRevenueBeforeRegulatoryDrag[2] -
+    sixMonthEmbeddedLegalAllowances.revenueDrag.central,
+  6.928,
+  1e-12,
+  "six-month central revenue anchor after embedded legal drag",
+);
+assertClose(
+  sixMonthMarginalCurves.trailingRevenueBeforeRegulatoryDrag[3] -
+    sixMonthEmbeddedLegalAllowances.revenueDrag.upside,
+  7.163,
+  1e-12,
+  "six-month upside revenue anchor after embedded legal drag",
+);
+assertClose(
+  sixMonthMarginalCurves.netDebtBeforeIncrementalLegalCash[1] +
+    sixMonthEmbeddedLegalAllowances.cashEffect.upside,
+  0.350,
+  1e-12,
+  "six-month upside net-debt anchor after embedded legal cash",
+);
+assertClose(
+  sixMonthMarginalCurves.netDebtBeforeIncrementalLegalCash[2] +
+    sixMonthEmbeddedLegalAllowances.cashEffect.central,
+  0.650,
+  1e-12,
+  "six-month central net-debt anchor after embedded legal cash",
+);
+assertClose(
+  sixMonthMarginalCurves.netDebtBeforeIncrementalLegalCash[3] +
+    sixMonthEmbeddedLegalAllowances.cashEffect.downside,
+  0.825,
+  1e-12,
+  "six-month downside net-debt anchor after embedded legal cash",
+);
 
 assertClose(
   legalStates.reduce((total, state) => total + state.probability, 0),
@@ -48,6 +131,7 @@ assertClose(
 
 const result = runDistributionModel();
 const value = result.methods.triangulated;
+const sixMonthValue = result.sixMonth.value;
 
 // These assertions freeze the exact published model version. Changing a
 // marginal, dependency, legal branch, seed, sample count, or valuation formula
@@ -87,6 +171,49 @@ assertClose(
   "bottom-decile expected value",
 );
 
+assertClose(sixMonthValue.mean, 7.0869, 0.0001, "six-month mean value");
+assertClose(sixMonthValue.p10, 3.8061, 0.0001, "six-month P10");
+assertClose(sixMonthValue.p25, 4.9587, 0.0001, "six-month P25");
+assertClose(sixMonthValue.p50, 6.7652, 0.0001, "six-month P50");
+assertClose(sixMonthValue.p75, 8.9874, 0.0001, "six-month P75");
+assertClose(sixMonthValue.p90, 10.6404, 0.0001, "six-month P90");
+assertClose(
+  sixMonthValue.probabilityBelowReference,
+  0.2850,
+  0.0001,
+  "six-month probability below reference",
+);
+assertClose(
+  sixMonthValue.probabilityLossThirtyPercent,
+  0.0896,
+  0.0001,
+  "six-month probability of at least 30% loss",
+);
+assertClose(
+  sixMonthValue.probabilityLossFiftyPercent,
+  0.0409,
+  0.0001,
+  "six-month probability of at least 50% loss",
+);
+assertClose(
+  sixMonthValue.expectedShortfallTenPercent,
+  2.7883,
+  0.0001,
+  "six-month bottom-decile expected value",
+);
+assertClose(
+  result.horizonLink.valueCorrelation,
+  0.8110,
+  0.0001,
+  "six-/twelve-month value correlation",
+);
+assertClose(
+  result.horizonLink.probabilityTwelveMonthAboveSixMonth,
+  0.6337,
+  0.0001,
+  "probability twelve-month value exceeds six-month value",
+);
+
 assertClose(result.diagnostics.revenue.p50, 7.4803, 0.0001, "median revenue");
 assertClose(result.diagnostics.fcf.p50, 1.1096, 0.0001, "median FCF");
 assertClose(
@@ -114,6 +241,35 @@ assert.ok(
   result.methods.dcf.p50 < result.methods.multiple.p50,
   "DCF must retain its more conservative median cross-check",
 );
+assert.ok(
+  result.horizonTransitions.bottomQuartile.mean <
+    result.horizonTransitions.lowerMiddleQuartile.mean &&
+    result.horizonTransitions.lowerMiddleQuartile.mean <
+      result.horizonTransitions.upperMiddleQuartile.mean &&
+    result.horizonTransitions.upperMiddleQuartile.mean <
+      result.horizonTransitions.topQuartile.mean,
+  "six-month value bands must lead to ordered twelve-month conditional means",
+);
+
+const expectedTransitions = {
+  bottomQuartile: { mean: 4.0353, p50: 3.5875, belowReference: 0.7477 },
+  lowerMiddleQuartile: { mean: 6.8296, p50: 6.6268, belowReference: 0.3025 },
+  upperMiddleQuartile: { mean: 9.1485, p50: 9.1935, belowReference: 0.0865 },
+  topQuartile: { mean: 12.8923, p50: 12.5369, belowReference: 0.0069 },
+};
+
+for (const [name, expected] of Object.entries(expectedTransitions)) {
+  const transition = result.horizonTransitions[name];
+  assertClose(transition.sampleShare, 0.25, 1e-12, `${name} sample share`);
+  assertClose(transition.mean, expected.mean, 0.0001, `${name} mean`);
+  assertClose(transition.p50, expected.p50, 0.0001, `${name} median`);
+  assertClose(
+    transition.probabilityBelowReference,
+    expected.belowReference,
+    0.0001,
+    `${name} probability below reference`,
+  );
+}
 
 console.table(
   Object.fromEntries(
@@ -130,4 +286,18 @@ console.table(
   ),
 );
 console.log(JSON.stringify(printableSummary(result).legalStateFrequencies));
+console.table({
+  sixMonth: {
+    mean: sixMonthValue.mean.toFixed(2),
+    p10: sixMonthValue.p10.toFixed(2),
+    p50: sixMonthValue.p50.toFixed(2),
+    p90: sixMonthValue.p90.toFixed(2),
+  },
+  twelveMonth: {
+    mean: value.mean.toFixed(2),
+    p10: value.p10.toFixed(2),
+    p50: value.p50.toFixed(2),
+    p90: value.p90.toFixed(2),
+  },
+});
 console.log("SNAP 2026-W34 distribution verification: PASS");

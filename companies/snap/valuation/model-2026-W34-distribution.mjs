@@ -2,10 +2,12 @@ const DEFAULT_SEED = 20_260_821;
 const DEFAULT_SAMPLE_COUNT = 100_000;
 
 export const modelContract = Object.freeze({
+  modelVersion: "structured_elicitation_monte_carlo_v2_joint_horizons",
   asOf: "2026-08-22",
   sourceCutoffAt: "2026-08-22T23:57:00+02:00",
   currency: "USD",
   referencePrice: 5.21,
+  sixMonthHorizon: "2027-02-20",
   targetHorizon: "2027-08-20",
   seed: DEFAULT_SEED,
   sampleCount: DEFAULT_SAMPLE_COUNT,
@@ -39,6 +41,46 @@ export const marginalCurves = Object.freeze({
   revenueGrowthYearThree: [-0.03, 0.03, 0.12, 0.18, 0.25],
   revenueGrowthYearFour: [-0.02, 0.02, 0.10, 0.15, 0.22],
   revenueGrowthYearFive: [0.00, 0.02, 0.08, 0.12, 0.18],
+});
+
+// Treat the deterministic checkpoint paths as including half of the displayed
+// twelve-month downside / central / upside legal allowances. This explicit
+// timing assumption is reversed before sampling the shared legal branch so the
+// model never deducts the same exposure twice. The endpoints make the outer
+// deciles explicit.
+export const sixMonthEmbeddedLegalAllowances = Object.freeze({
+  revenueDrag: Object.freeze({
+    downside: 0.0375,
+    central: 0.0225,
+    upside: 0.0100,
+  }),
+  cashEffect: Object.freeze({
+    downside: 0.1375,
+    central: 0.0625,
+    upside: 0.0175,
+  }),
+});
+
+export const sixMonthMarginalCurves = Object.freeze({
+  trailingRevenueBeforeRegulatoryDrag: [6.47, 6.7135, 6.9505, 7.173, 7.42],
+  enterpriseValueRevenueMultiple: [0.60, 1.20, 1.95, 2.90, 4.00],
+  netDebtBeforeIncrementalLegalCash: [0.08, 0.3325, 0.5875, 0.6875, 0.95],
+  dilutedShares: [1.86, 1.890, 1.910, 1.940, 1.99],
+});
+
+// Each draw is a linked six-/twelve-month path. The six-month driver score is
+// paired with the corresponding twelve-month score at the declared rank
+// correlation, retaining room for evidence and market-specific shocks between
+// checkpoints. These are analyst-elicited transition assumptions, not measured
+// serial correlations. The legal branch is shared; half of its twelve-month
+// cash and annualized revenue effects are recognized by the six-month point.
+export const horizonLinkages = Object.freeze({
+  revenueAdvertisingWeight: 0.82,
+  revenueRankCorrelation: 0.85,
+  valuationRankCorrelation: 0.80,
+  capitalRankCorrelation: 0.90,
+  sixMonthLegalCashRealization: 0.50,
+  sixMonthLegalRevenueDragRealization: 0.50,
 });
 
 // Factor loadings encode direction and dependence without pretending that a
@@ -131,6 +173,30 @@ function normalCdf(value) {
 
 function factorScore(business, idiosyncratic, loading) {
   return loading * business + Math.sqrt(1 - loading ** 2) * idiosyncratic;
+}
+
+function linkedScore(twelveMonthScore, sixMonthShock, rankCorrelation) {
+  return (
+    rankCorrelation * twelveMonthScore +
+    Math.sqrt(1 - rankCorrelation ** 2) * sixMonthShock
+  );
+}
+
+function normalizedWeightedScore(
+  firstScore,
+  secondScore,
+  firstWeight,
+  scoreCorrelation,
+) {
+  const secondWeight = 1 - firstWeight;
+  const variance =
+    firstWeight ** 2 +
+    secondWeight ** 2 +
+    2 * firstWeight * secondWeight * scoreCorrelation;
+  return (
+    (firstWeight * firstScore + secondWeight * secondScore) /
+    Math.sqrt(variance)
+  );
 }
 
 export function interpolateMarginal(curve, probability) {
@@ -302,10 +368,56 @@ function pearsonCorrelation(firstValues, secondValues) {
   return covariance / Math.sqrt(firstVariance * secondVariance);
 }
 
+function summarizeTransitionBands(
+  checkpointValues,
+  targetValues,
+  referencePrice,
+) {
+  const sortedCheckpointValues = checkpointValues.toSorted(
+    (first, second) => first - second,
+  );
+  const thresholds = [
+    quantile(sortedCheckpointValues, 0.25),
+    quantile(sortedCheckpointValues, 0.50),
+    quantile(sortedCheckpointValues, 0.75),
+  ];
+  const bands = {
+    bottomQuartile: [],
+    lowerMiddleQuartile: [],
+    upperMiddleQuartile: [],
+    topQuartile: [],
+  };
+
+  for (let index = 0; index < checkpointValues.length; index += 1) {
+    const checkpointValue = checkpointValues[index];
+    const targetValue = targetValues[index];
+    if (checkpointValue <= thresholds[0]) {
+      bands.bottomQuartile.push(targetValue);
+    } else if (checkpointValue <= thresholds[1]) {
+      bands.lowerMiddleQuartile.push(targetValue);
+    } else if (checkpointValue <= thresholds[2]) {
+      bands.upperMiddleQuartile.push(targetValue);
+    } else {
+      bands.topQuartile.push(targetValue);
+    }
+  }
+
+  return Object.fromEntries(
+    Object.entries(bands).map(([name, values]) => [
+      name,
+      {
+        sampleShare: values.length / checkpointValues.length,
+        ...summarize(values, referencePrice),
+      },
+    ]),
+  );
+}
+
 export function runDistributionModel({
   seed = modelContract.seed,
   sampleCount = modelContract.sampleCount,
   loadingMultiplier = 1,
+  horizonLinkageMultiplier = 1,
 } = {}) {
   if (!Number.isInteger(sampleCount) || sampleCount < 10_000) {
     throw new Error("sampleCount must be an integer of at least 10,000");
@@ -313,17 +425,36 @@ export function runDistributionModel({
   if (loadingMultiplier < 0 || loadingMultiplier > 1.25) {
     throw new Error("loadingMultiplier must be between 0 and 1.25");
   }
+  if (horizonLinkageMultiplier < 0 || horizonLinkageMultiplier > 1.20) {
+    throw new Error(
+      "horizonLinkageMultiplier must be between 0 and 1.20",
+    );
+  }
 
   const loading = (name) =>
     Math.min(0.95, dependencyLoadings[name] * loadingMultiplier);
+  const horizonLinkage = (name) =>
+    Math.min(0.99, horizonLinkages[name] * horizonLinkageMultiplier);
 
   const random = mulberry32(seed);
   const normal = createNormalSampler(random);
+  // A separate stream adds checkpoint-specific uncertainty without changing
+  // the already-published twelve-month deterministic-seed draws.
+  const sixMonthRandom = mulberry32(seed ^ 0x6d6f6e74);
+  const sixMonthNormal = createNormalSampler(sixMonthRandom);
   const methodValues = {
     multiple: [],
     sotp: [],
     dcf: [],
     triangulated: [],
+  };
+  const sixMonthValues = [];
+  const sixMonthDiagnostics = {
+    revenue: [],
+    netDebt: [],
+    dilutedShares: [],
+    revenueMultiple: [],
+    value: sixMonthValues,
   };
   const diagnostics = {
     revenue: [],
@@ -390,6 +521,67 @@ export function runDistributionModel({
     };
     const legal = sampleLegalState(random);
     diagnostics.legalStateCounts[legal.name] += 1;
+
+    const twelveMonthRevenueScore = normalizedWeightedScore(
+      advertisingScore,
+      otherRevenueScore,
+      horizonLinkages.revenueAdvertisingWeight,
+      loading("advertisingOnBusiness") * loading("otherRevenueOnBusiness"),
+    );
+    const sixMonthProbability = {
+      revenue: normalCdf(
+        linkedScore(
+          twelveMonthRevenueScore,
+          sixMonthNormal(),
+          horizonLinkage("revenueRankCorrelation"),
+        ),
+      ),
+      valuation: normalCdf(
+        linkedScore(
+          valuationScore,
+          sixMonthNormal(),
+          horizonLinkage("valuationRankCorrelation"),
+        ),
+      ),
+      capital: normalCdf(
+        linkedScore(
+          capitalScore,
+          sixMonthNormal(),
+          horizonLinkage("capitalRankCorrelation"),
+        ),
+      ),
+    };
+
+    const sixMonthRevenueBeforeDrag = interpolateMarginal(
+      sixMonthMarginalCurves.trailingRevenueBeforeRegulatoryDrag,
+      sixMonthProbability.revenue,
+    );
+    const sixMonthRevenue = Math.max(
+      0,
+      sixMonthRevenueBeforeDrag -
+        legal.revenueDrag *
+          horizonLinkages.sixMonthLegalRevenueDragRealization,
+    );
+    const sixMonthNetDebtBeforeLegal = interpolateMarginal(
+      sixMonthMarginalCurves.netDebtBeforeIncrementalLegalCash,
+      1 - sixMonthProbability.capital,
+    );
+    const sixMonthNetDebt =
+      sixMonthNetDebtBeforeLegal +
+      legal.cashEffect * horizonLinkages.sixMonthLegalCashRealization;
+    const sixMonthDilutedShares = interpolateMarginal(
+      sixMonthMarginalCurves.dilutedShares,
+      1 - sixMonthProbability.capital,
+    );
+    const sixMonthRevenueMultiple = interpolateMarginal(
+      sixMonthMarginalCurves.enterpriseValueRevenueMultiple,
+      sixMonthProbability.valuation,
+    );
+    const sixMonthValue = Math.max(
+      0,
+      (sixMonthRevenue * sixMonthRevenueMultiple - sixMonthNetDebt) /
+        sixMonthDilutedShares,
+    );
 
     const advertisingRevenueBeforeDrag = interpolateMarginal(
       marginalCurves.advertisingRevenueBeforeRegulatoryDrag,
@@ -480,6 +672,7 @@ export function runDistributionModel({
     methodValues.sotp.push(sotpValue);
     methodValues.dcf.push(dcfValue);
     methodValues.triangulated.push(triangulatedValue);
+    sixMonthValues.push(sixMonthValue);
     legalStateValues[legal.name].push(triangulatedValue);
     diagnostics.revenue.push(revenue);
     diagnostics.advertisingRevenue.push(advertisingRevenue);
@@ -490,6 +683,10 @@ export function runDistributionModel({
     diagnostics.revenueMultiple.push(revenueMultiple);
     diagnostics.legalCashEffect.push(legal.cashEffect);
     diagnostics.legalRevenueDrag.push(legal.revenueDrag);
+    sixMonthDiagnostics.revenue.push(sixMonthRevenue);
+    sixMonthDiagnostics.netDebt.push(sixMonthNetDebt);
+    sixMonthDiagnostics.dilutedShares.push(sixMonthDilutedShares);
+    sixMonthDiagnostics.revenueMultiple.push(sixMonthRevenueMultiple);
   }
 
   const methodSummaries = Object.fromEntries(
@@ -523,14 +720,50 @@ export function runDistributionModel({
         pearsonCorrelation(values, methodValues.triangulated),
       ]),
   );
+  const sixMonthSummary = summarize(
+    sixMonthValues,
+    modelContract.referencePrice,
+  );
+  const sixMonthDiagnosticSummaries = Object.fromEntries(
+    Object.entries(sixMonthDiagnostics)
+      .filter(([name]) => name !== "value")
+      .map(([name, values]) => [name, summarizeDriver(values)]),
+  );
+  const horizonValueCorrelation = pearsonCorrelation(
+    sixMonthValues,
+    methodValues.triangulated,
+  );
+  const horizonTransitions = summarizeTransitionBands(
+    sixMonthValues,
+    methodValues.triangulated,
+    modelContract.referencePrice,
+  );
 
   return {
-    contract: { ...modelContract, seed, sampleCount, loadingMultiplier },
+    contract: {
+      ...modelContract,
+      seed,
+      sampleCount,
+      loadingMultiplier,
+      horizonLinkageMultiplier,
+    },
     methods: methodSummaries,
     diagnostics: diagnosticSummaries,
     legalStateFrequencies,
     legalStateValueSummaries,
     driverCorrelationsWithValue,
+    sixMonth: {
+      value: sixMonthSummary,
+      diagnostics: sixMonthDiagnosticSummaries,
+    },
+    horizonLink: {
+      valueCorrelation: horizonValueCorrelation,
+      probabilityTwelveMonthAboveSixMonth:
+        methodValues.triangulated.filter(
+          (value, index) => value > sixMonthValues[index],
+        ).length / sampleCount,
+    },
+    horizonTransitions,
   };
 }
 
@@ -567,6 +800,22 @@ export function printableSummary(result) {
     driverCorrelationsWithValue: roundObject(
       result.driverCorrelationsWithValue,
       4,
+    ),
+    sixMonth: {
+      value: roundObject(result.sixMonth.value, 4),
+      diagnostics: Object.fromEntries(
+        Object.entries(result.sixMonth.diagnostics).map(([name, summary]) => [
+          name,
+          roundObject(summary, 4),
+        ]),
+      ),
+    },
+    horizonLink: roundObject(result.horizonLink, 4),
+    horizonTransitions: Object.fromEntries(
+      Object.entries(result.horizonTransitions).map(([name, summary]) => [
+        name,
+        roundObject(summary, 4),
+      ]),
     ),
   };
 }

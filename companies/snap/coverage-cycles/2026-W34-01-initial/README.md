@@ -32,7 +32,7 @@ tags: [social-media, digital-advertising, initial-coverage]
 | ISO week | `2026-W34` |
 | Company cycle number | `01` |
 | Kind | Initial coverage |
-| Decision supported | Current watch / buy / hold / reduce / exit mapping at $5.21 over a 12-month horizon, independent of purchase history |
+| Decision supported | Current watch / buy / hold / reduce / exit mapping at $5.21 across linked six- and twelve-month fair-value horizons, independent of purchase history |
 | Started | 20 August 2026 |
 | Source cutoff | 22 August 2026, 23:57 Central European Summer Time |
 | Research status | Draft analytical dossier complete; prospective registration pending |
@@ -65,7 +65,7 @@ tags: [social-media, digital-advertising, initial-coverage]
 
 ## Integrated conclusion
 
-The completed cycle incorporates current filings, advertising-price and regional-economics work, Meta and Reddit anchors, recommendation-system and workforce research, confidence-gap estimates, the operating forecast, a full stochastic valuation distribution, and independent verification. The absolute expected-value assessment is attractive. The formal QQQ-relative stance is insufficient evidence because the dossier does not forecast QQQ. From current evidence alone, the no-position action is watch before the next operating checkpoint. The user-reported existing-long action is conditional hold / no add only if exposure fits a private loss budget; otherwise reduce. Purchase history does not support any conclusion.
+The completed cycle incorporates current filings, advertising-price and regional-economics work, Meta and Reddit anchors, recommendation-system and workforce research, confidence-gap estimates, the operating forecast, a linked six-/twelve-month stochastic valuation distribution, and independent verification. The absolute expected-value assessment is attractive. The formal QQQ-relative stance is insufficient evidence because the dossier does not forecast QQQ. From current evidence alone, the no-position action is watch before the next operating checkpoint. The user-reported existing-long action is conditional hold / no add only if exposure fits a private loss budget; otherwise reduce. Purchase history does not support any conclusion.
 
 ## Cycle boundary
 

@@ -5,6 +5,8 @@ import { access, readFile, readdir } from "node:fs/promises";
 import { dirname, extname, join, relative } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
+import { validateCoverageCycles } from "./lib/company-cycle.mjs";
+
 const scriptDirectory = dirname(fileURLToPath(import.meta.url));
 const defaultRepositoryRoot = dirname(scriptDirectory);
 const skillNamePattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
@@ -26,6 +28,7 @@ const requiredScripts = {
   "research:biomed": "scripts/research-biomed.mjs",
   "research:browser": "scripts/research-browser.mjs",
   "research:check": "scripts/research-tools.mjs",
+  "research:company": "scripts/research-company.mjs",
   "research:gemini": "scripts/research-workflow.mjs",
   "research:init": "scripts/research-tools.mjs",
   "research:records": "scripts/research-records.mjs",
@@ -269,6 +272,9 @@ export async function validateRepository(repositoryRoot = defaultRepositoryRoot)
   const jsonContracts = await validateJsonContracts(repositoryRoot);
   findings.push(...jsonContracts.findings);
 
+  const coverageCycles = await validateCoverageCycles(repositoryRoot);
+  findings.push(...coverageCycles.findings);
+
   const gitignore = await readFile(join(repositoryRoot, ".gitignore"), "utf8").catch(() => "");
   if (!gitignore.split(/\r?\n/).some((line) => [".local/", "/.local/"].includes(line.trim()))) {
     findings.push(issue("error", "local-state", ".local/ must be ignored.", ".gitignore"));
@@ -347,6 +353,7 @@ export async function validateRepository(repositoryRoot = defaultRepositoryRoot)
       skills: skillNames.length,
       schemas: jsonContracts.schemaCount,
       jsonTemplates: jsonContracts.jsonTemplateCount,
+      coverageCycles: coverageCycles.cycleCount,
       runtimeScripts: scripts.length + 1,
     },
     findings,
@@ -358,6 +365,7 @@ function printReport(report) {
   console.log(`Skills: ${report.counts.skills}`);
   console.log(`Schemas: ${report.counts.schemas}`);
   console.log(`JSON templates: ${report.counts.jsonTemplates}`);
+  console.log(`Coverage cycles: ${report.counts.coverageCycles}`);
   console.log(`Runtime scripts: ${report.counts.runtimeScripts}`);
   console.log("");
   const errors = report.findings.filter(({ level }) => level === "error");

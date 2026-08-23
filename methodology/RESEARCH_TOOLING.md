@@ -27,6 +27,10 @@ Do not build a brittle pseudo-API around a changing website just to call it a CL
 # Validate all skills, schemas, CLI routes, billing boundaries, and automated tests
 npm run research:validate
 
+# Validate canonical report/valuation/decision cardinality, paths, cutoffs, links, and finalization hashes
+npm run research:company -- validate
+npm run research:company -- validate companies/snap
+
 # See local capabilities without reading credentials or account data
 npm run research:check
 

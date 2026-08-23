@@ -17,12 +17,20 @@ final_report_path: "{relative path to YYYY-Www-final-report.md}"
 valuation_path: "{relative path to YYYY-Www-valuation.md}"
 decision_path: "{relative path to YYYY-Www-decision.md}"
 forecast_path: null
+review_path: null
+finalized_at: null
+final_report_hash: null
+valuation_hash: null
+decision_hash: null
+review_hash: null
 tags: []
 ---
 
 # {Company} coverage cycle {NN} — {YYYY-Www} — {kind}
 
 > This manifest defines one initial or repeat valuation generation. While active, research evolves one canonical report and valuation in place. Once finalized, they are immutable and later revaluation belongs in a new linked cycle.
+
+> Run `npm run research:company -- validate {company directory}` before review and `npm run research:validate` before publication. A finalized cycle must freeze the report, valuation, decision, and independent-review hashes in this manifest.
 
 ## Cycle contract
 

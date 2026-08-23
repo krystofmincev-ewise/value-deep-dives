@@ -66,7 +66,7 @@ The Snap dossier is self-contained under [`companies/snap/`](companies/snap/READ
 | [Research tooling](methodology/RESEARCH_TOOLING.md) | Layered APIs, CLIs, authenticated Chrome, Browser, and Computer Use workflows |
 | [Templates](templates/README.md) | Standard starting points for new research |
 
-Run `npm run research:validate` before publishing or committing research-system changes. It discovers every repository skill, validates skill metadata and referenced resources, parses all JSON schemas and templates, checks required CLI routes and public-data contracts, rejects separately billable API markers in runtime code, and then runs the complete automated test suite. Runtime subscription sign-in is deliberately a visible Chrome check rather than a credential inspection.
+Run `npm run research:company -- validate` while editing a company cycle and `npm run research:validate` before publishing or committing research-system changes. The company validator enforces one canonical report, valuation, and decision per cycle plus aligned paths, IDs, cutoffs, navigation, supersession rules, and finalized hashes. The repository gate also discovers every skill, validates metadata and resources, parses all JSON schemas and templates, checks required CLI routes and public-data contracts, rejects separately billable API markers in runtime code, and runs the complete automated test suite. Runtime subscription sign-in is deliberately a visible Chrome check rather than a credential inspection.
 
 Company-specific notes, data, and experiments stay inside that company's folder. Root-level experiments and data are reserved for work that genuinely serves several companies or studies.
 

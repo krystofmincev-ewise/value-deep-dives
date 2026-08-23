@@ -1097,7 +1097,11 @@ This coverage cycle combined specialist work on financials, users, advertising, 
 
 Gemini Deep Research was used for adversarial source discovery, not as evidence. Material claims were checked at their underlying sources, and unsupported model, capital-structure, subscriber, Specs, cash-flow, and regional-margin claims were rejected or corrected. Licensed Revelio Labs aggregates were used only as a lower-weight organizational-capacity check; restricted counts and tables remain local-only, and no provider count enters revenue or valuation arithmetic.
 
-Use the [company research home](../README.md#find-the-question-then-drill-down) to challenge one assumption, the [source log](../sources.md) for provenance, the [independent review](../research/2026-08-21-independent-review.md) for release checks, and the [valuation verification index](../valuation/README.md) for deterministic calculations.
+Use the [company research home](../README.md#find-the-question-then-drill-down) to challenge one assumption, the [source log](../sources.md) for provenance, the [independent review](../research/2026-08-21-independent-review.md) for release checks, the [post-Snap audit](../../../methodology/2026-W34-POST-SNAP-RESEARCH-AUDIT.md) for the three independent methodology reviews and their disposition, and the [valuation verification index](../valuation/README.md) for deterministic calculations.
+
+The immediate analytical findings from those reviews are reflected in this report: same-cycle drafts are removed from navigation; purchase history is isolated; the Q2 price/impression contradiction is corrected; seasonality and World Cup comparison effects are normalized; the benchmark-relative stance is `insufficient_evidence`; and hand-weighted bear/base/bull probabilities are replaced by an explicit distribution with legal tails. The repository now also runs `npm run research:company -- validate` to reject duplicate canonical records, mismatched cycle IDs or cutoffs, stale local links, same-cycle supersession, and invalid finalization hashes.
+
+Three limits remain deliberately visible rather than being called complete: Snap has no frozen schema-backed fact/claim graph, the $5.21 and QQQ observations are not yet frozen from a reproducible official-close provider, and the distribution is not empirically calibrated. Those gaps keep the cycle in draft/shadow status and prevent a formal prospective return claim.
 
 </details>
 

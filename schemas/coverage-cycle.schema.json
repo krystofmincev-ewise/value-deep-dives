@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/value-deep-dives/coverage-cycle.schema.json",
+  "title": "Company Coverage Cycle",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "type",
+    "coverage_cycle_id",
+    "company",
+    "ticker",
+    "cycle_number",
+    "cycle_kind",
+    "iso_week",
+    "status",
+    "research_status",
+    "started_at",
+    "as_of",
+    "final_report_path",
+    "valuation_path",
+    "decision_path"
+  ],
+  "properties": {
+    "type": { "const": "company_coverage_cycle" },
+    "coverage_cycle_id": { "type": "string", "pattern": "^[A-Z0-9.-]+-[0-9]{4}-W[0-9]{2}-[0-9]{2}$" },
+    "company": { "type": "string", "minLength": 1 },
+    "ticker": { "type": "string", "pattern": "^[A-Z0-9.-]+$" },
+    "cycle_number": { "type": "integer", "minimum": 1 },
+    "cycle_kind": { "type": "string", "enum": ["initial", "revaluation", "restart"] },
+    "iso_week": { "type": "string", "pattern": "^[0-9]{4}-W[0-9]{2}$" },
+    "status": { "type": "string", "enum": ["active", "complete", "superseded", "withdrawn"] },
+    "research_status": { "type": "string", "enum": ["researching", "draft", "published", "superseded", "withdrawn"] },
+    "started_at": { "type": "string", "format": "date" },
+    "as_of": { "type": "string", "format": "date" },
+    "source_cutoff_at": { "type": ["string", "null"], "format": "date-time" },
+    "prior_cycle_path": { "type": ["string", "null"] },
+    "final_report_path": { "type": "string", "minLength": 1 },
+    "valuation_path": { "type": "string", "minLength": 1 },
+    "decision_path": { "type": "string", "minLength": 1 },
+    "forecast_path": { "type": ["string", "null"] },
+    "review_path": { "type": ["string", "null"] },
+    "finalized_at": { "type": ["string", "null"], "format": "date-time" },
+    "final_report_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" },
+    "valuation_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" },
+    "decision_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" },
+    "review_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" }
+  },
+  "allOf": [
+    {
+      "if": {
+        "anyOf": [
+          { "properties": { "status": { "const": "complete" } }, "required": ["status"] },
+          { "properties": { "research_status": { "const": "published" } }, "required": ["research_status"] }
+        ]
+      },
+      "then": {
+        "required": [
+          "finalized_at",
+          "final_report_hash",
+          "valuation_hash",
+          "decision_hash",
+          "review_path",
+          "review_hash"
+        ]
+      }
+    }
+  ]
+}

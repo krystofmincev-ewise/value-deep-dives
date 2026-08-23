@@ -41,6 +41,7 @@ test("repository validator checks every skill, schema, route, and billing bounda
   assert.equal(report.valid, true, JSON.stringify(report.findings, null, 2));
   assert.equal(report.counts.skills, 9);
   assert.ok(report.counts.schemas >= 13);
+  assert.equal(report.counts.coverageCycles, 1);
   assert.ok(report.counts.runtimeScripts >= 7);
   assert.equal(report.findings.filter(({ level }) => level === "error").length, 0);
   assert.ok(report.findings.some(({ check }) => check === "authenticated-session"));

@@ -5,6 +5,7 @@ as_of: 2026-08-23
 baseline_commit: f5fe247ca69cf5052d8541a421ea7b86bbd62405
 scope: [evidence-acquisition, valuation-calibration, lifecycle, agent-harness]
 status: complete
+reconciliation_status: complete
 ---
 
 # Post-Snap research and valuation audit — 2026-W34
@@ -24,6 +25,28 @@ The most important interpretive distinction is:
 This distinction changes no operating evidence. It makes the decision contract honest.
 
 > **23 August remediation:** the audit's probability critique is now implemented. The canonical Snap valuation retires the hand-weighted three-point expected value and uses a deterministic 100,000-draw structured-elicitation model with continuous marginals, explicit dependencies, exhaustive legal states, full downside metrics, and shadow-model calibration status. No post-cutoff Snap facts were introduced.
+
+## Workstream reconciliation
+
+The completed Codex workstreams were reconciled against Git rather than treated as complete merely because a task ended. The current `main` history contains the substantive outcomes:
+
+| Workstream | Implemented outcome | Commit(s) |
+| --- | --- | --- |
+| Initial valuation, independent review, public-data cleanup, and deterministic arithmetic | Canonical Snap dossier, review memo, verifier, privacy/rights corrections, and passing repository gate | `d44a0c8`, `6a5add7`, `f5210e3` |
+| Coverage-cycle lifecycle | One canonical report, valuation, and decision per ISO-week cycle; same-cycle drafts removed from reader navigation | `538de1c`, `f5fe247` |
+| Three-angle evidence, methodology, and harness audit | Q2 price contradiction, cutoff drift, stance contract, canonical paths, and layout authority corrected; unresolved system gaps consolidated here | `93d6cc2` |
+| Purchase-history and seasonality audit | Cost basis isolated from analysis; current-opportunity framing, quarterly growth labels, sequential bridges, and event/comparison normalization added | `ed3f504`, `306ae3d` |
+| Reader-flow review | Shorter decision-first opening, progressive reading paths, clearer action mapping, and tighter narrative | `5c7c97b` |
+| Scenario-probability challenge | Hand-weighted points retired; deterministic distribution, dependencies, exhaustive legal states, downside metrics, method diagnostics, and shadow status added | `34db16a` |
+| Report presentation proposal | Architecture, phases, release criteria, and post-proof skill contract preserved as an explicit plan—not misreported as a shipped site | `a22ca0d`, `7956c55` |
+| Canonical-cycle enforcement | Repository command and release-gate integration now validate cardinality, paths, artifact alignment, cutoffs, navigation, cross-cycle supersession, and finalization hashes | Current reconciliation |
+
+This audit therefore distinguishes four states:
+
+- **Implemented in the Snap report:** factual, valuation, stance, action, seasonality, probability, and reader-flow corrections.
+- **Implemented as a repository guard:** canonical coverage-cycle validation and finalized-artifact hash checks.
+- **Explicitly blocked by missing evidence or elapsed outcomes:** official-close/benchmark registration, empirical probability calibration, and outcome scoring.
+- **Planned product work, not silently abandoned:** the generated employer-facing report site and the presentation skill that must be extracted only after that site is proven. See the [report presentation plan](REPORT_PRESENTATION_PLAN.md).
 
 ## What is already strong
 
@@ -90,7 +113,7 @@ The source log is strong, but Snap does not yet instantiate a schema-backed file
 
 ## Harness audit
 
-### Correct lifecycle, incomplete enforcement
+### Correct lifecycle with executable first-line enforcement
 
 The repository now has the right human contract:
 
@@ -100,13 +123,15 @@ The repository now has the right human contract:
 4. Finalized or prospectively registered cycles are immutable.
 5. A material revaluation starts a new ISO-week cycle and compares only with a prior finalized cycle.
 
-The remaining risk is that this policy is convention rather than a fully executable state machine. Existing validation does not yet reject two reports for one cycle, a same-cycle `supersedes` link, a landing page pointing to an obsolete draft, or mutation of a finalized artifact.
+`npm run research:company -- validate` now enforces the first-line machine contract. It discovers every coverage-cycle manifest and rejects missing or duplicate canonical report/valuation/decision records, path or filename drift, mismatched company/security/cycle metadata, cutoff disagreement, broken canonical navigation, same-cycle supersession, invalid prior-cycle linkage, and artifact/review hash drift for finalized cycles. `npm run research:validate` runs this check as part of the repository release gate.
+
+This is not yet the full state machine proposed by the harness audit. It does not initialize cycles, freeze fact/claim snapshots, prove source-to-model-to-report parity, or bind a ledger publication commit. Those remain separate controls below.
 
 ### Highest-priority missing controls
 
 | Priority | Capability | Acceptance test |
 | --- | --- | --- |
-| P0 | Coverage-cycle schema and validator | Fails duplicate report/valuation/decision records, missing paths, mismatched cycle IDs, same-cycle supersession, obsolete navigation, and mutation of finalized hashes |
+| Implemented | Coverage-cycle schema and validator | `schemas/coverage-cycle.schema.json` plus `npm run research:company -- validate`; integrated into `research:validate` with regression fixtures |
 | P0 | Frozen fact and claim layer | Every material model input carries source ID, period, units, known-at time, transformation, rights class, verification status, and report/valuation destinations |
 | P0 | Source-to-model-to-report parity | A changed input causes verifier failure until the model output, valuation table, report summary, and decision record agree |
 | P0 | Reproducible price and benchmark snapshot | Official close, QQQ close, timestamps, adjustment rule, and hashes are frozen before prospective registration |
@@ -143,14 +168,13 @@ New integrations should be added only for a named gap. The Snap work did not rev
 
 ## Recommended order before the next company
 
-1. Implement the coverage-cycle schema and canonical-cardinality validator.
-2. Add one representative Snap fact/claim fixture and source-to-model-to-report parity test.
-3. Add official security/benchmark close capture and freeze rules.
-4. Bind independent review to hashes and expose one end-to-end release command.
-5. Turn the Q2-price contradiction and formal-stance contradiction into semantic validation fixtures.
-6. Add a reference-class probability worksheet and explicit discontinuous-tail check.
-7. Add durable local-only browser receipts and resumable failure states.
-8. After the first outcome, publish a retrospective and convert its escaped defects into regression tests.
+1. Add one representative Snap fact/claim fixture and source-to-model-to-report parity test.
+2. Add official security/benchmark close capture and freeze rules.
+3. Bind independent review to frozen fact/model hashes and expose one end-to-end publish transition; canonical artifact and review hashes are already enforced when a cycle is marked finalized.
+4. Turn the Q2-price contradiction and formal-stance contradiction into semantic validation fixtures.
+5. Add a reference-class probability worksheet; the explicit discontinuous-tail check is now implemented in the Snap distribution verifier.
+6. Add durable local-only browser receipts and resumable failure states.
+7. After the first outcome, publish a retrospective and convert its escaped defects into regression tests.
 
 ## Strongest counterarguments to this roadmap
 

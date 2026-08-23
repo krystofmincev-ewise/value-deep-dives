@@ -13,6 +13,7 @@
     "research:archive": "node scripts/research-archive.mjs",
     "research:biomed": "node scripts/research-biomed.mjs",
     "research:browser": "node scripts/research-browser.mjs",
+    "research:company": "node scripts/research-company.mjs",
     "research:revelio": "node scripts/research-workflow.mjs revelio",
     "research:records": "node scripts/research-records.mjs",
     "research:sec": "node scripts/research-tools.mjs sec",

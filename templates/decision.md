@@ -38,6 +38,8 @@ review_by: null
 
 Research stance (`attractive`, `neutral`, `unattractive`, or `insufficient_evidence`), optional absolute-value assessment, portfolio action, and concise rationale. State the horizon, benchmark, hurdle, portfolio context, and whether sizing and actual fills are omitted. If a named benchmark has no expected return, the benchmark-relative stance is `insufficient_evidence` even when the absolute-value assessment is attractive. Use `hold` only for an existing position; use `reduce` or `exit` for the portfolio action often called sell.
 
+> **Plain-English aside — value versus action:** {Explain why the valuation verdict, evidence gate, benchmark-relative stance, and portfolio action can legitimately differ.}
+
 ## Evidence available at the time
 
 Links to the exact canonical final report, valuation, sources, and commit.
@@ -48,6 +50,11 @@ Link the valuation-horizon contract. State the modeled quantity and use its
 complete horizon outputs; keep unweighted bull/base/bear narratives separate.
 If the action relies on a checkpoint leading to a later value, summarize the
 joint transition rather than inferring it from two standalone point estimates.
+
+Explain percentile and mean semantics beside the output and translate at least
+one security drawdown into portfolio impact using an explicitly illustrative
+position weight. State that modeled fair value is not necessarily a target-date
+market-price forecast.
 
 ## Falsifiers and review triggers
 

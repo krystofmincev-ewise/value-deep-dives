@@ -49,6 +49,12 @@ tags: []
 
 > This is the cycle's single canonical report. Update it in place while `research_status` is `draft`; once published, start a new ISO-week cycle for any material revaluation.
 
+> **How to use the plain-English asides:** They translate the decision-critical numbers and concepts in place. Skip any aside you already understand. They add no new evidence or assumptions.
+
+Before completion, replace this instruction with reader-facing content and add short callouts where a non-specialist would otherwise lose the economic mechanism:
+
+> **Plain-English aside — {concept}:** {Explain one nearby idea in concrete language. Connect it to the number, use a small example when useful, and say what it does not mean if confusion is likely.}
+
 ## One-paragraph view
 
 Recommendation or stance, why the market may be wrong, approximate value range, horizon, and central risk.
@@ -73,6 +79,8 @@ What does consensus or the price appear to imply, and why might that be wrong?
 
 How the company makes money, why customers care, and how industry structure affects value.
 
+Explain the revenue equation, unit economics, comparison base, and mix in place when they are necessary to understand the thesis.
+
 ## Key assumptions
 
 | Assumption | Bear | Base | Bull | Evidence / sensitivity |
@@ -85,6 +93,10 @@ Link the dated valuation file and valuation-horizon contract. Summarize the
 declared quantity and complete output for every modeled horizon without creating
 a second canonical target. Keep unweighted operating narratives separate from
 distribution percentiles.
+
+Include in-place explanations of enterprise value versus equity value, dilution,
+the primary method, percentile/mean semantics, and any cross-horizon link. Do not
+make the reader leave the report to understand a number in the conclusion.
 
 ## Catalysts
 

@@ -49,7 +49,11 @@ method_reviewed_at: 2026-08-23
 | Existing long | **Conditional hold / no add** if the severe-loss case fits the investor's private risk budget; otherwise reduce |
 | Next review | Third-quarter 2026 results; no later than 15 November 2026 |
 
+> **Plain-English aside — why “attractive” does not automatically mean “buy”:** The valuation asks whether Snap appears cheap relative to its modeled business value. The action also asks whether the evidence is strong enough and whether the portfolio can survive being wrong. Here the first answer is “yes,” but the second is “not yet for a new position.” Watching through Q3 trades some possible upside for more evidence about the advertising engine.
+
 The entire decision turns on one unresolved question: **was the second-quarter improvement in Snap's advertising auction durable, or was it an easy comparison helped by temporary World Cup demand?** Snap reported average advertising price per impression up about 10%, but the result lapped a 10% decline and a comparison affected by a temporary Ads Manager pricing problem, Ramadan timing, and de minimis changes. The two-year price index is therefore roughly flat. Snap did not size those effects, so the model makes no add-back and the evidence is not yet strong enough to initiate or add.
+
+> **Plain-English aside — the auction in four lines:** Snap's advertising revenue is roughly **advertisements shown × average price**. Q2 price rose about 10%, but advertising revenue rose only 9.3%, implying that the number shown was roughly flat to slightly down. And a price that fell from 100 to 90, then rose 10%, reaches 99: the rebound mostly recovered the prior decline. World Cup advertisers may also have temporarily increased bidding.
 
 The restraint is about proof and loss control—not weak modeled upside. The deterministic 100,000-draw joint model produces a six-month $7.09 mean / $6.77 median and a twelve-month $8.23 mean / $7.90 median. It assigns 28.5% and 28.6% of the respective horizon fair values below $5.21; the twelve-month distribution still places 16.0% at fair-value impairment of at least 30% and 8.2% at impairment of at least 50%. Cost leverage and direct revenue make the upside plausible; shrinking high-value users, dilution, founder control, litigation, and Specs create a material left tail.
 
@@ -66,7 +70,11 @@ Exact outputs and the joint transition definition are frozen in the
 | Six months | $3.81 | $6.77 | $10.64 | **$7.09** | 28.5% |
 | Twelve months | $2.86 | $7.90 | $13.78 | **$8.23** | 28.6% |
 
+> **Plain-English aside — these are fair-value ranges, not promised share prices:** P10 is the point with 10% of modeled values below it; P50 is the middle; P90 has 10% above it. The mean is the average and can be pulled by large upside paths. The model estimates what the business could be worth under its assumptions. It does not estimate exactly when the market will agree.
+
 The old 30% / 50% / 20% hand-weighted scenario calculation is retired. The replacement samples continuous operating and valuation drivers, explicit dependencies, and exhaustive legal-tail states, with revenue, multiple, capital, dilution, and legal paths linked across the two horizons. Six- and twelve-month fair values have 0.81 correlation. It remains uncalibrated structured elicitation in shadow-model status, so its frequencies and conditional transitions are decision aids rather than historical claims. See the [distribution-method memo](../research/2026-08-23-distribution-first-valuation.md).
+
+> **Plain-English aside — 0.81 correlation is not an 81% success rate:** Every simulated path passes through both six and twelve months. A good six-month business path usually stays relatively good; a weak one usually stays relatively weak, though new results can change direction. The 0.81 number measures that relationship between the two values. It says nothing by itself about the probability that an investment succeeds.
 
 ## Why the valuation is attractive
 
@@ -92,11 +100,15 @@ The old 30% / 50% / 20% hand-weighted scenario calculation is retired. The repla
 - **Existing long:** hold / no add only if the position fits an independently chosen loss budget; otherwise reduce.
 - **Material permanent-impairment falsifier:** pass, reduce, or exit according to current exposure.
 
+> **Plain-English aside — position size does the risk translation:** A 50% fall in a stock that is 2% of a portfolio costs roughly 1% of the portfolio. The same fall in a 10% position costs roughly 5%. That is why two people can agree that Snap is undervalued yet rationally choose different actions: the security is the same, but their exposure and loss budgets are not.
+
 Position size, taxes, liquidity, and other holdings are intentionally omitted, so this public record cannot determine hold versus reduce conclusively. Every mapping starts from $5.21 and current evidence; historical cost basis and earlier rationale are excluded.
 
 ## Benchmark and scorekeeping note
 
 The 8% metadata hurdle is an **illustrative absolute-return hurdle**, not a forecast for the Nasdaq-100 exchange-traded fund benchmark (**QQQ**). The model estimates fair value, not the probability or timing of market-price convergence, so `expected_return_pct` also remains blank. Because this record does not forecast QQQ, expected benchmark excess return remains blank and the formal QQQ-relative research stance is **insufficient evidence**. This methodological label does not change the attractive absolute valuation verdict.
+
+> **Plain-English aside — absolute versus relative:** “Absolute” asks whether Snap looks attractive compared with its own $5.21 price. “Relative” asks whether Snap is expected to outperform an alternative such as QQQ over the same period. This work models Snap's fair value but does not forecast QQQ or the timing of price convergence, so it can answer the first question without pretending to answer the second.
 
 The analytical evidence gate passes verified identity, public financial statements, capital structure, three-method valuation arithmetic, dilution treatment, a counter-thesis, and observable review triggers. This fair-value model is not itself a target-price forecast. Any later prospective return record must separately define market convergence, then freeze the $5.21 reference and QQQ starting value from reproducible official-close sources.
 

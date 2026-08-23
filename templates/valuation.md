@@ -38,6 +38,8 @@ distribution_sample_count: null
 
 # {Company} valuation — {date}
 
+> **Reader note:** Plain-English asides translate the mechanics beside the relevant table. They add no new assumptions and may be skipped by experienced readers.
+
 ## Summary
 
 Link the schema-backed valuation-horizon contract. It is the machine-readable
@@ -60,6 +62,8 @@ model/version paths, and any cross-horizon relationship.
 
 Reference price: {value, exact date/time, source, and adjustment convention}.
 
+> **Plain-English aside — reading the range:** {Explain P10, median, P90, mean, and whether the output is fair value or a market-price forecast. State that P10/P90 are not named bear/bull narratives.}
+
 State whether bear/base/bull are probability buckets or unweighted narratives.
 Never combine narrative names with percentile labels or probability-weight
 P10/P50/P90 values.
@@ -70,6 +74,8 @@ When `display_semantics` is `distribution_percentiles`, leave the legacy
 remain in the separate table.
 
 ## Capitalization and enterprise-value bridge
+
+> **Plain-English aside — enterprise value to shareholder value:** {Explain equity value, net debt, enterprise value, diluted shares, and the direction of the bridge with a compact example.}
 
 | Item | Value | As of / source |
 | --- | ---: | --- |
@@ -122,9 +128,15 @@ explicit pairwise transition records in a reviewed schema extension.
 
 Formulas, forecast period, discount rate or multiple, terminal assumptions, and enterprise-to-equity conversion.
 
+> **Plain-English aside — how this method works:** {Translate the formula into a concrete business example and name the assumption that dominates the result.}
+
 ## Independent cross-check
 
 Use a method with different failure modes.
+
+Explain why the methods are cross-checks rather than independent votes. If a
+per-draw median or other triangulation rule is used, include a three-number
+worked example.
 
 ## Sensitivities
 

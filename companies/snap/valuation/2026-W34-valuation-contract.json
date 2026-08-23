@@ -1,0 +1,95 @@
+{
+  "type": "valuation_horizon_contract",
+  "schema_version": 1,
+  "coverage_cycle_id": "SNAP-2026-W34-01",
+  "valuation_quantity": "fair_value_per_share",
+  "currency": "USD",
+  "as_of": "2026-08-22",
+  "source_cutoff_at": "2026-08-22T23:57:00+02:00",
+  "reference_price": 5.21,
+  "reference_price_at": "2026-08-20T20:59:05Z",
+  "reference_price_source": "integrated_public_market_data_feed",
+  "primary_horizon": "2027-08-20",
+  "display_semantics": "distribution_percentiles",
+  "model": {
+    "version": "structured_elicitation_monte_carlo_v2_joint_horizons",
+    "method": "monte_carlo_structured_elicitation",
+    "calibration_status": "uncalibrated_shadow",
+    "seed": 20260821,
+    "sample_count": 100000,
+    "code_path": "model-2026-W34-distribution.mjs",
+    "verifier_path": "verify-2026-08-21-distribution.mjs"
+  },
+  "horizons": [
+    {
+      "id": "six_month",
+      "date": "2027-02-20",
+      "months_from_reference": 6,
+      "output_kind": "distribution",
+      "p10": 3.8061,
+      "p50": 6.7652,
+      "p90": 10.6404,
+      "mean": 7.0869,
+      "probability_below_reference": 0.285,
+      "probability_loss_30_pct": 0.0896,
+      "probability_loss_50_pct": 0.0409,
+      "bottom_decile_mean": 2.7883
+    },
+    {
+      "id": "twelve_month",
+      "date": "2027-08-20",
+      "months_from_reference": 12,
+      "output_kind": "distribution",
+      "p10": 2.8555,
+      "p50": 7.9022,
+      "p90": 13.7826,
+      "mean": 8.2264,
+      "probability_below_reference": 0.2859,
+      "probability_loss_30_pct": 0.1595,
+      "probability_loss_50_pct": 0.0818,
+      "bottom_decile_mean": 2.0625
+    }
+  ],
+  "horizon_relationship": {
+    "kind": "joint",
+    "linkage_method": "shared revenue, valuation, capital, dilution, and legal states with checkpoint-specific shocks",
+    "value_correlation_method": "pearson",
+    "value_correlation": 0.811,
+    "probability_later_above_earlier": 0.6337,
+    "transition_bands": [
+      {
+        "label": "bottom_quartile",
+        "earlier_band_upper_probability": 0.25,
+        "earlier_band_sample_probability": 0.25,
+        "later_mean": 4.0353,
+        "later_median": 3.5875,
+        "later_probability_below_reference": 0.7477
+      },
+      {
+        "label": "lower_middle_quartile",
+        "earlier_band_upper_probability": 0.5,
+        "earlier_band_sample_probability": 0.25,
+        "later_mean": 6.8296,
+        "later_median": 6.6268,
+        "later_probability_below_reference": 0.3025
+      },
+      {
+        "label": "upper_middle_quartile",
+        "earlier_band_upper_probability": 0.75,
+        "earlier_band_sample_probability": 0.25,
+        "later_mean": 9.1485,
+        "later_median": 9.1935,
+        "later_probability_below_reference": 0.0865
+      },
+      {
+        "label": "top_quartile",
+        "earlier_band_upper_probability": 1,
+        "earlier_band_sample_probability": 0.25,
+        "later_mean": 12.8923,
+        "later_median": 12.5369,
+        "later_probability_below_reference": 0.0069
+      }
+    ],
+    "sensitivity_note": "At 20,000 draws with seed 91, reducing the horizon-link multiplier to 0.50 lowers path continuity and raising it to 1.15 increases it; the twelve-month marginal distribution remains unchanged."
+  }
+}

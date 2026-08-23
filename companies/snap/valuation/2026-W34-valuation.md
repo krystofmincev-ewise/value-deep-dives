@@ -4,6 +4,9 @@ company: Snap Inc.
 ticker: SNAP
 coverage_cycle_id: SNAP-2026-W34-01
 coverage_cycle_path: ../coverage-cycles/2026-W34-01-initial/README.md
+valuation_contract_path: 2026-W34-valuation-contract.json
+valuation_quantity: fair_value_per_share
+valuation_display_semantics: distribution_percentiles
 identity_path: companies/snap/identity.md
 identity_hash: sha256:d09ac6123bc50705e9193b94196e0d56445228609ac1309221ed92a940447157
 security_id: snap-class-a-common
@@ -16,9 +19,13 @@ currency: USD
 reference_price: 5.21
 reference_price_at: 2026-08-20T20:59:05Z
 reference_price_source: integrated_public_market_data_feed
-target_bear: 2.86
-target_base: 7.90
-target_bull: 13.78
+target_bear: null
+target_base: null
+target_bull: null
+primary_distribution_p10: 2.86
+primary_distribution_p50: 7.90
+primary_distribution_p90: 13.78
+primary_distribution_mean: 8.23
 target_horizon: 2027-08-20
 target_status: active
 review_by: 2026-11-15
@@ -39,6 +46,10 @@ method_reviewed_at: 2026-08-23
 > **Reader key:** Enterprise value (**EV**), free cash flow (**FCF**), stock-based compensation (**SBC**), adjusted earnings before interest, taxes, depreciation, and amortization (**adjusted EBITDA**), sum of the parts (**SOTP**), and discounted cash flow (**DCF**) are written out at first use. The [glossary and formula guide](../GLOSSARY.md) explains every recurring term.
 
 ## Answer first
+
+The [valuation-horizon contract](2026-W34-valuation-contract.json) is the exact
+machine-readable record of the modeled quantity, both horizon outputs, model and
+verifier paths, and transition diagnostics.
 
 | Fair-value horizon | P10 | P50 / median | P90 | Mean | Probability below $5.21 |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -425,7 +436,7 @@ That supports an attractive absolute expected-value assessment. The formal QQQ-r
 
 ## Target lifecycle and publication status
 
-- **Analytical release status:** complete, internally reviewed, and ready for repository publication as a clearly labeled draft.
+- **Analytical release status:** linked model verified and suitable for repository preservation as a clearly labeled draft; fresh independent review pending.
 - **Prospective scorecard status:** unregistered; this fair-value distribution is not a target-price forecast and cannot be resolved by market price alone.
 - **Horizons:** linked fair-value checkpoints at 20 February 2027 and 20 August 2027.
 - **Evaluation rule:** not applicable to this analytical fair-value distribution. A separately frozen market-convergence or return forecast would need its own observable resolution rule.
@@ -453,6 +464,6 @@ That supports an attractive absolute expected-value assessment. The formal QQQ-r
 - [Recommendation-upside verifier](verify-2026-08-21-recommender-upside.mjs)
 - [Seasonality and event-normalization verifier](verify-2026-08-21-seasonality.mjs)
 
-The displayed capitalization, revenue-multiple, sum-of-the-parts, discounted-cash-flow, sensitivity, six-month, quarterly-seasonality, comparison-base, and event-normalization calculations were independently recomputed through 22 August. The deterministic verifiers assert the anchor and seasonality calculations. The distribution verifier asserts both horizon outputs, their declared linkage and ordered transition bands, the unchanged twelve-month results, state frequencies, risk metrics, and method cross-checks. The official-close provenance gap prevents prospective publication, not arithmetic review of this draft.
+The displayed capitalization, revenue-multiple, sum-of-the-parts, discounted-cash-flow, sensitivity, quarterly-seasonality, comparison-base, and event-normalization calculations were independently recomputed through 22 August. The deterministic verifiers assert the anchor and seasonality calculations. The distribution verifier asserts both horizon outputs, their declared linkage and ordered transition bands, the unchanged twelve-month results, state frequencies, risk metrics, method cross-checks, and parity with the machine-readable horizon contract. The earlier independent review predates the joint-horizon extension and is stale; a fresh independent pass is required before readiness. The official-close provenance gap separately prevents prospective publication.
 
 Return to the [canonical investment report](../thesis/2026-W34-final-report.md), inspect the [four-quarter forecast](../research/2026-W34-quarterly-forecast.md), or review the [portfolio action](../decisions/2026-W34-decision.md#portfolio-action).

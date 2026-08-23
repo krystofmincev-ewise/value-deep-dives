@@ -47,13 +47,25 @@ A formal thesis or target price should include:
 - research status: `draft`, `published`, `superseded`, or `withdrawn`;
 - position disclosure: `long`, `short`, `no_position`, or `not_disclosed`;
 - reference price, exact timestamp/date, and source;
-- bull, base, and bear values with target horizon;
+- unweighted bull, base, and bear narrative values when used, plus separately
+  labeled distribution outputs and target horizon when modeled;
 - variant perception and key assumptions;
 - catalysts, risks, falsifiers, and review date;
 - confidence and material unknowns;
 - links to sources and, when applicable, the prior finalized coverage-cycle report.
 
+If a report presents more than one valuation horizon, it must link one
+schema-backed valuation-horizon contract. Every horizon described as modeled
+must be complete for its declared quantity. Narrative scenarios must not be
+displayed as percentiles, and an interim fair-value checkpoint must not be
+omitted merely because market-price convergence is outside the model.
+
 Drafts must be visibly marked. A same-cycle draft is working state, not a historical report. Backfilled work must say `retrospective` and must not enter the prospective scorecard.
+
+Review status is part of the draft state. A material edit to the fact set, model,
+horizon contract, canonical valuation, report, or decision invalidates the prior
+review snapshot. Mark it stale and rerun review before describing the dossier as
+reviewed, passed, release-ready, published, or complete.
 
 ## Intellectual honesty
 

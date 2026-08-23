@@ -3,12 +3,22 @@ const DEFAULT_SAMPLE_COUNT = 100_000;
 
 export const modelContract = Object.freeze({
   modelVersion: "structured_elicitation_monte_carlo_v2_joint_horizons",
+  modelMethod: "monte_carlo_structured_elicitation",
+  calibrationStatus: "uncalibrated_shadow",
+  valuationQuantity: "fair_value_per_share",
+  displaySemantics: "distribution_percentiles",
   asOf: "2026-08-22",
   sourceCutoffAt: "2026-08-22T23:57:00+02:00",
   currency: "USD",
   referencePrice: 5.21,
+  referencePriceAt: "2026-08-20T20:59:05Z",
+  referencePriceSource: "integrated_public_market_data_feed",
   sixMonthHorizon: "2027-02-20",
   targetHorizon: "2027-08-20",
+  horizonRelationship: "joint",
+  horizonLinkageMethod:
+    "shared revenue, valuation, capital, dilution, and legal states with checkpoint-specific shocks",
+  horizonValueCorrelationMethod: "pearson",
   seed: DEFAULT_SEED,
   sampleCount: DEFAULT_SAMPLE_COUNT,
   scenarioDisplayPoints: Object.freeze({

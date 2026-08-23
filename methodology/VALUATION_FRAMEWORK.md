@@ -1,6 +1,7 @@
 # Valuation framework
 
-Target prices are scenario outputs, not precise truths. Their value comes from transparent assumptions and consistent follow-up.
+Valuation outputs are model results, not precise truths. Their value comes from
+transparent quantities, horizons, assumptions, and consistent follow-up.
 
 ## Minimum inputs
 
@@ -19,6 +20,11 @@ Every formal valuation snapshot should state:
 - when a full distribution is used: marginal-input provenance, dependency and
   tail-event assumptions, deterministic seed/sample count, distribution
   summaries, and calibration status.
+
+The valuation, report, decision, and coverage-cycle manifest must link one
+schema-backed valuation-horizon contract. It is the canonical machine-readable
+record of quantity, horizons, output semantics, model version, and displayed
+distribution statistics.
 
 ## Multiple discipline
 
@@ -83,10 +89,48 @@ reference-class record is large enough, label the result `structured
 elicitation`, run it in shadow mode against simpler baselines, and do not claim
 empirical calibration.
 
-Bear/base/bull may remain as P10/P50/P90 representative display points, but do
-not probability-weight those percentile points. If probability-bearing buckets
-are required, derive their probabilities and conditional mean values from the
-underlying distribution under frozen bucket rules.
+P10/P50/P90 distribution outputs may be accompanied by nearby narrative
+interpretations, but label the values as percentiles and keep any deterministic
+bear/base/bull anchors in a separate table. Do not probability-weight percentile
+points. If probability-bearing buckets are required, derive their probabilities
+and conditional mean values from the underlying distribution under frozen
+bucket rules.
+
+Do not combine narrative and distribution semantics in one heading. `Bear`,
+`base`, and `bull` are operating narratives; P10, P50, and P90 are locations in
+a distribution. A narrative may explain a nearby percentile after the model is
+run, but the narrative value does not become that percentile by relabeling it.
+
+## Multi-horizon consistency
+
+A modeled later horizon does not imply a complete earlier distribution. For
+every numeric horizon, define the same minimum output contract required above.
+Fair value, target-date market price, and price convergence remain different
+quantities at every date.
+
+Use one of three relationship types:
+
+1. `single`: one valuation horizon; other dates are qualitative monitoring
+   checkpoints without valuation outputs;
+2. `joint`: shared draws or an explicit transition model connect two horizons;
+   or
+3. `independent`: each horizon is separately modeled and no transition claim is
+   made.
+
+A joint model should expose the shared and horizon-specific states, timing of
+cash and operating effects, cross-horizon dependence, conditional later
+outcomes, and sensitivity to linkage strength. Reconcile embedded allowances at
+each date so a shared legal, regulatory, financing, dilution, or survival branch
+is applied once rather than layered onto an anchor that already contains it.
+
+Schema version 1 supports at most two formal horizons, ordered earliest to
+latest; its dependence and transition statistics describe that pair. Before
+publishing three or more, extend the schema and verifier with explicit pairwise
+transition records rather than assigning one ambiguous aggregate correlation.
+
+The deterministic verifier must compare executable outputs with the
+valuation-horizon contract. The repository validator then reconciles that
+contract with the target fields and links in the report, valuation, and decision.
 
 ## Methods
 

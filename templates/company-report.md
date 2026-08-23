@@ -7,6 +7,9 @@ ticker: "{TICKER}"
 exchange: "{Exchange}"
 coverage_cycle_id: "{TICKER}-{YYYY-Www}-{NN}"
 coverage_cycle_path: "{relative path to coverage-cycle manifest}"
+valuation_contract_path: "{relative path to valuation-horizon contract JSON}"
+valuation_quantity: fair_value_per_share
+valuation_display_semantics: distribution_percentiles
 identity_path: "{relative path to verified company identity}"
 identity_hash: "{sha256 digest of the frozen identity record}"
 security_id: "{stable repository security ID}"
@@ -23,6 +26,10 @@ reference_price_source: null
 target_bear: null
 target_base: null
 target_bull: null
+primary_distribution_p10: null
+primary_distribution_p50: null
+primary_distribution_p90: null
+primary_distribution_mean: null
 target_horizon: null
 evaluation_rule: null
 target_status: active
@@ -51,7 +58,8 @@ Recommendation or stance, why the market may be wrong, approximate value range, 
 | Item | Value |
 | --- | --- |
 | Reference price | {value, date/time, source—not a fill unless stated} |
-| Bear / base / bull | {values} |
+| Primary-horizon distribution | {P10 / P50 / P90 / mean, or not applicable} |
+| Unweighted narrative anchors | {downside / central / upside, or not applicable} |
 | Horizon | {date or duration} |
 | Benchmark | {symbol / index and rule} |
 | Confidence | {low / medium / high with explanation} |
@@ -73,7 +81,10 @@ How the company makes money, why customers care, and how industry structure affe
 
 ## Valuation
 
-Link the dated valuation file. Summarize methods and the enterprise-to-equity bridge without creating a second canonical target.
+Link the dated valuation file and valuation-horizon contract. Summarize the
+declared quantity and complete output for every modeled horizon without creating
+a second canonical target. Keep unweighted operating narratives separate from
+distribution percentiles.
 
 ## Catalysts
 

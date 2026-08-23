@@ -16,7 +16,10 @@ supersedes: []
 final_report_path: ../../thesis/2026-W34-final-report.md
 valuation_path: ../../valuation/2026-W34-valuation.md
 decision_path: ../../decisions/2026-W34-decision.md
+valuation_contract_path: ../../valuation/2026-W34-valuation-contract.json
 forecast_path: ../../research/2026-W34-quarterly-forecast.md
+review_status: stale
+review_path: ../../research/2026-08-21-independent-review.md
 tags: [social-media, digital-advertising, initial-coverage]
 ---
 
@@ -35,7 +38,7 @@ tags: [social-media, digital-advertising, initial-coverage]
 | Decision supported | Current watch / buy / hold / reduce / exit mapping at $5.21 across linked six- and twelve-month fair-value horizons, independent of purchase history |
 | Started | 20 August 2026 |
 | Source cutoff | 22 August 2026, 23:57 Central European Summer Time |
-| Research status | Draft analytical dossier complete; prospective registration pending |
+| Research status | Draft; linked model verified; independent-review refresh pending |
 | Prior cycle | None |
 
 ## Choose your depth
@@ -46,6 +49,7 @@ tags: [social-media, digital-advertising, initial-coverage]
 | Decision | [Current action mapping at $5.21](../../decisions/2026-W34-decision.md) | Absolute value, formal stance, conditional action, hurdle, and review trigger |
 | Final report | [Canonical cycle report](../../thesis/2026-W34-final-report.md) | Business, industry, users, advertising, recommendation systems, risks, valuation summary, and variant view |
 | Valuation | [Canonical valuation](../../valuation/2026-W34-valuation.md) | Distribution, operating anchors, sensitivities, and enterprise-to-equity bridge |
+| Horizon contract | [Machine-readable valuation outputs](../../valuation/2026-W34-valuation-contract.json) | Quantity, exact six-/twelve-month outputs, model paths, and transition contract |
 | Audit | [Independent review](../../research/2026-08-21-independent-review.md) | Arithmetic, reconciliation, adversarial checks, and publication gates |
 | Provenance | [Source log](../../sources.md) | Sources, access state, rights, retrieval method, and verification |
 
@@ -55,17 +59,18 @@ tags: [social-media, digital-advertising, initial-coverage]
 | --- | --- | --- |
 | Research plan | [Plan](../../research-plan.md) | Complete |
 | Source log | [Sources](../../sources.md) | Current through cutoff |
-| Final report | [Coverage-cycle report](../../thesis/2026-W34-final-report.md) | Draft, release-ready |
-| Valuation | [Coverage-cycle valuation](../../valuation/2026-W34-valuation.md) | Draft, release-ready |
+| Final report | [Coverage-cycle report](../../thesis/2026-W34-final-report.md) | Draft; model verified; review refresh pending |
+| Valuation | [Coverage-cycle valuation](../../valuation/2026-W34-valuation.md) | Draft; model verified; review refresh pending |
+| Valuation-horizon contract | [Exact machine-readable outputs](../../valuation/2026-W34-valuation-contract.json) | Verified against the executable model |
 | Decision | [Coverage-cycle decision](../../decisions/2026-W34-decision.md) | Draft, current-opportunity frame |
 | Operating forecast | [Coverage-cycle forecast](../../research/2026-W34-quarterly-forecast.md) | Complete |
-| Independent review | [Final review](../../research/2026-08-21-independent-review.md) | Passed |
+| Independent review | [Historical review](../../research/2026-08-21-independent-review.md) | Stale; refresh required after joint-horizon extension |
 | Distribution-method review | [Distribution-first memo](../../research/2026-08-23-distribution-first-valuation.md) | Implemented as uncalibrated shadow model |
 | Deterministic checks | [Valuation verification index](../../valuation/README.md) | Passed |
 
 ## Integrated conclusion
 
-The completed cycle incorporates current filings, advertising-price and regional-economics work, Meta and Reddit anchors, recommendation-system and workforce research, confidence-gap estimates, the operating forecast, a linked six-/twelve-month stochastic valuation distribution, and independent verification. The absolute expected-value assessment is attractive. The formal QQQ-relative stance is insufficient evidence because the dossier does not forecast QQQ. From current evidence alone, the no-position action is watch before the next operating checkpoint. The user-reported existing-long action is conditional hold / no add only if exposure fits a private loss budget; otherwise reduce. Purchase history does not support any conclusion.
+The completed model incorporates current filings, advertising-price and regional-economics work, Meta and Reddit anchors, recommendation-system and workforce research, confidence-gap estimates, the operating forecast, and a linked six-/twelve-month stochastic valuation distribution. The executable verifier and horizon contract agree. The earlier independent review predates the joint-horizon extension and is therefore stale; a fresh review is required before release-ready or published status. The absolute expected-value assessment is attractive. The formal QQQ-relative stance is insufficient evidence because the dossier does not forecast QQQ. From current evidence alone, the no-position action is watch before the next operating checkpoint. The user-reported existing-long action is conditional hold / no add only if exposure fits a private loss budget; otherwise reduce. Purchase history does not support any conclusion.
 
 ## Cycle boundary
 

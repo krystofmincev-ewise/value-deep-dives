@@ -13,5 +13,6 @@ These documents define how research is created, versioned, evaluated, and disclo
 - [Performance and disclosures](PERFORMANCE_AND_DISCLOSURES.md): prospective scoring and position disclosures
 - [Report presentation plan](REPORT_PRESENTATION_PLAN.md): GitHub-native generated reports, analytical visualizations, and delivery roadmap
 - [Post-Snap research and valuation audit](2026-W34-POST-SNAP-RESEARCH-AUDIT.md): three-angle review, immediate corrections, remaining limitations, and harness roadmap
+- [Valuation harness retrospective](2026-W34-VALUATION-HARNESS-RETROSPECTIVE.md): linked-horizon escape analysis, corner cuts, and implemented prevention controls
 
 Methodology changes are allowed, but they should be dated, explained, and applied prospectively. A new rule must not be used to rewrite an old forecast's evaluation after its outcome is known.

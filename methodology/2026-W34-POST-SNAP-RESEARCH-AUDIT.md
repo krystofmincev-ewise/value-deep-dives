@@ -26,6 +26,12 @@ This distinction changes no operating evidence. It makes the decision contract h
 
 > **23 August remediation:** the audit's probability critique is now implemented. The canonical Snap valuation retires the hand-weighted three-point expected value and uses a deterministic 100,000-draw structured-elicitation model with continuous marginals, explicit dependencies, exhaustive legal states, full downside metrics, and shadow-model calibration status. No post-cutoff Snap facts were introduced.
 
+> **Linked-horizon follow-up:** the first distributional remediation left the
+> numeric six-month checkpoint incomplete and mixed narrative labels with
+> percentile headings. The [valuation harness retrospective](2026-W34-VALUATION-HARNESS-RETROSPECTIVE.md)
+> records that escape and the implemented horizon-contract, semantic-table,
+> cross-artifact parity, and review-freshness controls.
+
 ## Workstream reconciliation
 
 The completed Codex workstreams were reconciled against Git rather than treated as complete merely because a task ended. The current `main` history contains the substantive outcomes:
@@ -136,7 +142,7 @@ This is not yet the full state machine proposed by the harness audit. It does no
 | P0 | Source-to-model-to-report parity | A changed input causes verifier failure until the model output, valuation table, report summary, and decision record agree |
 | P0 | Reproducible price and benchmark snapshot | Official close, QQQ close, timestamps, adjustment rule, and hashes are frozen before prospective registration |
 | P1 | End-to-end dossier release command | Runs identity, cutoff, provenance, links, arithmetic, canonical-cardinality, contradiction, public-safety, and publication-state checks together |
-| P1 | Independent-review binding | Review records exact fact, model, report, valuation, and decision hashes so a later edit invalidates the approval |
+| Implemented | Independent-review binding for canonical valuation outputs | A structured review records exact report, valuation, decision, horizon-contract, model, and verifier hashes; a later edit invalidates approval. Fact-snapshot binding remains P0 work |
 | P1 | Browser research receipts | Gemini, Revelio, YouTube, and similar jobs retain local-only prompt/filter/cutoff/route/completion receipts and fail visibly on sign-out or user-interface drift |
 | P1 | Evidence-dependency representation | Flags correlated claims so one mechanism is not counted as several independent confirmations |
 | P1 | Reference-class probability worksheet | Structured-elicitation fallback implemented; a learned reference class still requires a named base rate, adjustment logic, range, and calibration record before claiming calibrated probabilities |
@@ -170,7 +176,7 @@ New integrations should be added only for a named gap. The Snap work did not rev
 
 1. Add one representative Snap fact/claim fixture and source-to-model-to-report parity test.
 2. Add official security/benchmark close capture and freeze rules.
-3. Bind independent review to frozen fact/model hashes and expose one end-to-end publish transition; canonical artifact and review hashes are already enforced when a cycle is marked finalized.
+3. Extend the implemented independent-review snapshot from canonical/model artifacts to frozen fact and claim hashes, then expose one end-to-end publish transition.
 4. Turn the Q2-price contradiction and formal-stance contradiction into semantic validation fixtures.
 5. Add a reference-class probability worksheet; the explicit discontinuous-tail check is now implemented in the Snap distribution verifier.
 6. Add durable local-only browser receipts and resumable failure states.

@@ -13,7 +13,7 @@ scope: meta_reddit_relative_valuation_and_snap_guidance_history
 
 > **Draft research memo.** This is a peer-valuation exercise, not a recommendation to trade Meta Platforms, Reddit, or Snap. Prices can move after the recorded timestamps. All dollars are United States dollars. Figures are in billions unless stated otherwise.
 
-> **Integration note:** The peer work retains its 21 August 02:30 CEST source cutoff. The Snap summary row and links below point to the coverage cycle's canonical distributional valuation, whose company source cutoff is 22 August; its 23 August change was methodological. The Meta and Reddit point estimates remain uncalibrated hand-weighted diagnostics and are not probability forecasts.
+> **Integration note:** The peer work retains its 21 August 02:30 CEST source cutoff. The Snap summary row and links below point to the coverage cycle's canonical distributional valuation, whose company source cutoff is 22 August; its 23 August change was methodological. Meta and Reddit remain unweighted peer scenario ranges, not probability distributions or expected-value estimates.
 
 > **Reader key:** A numbered quarter is abbreviated after first use: first quarter (**Q1**), second quarter (**Q2**), third quarter (**Q3**), and fourth quarter (**Q4**). Financial and operating shorthand is otherwise expanded when it first appears.
 
@@ -23,8 +23,8 @@ Snap is **genuinely cheap on revenue and user-value ratios**. It is not obviousl
 
 | Company | Reference price | Current enterprise value / trailing revenue | Latest revenue growth | Trailing Generally Accepted Accounting Principles operating margin | Trailing free-cash-flow margin | Stock-based compensation / revenue | Recent dilution signal | Twelve-month valuation reference |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| **Meta Platforms** | $545.83 | 6.11x | Q2 total +28%; ads +27% | 38.1% | 16.6% | 11.0% | First-half diluted weighted-average shares -0.6% year over year | **$605** |
-| **Reddit** | $150.31 | 10.19x | Q2 total +61%; ads +64% | 28.2% | 36.7% | 12.2% | Fully diluted shares +0.2% year over year after repurchases | **$176** |
+| **Meta Platforms** | $545.83 | 6.11x | Q2 total +28%; ads +27% | 38.1% | 16.6% | 11.0% | First-half diluted weighted-average shares -0.6% year over year | **$357–$896; $611 central** |
+| **Reddit** | $150.31 | 10.19x | Q2 total +61%; ads +64% | 28.2% | 36.7% | 12.2% | Fully diluted shares +0.2% year over year after repurchases | **$114–$261; $174 central** |
 | **Snap** | $5.21 | 1.68x | Q2 total +19%; ads +9% | **-5.1%** | 11.1% | **16.2%** | Fully diluted proxy +3.0% year over year | Current [canonical valuation](../valuation/2026-W34-valuation.md): **$8.23 mean / $7.90 median** |
 
 **Interpretation:** Snap trades at a 72% discount to Meta and an 84% discount to Reddit on enterprise value / trailing revenue. The discount is too large to dismiss, but most of it has an economic explanation: weaker advertising growth, negative accounting profit, lower monetization, higher dilution, net debt, and weaker governance rights. The valuation question is not whether Snap should receive Meta's or Reddit's multiple today. It is whether Snap can earn even a modest **2.0x–2.5x** multiple by proving durable advertising growth, positive owner earnings, and contained dilution. A 2.4x target-date revenue multiple is still 61% below Meta's current multiple and 76% below Reddit's.
@@ -46,10 +46,6 @@ Snap is **genuinely cheap on revenue and user-value ratios**. It is not obviousl
 > `Operating margin = operating income / revenue`
 >
 > `Twelve-month value/share = (target operating metric × target multiple + target net cash) / target diluted shares`
->
-> `Illustrative peer hand-weighted value = Σ(scenario value × elicited weight)`
->
-> `Present value today = expected twelve-month value / (1 + required return)`
 
 The trailing-twelve-month (TTM) figures use a reproducible bridge:
 
@@ -97,7 +93,6 @@ The target date is approximately 20 August 2027. The primary method applies a mu
 
 | Meta assumption | Bear | Base | Bull |
 | --- | ---: | ---: | ---: |
-| Probability | 25% | 55% | 20% |
 | Target-date TTM revenue | $255bn | $282bn | $310bn |
 | Growth from current TTM | 12% | 24% | 36% |
 | Operating margin | 28% | 35% | 39% |
@@ -116,9 +111,7 @@ The target date is approximately 20 August 2027. The primary method applies a mu
 
 **Assumption — bull:** The core advertising business and new artificial-intelligence products sustain unusually high growth, while infrastructure begins producing enough revenue and efficiency to restore a high-thirties margin.
 
-**Calculation:** `25% × $357 + 55% × $611 + 20% × $896 = approximately $605`.
-
-The **$605 illustrative hand-weighted twelve-month value** is about 11% above $545.83. Discounted at an illustrative 10% required return, it is worth about **$550 today**. That makes Meta approximately fairly valued in this quick model: a superb business whose current price already assumes meaningful artificial-intelligence execution. The $357–$896 range is wide because infrastructure returns, depreciation, and new-product monetization are unusually uncertain.
+The unweighted range is **$357–$896**, with a **$611 central narrative** about 12% above $545.83. This quick peer model does not estimate a distribution mean or market-price convergence, so it cannot support an expected-value or fairly-valued conclusion. The range is wide because infrastructure returns, depreciation, and new-product monetization are unusually uncertain.
 
 ## Reddit valuation
 
@@ -152,7 +145,6 @@ The primary method applies a target-date trailing enterprise-value/revenue multi
 
 | Reddit assumption | Bear | Base | Bull |
 | --- | ---: | ---: | ---: |
-| Probability | 25% | 55% | 20% |
 | Target-date TTM revenue | $3.50bn | $4.10bn | $4.75bn |
 | Growth from current TTM | 26% | 48% | 71% |
 | Operating margin | 22% | 30% | 34% |
@@ -169,9 +161,7 @@ The primary method applies a target-date trailing enterprise-value/revenue multi
 
 **Assumption — bull:** Community data and human discussion become more valuable for both users and advertisers; product discovery, machine translation, search, and advertising automation sustain growth above 60%; buybacks more than offset issuance.
 
-**Calculation:** `25% × $114 + 55% × $174 + 20% × $261 = approximately $176`.
-
-The **$176 illustrative hand-weighted twelve-month value** is about 17% above $150.31. Discounted at an illustrative 11% required return, it is worth approximately **$159 today**. Reddit therefore screens neutral to mildly attractive, but the current price offers only a small present-value margin in this quick model. The bull case is powerful; the bear case is a normal growth-stock de-rating, not a failure of the community.
+The unweighted range is **$114–$261**, with a **$174 central narrative** about 16% above $150.31. This quick peer model does not estimate a distribution mean or market-price convergence, so it cannot support an expected-value or neutral/attractive stance. The bull case is powerful; the bear case is a normal growth-stock de-rating, not a failure of the community.
 
 ## Is Snap too cheap relative to these companies?
 

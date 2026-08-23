@@ -83,6 +83,23 @@ Report mean, median, material quantiles, loss probabilities, and lower-tail
 expected shortfall. Monte Carlo does not convert unsupported inputs into
 evidence.
 
+Before publishing numbers, create the schema-backed valuation-horizon contract
+and separate three things: the quantity being modeled, the horizon, and the
+display semantics. Fair value is not a target-date market price or a convergence
+forecast. Keep narrative scenario anchors in their own table; never combine
+`bear/base/bull` or `downside/central/upside` with P10/P50/P90 column labels.
+
+Every horizon described as modeled needs complete outputs. A later distribution
+does not manufacture an earlier one merely because the later date passes through
+it. If the thesis uses more than one horizon, declare the model `joint` or
+`independent`. For a joint model, carry shared operating, capital, dilution, and
+tail states across draws; reconcile risk allowances at each horizon; report
+cross-horizon correlation or another dependence diagnostic, conditional
+transitions, and linkage sensitivity. For independent horizons, explain why no
+transition inference is used. Contract schema v1 supports one or two modeled
+horizons. Define and validate pairwise transition records before using three or
+more; do not stretch the two-horizon fields into ambiguous aggregate statistics.
+
 Choose methods that fit the economics; use an independent cross-check with
 different failure modes. Reconcile enterprise to equity value and diluted
 per-share value explicitly.
@@ -113,5 +130,11 @@ Return:
 8. portfolio action only when context permits: `buy`, `add`, `hold`, `reduce`, `exit`, `watch`, or `pass`;
 9. confidence, material unknowns, next review, and monitoring plan;
 10. links to the company landing page, coverage-cycle manifest, identity, source log, canonical final report, valuation, decision, and public commit when published.
+
+Run `npm run research:company -- validate companies/<ticker>` before calling a
+dossier reviewed or release-ready. A material change to a model, horizon
+contract, canonical valuation, report, or decision makes the prior review stale;
+refresh the review snapshot instead of updating a review date or editing an old
+approval in place.
 
 Use `$event-driven-investment-research` for any catalyst that merits a prospective probability and price-reaction record. Never let a single near-term catalyst replace survival, capital structure, or long-term value analysis.

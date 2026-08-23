@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 
 import {
   dependencyLoadings,
@@ -13,6 +14,10 @@ import {
   sixMonthMarginalCurves,
 } from "./model-2026-W34-distribution.mjs";
 
+const publishedHorizonContract = JSON.parse(
+  readFileSync(new URL("./2026-W34-valuation-contract.json", import.meta.url), "utf8"),
+);
+
 function assertClose(actual, expected, tolerance, label) {
   assert.ok(
     Math.abs(actual - expected) <= tolerance,
@@ -23,6 +28,25 @@ function assertClose(actual, expected, tolerance, label) {
 assert.equal(
   modelContract.modelVersion,
   "structured_elicitation_monte_carlo_v2_joint_horizons",
+);
+assert.equal(publishedHorizonContract.type, "valuation_horizon_contract");
+assert.equal(publishedHorizonContract.schema_version, 1);
+assert.equal(publishedHorizonContract.coverage_cycle_id, "SNAP-2026-W34-01");
+assert.equal(publishedHorizonContract.valuation_quantity, modelContract.valuationQuantity);
+assert.equal(publishedHorizonContract.display_semantics, modelContract.displaySemantics);
+assert.equal(publishedHorizonContract.model.version, modelContract.modelVersion);
+assert.equal(publishedHorizonContract.model.method, modelContract.modelMethod);
+assert.equal(
+  publishedHorizonContract.model.calibration_status,
+  modelContract.calibrationStatus,
+);
+assert.equal(
+  publishedHorizonContract.model.code_path,
+  "model-2026-W34-distribution.mjs",
+);
+assert.equal(
+  publishedHorizonContract.model.verifier_path,
+  "verify-2026-08-21-distribution.mjs",
 );
 assert.equal(modelContract.asOf, "2026-08-22");
 assert.equal(modelContract.sourceCutoffAt, "2026-08-22T23:57:00+02:00");
@@ -132,6 +156,41 @@ assertClose(
 const result = runDistributionModel();
 const value = result.methods.triangulated;
 const sixMonthValue = result.sixMonth.value;
+const contractSixMonth = publishedHorizonContract.horizons.find(
+  ({ id }) => id === "six_month",
+);
+const contractTwelveMonth = publishedHorizonContract.horizons.find(
+  ({ id }) => id === "twelve_month",
+);
+
+assert.ok(contractSixMonth, "published contract must include six_month");
+assert.ok(contractTwelveMonth, "published contract must include twelve_month");
+assert.equal(
+  publishedHorizonContract.horizon_relationship.kind,
+  modelContract.horizonRelationship,
+);
+assert.equal(
+  publishedHorizonContract.horizon_relationship.value_correlation_method,
+  modelContract.horizonValueCorrelationMethod,
+);
+assert.equal(
+  publishedHorizonContract.horizon_relationship.linkage_method,
+  modelContract.horizonLinkageMethod,
+);
+assert.equal(publishedHorizonContract.primary_horizon, modelContract.targetHorizon);
+assert.equal(contractSixMonth.date, modelContract.sixMonthHorizon);
+assert.equal(contractTwelveMonth.date, modelContract.targetHorizon);
+assert.equal(publishedHorizonContract.reference_price, modelContract.referencePrice);
+assert.equal(publishedHorizonContract.reference_price_at, modelContract.referencePriceAt);
+assert.equal(
+  publishedHorizonContract.reference_price_source,
+  modelContract.referencePriceSource,
+);
+assert.equal(publishedHorizonContract.currency, modelContract.currency);
+assert.equal(publishedHorizonContract.as_of, modelContract.asOf);
+assert.equal(publishedHorizonContract.source_cutoff_at, modelContract.sourceCutoffAt);
+assert.equal(publishedHorizonContract.model.seed, modelContract.seed);
+assert.equal(publishedHorizonContract.model.sample_count, modelContract.sampleCount);
 
 // These assertions freeze the exact published model version. Changing a
 // marginal, dependency, legal branch, seed, sample count, or valuation formula
@@ -170,6 +229,29 @@ assertClose(
   0.0001,
   "bottom-decile expected value",
 );
+
+for (const [label, summary, contract] of [
+  ["six-month", sixMonthValue, contractSixMonth],
+  ["twelve-month", value, contractTwelveMonth],
+]) {
+  for (const [contractField, resultField] of [
+    ["mean", "mean"],
+    ["p10", "p10"],
+    ["p50", "p50"],
+    ["p90", "p90"],
+    ["probability_below_reference", "probabilityBelowReference"],
+    ["probability_loss_30_pct", "probabilityLossThirtyPercent"],
+    ["probability_loss_50_pct", "probabilityLossFiftyPercent"],
+    ["bottom_decile_mean", "expectedShortfallTenPercent"],
+  ]) {
+    assertClose(
+      contract[contractField],
+      summary[resultField],
+      0.0001,
+      `${label} contract parity for ${contractField}`,
+    );
+  }
+}
 
 assertClose(sixMonthValue.mean, 7.0869, 0.0001, "six-month mean value");
 assertClose(sixMonthValue.p10, 3.8061, 0.0001, "six-month P10");
@@ -212,6 +294,19 @@ assertClose(
   0.6337,
   0.0001,
   "probability twelve-month value exceeds six-month value",
+);
+assertClose(
+  publishedHorizonContract.horizon_relationship.value_correlation,
+  result.horizonLink.valueCorrelation,
+  0.0001,
+  "contract parity for horizon value correlation",
+);
+assertClose(
+  publishedHorizonContract.horizon_relationship
+    .probability_later_above_earlier,
+  result.horizonLink.probabilityTwelveMonthAboveSixMonth,
+  0.0001,
+  "contract parity for later-above-earlier probability",
 );
 
 assertClose(result.diagnostics.revenue.p50, 7.4803, 0.0001, "median revenue");
@@ -268,6 +363,28 @@ for (const [name, expected] of Object.entries(expectedTransitions)) {
     expected.belowReference,
     0.0001,
     `${name} probability below reference`,
+  );
+}
+
+for (const band of publishedHorizonContract.horizon_relationship.transition_bands) {
+  const transitionKey = band.label.replace(/_([a-z])/g, (_match, letter) =>
+    letter.toUpperCase(),
+  );
+  const transition = result.horizonTransitions[transitionKey];
+  assert.ok(transition, `contract transition band ${band.label} must map to model output`);
+  assertClose(
+    transition.sampleShare,
+    band.earlier_band_sample_probability,
+    0.0001,
+    `${band.label} contract sample probability`,
+  );
+  assertClose(transition.mean, band.later_mean, 0.0001, `${band.label} contract mean`);
+  assertClose(transition.p50, band.later_median, 0.0001, `${band.label} contract median`);
+  assertClose(
+    transition.probabilityBelowReference,
+    band.later_probability_below_reference,
+    0.0001,
+    `${band.label} contract downside probability`,
   );
 }
 

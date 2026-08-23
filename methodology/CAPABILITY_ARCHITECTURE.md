@@ -21,6 +21,7 @@ As of 2026-08-20, this repository has a provenance-aware acquisition layer but n
 | Source and claim | Coverage-cycle or study source log | Connect a claim or model input to an original source, access state, rights class, retrieval method, and verification state. |
 | Final company report | One `YYYY-Www-final-report.md` referenced by the applicable cycle manifest | Integrate the thesis, variant view, valuation summary, stance, falsifiers, uncertainty, and horizon; evolve in place until the cycle is finalized. |
 | Valuation | One canonical valuation referenced by the applicable cycle manifest | Reconcile operating cases, capital structure, scenario values, and sensitivities; compare only to prior finalized cycles. |
+| Valuation horizon contract | One schema-backed JSON record referenced by the manifest, report, valuation, and decision | Freeze quantity, horizons, display semantics, exact distribution outputs, model/version paths, and cross-horizon relationship for deterministic reconciliation. |
 | Decision | One canonical decision referenced by the applicable cycle manifest | Map the research view and portfolio context to buy/add/reduce/exit/watch/pass. |
 | Event forecast | Dated event forecast plus event ledger | Pre-register an observable event outcome and a separate security-return outcome. |
 | Outcome | Dated event outcome or retrospective | Resolve the original rule without rewriting it, then attribute insight, market exposure, timing, and luck. |
@@ -82,6 +83,9 @@ Position size, taxes, liquidity, constraints, and actual fills may remain privat
 - Transparent structured-elicitation valuation distributions with deterministic
   sampling, declared dependencies and tail branches, method cross-checks, and
   company-specific verification hooks.
+- Schema-backed valuation-horizon contracts and canonical-artifact checks that
+  reject incomplete distributions, mixed scenario/percentile semantics, and
+  undefined multi-horizon transitions.
 
 ### Build first
 

@@ -2,6 +2,16 @@ import { createHash } from "node:crypto";
 import { access, readFile, readdir, stat } from "node:fs/promises";
 import { basename, dirname, extname, isAbsolute, relative, resolve, sep } from "node:path";
 
+import {
+  validateValuationHorizonContract,
+  valuationTableSemanticErrors,
+} from "./valuation-horizon.mjs";
+
+export {
+  validateValuationHorizonContract,
+  valuationTableSemanticErrors,
+} from "./valuation-horizon.mjs";
+
 const canonicalTypes = {
   report: new Set(["company_report", "company_thesis"]),
   valuation: new Set(["valuation"]),
@@ -13,6 +23,8 @@ const canonicalFields = {
   valuation: "valuation_path",
   decision: "decision_path",
 };
+
+const reviewStatuses = new Set(["not_requested", "pending", "passed", "failed", "stale"]);
 
 function parseScalar(rawValue) {
   const value = rawValue.trim();
@@ -142,6 +154,22 @@ async function readRecord(path, repositoryRoot, findings, check = "front-matter"
   }
 }
 
+async function readJsonRecord(path, repositoryRoot, findings, check) {
+  const text = await readFile(path, "utf8").catch(() => null);
+  if (text === null) {
+    findings.push(finding("error", check, "Cannot read file.", displayPath(repositoryRoot, path)));
+    return null;
+  }
+  try {
+    return { path, text, record: JSON.parse(text) };
+  } catch (error) {
+    findings.push(
+      finding("error", check, `Invalid JSON: ${error.message}`, displayPath(repositoryRoot, path)),
+    );
+    return null;
+  }
+}
+
 async function canonicalRecords(companyRoot, cycleId, repositoryRoot, findings) {
   const records = [];
   for (const path of await filesRecursively(companyRoot)) {
@@ -163,7 +191,18 @@ async function canonicalRecords(companyRoot, cycleId, repositoryRoot, findings) 
 async function validateHashField(record, field, targetPath, repositoryRoot, findings, manifestPath) {
   const expected = record[field];
   if (!expected) return;
-  const content = await readFile(targetPath, "utf8");
+  const content = await readFile(targetPath, "utf8").catch(() => null);
+  if (content === null) {
+    findings.push(
+      finding(
+        "error",
+        "coverage-cycle-hash",
+        `${field} cannot be verified because ${displayPath(repositoryRoot, targetPath)} is unreadable.`,
+        displayPath(repositoryRoot, manifestPath),
+      ),
+    );
+    return;
+  }
   const actual = sha256(content);
   if (expected !== actual) {
     findings.push(
@@ -205,6 +244,8 @@ async function validateManifest(repositoryRoot, manifestPath) {
       "final_report_path",
       "valuation_path",
       "decision_path",
+      "valuation_contract_path",
+      "review_status",
     ],
     add,
   );
@@ -225,6 +266,12 @@ async function validateManifest(repositoryRoot, manifestPath) {
     add(
       "coverage-cycle-contract",
       "research_status must be researching, draft, published, superseded, or withdrawn.",
+    );
+  }
+  if (!reviewStatuses.has(record.review_status)) {
+    add(
+      "coverage-cycle-review",
+      "review_status must be not_requested, pending, passed, failed, or stale.",
     );
   }
 
@@ -261,6 +308,27 @@ async function validateManifest(repositoryRoot, manifestPath) {
       continue;
     }
     if (!(await stat(target)).isFile()) add("coverage-cycle-path", `${field} must reference a file.`);
+  }
+  const valuationContractPath = declaredPath(
+    repositoryRoot,
+    manifestPath,
+    record.valuation_contract_path,
+  );
+  canonical.contract = valuationContractPath;
+  if (!valuationContractPath) {
+    add("valuation-horizon-contract", "valuation_contract_path is required.");
+  } else if (!inside(companyRoot, valuationContractPath)) {
+    add(
+      "valuation-horizon-contract",
+      `valuation_contract_path must stay inside ${displayPath(repositoryRoot, companyRoot)}.`,
+    );
+  } else if (!(await pathExists(valuationContractPath))) {
+    add(
+      "valuation-horizon-contract",
+      `valuation_contract_path does not exist: ${displayPath(repositoryRoot, valuationContractPath)}.`,
+    );
+  } else if (extname(valuationContractPath) !== ".json") {
+    add("valuation-horizon-contract", "valuation_contract_path must reference JSON.");
   }
 
   if (canonical.report && basename(canonical.report) !== `${record.iso_week}-final-report.md`) {
@@ -316,6 +384,9 @@ async function validateManifest(repositoryRoot, manifestPath) {
     "identity_hash",
     "security_id",
     "listing_id",
+    "valuation_contract_path",
+    "valuation_quantity",
+    "valuation_display_semantics",
   ];
   for (const [kind, document] of Object.entries(canonicalDocuments)) {
     const kindFields = kind === "decision"
@@ -418,6 +489,35 @@ async function validateManifest(repositoryRoot, manifestPath) {
         ),
       );
     }
+    const contractBack = declaredPath(
+      repositoryRoot,
+      document.path,
+      document.record.valuation_contract_path,
+    );
+    if (
+      !contractBack ||
+      !valuationContractPath ||
+      resolve(contractBack) !== resolve(valuationContractPath)
+    ) {
+      findings.push(
+        finding(
+          "error",
+          "valuation-horizon-linkage",
+          `${kind} valuation_contract_path must resolve to the cycle's canonical contract.`,
+          displayPath(repositoryRoot, document.path),
+        ),
+      );
+    }
+    for (const message of valuationTableSemanticErrors(document.text)) {
+      findings.push(
+        finding(
+          "error",
+          "valuation-display-semantics",
+          message,
+          displayPath(repositoryRoot, document.path),
+        ),
+      );
+    }
     const supersedes = document.record.supersedes;
     if (supersedes !== null && supersedes !== undefined && supersedes !== "") {
       const priorPath = declaredPath(repositoryRoot, document.path, supersedes);
@@ -438,6 +538,189 @@ async function validateManifest(repositoryRoot, manifestPath) {
               "error",
               "coverage-cycle-supersession",
               `${kind} must not supersede an artifact from the same coverage cycle.`,
+              displayPath(repositoryRoot, document.path),
+            ),
+          );
+        }
+      }
+    }
+  }
+
+  let valuationContract = null;
+  let contractModelPath = null;
+  let contractVerifierPath = null;
+  if (
+    valuationContractPath &&
+    inside(companyRoot, valuationContractPath) &&
+    (await pathExists(valuationContractPath))
+  ) {
+    valuationContract = await readJsonRecord(
+      valuationContractPath,
+      repositoryRoot,
+      findings,
+      "valuation-horizon-contract",
+    );
+    if (valuationContract) {
+      for (const message of validateValuationHorizonContract(valuationContract.record)) {
+        findings.push(
+          finding(
+            "error",
+            "valuation-horizon-contract",
+            message,
+            displayPath(repositoryRoot, valuationContractPath),
+          ),
+        );
+      }
+
+      const contract = valuationContract.record;
+      if (contract.coverage_cycle_id !== record.coverage_cycle_id) {
+        add(
+          "valuation-horizon-alignment",
+          "The valuation contract coverage_cycle_id must match the cycle manifest.",
+        );
+      }
+      if (contract.source_cutoff_at !== record.source_cutoff_at) {
+        add(
+          "valuation-horizon-alignment",
+          "The valuation contract source cutoff must match the canonical cycle cutoff.",
+        );
+      }
+      if (contract.as_of !== record.as_of) {
+        add(
+          "valuation-horizon-alignment",
+          "The valuation contract as_of date must match the coverage-cycle manifest.",
+        );
+      }
+
+      contractModelPath = declaredPath(
+        repositoryRoot,
+        valuationContractPath,
+        contract.model?.code_path,
+      );
+      contractVerifierPath = declaredPath(
+        repositoryRoot,
+        valuationContractPath,
+        contract.model?.verifier_path,
+      );
+      for (const [kind, target] of [
+        ["model", contractModelPath],
+        ["verifier", contractVerifierPath],
+      ]) {
+        const validTarget =
+          target &&
+          inside(companyRoot, target) &&
+          (await pathExists(target)) &&
+          (await stat(target)).isFile();
+        if (!validTarget) {
+          findings.push(
+            finding(
+              "error",
+              "valuation-horizon-model",
+              `The valuation contract ${kind} path must reference an existing file inside the company root.`,
+              displayPath(repositoryRoot, valuationContractPath),
+            ),
+          );
+        }
+      }
+
+      const primary = Array.isArray(contract.horizons)
+        ? contract.horizons.find(({ date }) => date === contract.primary_horizon)
+        : null;
+      const rounded = (value, digits) =>
+        typeof value === "number" ? Number(value.toFixed(digits)) : value;
+      for (const kind of ["report", "valuation"]) {
+        const document = canonicalDocuments[kind];
+        if (!document || !primary) continue;
+        const expected = {
+          valuation_quantity: contract.valuation_quantity,
+          valuation_display_semantics: contract.display_semantics,
+          as_of: contract.as_of,
+          currency: contract.currency,
+          reference_price: contract.reference_price,
+          reference_price_at: contract.reference_price_at,
+          reference_price_source: contract.reference_price_source,
+          target_bear: null,
+          target_base: null,
+          target_bull: null,
+          primary_distribution_p10: rounded(primary.p10, 2),
+          primary_distribution_p50: rounded(primary.p50, 2),
+          primary_distribution_p90: rounded(primary.p90, 2),
+          primary_distribution_mean: rounded(primary.mean, 2),
+          target_horizon: contract.primary_horizon,
+          distribution_method: contract.model?.version,
+          distribution_calibration_status: contract.model?.calibration_status,
+          distribution_seed: contract.model?.seed,
+          distribution_sample_count: contract.model?.sample_count,
+        };
+        for (const [field, value] of Object.entries(expected)) {
+          if (document.record[field] !== value) {
+            findings.push(
+              finding(
+                "error",
+                "valuation-horizon-alignment",
+                `${kind} ${field} must equal the valuation contract value ${value}.`,
+                displayPath(repositoryRoot, document.path),
+              ),
+            );
+          }
+        }
+      }
+
+      const decisionDocument = canonicalDocuments.decision;
+      if (decisionDocument) {
+        const expectedDecision = {
+          valuation_quantity: contract.valuation_quantity,
+          valuation_display_semantics: contract.display_semantics,
+          price: contract.reference_price,
+          price_at: contract.reference_price_at,
+          price_source: contract.reference_price_source,
+          target_horizon: contract.primary_horizon,
+        };
+        for (const [field, value] of Object.entries(expectedDecision)) {
+          if (decisionDocument.record[field] !== value) {
+            findings.push(
+              finding(
+                "error",
+                "valuation-horizon-alignment",
+                `decision ${field} must equal the valuation contract value ${value}.`,
+                displayPath(repositoryRoot, decisionDocument.path),
+              ),
+            );
+          }
+        }
+        if (
+          primary &&
+          decisionDocument.record.modeled_mean_fair_value_upside_pct !== undefined
+        ) {
+          const expectedUpside = rounded(
+            (primary.mean / contract.reference_price - 1) * 100,
+            1,
+          );
+          if (decisionDocument.record.modeled_mean_fair_value_upside_pct !== expectedUpside) {
+            findings.push(
+              finding(
+                "error",
+                "valuation-horizon-alignment",
+                `decision modeled_mean_fair_value_upside_pct must equal ${expectedUpside}.`,
+                displayPath(repositoryRoot, decisionDocument.path),
+              ),
+            );
+          }
+        }
+      }
+
+      for (const [kind, document] of Object.entries(canonicalDocuments)) {
+        const linked = new Set(
+          markdownTargets(document.text, document.path, repositoryRoot).map(({ resolved }) =>
+            resolve(resolved),
+          ),
+        );
+        if (!linked.has(resolve(valuationContractPath))) {
+          findings.push(
+            finding(
+              "error",
+              "valuation-horizon-linkage",
+              `${kind} must link the canonical valuation-horizon contract in its body.`,
               displayPath(repositoryRoot, document.path),
             ),
           );
@@ -492,8 +775,33 @@ async function validateManifest(repositoryRoot, manifestPath) {
     }
   }
 
+  if (record.review_status !== "passed") {
+    for (const document of publicDocuments) {
+      const positiveReadinessClaim =
+        /\banalytical dossier:\s*pass\b/i.test(document.text) ||
+        /^\s*draft,\s*release[- ]ready[.!]?\s*$/im.test(document.text) ||
+        /\|\s*(?:draft,\s*)?release[- ]ready\s*\|/i.test(document.text) ||
+        /\b(?:is|are|status(?:\s+is|:))\s+(?:complete and\s+)?release[- ]ready\b/i.test(
+          document.text,
+        );
+      if (positiveReadinessClaim) {
+        findings.push(
+          finding(
+            "error",
+            "coverage-cycle-review",
+            "A cycle without a passed current review must not be described as release-ready or passed.",
+            displayPath(repositoryRoot, document.path),
+          ),
+        );
+      }
+    }
+  }
+
   const finalized = record.status === "complete" || record.research_status === "published";
   if (finalized) {
+    if (record.review_status !== "passed") {
+      add("coverage-cycle-finalization", "A finalized cycle requires review_status: passed.");
+    }
     required(
       record,
       [
@@ -501,8 +809,12 @@ async function validateManifest(repositoryRoot, manifestPath) {
         "final_report_hash",
         "valuation_hash",
         "decision_hash",
+        "valuation_contract_hash",
         "review_path",
         "review_hash",
+        "reviewed_at",
+        "model_hash",
+        "verifier_hash",
       ],
       add,
     );
@@ -519,12 +831,118 @@ async function validateManifest(repositoryRoot, manifestPath) {
   if (canonical.decision) {
     await validateHashField(record, "decision_hash", canonical.decision, repositoryRoot, findings, manifestPath);
   }
+  if (canonical.contract) {
+    await validateHashField(
+      record,
+      "valuation_contract_hash",
+      canonical.contract,
+      repositoryRoot,
+      findings,
+      manifestPath,
+    );
+  }
+  if (record.reviewed_at && !Number.isFinite(Date.parse(record.reviewed_at))) {
+    add("coverage-cycle-review", "reviewed_at must be an ISO-8601 timestamp.");
+  }
+  let reviewDocument = null;
   if (record.review_path) {
     const reviewPath = declaredPath(repositoryRoot, manifestPath, record.review_path);
     if (!reviewPath || !inside(companyRoot, reviewPath) || !(await pathExists(reviewPath))) {
       add("coverage-cycle-finalization", "review_path must reference an existing file inside the company root.");
     } else {
+      reviewDocument = await readRecord(
+        reviewPath,
+        repositoryRoot,
+        findings,
+        "independent-review",
+      );
       await validateHashField(record, "review_hash", reviewPath, repositoryRoot, findings, manifestPath);
+    }
+  }
+  if (reviewDocument) {
+    const review = reviewDocument.record;
+    const reviewPath = displayPath(repositoryRoot, reviewDocument.path);
+    const reviewAdd = (message) => {
+      findings.push(finding("error", "coverage-cycle-review", message, reviewPath));
+    };
+    if (review.type !== "independent_review") {
+      reviewAdd("A review_path record must have type: independent_review.");
+    }
+    for (const field of ["coverage_cycle_id", "company", "ticker"]) {
+      if (review[field] !== record[field]) {
+        reviewAdd(`${field} must match the coverage-cycle manifest.`);
+      }
+    }
+    if (
+      record.review_status !== "not_requested" &&
+      review.review_status !== record.review_status
+    ) {
+      reviewAdd("The review record status must match the coverage-cycle manifest.");
+    }
+  }
+  if (record.review_status === "passed") {
+    required(
+      record,
+      [
+        "reviewed_at",
+        "final_report_hash",
+        "valuation_hash",
+        "decision_hash",
+        "valuation_contract_hash",
+        "review_path",
+        "review_hash",
+        "model_hash",
+        "verifier_hash",
+      ],
+      add,
+    );
+    if (reviewDocument) {
+      const review = reviewDocument.record;
+      const reviewPath = displayPath(repositoryRoot, reviewDocument.path);
+      const reviewAdd = (message) => {
+        findings.push(finding("error", "coverage-cycle-review", message, reviewPath));
+      };
+      if (review.reviewed_at !== record.reviewed_at) {
+        reviewAdd("The review record reviewed_at must match the coverage-cycle manifest.");
+      }
+      if (!new Set(["human", "independent_agent"]).has(review.reviewer_independence)) {
+        reviewAdd(
+          "A passed independent review must identify a human or independent-agent reviewer; a same-session self-check is not independent.",
+        );
+      }
+      const reviewHashFields = {
+        reviewed_final_report_hash: "final_report_hash",
+        reviewed_valuation_hash: "valuation_hash",
+        reviewed_decision_hash: "decision_hash",
+        reviewed_contract_hash: "valuation_contract_hash",
+        reviewed_model_hash: "model_hash",
+        reviewed_verifier_hash: "verifier_hash",
+      };
+      for (const [reviewField, manifestField] of Object.entries(reviewHashFields)) {
+        if (!review[reviewField] || review[reviewField] !== record[manifestField]) {
+          reviewAdd(`${reviewField} must match manifest ${manifestField}.`);
+        }
+      }
+    }
+    if (contractModelPath) {
+      await validateHashField(
+        record,
+        "model_hash",
+        contractModelPath,
+        repositoryRoot,
+        findings,
+        manifestPath,
+      );
+    }
+    if (contractVerifierPath) {
+      await validateHashField(
+        record,
+        "verifier_hash",
+        contractVerifierPath,
+        repositoryRoot,
+        findings,
+        manifestPath,
+      );
     }
   }
 

@@ -4,6 +4,9 @@ company: "{Company}"
 ticker: "{TICKER}"
 coverage_cycle_id: "{TICKER}-{YYYY-Www}-{NN}"
 coverage_cycle_path: "{relative path to coverage-cycle manifest}"
+valuation_contract_path: "{relative path to valuation-horizon contract JSON}"
+valuation_quantity: fair_value_per_share
+valuation_display_semantics: distribution_percentiles
 identity_path: "{relative path to verified company identity}"
 identity_hash: "{sha256 digest of the frozen identity record}"
 security_id: "{stable repository security ID}"
@@ -19,6 +22,10 @@ reference_price_source: null
 target_bear: null
 target_base: null
 target_bull: null
+primary_distribution_p10: null
+primary_distribution_p50: null
+primary_distribution_p90: null
+primary_distribution_mean: null
 target_horizon: null
 target_status: active
 review_by: null
@@ -33,16 +40,34 @@ distribution_sample_count: null
 
 ## Summary
 
-| Scenario | Value per share | Return from reference | Key operating case | Method |
+Link the schema-backed valuation-horizon contract. It is the machine-readable
+source for the modeled quantity, horizon dates, exact distribution outputs,
+model/version paths, and any cross-horizon relationship.
+
+### Modeled distribution outputs
+
+| Horizon | P10 | P50 / median | P90 | Mean | Probability below reference |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| | | | | | |
+
+### Unweighted operating narratives
+
+| Narrative | Value per share | Return from reference | Key operating case | Method |
 | --- | ---: | ---: | --- | --- |
-| Bear | | | | |
-| Base | | | | |
-| Bull | | | | |
+| Downside | | | | |
+| Central | | | | |
+| Upside | | | | |
 
 Reference price: {value, exact date/time, source, and adjustment convention}.
 
-State whether bear/base/bull are probability buckets, percentile display points,
-or unweighted narratives. Never probability-weight P10/P50/P90 values.
+State whether bear/base/bull are probability buckets or unweighted narratives.
+Never combine narrative names with percentile labels or probability-weight
+P10/P50/P90 values.
+
+When `display_semantics` is `distribution_percentiles`, leave the legacy
+`target_bear`, `target_base`, and `target_bull` fields null and populate the four
+`primary_distribution_*` fields from the horizon contract. Narrative anchors
+remain in the separate table.
 
 ## Capitalization and enterprise-value bridge
 
@@ -77,7 +102,7 @@ bucket. Otherwise state that the scenarios are unweighted.
 
 For a full distribution, record:
 
-- exact forecast quantity and horizon;
+- exact forecast quantity and every modeled horizon;
 - empirical reference class or `structured_elicitation` status;
 - marginal distributions and their evidence;
 - dependency assumptions and stress cases;
@@ -85,6 +110,13 @@ For a full distribution, record:
 - deterministic seed, sample count, and code path; and
 - mean, median, P10/P25/P75/P90, probability below reference, material-loss
   probabilities, and lower-tail expected shortfall.
+
+For one or two horizons, declare `single`, `joint`, or `independent` in the
+valuation-horizon contract. A joint model must document shared states, timing,
+cross-horizon dependence, conditional transitions, linkage sensitivity, and
+per-horizon overlap controls. A later endpoint does not imply an earlier
+distribution. Contract schema v1 stops at two horizons; three or more require
+explicit pairwise transition records in a reviewed schema extension.
 
 ## Primary valuation method
 
@@ -112,7 +144,11 @@ What this model omits or treats simplistically.
 
 ## Target lifecycle
 
-Horizon, evaluation rule, next review, and falsifiers. Link a prior valuation only when it belongs to a different finalized coverage cycle; same-cycle working drafts are not separate records.
+Horizon, evaluation rule, next review, falsifiers, and review freshness. A
+material model or canonical-artifact edit sets the cycle review to `stale` until
+the bound review snapshot is refreshed. Link a prior valuation only when it
+belongs to a different finalized coverage cycle; same-cycle working drafts are
+not separate records.
 
 ## Sources
 

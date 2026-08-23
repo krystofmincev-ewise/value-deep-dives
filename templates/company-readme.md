@@ -28,6 +28,7 @@ One paragraph explaining why the company deserves research. State clearly if no 
 | Current coverage cycle | [{YYYY-Www}-{NN}-{kind}](coverage-cycles/{YYYY-Www}-{NN}-{kind}/README.md) |
 | Current target | Not set |
 | Target horizon | Not set |
+| Valuation-horizon contract | Not set |
 | Position disclosure | Not disclosed |
 | Last reviewed | {date} |
 | Next review | Not set |
@@ -51,7 +52,8 @@ One paragraph explaining why the company deserves research. State clearly if no 
 
 ## Current view
 
-Link the latest finalized coverage-cycle report and valuation. Do not duplicate target values in several places.
+Link the latest finalized coverage-cycle report, valuation, and machine-readable
+valuation-horizon contract. Do not duplicate target values in several places.
 
 ## Coverage-cycle history
 

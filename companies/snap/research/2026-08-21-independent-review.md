@@ -1,8 +1,18 @@
 ---
-type: research_memo
+type: independent_review
 company: Snap Inc.
 ticker: SNAP
+coverage_cycle_id: SNAP-2026-W34-01
 status: draft
+review_status: stale
+reviewed_at: null
+reviewer_independence: not_recorded
+reviewed_final_report_hash: null
+reviewed_valuation_hash: null
+reviewed_decision_hash: null
+reviewed_contract_hash: null
+reviewed_model_hash: null
+reviewed_verifier_hash: null
 as_of: 2026-08-22
 source_cutoff_at: 2026-08-22T23:57:00+02:00
 scope: independent-valuation-publication-review
@@ -12,11 +22,11 @@ scope: independent-valuation-publication-review
 
 ## Conclusion
 
-**Analytical dossier: pass. Public prospective registration: pending.** Three independent review tracks examined the final coverage-cycle analysis for valuation arithmetic and capital structure, evidence and source quality, and public-repository safety and lifecycle consistency. Confidence-gap, regional-economics, Gemini/recommender, and licensed-workforce work corrected the advertising-price and Universal User Model records and bounded additional inputs. The unweighted downside, central, and upside operating paths and six-month checkpoints reconstruct without a central arithmetic error.
+**Historical review disposition: superseded; refresh required. Public prospective registration: pending.** Three independent review tracks examined the coverage-cycle analysis for valuation arithmetic and capital structure, evidence and source quality, and public-repository safety and lifecycle consistency. Confidence-gap, regional-economics, Gemini/recommender, and licensed-workforce work corrected the advertising-price and Universal User Model records and bounded additional inputs. That review covered the original deterministic six-month paths and the first twelve-month distribution model. The later joint-horizon extension is deterministically verified but was not independently reviewed, so this memo no longer supplies a current pass.
 
 On 23 August, a method-hardening pass retired the unsupported 30% / 50% / 20% company-scenario weighting and added a deterministic 100,000-draw distribution model. Its separate verifier asserts the model contract, legal-state frequencies, cross-method values, quantiles, mean, and downside metrics. The Snap fact cutoff remains 22 August; this was a method review, not a new company-evidence pass.
 
-This pass means the research can be preserved as a clearly labeled draft under `companies/snap/`. It does not turn the record into a registered forecast. The 23 August method review also establishes that the fair-value distribution cannot be resolved by market price alone; a separate return forecast would first need an explicit convergence model, then reproducible official-close and benchmark provenance, a formal identifier, and human approval.
+The research remains preserved as a clearly labeled draft under `companies/snap/`. Before readiness or published status, a fresh review must bind the current horizon contract, model, verifier, report, valuation, and decision. A separate return forecast would additionally need an explicit convergence model, reproducible official-close and benchmark provenance, a formal identifier, and human approval.
 
 ### Final same-day reconciliation
 
@@ -31,7 +41,7 @@ This pass means the research can be preserved as a clearly labeled draft under `
 
 | Area | Finding | Disposition |
 | --- | --- | --- |
-| Valuation arithmetic | Quarterly revenue, adjusted EBITDA, FCF, three valuation methods, stochastic distribution, and six-month paths needed independent reconstruction | Passed; anchors are asserted by the [deterministic verifier](../valuation/verify-2026-08-21.mjs) and distribution outputs by the [stochastic verifier](../valuation/verify-2026-08-21-distribution.mjs) |
+| Valuation arithmetic | Quarterly revenue, adjusted EBITDA, FCF, three valuation methods, the original twelve-month stochastic distribution, and deterministic six-month paths needed independent reconstruction | Historical pass for that artifact set; the current joint verifier now proves arithmetic and contract parity, but its six-month distribution and transition layer still require fresh independent review |
 | Cash-flow metric pairing | Enterprise value had been paired with levered issuer FCF in one reverse-expectations line | Corrected to equity value / FCF |
 | Leases and debt | The draft did not display its operating-lease exclusion and used debt carrying value without enough convention detail | Added the $691 million lease line, lease-excluded bridges and sensitivity, and carrying-value versus principal disclosure |
 | Dilution | A rounded 3% equity-value shortcut overstated the illustrative dilution transfer | Recomputed from the disclosed 54.5 million incremental-share proxy |

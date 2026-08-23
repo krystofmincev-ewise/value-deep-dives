@@ -51,6 +51,12 @@ and derive expected value and downside metrics from a transparent full
 distribution. The [valuation framework](VALUATION_FRAMEWORK.md) defines the
 minimum standard.
 
+For every formal valuation, create one machine-readable horizon contract and
+link it from the cycle manifest, report, valuation, and decision. If an interim
+checkpoint carries numeric valuation outputs, either model its full distribution
+jointly with the target horizon or identify it as a separately modeled horizon.
+Do not treat a later endpoint as proof that the earlier distribution exists.
+
 ## 5. Decide
 
 An investment decision is distinct from a research conclusion. First record the research stance as `attractive`, `neutral`, `unattractive`, or `insufficient_evidence`. A decision record may then document buy, add, hold, reduce, exit, watch, or pass. It should link to the research available at the time and state:
@@ -69,6 +75,10 @@ Personal sizing can remain private. If omitted, say so rather than implying an e
 ## 6. Monitor and update
 
 During an active draft cycle, new evidence updates the one canonical report, valuation, and decision. A dated monitoring memo can preserve supporting evidence, but it must not be presented as a competing thesis. Git history preserves the report's development; reader-facing navigation points only to the current canonical files.
+
+Material changes after a review set the cycle's `review_status` to `stale` until
+the review snapshot is refreshed. `method_reviewed_at` may describe when work
+occurred, but it cannot substitute for artifact and model hashes.
 
 Once a cycle is finalized or prospectively registered, do not silently edit its report or target after material new information. Start a new ISO-week coverage cycle when the company is revalued, coverage resumes after a meaningful pause, or the decision question changes materially. The new final report explains changes against the prior finalized cycle—not against intermediate drafts from its own week.
 

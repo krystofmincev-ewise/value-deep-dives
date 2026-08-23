@@ -35,20 +35,21 @@ Snap reaches almost half a billion people daily, but its most valuable users are
 | **10 minutes** | [Ten-minute thesis](thesis/2026-W34-final-report.md#ten-minute-thesis-why-snap-may-be-too-cheap) | Why Snap may be too cheap, what the market already knows, and what must change. |
 | **25 minutes** | [Users](thesis/2026-W34-final-report.md#users-enormous-scale-uneven-economics) → [advertising](thesis/2026-W34-final-report.md#is-snap-actually-cheaper-than-facebook-or-instagram) → [recommendation engines](thesis/2026-W34-final-report.md#why-metas-recommendation-engine-is-harder-to-copy-than-it-looks) → [subscriptions](thesis/2026-W34-final-report.md#subscriptions-and-other-revenue) → [cost structure](thesis/2026-W34-final-report.md#cost-structure-is-serving-almost-500-million-daily-users-expensive) | The operating mechanism behind the central case. |
 | **Risk review** | [Strongest bear case](thesis/2026-W34-final-report.md#strongest-bear-case) → [falsifiers](thesis/2026-W34-final-report.md#evidence-that-would-change-the-thesis) → [next-results checklist](thesis/2026-W34-final-report.md#what-to-watch-in-the-next-results) | Permanent-loss paths, disconfirming evidence, and the next proof points. |
-| **Full audit** | [Forecast](research/2026-W34-quarterly-forecast.md) → [valuation model](valuation/2026-W34-valuation.md) → [independent review](research/2026-08-21-independent-review.md) → [source log](sources.md) | Assumptions, arithmetic, provenance, limitations, and release status. |
+| **Full audit** | [Forecast](research/2026-W34-quarterly-forecast.md) → [valuation model](valuation/2026-W34-valuation.md) → [historical review (stale)](research/2026-08-21-independent-review.md) → [source log](sources.md) | Assumptions, arithmetic, provenance, limitations, and release status. |
 
-The analysis is complete. The fair-value distribution is not itself a target-price forecast. Any future prospective return record must separately model market convergence and freeze reproducible official-close price and benchmark observations. This work belongs to [coverage cycle `SNAP-2026-W34-01`](coverage-cycles/2026-W34-01-initial/README.md); a future revaluation will receive a new ISO-week cycle instead of overwriting this one.
+The current analysis and linked model are complete as a draft; a fresh independent review is still required. The fair-value distribution is not itself a target-price forecast. Any future prospective return record must separately model market convergence and freeze reproducible official-close price and benchmark observations. This work belongs to [coverage cycle `SNAP-2026-W34-01`](coverage-cycles/2026-W34-01-initial/README.md); a future revaluation will receive a new ISO-week cycle instead of overwriting this one.
 
 ## At a glance
 
 | Field | Current state |
 | --- | --- |
 | Coverage | Active |
-| Research | Analysis complete; prospective scorecard registration pending |
+| Research | Draft; linked model verified; independent-review refresh pending |
 | Current coverage cycle | [`SNAP-2026-W34-01` — initial](coverage-cycles/2026-W34-01-initial/README.md) |
 | Canonical final report | [Snap at $5.21: cheap for a reason—but perhaps too cheap](thesis/2026-W34-final-report.md) |
 | Modeled six-month values | P10 $3.81 / P50 $6.77 / P90 $10.64; mean $7.09; 28.5% below $5.21 |
 | Modeled twelve-month values | P10 $2.86 / P50 $7.90 / P90 $13.78; mean $8.23; 28.6% below $5.21 |
+| Machine-readable valuation | [Six-/twelve-month horizon contract](valuation/2026-W34-valuation-contract.json) |
 | Target horizons | 20 February 2027 and 20 August 2027; linked fair-value correlation 0.81 |
 | Decision frame | Current value and action from $5.21; historical cost basis excluded from the analysis |
 | Source cutoff | 22 August 2026, 23:57 Central European Summer Time (CEST) |
@@ -141,7 +142,7 @@ During an active cycle, research updates the one canonical report in place. Same
 
 | Cycle | ISO week | Kind | Status | Canonical package |
 | --- | --- | --- | --- | --- |
-| `SNAP-2026-W34-01` | 2026-W34 | Initial | Analytical dossier complete; prospective registration pending | [Open cycle manifest](coverage-cycles/2026-W34-01-initial/README.md) |
+| `SNAP-2026-W34-01` | 2026-W34 | Initial | Draft; linked model verified; review refresh pending | [Open cycle manifest](coverage-cycles/2026-W34-01-initial/README.md) |
 
 ### Research incorporated into cycle 01
 
@@ -151,4 +152,4 @@ During an active cycle, research updates the one canonical report in place. Same
 - 21 August 2026: the completed Gemini recommender report was recovered and audited, current Snap semantic-ID production research and a targeted licensed peer-workforce review were added, the Universal User Model's aggregate/per-user distinction was corrected, and the technical scenarios were translated into an explicit advertising and per-share sensitivity without changing the consolidated target.
 - 22 August 2026: an independent seasonality and one-off-event audit added the advertising-specific sequential bridge, Ramadan/de minimis comparison factors, political-spend growth normalization, exact Easter and holiday-calendar timing, and a Q3 World Cup capitalization sensitivity. Those checks retained the operating anchors and preserved wide downside dispersion.
 - 23 August 2026: the unsupported 30% / 50% / 20% company-scenario weighting was retired. A deterministic 100,000-draw structured-elicitation model now links a six-month $3.81 P10 / $6.77 median / $10.64 P90 / $7.09 mean to the twelve-month $2.86 / $7.90 / $13.78 / $8.23 distribution, with explicit downside probabilities, legal-tail states, dependency stress, and transition diagnostics. The Snap fact cutoff remains 22 August; this was a method change, not a post-cutoff evidence update.
-- The analytical dossier is complete and release-ready. A separate prospective return record remains gated on an explicit market-convergence forecast, reproducible official-close capture, matching benchmark provenance, and an immutable ledger record.
+- The linked valuation model and deterministic verification are complete. The earlier independent review predates the joint-horizon extension and is stale, so the dossier remains a draft pending a fresh review. A separate prospective return record remains gated on an explicit market-convergence forecast, reproducible official-close capture, matching benchmark provenance, and an immutable ledger record.

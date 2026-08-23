@@ -5,6 +5,9 @@ company: "{Company}"
 ticker: "{TICKER}"
 coverage_cycle_id: "{TICKER}-{YYYY-Www}-{NN}"
 coverage_cycle_path: "{relative path to coverage-cycle manifest}"
+valuation_contract_path: "{relative path to valuation-horizon contract JSON}"
+valuation_quantity: fair_value_per_share
+valuation_display_semantics: distribution_percentiles
 identity_path: "{relative path to verified company identity}"
 identity_hash: "{sha256 digest of the frozen identity record}"
 security_id: "{stable repository security ID}"
@@ -41,7 +44,10 @@ Links to the exact canonical final report, valuation, sources, and commit.
 
 ## Expected value and downside
 
-Bull/base/bear returns, probabilities if used, permanent-loss case, and key assumptions.
+Link the valuation-horizon contract. State the modeled quantity and use its
+complete horizon outputs; keep unweighted bull/base/bear narratives separate.
+If the action relies on a checkpoint leading to a later value, summarize the
+joint transition rather than inferring it from two standalone point estimates.
 
 ## Falsifiers and review triggers
 

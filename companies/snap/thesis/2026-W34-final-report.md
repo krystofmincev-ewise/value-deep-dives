@@ -7,6 +7,9 @@ ticker: SNAP
 exchange: NYSE
 coverage_cycle_id: SNAP-2026-W34-01
 coverage_cycle_path: ../coverage-cycles/2026-W34-01-initial/README.md
+valuation_contract_path: ../valuation/2026-W34-valuation-contract.json
+valuation_quantity: fair_value_per_share
+valuation_display_semantics: distribution_percentiles
 identity_path: companies/snap/identity.md
 identity_hash: sha256:d09ac6123bc50705e9193b94196e0d56445228609ac1309221ed92a940447157
 security_id: snap-class-a-common
@@ -20,9 +23,13 @@ currency: USD
 reference_price: 5.21
 reference_price_at: 2026-08-20T20:59:05Z
 reference_price_source: integrated_public_market_data_feed
-target_bear: 2.86
-target_base: 7.90
-target_bull: 13.78
+target_bear: null
+target_base: null
+target_bull: null
+primary_distribution_p10: 2.86
+primary_distribution_p50: 7.90
+primary_distribution_p90: 13.78
+primary_distribution_mean: 8.23
 target_horizon: 2027-08-20
 evaluation_rule: not_applicable_fair_value_distribution_not_target_price_forecast
 target_status: active
@@ -874,6 +881,9 @@ These paths are unweighted operating narratives. The stochastic valuation sample
 
 ## Valuation in plain English
 
+The exact modeled quantity, horizons, outputs, and transition relationship are
+frozen in the [valuation-horizon contract](../valuation/2026-W34-valuation-contract.json).
+
 ### Current valuation
 
 At $5.21:
@@ -1099,9 +1109,9 @@ This coverage cycle combined specialist work on financials, users, advertising, 
 
 Gemini Deep Research was used for adversarial source discovery, not as evidence. Material claims were checked at their underlying sources, and unsupported model, capital-structure, subscriber, Specs, cash-flow, and regional-margin claims were rejected or corrected. Licensed Revelio Labs aggregates were used only as a lower-weight organizational-capacity check; restricted counts and tables remain local-only, and no provider count enters revenue or valuation arithmetic.
 
-Use the [company research home](../README.md#find-the-question-then-drill-down) to challenge one assumption, the [source log](../sources.md) for provenance, the [independent review](../research/2026-08-21-independent-review.md) for release checks, the [post-Snap audit](../../../methodology/2026-W34-POST-SNAP-RESEARCH-AUDIT.md) for the three independent methodology reviews and their disposition, and the [valuation verification index](../valuation/README.md) for deterministic calculations.
+Use the [company research home](../README.md#find-the-question-then-drill-down) to challenge one assumption, the [source log](../sources.md) for provenance, the [historical review](../research/2026-08-21-independent-review.md) for the now-stale pre-extension checks, the [post-Snap audit](../../../methodology/2026-W34-POST-SNAP-RESEARCH-AUDIT.md) for the three independent methodology reviews and their disposition, and the [valuation verification index](../valuation/README.md) for deterministic calculations.
 
-The immediate analytical findings from those reviews are reflected in this report: same-cycle drafts are removed from navigation; purchase history is isolated; the Q2 price/impression contradiction is corrected; seasonality and World Cup comparison effects are normalized; the benchmark-relative stance is `insufficient_evidence`; and hand-weighted bear/base/bull probabilities are replaced by an explicit linked six-/twelve-month distribution with legal tails. The repository now also runs `npm run research:company -- validate` to reject duplicate canonical records, mismatched cycle IDs or cutoffs, stale local links, same-cycle supersession, and invalid finalization hashes.
+The immediate analytical findings from those reviews are reflected in this report: same-cycle drafts are removed from navigation; purchase history is isolated; the Q2 price/impression contradiction is corrected; seasonality and World Cup comparison effects are normalized; the benchmark-relative stance is `insufficient_evidence`; and hand-weighted bear/base/bull probabilities are replaced by an explicit linked six-/twelve-month distribution with legal tails. Because that joint-horizon extension postdates the independent review, the review is now marked stale pending a fresh pass. The repository now also runs `npm run research:company -- validate` to reject duplicate canonical records, mismatched cycle IDs or cutoffs, stale local links, same-cycle supersession, invalid horizon contracts, mixed scenario/percentile tables, premature readiness claims, and invalid review or finalization hashes.
 
 Three limits remain deliberately visible rather than being called complete: Snap has no frozen schema-backed fact/claim graph, the $5.21 and QQQ observations are not yet frozen from a reproducible official-close provider, and the distribution is not empirically calibrated. Those gaps keep the cycle in draft/shadow status and prevent a formal prospective return claim.
 

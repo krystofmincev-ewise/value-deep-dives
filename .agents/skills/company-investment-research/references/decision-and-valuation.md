@@ -65,6 +65,36 @@ Do not invent a universal 15% or 20% hurdle. If the user supplies none, show how
 - Use an independent cross-check with different failure modes.
 - Fail closed when a material input is absent; label illustrative values explicitly.
 
+## Quantity and horizon contract
+
+Write the machine-readable valuation-horizon contract before copying summary
+numbers into prose. For every modeled horizon record the exact quantity, date,
+method, calibration state, mean, median, material quantiles, loss probabilities,
+and lower-tail expected shortfall. Use a separate unweighted table for
+deterministic scenario narratives. Scenario labels and percentile labels must
+never share one column heading because they answer different questions.
+
+A twelve-month fair-value distribution alone says nothing complete about the
+six-month distribution. When an interim checkpoint affects the decision, choose
+one of these contracts:
+
+- `joint`: the same draw carries shared operating, valuation, capital, dilution,
+  and tail states through both dates; disclose the transition mechanism,
+  cross-horizon dependence, conditional later outcomes, and linkage stress;
+- `independent`: each horizon is separately modeled and no claim is made that an
+  earlier state leads to a later state; or
+- `single`: only one horizon is a valuation output and other dates are clearly
+  qualitative monitoring triggers without valuation numbers.
+
+Reconcile embedded risk allowances at every date before adding a shared legal,
+regulatory, financing, or survival branch. Do not count the same expected loss
+inside revenue, cash, the multiple, and the branch.
+
+Contract schema v1 supports at most two formal horizons, ordered earliest to
+latest. Its dependence and transition fields describe that pair. A third
+horizon requires a reviewed schema extension with explicit pairwise transitions;
+an overall correlation is not an adequate substitute.
+
 ## Publication gate
 
 - [ ] Identity, cutoff, price, currency, horizon, and benchmark are exact.
@@ -75,3 +105,7 @@ Do not invent a universal 15% or 20% hurdle. If the user supplies none, show how
 - [ ] Strongest counter-thesis could change the decision if true.
 - [ ] Stance and action are separate and thresholds are visible.
 - [ ] Valuation and decision link to source records and the immutable prior version.
+- [ ] Every displayed modeled horizon has a complete, verified output contract.
+- [ ] Multi-horizon outputs are joint or explicitly independent, with no implied transition left undefined.
+- [ ] Narrative scenarios and distribution percentiles are presented separately.
+- [ ] The current review snapshot still matches the model, horizon contract, report, valuation, and decision.

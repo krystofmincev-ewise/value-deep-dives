@@ -5,6 +5,9 @@ company: Snap Inc.
 ticker: SNAP
 coverage_cycle_id: SNAP-2026-W34-01
 coverage_cycle_path: ../coverage-cycles/2026-W34-01-initial/README.md
+valuation_contract_path: ../valuation/2026-W34-valuation-contract.json
+valuation_quantity: fair_value_per_share
+valuation_display_semantics: distribution_percentiles
 identity_path: companies/snap/identity.md
 identity_hash: sha256:d09ac6123bc50705e9193b94196e0d56445228609ac1309221ed92a940447157
 security_id: snap-class-a-common
@@ -51,6 +54,9 @@ The entire decision turns on one unresolved question: **was the second-quarter i
 The restraint is about proof and loss control—not weak modeled upside. The deterministic 100,000-draw joint model produces a six-month $7.09 mean / $6.77 median and a twelve-month $8.23 mean / $7.90 median. It assigns 28.5% and 28.6% of the respective horizon fair values below $5.21; the twelve-month distribution still places 16.0% at fair-value impairment of at least 30% and 8.2% at impairment of at least 50%. Cost leverage and direct revenue make the upside plausible; shrinking high-value users, dilution, founder control, litigation, and Specs create a material left tail.
 
 ## Valuation distribution
+
+Exact outputs and the joint transition definition are frozen in the
+[valuation-horizon contract](../valuation/2026-W34-valuation-contract.json).
 
 > `Distribution mean = Σ(simulated values) / number of draws`
 > `Portfolio impact ≈ position weight × security drawdown`

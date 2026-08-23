@@ -18,7 +18,9 @@
     "as_of",
     "final_report_path",
     "valuation_path",
-    "decision_path"
+    "decision_path",
+    "valuation_contract_path",
+    "review_status"
   ],
   "properties": {
     "type": { "const": "company_coverage_cycle" },
@@ -37,13 +39,22 @@
     "final_report_path": { "type": "string", "minLength": 1 },
     "valuation_path": { "type": "string", "minLength": 1 },
     "decision_path": { "type": "string", "minLength": 1 },
+    "valuation_contract_path": { "type": "string", "minLength": 1 },
     "forecast_path": { "type": ["string", "null"] },
+    "review_status": {
+      "type": "string",
+      "enum": ["not_requested", "pending", "passed", "failed", "stale"]
+    },
     "review_path": { "type": ["string", "null"] },
+    "reviewed_at": { "type": ["string", "null"], "format": "date-time" },
     "finalized_at": { "type": ["string", "null"], "format": "date-time" },
     "final_report_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" },
     "valuation_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" },
     "decision_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" },
-    "review_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" }
+    "review_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" },
+    "valuation_contract_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" },
+    "model_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" },
+    "verifier_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" }
   },
   "allOf": [
     {
@@ -54,13 +65,61 @@
         ]
       },
       "then": {
+        "properties": {
+          "review_status": { "const": "passed" },
+          "finalized_at": { "type": "string", "format": "date-time" },
+          "reviewed_at": { "type": "string", "format": "date-time" },
+          "final_report_hash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+          "valuation_hash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+          "decision_hash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+          "valuation_contract_hash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+          "review_path": { "type": "string", "minLength": 1 },
+          "review_hash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+          "model_hash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+          "verifier_hash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" }
+        },
         "required": [
           "finalized_at",
           "final_report_hash",
           "valuation_hash",
           "decision_hash",
+          "valuation_contract_hash",
           "review_path",
-          "review_hash"
+          "review_hash",
+          "review_status",
+          "reviewed_at",
+          "model_hash",
+          "verifier_hash"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": { "review_status": { "const": "passed" } },
+        "required": ["review_status"]
+      },
+      "then": {
+        "properties": {
+          "reviewed_at": { "type": "string", "format": "date-time" },
+          "review_path": { "type": "string", "minLength": 1 },
+          "review_hash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+          "final_report_hash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+          "valuation_hash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+          "decision_hash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+          "valuation_contract_hash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+          "model_hash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+          "verifier_hash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" }
+        },
+        "required": [
+          "reviewed_at",
+          "review_path",
+          "review_hash",
+          "final_report_hash",
+          "valuation_hash",
+          "decision_hash",
+          "valuation_contract_hash",
+          "model_hash",
+          "verifier_hash"
         ]
       }
     }

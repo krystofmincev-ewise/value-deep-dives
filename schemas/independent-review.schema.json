@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/value-deep-dives/independent-review.schema.json",
+  "title": "Independent Review Record",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "type",
+    "company",
+    "ticker",
+    "coverage_cycle_id",
+    "review_status",
+    "reviewed_at"
+  ],
+  "properties": {
+    "type": { "const": "independent_review" },
+    "company": { "type": "string", "minLength": 1 },
+    "ticker": { "type": "string", "minLength": 1 },
+    "coverage_cycle_id": { "type": "string", "minLength": 1 },
+    "review_status": {
+      "type": "string",
+      "enum": ["pending", "passed", "failed", "stale"]
+    },
+    "reviewed_at": { "type": ["string", "null"], "format": "date-time" },
+    "reviewer_independence": {
+      "type": "string",
+      "enum": ["human", "independent_agent", "same_session", "not_recorded"]
+    },
+    "reviewed_final_report_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" },
+    "reviewed_valuation_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" },
+    "reviewed_decision_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" },
+    "reviewed_contract_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" },
+    "reviewed_model_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" },
+    "reviewed_verifier_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "review_status": { "const": "passed" } },
+        "required": ["review_status"]
+      },
+      "then": {
+        "properties": {
+          "reviewed_at": { "type": "string", "format": "date-time" },
+          "reviewer_independence": {
+            "type": "string",
+            "enum": ["human", "independent_agent"]
+          },
+          "reviewed_final_report_hash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+          "reviewed_valuation_hash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+          "reviewed_decision_hash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+          "reviewed_contract_hash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+          "reviewed_model_hash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+          "reviewed_verifier_hash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" }
+        },
+        "required": [
+          "reviewed_at",
+          "reviewer_independence",
+          "reviewed_final_report_hash",
+          "reviewed_valuation_hash",
+          "reviewed_decision_hash",
+          "reviewed_contract_hash",
+          "reviewed_model_hash",
+          "reviewed_verifier_hash"
+        ]
+      }
+    }
+  ]
+}

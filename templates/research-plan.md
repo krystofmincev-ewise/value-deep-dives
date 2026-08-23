@@ -45,7 +45,8 @@ State a tentative hypothesis without presenting it as a conclusion.
 
 ### Valuation
 
-- Questions
+- Quantity and horizon questions, including whether multiple horizons are
+  `joint`, `independent`, or only qualitative checkpoints
 
 ### Falsification
 
@@ -67,5 +68,8 @@ State a tentative hypothesis without presenting it as a conclusion.
 - [ ] Primary evidence cited
 - [ ] Strongest counterargument addressed
 - [ ] Bull/base/bear valuation complete
+- [ ] Valuation-horizon contract complete and linked from every canonical artifact
+- [ ] Every modeled horizon has complete outputs; scenarios and percentiles are separate
+- [ ] Review snapshot is current after the final model and document changes
 - [ ] Falsifiers and review date declared
 - [ ] Position and LLM assistance disclosed

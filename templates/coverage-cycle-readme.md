@@ -16,13 +16,19 @@ supersedes: []
 final_report_path: "{relative path to YYYY-Www-final-report.md}"
 valuation_path: "{relative path to YYYY-Www-valuation.md}"
 decision_path: "{relative path to YYYY-Www-decision.md}"
+valuation_contract_path: "{relative path to valuation-horizon contract JSON}"
 forecast_path: null
+review_status: not_requested
 review_path: null
+reviewed_at: null
 finalized_at: null
 final_report_hash: null
 valuation_hash: null
 decision_hash: null
 review_hash: null
+valuation_contract_hash: null
+model_hash: null
+verifier_hash: null
 tags: []
 ---
 
@@ -30,7 +36,7 @@ tags: []
 
 > This manifest defines one initial or repeat valuation generation. While active, research evolves one canonical report and valuation in place. Once finalized, they are immutable and later revaluation belongs in a new linked cycle.
 
-> Run `npm run research:company -- validate {company directory}` before review and `npm run research:validate` before publication. A finalized cycle must freeze the report, valuation, decision, and independent-review hashes in this manifest.
+> Run `npm run research:company -- validate {company directory}` before review and `npm run research:validate` before publication. A passed review freezes the report, valuation, decision, valuation contract, model, verifier, and review hashes; any material edit makes the review stale.
 
 ## Cycle contract
 
@@ -53,6 +59,7 @@ tags: []
 | Summary | [Final report]({path}) | View, variant perception, valuation range, stance, and falsifiers |
 | Decision | [Decision]({path}) | Stance, action mapping, hurdle, and review trigger |
 | Model | [Valuation]({path}) | Assumptions, scenarios, sensitivities, and arithmetic |
+| Horizon contract | [Valuation-horizon contract]({path}) | Quantity, exact outputs, model paths, and horizon relationship |
 | Audit | [Sources]({path}) | Provenance, rights, retrieval, and verification |
 
 ## What this cycle must answer
@@ -70,9 +77,14 @@ tags: []
 | Source log | | |
 | Final report | | |
 | Valuation | | |
+| Valuation-horizon contract | | |
 | Decision | | |
 | Independent or adversarial review | | |
 | Deterministic verifier | | |
+
+`review_status` is `not_requested`, `pending`, `passed`, `failed`, or `stale`. Do not use
+`passed` or release-ready language unless the bound artifact, contract, model,
+verifier, and review hashes all validate.
 
 ## Change ledger
 

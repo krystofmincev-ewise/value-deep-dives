@@ -35,7 +35,7 @@ absolute_value_assessment: attractive
 position_disclosure: long
 originating_study: ../research-plan.md
 supersedes: null
-distribution_method: structured_elicitation_monte_carlo_v1
+distribution_method: structured_elicitation_monte_carlo_v2_joint_horizons
 distribution_calibration_status: uncalibrated_shadow
 distribution_seed: 20260821
 distribution_sample_count: 100000
@@ -67,14 +67,14 @@ The [company landing page](../README.md#find-the-question-then-drill-down) links
 
 ## Two-minute answer
 
-Snap appears **undervalued at $5.21**. The model gives it a twelve-month **mean value of $8.23 and median of $7.90**, but the evidence is not yet strong enough to treat that upside as dependable. The simplest summary is: **attractive value, incomplete proof, asymmetric risk**.
+Snap appears **undervalued at $5.21**. The linked model gives it a six-month **mean value of $7.09 and median of $6.77**, leading to a twelve-month **$8.23 mean and $7.90 median**, but the evidence is not yet strong enough to treat that upside as dependable. The simplest summary is: **attractive value, incomplete proof, asymmetric risk**.
 
-| Time horizon | Downside / P10 | Central / P50 | Upside / P90 | Mean |
+| Linked fair-value horizon | P10 | P50 / median | P90 | Mean |
 | --- | ---: | ---: | ---: | ---: |
-| Six-month narrative checkpoint | $3.70 | $6.73 | $10.81 | Not modeled |
-| Twelve-month value distribution | $2.86 | $7.90 | $13.78 | **$8.23** |
+| Six months — 20 February 2027 | $3.81 | $6.77 | $10.64 | **$7.09** |
+| Twelve months — 20 August 2027 | $2.86 | $7.90 | $13.78 | **$8.23** |
 
-The mean is about **58% above** $5.21 and the median about **52% above**. That upside sits beside a modeled **28.6% probability of fair value below $5.21**, an **8.2% probability of fair-value impairment of at least 50%**, no voting rights for public shareholders, and legal or product outcomes below the P10. The action is therefore restrained:
+At six months, the mean is about **36% above** $5.21 and the median about **30% above**; at twelve months, the mean is about **58% above** and the median about **52% above**. The linked paths still leave a modeled probability of fair value below $5.21 of **28.5% at six months** and **28.6% at twelve months**, plus an **8.2% twelve-month probability of fair-value impairment of at least 50%**, no voting rights for public shareholders, and legal or product outcomes below the P10. The action is therefore restrained:
 
 - **Value:** attractive on an absolute basis.
 - **No current position:** watch through the third-quarter operating checkpoint.
@@ -924,9 +924,11 @@ The central deterministic cross-check is approximately 2.05 times revenue after 
 
 The central path remains approximately two-thirds below Meta Platforms and four-fifths below Reddit. The valuation is driven by proof of better economics, not full convergence.
 
-### Six-month checkpoint
+### Linked six-month checkpoint
 
-The six-month downside, central, and upside values are $3.70, $6.73, and $10.81. They remain unweighted narrative checkpoints because the twelve-month valuation model does not estimate six-month price convergence.
+The model now carries every draw through both horizons. The six-month distribution is **$3.81 P10 / $6.77 P50 / $10.64 P90 with a $7.09 mean**, compared with **$2.86 / $7.90 / $13.78 and an $8.23 mean** at twelve months. The former $3.70 / $6.73 / $10.81 downside, central, and upside calculations remain deterministic cross-checks whose revenue, multiple, net-debt, and share assumptions anchor the six-month driver marginals after their assumed embedded legal allowances are reconciled; they are no longer presented as if they were distribution percentiles.
+
+The link is not a straight-line interpolation. Each path carries correlated revenue, valuation-multiple, capital, dilution, and legal states from the February checkpoint into August. The resulting fair-value correlation is **0.81**, and twelve-month fair value exceeds its linked six-month value in **63.4%** of draws. A bottom-quartile six-month value leads to a $4.04 twelve-month mean and a 74.8% probability that twelve-month value remains below $5.21; a top-quartile six-month value leads to a $12.89 mean and only a 0.7% probability below $5.21. The coefficients are structured analyst judgments rather than empirically estimated transition frequencies, and neither horizon predicts literal market-price convergence.
 
 Six months should show the third and fourth quarters. That is enough to test guidance behavior, cost savings, advertising price direction, and the first Specs launch response. It is not enough to prove multi-year subscription retention or durable legal outcomes.
 
@@ -1099,7 +1101,7 @@ Gemini Deep Research was used for adversarial source discovery, not as evidence.
 
 Use the [company research home](../README.md#find-the-question-then-drill-down) to challenge one assumption, the [source log](../sources.md) for provenance, the [independent review](../research/2026-08-21-independent-review.md) for release checks, the [post-Snap audit](../../../methodology/2026-W34-POST-SNAP-RESEARCH-AUDIT.md) for the three independent methodology reviews and their disposition, and the [valuation verification index](../valuation/README.md) for deterministic calculations.
 
-The immediate analytical findings from those reviews are reflected in this report: same-cycle drafts are removed from navigation; purchase history is isolated; the Q2 price/impression contradiction is corrected; seasonality and World Cup comparison effects are normalized; the benchmark-relative stance is `insufficient_evidence`; and hand-weighted bear/base/bull probabilities are replaced by an explicit distribution with legal tails. The repository now also runs `npm run research:company -- validate` to reject duplicate canonical records, mismatched cycle IDs or cutoffs, stale local links, same-cycle supersession, and invalid finalization hashes.
+The immediate analytical findings from those reviews are reflected in this report: same-cycle drafts are removed from navigation; purchase history is isolated; the Q2 price/impression contradiction is corrected; seasonality and World Cup comparison effects are normalized; the benchmark-relative stance is `insufficient_evidence`; and hand-weighted bear/base/bull probabilities are replaced by an explicit linked six-/twelve-month distribution with legal tails. The repository now also runs `npm run research:company -- validate` to reject duplicate canonical records, mismatched cycle IDs or cutoffs, stale local links, same-cycle supersession, and invalid finalization hashes.
 
 Three limits remain deliberately visible rather than being called complete: Snap has no frozen schema-backed fact/claim graph, the $5.21 and QQQ observations are not yet frozen from a reproducible official-close provider, and the distribution is not empirically calibrated. Those gaps keep the cycle in draft/shadow status and prevent a formal prospective return claim.
 
@@ -1117,7 +1119,7 @@ Snap has already done three things that the low valuation gives it little credit
 
 It has not yet done the decisive thing: prove that Q2 was durable auction repair. The price improvement lapped a weak comparison, benefited from World Cup demand, and arrived with roughly flat volume. Meanwhile high-value users are shrinking, stock compensation still exceeds headline free cash flow, founders control the vote, and Specs and litigation preserve outcomes below the modeled bear.
 
-At $5.21, Snap is **attractive on absolute expected value**, with an $8.23 distribution mean and $7.90 median. The modeled probability below $5.21 is 28.6%, and the model remains uncalibrated structured elicitation rather than a historical frequency claim. The no-position action is **watch**. The existing-long action is **hold / no add**, or reduce if the severe-loss contribution exceeds the investor's private risk budget.
+At $5.21, Snap is **attractive on absolute expected value**. The linked model produces a six-month $7.09 mean / $6.77 median and a twelve-month $8.23 mean / $7.90 median. The modeled probabilities below $5.21 are 28.5% and 28.6% respectively, and the model remains uncalibrated structured elicitation rather than a historical frequency claim. The no-position action is **watch**. The existing-long action is **hold / no add**, or reduce if the severe-loss contribution exceeds the investor's private risk budget.
 
 Q3 is a mandatory review, not automatically an upgrade. The result must show that advertising—not merely Other Revenue—can grow while impression delivery resumes without renewed price dilution. Because the World Cup ran through 19 July, separately disclosed August–September evidence, Q4, or Q1 may be the cleaner test. If that advertising proof appears while the user, cash-flow, and dilution guardrails hold, the case may become strong enough to initiate or add. If it does not, the low multiple will look less like an opportunity and more like the correct price.
 

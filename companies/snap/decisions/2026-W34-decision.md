@@ -41,28 +41,26 @@ method_reviewed_at: 2026-08-23
 
 | Question | Answer |
 | --- | --- |
-| Valuation verdict | **Attractive:** $8.23 distribution mean and $7.90 median versus $5.21 |
+| Valuation verdict | **Attractive:** six-month $7.09 mean / $6.77 median leading to twelve-month $8.23 / $7.90 versus $5.21 |
 | New investor | **Watch through the third-quarter operating checkpoint** |
 | Existing long | **Conditional hold / no add** if the severe-loss case fits the investor's private risk budget; otherwise reduce |
 | Next review | Third-quarter 2026 results; no later than 15 November 2026 |
 
 The entire decision turns on one unresolved question: **was the second-quarter improvement in Snap's advertising auction durable, or was it an easy comparison helped by temporary World Cup demand?** Snap reported average advertising price per impression up about 10%, but the result lapped a 10% decline and a comparison affected by a temporary Ads Manager pricing problem, Ramadan timing, and de minimis changes. The two-year price index is therefore roughly flat. Snap did not size those effects, so the model makes no add-back and the evidence is not yet strong enough to initiate or add.
 
-The restraint is about proof and loss control—not weak modeled upside. The deterministic 100,000-draw model produces an $8.23 mean, 57.9% above $5.21, and a $7.90 median. It also assigns 28.6% of modeled fair values below $5.21, 16.0% to fair-value impairment of at least 30%, and 8.2% to impairment of at least 50%. Cost leverage and direct revenue make the upside plausible; shrinking high-value users, dilution, founder control, litigation, and Specs create a material left tail.
+The restraint is about proof and loss control—not weak modeled upside. The deterministic 100,000-draw joint model produces a six-month $7.09 mean / $6.77 median and a twelve-month $8.23 mean / $7.90 median. It assigns 28.5% and 28.6% of the respective horizon fair values below $5.21; the twelve-month distribution still places 16.0% at fair-value impairment of at least 30% and 8.2% at impairment of at least 50%. Cost leverage and direct revenue make the upside plausible; shrinking high-value users, dilution, founder control, litigation, and Specs create a material left tail.
 
 ## Valuation distribution
 
 > `Distribution mean = Σ(simulated values) / number of draws`
 > `Portfolio impact ≈ position weight × security drawdown`
 
-| Output | Value per share | Fair-value change from $5.21 | Interpretation |
-| --- | ---: | ---: | --- |
-| Bear narrative / P10 | $2.86 | -45% | 10% of modeled values are lower |
-| Base narrative / P50 | $7.90 | +52% | Median modeled value |
-| Bull narrative / P90 | $13.78 | +165% | 10% of modeled values are higher |
-| **Mean** | **$8.23** | **+57.9%** | Average across all draws |
+| Fair-value horizon | P10 | P50 / median | P90 | Mean | Probability below $5.21 |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Six months | $3.81 | $6.77 | $10.64 | **$7.09** | 28.5% |
+| Twelve months | $2.86 | $7.90 | $13.78 | **$8.23** | 28.6% |
 
-The old 30% / 50% / 20% hand-weighted scenario calculation is retired. The replacement samples continuous operating and valuation drivers, explicit dependencies, and exhaustive legal-tail states. It remains uncalibrated structured elicitation in shadow-model status, so its frequencies are decision aids rather than historical claims. See the [distribution-method memo](../research/2026-08-23-distribution-first-valuation.md).
+The old 30% / 50% / 20% hand-weighted scenario calculation is retired. The replacement samples continuous operating and valuation drivers, explicit dependencies, and exhaustive legal-tail states, with revenue, multiple, capital, dilution, and legal paths linked across the two horizons. Six- and twelve-month fair values have 0.81 correlation. It remains uncalibrated structured elicitation in shadow-model status, so its frequencies and conditional transitions are decision aids rather than historical claims. See the [distribution-method memo](../research/2026-08-23-distribution-first-valuation.md).
 
 ## Why the valuation is attractive
 

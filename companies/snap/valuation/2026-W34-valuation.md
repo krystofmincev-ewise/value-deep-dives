@@ -23,7 +23,7 @@ target_horizon: 2027-08-20
 target_status: active
 review_by: 2026-11-15
 supersedes: null
-distribution_method: structured_elicitation_monte_carlo_v1
+distribution_method: structured_elicitation_monte_carlo_v2_joint_horizons
 distribution_calibration_status: uncalibrated_shadow
 distribution_seed: 20260821
 distribution_sample_count: 100000
@@ -40,14 +40,12 @@ method_reviewed_at: 2026-08-23
 
 ## Answer first
 
-| Distribution output | Twelve-month value per share | Fair-value change from $5.21 | Meaning |
-| --- | ---: | ---: | --- |
-| Bear narrative / P10 | **$2.86** | -45% | 10% of simulated values are lower |
-| Base narrative / P50 | **$7.90** | +52% | Median simulated value |
-| Bull narrative / P90 | **$13.78** | +165% | 10% of simulated values are higher |
-| **Distribution mean** | **$8.23** | **+58%** | Average across 100,000 deterministic-seed draws |
+| Fair-value horizon | P10 | P50 / median | P90 | Mean | Probability below $5.21 |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| **Six months — 20 February 2027** | **$3.81** | **$6.77** | **$10.64** | **$7.09** | **28.5%** |
+| **Twelve months — 20 August 2027** | **$2.86** | **$7.90** | **$13.78** | **$8.23** | **28.6%** |
 
-The model estimates a **28.6% probability of fair value below $5.21**, a **16.0% probability of fair-value impairment of at least 30%**, and an **8.2% probability of impairment of at least 50%**. The bottom-decile expected value is **$2.06**. These are model-implied frequencies, not historically calibrated frequencies or market-price return forecasts.
+The six- and twelve-month values come from the same 100,000 linked draws, not two unrelated scenario tables. The twelve-month model estimates a **16.0% probability of fair-value impairment of at least 30%** and an **8.2% probability of impairment of at least 50%**; the corresponding six-month figures are **9.0%** and **4.1%**. Bottom-decile expected value is **$2.79 at six months** and **$2.06 at twelve months**. These are model-implied frequencies, not historically calibrated frequencies or market-price return forecasts.
 
 The current value does not require giving Snap Meta's multiple. It comes from four central inputs:
 
@@ -75,7 +73,11 @@ Target value per share =
     (target revenue × enterprise-value-to-revenue multiple - target net debt)
     / target diluted shares
 
-Simulated value in each draw =
+Six-month simulated value in each draw =
+    (checkpoint revenue × checkpoint EV/revenue multiple
+      - checkpoint net debt) / checkpoint diluted shares
+
+Twelve-month simulated value in each draw =
     median(revenue-multiple value, SOTP value, levered-DCF value)
 
 Distribution mean = Σ simulated values / number of draws
@@ -265,7 +267,7 @@ These are deterministic cross-checks, not the P10, P50, and P90 distribution out
 
 The old 30% / 50% / 20% scenario weights were structured analyst judgment, but they had no empirical reference class and the three scenario points were not exhaustive conditional means. Multiplying those weights by rounded bear/base/bull values created a precise-looking expected value without a defensible probability-estimation process. That calculation is retired.
 
-The replacement is a transparent, deterministic-seed Monte Carlo model. It elicits five-point marginal curves—minimum, P10, P50, P90, and maximum—for the material operating and valuation drivers; applies explicit common-factor dependence so adverse operating, capital, and multiple outcomes can cluster; and samples four mutually exclusive legal states. It does **not** probability-weight the displayed P10/P50/P90 values.
+The replacement is a transparent, deterministic-seed Monte Carlo model. It elicits five-point marginal curves—minimum, P10, P50, P90, and maximum—for the material operating and valuation drivers; applies explicit common-factor dependence so adverse operating, capital, and multiple outcomes can cluster; and samples four mutually exclusive legal states. Each draw now contains a linked six-month checkpoint and twelve-month target state. It does **not** probability-weight the displayed P10/P50/P90 values.
 
 | Method / triangulation | Mean | P10 | P50 | P90 | Probability below $5.21 |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -290,7 +292,7 @@ The recommendation-system follow-up decomposes the existing next-four-quarter ad
 
 The former $0.24 hand-weighted diagnostic is retired. Recommendation progress is already embedded in the sampled advertising-revenue and valuation-multiple drivers and is not an add-on to $8.23. A visible technical failure could reduce value by more because it could weaken both the advertising path and multiple; strong production progress should first update those marginals rather than be added mechanically. See the [technical memo](../research/2026-08-21-open-source-recommender-gap.md#8-how-much-recommendation-upside-remains) and [`verify-2026-08-21-recommender-upside.mjs`](verify-2026-08-21-recommender-upside.mjs).
 
-## Six-month checkpoint
+## Linked six-month distribution and checkpoint
 
 By approximately 20 February 2027, investors should have the third- and fourth-quarter results. The base and bull checkpoint multiples use a **larger proof discount** than the twelve-month model because less evidence will be available. The checkpoint bear multiple is higher than the twelve-month bear multiple because there is less time for a distressed deterioration path to compound.
 
@@ -302,7 +304,27 @@ By approximately 20 February 2027, investors should have the third- and fourth-q
 | Diluted shares | 1.940 billion | 1.910 billion | 1.890 billion |
 | **Value per share** | **$3.70** | **$6.73** | **$10.81** |
 
-These are unweighted narrative checkpoints. The twelve-month stochastic model does not estimate a six-month price-convergence distribution, so there is no six-month expected value. The checkpoint net-debt and share-count rows are standalone path assumptions rather than a forecasted half-year award-by-award or cash-use schedule. They are illustrative and not registered six-month targets.
+These deterministic paths remain arithmetic cross-checks. Their revenue, multiple, net-debt, and share-count assumptions supply the central three anchors of four six-month driver marginals, with explicit minimum and maximum endpoints beyond them. The joint model treats the revenue and net-debt anchors as containing half of the displayed twelve-month legal allowances, first reverses those assumed embedded amounts, and then applies the shared sampled legal branch exactly once. Because mixed draws do not keep every driver inside one bundled path, the resulting value quantiles are close to—but not exactly—the three deterministic values.
+
+| Six-month distribution output | Value per share | Fair-value change from $5.21 | Meaning |
+| --- | ---: | ---: | --- |
+| P10 | **$3.81** | -27% | 10% of modeled values are lower |
+| P50 / median | **$6.77** | +30% | Half of modeled values are lower and half higher |
+| P90 | **$10.64** | +104% | 10% of modeled values are higher |
+| **Mean** | **$7.09** | **+36%** | Average across all 100,000 linked draws |
+
+The link is explicit rather than a straight-line interpolation from $5.21. Six-month revenue rank is correlated **0.85** with the weighted twelve-month advertising/Other-Revenue state, the valuation-multiple rank **0.80**, and capital/share-count rank **0.90**. The same legal branch continues across both horizons, with 50% of its modeled cash and trailing-revenue effect recognized by six months. Separate checkpoint shocks allow third- and fourth-quarter evidence to differ from the final twelve-month state. These transition coefficients are analyst judgments, not measured serial correlations.
+
+The resulting six-/twelve-month fair-value correlation is **0.81**, and twelve-month value exceeds its linked six-month value in **63.4%** of draws. Sorting paths by their six-month value gives the following forward bridge:
+
+| Six-month value band | Twelve-month mean | Twelve-month median | Probability twelve-month value is below $5.21 |
+| --- | ---: | ---: | ---: |
+| Bottom quartile — at or below $4.96 | $4.04 | $3.59 | 74.8% |
+| Lower-middle quartile — $4.96 to $6.77 | $6.83 | $6.63 | 30.3% |
+| Upper-middle quartile — $6.77 to $8.99 | $9.15 | $9.19 | 8.7% |
+| Top quartile — above $8.99 | $12.89 | $12.54 | 0.7% |
+
+This is a linked fair-value path, not a forecast that the quoted market price must equal fair value at either date. The checkpoint net-debt and share-count marginals remain structured estimates rather than an award-by-award or cash-use schedule, and neither horizon is registered as a market-price target.
 
 ## Meta and Reddit relative anchors
 
@@ -405,7 +427,7 @@ That supports an attractive absolute expected-value assessment. The formal QQQ-r
 
 - **Analytical release status:** complete, internally reviewed, and ready for repository publication as a clearly labeled draft.
 - **Prospective scorecard status:** unregistered; this fair-value distribution is not a target-price forecast and cannot be resolved by market price alone.
-- **Horizon:** 20 August 2027.
+- **Horizons:** linked fair-value checkpoints at 20 February 2027 and 20 August 2027.
 - **Evaluation rule:** not applicable to this analytical fair-value distribution. A separately frozen market-convergence or return forecast would need its own observable resolution rule.
 - **Review:** immediately after third-quarter 2026 results and no later than 15 November 2026.
 - **Scorecard-registration blockers for any future return forecast:** define the market-convergence quantity, replace the dynamic $5.21 quote with a reproducible official-close record, freeze the matching benchmark observation and rule, assign a formal identifier, and obtain explicit prospective-registration approval before writing an immutable ledger record.
@@ -431,6 +453,6 @@ That supports an attractive absolute expected-value assessment. The formal QQQ-r
 - [Recommendation-upside verifier](verify-2026-08-21-recommender-upside.mjs)
 - [Seasonality and event-normalization verifier](verify-2026-08-21-seasonality.mjs)
 
-The displayed capitalization, revenue-multiple, sum-of-the-parts, discounted-cash-flow, sensitivity, six-month, quarterly-seasonality, comparison-base, and event-normalization calculations were independently recomputed through 22 August. The deterministic verifiers assert the anchor and seasonality calculations. The distribution verifier asserts the declared contract, deterministic 100,000-draw outputs, state frequencies, risk metrics, and method cross-checks. The official-close provenance gap prevents prospective publication, not arithmetic review of this draft.
+The displayed capitalization, revenue-multiple, sum-of-the-parts, discounted-cash-flow, sensitivity, six-month, quarterly-seasonality, comparison-base, and event-normalization calculations were independently recomputed through 22 August. The deterministic verifiers assert the anchor and seasonality calculations. The distribution verifier asserts both horizon outputs, their declared linkage and ordered transition bands, the unchanged twelve-month results, state frequencies, risk metrics, and method cross-checks. The official-close provenance gap prevents prospective publication, not arithmetic review of this draft.
 
 Return to the [canonical investment report](../thesis/2026-W34-final-report.md), inspect the [four-quarter forecast](../research/2026-W34-quarterly-forecast.md), or review the [portfolio action](../decisions/2026-W34-decision.md#portfolio-action).

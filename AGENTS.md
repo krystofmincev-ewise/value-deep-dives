@@ -66,6 +66,7 @@ Each skill requires the applicable Chrome or Computer Use skill before UI intera
 
 - Interact with visible content and normal controls in an authorized existing session. Do not copy the browser profile, extract cookies, attach a debugger to harvest session state, or export the session to another automation tool.
 - Do not circumvent access controls. Use the user's direct signed-in publisher access when available.
+- For repository-local deck QA, try the in-app Browser first. If it rejects a `file://` or localhost screenshot and the user explicitly authorizes Computer Use, use Computer Use in the user's chosen desktop browser to inspect the exact local deck scene by scene and save captures under `.local/`. Do not infer that authorization from ambient browser state or use the fallback to bypass an access control.
 - Store any authorized temporary download or capture under `.local/`, never in the tracked tree.
 - Browser research does not imply redistribution rights. Commit citations and original analysis, not copied paid-source text.
 

@@ -39,7 +39,7 @@ test("repository validator checks every skill, schema, route, and billing bounda
   const report = await validateRepository(repositoryRoot);
 
   assert.equal(report.valid, true, JSON.stringify(report.findings, null, 2));
-  assert.equal(report.counts.skills, 9);
+  assert.equal(report.counts.skills, 10);
   assert.ok(report.counts.schemas >= 13);
   assert.equal(report.counts.coverageCycles, 1);
   assert.ok(report.counts.runtimeScripts >= 7);

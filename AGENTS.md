@@ -35,8 +35,18 @@ Use these skills for analysis and prospective records:
 - `$event-driven-investment-research`: leakage-safe catalyst research and pre-registration.
 - `$forecast-evaluation`: outcome resolution, calibration, scoring, and track-record audit.
 - `$biopharma-evidence-research`: drug, target, trial, regulatory, and probability evidence.
+- `$animated-investment-shorts`: stage-gated story, narration, HTML/CSS/JavaScript motion, and rendered QA for research-driven 9:16 videos.
 
 Each skill requires the applicable Chrome or Computer Use skill before UI interaction. Treat browser availability and sign-in as runtime state; a repository capability check never proves an authenticated session is usable.
+
+## Animated research shorts
+
+- Use `$animated-investment-shorts` when creating or materially revising a research-driven 9:16 video deck or matching narration.
+- Keep working decks, captures, licensed assets, and scripts under `.local/video-production/`. Promote only intentionally sanitized and redistributable derivatives.
+- Before implementation, prove a plain-language hook and four to six causal beats with rough keyframes and a cold read. Reject stories needing repeated caveats, invented terminology, or several headline facts per scene.
+- One agent owns the active deck. Independent agents review the complete cut for story/retention, visual motion/readability, and evidence.
+- Review uninterrupted autoplay at 540×960 and 360×640 beside the strongest prior cut. Technical validators are lint, not evidence of quality.
+- Archive the previous build before replacement. Describe a cut as ready for user review only after comparative browser QA; release readiness requires voice rehearsal and user acceptance.
 
 ## Valuation invariants
 

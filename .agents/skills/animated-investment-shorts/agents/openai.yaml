@@ -1,0 +1,4 @@
+interface:
+  display_name: "Animated Investment Shorts"
+  short_description: "Build evidence-grounded animated Shorts from company reports"
+  default_prompt: "Use $animated-investment-shorts to tell one simple, evidence-grounded investment story with purposeful motion and real-time browser review."

@@ -1,7 +1,7 @@
 # Wix glossary
 
 - **ARR:** annual recurring revenue at the measurement date. It is not identical to recognized revenue or cash.
-- **Base44:** Wix's prompt-to-application platform, acquired in June 2025. It is not `n8n`.
+- **Base44:** Wix's prompt-to-application platform, acquired in June 2025.
 - **Bookings:** contractual value of subscriptions and business solutions booked during a period, adjusted for Wix's stated definitions.
 - **Business Solutions:** payments, commerce, bookings, marketing, CRM and other tools layered on Wix sites.
 - **Creative Subscriptions:** Wix's website/application creation and hosting subscription products; Wix reports Base44 here.

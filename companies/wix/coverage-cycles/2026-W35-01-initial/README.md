@@ -19,15 +19,15 @@ decision_path: ../../decisions/2026-W35-decision.md
 valuation_contract_path: ../../valuation/2026-W35-valuation-contract.json
 forecast_path: null
 review_status: passed
-reviewed_at: 2026-08-30T17:37:26+02:00
-final_report_hash: sha256:ea499c33c21eaf397655eb566bd3ecdd91b9501b161c41680f029a7cf1af2b9d
-valuation_hash: sha256:e93a16c8e79d7741efbc7cc35f29815309ae851a99205b39cbe740cffce84bdb
-decision_hash: sha256:607d0f3bc23b34226cf2f42526bc0adedc89f2067ca61bebac60cf80f623e593
+reviewed_at: 2026-08-31T00:09:32+02:00
+final_report_hash: sha256:d843cd73afe60c73dac64f0c7870b5b4793055e6c77b2b937c3563e5516a0c61
+valuation_hash: sha256:fc600654dba3001a3b99a8c7bf30f76fa38eba53e356ee7a2408b60817136b94
+decision_hash: sha256:ab6d1da1991bf1b0fb824627832401ec10449b1ed845a5ae04aa3b2b85204dda
 valuation_contract_hash: sha256:645c79b14fc567ed60b413ed851b1ebea3c3474e7c563ccce2cf666f69d84459
 model_hash: sha256:8ad49ccb70ca73bf7a940e3d5bc3bd523ad76505661de45033f2e14bc9150eef
 verifier_hash: sha256:e45dca3c0c1e212ed4c5ff451b69b41f04156a31ccf3cff8ce33b9df3ce5d86e
 review_path: ../../research/2026-08-30-independent-review.md
-review_hash: sha256:67780cedec63d734d3b54a66b0ef267ec8bc7476eae428292e1a3e61be3a0704
+review_hash: sha256:f820e38d4e8ca889d3180ca62ff0faae2e743332d4b2324eee4fbec901af0770
 tags: [website-builder, saas, payments, ai-agents, vibe-coding, initial-coverage]
 ---
 

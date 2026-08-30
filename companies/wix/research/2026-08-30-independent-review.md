@@ -5,11 +5,11 @@ ticker: WIX
 coverage_cycle_id: WIX-2026-W35-01
 status: draft
 review_status: passed
-reviewed_at: 2026-08-30T17:37:26+02:00
+reviewed_at: 2026-08-31T00:09:32+02:00
 reviewer_independence: independent_agent
-reviewed_final_report_hash: sha256:ea499c33c21eaf397655eb566bd3ecdd91b9501b161c41680f029a7cf1af2b9d
-reviewed_valuation_hash: sha256:e93a16c8e79d7741efbc7cc35f29815309ae851a99205b39cbe740cffce84bdb
-reviewed_decision_hash: sha256:607d0f3bc23b34226cf2f42526bc0adedc89f2067ca61bebac60cf80f623e593
+reviewed_final_report_hash: sha256:d843cd73afe60c73dac64f0c7870b5b4793055e6c77b2b937c3563e5516a0c61
+reviewed_valuation_hash: sha256:fc600654dba3001a3b99a8c7bf30f76fa38eba53e356ee7a2408b60817136b94
+reviewed_decision_hash: sha256:ab6d1da1991bf1b0fb824627832401ec10449b1ed845a5ae04aa3b2b85204dda
 reviewed_contract_hash: sha256:645c79b14fc567ed60b413ed851b1ebea3c3474e7c563ccce2cf666f69d84459
 reviewed_model_hash: sha256:8ad49ccb70ca73bf7a940e3d5bc3bd523ad76505661de45033f2e14bc9150eef
 reviewed_verifier_hash: sha256:e45dca3c0c1e212ed4c5ff451b69b41f04156a31ccf3cff8ce33b9df3ce5d86e
@@ -22,7 +22,17 @@ scope: independent-valuation-publication-review
 
 ## Verdict
 
-**Passed for the exact hashes above.** Three specialist-agent tracks researched and adversarially checked customer reviews, agentic competition and evidence-to-model transmission. A separate independent agent recomputed all six hashes, reviewed the updated sources and claims, and executed the valuation verifier, company validator, repository validator and targeted Wix tests. No publication blocker, unsupported model change, double count, source-cutoff breach or valuation/decision mismatch remained.
+**Passed for the exact hashes above.** Three specialist-agent tracks researched and adversarially checked customer reviews, agentic competition and evidence-to-model transmission. A separate independent agent recomputed all six hashes, reviewed the updated sources and claims, and executed the valuation verifier, company validator, repository validator and targeted Wix tests. The 31 August publication-language refresh was then checked independently against the unchanged evidence and executable model. No publication blocker, unsupported model change, double count, source-cutoff breach or valuation/decision mismatch remained.
+
+## Publication-language refresh
+
+The publication-facing report now stands independently of the originating conversation and portfolio details:
+
+- requester-specific phrasing, prompt corrections and the Base44/`n8n` recollection were removed;
+- personal WIX/SNAP weights and unrealized-gain references were removed from the report, valuation and decision prose;
+- the report retains only the accurate conflict metadata `position_disclosure: long`, while percentages remain in the separate company landing-page disclosure;
+- internal research-process narration was replaced with a concise evidence-provenance statement; and
+- the editorial changes do not alter any operating assumption, model input, valuation output, stance or falsifier.
 
 ## Customer-review and agentic-platform refresh
 
@@ -78,4 +88,4 @@ At twelve months the non-voting diagnostic medians are $80.5148 DCF and $109.251
 - Full repository test suite passes: 88/88.
 - Repository research validation passes with no errors; its three warnings are repository-wide configuration/runtime warnings, not Wix dossier failures.
 
-This pass covers internal consistency, source presentation and the exact executable snapshot. It does not turn structured regime weights into historical frequencies, prove market-price convergence, forecast QQQ, or convert management/private-company claims into audited facts. The formal action remains hold/no routine add for the disclosed existing roughly 4% WIX position; the zero-exposure starter-buy language is an illustrative valuation translation rather than a benchmark-relative return recommendation.
+This pass covers internal consistency, source presentation and the exact executable snapshot. It does not turn structured regime weights into historical frequencies, prove market-price convergence, forecast QQQ, or convert management/private-company claims into audited facts. The existing-holder action remains hold/no routine add subject to concentration and loss limits; the starter-buy language is an illustrative absolute-value translation rather than a benchmark-relative return recommendation.

@@ -20,4 +20,4 @@ Supporting records:
 - [source log](sources.md)
 - [coverage-cycle manifest](coverage-cycles/2026-W35-01-initial/README.md)
 
-The decision begins at the current market price. The [user-reported position history](disclosures/2026-08-30-user-reported-position-history.md) is isolated from valuation.
+The decision begins at the current market price. Portfolio history is isolated from valuation. For conflict disclosure, the repository owner reported holdings of roughly 4% in WIX and 8% in SNAP as of 30 August 2026; the figures are not broker-verified and do not enter the research assumptions. See the [position-history record](disclosures/2026-08-30-user-reported-position-history.md).

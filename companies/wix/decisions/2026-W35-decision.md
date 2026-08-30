@@ -33,10 +33,10 @@ modeled_mean_fair_value_upside_pct: 51.2
 action_hurdle_pct: null
 review_by: 2026-11-15
 supersedes: null
-method_reviewed_at: 2026-08-30
+method_reviewed_at: 2026-08-31
 ---
 
-# WIX at $87.62 — starter-buy valuation zone for zero exposure; hold the existing ~4%
+# WIX at $87.62 — starter-buy valuation zone with a high proof burden
 
 > Draft research decision, not personalized investment advice. No trade was placed.
 
@@ -45,7 +45,7 @@ method_reviewed_at: 2026-08-30
 | Question | Answer |
 | --- | --- |
 | Absolute value | **Attractive but not riskless:** twelve-month formal SOTP $132.52 mean / $130.27 median versus $87.62, with a conservative deterministic owner-FCFF base DCF of $92 |
-| Existing user-reported ~4% WIX | **Hold / no routine add.** The separately reported ~8% SNAP holding makes the two disclosed volatile technology positions roughly 12% before considering the rest of the portfolio |
+| Existing holder | **Hold / no routine add unless concentration and loss limits comfortably permit more risk.** Historical cost basis does not change prospective fair value |
 | Illustrative investor with zero WIX | **Starter-buy valuation zone, not a formal portfolio action or full target weight.** Add more below roughly $65 without a falsifier, or after Partner/Base44/owner-cash evidence upgrades |
 | Next review | Q3 2026 results; no later than 15 November 2026 |
 
@@ -75,7 +75,7 @@ Exact joint six- and twelve-month outputs are frozen in the [valuation-horizon c
 - The base owner-FCFF DCF is $92, close to the share price. Material upside still relies partly on a Base44/platform option the filings do not let investors audit.
 - Short interest fell by roughly 3.45 million shares between 30 June and 14 August while the stock recovered, so covering plausibly amplified part of the gain and some squeeze fuel is already spent.
 - The revised shadow model assigns a 9.4% frequency to target-date fair value at least 30% below reference and 2.7% to at least 50% below. These are fair-value frequencies under elicited weights, not realized-return probabilities.
-- The user-reported WIX/SNAP positions already total roughly 12%. That is an incomplete but relevant concentration flag; it is not part of Wix fair value.
+- Portfolio concentration can make holding preferable to adding even when absolute value is attractive. That action constraint is separate from Wix fair value.
 
 ## Upgrade conditions
 
@@ -105,13 +105,13 @@ Reduce or exit the thesis, not merely the price target, if:
 ## Price map
 
 - **Below $65:** strong prospective buy/add zone if no structural falsifier has fired.
-- **$65–$95:** starter-buy zone for zero exposure; hold/no routine add for the user-reported existing ~4%. $87.62 is here.
+- **$65–$95:** starter-buy valuation zone; existing holders should test concentration before adding. $87.62 is here.
 - **$95–$130:** hold; new capital requires stronger Base44 and owner-cash execution.
 - **$130–$170:** trim unless evidence has upgraded.
 - **Above $170:** reduce materially absent a fresh platform-win valuation.
 
-## Position-history independence
+## Portfolio-context independence
 
-The user's reported approximately 50% gain is not a reason to hold, sell or add. The reported roughly 4% WIX and 8% SNAP weights are relevant to concentration, but the full portfolio and loss budget are unknown. Taxes, concentration and loss budget can change the portfolio action, but they do not change Wix's fair value. The [position disclosure](../disclosures/2026-08-30-user-reported-position-history.md) is kept separate for that reason.
+Historical purchase price and unrealized gain are not reasons to hold, sell or add. Taxes, concentration and loss limits can change a portfolio action, but they do not change Wix's fair value. Portfolio history is therefore maintained separately from the analytical record.
 
-The dossier does not forecast QQQ or price convergence, so the formal benchmark-relative stance is `insufficient_evidence` and the formal action for the disclosed existing holding is `hold`, even though the absolute valuation is attractive. The starter-buy language for zero exposure is an illustrative valuation translation, not a benchmark-relative recommendation backed by an expected-return forecast.
+The dossier does not forecast QQQ or price convergence, so the formal benchmark-relative stance is `insufficient_evidence`, even though the absolute valuation is attractive. The starter-buy language is an illustrative valuation translation, not a benchmark-relative recommendation backed by an expected-return forecast.

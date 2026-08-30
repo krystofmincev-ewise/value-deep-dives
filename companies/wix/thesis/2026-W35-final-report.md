@@ -45,13 +45,13 @@ distribution_method: wix_joint_sotp_capital_path_v4
 distribution_calibration_status: uncalibrated_shadow
 distribution_seed: 20260830
 distribution_sample_count: 100000
-method_reviewed_at: 2026-08-30
+method_reviewed_at: 2026-08-31
 tags: [website-builder, saas, payments, ai-agents, vibe-coding, founder-led]
 ---
 
 # Wix at $87.62: the moat moved below the editor
 
-> Draft public research, not personalized investment advice. Source cutoff: 30 August 2026. Reference price: **$87.62** at 29 August 2026 00:15 UTC. Historical purchase price is excluded from the valuation.
+> Draft public research, not personalized investment advice. Source cutoff: 30 August 2026. Reference price: **$87.62** at 29 August 2026 00:15 UTC.
 
 ## Two-minute answer
 
@@ -74,12 +74,9 @@ The twelve-month median is 48.7% above the reference price and mean 51.2% above 
 
 A regime-weight stress reinforces the caution: moving ten probability points from platform win to AI erosion lowers the twelve-month median to **$121.27**, mean to **$118.62**, and raises the below-reference frequency to **28.7%**. A separate case with only 10% platform weight has a $123.39 median and $120.44 mean. Moving Base44's modeled post-gross-profit owner-cost load 15 points lower/higher moves the formal median to $136.53/$124.36. These are elicited judgments, not calibrated frequencies.
 
-- **Illustrative zero-exposure mapping: $87.62 is a starter-buy valuation zone, not a formal benchmark-relative portfolio action.**
-- **User-reported existing roughly 4% WIX: hold / no routine add**, especially alongside the separately reported roughly 8% SNAP position; the full portfolio is unknown.
+- **At $87.62, Wix is in a starter-buy valuation zone for a diversified investor whose risk limits can absorb the modeled downside. This is an absolute-value assessment, not a formal benchmark-relative portfolio action.**
 - Consider adding below roughly **$65** only if no structural falsifier has fired.
 - Trim within **$130–$170** unless Base44 economics, core cohorts and owner FCF upgrade; reduce materially above **$170** without a new evidence cycle.
-
-For the user-reported existing long, the approximately 50% gain is irrelevant to prospective value. It matters only if the position has become too large for the investor's private loss budget.
 
 ## The thesis in one sentence
 
@@ -105,7 +102,7 @@ The simple description—“a company that lets people build websites”—misse
 
 **Partners is a channel across those lines, not a fourth additive stream.** Agencies and freelancers build and manage customer sites, increasingly through Studio. Partner revenue was $750 million in 2025, 37.6% of revenue; adding it to Creative and Business Solutions would double count revenue.
 
-Base44 is a fifth strategic activity but an accounting subset of Creative Subscriptions. It builds full-stack applications from natural language and was acquired in June 2025. The user was recalling Base44, not `n8n`.
+Base44 is an additional strategic activity but an accounting subset of Creative Subscriptions. It builds full-stack applications from natural-language instructions and was acquired in June 2025.
 
 ### The product stack
 
@@ -115,7 +112,7 @@ Base44 is a fifth strategic activity but an accounting subset of Creative Subscr
 | Wix Studio | agencies/professionals/enterprise | responsive design, code/API access, collaboration and multi-site management |
 | Wix Harmony + Aria | mainstream AI-assisted creator | prompt a complete site, then refine it visually without surrendering control |
 | Base44 | app creators/nondevelopers | prompt database-backed applications with auth, logic and deployment |
-| Headless + MCP | developers and external agents | expose Wix's backend/business tools wherever the user wants to build |
+| Headless + MCP | developers and external agents | expose Wix's backend/business tools wherever projects are built |
 
 This coverage creates product-sprawl risk. Wix's current help pages say Harmony remains a gradual English-only rollout, has no custom JavaScript/backend-code path, lacks or limits several apps/features and cannot transfer a site to Editor or Studio without rebuilding. A newer CMS help page already conflicts with the overview's “CMS unavailable” list, evidence of a fast but uneven rollout. Reviews similarly say the expanding editor lineup is confusing and technical users dislike infrastructure dependence. Yet the same breadth lets Wix serve a beginner, agency and outside AI agent without surrendering the business layer.
 
@@ -218,7 +215,7 @@ His claim that Base44 “should probably be worth $8 billion” is founder opini
 
 ## Lovable: the comparison is provocative, not dispositive
 
-Lovable raised $400 million at a **$13.3 billion** post-money valuation on 12 August 2026. The user’s approximately $12 billion recollection was directionally right but stale. TechCrunch reported a company-supplied $500 million June annualized revenue run-rate, implying 26.6x. Replit's prior $3 billion mark on a reported $150 million run-rate was about 20x; its current $9 billion mark is paired with an aspirational $1 billion year-end run-rate, not achieved revenue.
+Lovable raised $400 million at a **$13.3 billion** post-money valuation on 12 August 2026. TechCrunch reported a company-supplied $500 million June annualized revenue run-rate, implying 26.6x. Replit's prior $3 billion mark on a reported $150 million run-rate was about 20x; its current $9 billion mark is paired with an aspirational $1 billion year-end run-rate, not achieved revenue.
 
 Private marks are not public market caps. They embed security terms, illiquidity, optionality and a much faster growth path. ARR, retention, gross margin and cash burn remain unaudited.
 
@@ -272,7 +269,7 @@ These are selection-biased sources, not churn data. The robust qualitative concl
 
 Wix passes the practical Codex test on documentation: its Headless AI toolkit explicitly supports Codex, and its production MCP can create/publish sites and projects, generate platform code, call authenticated site APIs and operate commerce, bookings, payments, events, plans, blog, CMS and CRM. That makes Wix the strongest managed-SMB business substrate in the reviewed set. Classic hosted-site portability remains weak, however, and Wix discloses no MCP adoption, retained-agent cohort or independent completion rate.
 
-The connector is not the moat. Shopify is the strongest architectural benchmark: it makes storefronts agent-addressable while retaining a deep proprietary commerce backend. Webflow MCP 2.0 can build and edit pages, elements, components, styles, variables and CMS headlessly, publish to staging, use workspace permissions and record agent actions in the audit log. Replit's external MCP is beta but can create/update full-stack applications on its integrated runtime. Lovable's research-preview builder MCP can create, inspect, iterate and deploy projects, but currently has full-account scope, consumes live credits and can run SQL with the user's database permissions. Base44 exposes a generally available published-app MCP plus beta builder/backend MCP, docs MCP, CLI, source view/export and two-way GitHub sync; its user-review reliability is the missing proof. WordPress.com has a first-party MCP and GoDaddy now provides agent-oriented domain/commerce APIs, CLI and skills. Squarespace exposes commerce/business APIs but no comparable verified first-party agent control of the page/editor.
+The connector is not the moat. Shopify is the strongest architectural benchmark: it makes storefronts agent-addressable while retaining a deep proprietary commerce backend. Webflow MCP 2.0 can build and edit pages, elements, components, styles, variables and CMS headlessly, publish to staging, use workspace permissions and record agent actions in the audit log. Replit's external MCP is beta but can create/update full-stack applications on its integrated runtime. Lovable's research-preview builder MCP can create, inspect, iterate and deploy projects, but currently has full-account scope, consumes live credits and can run SQL with the connected database permissions. Base44 exposes a generally available published-app MCP plus beta builder/backend MCP, docs MCP, CLI, source view/export and two-way GitHub sync; its user-review reliability is the missing proof. WordPress.com has a first-party MCP and GoDaddy now provides agent-oriented domain/commerce APIs, CLI and skills. Squarespace exposes commerce/business APIs but no comparable verified first-party agent control of the page/editor.
 
 The investor conclusion is stricter than “Wix has MCP.” **Agent friendliness is becoming table stakes.** Code export is also not full portability: identity, data, payments, secrets, storage, domains and production configuration may remain on the managed platform. Wix must show that external agents choose its tools because the platform holds valuable business state, complete tasks reliably, preserve permissions and reversibility, attach paid solutions and retain customers. Until Wix reports those outcomes, the agentic surface supports the platform-defense scenario but does not justify a higher probability or multiple.
 
@@ -313,7 +310,7 @@ The FY2025 filing showed Ameriprise at 10.9%, Wellington 6.3%, Baillie Gifford 5
 
 Senvest publicly articulates the clearest institutional bull case: Wix bought Base44 cheaply relative to Lovable, Studio can take share from WordPress and Base44 deserves a large separate value. Its Q2 public report raised that opinion to roughly $2.5bn while acknowledging Partner deceleration. Its primary 13F simultaneously fell from 3,754,680 shares at March quarter-end to 2,918,880 at June, down 835,800 or 22.3%. The filing cannot distinguish tender participation from open-market sales or motive; its earlier 13G also included 125,641 warrant shares outside the Q1 13F scope. The bullish words and smaller reportable position are a useful contradiction, not an oracle.
 
-The logic is directionally plausible and close to this dossier's $1.68bn deterministic base Base44 SOTP value. Its weak point is the denominator: consensus/adjusted FCF does not fully charge current dilution economics, acquisition/restructuring cash, net debt or unseasoned Base44 retention. Our owner-FCFF and DCF therefore remain materially less generous.
+The logic is directionally plausible and close to this dossier's $1.68bn deterministic base Base44 SOTP value. Its weak point is the denominator: consensus/adjusted FCF does not fully charge current dilution economics, acquisition/restructuring cash, net debt or unseasoned Base44 retention. The owner-FCFF and DCF methods therefore remain materially less generous.
 
 Market mechanics also qualify the 50% rebound. Reported short interest fell from 9.232 million shares at 30 June to 5.777 million at 14 August while the price recovered. Float denominators disagree across secondary services, so only the exact-share series is used. The timing supports an inference that short covering amplified the rally; it does not prove how much. With approximately 3.45 million fewer shares short, some squeeze fuel has already been spent, so the next re-rating requires more operating evidence than the first leg did.
 
@@ -411,7 +408,7 @@ Wix is not Fiverr with a new AI label, and it is not Lovable at a public-market 
 
 The key insight is temporal: **new-customer creation is exposed now; installed operational revenue is slower to unwind.** That buys Wix time. Harmony, Base44 and MCP show management is using the time intelligently at the product level. Partner weakness, workforce disruption, Base44 opacity and owner-cash quality mean investors should still demand proof.
 
-At $87.62, the expected-value case is attractive enough for an investor with no exposure to buy a starter position. For the user-reported existing roughly 4% WIX holding—alongside roughly 8% in SNAP—the same evidence supports hold / no routine add until either price falls toward $65 without a falsifier or operating proof improves. The reported 50% gain does not enter fair value.
+At $87.62, the absolute expected-value case supports a starter position for an investor whose diversification and loss limits can absorb the modeled downside. The formal benchmark-relative stance remains `insufficient_evidence` because the dossier does not forecast QQQ or market-price convergence. Existing holders should evaluate concentration separately from fair value; historical cost basis and unrealized gains do not change the value of the security today.
 
 ## Evidence map
 
@@ -428,4 +425,4 @@ At $87.62, the expected-value case is attractive enough for an investor with no 
 - [Decision](../decisions/2026-W35-decision.md)
 - [Source log](../sources.md)
 
-The [position disclosure](../disclosures/2026-08-30-user-reported-position-history.md) is user-reported and not broker-verified. Multiple Codex subagents performed bounded novel research, financial/model review and adversarial analysis; retained claims were checked against the listed underlying sources. Twenty-seven complete visible YouTube video/presentation/panel transcripts—nine Wix, six Base44, six Lovable and six Replit—were reviewed sequentially. The original twenty-three-video temporary-export process estimated roughly 239,000 words; four additional full transcripts were then reviewed. Because all temporary transcripts were deleted by design, word count is only an order-of-magnitude workflow measure, while the timestamped analysis is the retained evidence. Two unavailable Lovable videos and two SemiAnalysis videos whose transcript panels failed were catalogued but excluded from transcript-derived claims. Gemini's standard signed-in research surface was used only as a secondary discovery aid after its dedicated Deep Research control proved unavailable; retained claims were verified at underlying sources, and inaccurate suggestions were rejected. No complete transcript, Gemini output, paid-source copy or licensed workforce capture is committed. The dossier remains draft research and the formal distribution remains an `uncalibrated_shadow`; a fresh hash-bound independent review is required after the canonical files are frozen.
+The evidence base includes twenty-seven complete public videos, presentations and technical panels: nine Wix, six Base44, six Lovable and six Replit. Transcript-derived claims were retained only as timestamped original analysis and checked against playback or underlying primary sources where material. Items without an accessible complete transcript were excluded from transcript-derived claims. No complete transcript, machine-generated research report, paid-source copy or licensed workforce capture is committed. The dossier remains draft research and the formal distribution remains an `uncalibrated_shadow` rather than an empirically calibrated return forecast.

@@ -34,7 +34,7 @@ distribution_method: wix_joint_sotp_capital_path_v4
 distribution_calibration_status: uncalibrated_shadow
 distribution_seed: 20260830
 distribution_sample_count: 100000
-method_reviewed_at: 2026-08-30
+method_reviewed_at: 2026-08-31
 research_status: draft
 ---
 
@@ -51,7 +51,7 @@ The 27-item video evidence set—nine Wix, six Base44, six Lovable and six Repli
 | 28 Feb 2027 | $61.12 | $119.16 | $178.23 | $119.81 | 21.2% |
 | 30 Aug 2027 | $62.68 | $130.27 | $205.57 | $132.52 | 19.5% |
 
-This is an uncalibrated target-date fair-value distribution, not a forecast that the share price converges by either date. Reported scale/capitalization and sector cost of capital are anchored; the structural weights are not historically estimable. The twelve-month mean is 51.2% above the reference price and the median 48.7% above it, but the model also assigns a 9.4% frequency of fair value at least 30% below the reference and a 2.7% frequency of at least 50% impairment under the elicited weights. Those are fair-value frequencies, not realized-return probabilities. As an illustrative valuation translation for an investor with no WIX exposure, that supports a **starter-buy zone**, not a formal benchmark-relative action or a full position. For the user-reported existing roughly 4% holding—alongside a separately reported roughly 8% SNAP holding—the formal action is **hold / no routine add** because action depends on concentration as well as fair value.
+This is an uncalibrated target-date fair-value distribution, not a forecast that the share price converges by either date. Reported scale/capitalization and sector cost of capital are anchored; the structural weights are not historically estimable. The twelve-month mean is 51.2% above the reference price and the median 48.7% above it, but the model also assigns a 9.4% frequency of fair value at least 30% below the reference and a 2.7% frequency of at least 50% impairment under the elicited weights. Those are fair-value frequencies, not realized-return probabilities. The figures place $87.62 in a **starter-buy valuation zone** for a diversified investor whose risk limits can absorb the modeled downside. That is an absolute-value interpretation, not a formal benchmark-relative action or a full-position recommendation.
 
 ## Capitalization at the reference price
 
@@ -188,12 +188,12 @@ The 50% rally also contains a market-flow component outside this fair-value mode
 | Price | Prospective interpretation from current evidence |
 | ---: | --- |
 | Below $65 | Strong prospective buy/add zone if no structural falsifier has fired; near the stressed/downside neighborhood |
-| $65–$95 | Starter-buy zone for zero exposure; hold/no routine add for the user-reported existing ~4% WIX position. $87.62 lies here |
+| $65–$95 | Starter-buy valuation zone; existing holders should test concentration before adding. $87.62 lies here |
 | $95–$130 | Hold; new capital increasingly requires Base44 and owner-cash execution |
 | $130–$170 | Trim unless owner FCF, Base44 ARR/margin and core cohorts have upgraded |
 | Above $170 | Reduce materially absent a new evidence cycle supporting platform-win economics |
 
-These are valuation bands, not personalized position-size instructions. The user reported roughly 4% WIX and 8% SNAP, but the complete portfolio, taxes, correlations and loss budget are outside the record. Those disclosed weights change the action translation, not Wix's fair value.
+These are valuation bands, not personalized position-size instructions. Portfolio concentration, taxes, correlations and loss limits can change the appropriate action, but they do not change Wix's fair value.
 
 ## Verification
 

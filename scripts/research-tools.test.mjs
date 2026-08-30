@@ -49,6 +49,7 @@ test("status reports only configuration presence, never values", () => {
     SEC_USER_AGENT: true,
   });
   assert.deepEqual(status.repository.skills, {
+    "ai-capability-investment-research": true,
     "animated-investment-shorts": true,
     "gemini-deep-research": true,
     "archive-ph-research": true,

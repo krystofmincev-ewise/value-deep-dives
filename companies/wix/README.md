@@ -1,0 +1,23 @@
+# Wix deep dive
+
+The canonical first-cycle conclusion is [Wix at $87.62: the moat moved below the editor](thesis/2026-W35-final-report.md).
+
+Supporting records:
+
+- [valuation and scenario cross-check](valuation/2026-W35-valuation.md)
+- [machine-readable valuation-horizon contract](valuation/2026-W35-valuation-contract.json)
+- [current action mapping](decisions/2026-W35-decision.md)
+- [financials and capital allocation](research/2026-08-30-financials-capital-allocation.md)
+- [product, moat and AI competition](research/2026-08-30-product-moat-ai-competition.md)
+- [interviews, leadership and workforce](research/2026-08-30-interviews-leadership-workforce.md)
+- [27-video YouTube transcript analysis and update](research/2026-08-30-youtube-transcript-analysis.md)
+- [AI capability outlook](research/2026-08-30-ai-capability-outlook.md)
+- [AI capability and cost-curve evidence](research/2026-08-30-ai-capability-cost-curve.md)
+- [workforce, reviews and additional interviews](research/2026-08-30-workforce-product-reviews-update.md)
+- [customer reviews and agentic-platform audit](research/2026-08-30-customer-reviews-agentic-friendliness.md)
+- [debt, macro, ownership and quality-of-earnings audit](research/2026-08-30-debt-macro-ownership-qoe.md)
+- [model-input ledger and reverse DCF](valuation/2026-W35-model-inputs.md)
+- [source log](sources.md)
+- [coverage-cycle manifest](coverage-cycles/2026-W35-01-initial/README.md)
+
+The decision begins at the current market price. The [user-reported position history](disclosures/2026-08-30-user-reported-position-history.md) is isolated from valuation.

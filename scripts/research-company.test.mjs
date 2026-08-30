@@ -302,7 +302,7 @@ test("joint horizon contract rejects ambiguous dependence and malformed transiti
 test("current repository coverage cycles pass the canonical contract", async () => {
   const result = await validateCoverageCycles(repositoryRoot);
   assert.equal(result.valid, true, JSON.stringify(result.findings, null, 2));
-  assert.equal(result.cycleCount, 1);
+  assert.equal(result.cycleCount, 2);
 });
 
 test("coverage-cycle validation accepts one aligned canonical trio", async () => {

@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Capability Investment Research"
+  short_description: "Map AI progress to auditable investment inputs"
+  default_prompt: "Use $ai-capability-investment-research to assess how current AI capability and inference-cost trends affect this company over the next 6–24 months."

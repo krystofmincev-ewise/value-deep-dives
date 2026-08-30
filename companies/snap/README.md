@@ -69,7 +69,11 @@ The current analysis and linked model are complete as a draft; a fresh independe
 | Source cutoff | 22 August 2026, 23:57 Central European Summer Time (CEST) |
 | Next review | Q3 2026 results; no later than 15 November 2026 |
 
-The formal QQQ-relative research stance remains **insufficient evidence** because no expected QQQ return was forecast. That scorekeeping label is separate from Snap's attractive absolute valuation. Public sizing, tax, liquidity, and portfolio-correlation context is intentionally omitted, so the dossier cannot determine the investor's private risk budget. No trade was placed.
+The formal QQQ-relative research stance remains **insufficient evidence** because no expected QQQ return was forecast. That scorekeeping label is separate from Snap's attractive absolute valuation. Public sizing, tax, liquidity, and portfolio-correlation context is intentionally omitted, so the dossier cannot determine the investor's private risk budget. No trade was placed as part of this research update.
+
+## Position-history disclosure
+
+The repository owner reported an existing SNAP long of roughly 8% of the portfolio as of 30 August 2026. The initial purchase was made at approximately $4.70 per share sometime after Snap's [16 June 2026 consumer SPECS announcement](https://newsroom.snap.com/introducing-specs-augmented-reality-glasses?lang=en-GB). The exact trade date, fill and portfolio records are not broker-verified and do not enter the valuation. See the [position-history addendum](disclosures/2026-08-21-user-reported-position-history.md).
 
 ## Find the question, then drill down
 

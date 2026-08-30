@@ -8,7 +8,13 @@ Value Deep Dives is a public, time-stamped investment research notebook for comp
 
 This repository grew out of a small but encouraging set of LLM-assisted idea-generation exercises. I started with a rough screening heuristic: companies whose trailing revenue was near their equity market value (a price-to-sales ratio around 1×), then used deep-research tools to compare candidates across a consistent set of rebound and survival indicators.
 
-That work surfaced Wix, Snap, and Amplitude. I supplemented the model output with primary and qualitative research, including a 20VC interview with Wix's founder and roughly four hours of interviews and other material featuring Evan Spiegel. I bought all three; Amplitude was purchased one day before earnings, and each subsequently appreciated after its next reported results. In a separate exercise, I studied Leopold Aschenbrenner's publicly disclosed holdings and asked LLMs to propose adjacent companies he might plausibly own. Deeper research on one of the results led me to IREN, which also appreciated after purchase.
+That work surfaced Wix, Snap, and Amplitude. I supplemented the model output with primary and qualitative research, including a 20VC interview with Wix's founder and roughly four hours of interviews and other material featuring Evan Spiegel. I bought all three. The retrospective, user-reported purchase timeline is:
+
+- **Snap:** purchased at approximately **$4.70 per share** sometime after Snap's [16 June 2026 consumer SPECS announcement](https://newsroom.snap.com/introducing-specs-augmented-reality-glasses?lang=en-GB). The exact trade date and fill are not broker-verified.
+- **Wix:** the first stake was purchased around **29 June 2026**, approximately two weeks before Avishai Abrahami's [13 July 2026 20VC interview](https://www.youtube.com/watch?v=TdQyVXN0GF8). I added to the position on or shortly after **13 July 2026**, immediately after reviewing that interview. These are approximate recollections rather than brokerage timestamps.
+- **Amplitude:** purchased one day before earnings; the exact date and fill are not recorded here.
+
+Each subsequently appreciated after its next reported results. In a separate exercise, I studied Leopold Aschenbrenner's publicly disclosed holdings and asked LLMs to propose adjacent companies he might plausibly own. Deeper research on one of the results led me to IREN, which also appreciated after purchase.
 
 Those outcomes are motivation, not proof. The sample is tiny and selected, the holding periods are short, the research was not prospectively registered, and the results may reflect market exposure, event timing, selection bias, or luck. They are not an audited or benchmark-adjusted track record. The point of this repository is to move from memorable anecdotes to a prospective, falsifiable record: what I believed, why I believed it, what would prove me wrong, and what happened.
 

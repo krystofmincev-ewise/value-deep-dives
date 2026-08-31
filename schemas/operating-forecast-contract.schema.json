@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/value-deep-dives/operating-forecast-contract.schema.json",
+  "title": "Operating Forecast Contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "type",
+    "schema_version",
+    "coverage_cycle_id",
+    "status",
+    "as_of",
+    "source_cutoff_at",
+    "model",
+    "calibration_layers",
+    "baseline_scoring_method",
+    "resolution_policy",
+    "forecasts",
+    "independence_note"
+  ],
+  "properties": {
+    "type": { "const": "operating_forecast_contract" },
+    "schema_version": { "const": 1 },
+    "coverage_cycle_id": {
+      "type": "string",
+      "pattern": "^[A-Z0-9.-]+-[0-9]{4}-W[0-9]{2}-[0-9]{2}$"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["prospective_shadow_draft", "frozen"]
+    },
+    "as_of": { "type": "string", "format": "date" },
+    "source_cutoff_at": { "type": "string", "format": "date-time" },
+    "model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["version", "seed", "sample_count", "code_path", "verifier_path"],
+      "properties": {
+        "version": { "type": "string", "minLength": 1 },
+        "seed": { "type": "integer" },
+        "sample_count": { "type": "integer", "minimum": 10 },
+        "code_path": { "type": "string", "minLength": 1 },
+        "verifier_path": { "type": "string", "minLength": 1 }
+      }
+    },
+    "calibration_layers": {
+      "type": "object",
+      "additionalProperties": { "type": "string", "minLength": 1 },
+      "minProperties": 1
+    },
+    "baseline_scoring_method": {
+      "const": "degenerate_interval_weighted_interval_score_equivalent_to_absolute_error"
+    },
+    "resolution_policy": { "type": "string", "minLength": 1 },
+    "forecasts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "metric",
+          "segment",
+          "period_end",
+          "resolution_deadline",
+          "unit",
+          "source_class",
+          "calibration_status",
+          "p10",
+          "p50",
+          "p90",
+          "baselines",
+          "baseline_provenance",
+          "baseline_known_at",
+          "baseline_source_ids",
+          "scoring_method",
+          "resolution_source_ids",
+          "resolution_rule",
+          "unresolvable_rule"
+        ],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$" },
+          "metric": { "type": "string", "minLength": 1 },
+          "segment": { "type": "string", "minLength": 1 },
+          "period_end": { "type": "string", "format": "date" },
+          "resolution_deadline": { "type": "string", "format": "date" },
+          "unit": { "type": "string", "minLength": 1 },
+          "source_class": {
+            "type": "string",
+            "enum": ["partially_empirical", "anchored", "model_generated"]
+          },
+          "calibration_status": { "type": "string", "minLength": 1 },
+          "p10": { "type": "number" },
+          "p50": { "type": "number" },
+          "p90": { "type": "number" },
+          "baselines": {
+            "type": "object",
+            "additionalProperties": { "type": "number" },
+            "minProperties": 1
+          },
+          "baseline_provenance": {
+            "type": "object",
+            "additionalProperties": { "type": "string", "minLength": 1 },
+            "minProperties": 1
+          },
+          "baseline_known_at": { "type": "string", "format": "date-time" },
+          "baseline_source_ids": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "array",
+              "minItems": 1,
+              "items": { "type": "string", "minLength": 1 }
+            },
+            "minProperties": 1
+          },
+          "scoring_method": { "const": "weighted_interval_score_alpha_0_2" },
+          "resolution_source_ids": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string", "minLength": 1 }
+          },
+          "resolution_rule": { "type": "string", "minLength": 1 },
+          "unresolvable_rule": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "independence_note": { "type": "string", "minLength": 1 }
+  }
+}

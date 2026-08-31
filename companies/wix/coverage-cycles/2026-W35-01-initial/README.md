@@ -9,25 +9,26 @@ iso_week: 2026-W35
 status: active
 research_status: draft
 started_at: 2026-08-30
-as_of: 2026-08-30
-source_cutoff_at: 2026-08-30T17:31:30+02:00
+as_of: 2026-08-31
+source_cutoff_at: 2026-08-31T23:59:59+02:00
 prior_cycle_path: null
 supersedes: []
 final_report_path: ../../thesis/2026-W35-final-report.md
 valuation_path: ../../valuation/2026-W35-valuation.md
 decision_path: ../../decisions/2026-W35-decision.md
 valuation_contract_path: ../../valuation/2026-W35-valuation-contract.json
-forecast_path: null
+forecast_path: ../../valuation/2026-W35-operating-forecast-contract.json
 review_status: passed
-reviewed_at: 2026-08-31T22:55:28+02:00
-final_report_hash: sha256:6ac13cf6e9a3bcc9a56bfaed214ca7c025668cb340f2449bdcefd092dc79342e
-valuation_hash: sha256:fc600654dba3001a3b99a8c7bf30f76fa38eba53e356ee7a2408b60817136b94
-decision_hash: sha256:ab6d1da1991bf1b0fb824627832401ec10449b1ed845a5ae04aa3b2b85204dda
-valuation_contract_hash: sha256:645c79b14fc567ed60b413ed851b1ebea3c3474e7c563ccce2cf666f69d84459
-model_hash: sha256:8ad49ccb70ca73bf7a940e3d5bc3bd523ad76505661de45033f2e14bc9150eef
-verifier_hash: sha256:e45dca3c0c1e212ed4c5ff451b69b41f04156a31ccf3cff8ce33b9df3ce5d86e
+reviewed_at: 2026-09-01T01:15:10+02:00
+final_report_hash: sha256:bc8fb9a905d174ac46472bd36fc44cde34fc104640f1b463f0085f59207aea32
+valuation_hash: sha256:f448e0c1e02ffb811bf8b1712d579bb57dad6d558d24df406551720568cc6f9b
+decision_hash: sha256:8af0a871568900a57840d1fd525ff9754b9017475a9063a89b2d1b840a3118bf
+valuation_contract_hash: sha256:82a10dd87f7da029f0b10a5ea2c7bededf589b70210176d7f7d9d66c2d47ce57
+forecast_hash: sha256:62b32e819d69821520e3f442244315adfbe00410696f12d46c11daa1e157ef6f
+model_hash: sha256:df1854c0c454f28c523ca06bee3d99c5c9e5164599947ae132bb63ccbfbf42b4
+verifier_hash: sha256:f1cab8f432b70dd870913ea45e8852b09ef763c52c33acb97fb9c14845e29c7c
 review_path: ../../research/2026-08-30-independent-review.md
-review_hash: sha256:1abf1a84ccae5946b9a7c806758ee1ec27ea9d17dd03bfc9ae2a24d078ca4ee8
+review_hash: sha256:81b2dd69535acfb724961719eedeb32a5d2b0de61d8912f20ab94b68b2c30804
 tags: [website-builder, saas, payments, ai-agents, vibe-coding, initial-coverage]
 ---
 
@@ -41,7 +42,8 @@ tags: [website-builder, saas, payments, ai-agents, vibe-coding, initial-coverage
 | Action at $87.62 | [Decision](../../decisions/2026-W35-decision.md) |
 | Methods and sensitivities | [Valuation](../../valuation/2026-W35-valuation.md) |
 | Exact two-horizon outputs | [Valuation contract](../../valuation/2026-W35-valuation-contract.json) |
+| Prospective operating estimates | [Operating-forecast contract](../../valuation/2026-W35-operating-forecast-contract.json) |
 | Source provenance | [Source log](../../sources.md) |
 | Independent checks | [Review](../../research/2026-08-30-independent-review.md) |
 
-This is a draft public research record, not personalized investment advice. It supports a current-opportunity decision from $87.62 and excludes purchase history from the valuation. Independent publication-flow, AI/moat and financial-model reviewers passed the substantive single-narrative revision; a later provider-name removal was independently checked against the exact current report hash. The evidence, valuation, decision and executable model are unchanged.
+This is a draft public research record, not personalized investment advice. It supports a current-opportunity decision from $87.62 and excludes purchase history from the valuation. Independent methodology, financial/model and publication-flow reviewers passed the exact version-5 report, valuation, decision, contracts, model and verifier hashes above. The prospective operating forecast is separately hash-bound so later outcomes cannot silently rewrite the forecast.

@@ -15,8 +15,8 @@ listing_id: nasdaq-wix
 research_stance: insufficient_evidence
 absolute_value_assessment: attractive
 action: hold
-decided_at: 2026-08-30T17:32:00+02:00
-research_cutoff: 2026-08-30T17:31:30+02:00
+decided_at: 2026-09-01T01:14:44+02:00
+research_cutoff: 2026-08-31T23:59:59+02:00
 price_kind: public_reference
 price: 87.62
 price_at: 2026-08-29T00:15:00Z
@@ -29,11 +29,11 @@ benchmark: QQQ_adjusted_close_total_return_same_session_rule
 target_horizon: 2027-08-30
 expected_return_pct: null
 expected_excess_return_pct: null
-modeled_mean_fair_value_upside_pct: 51.2
+modeled_mean_fair_value_upside_pct: 48.4
 action_hurdle_pct: null
 review_by: 2026-11-15
 supersedes: null
-method_reviewed_at: 2026-08-31
+method_reviewed_at: 2026-09-01
 ---
 
 # WIX at $87.62 — starter-buy valuation zone with a high proof burden
@@ -44,7 +44,7 @@ method_reviewed_at: 2026-08-31
 
 | Question | Answer |
 | --- | --- |
-| Absolute value | **Attractive but not riskless:** twelve-month formal SOTP $132.52 mean / $130.27 median versus $87.62, with a conservative deterministic owner-FCFF base DCF of $92 |
+| Absolute value | **Attractive but not riskless:** twelve-month formal SOTP $129.99 mean / $127.74 median versus $87.62, with a conservative deterministic owner-FCFF base DCF of $92 |
 | Existing holder | **Hold / no routine add unless concentration and loss limits comfortably permit more risk.** Historical cost basis does not change prospective fair value |
 | Illustrative investor with zero WIX | **Starter-buy valuation zone, not a formal portfolio action or full target weight.** Add more below roughly $65 without a falsifier, or after Partner/Base44/owner-cash evidence upgrades |
 | Next review | Q3 2026 results; no later than 15 November 2026 |
@@ -55,7 +55,7 @@ Complete review of twenty-seven Wix, Base44, Lovable and Replit videos, presenta
 
 Live customer-review and agentic-surface checks do not clear it either. Lovable has the strongest current AI-native customer sentiment, while Base44 and Replit repeatedly show paid repair-loop, context and support failure modes. Wix's much deeper review history supports managed-bundle value but also recurring support, price and product-complexity liabilities. These selected samples are watchlist evidence, not churn coefficients. MCP has also become competitive parity across Wix, Shopify, Webflow, Base44, Lovable, Replit and WordPress; the upgrade evidence is retained agent-originated usage and business-solution attach, not connector availability.
 
-Exact joint six- and twelve-month outputs are frozen in the [valuation-horizon contract](../valuation/2026-W35-valuation-contract.json).
+Exact joint six- and twelve-month outputs are frozen in the [valuation-horizon contract](../valuation/2026-W35-valuation-contract.json). Eight prospectively scoreable or explicitly unresolvable operating estimates are frozen in the [operating-forecast contract](../valuation/2026-W35-operating-forecast-contract.json).
 
 ## Why hold
 
@@ -63,7 +63,7 @@ Exact joint six- and twelve-month outputs are frozen in the [valuation-horizon c
 - Wix has already exposed commerce, bookings, payments, CRM and deployment to Claude, Codex and other agents through MCP/headless interfaces. It can be the substrate even if another company owns the conversational interface.
 - Base44 gives Wix a credible growth option in the very category threatening its funnel, at a small acquisition price relative to current public/private values.
 - The tender created a genuine step-down in basic shares, and Q2 revenue/ARR still grew 15%.
-- The revised SOTP distribution's twelve-month median is 48.7% above reference after charging Base44's full post-gross-profit owner-cost load, and its ten-point regime stress still has a $121.27 median.
+- The revised SOTP distribution's twelve-month median is 45.8% above reference after charging Base44's full post-gross-profit owner-cost load. Alternative probability sets based on the same evidence and deliberately skeptical/favorable boundaries are reported as sensitivity evidence, not empirical validation.
 
 ## Why not add at $87.62
 
@@ -74,7 +74,7 @@ Exact joint six- and twelve-month outputs are frozen in the [valuation-horizon c
 - SBC remains about 10% of revenue, net debt is roughly $689 million and the displayed market cap uses a stale share count.
 - The base owner-FCFF DCF is $92, close to the share price. Material upside still relies partly on a Base44/platform option the filings do not let investors audit.
 - Short interest fell by roughly 3.45 million shares between 30 June and 14 August while the stock recovered, so covering plausibly amplified part of the gain and some squeeze fuel is already spent.
-- The revised shadow model assigns a 9.4% frequency to target-date fair value at least 30% below reference and 2.7% to at least 50% below. These are fair-value frequencies under elicited weights, not realized-return probabilities.
+- The revised shadow model assigns a 7.5% frequency to target-date fair value at least 30% below reference and 2.6% to fair value at least 50% below. These are fair-value frequencies under elicited weights, not realized-return probabilities.
 - Portfolio concentration can make holding preferable to adding even when absolute value is attractive. That action constraint is separate from Wix fair value.
 
 ## Upgrade conditions
@@ -114,4 +114,4 @@ Reduce or exit the thesis, not merely the price target, if:
 
 Historical purchase price and unrealized gain are not reasons to hold, sell or add. Taxes, concentration and loss limits can change a portfolio action, but they do not change Wix's fair value. Portfolio history is therefore maintained separately from the analytical record.
 
-The dossier does not forecast QQQ or price convergence, so the formal benchmark-relative stance is `insufficient_evidence`, even though the absolute valuation is attractive. The starter-buy language is an illustrative valuation translation, not a benchmark-relative recommendation backed by an expected-return forecast.
+The dossier does not forecast QQQ or assign a probability to price convergence, so the formal benchmark-relative stance is `insufficient_evidence`, even though the absolute valuation is attractive. A separate sensitivity shows 11.4%, 22.9%, 34.3% and 45.8% absolute returns if 25%, 50%, 75% or 100% of the median fair-value gap closes; these are scenarios, not an expected-return forecast. The starter-buy language is an illustrative valuation translation, not a benchmark-relative recommendation.

@@ -4,17 +4,17 @@
   "coverage_cycle_id": "WIX-2026-W35-01",
   "valuation_quantity": "fair_value_per_share",
   "currency": "USD",
-  "as_of": "2026-08-30",
-  "source_cutoff_at": "2026-08-30T17:31:30+02:00",
+  "as_of": "2026-08-31",
+  "source_cutoff_at": "2026-08-31T23:59:59+02:00",
   "reference_price": 87.62,
   "reference_price_at": "2026-08-29T00:15:00Z",
   "reference_price_source": "StockAnalysis_historical_data_S&P_Global_Market_Intelligence",
   "primary_horizon": "2027-08-30",
   "display_semantics": "distribution_percentiles",
   "model": {
-    "version": "wix_joint_sotp_capital_path_v4",
-    "method": "structured_elicitation_joint_sotp_monte_carlo",
-    "calibration_status": "uncalibrated_shadow",
+    "version": "wix_causal_sotp_capital_path_v5",
+    "method": "structured_causal_elicitation_joint_sotp_monte_carlo",
+    "calibration_status": "structured_elicitation_shadow_cross_sectionally_anchored",
     "seed": 20260830,
     "sample_count": 100000,
     "code_path": "model-2026-W35-distribution.mjs",
@@ -26,70 +26,70 @@
       "date": "2027-02-28",
       "months_from_reference": 6,
       "output_kind": "distribution",
-      "p10": 61.1247,
-      "p50": 119.162,
-      "p90": 178.2325,
-      "mean": 119.8119,
-      "probability_below_reference": 0.2119,
-      "probability_loss_30_pct": 0.101,
-      "probability_loss_50_pct": 0.0283,
-      "bottom_decile_mean": 48.572
+      "p10": 64.0222,
+      "p50": 116.6008,
+      "p90": 170.9255,
+      "mean": 117.36,
+      "probability_below_reference": 0.243,
+      "probability_loss_30_pct": 0.088,
+      "probability_loss_50_pct": 0.0291,
+      "bottom_decile_mean": 49.0872
     },
     {
       "id": "twelve_month",
       "date": "2027-08-30",
       "months_from_reference": 12,
       "output_kind": "distribution",
-      "p10": 62.6792,
-      "p50": 130.2736,
-      "p90": 205.574,
-      "mean": 132.5173,
-      "probability_below_reference": 0.1949,
-      "probability_loss_30_pct": 0.094,
-      "probability_loss_50_pct": 0.0268,
-      "bottom_decile_mean": 49.3976
+      "p10": 67.7369,
+      "p50": 127.7393,
+      "p90": 195.0964,
+      "mean": 129.9851,
+      "probability_below_reference": 0.2,
+      "probability_loss_30_pct": 0.0753,
+      "probability_loss_50_pct": 0.0263,
+      "bottom_decile_mean": 51.1608
     }
   ],
   "horizon_relationship": {
     "kind": "joint",
-    "linkage_method": "One deliberately bundled structural adoption/growth/multiple regime plus separate shared AI-capability, core-execution, Base44-product-market-fit, unit-economics, and market-risk factors; factor-specific correlated checkpoint shocks; one starting diluted-share/net-claims state; and a sources-and-uses bridge tying claims reduction to retained owner FCFE and earnout remeasurement to the simulated Base44 ARR path. The target-date denominator is held flat because current awards are already included and future award vintages are charged explicitly in owner FCFF. There is no market-convergence forecast.",
+    "linkage_method": "Four dependent causal nodes—core Wix health, Base44 retained-production adoption, Base44 fully loaded economics, and outside-agent attachment/disintermediation—replace the former bundled regime. The same node states, shared frontier/operating factors, starting diluted-share/net-claims state, and sources-and-uses bridge carry through both formal horizons; checkpoint shocks are correlated. Claims reduction is tied to retained owner FCFE and earnout remeasurement to the simulated Base44 ARR path. The target-date denominator is held flat because current awards are already included and future award vintages are charged explicitly in owner FCFF. Four- and ten-month operating checkpoints are not additional fair-value horizons. There is no market-convergence forecast.",
     "value_correlation_method": "pearson",
-    "value_correlation": 0.9792,
-    "probability_later_above_earlier": 0.847,
+    "value_correlation": 0.9713,
+    "probability_later_above_earlier": 0.8415,
     "transition_bands": [
       {
         "label": "bottom_quartile",
         "earlier_band_upper_probability": 0.25,
         "earlier_band_sample_probability": 0.25,
-        "later_mean": 69.9521,
-        "later_median": 68.2212,
-        "later_probability_below_reference": 0.776
+        "later_mean": 71.5276,
+        "later_median": 73.7021,
+        "later_probability_below_reference": 0.7714
       },
       {
         "label": "lower_middle_quartile",
         "earlier_band_upper_probability": 0.5,
         "earlier_band_sample_probability": 0.25,
-        "later_mean": 119.2822,
-        "later_median": 119.2575,
-        "later_probability_below_reference": 0.0034
+        "later_mean": 112.8341,
+        "later_median": 112.2498,
+        "later_probability_below_reference": 0.0285
       },
       {
         "label": "upper_middle_quartile",
         "earlier_band_upper_probability": 0.75,
         "earlier_band_sample_probability": 0.25,
-        "later_mean": 142.3189,
-        "later_median": 141.6592,
+        "later_mean": 143.933,
+        "later_median": 143.1139,
         "later_probability_below_reference": 0
       },
       {
         "label": "top_quartile",
         "earlier_band_upper_probability": 1,
         "earlier_band_sample_probability": 0.25,
-        "later_mean": 198.516,
-        "later_median": 199.0946,
+        "later_mean": 191.6456,
+        "later_median": 187.6548,
         "later_probability_below_reference": 0
       }
     ],
-    "sensitivity_note": "The formal distribution is target-date SOTP fair value; owner-FCFF DCF and cash multiples are non-voting cross-checks. Regime weights are structured judgments, not frequencies estimated from a historical base rate. With the same seed and 100,000 draws, moving ten probability points from platform-win to erosion (30% erosion / 58% defense / 12% platform-win) lowers the twelve-month median from $130.27 to $121.27 and mean from $132.52 to $118.62, while probability below the $87.62 reference rises from 19.5% to 28.7%. A separate 25% erosion / 65% defense / 10% platform case gives a $123.39 median and $120.44 mean. Moving the Base44 post-GP owner-cost load down/up by 15 points moves the formal twelve-month median to $136.53/$124.36, proving that unit economics affect the voting SOTP. The if-converted convention omits capped-call value through $267.89. Legacy contract fields named probability_loss_* mean probability that target-date fair value is 30%/50% below today's reference, not realized security loss."
+    "sensitivity_note": "The formal distribution is target-date SOTP fair value; owner-FCFF DCF and cash multiples are non-voting cross-checks. Wix's three-year revenue-guidance error history informs a separately scoreable near-term revenue interval, while causal-node probabilities remain structured judgments. Three alternative same-evidence probability sets produce twelve-month medians of $126.89-$128.40; deliberately skeptical/favorable weights produce $109.66/$146.12 and 32.4%/11.8% frequencies below reference. With unchanged marginals, independent nodes produce P10 $73.75 and 5.4% frequency of fair value at least 30% below reference; stronger plausible dependence produces $61.89 and 9.8%, versus current $67.74 and 7.5%. Common-random-number stresses show that a +/-0.5x core multiple has the largest listed median effect (-$20.49/+$20.65), followed by a +/-2x Base44 multiple (-$10.12/+$10.59) and +/-2m diluted shares (+$5.70/-$5.23). Ten 50,000-draw seeds produce medians of $127.49-$128.33, showing that sampling noise is much smaller than assumption risk. The if-converted convention omits capped-call value through $267.89. Legacy contract fields named probability_loss_* mean probability that target-date fair value is 30%/50% below today's reference, not realized security loss."
   }
 }

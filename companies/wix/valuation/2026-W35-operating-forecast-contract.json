@@ -1,0 +1,251 @@
+{
+  "type": "operating_forecast_contract",
+  "schema_version": 1,
+  "coverage_cycle_id": "WIX-2026-W35-01",
+  "status": "frozen",
+  "as_of": "2026-08-31",
+  "source_cutoff_at": "2026-08-31T23:59:59+02:00",
+  "model": {
+    "version": "wix_causal_sotp_capital_path_v5",
+    "seed": 20260830,
+    "sample_count": 100000,
+    "code_path": "model-2026-W35-distribution.mjs",
+    "verifier_path": "verify-2026-W35-distribution.mjs"
+  },
+  "calibration_layers": {
+    "consolidated_revenue": "partially empirical: three comparable initial-guidance errors inform interval width, while current guidance and consensus anchor the center",
+    "bookings_and_raw_free_cash_flow": "anchored: current guidance, quarterly reconciliation and an explicit accounting definition; no stable historical error distribution",
+    "annual_recurring_revenue_and_base44": "model generated from dependent causal-node judgments; no representative historical reference class",
+    "scoring": "all resolvable distributions use the same 80% interval weighted interval score and are compared with the frozen numerical baselines"
+  },
+  "baseline_scoring_method": "degenerate_interval_weighted_interval_score_equivalent_to_absolute_error",
+  "resolution_policy": "This frozen contract is immutable after publication. Record actuals, source evidence and scores in a separate outcome record keyed to the contract's SHA-256 hash; never add outcomes to or overwrite this forecast file.",
+  "forecasts": [
+    {
+      "id": "fy2026_revenue",
+      "metric": "reported_revenue",
+      "segment": "consolidated",
+      "period_end": "2026-12-31",
+      "resolution_deadline": "2027-03-31",
+      "unit": "USD_billions",
+      "source_class": "partially_empirical",
+      "calibration_status": "three_year_guidance_error_dispersion_plus_current_guidance_and_consensus_anchor",
+      "p10": 2.2,
+      "p50": 2.26,
+      "p90": 2.32,
+      "baselines": {
+        "prior_year_actual": 1.993,
+        "revised_guidance_midpoint": 2.252,
+        "public_consensus": 2.26
+      },
+      "baseline_provenance": {
+        "prior_year_actual": "WIX-Q4-2025 official FY2025 revenue.",
+        "revised_guidance_midpoint": "WIX-REORG-2026 revised low-to-mid-teens midpoint applied to WIX-Q4-2025 revenue.",
+        "public_consensus": "WIX-ANALYST-TARGETS-2026 public S&P Global Market Intelligence aggregation accessed 31 August 2026."
+      },
+      "baseline_known_at": "2026-08-31T23:59:59+02:00",
+      "baseline_source_ids": {
+        "prior_year_actual": ["WIX-Q4-2025"],
+        "revised_guidance_midpoint": ["WIX-REORG-2026", "WIX-Q4-2025"],
+        "public_consensus": ["WIX-ANALYST-TARGETS-2026"]
+      },
+      "scoring_method": "weighted_interval_score_alpha_0_2",
+      "resolution_source_ids": ["SEC-WIX-FY2026-RESULTS"],
+      "resolution_rule": "Use consolidated revenue for the year ended 31 December 2026 as first reported in Wix's official annual results, in USD billions.",
+      "unresolvable_rule": "Mark unresolvable if Wix has not filed or released an official full-year result by the deadline; do not substitute an analyst estimate."
+    },
+    {
+      "id": "fy2026_bookings",
+      "metric": "reported_non_gaap_bookings",
+      "segment": "consolidated",
+      "period_end": "2026-12-31",
+      "resolution_deadline": "2027-03-31",
+      "unit": "USD_billions",
+      "source_class": "anchored",
+      "calibration_status": "current_low_teens_guidance_plus_two_year_guidance_error_check_and_quarter_reconciliation",
+      "p10": 2.25,
+      "p50": 2.33,
+      "p90": 2.4,
+      "baselines": {
+        "prior_year_actual": 2.0699,
+        "twelve_percent_growth": 2.3183
+      },
+      "baseline_provenance": {
+        "prior_year_actual": "WIX-Q4-2025 official FY2025 bookings.",
+        "twelve_percent_growth": "Twelve-percent mechanical growth baseline from WIX-Q4-2025 bookings, consistent with low-teens guidance."
+      },
+      "baseline_known_at": "2026-08-31T23:59:59+02:00",
+      "baseline_source_ids": {
+        "prior_year_actual": ["WIX-Q4-2025"],
+        "twelve_percent_growth": ["WIX-Q4-2025", "WIX-REORG-2026"]
+      },
+      "scoring_method": "weighted_interval_score_alpha_0_2",
+      "resolution_source_ids": ["SEC-WIX-FY2026-RESULTS"],
+      "resolution_rule": "Use full-year bookings under Wix's reported definition of revenue plus the change in deferred revenue and unbilled contractual obligations, in USD billions.",
+      "unresolvable_rule": "Mark unresolvable if Wix does not report a comparable full-year bookings figure or changes the definition without a reconciliation."
+    },
+    {
+      "id": "fy2026_raw_free_cash_flow",
+      "metric": "cash_from_operations_less_capital_expenditure",
+      "segment": "consolidated",
+      "period_end": "2026-12-31",
+      "resolution_deadline": "2027-03-31",
+      "unit": "USD_millions",
+      "source_class": "anchored",
+      "calibration_status": "first_half_cash_bridge_plus_adjusted_guidance_and_disclosed_acquisition_restructuring_cash",
+      "p10": 315,
+      "p50": 350,
+      "p90": 385,
+      "baselines": {
+        "prior_year_actual": 572.957
+      },
+      "baseline_provenance": {
+        "prior_year_actual": "WIX-20F-2025 report-calculated cash from operations less property and equipment purchases and capitalized software."
+      },
+      "baseline_known_at": "2026-08-31T23:59:59+02:00",
+      "baseline_source_ids": {
+        "prior_year_actual": ["WIX-20F-2025"]
+      },
+      "scoring_method": "weighted_interval_score_alpha_0_2",
+      "resolution_source_ids": ["SEC-WIX-FY2026-20F"],
+      "resolution_rule": "Calculate net cash provided by operating activities less purchases of property and equipment and capitalized internal-use software for FY2026, without management's acquisition or restructuring add-backs.",
+      "unresolvable_rule": "Mark unresolvable if the annual filing does not disclose enough cash-flow line items to reproduce the same definition."
+    },
+    {
+      "id": "fy2026_total_arr",
+      "metric": "total_annual_recurring_revenue",
+      "segment": "consolidated",
+      "period_end": "2026-12-31",
+      "resolution_deadline": "2027-03-31",
+      "unit": "USD_billions",
+      "source_class": "model_generated",
+      "calibration_status": "four_month_causal_model_checkpoint",
+      "p10": 1.9719,
+      "p50": 2.0514,
+      "p90": 2.1103,
+      "baselines": {
+        "q2_2026_reported": 1.963
+      },
+      "baseline_provenance": {
+        "q2_2026_reported": "WIX-Q2-2026 official total annual recurring revenue at 30 June 2026."
+      },
+      "baseline_known_at": "2026-08-31T23:59:59+02:00",
+      "baseline_source_ids": {
+        "q2_2026_reported": ["WIX-Q2-2026"]
+      },
+      "scoring_method": "weighted_interval_score_alpha_0_2",
+      "resolution_source_ids": ["SEC-WIX-FY2026-RESULTS"],
+      "resolution_rule": "Use Wix's official total annual recurring revenue at 31 December 2026, preserving the issuer's reported perimeter.",
+      "unresolvable_rule": "Mark unresolvable if Wix does not report a total annual recurring revenue figure for the period end."
+    },
+    {
+      "id": "fy2026_base44_arr",
+      "metric": "base44_annual_recurring_revenue",
+      "segment": "Base44",
+      "period_end": "2026-12-31",
+      "resolution_deadline": "2027-03-31",
+      "unit": "USD_billions",
+      "source_class": "model_generated",
+      "calibration_status": "four_month_causal_model_checkpoint_with_unseasoned_management_run_rate_anchor",
+      "p10": 0.1548,
+      "p50": 0.191,
+      "p90": 0.2235,
+      "baselines": {
+        "may_2026_public_run_rate": 0.15
+      },
+      "baseline_provenance": {
+        "may_2026_public_run_rate": "WIX-Q2-2026 and contemporaneous management framing of approximately $150 million Base44 annual recurring revenue."
+      },
+      "baseline_known_at": "2026-08-31T23:59:59+02:00",
+      "baseline_source_ids": {
+        "may_2026_public_run_rate": ["WIX-Q2-2026"]
+      },
+      "scoring_method": "weighted_interval_score_alpha_0_2",
+      "resolution_source_ids": ["SEC-WIX-FY2026-RESULTS", "WIX-OFFICIAL-BASE44-FY2026-DISCLOSURE"],
+      "resolution_rule": "Use the discrete issuer-reported Base44 annual recurring revenue figure measured between 1 December 2026 and 31 January 2027 whose measurement date is closest to 31 December 2026; if equally close, use the first-published figure. Retain its stated perimeter and measurement date.",
+      "unresolvable_rule": "Mark unresolvable if no discrete official Base44 annual recurring revenue figure with a qualifying measurement date is published by the deadline."
+    },
+    {
+      "id": "q4_2026_base44_gross_margin",
+      "metric": "quarterly_non_gaap_gross_margin",
+      "segment": "Base44",
+      "period_end": "2026-12-31",
+      "resolution_deadline": "2027-03-31",
+      "unit": "fraction",
+      "source_class": "model_generated",
+      "calibration_status": "four_month_causal_model_checkpoint_centered_on_management_h2_sixty_percent_target_proxy",
+      "p10": 0.4807,
+      "p50": 0.5831,
+      "p90": 0.6902,
+      "baselines": {
+        "management_h2_target_proxy": 0.6
+      },
+      "baseline_provenance": {
+        "management_h2_target_proxy": "WIX-Q2-2026 approximately 60% H2 2026 Base44 non-GAAP gross-margin target, used only as a proxy baseline for Q4."
+      },
+      "baseline_known_at": "2026-08-31T23:59:59+02:00",
+      "baseline_source_ids": {
+        "management_h2_target_proxy": ["WIX-Q2-2026"]
+      },
+      "scoring_method": "weighted_interval_score_alpha_0_2",
+      "resolution_source_ids": ["SEC-WIX-FY2026-RESULTS"],
+      "resolution_rule": "Use Base44's reported non-GAAP gross margin for the three months ended 31 December 2026, not contribution margin, an annualized run rate or a consolidated Wix margin.",
+      "unresolvable_rule": "Mark unresolvable if Wix reports only an H2, annualized, consolidated or differently defined margin without a Q4 Base44 reconciliation."
+    },
+    {
+      "id": "q2_2027_total_arr",
+      "metric": "total_annual_recurring_revenue",
+      "segment": "consolidated",
+      "period_end": "2027-06-30",
+      "resolution_deadline": "2027-08-31",
+      "unit": "USD_billions",
+      "source_class": "model_generated",
+      "calibration_status": "ten_month_causal_model_checkpoint",
+      "p10": 1.9835,
+      "p50": 2.1452,
+      "p90": 2.2738,
+      "baselines": {
+        "q2_2026_reported": 1.963
+      },
+      "baseline_provenance": {
+        "q2_2026_reported": "WIX-Q2-2026 official total annual recurring revenue at 30 June 2026."
+      },
+      "baseline_known_at": "2026-08-31T23:59:59+02:00",
+      "baseline_source_ids": {
+        "q2_2026_reported": ["WIX-Q2-2026"]
+      },
+      "scoring_method": "weighted_interval_score_alpha_0_2",
+      "resolution_source_ids": ["SEC-WIX-Q2-2027-RESULTS"],
+      "resolution_rule": "Use Wix's official total annual recurring revenue at 30 June 2027, preserving the issuer's reported perimeter.",
+      "unresolvable_rule": "Mark unresolvable if Wix does not report a total annual recurring revenue figure for the period end."
+    },
+    {
+      "id": "q2_2027_base44_arr",
+      "metric": "base44_annual_recurring_revenue",
+      "segment": "Base44",
+      "period_end": "2027-06-30",
+      "resolution_deadline": "2027-08-31",
+      "unit": "USD_billions",
+      "source_class": "model_generated",
+      "calibration_status": "ten_month_causal_model_checkpoint",
+      "p10": 0.1589,
+      "p50": 0.2353,
+      "p90": 0.3142,
+      "baselines": {
+        "may_2026_public_run_rate": 0.15
+      },
+      "baseline_provenance": {
+        "may_2026_public_run_rate": "WIX-Q2-2026 and contemporaneous management framing of approximately $150 million Base44 annual recurring revenue."
+      },
+      "baseline_known_at": "2026-08-31T23:59:59+02:00",
+      "baseline_source_ids": {
+        "may_2026_public_run_rate": ["WIX-Q2-2026"]
+      },
+      "scoring_method": "weighted_interval_score_alpha_0_2",
+      "resolution_source_ids": ["SEC-WIX-Q2-2027-RESULTS", "WIX-OFFICIAL-BASE44-Q2-2027-DISCLOSURE"],
+      "resolution_rule": "Use the discrete issuer-reported Base44 annual recurring revenue figure measured between 1 June and 31 July 2027 whose measurement date is closest to 30 June 2027; if equally close, use the first-published figure. Retain its stated perimeter and measurement date.",
+      "unresolvable_rule": "Mark unresolvable if no discrete official Base44 annual recurring revenue figure with a qualifying measurement date is published by the deadline."
+    }
+  ],
+  "independence_note": "The operating contract is frozen prospectively. Revenue, bookings and raw free cash flow use evidence outside the valuation simulation; recurring-revenue and Base44 intervals are generated from the same causal draws as fair value and therefore must not be treated as independent confirmation of that value. Each resolvable forecast will be scored against every frozen baseline separately. Scores will not be aggregated across unlike units without a prospectively specified normalization rule."
+}

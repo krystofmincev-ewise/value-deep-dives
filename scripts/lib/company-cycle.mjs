@@ -6,6 +6,7 @@ import {
   validateValuationHorizonContract,
   valuationTableSemanticErrors,
 } from "./valuation-horizon.mjs";
+import { validateOperatingForecastContract } from "./operating-forecast.mjs";
 
 export {
   validateValuationHorizonContract,
@@ -329,6 +330,51 @@ async function validateManifest(repositoryRoot, manifestPath) {
     );
   } else if (extname(valuationContractPath) !== ".json") {
     add("valuation-horizon-contract", "valuation_contract_path must reference JSON.");
+  }
+
+  const declaredForecastPath = record.forecast_path
+    ? declaredPath(repositoryRoot, manifestPath, record.forecast_path)
+    : null;
+  canonical.forecast = declaredForecastPath;
+  let forecastContractPath = null;
+  if (declaredForecastPath) {
+    if (!inside(companyRoot, declaredForecastPath)) {
+      add("coverage-cycle-path", "forecast_path must stay inside the company root.");
+    } else if (!(await pathExists(declaredForecastPath))) {
+      add(
+        "coverage-cycle-path",
+        `forecast_path does not exist: ${displayPath(repositoryRoot, declaredForecastPath)}.`,
+      );
+    } else if (extname(declaredForecastPath) === ".json") {
+      forecastContractPath = declaredForecastPath;
+      const forecastContract = await readJsonRecord(
+        forecastContractPath,
+        repositoryRoot,
+        findings,
+        "operating-forecast-contract",
+      );
+      if (forecastContract) {
+        for (const message of validateOperatingForecastContract(forecastContract.record)) {
+          findings.push(
+            finding(
+              "error",
+              "operating-forecast-contract",
+              message,
+              displayPath(repositoryRoot, forecastContractPath),
+            ),
+          );
+        }
+        if (forecastContract.record.coverage_cycle_id !== record.coverage_cycle_id) {
+          add("operating-forecast-contract", "The operating forecast coverage_cycle_id must match the cycle manifest.");
+        }
+        if (forecastContract.record.source_cutoff_at !== record.source_cutoff_at) {
+          add("operating-forecast-contract", "The operating forecast source cutoff must match the cycle manifest.");
+        }
+        if (forecastContract.record.as_of !== record.as_of) {
+          add("operating-forecast-contract", "The operating forecast as_of date must match the cycle manifest.");
+        }
+      }
+    }
   }
 
   if (canonical.report && basename(canonical.report) !== `${record.iso_week}-final-report.md`) {
@@ -818,6 +864,7 @@ async function validateManifest(repositoryRoot, manifestPath) {
       ],
       add,
     );
+    if (forecastContractPath) required(record, ["forecast_hash"], add);
   }
   if (record.finalized_at && !Number.isFinite(Date.parse(record.finalized_at))) {
     add("coverage-cycle-finalization", "finalized_at must be an ISO-8601 timestamp.");
@@ -836,6 +883,16 @@ async function validateManifest(repositoryRoot, manifestPath) {
       record,
       "valuation_contract_hash",
       canonical.contract,
+      repositoryRoot,
+      findings,
+      manifestPath,
+    );
+  }
+  if (forecastContractPath) {
+    await validateHashField(
+      record,
+      "forecast_hash",
+      forecastContractPath,
       repositoryRoot,
       findings,
       manifestPath,
@@ -896,6 +953,7 @@ async function validateManifest(repositoryRoot, manifestPath) {
       ],
       add,
     );
+    if (forecastContractPath) required(record, ["forecast_hash"], add);
     if (reviewDocument) {
       const review = reviewDocument.record;
       const reviewPath = displayPath(repositoryRoot, reviewDocument.path);
@@ -918,6 +976,7 @@ async function validateManifest(repositoryRoot, manifestPath) {
         reviewed_model_hash: "model_hash",
         reviewed_verifier_hash: "verifier_hash",
       };
+      if (forecastContractPath) reviewHashFields.reviewed_forecast_hash = "forecast_hash";
       for (const [reviewField, manifestField] of Object.entries(reviewHashFields)) {
         if (!review[reviewField] || review[reviewField] !== record[manifestField]) {
           reviewAdd(`${reviewField} must match manifest ${manifestField}.`);

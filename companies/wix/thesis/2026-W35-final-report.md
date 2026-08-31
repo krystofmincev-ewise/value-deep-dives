@@ -16,9 +16,9 @@ security_id: wix-ordinary-shares
 listing_id: nasdaq-wix
 research_status: draft
 coverage_status: active
-as_of: 2026-08-30
+as_of: 2026-08-31
 published_at: null
-source_cutoff_at: 2026-08-30T17:31:30+02:00
+source_cutoff_at: 2026-08-31T23:59:59+02:00
 currency: USD
 reference_price: 87.62
 reference_price_at: 2026-08-29T00:15:00Z
@@ -26,10 +26,10 @@ reference_price_source: StockAnalysis_historical_data_S&P_Global_Market_Intellig
 target_bear: null
 target_base: null
 target_bull: null
-primary_distribution_p10: 62.68
-primary_distribution_p50: 130.27
-primary_distribution_p90: 205.57
-primary_distribution_mean: 132.52
+primary_distribution_p10: 67.74
+primary_distribution_p50: 127.74
+primary_distribution_p90: 195.10
+primary_distribution_mean: 129.99
 target_horizon: 2027-08-30
 evaluation_rule: not_applicable_fair_value_distribution_not_target_price_forecast
 target_status: active
@@ -41,8 +41,8 @@ absolute_value_assessment: attractive
 position_disclosure: long
 originating_study: ../research-plan.md
 supersedes: null
-distribution_method: wix_joint_sotp_capital_path_v4
-distribution_calibration_status: uncalibrated_shadow
+distribution_method: wix_causal_sotp_capital_path_v5
+distribution_calibration_status: structured_elicitation_shadow_cross_sectionally_anchored
 distribution_seed: 20260830
 distribution_sample_count: 100000
 method_reviewed_at: 2026-08-31
@@ -51,7 +51,7 @@ tags: [website-builder, saas, payments, ai-agents, vibe-coding, founder-led]
 
 # Wix at $87.62: the moat moved below the editor
 
-> Draft public research, not personalized investment advice. Source cutoff: 30 August 2026. Reference price: **$87.62** at 29 August 2026 00:15 UTC.
+> Draft public research, not personalized investment advice. Source cutoff: 31 August 2026. Reference price: **$87.62** at 29 August 2026 00:15 UTC.
 
 ## Two-minute answer
 
@@ -63,16 +63,18 @@ At $87.62, the latest explicit 41.850 million basic shares imply equity capitali
 
 The formal valuation is attractive but fragile:
 
-Exact outputs and the joint transition definition are frozen in the [valuation-horizon contract](../valuation/2026-W35-valuation-contract.json).
+Exact outputs and the joint transition definition are frozen in the [valuation-horizon contract](../valuation/2026-W35-valuation-contract.json); near-term estimates and their future scoring rules are frozen separately in the [operating-forecast contract](../valuation/2026-W35-operating-forecast-contract.json).
 
 | Linked fair-value horizon | P10 | P50 / median | P90 | Mean | Probability below $87.62 |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Six months — 28 Feb 2027 | $61.12 | $119.16 | $178.23 | **$119.81** | 21.2% |
-| Twelve months — 30 Aug 2027 | $62.68 | $130.27 | $205.57 | **$132.52** | 19.5% |
+| Six months — 28 Feb 2027 | $64.02 | $116.60 | $170.93 | **$117.36** | 24.3% |
+| Twelve months — 30 Aug 2027 | $67.74 | $127.74 | $195.10 | **$129.99** | 20.0% |
 
 > **Plain-English aside — reading the modeled range.** Sort 100 simulated fair values from lowest to highest: roughly 10 are at or below P10, 50 at or below P50—the median—and 90 at or below P90. These are modeled fair-value percentiles, not the fixed Bear/Base/Bull cases shown later and not forecasts of the traded share price. “Linked” means the same simulated business path is carried through both dates.
 
-The twelve-month median is 48.7% above the reference price and the mean is 51.2% above it. Yet the stricter cash-based cross-check is only **$92** under fixed assumptions, with a median near **$81** across simulated paths. Most of the upside therefore comes from valuing Base44 and platform optionality separately. The model still assigns 9.4% of paths to fair value at least 30% below reference, while 2.7% of paths produce fair value at least 50% below reference.
+The twelve-month median is 45.8% above the reference price and the mean is 48.4% above it. Yet the stricter cash-based cross-check is only **$92** under fixed assumptions, with a median near **$78** across simulated paths. Most of the upside therefore comes from valuing Base44 and platform optionality separately. The model still assigns 7.5% of paths to fair value at least 30% below reference, while 2.6% of paths produce fair value at least 50% below reference.
+
+> **Plain-English aside — better anchored is not fully calibrated.** Wix's last three initial annual revenue forecasts provide a small error history for the separate 2026 revenue interval. Current guidance, public-software valuation data and the balance sheet constrain other inputs, but the probabilities for core health, Base44 adoption, Base44 economics and outside-agent success remain judgments because no historical dataset contains this strategic situation. Publishing scoreable operating estimates now is how a calibration record begins; running more simulations cannot manufacture one.
 
 Sum of the parts (SOTP) values core Wix, transaction services and Base44 separately, while discounted cash flow (DCF) values future owner free cash flow to the firm (FCFF)—cash attributable to lenders and shareholders after operations, reinvestment and the model's charge for future share awards. SOTP alone determines the formal distribution; DCF and cash multiples are cross-checks.
 
@@ -282,6 +284,19 @@ Revenue compounded 11.9%; bookings—Wix's non-GAAP measure of revenue plus chan
 
 Management maintains low-to-mid-teens 2026 revenue, low-teens bookings and approximately $420 million of adjusted FCF. This analysis uses $340–360 million of raw FCF because first-half adjusted cash added back $46 million of real acquisition and restructuring payments, with more expected in the second half.
 
+The forecast now freezes a compact operating scorecard before the results arrive:
+
+| FY2026 metric | P10 | Median | P90 |
+| --- | ---: | ---: | ---: |
+| Revenue | $2.20bn | $2.26bn | $2.32bn |
+| Bookings | $2.25bn | $2.33bn | $2.40bn |
+| Raw FCF | $315m | $350m | $385m |
+| Total ARR | $1.972bn | $2.051bn | $2.110bn |
+| Base44 ARR | $155m | $191m | $224m |
+| Q4 Base44 non-GAAP gross margin | 48.1% | 58.3% | 69.0% |
+
+Revenue is the only interval partially informed by Wix's own forecast errors: initial guidance missed actual revenue by +2.6%, +0.9% and +0.4% in 2023–2025. Three observations are useful but too few to establish robust tails. Bookings and cash flow are anchored to guidance and accounting bridges; ARR comes from the causal model, which compounds core ARR from its 30 June observation and Base44 from its approximately 31 May run-rate anchor rather than pretending both were measured at the 30 August valuation date. Each resolvable estimate will be scored against every frozen baseline after the filing rather than judged informally after the fact. Core ARR excluding Base44 can be inferred only if Wix discloses a qualifying Base44 figure; no frozen operating metric directly resolves outside-agent attachment, so those strategic probabilities remain judgmental.
+
 The 2025 cash figure also benefited from $237 million of stock-based compensation, $104 million more deferred revenue and $204 million more accrued and other liabilities. Cash is real; steady-state owner earnings are lower. The model assumes cash taxes normalize upward from 2025's anomalously low cash payment. The owner-cash cross-checks therefore subtract dilution economics, which helps explain why the $92 base DCF is only close to the share price.
 
 > **Plain-English aside — from reported cash to owner cash.** The base bridge is a model assumption, not guidance: $350 million of 2026 raw FCF, plus $40 million of retained savings and $35 million of growth and operating leverage, less a $30 million tax, retention and working-capital reserve, gives $395 million before dilution economics. Subtracting a $110 million future-award charge gives $285 million of cash attributable to shareholders; adding $30 million of normalized after-tax interest produces $315 million of owner FCFF for enterprise valuation.
@@ -296,7 +311,7 @@ The bank borrowing is floating-rate, classified current and must be rolled or re
 
 The 0% convertible note matures in September 2030; zero interest does not make its principal disappear. Below its $210.49 conversion price it remains a $1.15 billion claim. Above that price the model removes the debt and adds roughly 5.464 million conversion shares, while conservatively giving no value to Wix's separate capped-call hedge—options Wix bought to offset some conversion dilution. This prevents the high-valuation cases from ignoring either debt or dilution.
 
-Israel concentration is much higher in expenses and people than revenue. Shekel strength can raise the dollar cost of local payroll; geopolitical stress can interrupt labor or raise the equity risk premium even if customer revenue is globally diversified. The model's 11% base weighted average cost of capital (WACC)—the blended return demanded by lenders and shareholders—is therefore above Damodaran's January 2026 U.S. software anchors while remaining below the erosion-case rate used in fixed-assumption sensitivity work.
+Israel concentration is much higher in expenses and people than revenue. Shekel strength can raise the dollar cost of local payroll; geopolitical stress can interrupt labor or raise the equity risk premium even if customer revenue is globally diversified. The model's 11% base weighted average cost of capital (WACC)—the blended return demanded by lenders and shareholders—is therefore above Damodaran's January 2026 U.S. software anchors while remaining below the bear-case rate used in fixed-assumption sensitivity work.
 
 The balance sheet can fund the transition. Whether that spending earns a return depends on an organization being rebuilt while it runs.
 
@@ -344,17 +359,19 @@ The following methods produce materially different values. Bear, Base and Bull a
 | Owner-FCFF multiple | $46 | $120 | $205 |
 | Owner-FCFF DCF | $28 | $92 | $215 |
 
-The $2 billion equity case—roughly $43–48 per share depending on the share denominator—is a plausible severe downside case: core growth turns negative, Base44's valuation multiple collapses and owner FCFF falls toward the low-$200 millions. It is below the formal twelve-month P10 of $62.68 but close to the $49.40 average across the worst 10% of modeled paths, and remains possible when cash flow and competitive position fail together.
+The $2 billion equity case—roughly $43–48 per share depending on the share denominator—is a plausible severe downside case: core growth turns negative, Base44's valuation multiple collapses and owner FCFF falls toward the low-$200 millions. It is below the formal twelve-month P10 of $67.74 but close to the $51.16 average across the worst 10% of modeled paths, and remains possible when cash flow and competitive position fail together.
 
 The $4 billion case is approximately today's broader diluted equity value. It assumes Wix remains valuable but Base44/platform option value and owner-cash recovery are not fully proven.
 
 The $10–12 billion case is about $210–255 per diluted share. It requires something close to the bull SOTP: core ARR still growing at a valuation of 3.5 times ARR, Base44 around $350 million ARR at 13 times ARR and improving transaction economics, with current awards and the warrant and convertible conventions reflected. Recurring future-award economics are assumed within the core multiple rather than separately deducted. The case does **not** require Wix itself to receive Lovable's 26.6-times multiple, but it requires Base44 to become a credible high-growth platform and Wix to win agent distribution.
 
-The base-method anchors span roughly **$92–130**: $92 is the fixed-assumption owner-cash DCF cross-check, while $130.27 is the formal twelve-month SOTP median (mean $132.52). The owner-cash DCF median across individual simulation paths is only about $80.51, so the SOTP/DCF gap is disclosed model-form uncertainty rather than a number to hide inside an average.
+The base-method anchors span roughly **$92–128**: $92 is the fixed-assumption owner-cash DCF cross-check, while $127.74 is the formal twelve-month SOTP median (mean $129.99). The owner-cash DCF median across individual simulation paths is only about $77.53, and 64.1% of those cash-flow values are below $87.62. The SOTP/DCF gap is disclosed model-form uncertainty rather than a number to hide inside an average.
 
 A reverse DCF puts the current price in operating terms. At $87.62, the base DCF path implies roughly $302 million of starting owner FCFF, close to the report's $315 million base estimate. A stricter test with flat $315 million FCFF supports only about $58.68 per share. The market is therefore pricing durable cash improvement rather than imminent death; most modeled upside still depends on separable Base44 or platform value.
 
-The formal distribution is also sensitive to the analyst-assigned structural weights and Base44 cost assumptions. Moving ten percentage points of model weight from platform win to AI erosion lowers the twelve-month median to **$121.27**, mean to **$118.62**, and raises the below-reference frequency to **28.7%**. A separate case with only 10% platform weight has a $123.39 median and $120.44 mean. Moving Base44's modeled post-gross-profit owner-cost load 15 percentage points lower or higher moves the formal median to $136.53 or $124.36. These are judgment-based stresses, not probabilities learned from a long history of comparable outcomes.
+The model lets the four thesis drivers vary separately, so a strong core can coexist with weak Base44 economics and vice versa. Three alternative probability sets based on the same evidence keep the median in a narrow range, but that agreement is not empirical validation; deliberately skeptical and favorable weights produce a much wider range. Changing the core ARR multiple by 0.5 times produces the largest listed one-at-a-time median move. Dependency assumptions matter mainly in the tails: making the four nodes independent narrows them, while stronger plausible dependence widens them. Assumptions—not the number of simulation runs—drive the result.
+
+Fair value is not the same as the price on 30 August 2027. If the market closes only 25%, 50%, 75% or 100% of the gap between $87.62 and $127.74, the illustrative prices are $97.65, $107.68, $117.71 and $127.74. No probability is assigned to those rows, and the report still does not forecast the benchmark; the bridge simply prevents automatic full convergence from hiding inside the valuation.
 
 ## Strongest bear case
 
@@ -428,9 +445,10 @@ Existing holders should evaluate concentration separately from fair value. Histo
 - [AI capability and cost-curve evidence](../research/2026-08-30-ai-capability-cost-curve.md)
 - [Workforce, product-review and interview update](../research/2026-08-30-workforce-product-reviews-update.md)
 - [Debt, macro, ownership and quality-of-earnings audit](../research/2026-08-30-debt-macro-ownership-qoe.md)
+- [Forecast base rates and calibration](../research/2026-08-31-forecast-base-rates-and-calibration.md)
 - [Model-input ledger and reverse DCF](../valuation/2026-W35-model-inputs.md)
 - [Valuation](../valuation/2026-W35-valuation.md)
 - [Decision](../decisions/2026-W35-decision.md)
 - [Source log](../sources.md)
 
-The evidence base includes twenty-seven complete public videos, presentations and technical panels: nine Wix, six Base44, six Lovable and six Replit. Transcript claims were retained only as timestamped analysis and checked against playback or primary evidence where material; inaccessible items were excluded. No complete transcript, machine-generated research report, paid-source copy or licensed workforce capture is committed. The distribution remains an uncalibrated shadow forecast: it is judgment-based and has not been validated against enough completed forecasts to claim empirical calibration. The dossier remains draft research.
+The evidence base includes twenty-seven complete public videos, presentations and technical panels: nine Wix, six Base44, six Lovable and six Replit. Transcript claims were retained only as timestamped analysis and checked against playback or primary evidence where material; inaccessible items were excluded. No complete transcript, machine-generated research report, paid-source copy or licensed workforce capture is committed. The fair-value distribution is an externally anchored structured elicitation, not an empirically calibrated forecast; the separate revenue interval is partially informed by three historical guidance errors. Eight prospective operating estimates and their resolution rules are now frozen so later cycles can measure coverage, bias and forecast skill. The dossier remains draft research.

@@ -6,6 +6,7 @@ Supporting records:
 
 - [valuation and scenario cross-check](valuation/2026-W35-valuation.md)
 - [machine-readable valuation-horizon contract](valuation/2026-W35-valuation-contract.json)
+- [prospective operating-forecast contract](valuation/2026-W35-operating-forecast-contract.json)
 - [current action mapping](decisions/2026-W35-decision.md)
 - [financials and capital allocation](research/2026-08-30-financials-capital-allocation.md)
 - [product, moat and AI competition](research/2026-08-30-product-moat-ai-competition.md)
@@ -16,6 +17,7 @@ Supporting records:
 - [workforce, reviews and additional interviews](research/2026-08-30-workforce-product-reviews-update.md)
 - [customer reviews and agentic-platform audit](research/2026-08-30-customer-reviews-agentic-friendliness.md)
 - [debt, macro, ownership and quality-of-earnings audit](research/2026-08-30-debt-macro-ownership-qoe.md)
+- [forecast base rates, calibration and robustness](research/2026-08-31-forecast-base-rates-and-calibration.md)
 - [model-input ledger and reverse DCF](valuation/2026-W35-model-inputs.md)
 - [source log](sources.md)
 - [coverage-cycle manifest](coverage-cycles/2026-W35-01-initial/README.md)

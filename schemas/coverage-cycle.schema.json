@@ -53,6 +53,7 @@
     "decision_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" },
     "review_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" },
     "valuation_contract_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" },
+    "forecast_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" },
     "model_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" },
     "verifier_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" }
   },

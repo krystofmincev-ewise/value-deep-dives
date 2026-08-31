@@ -55,11 +55,11 @@ tags: [website-builder, saas, payments, ai-agents, vibe-coding, founder-led]
 
 ## Two-minute answer
 
-Wix is no longer primarily a bet that drag-and-drop website building survives artificial intelligence (AI). That creation layer is becoming easier to copy. The investable question is whether Wix can keep owning the **business state behind the page**—domains, hosting, customer records, bookings, payments, stores, permissions and workflows—even when Claude, ChatGPT, Base44 or another agent designs the interface.
+Wix is a contest between two clocks. Artificial intelligence (AI) is making website creation cheaper by the month. Moving the operating machinery behind a live site—domains, customer records, bookings, payments, stores, permissions and workflows—remains slower and riskier. The investment case turns on whether that gap lasts long enough for Wix to move its moat from the editor to the **business state behind the page**.
 
-Wix has a credible answer: Harmony combines prompts with visual editing; Base44 creates applications from prompts; and “headless” interfaces let an outside front end use Wix's backend. Model Context Protocol (MCP) lets compatible AI agents call approved Wix tools and data. Across twenty-seven complete Wix, Base44, Lovable and Replit videos, presentations and technical panels—nine Wix, six Base44, six Lovable and six Replit—founders repeatedly acknowledge that reliable production use and maintenance remain harder than the demo. None supplies a mature public cohort showing how many paid production applications remain active after 90 or 180 days.
+Wix has shipped a concrete response. Harmony combines prompts with visual editing; Base44 creates applications from prompts; and “headless” interfaces let an outside front end use Wix's backend. Model Context Protocol (MCP) lets compatible AI agents call approved Wix tools and data. Across the reviewed Wix, Base44, Lovable and Replit interviews, founders consistently acknowledge that reliable production use and maintenance remain harder than the demo. None supplies a mature public cohort showing how many paid production applications remain active after 90 or 180 days. The architecture is credible; adoption, retention and economics remain unproved.
 
-At the $87.62 reference price, Wix's equity value is approximately **$3.67 billion using its latest explicit basic share count** or **$4.32 billion using its second-quarter non-GAAP diluted denominator**, not the stale $4.88 billion screen value. Basic shares are legally outstanding; Wix's non-GAAP diluted denominator is the broader share count used in adjusted earnings. Wix generated $1.99 billion of 2025 revenue and $573 million of report-calculated raw free cash flow (FCF)—operating cash after capital spending, including acquisition and restructuring cash that management may exclude from adjusted FCF. That figure did not treat $237 million of noncash stock-based compensation (SBC), which transfers ownership to employees, as a current cash outflow and benefited from large deferred-revenue and liability inflows. First-half 2026 raw FCF then fell sharply as Wix invested in Base44 and restructured.
+At $87.62, the latest explicit 41.850 million basic shares imply equity capitalization of **$3.67 billion**. The model's 45.989 million normalized pre-contingent diluted denominator—which includes current unvested awards and an option and employee-purchase-plan buffer—implies **$4.03 billion**. Applying the second-quarter 49.271 million non-GAAP diluted weighted-average earnings denominator gives an illustrative **$4.32 billion**, not a second point-in-time market capitalization. All three are below the stale $4.88 billion screen value. Wix generated $1.99 billion of 2025 revenue and $573 million of report-calculated raw free cash flow (FCF), but recurring share awards, working-capital inflows, acquisition and restructuring payments and the first-half 2026 investment reset make normalized owner cash materially lower. The full bridge appears below.
 
 The formal valuation is attractive but fragile:
 
@@ -72,21 +72,17 @@ Exact outputs and the joint transition definition are frozen in the [valuation-h
 
 > **Plain-English aside — reading the modeled range.** Sort 100 simulated fair values from lowest to highest: roughly 10 are at or below P10, 50 at or below P50—the median—and 90 at or below P90. These are modeled fair-value percentiles, not the fixed Bear/Base/Bull cases shown later and not forecasts of the traded share price. “Linked” means the same simulated business path is carried through both dates.
 
-The twelve-month median is 48.7% above the reference price and the mean is 51.2% above it. The stricter cash-based cross-check is much less generous: the fixed-assumption base discounted-cash-flow valuation is **$92**, while the median discounted-cash-flow value across simulated paths is roughly **$81**. The larger upside comes from valuing Base44 and platform optionality separately. Under the analyst-assigned structural weights, 9.4% of paths produce fair value at least 30% below reference and 2.7% produce fair value at least 50% below.
+The twelve-month median is 48.7% above the reference price and the mean is 51.2% above it. Yet the stricter cash-based cross-check is only **$92** under fixed assumptions, with a median near **$81** across simulated paths. Most of the upside therefore comes from valuing Base44 and platform optionality separately. The model still assigns 9.4% of paths to fair value at least 30% below reference, while 2.7% of paths produce fair value at least 50% below reference.
 
 Sum of the parts (SOTP) values core Wix, transaction services and Base44 separately, while discounted cash flow (DCF) values future owner free cash flow to the firm (FCFF)—cash attributable to lenders and shareholders after operations, reinvestment and the model's charge for future share awards. SOTP alone determines the formal distribution; DCF and cash multiples are cross-checks.
-
-A scenario-weight stress reinforces the caution: moving ten percentage points of model weight from platform win to AI erosion lowers the twelve-month median to **$121.27**, mean to **$118.62**, and raises the below-reference frequency to **28.7%**. A separate case with only 10% platform weight has a $123.39 median and $120.44 mean. Moving Base44's modeled post-gross-profit owner-cost load 15 percentage points lower or higher moves the formal median to $136.53 or $124.36. These scenario weights and cost ranges are analyst judgments, not probabilities learned from a long history of comparable outcomes.
 
 - **At $87.62, Wix is in a starter-buy valuation zone for a diversified investor whose risk limits can absorb the modeled downside. This is an absolute-value assessment, not a formal benchmark-relative portfolio action.**
 - Consider adding below roughly **$65** only while the operating thesis remains intact.
 - Trim within **$130–$170** unless Base44 economics, core cohorts and owner FCF upgrade; reduce materially above **$170** without a new evidence cycle.
 
-## The thesis in one sentence
-
-**AI will destroy Wix's old editor moat faster than it destroys Wix's installed revenue, and Wix can remain valuable if it turns the agent threat into distribution for its business operating stack—but current disclosure does not yet prove that transition earns enough owner cash.**
-
 ## What must be true
+
+That valuation rests on five observable conditions:
 
 1. Core Creative annual recurring revenue (ARR) and premium subscriptions remain at least stable after removing Base44. ARR annualizes recurring subscription value at a measurement date; it is not recognized revenue or cash.
 2. The Partner slowdown is cyclical/executional rather than the first structural migration to AI-generated alternatives.
@@ -112,13 +108,13 @@ The simple description—“a company that lets people build websites”—misse
 | Base44 | app creators/nondevelopers | prompt database-backed applications with login, business rules and live deployment |
 | Headless + MCP | developers and external agents | let outside interfaces and agents use Wix's backend business tools |
 
-This coverage creates product-sprawl risk. Wix's current help pages say Harmony remains a gradual English-only rollout, has no custom JavaScript/backend-code path, lacks or limits several apps/features and cannot transfer a site to Editor or Studio without rebuilding. A newer content management system (CMS) help page already conflicts with the overview's “CMS unavailable” list, evidence of a fast but uneven rollout. Reviews similarly say the expanding editor lineup is confusing and technical users dislike infrastructure dependence. Yet the same breadth lets Wix serve a beginner, agency and outside AI agent without surrendering the business layer.
+That breadth also creates product-sprawl risk. Harmony remains a gradual English-only rollout, lacks a custom backend-code path and cannot transfer a site to Editor or Studio without rebuilding; Wix's own help pages disagree on some feature availability. The lineup can serve beginners, agencies and outside agents, but the transition is still uneven.
 
 ## The moat: what survives and what does not
 
 ### The old moat is mostly gone
 
-Templates, drag-and-drop editing, generic AI copy/images and first-draft site creation are becoming table stakes. Webflow, Squarespace, WordPress and Shopify all have AI assistance. Lovable, Replit, Claude and Codex can generate and deploy increasingly polished interfaces. Base44 founder Maor Shlomo himself distinguishes commoditizing simple sites/frontends from harder production applications. If Wix's defense is “our prompt makes a prettier homepage,” the bear case wins.
+Templates, drag-and-drop editing, generic AI copy/images and first-draft site creation are becoming table stakes. Webflow, Squarespace, WordPress and Shopify all have AI assistance. Lovable, Replit, Claude and Codex can generate and deploy increasingly polished interfaces. Base44 founder Maor Shlomo himself distinguishes increasingly commoditized simple sites and front ends from harder production applications. If Wix's defense is “our prompt makes a prettier homepage,” the bear case wins.
 
 ### The installed-base moat is operational
 
@@ -134,20 +130,9 @@ A live business site accumulates state:
 - roles, approvals and client handoff; and
 - habit, staff training and support history.
 
-Recreating pixels gets easy before migrating all of that gets safe. Classic Wix sites cannot be exported and hosted elsewhere because the rendering/infrastructure is proprietary, although products, contacts and other business data can partly be exported. This is a real switching cost, but partly coercive: it supports retention and can damage advocacy.
+Recreating pixels gets easy before migrating all of that gets safe. Classic Wix sites cannot be exported and hosted elsewhere because the rendering and infrastructure are proprietary, although products, contacts and other business data can partly be exported. That is a real but partly coercive switching cost: it supports retention and can damage advocacy.
 
-Copying a page's appearance is therefore different from safely migrating its domain history, customer data, payments, permissions and ongoing obligations.
-
-The best public evidence is near-term visibility, not permanent lock-in. At year-end 2025, 83% of premium subscriptions were annual or multi-year; remaining performance obligations (RPO)—contracted revenue Wix had not yet recognized—were $878 million, and deferred revenue was $854 million. June 2026 deferred revenue was $912 million. Abrahami says finished Wix sites retain better because owners invest effort in them, but Wix does not publish that cohort comparison. Nor does it disclose gross retention or churn by product, and premium subscriptions fell roughly 1% to 6.1 million in 2025. It is more accurate to say:
-
-- billed/deferred revenue is highly visible;
-- operationally embedded sites have moderate-to-high persistence;
-- simple brochure sites are increasingly portable; and
-- future customer starts are highly exposed.
-
-Chief Marketing Officer Omer Shai says Wix follows groups of customers who start in the same period—from registration through editor use, paid conversion and collections—and measures how quickly marketing spending is recovered rather than relying on a distant estimate of lifetime customer value. He also says some customers have renewed for ten years. This supports a consistent acquisition and retention measurement culture; the actual cohort retention and Base44 payback remain undisclosed, so it cannot quantify “locked in” revenue.
-
-AI can damage Wix for years through worse new cohorts before the installed base collapses. That is why Partner bookings and core Creative ARR matter more than one quarter of total revenue.
+Operational friction supports persistence, but Wix's public evidence measures near-term billing visibility rather than permanent retention. Wix publishes neither churn nor cohort retention by product, and premium subscriptions still fell roughly 1% to 6.1 million in 2025. The table below separates contractual visibility from renewal evidence.
 
 ### How much revenue is actually “locked in”?
 
@@ -157,11 +142,13 @@ There is no defensible single percentage. Three quantities answer different ques
 | --- | ---: | --- | --- |
 | Deferred revenue, June 2026 | **$911.6 million** | amounts billed or collected for service not yet recognized; strong next-few-quarter visibility | profit, renewal or permanent lock-in |
 | Premium plans annual/multi-year at year-end 2025 | **83%** | most subscribers do not make a monthly cancellation decision | contractual revenue beyond the paid term |
-| Analyst-estimated core recurring ARR before Base44 | about **$1.813 billion** | large, mature recurring base | a guaranteed renewal cohort; Wix does not disclose gross or net revenue retention |
-
-> **Plain-English aside — visibility is not lock-in.** RPO can include amounts that have not yet been billed. Deferred revenue is generally consideration billed or collected before Wix delivers the related service. ARR annualizes recurring subscription value at a point in time. Gross revenue retention excludes customer upgrades; net revenue retention includes them. Wix does not disclose either retention measure for the core cohort, so these figures show visibility—not guaranteed renewal or profit.
+| Analyst-derived core recurring scale before Base44 | about **$1.813 billion** | reported $1.963 billion company ARR less the public $150 million Base44 annualized run-rate framing; the reporting boundary is imperfect | reported core ARR, a guaranteed renewal cohort or directly comparable Base44 ARR |
 
 The safest investable conclusion is that roughly half a year's company revenue is contractually visible through deferred revenue and a much larger share is **economically persistent**, not irrevocably locked. Domains, search-ranking history, payments, bookings, customer records and staff workflows slow migration. Simple brochure sites and new customer starts are exposed first. Any report that turns the 83% billing-duration statistic into “83% locked ARR” is overstating the evidence.
+
+Chief Marketing Officer Omer Shai says Wix follows acquisition cohorts through editor use, paid conversion, collections and marketing payback, and notes that some customers have renewed for ten years. That supports a disciplined measurement culture, not a quantifiable locked-in percentage: actual cohort retention and Base44 payback remain undisclosed. AI can therefore hurt Wix for years through weaker new cohorts before the installed base collapses, making Partner bookings and core Creative ARR more informative than one quarter of total revenue.
+
+Nor does Wix need to suffer mass migration to lose economic control. If an outside agent owns discovery and customer intent, Wix could keep servicing old sites while losing new customers, pricing power and the chance to attach payments or business software. Persistence buys time; it does not guarantee that Wix captures the next dollar of industry growth.
 
 ### Twelve-month moat scorecard
 
@@ -187,43 +174,41 @@ The practical workflow Wix needs is:
 
 `User intent → outside AI agent → approved Wix tools → preview or staging → human approval for consequential actions → publish → persistent Wix business state`
 
-This is stronger than asking Wix to beat Anthropic or OpenAI at general reasoning. It also makes permissions, audit trails and reversibility part of the product defense. The risk is that the AI-model provider owns customer attention and eventually chooses or builds another backend. Wix needs adoption data to prove it is becoming the underlying operating platform rather than a transitional connector.
+Permissions, audit trails and reversibility are part of this defense. The risk is that an AI-model provider owns customer attention and eventually chooses or builds another backend. Wix needs adoption data to prove it is becoming the underlying operating platform rather than a transitional connector.
 
 Wix Engineering's 250 controlled evaluations show both progress and the remaining gap. Documentation optimized for agents raised successful command-line completion from 67% to 87%, with 35% fewer model tokens and 9% less time; web-tool tasks reached 80% completion. That is evidence of serious engineering for agents, not safe autonomous operation. Outdated instructions can still increase retries, time and cost sharply.
 
 ## Base44: hedge, option and execution risk
 
-Wix acquired Base44 in June 2025 for about $92 million of accounting consideration, including an additional acquisition payment tied to Base44 revenue. Additional employee-retention payments extend through 2028. Public interviews describe an annualized revenue pace above $150 million, but Wix does not publish a clean standalone quarter-end reconciliation.
+Wix's June 2025 purchase-accounting consideration was $92.158 million: $18.058 million of cash plus $74.100 million of initial fair value for revenue-linked contingent consideration. That liability was remeasured to $89.531 million at year-end 2025. Separate founder and employee retention and other cash payments of $42.988 million, plus approximately $8 million of equity awards, extend through 2028. Public interviews describe an annualized revenue pace above $150 million, but Wix does not publish a clean standalone quarter-end reconciliation.
 
-Base44 entered 2026 near zero company-adjusted, or non-GAAP, gross margin. Wix expects roughly 60% in the second half after launching Base 1, a narrower model trained further from open-source foundations, while still routing meaningful work to outside models. Core Creative gross margin was 80% in the second quarter. This makes the key contrast clear:
+Base44 entered 2026 near zero company-adjusted, or non-GAAP, gross margin. Wix expects roughly 60% in the second half after launching Base 1, a narrower model trained further from open-source foundations, while still routing meaningful work to outside models. Core Creative gross margin was 80% in the second quarter. The contrast is stark:
 
 - core Wix is slower and more durable, with far better economics;
 - Base44 is faster, lower margin and more acquisition-intensive; and
 - the consolidated story works only if Base44's growth does not consume all core cash.
 
-Abrahami says Wix's narrow model sees intent, failed prompts and corrections, retrains weekly and is faster/cheaper for its task. That could become a proprietary feedback loop. There is no external benchmark or disclosed cohort data proving it. He also describes an internal exercise where a professional team and then Wix's original vertical team failed over roughly three weeks to reproduce the operating logic of a hairdresser product with AI tools. That is mechanism evidence, not a published benchmark.
+Abrahami says Wix's narrow model learns from intent, failed prompts and corrections and retrains weekly, which could create a proprietary feedback loop. His internal hairdresser-product exercise suggests that reproducing mature operating logic is harder than reproducing an interface, but it is mechanism evidence rather than a published benchmark.
 
-Shlomo's full 20VC interview makes the strategic bet more precise. Base44's harder-to-copy layer is its homegrown database, login, user, integration, task and analytics infrastructure—not prompting alone. It can therefore become a genuine hosted operating layer that keeps applications working after generation and creates switching costs. Yet when asked what share of users finish an application or reach sustained day-to-day usage, he cannot supply a percentage. Recorded user reactions to prompts are useful product signals; they are not retention, production usage or willingness to pay. This is now the single most important unresolved Base44 question.
+Shlomo's full 20VC interview locates Base44's harder-to-copy layer in its database, login, integrations, task system and analytics—not prompting alone. That could create switching costs if customers retain production applications and operating state there. Yet he could not state what share of users finish an application or sustain daily use. Prompt reactions are product signals, not evidence of renewal or profit after model usage, credits, marketing, support and retention costs. Defined 90- and 180-day paid cohorts remain the single most important missing evidence.
 
-> **Plain-English aside — demand is not retained production use.** User counts, prompt feedback and an annualized revenue pace show demand. They do not reveal how many customers finish an application, keep it deployed, renew or generate positive profit after model usage, retries, credits, marketing, support and retention costs. A defined paid cohort at 90 and 180 days is the missing evidence.
-
-Three additional founder interviews sharpen the picture. Base44 subsidized social sharing with build credits and removed an up-front planning step—even though it improved the finished application—because it delayed the visual activation moment. That is sophisticated growth design and a warning that starts and shares can overstate quality. Shlomo says early Base44 earned close to $200,000 profit in May 2025, but later describes roughly $400,000 per month of model workload movable by a one-line vendor switch. Hypergrowth from roughly 100,000 to three million users then produced a “terrible” month for stability and support, unfinished European privacy, U.S. health-data and regional data-hosting work, and reliance on Wix reliability specialists. Early bootstrapped profit is therefore not normalized public-company gross margin.
+Base44 subsidized social sharing with build credits and removed an up-front planning step because it delayed the moment users first see something working, even though planning improved the finished application. That is sophisticated acquisition design but means starts and shares can overstate quality. Shlomo reports early bootstrapped profit, yet later cites roughly $400,000 a month of model workload and describes a “terrible” stability and support month as users expanded from roughly 100,000 to three million. European privacy, U.S. health-data and regional-hosting work was also unfinished. Early profit is therefore not evidence of normalized public-company margin.
 
 The founder's own defensibility estimate is more conservative than the valuation narrative. He says the model layer has no real moat and a credible Base44-like product could be rebuilt in roughly six to twelve months. The current defense is a short product lead, integrated runtime/data, velocity, brand, community and Wix distribution. This makes Base44 strategically valuable inside Wix, but argues against a mature-platform multiple before retained production usage is demonstrated.
 
 The cost of running AI models for users' requests remains an additional risk. Shlomo describes model-related cost as the overwhelming relevant expense, expects routing and falling model prices to help and says Base44 can switch providers with limited code changes. That leverage works only while the most capable models remain competitive. If one provider becomes uniquely capable and enters application building, supplier and competitor risk collapse into one.
 
-His claim that Base44 “should probably be worth $8 billion” is founder opinion. The base valuation assigns it $1.68 billion; the bull gives it $4.55 billion. Even the latter remains a fraction of Lovable's latest private mark.
+His claim that Base44 “should probably be worth $8 billion” is founder opinion. The base valuation assigns it $1.68 billion; the bull gives it $4.55 billion. Even the latter remains a fraction of Lovable's latest private mark. That combination—real strategic value but unproved duration—is why Lovable is provocative rather than a usable peer multiple.
 
 ## Lovable: the comparison is provocative, not dispositive
 
-Lovable raised $400 million at a **$13.3 billion post-money funding value** on 12 August 2026. “Post-money” means the negotiated value immediately after the new financing, including the new cash. TechCrunch reported a company-supplied $500 million June annualized revenue pace, implying 26.6 times that recent pace. Replit's prior $3 billion funding value was about 20 times its reported $150 million pace; its current $9 billion mark is paired with an aspirational $1 billion year-end target, not achieved revenue.
+Lovable is the right strategic comparison because it is trying to own the same layer Wix wants to defend: the application, accumulated business state, payments and administrative workflows after the first build. Founder Anton Osika describes an “AI cofounder” that could make that bundle sticky. The evidence is much thinner. Across six complete videos and interviews, the only retention disclosure is approximately **85% month-one retention among paying customers** in March 2025. Trial-driven churn was included, the definition was not supplied and the company was too young for month-six data. No later reviewed interview supplies 90-day, 180-day, gross-revenue or net-revenue retention.
 
-These private financing values are provocative comparisons, not public market capitalizations. They can embed special investor rights, illiquidity, option value and a much faster expected growth path. An annualized pace simply scales a recent month or quarter into a yearly number; it is not audited annual revenue. Retention, gross margin and cash burn also remain unaudited.
+Osika also says most paid usage then passed through to model costs, describes loyalty as mixed, acknowledges security was not yet as strong as the best human work and later admits that modifying complicated live products with many users remains unsolved. Lovable automates transaction-tax handling through a merchant-of-record provider—the legal seller that processes customer payments—but it does not eliminate corporate taxes or autonomously incorporate and operate a company. Its GitHub export and self-hosting reduce code lock-in relative to Wix. An April 2026 incident, where users with public-project links could access source code and chat history, shows why production trust remains unfinished.
 
-Lovable is nevertheless the right strategic comparison. Founder Anton Osika wants users' applications and accumulated value to remain on Lovable while the system expands into payments and administrative and finance operations. Across six complete videos and interviews, the only retention disclosure is approximately **85% month-one retention among paying customers** in March 2025. Trial-driven churn was explicitly included, the definition was not supplied and the company was too young for month-six data. No later reviewed interview supplies 90-day, 180-day, gross-revenue or net-revenue retention. Osika also says most paid usage then passed through to model costs, describes loyalty as mixed, acknowledges security was not yet as strong as the best human work and later admits that modifying complicated live products with many users remains unsolved. The intended “AI cofounder” could become sticky; cumulative builders and an annualized recurring-revenue pace are not evidence of durable gross margin or retained production cohorts.
+The product comparison is real; the financing comparison is looser. Lovable raised $400 million at a **$13.3 billion post-money funding value** on 12 August 2026. “Post-money” means the negotiated value immediately after the new financing, including the new cash. TechCrunch reported a company-supplied $500 million June annualized revenue pace, implying 26.6 times that recent pace. Replit's prior $3 billion funding value was about 20 times its reported $150 million pace; its current $9 billion mark is paired with an aspirational $1 billion year-end target, not achieved revenue.
 
-The “no taxes” idea needs correction. Lovable's merchant-of-record provider—the legal seller that handles customer payments—calculates, collects and remits transaction taxes and handles invoices. It does not eliminate corporate taxes or prove autonomous company incorporation and operation. Lovable's GitHub export and self-hosting also reduce code lock-in relative to Wix. An April 2026 incident, where users with public-project links could access source code and chat history, shows why production trust remains unfinished.
+Private financing values can embed special investor rights, illiquidity, option value and a much faster expected growth path. An annualized pace merely scales a recent month or quarter into a yearly number; it is not audited annual revenue. Retention, gross margin and cash burn remain unaudited. Cumulative builders and annualized revenue do not establish durable economics.
 
 The valuation implication is asymmetric:
 
@@ -233,13 +218,13 @@ The valuation implication is asymmetric:
 
 ## Can frontier model providers replace Wix in twelve months?
 
-They can replace much of the **creation interface**. OpenAI's Codex and ChatGPT Sites already create and deploy lightweight websites and applications; Claude Code runs longer cloud sessions and uses connectors. DeepSeek, Kimi, Qwen and Nvidia's Nemotron show that strong coding and tool-use capability, plus cheap reuse of previously processed model inputs, are diffusing beyond closed providers. SemiAnalysis's work points to longer context, parallel agents and more computation while answering rather than a plateau. Its AgentX measurements report a median of roughly 142,000 input tokens per session, heavy reuse of earlier inputs and subagent use in 44% of sessions. That architecture lowers unit cost only when saved state remains correct.
+They can replace much of the **creation interface**. OpenAI's Codex and ChatGPT Sites already create and deploy lightweight websites and applications; Claude Code runs longer cloud sessions and uses connectors. DeepSeek, Kimi, Qwen and Nvidia's Nemotron show that capable coding and tool use are diffusing beyond closed providers. SemiAnalysis's work points to longer context, parallel agents and more computation while answering rather than a plateau.
 
-The benchmark reality is simultaneously impressive and incomplete. Artificial Analysis Coding Agent Index v1.4 leaders score roughly **63–68 overall**, but only **37–55% on questions about an existing codebase**. Anthropic's study of about 400,000 interactive sessions found **29–34% strict verified success** versus **88–89% at least partial progress**. METR's strongest agents reach about a **16–20 hour 50%-success task horizon** on clean tasks—meaning a 50% chance on tasks that take a skilled human that long—but only **6.4 hours on high-messiness work**, versus 17.8 on low-messiness work. These are not directly comparable tests; together they say agents will make the front end much easier while production verification, ambiguous state and maintenance remain bottlenecks.
+The benchmark record is impressive and incomplete. Artificial Analysis's Coding Agent Index leaders score roughly **63–68 overall**, but only **37–55% on questions about an existing codebase**. Anthropic's study of about 400,000 interactive sessions found **29–34% strict verified success** versus **88–89% at least partial progress**; humans still made most planning decisions and expertise improved outcomes. METR's strongest agents reached a roughly **16–20 hour 50%-success task horizon** on clean tasks, but only **6.4 hours on high-messiness work**. These are different tests, not one league table. Together they say agents will make the front end much easier while production verification, ambiguous state and maintenance remain bottlenecks.
 
-The model-supply conclusion is asymmetric. The report's six- and twelve-month analyst assumption is a 20–40% and 35–65% drop in the cost of an application-programming-interface step at the same level of model capability. It assumes the cost per successful controlled step falls perhaps 25–50% and 45–75%, respectively. That helps Base44's gross margin and every competing builder. It makes proprietary model weights a weak moat and makes the hosted operating layer, business state, evaluation, distribution and accountable operations more important. Base44 founder Maor Shlomo identifies the largest risk more broadly: a dominant provider that also owns cloud, data and workplace distribution, with Google a particularly credible candidate. OpenAI and Anthropic are not the complete threat set.
+The report assumes that the price of an outside-model application-programming-interface step at the same capability falls 20–40% over six months and 35–65% over twelve; the cost of a successful controlled step falls somewhat less because retries and supervision remain. Shlomo identifies the larger risk as a dominant provider that owns the model, cloud, data and workplace distribution, with Google a particularly credible candidate. OpenAI and Anthropic are not the complete threat set.
 
-> **Plain-English aside — cheaper AI cuts both ways.** If an AI task costs 100 today and 50 next year, Base44 may keep more gross profit. Every competing builder receives the same cost reduction, however. Longer sessions, parallel agents and retries can also keep total spending from falling as quickly as the price of one model step. Wix benefits only if better models increase the value of its data, workflows and distribution faster than they commoditize creation.
+> **Plain-English aside — cheaper AI cuts both ways.** If an AI task costs 100 today and 50 next year, Base44 may keep more gross profit. Rival builders can also become cheaper, while longer sessions, parallel agents and retries may keep total spending from falling as quickly as the price of one model step. Wix benefits only if better models increase the value of its data, workflows and distribution faster than they commoditize creation.
 
 By August 2027, it is reasonable to expect agents to:
 
@@ -249,9 +234,11 @@ By August 2027, it is reasonable to expect agents to:
 - test, deploy and fix routine bugs; and
 - perform ongoing content/catalog changes.
 
-It is less certain they will reliably own ambiguous requirements, reputation, security, disputes, cross-jurisdiction tax, search-ranking continuity and years of maintenance. Anthropic's aggregate analysis of roughly 400,000 Claude Code sessions found that humans still make most planning decisions and expertise improves outcomes. OpenAI has documented contamination and defects in headline coding benchmarks. “70% benchmark” is not “70% of small businesses autonomously operated.”
+It is less certain they will reliably own ambiguous requirements, reputation, security, disputes, cross-jurisdiction tax, search-ranking continuity and years of maintenance. OpenAI has documented contamination and defects in headline coding benchmarks. “70% benchmark” is not “70% of small businesses autonomously operated.”
 
-Six complete Replit videos and interviews supply the strongest adversarial test. Replit already owns a serious operating layer: isolated places to run code, deployment, databases, login, protected credentials, snapshots that can roll code and data back together, and routing among AI models. It has pushed unsupervised runs from minutes toward hours. Founder Amjad Masad says structural moat has not yet been reached, free usage is acquisition spending, advanced testing and parallel agents materially increase model cost, and AI-created authentication and security are dangerous. A newer StrictlyVC interview claims very low enterprise churn and net revenue retention reaching 300% in some cases—meaning some existing-customer revenue tripled after expansion—but provides no consolidated cohort or denominator. His software-as-a-service “apocalypse” case is also narrower than the headline: bespoke point tools are exposed, while authoritative business databases such as Salesforce and Workday are more likely to be extended through software connections and MCP than ripped out. Asked about Wix directly, he offers no displacement evidence.
+Six complete Replit videos and interviews supply the strongest adversarial test. Replit already owns a serious operating layer: isolated places to run code, deployment, databases, login, protected credentials, snapshots that can roll code and data back together, and routing among AI models. It has pushed unsupervised runs from minutes toward hours.
+
+Founder Amjad Masad's admissions are more important than the demos. He says structural moat has not yet been reached, free usage is acquisition spending, advanced testing and parallel agents materially increase model cost, and AI-created authentication and security are dangerous. A newer StrictlyVC interview claims very low enterprise churn and net revenue retention reaching 300% in some cases—meaning some existing-customer revenue tripled after expansion—but provides no consolidated cohort or denominator. His software-as-a-service “apocalypse” case is narrower than the headline: bespoke point tools are exposed, while authoritative business databases such as Salesforce and Workday are more likely to be extended through software connections and MCP than ripped out. Asked about Wix directly, he offers no displacement evidence.
 
 The most likely twelve-month industry state is hybrid:
 
@@ -259,68 +246,29 @@ The most likely twelve-month industry state is hybrid:
 - platforms expose structured actions and state;
 - humans approve positioning, risk and exceptions.
 
-Wix wins if it is the easiest, most trusted structured platform. It loses if agents bundle a superior managed stack or make reliable full migration trivial.
+On this evidence, the twelve-month base case is erosion of Wix's interface power rather than wholesale backend replacement. Wix must convert agent-driven demand into attached paid services before weaker acquisition and pricing reach the installed base.
+
+That hybrid future makes agent access necessary—but no longer unique.
+
+## Can outside agents use Wix safely?
+
+Here, “agent friendly” means an outside AI agent can discover permitted actions, change business records, deploy work, observe the result and reverse mistakes—not merely generate code. Wix documents broad Codex compatibility and, against the reviewed peer set, offers the broadest managed small-business action set. It discloses no MCP adoption, retained-agent cohort or independent completion rate.
+
+Shopify is the clearest architectural benchmark because agents can operate the storefront while Shopify retains merchant data and transaction execution. Webflow and WordPress expose production agent controls; Replit's and Base44's external-builder MCP interfaces remain in beta; Lovable's is a research preview; GoDaddy exposes production domain and commerce APIs; and Squarespace exposes business APIs but no verified editor control. A connector is therefore table stakes. The differentiators are reliable completion, auditability, reversibility, retained business state and paid-product attachment; code export alone does not move login, data, payments, protected credentials, storage, domains or production configuration.
+
+The architecture shows what these platforms can expose. Customer reviews show whether the resulting bundle is dependable enough to keep.
 
 ## Product reviews: the moat paradox in customers' words
 
 G2's live snapshot showed Wix at 4.2/5 from 1,889 reviews, versus Squarespace 4.4/5 from 1,137, Webflow 4.4/5 from 996 and GoDaddy Website Builder 4.1/5 from 189. Capterra showed Wix at 4.4/5 from 10,764 reviews. The repeated positives are ease, templates, rapid no-code launch and integrated business tools. Repeated negatives are pricing/plan complexity, support, speed and limits on advanced customization. The score gap says Wix is competitive, not best-in-class; Wix's economic advantage is breadth and installed operations rather than pure design delight.
 
-Hands-on publisher reviews add two useful details: Wix Studio occupies a middle ground between Squarespace simplicity and Webflow complexity; and an operator who used Wix for two years found the all-in-one tools reduced administrative subscriptions but moving to Studio would require a rebuild. The live cross-platform audit sharpens the AI-native comparison. Lovable is the strongest-rated current challenger—G2 4.6/5 from 377, Product Hunt 4.7/5 from 201 and Trustpilot 4.1/5 from 1,580—while complex production maintenance and unpredictable credits recur negatively. Base44's favorable samples remain tiny on G2 and Capterra, while Trustpilot was 2.8/5 from 854 reviews and 54% one-star. That corpus is contaminated by low-information/non-user commentary and Base44 invites reviews, so it cannot estimate churn. It does replicate complaints about paid repair loops, lost context, publishing/reliability, billing and support. Replit shows the same prototype-delight versus paid-repair tension. The failure mode is economically important: users pay for failed agent loops as well as successful output.
+Hands-on reviews place Wix Studio between Squarespace's simplicity and Webflow's complexity; one two-year Wix operator found that the all-in-one tools reduced administrative subscriptions, but moving to Studio would require a rebuild. AI-native challengers show the same prototype-delight versus production-maintenance tension. Lovable is the strongest-rated current challenger, while complex maintenance and unpredictable credits recur negatively. Base44's favorable G2 and Capterra samples remain tiny; its larger Trustpilot sample was 2.8/5 from 854 reviews, with 54% one-star, although low-information commentary and review invitations make it unusable as a churn estimate. Complaints about paid repair loops, lost context, publishing, billing and support recur across Base44 and Replit. The economically important failure mode is that users pay for failed agent loops as well as successful output.
 
 These are selection-biased sources, not churn data. The robust qualitative conclusion is that **integration is both the value and the lock-in**. Mainstream owners often prefer one accountable bundle; technical users resent the exit cost. The full [customer-review and agentic-platform audit](../research/2026-08-30-customer-reviews-agentic-friendliness.md) records current cross-platform counts, source-selection limits and the evidence-to-model boundary.
 
-## Agentic friendliness: necessary, no longer unique
+The product evidence says Wix has time, not proof. The financial question is whether it can fund the transition without giving the benefit back through weak cash conversion, dilution or debt.
 
-Wix passes the practical Codex test on documentation. Here, “agent friendly” means an outside AI agent can discover permitted actions, read or change business records, deploy work, observe the result and reverse mistakes—not merely generate code. Wix's Headless AI toolkit explicitly supports Codex, and its production MCP can create and publish sites and projects, generate platform code, use authenticated software connections, and operate commerce, bookings, payments, events, plans, blogs, content and customer records. That makes Wix the strongest managed small-business operating platform in the reviewed set. Classic hosted-site portability remains weak, however, and Wix discloses no MCP adoption, retained-agent cohort or independent completion rate.
-
-The connector itself is not the moat. Shopify is the clearest architectural benchmark: agents can operate the storefront while Shopify retains proprietary merchant data and transaction execution. Webflow and WordPress expose production agent controls; Replit's and Base44's external-builder MCP interfaces remain in beta; Lovable's is a research preview; GoDaddy exposes production domain and commerce APIs; and Squarespace exposes business APIs but no verified editor control. The differentiators are therefore reliable completion, permissions, auditability, reversibility, retained business state and paid-solution attachment—not merely publishing an MCP endpoint.
-
-The investor conclusion is stricter than “Wix has MCP.” **Agent friendliness is becoming table stakes.** Code export is also not full portability: login and identity, data, payments, protected credentials, storage, domains and production configuration may remain on the managed platform. Wix must show that external agents choose its tools because the platform holds valuable business state, complete tasks reliably, preserve permissions and reversibility, attach paid solutions and retain customers. Until Wix reports those outcomes, the agent-accessible controls support the platform-defense scenario but do not justify a higher probability or multiple.
-
-## Workforce and management: capable, concentrated, disrupted
-
-Wix reported 4,371 employees at June 2026, down 18.1% from year-end after the reorganization. An authorized licensed résumé-based Revelio view showed 5,284 estimated profiles, **-11.5% workforce growth, 23.4% hiring and 34.8% estimated employee departures, or attrition**, in its latest/default view. The underlying observation date was not surfaced and the profile population is not payroll, so the filing count remains authoritative. The right interpretation is simultaneous contraction and recruiting—reallocation around Base44 and AI, not a simple freeze.
-
-Peer aggregates sharpen the outlier: Squarespace was +1.7% growth / 17.0% hiring / 15.3% attrition; Webflow +9.9% / 38.6% / 28.7%; GoDaddy -1.0% / 20.3% / 21.4%; Shopify -2.5% / 35.4% / 37.9%; Automattic -3.2% / 8.7% / 11.9%. These different businesses and coverage populations are not a causal experiment. They do show that Wix's combination of shrinkage and high churn is unusually disruptive even within a turbulent software labor market.
-
-The observed workforce is technically heavy:
-
-1. The latest occupation view is approximately 37% Software Developer plus 8% Software Engineer; operations and human resources, and sales and marketing, are each in the low-to-mid teens, depending on taxonomy.
-2. Central & Western Asia accounts for about half of observed profiles, followed by Eastern Europe, Northern Europe, North America and Southern Asia. Israel is likely the dominant country within the first region based on Wix's filings and office footprint, but that country split is an inference rather than a Revelio regional label.
-3. Software Development dominates skills, followed by Data Analytics and operating/customer functions.
-4. Software engineering and software-development representation rose substantially over the long historical view.
-
-This is not a hollow marketing company. It has the engineering base to integrate Base44 and expose mature software connections. The licensed view also suggests the retained workforce has become more tenured. Wix nevertheless carries a broader marketing, operations and support layer than smaller design-platform peers. Base44's current openings lean toward enterprise sales, account management, education, public relations and communications; the future cost base will not resemble the founder's one-person phase. Its enterprise sales and customer-success hiring can improve production retention, but it also raises the operating-cost floor. New interviews describe several hundred people contributing across the Wix group, while Shlomo retains 41 direct reports and one person owns billing. That combination is fast but operationally concentrated.
-
-Abrahami says repeated attempts to replace support with AI failed Wix-scale tests: the layer is both a near-term trust moat and a structural cost. In a separate research-and-development interview, leadership says approximately 1,300 engineers registered for more than 100 AI-training sessions and speculates that teams of about twenty can move toward two or three. That explains the economic ambition behind the 20% cut, while making product and user-experience judgment and retained platform knowledge the new bottlenecks. Elevated observed turnover is therefore a transition risk, not merely a source of savings. Glassdoor shows Wix at 4.1/5, 79% recommend, 84% chief-executive approval and only 59% positive outlook; Indeed shows 3.7/5. Platform disagreement and selection bias preclude a morale estimate, but the approval/outlook gap is consistent with transition anxiety.
-
-The executive team is extraordinarily long-tenured. Abrahami has led since 2006; President and Chief Operating Officer Nir Zohar joined in 2007; Chief Marketing Officer Omer Shai in 2008; Chief Technology Officer Yaniv Even-Haim led research and development from 2010; and Chief Financial Officer Lior Shemesh joined in 2013. That provides institutional memory and platform knowledge. It also creates insularity and weakens the argument that tenure alone predicts good decisions.
-
-The origin story explains the continuity. Wix began when the founders found building a website for a different startup unnecessarily painful, tested several products on common visual technology and selected websites partly to avoid dependence on another platform. Beauty and direct manipulation were deliberate early priorities. Abrahami describes a decentralized culture in which leaders receive key performance indicators and frameworks, then make most operating decisions, combined with intense work norms and fast hiring and exiting for fit. That culture can repeatedly produce product bets; it can also normalize turnover, overextension and founder-centric judgment.
-
-At 31 January 2026, executives and directors beneficially held 7.2%, including options and restricted stock units. The ownership aligns them economically, but the buyback record is a better capital-allocation test than biography.
-
-## Buybacks: confidence, not skill
-
-From 2021–2025 Wix spent **$1.6 billion** repurchasing 12.154 million shares at an average $131.65. Outstanding shares fell only 1.038 million from year-end 2020 to 2025. Approximately 91% of gross repurchases were offset by issuance.
-
-The simple explanation is that Wix bought shares from investors while issuing almost as many new shares through employee compensation and other instruments. The company spent substantial cash, but the ownership represented by each remaining share improved only modestly.
-
-The prices were poor: $223.43 average in 2021, $129.75 in 2024 and $162.25 in 2025. In March 2026 Wix then issued 3.267 million shares at $79.591 plus warrants—rights to buy shares later—and used cash and floating-rate debt to repurchase 17.577 million shares through a tender offer at $92. The tender reduced the basic count by about 24% net from January to May, a meaningful per-share step-up, but left the company with approximately $689 million of debt principal minus listed liquid assets, or face net debt.
-
-Management clearly believes the stock is worth more. It has not demonstrated reliable buyback price discipline. Abrahami's 20VC answer framed repurchases as dividend-equivalent and partly an offset to shares issued as stock-based compensation, which is more candid than the “insider knows it cannot die” interpretation.
-
-## Outside holders and rally mechanics: useful context, not an oracle
-
-The 2025 annual filing showed Ameriprise at 10.9%, Wellington 6.3%, Baillie Gifford 5.9% and Senvest 5.1%, while executives and directors beneficially held 7.2%. A 3 August 2026 Baillie filing reports 2.542 million shares, 6.1% of the smaller post-tender class. The percentage alone is misleading: its absolute position fell from 3.227 million in the latest annual-report table and far more over the longer historical record. Subsequent beneficial-ownership filings also show Wellington below 5%. These are lagged portfolio decisions, not fundamental verdicts.
-
-Senvest publicly articulates the clearest institutional bull case: Wix bought Base44 cheaply relative to Lovable, Studio can take share from WordPress and Base44 deserves a large separate value. Its second-quarter public report raised that opinion to roughly $2.5 billion while acknowledging Partner deceleration. Its required U.S. quarterly institutional-holdings filing, Form 13F, simultaneously showed the position falling from 3,754,680 shares at March quarter-end to 2,918,880 at June, down 835,800 or 22.3%. The filing cannot distinguish tender participation from open-market sales or motive; its earlier beneficial-ownership filing, Schedule 13G, also included 125,641 warrant shares outside the first-quarter Form 13F scope. The bullish words and smaller reportable position are a useful contradiction, not an oracle.
-
-The logic is directionally plausible and close to this dossier's $1.68 billion fixed-assumption base Base44 SOTP value. Its weak point is the cash-flow measure used to support that value: consensus and adjusted FCF do not fully charge current dilution economics, acquisition and restructuring cash, net debt or unseasoned Base44 retention. The owner-FCFF and DCF methods therefore remain materially less generous.
-
-Market mechanics also qualify the 50% rebound. Reported short interest fell from 9.232 million shares at 30 June to 5.777 million at 14 August while the price recovered. Because secondary services disagree on the estimated tradable-share count, the analysis uses only the reported number of shares sold short. The timing supports an inference that short covering amplified the rally; it does not prove how much. After the decline of approximately 3.45 million short shares, further gains must rely more on operating evidence than on additional short covering.
-
-## Financial quality and the 2026 reset
+## Financial quality: growth survived, owner cash weakened
 
 | Fiscal year | Revenue | Bookings | Raw free cash flow | Stock-based compensation | Ending shares, millions |
 | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -332,31 +280,63 @@ Market mechanics also qualify the 50% rebound. Reported short interest fell from
 
 Revenue compounded 11.9%; bookings—Wix's non-GAAP measure of revenue plus changes in deferred revenue and unbilled contractual obligations—compounded 9.9%. The second quarter of 2026 remained respectable: revenue was $563 million (+15%), ARR $1.963 billion (+15%), bookings $569 million (+12%), Partner revenue $214 million (+17%) and transaction revenue $72 million (+12%). Yet bookings lagged revenue, Partner trends weakened late in the second quarter, gross margin fell to 66% and first-half raw FCF fell to $128 million.
 
-Management maintains low-to-mid-teens 2026 revenue, low-teens bookings and approximately $420 million of adjusted FCF. The dossier uses $340–360 million of raw FCF because first-half adjusted cash added back $46 million of real acquisition and restructuring payments, with more expected in the second half.
+Management maintains low-to-mid-teens 2026 revenue, low-teens bookings and approximately $420 million of adjusted FCF. This analysis uses $340–360 million of raw FCF because first-half adjusted cash added back $46 million of real acquisition and restructuring payments, with more expected in the second half.
 
-The 2025 cash figure also benefited from $237 million SBC, $104 million more deferred revenue and $204 million more accrued/other liabilities. Cash is real; steady-state owner earnings are lower. The model assumes cash taxes normalize upward from 2025's anomalously low cash payment. This is why the valuation subtracts dilution economics and why the $92 base DCF is only close to the share price.
+The 2025 cash figure also benefited from $237 million of stock-based compensation, $104 million more deferred revenue and $204 million more accrued and other liabilities. Cash is real; steady-state owner earnings are lower. The model assumes cash taxes normalize upward from 2025's anomalously low cash payment. The owner-cash cross-checks therefore subtract dilution economics, which helps explain why the $92 base DCF is only close to the share price.
 
 > **Plain-English aside — from reported cash to owner cash.** The base bridge is a model assumption, not guidance: $350 million of 2026 raw FCF, plus $40 million of retained savings and $35 million of growth and operating leverage, less a $30 million tax, retention and working-capital reserve, gives $395 million before dilution economics. Subtracting a $110 million future-award charge gives $285 million of cash attributable to shareholders; adding $30 million of normalized after-tax interest produces $315 million of owner FCFF for enterprise valuation.
+
+One model convention matters after that bridge: the owner-cash methods explicitly subtract future-award economics. The formal SOTP treats them differently. The charge affects Base44's owner-cost load and the retained-cash claims path, but is not separately deducted from core enterprise value or added to horizon shares. The core ARR multiple must therefore implicitly absorb recurring future-award economics.
 
 ### Debt and macro: adequate liquidity, less freedom
 
 At June 2026, Wix held $960.9 million of cash, deposits, securities and restricted deposits against $500 million of bank debt and a $1.15 billion 0% convertible note, leaving $689.1 million of face net debt. Adding the last-audited $89.5 million Base44 earnout yields the model's $778.6 million central claims bridge. Operating-lease liabilities are disclosed separately because raw FCF already includes lease cash; subtracting the full lease liability without adjusting cash flow would count the leases twice.
 
-The bank borrowing is floating-rate and classified current. A one-percentage-point rate move changes annual pre-tax interest on $500 million by $5 million, but the more important risk is capital allocation: the bank facility must be rolled or repaid during the twelve-month valuation horizon. Approximately $457 million of liquidity is associated with described collateral at the 28 August shekel rate, although the exact legal restriction cannot be reconstructed from financial-statement captions. Gross liquidity covers the bank balance about 1.92 times. The agreement caps Bank Debt divided by FCF at 2.0 times, but the exact lender-defined Bank Debt numerator cannot be reconstructed from public disclosures. Using the full $500 million balance and management's $420 million adjusted-FCF guide gives 1.19 times; that is a conservative diagnostic, not proof of covenant compliance. This is not a solvency thesis; it is a constraint on combining debt paydown, buybacks, acquisitions and prolonged Base44 subsidy.
+The bank borrowing is floating-rate, classified current and must be rolled or repaid during the twelve-month valuation horizon. A one-percentage-point rate move changes annual pre-tax interest by $5 million. Reported liquidity covers the bank balance, although public captions do not permit a clean reconstruction of the collateral restriction. The agreement caps Bank Debt divided by FCF at 2.0 times. The exact lender-defined Bank Debt numerator cannot be reconstructed from public disclosures, and management's adjusted FCF is not proven identical to covenant FCF. Using the full $500 million balance and management's $420 million adjusted-FCF guide gives 1.19 times; this is a conservative diagnostic, not proof of compliance. This is not a solvency thesis; it is a constraint on combining debt repayment, buybacks, acquisitions and prolonged Base44 subsidy.
 
 The 0% convertible note matures in September 2030; zero interest does not make its principal disappear. Below its $210.49 conversion price it remains a $1.15 billion claim. Above that price the model removes the debt and adds roughly 5.464 million conversion shares, while conservatively giving no value to Wix's separate capped-call hedge—options Wix bought to offset some conversion dilution. This prevents the high-valuation cases from ignoring either debt or dilution.
 
 Israel concentration is much higher in expenses and people than revenue. Shekel strength can raise the dollar cost of local payroll; geopolitical stress can interrupt labor or raise the equity risk premium even if customer revenue is globally diversified. The model's 11% base weighted average cost of capital (WACC)—the blended return demanded by lenders and shareholders—is therefore above Damodaran's January 2026 U.S. software anchors while remaining below the erosion-case rate used in fixed-assumption sensitivity work.
 
+The balance sheet can fund the transition. Whether that spending earns a return depends on an organization being rebuilt while it runs.
+
+## Execution: capable, concentrated and disrupted
+
+Wix reported 4,371 employees at June 2026, down 18.1% from year-end after the reorganization. An authorized licensed résumé-based Revelio view showed 5,284 estimated profiles, **-11.5% workforce growth, 23.4% hiring and 34.8% estimated employee departures, or attrition**, in its latest/default view. The underlying observation date was not surfaced and the profile population is not payroll, so the filing count remains authoritative. The right interpretation is simultaneous contraction and recruiting—reallocation around Base44 and AI, not a simple freeze.
+
+Across the named peer set, observed workforce growth ranged from -3.2% to +9.9% and estimated attrition from 11.9% to 37.9%. Wix's -11.5% growth and 34.8% attrition sit toward the disruptive end. The businesses and résumé-profile populations differ, so this is a warning signal rather than a causal comparison; the full peer table remains in the workforce memo.
+
+The mix confirms a substantial engineering base. Roughly 37% of observed profiles are classified as software developers and another 8% as software engineers; software skills have gained share over the longer history. About half of observed profiles sit in Central and Western Asia, with Israel likely dominant based on Wix's filings and office footprint, followed by Eastern Europe, Northern Europe, North America and Southern Asia. The licensed view also suggests that the retained workforce has become more tenured.
+
+Wix still carries a broader marketing, operations and support layer than smaller design-platform peers. Base44's openings lean toward enterprise sales, account management, education and communications: functions that may improve production retention but raise the mature cost floor. Interviews describe several hundred Wix-group contributors while Shlomo retains 41 direct reports. That combination is fast and operationally concentrated.
+
+Abrahami says repeated attempts to replace support with AI failed Wix-scale tests: support is both a near-term trust advantage and a structural cost. In a separate research-and-development interview, leadership says approximately 1,300 engineers registered for more than 100 AI-training sessions and speculates that teams of about twenty can move toward two or three. That explains the ambition behind the 20% cut, while making product judgment and retained platform knowledge the new bottlenecks. Elevated turnover is therefore a transition risk, not merely a source of savings.
+
+Employee reviews show the same tension. Glassdoor has Wix at 4.1/5, with 79% recommending the company and 84% approving the chief executive, but only 59% expressing a positive outlook; Indeed is 3.7/5. Platform disagreement and selection bias preclude a morale estimate, but the approval-outlook gap is consistent with transition anxiety.
+
+Beneath that disruption sits an extraordinarily stable executive team. Abrahami has led since 2006; President and Chief Operating Officer Nir Zohar joined in 2007; Chief Marketing Officer Omer Shai in 2008; Chief Technology Officer Yaniv Even-Haim led research and development from 2010; and Chief Financial Officer Lior Shemesh joined in 2013. That provides institutional memory and platform knowledge. It can also breed insularity; tenure is not evidence of good decisions.
+
+The origin story explains the continuity. Wix began when the founders found building a website for a different startup unnecessarily painful, tested several products on common visual technology and selected websites partly to avoid dependence on another platform. Beauty and direct manipulation were deliberate early priorities. Abrahami describes a decentralized culture in which leaders receive key performance indicators and frameworks, then make most operating decisions, combined with intense work norms and fast hiring and exiting for fit. That culture can repeatedly produce product bets; it can also normalize turnover, overextension and founder-centric judgment.
+
+At 31 January 2026, executives and directors beneficially held 7.2%, including options and restricted stock units. The ownership aligns them economically, but the buyback record is a better capital-allocation test than biography.
+
+### Capital allocation: confidence, not skill
+
+From 2021–2025 Wix spent **$1.6 billion** repurchasing 12.154 million shares at an average $131.65. Outstanding shares fell only 1.038 million from year-end 2020 to 2025. Approximately 91% of gross repurchases were offset by issuance.
+
+The simple explanation is that Wix bought shares from investors while issuing almost as many new shares through employee compensation and other instruments. The company spent substantial cash, but the ownership represented by each remaining share improved only modestly.
+
+The prices were poor: $223.43 average in 2021, $129.75 in 2024 and $162.25 in 2025. In March 2026 Wix then issued 3.267 million shares at $79.591 plus warrants—rights to buy shares later—and used cash and floating-rate debt to repurchase 17.577 million shares through a tender offer at $92. The tender reduced the basic count by about 24% net from January to May, a meaningful per-share step-up, but left the company with approximately $689 million of debt principal minus listed liquid assets, or face net debt.
+
+Management clearly believes the stock is worth more. It has not demonstrated reliable buyback price discipline. Abrahami's 20VC answer framed repurchases as dividend-equivalent and partly an offset to shares issued as stock-based compensation. That is more candid than treating repurchases as proof that management knows the company cannot fail.
+
 ## Valuation: why $4 billion, $2 billion and $10–12 billion can all appear plausible
 
-The corrected value at $87.62 is $3.67 billion on explicit basic shares and $4.32 billion on second-quarter non-GAAP diluted shares. Face net debt raises enterprise value to $4.36–5.01 billion.
+At $87.62, the explicit basic count implies $3.67 billion of equity value, the model's normalized diluted denominator implies $4.03 billion and the second-quarter non-GAAP weighted-average denominator gives the $4.32 billion illustration. Adding face net debt produces enterprise values of approximately $4.36 billion, $4.72 billion and $5.01 billion, respectively.
 
 > **Plain-English aside — who owns which value.** Equity value belongs to shareholders. Enterprise value adds net debt and other financial claims because a buyer of the whole operating business would inherit them. A company with $100 of equity, $30 of debt and $10 of cash has $120 of enterprise value. To turn enterprise value back into per-share equity value, subtract net claims and divide by the applicable diluted share count.
 
-Three methods disagree:
-
-The following Bear/Base/Bull cases are three fixed, unweighted operating narratives. They are not alternative labels for the P10/P50/P90 distribution percentiles above.
+The following methods produce materially different values. Bear, Base and Bull are fixed, unweighted operating narratives; they are not alternative labels for the P10, P50 and P90 distribution percentiles above.
 
 | Method | Bear | Base | Bull |
 | --- | ---: | ---: | ---: |
@@ -366,13 +346,15 @@ The following Bear/Base/Bull cases are three fixed, unweighted operating narrati
 
 The $2 billion equity case—roughly $43–48 per share depending on the share denominator—is a plausible severe downside case: core growth turns negative, Base44's valuation multiple collapses and owner FCFF falls toward the low-$200 millions. It is below the formal twelve-month P10 of $62.68 but close to the $49.40 average across the worst 10% of modeled paths, and remains possible when cash flow and competitive position fail together.
 
-The $4 billion case is approximately today's normalized diluted equity value. It assumes Wix remains valuable but Base44/platform option value and owner-cash recovery are not fully proven.
+The $4 billion case is approximately today's broader diluted equity value. It assumes Wix remains valuable but Base44/platform option value and owner-cash recovery are not fully proven.
 
-The $10–12 billion case is about $210–255 per diluted share. It requires something close to the bull SOTP: core ARR still growing at a valuation of 3.5 times ARR, Base44 around $350 million ARR at 13 times ARR and improving transaction economics, with dilution treated under the existing award, warrant and convertible conventions. It does **not** require Wix itself to receive Lovable's 26.6-times multiple, but it requires Base44 to become a credible high-growth platform and Wix to win agent distribution.
+The $10–12 billion case is about $210–255 per diluted share. It requires something close to the bull SOTP: core ARR still growing at a valuation of 3.5 times ARR, Base44 around $350 million ARR at 13 times ARR and improving transaction economics, with current awards and the warrant and convertible conventions reflected. Recurring future-award economics are assumed within the core multiple rather than separately deducted. The case does **not** require Wix itself to receive Lovable's 26.6-times multiple, but it requires Base44 to become a credible high-growth platform and Wix to win agent distribution.
 
 The base-method anchors span roughly **$92–130**: $92 is the fixed-assumption owner-cash DCF cross-check, while $130.27 is the formal twelve-month SOTP median (mean $132.52). The owner-cash DCF median across individual simulation paths is only about $80.51, so the SOTP/DCF gap is disclosed model-form uncertainty rather than a number to hide inside an average.
 
 A reverse DCF puts the current price in operating terms. At $87.62, the base DCF path implies roughly $302 million of starting owner FCFF, close to the report's $315 million base estimate. A stricter test with flat $315 million FCFF supports only about $58.68 per share. The market is therefore pricing durable cash improvement rather than imminent death; most modeled upside still depends on separable Base44 or platform value.
+
+The formal distribution is also sensitive to the analyst-assigned structural weights and Base44 cost assumptions. Moving ten percentage points of model weight from platform win to AI erosion lowers the twelve-month median to **$121.27**, mean to **$118.62**, and raises the below-reference frequency to **28.7%**. A separate case with only 10% platform weight has a $123.39 median and $120.44 mean. Moving Base44's modeled post-gross-profit owner-cost load 15 percentage points lower or higher moves the formal median to $136.53 or $124.36. These are judgment-based stresses, not probabilities learned from a long history of comparable outcomes.
 
 ## Strongest bear case
 
@@ -380,13 +362,13 @@ The bear case is not that websites disappear. It is that Wix loses the economic 
 
 1. Claude/ChatGPT/Lovable/Replit or a cloud/model provider such as Google become the default starting interface.
 2. They bundle or select hosting, database, payments, domains and analytics.
-3. Automated migration preserves search rankings and business data well enough to eliminate switching friction.
-4. Wix keeps servicing an aging installed base but loses new cohorts and Partner mindshare.
+3. Wix keeps servicing an aging installed base but loses new cohorts, pricing power, paid-product attachment and Partner mindshare.
+4. Automated migration eventually preserves search rankings and business data well enough to reduce switching friction further.
 5. Price/mix can no longer hide paid-subscription decline.
 6. Base44 remains a low-margin product built largely around outside AI models, whose marketing and model-running costs absorb core free cash flow.
 7. Debt and stock-based-compensation dilution magnify per-share impairment after the tender.
 
-That path produces fair value near $40 without Wix “dying”; the report makes no traded-price convergence forecast.
+That is the low-$40s equity case described above; the fixed-method bear values span $28–$54. Wix need not “die” for shareholders to suffer severe impairment, and the report makes no traded-price convergence forecast.
 
 ## Strongest bull case
 
@@ -401,6 +383,14 @@ The bull case is that AI expands creation rather than destroying platforms:
 7. Public markets value Base44 at a fraction of Lovable but no longer at zero.
 
 This supports bull-case fair value of $170–250. It is possible, not proven.
+
+Those scenarios describe business value; the 50% rebound also contains some market-structure noise.
+
+## What the rebound may already reflect
+
+Major holders do not provide a clean signal. The 2025 filing listed Ameriprise, Wellington, Baillie Gifford and Senvest among the largest owners. Baillie Gifford's later percentage rose because the tender reduced Wix's share count even as its absolute holding fell; Wellington subsequently dropped below 5%. Senvest publicly argued that Base44 deserved roughly $2.5 billion while its reportable position fell 22.3% during the second quarter. The filing cannot distinguish tender participation from open-market sales, so the contradiction is context rather than a verdict. Its valuation logic resembles this dossier's Base44 SOTP, but adjusted FCF does not fully charge recurring dilution or restructuring and acquisition cash; equity value must then separately deduct net debt and contingent claims and account for unseasoned retention evidence.
+
+Short interest also fell by approximately 3.45 million shares between 30 June and 14 August while the stock recovered. The decline reduces one potential source of incremental demand; it does not establish how much of the rebound came from covering or what would drive the next move. The operating evidence below is decision-relevant to fair value; it is not a forecast of the next traded-price move.
 
 ## What to watch next
 
@@ -420,11 +410,13 @@ Upgrade only if several improve together. A revenue beat powered by Base44 marke
 
 ## Final judgment
 
-Wix is not Fiverr with a new AI label, and it is not Lovable at a public-market discount. It is a mature, technically capable small-business platform with real installed operations, a newly leveraged balance sheet, weak historical buyback discipline and a credible but unproven bridge into the agent era.
+Wix is neither a legacy website builder awaiting obsolescence nor Lovable available at an automatic public-market discount. It is a mature, technically capable small-business platform with real installed operations, a newly leveraged balance sheet, weak historical buyback discipline and a credible but unproven bridge into the agent era.
 
-The key insight is temporal: **new-customer creation is exposed now; installed operational revenue is slower to unwind.** That buys Wix time. Harmony, Base44 and MCP show management is using the time intelligently at the product level. Partner weakness, workforce disruption, Base44 opacity and owner-cash quality mean investors should still demand proof.
+The key insight is temporal: **new-customer creation is exposed now; installed operational revenue is slower to unwind.** That buys Wix time. Management has shipped concrete responses through Harmony, Base44 and MCP; adoption and returns remain unproved. Partner weakness, workforce disruption, Base44 opacity and owner-cash quality mean investors should still demand proof.
 
-At $87.62, the absolute fair-value case supports a starter position for an investor whose diversification and loss limits can absorb the modeled downside. The model does not forecast when Wix's traded price converges to fair value or what the Invesco QQQ exchange-traded fund—the Nasdaq-100 benchmark used here—returns, so benchmark-relative expected return remains undefined and the formal stance is `insufficient_evidence`. That label is a modeling limitation, not a bearish view. Existing holders should evaluate concentration separately from fair value; historical cost basis and unrealized gains do not change the value of the security today.
+At $87.62, the absolute fair-value case supports a starter position for an investor whose diversification and loss limits can absorb the modeled downside. The model does not forecast traded-price convergence or the return of the Invesco QQQ exchange-traded fund—the Nasdaq-100 benchmark used here—so benchmark-relative expected return remains undefined and the formal stance is **insufficient evidence**. That label is a modeling limitation, not a bearish view.
+
+Existing holders should evaluate concentration separately from fair value. Historical cost basis and unrealized gains do not change the security's value today.
 
 ## Evidence map
 
@@ -441,4 +433,4 @@ At $87.62, the absolute fair-value case supports a starter position for an inves
 - [Decision](../decisions/2026-W35-decision.md)
 - [Source log](../sources.md)
 
-The evidence base includes twenty-seven complete public videos, presentations and technical panels: nine Wix, six Base44, six Lovable and six Replit. Transcript-derived claims were retained only as timestamped original analysis and checked against playback or underlying primary sources where material. Items without an accessible complete transcript were excluded from transcript-derived claims. No complete transcript, machine-generated research report, paid-source copy or licensed workforce capture is committed. The dossier remains draft research. `Uncalibrated_shadow` means the distribution is a structured, judgment-based model that has not yet been validated against enough completed forecasts to claim empirical calibration; it is not a realized-return forecast.
+The evidence base includes twenty-seven complete public videos, presentations and technical panels: nine Wix, six Base44, six Lovable and six Replit. Transcript claims were retained only as timestamped analysis and checked against playback or primary evidence where material; inaccessible items were excluded. No complete transcript, machine-generated research report, paid-source copy or licensed workforce capture is committed. The distribution remains an uncalibrated shadow forecast: it is judgment-based and has not been validated against enough completed forecasts to claim empirical calibration. The dossier remains draft research.

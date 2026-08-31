@@ -5,9 +5,9 @@ ticker: WIX
 coverage_cycle_id: WIX-2026-W35-01
 status: draft
 review_status: passed
-reviewed_at: 2026-08-31T15:02:29+02:00
+reviewed_at: 2026-08-31T15:42:15+02:00
 reviewer_independence: independent_agent
-reviewed_final_report_hash: sha256:df304a6327ffc9433d274a5a43f7be0fab60d47ff350be74d2b68e52d3386afa
+reviewed_final_report_hash: sha256:6562010f43ead7aa8def3bed07c8fb6ba2fb340f7e7944dfeb85a4777f23fda8
 reviewed_valuation_hash: sha256:fc600654dba3001a3b99a8c7bf30f76fa38eba53e356ee7a2408b60817136b94
 reviewed_decision_hash: sha256:ab6d1da1991bf1b0fb824627832401ec10449b1ed845a5ae04aa3b2b85204dda
 reviewed_contract_hash: sha256:645c79b14fc567ed60b413ed851b1ebea3c3474e7c563ccce2cf666f69d84459
@@ -22,7 +22,7 @@ scope: independent-valuation-publication-review
 
 ## Verdict
 
-**Passed for the exact hashes above.** Three independent readers first audited finance, product and narrative accessibility; three evidence tracks then checked the adjoining Wix research for missing stand-alone context; and two editors independently selected and cut the proposed additions. A separate adversarial reviewer blocked the first integrated draft for a filed-bookings definition, covenant-language, dilution and fair-value-versus-price issues. A separate repair pass resolved them, after which the reviewer recomputed all six hashes, reread the complete report and valuation records, ran the executable verifier and targeted tests, and returned PASS. The evidence, valuation, decision, contract and model remain unchanged.
+**Passed for the exact hashes above.** Three independent readers first audited finance, product and narrative accessibility; adjoining-report and editorial tracks then selected only decision-relevant context. The canonical report was subsequently rebuilt around one causal sequence and cut from 8,215 to 7,546 words. Independent flow, AI/moat and financial-model reviewers all returned PASS on the exact report hash above. The evidence, valuation, decision, contract and executable model remain unchanged.
 
 ## General-reader accessibility refresh
 
@@ -30,11 +30,23 @@ The canonical report now:
 
 - explains the business state Wix can retain beneath an outside AI interface and defines Model Context Protocol and headless operation at first use;
 - translates annual recurring revenue, remaining performance obligations, free cash flow, stock-based compensation, owner FCFF, sum-of-the-parts valuation, discounted cash flow, enterprise value and the P10/P50/P90 distribution where each first affects the decision;
-- uses six short plain-English asides, while keeping product names and non-decision-critical technical detail out of a glossary;
+- uses four short plain-English asides, while keeping product names and non-decision-critical technical detail out of a glossary;
 - uses a salon example to explain Wix's overlapping revenue pools and distinguishes a copied page from a safely migrated operating business;
 - states Wix's filed definition of bookings and labels the 1.19-times bank-debt ratio as a conservative diagnostic rather than proof of covenant compliance;
 - carries the model's existing award, warrant and convertible conventions into the $210–255 bull-case prose; and
 - distinguishes target-date fair value from traded-price convergence and the absolute valuation from the unresolved QQQ-relative return.
+
+## Final narrative and accuracy pass
+
+The final editorial pass now follows one argument from front to back: AI commoditizes creation; operating state makes the installed base slower to move; agent access can defend that state but can also disintermediate Wix; Base44 is the growth hedge; and owner cash, dilution, debt and execution determine whether the response creates per-share value. The pass:
+
+- removed repeated retention, MCP, technical-benchmark and institutional-holder passages rather than layering more prose onto them;
+- moved financial quality and debt directly after the product and customer evidence, then joined workforce, culture and buybacks as one execution-and-capital-allocation test;
+- distinguishes 41.850 million point-in-time basic shares, the model's 45.989 million normalized pre-contingent denominator and the second-quarter 49.271 million non-GAAP diluted weighted-average earnings denominator;
+- states the $92.158 million Base44 purchase-accounting bridge, the later $89.531 million contingent-liability remeasurement and separate retention/equity obligations without presenting them as one cash purchase;
+- explains that owner-cash methods explicitly charge future awards while formal SOTP relies on the core multiple to absorb recurring future-award economics not separately deducted from core enterprise value or issued into horizon shares;
+- preserves the covenant ratio only as a diagnostic because the lender-defined Bank Debt numerator and equivalence of management adjusted FCF to covenant FCF cannot be proved; and
+- keeps net debt and contingent claims in the enterprise-to-equity bridge rather than describing them as cash-flow charges.
 
 ## Publication-language refresh
 
@@ -69,7 +81,7 @@ The passed version-4 snapshot:
 - separates the current $270m normalized owner-FCFF anchor, target core cash before future awards, the explicit $90–130m future-award charge and Base44 owner contribution;
 - makes Base44 post-gross-profit cost load affect the voting Base44 SOTP multiple; a ±15-point load shift moves the twelve-month median to $136.53/$124.36;
 - applies one claims bridge, treasury-stock warrant treatment and a conservative if-converted convention, while disclosing the omitted capped-call benefit and the 1.083m maximum warrant reserve;
-- holds the target denominator flat because current awards are included and future vintages are economically charged, avoiding double counting;
+- holds the formal horizon denominator flat after current awards; future-award economics are explicit in owner-cash methods and Base44's cost and retained-cash path, while the core SOTP multiple implicitly absorbs recurring awards;
 - discloses that the structural regime deliberately bundles adoption/growth/multiple centroids while unit economics, WACC and draw-level shocks remain separate; and
 - treats Partners as an overlapping channel rather than an additive segment.
 

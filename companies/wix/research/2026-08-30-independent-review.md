@@ -5,9 +5,9 @@ ticker: WIX
 coverage_cycle_id: WIX-2026-W35-01
 status: draft
 review_status: passed
-reviewed_at: 2026-08-31T00:09:32+02:00
+reviewed_at: 2026-08-31T15:02:29+02:00
 reviewer_independence: independent_agent
-reviewed_final_report_hash: sha256:d843cd73afe60c73dac64f0c7870b5b4793055e6c77b2b937c3563e5516a0c61
+reviewed_final_report_hash: sha256:df304a6327ffc9433d274a5a43f7be0fab60d47ff350be74d2b68e52d3386afa
 reviewed_valuation_hash: sha256:fc600654dba3001a3b99a8c7bf30f76fa38eba53e356ee7a2408b60817136b94
 reviewed_decision_hash: sha256:ab6d1da1991bf1b0fb824627832401ec10449b1ed845a5ae04aa3b2b85204dda
 reviewed_contract_hash: sha256:645c79b14fc567ed60b413ed851b1ebea3c3474e7c563ccce2cf666f69d84459
@@ -22,7 +22,19 @@ scope: independent-valuation-publication-review
 
 ## Verdict
 
-**Passed for the exact hashes above.** Three specialist-agent tracks researched and adversarially checked customer reviews, agentic competition and evidence-to-model transmission. A separate independent agent recomputed all six hashes, reviewed the updated sources and claims, and executed the valuation verifier, company validator, repository validator and targeted Wix tests. The 31 August publication-language refresh was then checked independently against the unchanged evidence and executable model. No publication blocker, unsupported model change, double count, source-cutoff breach or valuation/decision mismatch remained.
+**Passed for the exact hashes above.** Three independent readers first audited finance, product and narrative accessibility; three evidence tracks then checked the adjoining Wix research for missing stand-alone context; and two editors independently selected and cut the proposed additions. A separate adversarial reviewer blocked the first integrated draft for a filed-bookings definition, covenant-language, dilution and fair-value-versus-price issues. A separate repair pass resolved them, after which the reviewer recomputed all six hashes, reread the complete report and valuation records, ran the executable verifier and targeted tests, and returned PASS. The evidence, valuation, decision, contract and model remain unchanged.
+
+## General-reader accessibility refresh
+
+The canonical report now:
+
+- explains the business state Wix can retain beneath an outside AI interface and defines Model Context Protocol and headless operation at first use;
+- translates annual recurring revenue, remaining performance obligations, free cash flow, stock-based compensation, owner FCFF, sum-of-the-parts valuation, discounted cash flow, enterprise value and the P10/P50/P90 distribution where each first affects the decision;
+- uses six short plain-English asides, while keeping product names and non-decision-critical technical detail out of a glossary;
+- uses a salon example to explain Wix's overlapping revenue pools and distinguishes a copied page from a safely migrated operating business;
+- states Wix's filed definition of bookings and labels the 1.19-times bank-debt ratio as a conservative diagnostic rather than proof of covenant compliance;
+- carries the model's existing award, warrant and convertible conventions into the $210–255 bull-case prose; and
+- distinguishes target-date fair value from traded-price convergence and the absolute valuation from the unresolved QQQ-relative return.
 
 ## Publication-language refresh
 

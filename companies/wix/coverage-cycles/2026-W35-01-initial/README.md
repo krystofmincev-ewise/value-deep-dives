@@ -19,15 +19,15 @@ decision_path: ../../decisions/2026-W35-decision.md
 valuation_contract_path: ../../valuation/2026-W35-valuation-contract.json
 forecast_path: null
 review_status: passed
-reviewed_at: 2026-08-31T00:09:32+02:00
-final_report_hash: sha256:d843cd73afe60c73dac64f0c7870b5b4793055e6c77b2b937c3563e5516a0c61
+reviewed_at: 2026-08-31T15:02:29+02:00
+final_report_hash: sha256:df304a6327ffc9433d274a5a43f7be0fab60d47ff350be74d2b68e52d3386afa
 valuation_hash: sha256:fc600654dba3001a3b99a8c7bf30f76fa38eba53e356ee7a2408b60817136b94
 decision_hash: sha256:ab6d1da1991bf1b0fb824627832401ec10449b1ed845a5ae04aa3b2b85204dda
 valuation_contract_hash: sha256:645c79b14fc567ed60b413ed851b1ebea3c3474e7c563ccce2cf666f69d84459
 model_hash: sha256:8ad49ccb70ca73bf7a940e3d5bc3bd523ad76505661de45033f2e14bc9150eef
 verifier_hash: sha256:e45dca3c0c1e212ed4c5ff451b69b41f04156a31ccf3cff8ce33b9df3ce5d86e
 review_path: ../../research/2026-08-30-independent-review.md
-review_hash: sha256:f820e38d4e8ca889d3180ca62ff0faae2e743332d4b2324eee4fbec901af0770
+review_hash: sha256:777796c5723755c35d1e9e08a42b977cd2813abe09f1486b00ab5064a55fe5a0
 tags: [website-builder, saas, payments, ai-agents, vibe-coding, initial-coverage]
 ---
 
@@ -44,4 +44,4 @@ tags: [website-builder, saas, payments, ai-agents, vibe-coding, initial-coverage
 | Source provenance | [Source log](../../sources.md) |
 | Independent checks | [Review](../../research/2026-08-30-independent-review.md) |
 
-This is a draft public research record, not personalized investment advice. It supports a current-opportunity decision from $87.62 and excludes purchase history from the valuation. Three specialist-agent tracks and a fresh hash-bound independent review passed the customer-review and agentic-platform update against the exact canonical snapshot above.
+This is a draft public research record, not personalized investment advice. It supports a current-opportunity decision from $87.62 and excludes purchase history from the valuation. Three accessibility-review tracks, two independent editorial syntheses, an adversarial full-report review, a separate repair pass and a fresh hash-bound review passed the general-reader revision against the exact canonical snapshot above. The evidence, valuation, decision and executable model are unchanged.

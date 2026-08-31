@@ -5,9 +5,9 @@ ticker: WIX
 coverage_cycle_id: WIX-2026-W35-01
 status: draft
 review_status: passed
-reviewed_at: 2026-08-31T15:42:15+02:00
+reviewed_at: 2026-08-31T22:55:28+02:00
 reviewer_independence: independent_agent
-reviewed_final_report_hash: sha256:6562010f43ead7aa8def3bed07c8fb6ba2fb340f7e7944dfeb85a4777f23fda8
+reviewed_final_report_hash: sha256:6ac13cf6e9a3bcc9a56bfaed214ca7c025668cb340f2449bdcefd092dc79342e
 reviewed_valuation_hash: sha256:fc600654dba3001a3b99a8c7bf30f76fa38eba53e356ee7a2408b60817136b94
 reviewed_decision_hash: sha256:ab6d1da1991bf1b0fb824627832401ec10449b1ed845a5ae04aa3b2b85204dda
 reviewed_contract_hash: sha256:645c79b14fc567ed60b413ed851b1ebea3c3474e7c563ccce2cf666f69d84459
@@ -22,7 +22,7 @@ scope: independent-valuation-publication-review
 
 ## Verdict
 
-**Passed for the exact hashes above.** Three independent readers first audited finance, product and narrative accessibility; adjoining-report and editorial tracks then selected only decision-relevant context. The canonical report was subsequently rebuilt around one causal sequence and cut from 8,215 to 7,546 words. Independent flow, AI/moat and financial-model reviewers all returned PASS on the exact report hash above. The evidence, valuation, decision, contract and executable model remain unchanged.
+**Passed for the exact hashes above.** Three independent readers first audited finance, product and narrative accessibility; adjoining-report and editorial tracks then selected only decision-relevant context. The canonical report was subsequently rebuilt around one causal sequence and cut from 8,215 to 7,546 words. Independent flow, AI/moat and financial-model reviewers passed that substantive revision. A subsequent publication-language edit removed the licensed workforce provider's name from one sentence; an independent reviewer checked the exact current report hash and confirmed that the evidence description, limitations, surrounding flow and investment conclusion remain unchanged. The valuation, decision, contract and executable model remain unchanged.
 
 ## General-reader accessibility refresh
 

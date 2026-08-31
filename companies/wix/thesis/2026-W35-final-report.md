@@ -302,7 +302,7 @@ The balance sheet can fund the transition. Whether that spending earns a return 
 
 ## Execution: capable, concentrated and disrupted
 
-Wix reported 4,371 employees at June 2026, down 18.1% from year-end after the reorganization. An authorized licensed résumé-based Revelio view showed 5,284 estimated profiles, **-11.5% workforce growth, 23.4% hiring and 34.8% estimated employee departures, or attrition**, in its latest/default view. The underlying observation date was not surfaced and the profile population is not payroll, so the filing count remains authoritative. The right interpretation is simultaneous contraction and recruiting—reallocation around Base44 and AI, not a simple freeze.
+Wix reported 4,371 employees at June 2026, down 18.1% from year-end after the reorganization. A licensed résumé-based workforce dataset showed 5,284 estimated profiles, **-11.5% workforce growth, 23.4% hiring and 34.8% estimated employee departures, or attrition**, in its latest/default view. The underlying observation date was not surfaced and the profile population is not payroll, so the filing count remains authoritative. The right interpretation is simultaneous contraction and recruiting—reallocation around Base44 and AI, not a simple freeze.
 
 Across the named peer set, observed workforce growth ranged from -3.2% to +9.9% and estimated attrition from 11.9% to 37.9%. Wix's -11.5% growth and 34.8% attrition sit toward the disruptive end. The businesses and résumé-profile populations differ, so this is a warning signal rather than a causal comparison; the full peer table remains in the workforce memo.
 

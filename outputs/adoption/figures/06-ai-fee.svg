@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 765" width="560" height="765" role="img" aria-labelledby="06-ai-fee-title 06-ai-fee-desc">
+<title id="06-ai-fee-title">The AI bill has a destination</title>
+<desc id="06-ai-fee-desc">Consumer shops receive 80 and pay 13.6 to the domestic AI supplier. Their value added is 66.4; adding AI value added 13.6 and equipment 20 reconciles to nominal GDP 100. The AI fee is already included.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="765" fill="#fffdf8"/>
+<text x="24" y="46" font-size="31" fill="#223c36" text-anchor="start">The AI bill goes somewhere</text>
+<g class="teaching-stage" data-step="1">
+<rect x="105" y="91" width="350" height="118" rx="12" fill="#edf1ea"/>
+<text x="280" y="134" font-size="28" fill="#223c36" text-anchor="middle">Shops receive</text>
+<text x="280" y="185" font-size="42" fill="#223c36" text-anchor="middle">80</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<line x1="280" y1="211" x2="280" y2="244" stroke="#58675f" stroke-width="3"/>
+<line x1="147" y1="244" x2="413" y2="244" stroke="#58675f" stroke-width="3"/>
+<line x1="147" y1="244" x2="147" y2="280" stroke="#236654" stroke-width="3"/>
+<line x1="140.7889327926546" y1="270.92130823599354" x2="147" y2="280" stroke="#236654" stroke-width="3"/>
+<line x1="153.2110672073454" y1="270.92130823599354" x2="147" y2="280" stroke="#236654" stroke-width="3"/>
+<circle class="travel-token" data-step="2" data-from="147,244" data-to="147,280" r="8" fill="#236654"/>
+<line x1="413" y1="244" x2="413" y2="280" stroke="#376d9a" stroke-width="3"/>
+<line x1="406.78893279265463" y1="270.92130823599354" x2="413" y2="280" stroke="#376d9a" stroke-width="3"/>
+<line x1="419.21106720734537" y1="270.92130823599354" x2="413" y2="280" stroke="#376d9a" stroke-width="3"/>
+<circle class="travel-token" data-step="2" data-from="413,244" data-to="413,280" r="8" fill="#376d9a"/>
+<rect x="24" y="298" width="246" height="121" rx="12" fill="#edf1ea"/>
+<text x="147" y="343" font-size="28" fill="#236654" text-anchor="middle">Shops’ value</text>
+<text x="147" y="394" font-size="42" fill="#236654" text-anchor="middle">66.4</text>
+<rect x="290" y="298" width="246" height="121" rx="12" fill="#edf1ea"/>
+<text x="413" y="343" font-size="28" fill="#376d9a" text-anchor="middle">AI receives</text>
+<text x="413" y="394" font-size="42" fill="#376d9a" text-anchor="middle">13.6</text>
+<text x="413" y="466" font-size="26" fill="#a66d13" text-anchor="middle">Then to owners</text>
+</g>
+<g class="teaching-stage" data-step="3">
+<rect x="24" y="516" width="512" height="126" rx="12" fill="#edf1ea"/>
+<text x="280" y="558" font-size="28" fill="#223c36" text-anchor="middle">Shops 66.4 + AI 13.6</text>
+<text x="280" y="610" font-size="28" fill="#223c36" text-anchor="middle">+ equipment 20 = GDP 100</text>
+<text x="24" y="700" font-size="28" fill="#223c36" text-anchor="start">The AI fee is inside this total.</text>
+<text x="24" y="741" font-size="26" fill="#58675f" text-anchor="start">It is not extra final spending.</text>
+</g>
+</svg>

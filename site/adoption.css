@@ -1,0 +1,194 @@
+@import url('teaching.css');
+
+#adoption-case {
+  display: block;
+  width: 100%;
+  font: inherit;
+  margin-top: 12px;
+  padding: 12px;
+  background: #fffdf8;
+  color: var(--ink);
+  border: 1px solid #9caea5;
+  border-radius: 8px;
+  white-space: normal;
+}
+
+.round-controls {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.round-controls input {
+  flex: 1;
+  min-width: 180px;
+  accent-color: var(--green);
+}
+
+.round-controls label {
+  font-weight: 700;
+}
+
+.round-controls button {
+  font-size: 15px;
+}
+
+.round-controls button:disabled {
+  opacity: .5;
+  cursor: default;
+}
+
+.adoption-metrics {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.firm-cards,
+.decision-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.firm-card,
+.decision-card {
+  min-width: 0;
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 20px;
+  background: #f5f6ef;
+}
+
+.firm-card h3,
+.decision-card h4 {
+  margin: 0 0 16px;
+}
+
+.decision-card h4 {
+  font-size: 1.1em;
+}
+
+.firm-card dl,
+.decision-card dl {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px 16px;
+  margin: 0;
+}
+
+.firm-card dd,
+.decision-card dd {
+  margin: 0;
+  font-weight: 700;
+  text-align: right;
+}
+
+.firm-card dt,
+.decision-card dt {
+  color: var(--muted);
+}
+
+.decision-details {
+  margin-top: 24px;
+}
+
+.decision-label {
+  font-weight: 650;
+  margin: 0 0 16px;
+}
+
+.decision-reason {
+  border-top: 1px solid var(--rule);
+  margin-bottom: 0;
+  padding-top: 16px;
+}
+
+.decision-card .fine {
+  margin-bottom: 0;
+}
+
+.money-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.money-cards strong {
+  font: 42px Georgia, serif;
+}
+
+.panel h2 {
+  margin: 0 0 20px;
+}
+
+.danger {
+  padding: 16px;
+  border-left: 4px solid #a44432;
+  background: #fff1e9;
+}
+
+#path-chart {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#path-chart text {
+  font: 15px system-ui;
+  fill: #58675f;
+}
+
+input:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 5px;
+}
+
+@media (max-width: 700px) {
+  .adoption-metrics {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .firm-cards,
+  .decision-cards,
+  .money-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .money-cards p {
+    margin: 6px 0;
+  }
+
+  .money-cards strong {
+    font-size: 34px;
+  }
+
+  .round-controls input {
+    order: 2;
+    flex-basis: 100%;
+    min-height: 40px;
+  }
+
+  .firm-card,
+  .decision-card {
+    padding: 16px;
+  }
+
+  .firm-card dl,
+  .decision-card dl {
+    font-size: 15px;
+  }
+
+  .panel {
+    padding: 18px;
+  }
+
+  .metric strong {
+    font-size: 38px;
+  }
+}
+
+@media print {
+  .round-controls {
+    display: none;
+  }
+}

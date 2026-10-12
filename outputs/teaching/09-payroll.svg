@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 540" width="560" height="540" role="img" aria-labelledby="09-payroll-title 09-payroll-desc">
+<title id="09-payroll-title">Payday at one equipment producer</title>
+<desc id="09-payroll-desc">Each of two equipment makers has 1 of cash available for wages 3, leaving 2 unpaid. Together arrears 4. Town GDP 67.75 exceeds contracted wages 60 but is not cash in these firms’ accounts.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="540" fill="#fffdf8"/>
+<g class="teaching-stage" data-step="1">
+<rect x="24" y="20" width="512" height="112" rx="12" fill="#edf1ea"/>
+<rect x="24" y="20" width="6" height="112" rx="0" fill="#223c36"/>
+<text x="42" y="55" font-size="26" fill="#223c36" text-anchor="start">Wages due today</text>
+<text x="42" y="103" font-size="42" fill="#223c36" text-anchor="start">3</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<line x1="280" y1="136" x2="280" y2="185" stroke="#236654" stroke-width="3"/>
+<line x1="273.78893279265463" y1="175.92130823599354" x2="280" y2="185" stroke="#236654" stroke-width="3"/>
+<line x1="286.21106720734537" y1="175.92130823599354" x2="280" y2="185" stroke="#236654" stroke-width="3"/>
+<circle class="travel-token" data-step="2" data-from="280,136" data-to="280,185" r="8" fill="#236654"/>
+<rect x="24" y="205" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="24" y="205" width="6" height="112" rx="0" fill="#236654"/>
+<text x="42" y="240" font-size="26" fill="#236654" text-anchor="start">Cash available</text>
+<text x="42" y="288" font-size="42" fill="#236654" text-anchor="start">1</text>
+</g>
+<g class="teaching-stage" data-step="3">
+<rect x="290" y="205" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="290" y="205" width="6" height="112" rx="0" fill="#a44432"/>
+<text x="308" y="240" font-size="26" fill="#a44432" text-anchor="start">Still unpaid</text>
+<text x="308" y="288" font-size="42" fill="#a44432" text-anchor="start">2</text>
+<text x="280" y="382" font-size="29" fill="#a44432" text-anchor="middle">Two firms × gap 2 = unpaid 4</text>
+<text x="280" y="449" font-size="29" fill="#223c36" text-anchor="middle">Town GDP: 67.75</text>
+<text x="280" y="496" font-size="24" fill="#58675f" text-anchor="middle">That is not cash in this firm’s account.</text>
+</g>
+</svg>

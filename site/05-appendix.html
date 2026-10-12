@@ -1,0 +1,255 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Appendix: inside the town</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="teaching.css"><style>.table-scroll{overflow-x:auto}.table-scroll table{min-width:560px}.teaching-article code{overflow-wrap:anywhere}.teaching-article pre{overflow-x:auto}html{scroll-behavior:auto}</style></head><body><a class="skip-link" href="#article">Skip to the article</a><main class="article teaching-article" id="article"><nav><a href="https://krystofmincev.substack.com/p/ai-needs-a-customer">The original GDP paper</a><a href="05-who-buys-what-ai-makes.html">Combined paper</a><a href="05-appendix.html">Appendix</a><a href="adoption.html">Explore the accounts</a></nav><h1 id="appendix-inside-the-town">Appendix: inside the town</h1>
+<p><strong><a href="../site/05-who-buys-what-ai-makes.html">Return to the illustrated paper →</a></strong></p>
+<p><a href="https://github.com/krystofmincev-ewise/value-deep-dives/tree/main/studies/toy-economy">Public repository: source code, tests and saved results</a></p>
+<p>This appendix accompanies <em>Who buys what AI makes?</em> It separates accounting facts, assumptions and simulated outcomes. The models demonstrate conditional possibilities. They are not calibrated forecasts of wages, GDP, AI revenues or adoption dates.</p>
+<h2 id="a-two-experiments-with-separate-extensions">A. Two experiments, with separate extensions</h2>
+<p>The narrative uses one town as a teaching device. The code does not pretend that every feature operates inside one integrated simulation.</p>
+<div class="table-scroll" role="region" aria-label="Comparison table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Experiment</th>
+<th>What it follows</th>
+<th>What it deliberately simplifies</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ten-business economy</td>
+<td>Five pairs of firms; supplier payments, wages, owner income, equipment orders and cash across rounds</td>
+<td>Fixed prices in the cash experiments; worker and owner household groups rather than ten distinct household budgets</td>
+</tr>
+<tr>
+<td>Gradual AI economy</td>
+<td>Two consumer shops with five workers each, an AI supplier, an equipment supplier; contracts, prices, tasks and individual household accounts</td>
+<td>Supplier infrastructure is inherited; its running inputs are simplified; owners' accounts are pooled; pricing and purchasing follow declared rules</td>
+</tr>
+<tr>
+<td>Banking extension</td>
+<td>Loans, deposits, repayments, interest, losses and payroll or household spending gaps</td>
+<td>Separate from the relative-price AI engine; one bank, no bank runs, no investment loans or separately measured banking-service output</td>
+</tr>
+<tr>
+<td>Capital-growth extension</td>
+<td>Investment, depreciation and productive capacity over time</td>
+<td>Separate physical growth model; demand and financing sufficient to sell output are assumed, rather than established by the cash engine</td>
+</tr>
+<tr>
+<td>Corporate-structure extension</td>
+<td>An AI provider buying an existing shop or building a new production line</td>
+<td>Fixed consumer budgets and prices isolate transaction mechanics; no optimized entry, acquisition valuation or integrated demand feedback</td>
+</tr>
+</tbody>
+</table></div>
+<p>The original <a href="../site/03-when-the-economy-breaks.html">illustrated town paper</a> and <a href="../site/04-ai-arrives-one-shop-at-a-time.html">gradual AI paper</a> remain unchanged. Their fuller discussions complement this combined account.</p>
+<h2 id="b-what-the-main-quantities-mean">B. What the main quantities mean</h2>
+<p><strong>GDP</strong> counts production during a round. In the closed town, final expenditure is household consumption plus investment. There is no government or foreign trade. The accounting system also calculates GDP as firms' value added: sales less purchases of intermediate inputs. Those two views must agree.</p>
+<p><strong>Nominal GDP</strong> values output at current prices. <strong>Real GDP</strong> here uses the starting prices throughout. This is a simple fixed-base measure, not the chain-weighted procedure of a national statistics office. A price cut can raise real purchases without increasing nominal spending.</p>
+<p><strong>Consumption</strong> means goods actually purchased for household use. It is not all spending: newly produced business equipment belongs to investment. The models do not quantify happiness, leisure preferences, public services, distributional justice or the value of unpaid activity.</p>
+<p><strong>Gross investment</strong> includes both replacement and expansion. <strong>Net investment</strong> subtracts equipment depreciation. An equity purchase transfers an existing claim; it is not production of new equipment.</p>
+<p><strong>Income</strong> is earned during a round; <strong>cash</strong> is a balance available at a moment. A household can have cash from earlier rounds but, under an income-based spending rule, not request to spend all of it. A company can report losses for several rounds while using an opening cash reserve.</p>
+<p><strong>Profit and dividends</strong> are also distinct. Profit is the operating result. Dividends are cash actually distributed after the applicable payment rules. The shared-income experiment distributes specified rights to cash dividends; it does not give households an unlimited claim on accounting profits or new money.</p>
+<p><strong>A payment stop</strong> records an obligation that a firm cannot meet under the model's financing rules. The run ends with the failing round retained. It does not imply zero output forever after, nor model bankruptcy, restructuring or a public rescue.</p>
+<h2 id="c-starting-accounts-and-the-first-experiment">C. Starting accounts and the first experiment</h2>
+<p>The benchmark has GDP 100: consumption 80 and equipment investment 20. Wages are 60 and gross owner income 40. Workers consume their 60; owners consume 20 and finance equipment purchases of 20. Fixed-price cash runs start with a money stock of 200. It is conserved unless the separate bank changes deposits through lending or repayment.</p>
+<p>The ten firms' gross sales sum to about 169.4 because some sell inputs to others. Their combined value added is only 100. Adding every sale as though it were final output would double count intermediate production.</p>
+<p>Removing wages does not identify one outcome. It identifies a question that must be completed with spending and ownership assumptions:</p>
+<div class="table-scroll" role="region" aria-label="Comparison table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Wage-free arrangement</th>
+<th style="text-align: right;">Eventual household consumption</th>
+<th style="text-align: right;">Equipment investment</th>
+<th style="text-align: right;">GDP</th>
+<th style="text-align: right;">Former workers' consumption</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Owners raise consumption enough to sustain the original output</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>Worker group receives ownership income replacing its old wages</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">60</td>
+</tr>
+<tr>
+<td>Owners consume half their income; investment remains fixed</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>Owners consume half; investment is one fifth of prior income</td>
+<td style="text-align: right;">Shrinks</td>
+<td style="text-align: right;">Shrinks</td>
+<td style="text-align: right;">Tends toward zero</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table></div>
+<p>In the last arrangement, next-round spending is 0.5 of prior income plus 0.2 for equipment. Thus <code>Y[t+1] = 0.7 × Y[t]</code> in the stated wage-free comparison. The sequence 100, 70, 49, 34.3 is a consequence of those rules, not a universal economic multiplier.</p>
+<p>Holding investment fixed gives a smaller continuing economy; making investment respond to falling sales adds a contraction mechanism. Neither saving nor automation alone determines which rule is appropriate outside the experiment.</p>
+<p>The <a href="../model-spec.md">model specification</a>, <a href="../research/shock-specification.md">shock specification</a> and <a href="../research/shock-cash-results.md">cash results</a> contain timing and ledger details. See <a href="../outputs/results.json">saved original results</a> and <a href="../outputs/shocks/results.json">shock results</a>.</p>
+<h2 id="d-tasks-pay-and-prices-in-the-ai-shops">D. Tasks, pay and prices in the AI shops</h2>
+<p>Each shop starts with five workers, a wage bill of 30 and consumer sales of 40. Together the shops require ten full human shifts to make eighty baskets. If AI performs fraction <code>a</code> of the tasks, human task-time for output <code>q</code> is <code>q × (1−a) / 8</code>; AI task-time is <code>q × a / 8</code>.</p>
+<p>These are task requirements, not an automatic staffing decision. A contract determines paid time; a staffing rule determines who receives it. Protected salaries, reduced paid hours, layoffs, rotating shifts and redeployment can therefore differ even at identical automation shares.</p>
+<p>AI normally costs three coins per task-hour in these examples. Each consumer shop starts with equipment capacity 100; equipment depreciates at ten percent per round and initial replacement orders total 20. Price adjustment follows a specified cost-pass-through rule. It is not an optimized market-clearing equilibrium.</p>
+<p>At 40% assigned automation in both shops, the main contract comparison yields:</p>
+<div class="table-scroll" role="region" aria-label="Comparison table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Contract and use of freed time</th>
+<th style="text-align: right;">Worker wages</th>
+<th style="text-align: right;">Worker baskets</th>
+<th style="text-align: right;">Real GDP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Starting town</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr>
+<td>Protected pay, redeploy time for possible additional output</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">68.18</td>
+<td style="text-align: right;">110.91</td>
+</tr>
+<tr>
+<td>Protected pay, shorter planned shifts</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">53.57</td>
+<td style="text-align: right;">91.43</td>
+</tr>
+<tr>
+<td>Reduce paid hours</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">40.91</td>
+<td style="text-align: right;">83.64</td>
+</tr>
+</tbody>
+</table></div>
+<p>“Assigned” matters: these comparisons impose matching technology paths to isolate contracts. They do not claim each shop would voluntarily choose every intervention.</p>
+<p>Ten people sharing six paid shifts and six people retaining full shifts produce the same aggregate wage bill in the tested comparison. They do not produce the same individual income distribution. Rotating shifts changes the timing of individual wages even when total worker consumption matches the shorter-hours case.</p>
+<p>The private-choice rule is a separate treatment. A shop compares its next-step operating profit with the current arrangement, using inherited rival prices and current customer budgets. In the hourly-pay example, its initial forecast rises from 10 to 10.6. After both reach 40% automation, actual profit per shop is about 5.23. With protected pay and the same fee, the first step is rejected because forecast profit falls to about 9.08. Free AI changes that choice. These are bounded decisions, not a general proof about fully informed rational agents.</p>
+<p>The <a href="../research/adoption-model.md">adoption model</a>, <a href="../outputs/adoption/results.json">saved paths</a> and <a href="../site/adoption.html">interactive accounts</a> retain the exact ordering of purchases, production, wages and distributions.</p>
+<h2 id="e-timing-income-sharing-and-the-meaning-of-recovery">E. Timing, income sharing and the meaning of recovery</h2>
+<p>Gradual paths can preserve paychecks while job losses are delayed. Under the matched spending rules in the ten-firm experiments, that improves consumption during the transition without necessarily changing the eventual endpoint. In protected-pay AI paths, delaying automation instead delays cheaper goods.</p>
+<p>Randomized arrival experiments vary when usable AI stages become available to the two shops. They use declared seeds and invented probabilities. The resulting distributions describe this simulated uncertainty only. They do not estimate the probability of an actual recession or any calendar-year outcome. The retained adoption experiments include 6,000 randomized runs, 192 coarse parameter comparisons and 37 named cases; failures are recorded separately from completed paths.</p>
+<p>With full automation and ample AI capacity, the no-sharing path leaves former workers with zero consumption and real GDP about 48.57. Giving the worker group sixty percent of distributed cash dividends at the final stage gives worker consumption about 82.63 and real GDP about 129.14. Nominal GDP in that shared-income endpoint is 96.4: real output and current-price spending are different quantities.</p>
+<p>Ownership rights are gifted, not purchased. Original owners still finance equipment. These rules establish one possible route to purchasing power, not a claim that the transition happens spontaneously or that this is the optimal distribution.</p>
+<p>Timing can alter the result when investment also follows sales. In a separate late-sharing path, sharing stabilizes a much smaller economy: nominal GDP about 24.03 and real GDP about 32.27. Giving people claims on the income of a shrunken economy does not instantly rebuild its market.</p>
+<p>The older recovery example is distinct: after a temporary order pause and labor reallocation, wages return to 60 and equipment purchases to 20. Owners finance equipment before consuming, and their consumption remains zero; GDP settles at 80. Workers do not spend down accumulated cash under the income-based rule. The outcome depends on that closure, rather than establishing inevitable permanent scarring.</p>
+<h2 id="f-what-the-bank-changes">F. What the bank changes</h2>
+<p>Both bank comparisons use the same capitalization. Out of the original 200, firms contribute 20 of capital; customer deposits then total 180 and bank equity is 20. Lending is not compared with an otherwise identical economy secretly given extra startup wealth.</p>
+<p>A bank loan creates a customer deposit and an equal debt. Paying a supplier moves that deposit. Repaying principal removes a deposit and the matching loan principal. Interest is a transfer to bank income and ultimately owners in these tests. A default loss reduces bank equity; it does not erase the deposits already spent into other accounts. For the underlying accounting, see the <a href="https://www.bankofengland.co.uk/quarterly-bulletin/2014/q1/money-creation-in-the-modern-economy">Bank of England's explanation of money creation</a> and our <a href="../research/banking-foundations.md">banking foundations note</a>.</p>
+<p>With a five-round pause in equipment orders, the no-credit comparison has unpaid wages of 2 in round 7. Zero-interest credit bridges the interruption, reaches peak debt 14, and is fully repaid after orders resume. Longer interruptions or mismatched repayment dates can exceed the bank's willingness to lend or the borrower's available cash.</p>
+<p>In the household example, two missing wage rounds require total borrowing 120 to maintain worker consumption of 60 each round. After wages return, repaying principal at 12 a round temporarily leaves only 48 for consumption. At zero interest, credit changes consumption's timing but not its total over the tested horizon; positive interest reduces that household total by interest paid.</p>
+<p>A known permanent income loss is refused. A mistaken recovery forecast followed by forgiveness of 20 consumes bank equity of 20. Larger losses trigger an insolvency stop; the program does not invent a rescue. Interest sensitivities of one percent are per invented model round, not annual interest rates.</p>
+<p>These are one-bank payroll and household-credit experiments. They do not show that all lending merely rearranges a fixed future output: a loan funding productive investment could change capacity and future income, but that mechanism is outside these runs. See <a href="../research/banking-model.md">banking model</a> and <a href="../site/banking.html">bank explorer</a>.</p>
+<h2 id="g-maximum-output-sustainable-output-and-consumption">G. Maximum output, sustainable output and consumption</h2>
+<p>The fine grid tests 101 automation shares in each of ten profiles: 1,010 runs, with 152 payment stops and 858 completions through the planned 80 rounds. A failed run is retained but excluded from equal-horizon rankings. A grid maximum is the best tested completed path under its profile, not a universal optimum.</p>
+<p>With protected pay, redeployment, an AI fee of 3 and AI capacity of 10 task-hours, the best endpoint is 50% automation: real GDP about 114.12, including consumer purchases about 94.12. Worker purchases are about 70.59. Actual AI utilization is only about 58.8%. The price rule's planning quota drives the peak; realized AI service is not physically exhausted.</p>
+<p>Increasing AI capacity to 25 changes the best completed 80-round endpoint to 58% automation, with real GDP about 117.59. However, each consumer shop loses about 0.307 per round and ends round 79 with cash about 3.269. Extending the path causes unpaid wages in round 90. An alternative screening out final-round losses and buffer depletion selects 55%, which also survives a 120-round check. Survival for 120 rounds is still not proof of indefinite sustainability.</p>
+<p>Holding inherited consumer equipment at 200 and keeping ten human shifts available, the physical envelope is:</p>
+<p><code>Q(a) ≤ min(200, 80/(1−a), 8A/a)</code></p>
+<p>where <code>A</code> is total AI task capacity. At a zero denominator, the corresponding task is not required. The maximum of this static envelope is <code>min(200, 8 × (10+A))</code>: 160 consumer baskets for AI capacity 10, or 200 for capacity 25. This is a resource ceiling, not a demand, profitability or financing forecast. It is not a bound on a future economy that builds more equipment.</p>
+<p>The <a href="../research/adoption-frontier.md">frontier note</a> and <a href="../outputs/adoption/frontier.json">full grid</a> distinguish these concepts and show all profiles, ties and local peaks.</p>
+<p>The capital-growth extension asks a different question. With scalable automated capital and investment exceeding depreciation, output can keep growing without workers; without a resource limit or diminishing returns there is no finite ceiling inside that technology. Sufficient demand and clearing prices are assumed in this module.</p>
+<p>Under the separate diminishing-return technology, maximum stationary consumption occurs at GDP 250: consumption 125 plus replacement 125. Maximum stationary GDP is 500, all used for replacement, leaving consumption zero. These are <strong>stationary</strong> comparisons: a stock that can be maintained at its chosen size. They are not a solution to an optimal transition with discounting, welfare or leisure preferences. See <a href="../outputs/shocks/limits.json">growth-limit results</a>.</p>
+<h2 id="h-buying-a-company-and-building-something-are-different">H. Buying a company and building something are different</h2>
+<p>This additional controlled experiment is useful for interpreting an AI supplier's expansion. Customer budgets and prices are fixed so that transaction mechanics can be inspected separately.</p>
+<div class="table-scroll" role="region" aria-label="Comparison table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Event</th>
+<th style="text-align: right;">Consumption</th>
+<th style="text-align: right;">Produced equipment</th>
+<th style="text-align: right;">GDP</th>
+<th>What happened?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Baseline</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">100</td>
+<td>Ordinary replacement</td>
+</tr>
+<tr>
+<td>AI supplier buys an existing shop</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">100</td>
+<td>Cash and an ownership claim change hands</td>
+</tr>
+<tr>
+<td>Supplier buys equipment for a new line</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">120</td>
+<td>New equipment is produced</td>
+</tr>
+<tr>
+<td>New line operates, with replacement afterward</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">102</td>
+<td>Same household purchases; more equipment wears out</td>
+</tr>
+</tbody>
+</table></div>
+<p>The acquisition uses existing supplier cash; its price is assumed. It does not automatically create productivity. The new line takes some sales from incumbents because total customer spending remains fixed. Its extra replacement requirement raises gross GDP by 2 without increasing consumption; net domestic product remains 80 after depreciation.</p>
+<p>An acquisition followed by automation is compared with the same automation without acquisition. Production matches. The ownership transfer itself is not the technology improvement. The model does not solve optimal merger strategy or allow every form of parent-company support. See <a href="../research/adoption-structure.md">corporate-structure specification</a> and <a href="../outputs/adoption/structure.json">fourteen saved paths and eighteen sensitivities</a>.</p>
+<h2 id="i-the-war-analogy-what-it-explains-and-what-it-does-not">I. The war analogy: what it explains and what it does not</h2>
+<p>The bridge is a hypothetical illustration of production versus wealth. Producing a replacement counts as current activity; destruction of an old asset is separately recorded. A disaster or war can also interrupt current production, so rebuilding does not establish that total GDP rises.</p>
+<p>The model's routine replacement is depreciation. Exceptional disaster and war losses have a different national-accounting treatment; they are not ordinary consumption of fixed capital. Net domestic product, which deducts ordinary depreciation, is therefore not a complete measure of the effects of war either. The analogy supports a narrow question—how much production improves people's position?—not a quantitative comparison between AI and war.</p>
+<p>Sources checked on 12 October 2026:</p>
+<div class="table-scroll" role="region" aria-label="Comparison table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Publication / revision</th>
+<th>Evidence and use</th>
+<th>Access and retention</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.bea.gov/help/faq/1013">BEA: production and income after disasters</a></td>
+<td>Published 28 November 2012; page modified 26 October 2022</td>
+<td>Primary statistical guidance; verifies current production, rebuilding and separate asset losses</td>
+<td>Public official webpage; retrieved with web open; verified against page text; link and original paraphrase only, no retained source copy</td>
+</tr>
+<tr>
+<td><a href="https://www.bea.gov/help/faq/1014">BEA: fixed assets and depreciation after disasters</a></td>
+<td>Published 28 November 2012; page modified 26 October 2022</td>
+<td>Primary statistical guidance; verifies exceptional losses are excluded from ordinary depreciation</td>
+<td>Public official webpage; retrieved with web open; verified against page text; link and original paraphrase only, no retained source copy</td>
+</tr>
+</tbody>
+</table></div>
+<p>Existing AI and banking source provenance remains in the <a href="../research/adoption-sources.md">adoption sources</a>, <a href="../research/adoption-foundations.md">adoption foundations</a> and <a href="../research/banking-foundations.md">banking foundations</a>. Numerical results in this paper come from synthetic program output, not those external sources.</p>
+<h2 id="j-reproduce-and-audit">J. Reproduce and audit</h2>
+<p>The simulation engines are unchanged by this combined edition. Two separate subagents reviewed the combined manuscript for <a href="../research/combined-economics-review.md">economic accuracy</a> and <a href="../research/combined-readability-review.md">clarity and diagram consistency</a>; their records identify the reviewed versions and verification limits. Earlier computational reviews concern their own recorded model snapshots. See <a href="../research/adoption-validation.md">adoption verification</a>, <a href="../research/adoption-sol-review.md">Sol review</a> and <a href="../research/adoption-astra-review.md">Astra review</a>.</p>
+<p>From the study directory, the core models and tests require only Python's standard library:</p>
+<pre><code class="language-sh">PYTHONPATH=src python3 -m unittest discover -s tests -v
+PYTHONPATH=src python3 -m toy_economy.cli --output outputs
+</code></pre>
+<p>The existing <a href="../README.md">README</a> provides each extension's reproduction commands and optional rendering dependencies. The combined manuscript is <a href="../articles/05-who-buys-what-ai-makes.md">plain Markdown</a>; this <a href="../articles/05-appendix.md">appendix source</a> is separate. Rebuild these reading editions with the prepared environment:</p>
+<pre><code class="language-sh">.venv/bin/python scripts/combined_figures.py
+.venv/bin/python scripts/build_combined_report.py
+</code></pre>
+<p>Most diagrams reuse the preceding papers' saved, data-linked figures. The new cash-buffer illustration is sourced to the saved frontier and documented extension check. The static edition displays every stage. The optional step edition reveals the same figures under reader control, starts without autoplay, and respects reduced-motion preferences.</p>
+<p>The models intentionally omit many mechanisms: new occupations and products, retraining, changing preferences, public spending and taxes, international trade, migration, resource depletion, endogenous AI research, competitive equilibrium and general bankruptcy resolution. These omissions limit what we can conclude. They do not prevent us from tracing the payments and physical constraints that the models actually include.</p>
+<p><strong><a href="../site/05-who-buys-what-ai-makes.html#back-to-the-car">Return to the conclusion →</a></strong></p><footer>Research explainer · 12 October 2026 · Two simulation families, with separate extensions · <a href="../README.md">Code and reproduction</a></footer></main></body></html>

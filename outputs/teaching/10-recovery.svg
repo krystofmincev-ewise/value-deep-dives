@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 490" width="560" height="490" role="img" aria-labelledby="10-recovery-title 10-recovery-desc">
+<title id="10-recovery-title">A town can survive without restoring all purchases</title>
+<desc id="10-recovery-desc">Separate 15-period equipment-freeze run, all workers retained. Long-run purchases 60 workers+0 owners+20 equipment=80 versus initial 60+20+20=100. Income-only spending and finance priority explain path dependence.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="490" fill="#fffdf8"/>
+<g class="teaching-stage" data-step="1">
+<text x="24" y="48" font-size="27" fill="#223c36" text-anchor="start">Before the pause</text>
+<rect x="24" y="65" width="512" height="34" rx="0" fill="#edf1ea"/>
+<rect x="24.0" y="65" width="307.2" height="34" rx="0" fill="#236654"/>
+<rect x="331.2" y="65" width="102.4" height="34" rx="0" fill="#a66d13"/>
+<rect x="433.6" y="65" width="102.4" height="34" rx="0" fill="#376d9a"/>
+<text x="536" y="137" font-size="32" fill="#223c36" text-anchor="end">60 + 20 + 20 = 100</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<line x1="280" y1="166" x2="280" y2="211" stroke="#223c36" stroke-width="3"/>
+<line x1="273.78893279265463" y1="201.92130823599354" x2="280" y2="211" stroke="#223c36" stroke-width="3"/>
+<line x1="286.21106720734537" y1="201.92130823599354" x2="280" y2="211" stroke="#223c36" stroke-width="3"/>
+<circle class="travel-token" data-step="2" data-from="280,166" data-to="280,211" r="8" fill="#223c36"/>
+<text x="24" y="263" font-size="27" fill="#223c36" text-anchor="start">After the town settles</text>
+<rect x="24" y="280" width="512" height="34" rx="0" fill="#edf1ea"/>
+<rect x="24.0" y="280" width="307.2" height="34" rx="0" fill="#236654"/>
+<rect x="331.2" y="280" width="102.4" height="34" rx="0" fill="#376d9a"/>
+<text x="536" y="352" font-size="32" fill="#223c36" text-anchor="end">60 + 0 + 20 = 80</text>
+<text x="280" y="423" font-size="34" fill="#223c36" text-anchor="middle">GDP: 100 → 80</text>
+<text x="280" y="468" font-size="27" fill="#58675f" text-anchor="middle">Survival is not full recovery.</text>
+</g>
+</svg>

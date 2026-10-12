@@ -1,0 +1,4468 @@
+[
+  {
+    "summary": {
+      "name": "permanent_gradual_no_credit",
+      "outcome": "credit_refused",
+      "stop_reason": null,
+      "last_completed_period": 99,
+      "requested_periods": 100,
+      "initial_reserves": 200.0,
+      "initial_deposits": 180.0,
+      "initial_bank_equity": 20.0,
+      "initial_firm_deposits": 80,
+      "total_principal_advanced": 0.0,
+      "total_principal_repaid": 0.0,
+      "total_principal_forgiven": 0.0,
+      "total_interest_paid": 0.0,
+      "total_interest_forgiven": 0.0,
+      "terminal_outstanding_principal": 0.0,
+      "terminal_unpaid_interest": 0.0,
+      "terminal_total_debt_owed": 0.0,
+      "default_count": 0,
+      "refusal_count": 10,
+      "first_debt_free_period": null,
+      "minimum_bank_equity": 20.0,
+      "maximum_outstanding_principal": 0.0,
+      "minimum_gdp": 40.0,
+      "terminal_gdp": 40.0,
+      "terminal_worker_consumption": 0.0,
+      "terminal_owner_consumption": 20.0,
+      "cumulative_worker_consumption_through_stop": 600.0,
+      "cumulative_gdp_through_stop": 4660.0,
+      "total_bank_profit_distributed": 0.0,
+      "maximum_transaction_balance_sheet_error": 5.968558980384842e-13,
+      "bank_capital_depleted": false,
+      "bank_insolvent": false,
+      "wage_arrears": 0.0
+    },
+    "periods": [
+      {
+        "period": 0,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 1,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 2,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 3,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 4,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 5,
+        "workers": 8,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 6,
+        "workers": 8,
+        "gdp": 94.0,
+        "worker_consumption": 48.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 7,
+        "workers": 6,
+        "gdp": 91.0,
+        "worker_consumption": 48.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 8,
+        "workers": 6,
+        "gdp": 83.5,
+        "worker_consumption": 36.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 9,
+        "workers": 4,
+        "gdp": 79.75,
+        "worker_consumption": 36.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 10,
+        "workers": 4,
+        "gdp": 71.875,
+        "worker_consumption": 24.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 11,
+        "workers": 2,
+        "gdp": 67.9375,
+        "worker_consumption": 24.000000000000007,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 12,
+        "workers": 2,
+        "gdp": 59.96875,
+        "worker_consumption": 12.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 13,
+        "workers": 0,
+        "gdp": 55.984375,
+        "worker_consumption": 12.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 14,
+        "workers": 0,
+        "gdp": 47.9921875,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 15,
+        "workers": 0,
+        "gdp": 43.99609375,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 16,
+        "workers": 0,
+        "gdp": 41.998046875,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 17,
+        "workers": 0,
+        "gdp": 40.9990234375,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 18,
+        "workers": 0,
+        "gdp": 40.49951171875,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 19,
+        "workers": 0,
+        "gdp": 40.249755859375,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 20,
+        "workers": 0,
+        "gdp": 40.1248779296875,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 21,
+        "workers": 0,
+        "gdp": 40.06243896484375,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 22,
+        "workers": 0,
+        "gdp": 40.031219482421875,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 23,
+        "workers": 0,
+        "gdp": 40.01560974121094,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 24,
+        "workers": 0,
+        "gdp": 40.00780487060547,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 25,
+        "workers": 0,
+        "gdp": 40.003902435302734,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 26,
+        "workers": 0,
+        "gdp": 40.00195121765137,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 27,
+        "workers": 0,
+        "gdp": 40.000975608825684,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 28,
+        "workers": 0,
+        "gdp": 40.00048780441284,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 29,
+        "workers": 0,
+        "gdp": 40.00024390220642,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 30,
+        "workers": 0,
+        "gdp": 40.00012195110321,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 31,
+        "workers": 0,
+        "gdp": 40.000060975551605,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 32,
+        "workers": 0,
+        "gdp": 40.0000304877758,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 33,
+        "workers": 0,
+        "gdp": 40.0000152438879,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 34,
+        "workers": 0,
+        "gdp": 40.00000762194395,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 35,
+        "workers": 0,
+        "gdp": 40.000003810971975,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 36,
+        "workers": 0,
+        "gdp": 40.00000190548599,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 37,
+        "workers": 0,
+        "gdp": 40.000000952742994,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 38,
+        "workers": 0,
+        "gdp": 40.0000004763715,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 39,
+        "workers": 0,
+        "gdp": 40.00000023818575,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 40,
+        "workers": 0,
+        "gdp": 40.000000119092874,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 41,
+        "workers": 0,
+        "gdp": 40.00000005954644,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 42,
+        "workers": 0,
+        "gdp": 40.00000002977322,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 43,
+        "workers": 0,
+        "gdp": 40.00000001488661,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 44,
+        "workers": 0,
+        "gdp": 40.000000007443305,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 45,
+        "workers": 0,
+        "gdp": 40.00000000372165,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 46,
+        "workers": 0,
+        "gdp": 40.000000001860826,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 47,
+        "workers": 0,
+        "gdp": 40.00000000093041,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 48,
+        "workers": 0,
+        "gdp": 40.00000000046521,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 49,
+        "workers": 0,
+        "gdp": 40.0000000002326,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 50,
+        "workers": 0,
+        "gdp": 40.0000000001163,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 51,
+        "workers": 0,
+        "gdp": 40.00000000005815,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 52,
+        "workers": 0,
+        "gdp": 40.000000000029075,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 53,
+        "workers": 0,
+        "gdp": 40.00000000001454,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 54,
+        "workers": 0,
+        "gdp": 40.00000000000727,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 55,
+        "workers": 0,
+        "gdp": 40.00000000000364,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 56,
+        "workers": 0,
+        "gdp": 40.00000000000182,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 57,
+        "workers": 0,
+        "gdp": 40.00000000000091,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 58,
+        "workers": 0,
+        "gdp": 40.000000000000455,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 59,
+        "workers": 0,
+        "gdp": 40.00000000000023,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 60,
+        "workers": 0,
+        "gdp": 40.000000000000114,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 61,
+        "workers": 0,
+        "gdp": 40.00000000000006,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 62,
+        "workers": 0,
+        "gdp": 40.00000000000003,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 63,
+        "workers": 0,
+        "gdp": 40.000000000000014,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 64,
+        "workers": 0,
+        "gdp": 40.00000000000001,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 65,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 66,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 67,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 68,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 69,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 70,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 71,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 72,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 73,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 74,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 75,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 76,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 77,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 78,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 79,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 80,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 81,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 82,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 83,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 84,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 85,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 86,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 87,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 88,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 89,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 90,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 91,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 92,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 93,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 94,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 95,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 96,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 97,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 98,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 99,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      }
+    ]
+  },
+  {
+    "summary": {
+      "name": "permanent_gradual_prudent_bank",
+      "outcome": "credit_refused",
+      "stop_reason": null,
+      "last_completed_period": 99,
+      "requested_periods": 100,
+      "initial_reserves": 200.0,
+      "initial_deposits": 180.0,
+      "initial_bank_equity": 20.0,
+      "initial_firm_deposits": 80,
+      "total_principal_advanced": 0.0,
+      "total_principal_repaid": 0.0,
+      "total_principal_forgiven": 0.0,
+      "total_interest_paid": 0.0,
+      "total_interest_forgiven": 0.0,
+      "terminal_outstanding_principal": 0.0,
+      "terminal_unpaid_interest": 0.0,
+      "terminal_total_debt_owed": 0.0,
+      "default_count": 0,
+      "refusal_count": 10,
+      "first_debt_free_period": null,
+      "minimum_bank_equity": 20.0,
+      "maximum_outstanding_principal": 0.0,
+      "minimum_gdp": 40.0,
+      "terminal_gdp": 40.0,
+      "terminal_worker_consumption": 0.0,
+      "terminal_owner_consumption": 20.0,
+      "cumulative_worker_consumption_through_stop": 600.0,
+      "cumulative_gdp_through_stop": 4660.0,
+      "total_bank_profit_distributed": 0.0,
+      "maximum_transaction_balance_sheet_error": 5.968558980384842e-13,
+      "bank_capital_depleted": false,
+      "bank_insolvent": false,
+      "wage_arrears": 0.0
+    },
+    "periods": [
+      {
+        "period": 0,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 1,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 2,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 3,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 4,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 5,
+        "workers": 8,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 6,
+        "workers": 8,
+        "gdp": 94.0,
+        "worker_consumption": 48.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 7,
+        "workers": 6,
+        "gdp": 91.0,
+        "worker_consumption": 48.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 8,
+        "workers": 6,
+        "gdp": 83.5,
+        "worker_consumption": 36.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 9,
+        "workers": 4,
+        "gdp": 79.75,
+        "worker_consumption": 36.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 10,
+        "workers": 4,
+        "gdp": 71.875,
+        "worker_consumption": 24.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 11,
+        "workers": 2,
+        "gdp": 67.9375,
+        "worker_consumption": 24.000000000000007,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 12,
+        "workers": 2,
+        "gdp": 59.96875,
+        "worker_consumption": 12.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 13,
+        "workers": 0,
+        "gdp": 55.984375,
+        "worker_consumption": 12.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 14,
+        "workers": 0,
+        "gdp": 47.9921875,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 15,
+        "workers": 0,
+        "gdp": 43.99609375,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 16,
+        "workers": 0,
+        "gdp": 41.998046875,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 17,
+        "workers": 0,
+        "gdp": 40.9990234375,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 18,
+        "workers": 0,
+        "gdp": 40.49951171875,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 19,
+        "workers": 0,
+        "gdp": 40.249755859375,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 20,
+        "workers": 0,
+        "gdp": 40.1248779296875,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 21,
+        "workers": 0,
+        "gdp": 40.06243896484375,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 22,
+        "workers": 0,
+        "gdp": 40.031219482421875,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 23,
+        "workers": 0,
+        "gdp": 40.01560974121094,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 24,
+        "workers": 0,
+        "gdp": 40.00780487060547,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 25,
+        "workers": 0,
+        "gdp": 40.003902435302734,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 26,
+        "workers": 0,
+        "gdp": 40.00195121765137,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 27,
+        "workers": 0,
+        "gdp": 40.000975608825684,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 28,
+        "workers": 0,
+        "gdp": 40.00048780441284,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 29,
+        "workers": 0,
+        "gdp": 40.00024390220642,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 30,
+        "workers": 0,
+        "gdp": 40.00012195110321,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 31,
+        "workers": 0,
+        "gdp": 40.000060975551605,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 32,
+        "workers": 0,
+        "gdp": 40.0000304877758,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 33,
+        "workers": 0,
+        "gdp": 40.0000152438879,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 34,
+        "workers": 0,
+        "gdp": 40.00000762194395,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 35,
+        "workers": 0,
+        "gdp": 40.000003810971975,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 36,
+        "workers": 0,
+        "gdp": 40.00000190548599,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 37,
+        "workers": 0,
+        "gdp": 40.000000952742994,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 38,
+        "workers": 0,
+        "gdp": 40.0000004763715,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 39,
+        "workers": 0,
+        "gdp": 40.00000023818575,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 40,
+        "workers": 0,
+        "gdp": 40.000000119092874,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 41,
+        "workers": 0,
+        "gdp": 40.00000005954644,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 42,
+        "workers": 0,
+        "gdp": 40.00000002977322,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 43,
+        "workers": 0,
+        "gdp": 40.00000001488661,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 44,
+        "workers": 0,
+        "gdp": 40.000000007443305,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 45,
+        "workers": 0,
+        "gdp": 40.00000000372165,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 46,
+        "workers": 0,
+        "gdp": 40.000000001860826,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 47,
+        "workers": 0,
+        "gdp": 40.00000000093041,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 48,
+        "workers": 0,
+        "gdp": 40.00000000046521,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 49,
+        "workers": 0,
+        "gdp": 40.0000000002326,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 50,
+        "workers": 0,
+        "gdp": 40.0000000001163,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 51,
+        "workers": 0,
+        "gdp": 40.00000000005815,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 52,
+        "workers": 0,
+        "gdp": 40.000000000029075,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 53,
+        "workers": 0,
+        "gdp": 40.00000000001454,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 54,
+        "workers": 0,
+        "gdp": 40.00000000000727,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 55,
+        "workers": 0,
+        "gdp": 40.00000000000364,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 56,
+        "workers": 0,
+        "gdp": 40.00000000000182,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 57,
+        "workers": 0,
+        "gdp": 40.00000000000091,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 58,
+        "workers": 0,
+        "gdp": 40.000000000000455,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 59,
+        "workers": 0,
+        "gdp": 40.00000000000023,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 60,
+        "workers": 0,
+        "gdp": 40.000000000000114,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 61,
+        "workers": 0,
+        "gdp": 40.00000000000006,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 62,
+        "workers": 0,
+        "gdp": 40.00000000000003,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 63,
+        "workers": 0,
+        "gdp": 40.000000000000014,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 64,
+        "workers": 0,
+        "gdp": 40.00000000000001,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 65,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 66,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 67,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 68,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 69,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 70,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 71,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 72,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 73,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 74,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 75,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 76,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 77,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 78,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 79,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 80,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 81,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 82,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 83,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 84,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 85,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 86,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 87,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 88,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 89,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 90,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 91,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 92,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 93,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 94,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 95,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 96,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 97,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 98,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 99,
+        "workers": 0,
+        "gdp": 40.0,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      }
+    ]
+  },
+  {
+    "summary": {
+      "name": "permanent_gradual_mistaken_forecast",
+      "outcome": "default_with_forgiveness",
+      "stop_reason": "bank_insolvent",
+      "last_completed_period": 28,
+      "requested_periods": 100,
+      "initial_reserves": 200.0,
+      "initial_deposits": 180.0,
+      "initial_bank_equity": 20.0,
+      "initial_firm_deposits": 80,
+      "total_principal_advanced": 147.11782362430802,
+      "total_principal_repaid": 27.117823624308002,
+      "total_principal_forgiven": 28.082176375691997,
+      "total_interest_paid": 1.6821763756919998,
+      "total_interest_forgiven": 4.49314822011072,
+      "terminal_outstanding_principal": 91.917823624308,
+      "terminal_unpaid_interest": 16.601470087954205,
+      "terminal_total_debt_owed": 108.5192937122622,
+      "default_count": 1,
+      "refusal_count": 5,
+      "first_debt_free_period": null,
+      "minimum_bank_equity": -8.082176375691997,
+      "maximum_outstanding_principal": 120.0,
+      "minimum_gdp": 40.00077940241515,
+      "terminal_gdp": 40.00077940241515,
+      "terminal_worker_consumption": 0.0,
+      "terminal_owner_consumption": 20.000779402415144,
+      "cumulative_worker_consumption_through_stop": 718.317823624308,
+      "cumulative_gdp_through_stop": 2058.317044221893,
+      "total_bank_profit_distributed": 1.6821763756919985,
+      "maximum_transaction_balance_sheet_error": 1.1368683772161603e-13,
+      "bank_capital_depleted": true,
+      "bank_insolvent": true,
+      "wage_arrears": 0.0
+    },
+    "periods": [
+      {
+        "period": 0,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 1,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 2,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 3,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 4,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 5,
+        "workers": 8,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 6,
+        "workers": 8,
+        "gdp": 106.0,
+        "worker_consumption": 60.0,
+        "debt": 12.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 7,
+        "workers": 6,
+        "gdp": 109.0,
+        "worker_consumption": 60.0,
+        "debt": 16.92,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 8,
+        "workers": 6,
+        "gdp": 116.56,
+        "worker_consumption": 60.0,
+        "debt": 41.0892,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 9,
+        "workers": 4,
+        "gdp": 120.3646,
+        "worker_consumption": 60.0,
+        "debt": 67.588092,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 10,
+        "workers": 4,
+        "gdp": 128.231746,
+        "worker_consumption": 60.0,
+        "debt": 103.63997292,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 11,
+        "workers": 2,
+        "gdp": 107.70184054,
+        "worker_consumption": 35.56002708,
+        "debt": 118.5403997292,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 12,
+        "workers": 2,
+        "gdp": 79.3807204054,
+        "worker_consumption": 11.059600270799997,
+        "debt": 117.90180372649199,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 13,
+        "workers": 0,
+        "gdp": 65.539458339454,
+        "worker_consumption": 11.698196273508005,
+        "debt": 120.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 14,
+        "workers": 0,
+        "gdp": 52.769729169727,
+        "worker_consumption": 0.0,
+        "debt": 120.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 15,
+        "workers": 0,
+        "gdp": 46.3848645848635,
+        "worker_consumption": 0.0,
+        "debt": 120.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 16,
+        "workers": 0,
+        "gdp": 43.19243229243175,
+        "worker_consumption": 0.0,
+        "debt": 120.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 17,
+        "workers": 0,
+        "gdp": 41.59621614621587,
+        "worker_consumption": 0.0,
+        "debt": 120.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 18,
+        "workers": 0,
+        "gdp": 40.79810807310794,
+        "worker_consumption": 0.0,
+        "debt": 120.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 19,
+        "workers": 0,
+        "gdp": 40.39905403655397,
+        "worker_consumption": 0.0,
+        "debt": 120.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 20,
+        "workers": 0,
+        "gdp": 40.19952701827698,
+        "worker_consumption": 0.0,
+        "debt": 120.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 21,
+        "workers": 0,
+        "gdp": 40.09976350913849,
+        "worker_consumption": 0.0,
+        "debt": 120.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 22,
+        "workers": 0,
+        "gdp": 40.04988175456924,
+        "worker_consumption": 0.0,
+        "debt": 120.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 23,
+        "workers": 0,
+        "gdp": 40.02494087728462,
+        "worker_consumption": 0.0,
+        "debt": 120.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 24,
+        "workers": 0,
+        "gdp": 40.01247043864231,
+        "worker_consumption": 0.0,
+        "debt": 120.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 25,
+        "workers": 0,
+        "gdp": 40.006235219321155,
+        "worker_consumption": 0.0,
+        "debt": 120.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 26,
+        "workers": 0,
+        "gdp": 40.00311760966058,
+        "worker_consumption": 0.0,
+        "debt": 120.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 27,
+        "workers": 0,
+        "gdp": 40.00155880483029,
+        "worker_consumption": 0.0,
+        "debt": 120.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 28,
+        "workers": 0,
+        "gdp": 40.00077940241515,
+        "worker_consumption": 0.0,
+        "debt": 91.917823624308,
+        "bank_equity": -8.082176375691997
+      }
+    ]
+  },
+  {
+    "summary": {
+      "name": "gradual_then_wages_return_no_credit",
+      "outcome": "credit_refused",
+      "stop_reason": null,
+      "last_completed_period": 99,
+      "requested_periods": 100,
+      "initial_reserves": 200.0,
+      "initial_deposits": 180.0,
+      "initial_bank_equity": 20.0,
+      "initial_firm_deposits": 80,
+      "total_principal_advanced": 0.0,
+      "total_principal_repaid": 0.0,
+      "total_principal_forgiven": 0.0,
+      "total_interest_paid": 0.0,
+      "total_interest_forgiven": 0.0,
+      "terminal_outstanding_principal": 0.0,
+      "terminal_unpaid_interest": 0.0,
+      "terminal_total_debt_owed": 0.0,
+      "default_count": 0,
+      "refusal_count": 10,
+      "first_debt_free_period": null,
+      "minimum_bank_equity": 20.0,
+      "maximum_outstanding_principal": 0.0,
+      "minimum_gdp": 43.99609375,
+      "terminal_gdp": 100.0,
+      "terminal_worker_consumption": 60.0,
+      "terminal_owner_consumption": 20.0,
+      "cumulative_worker_consumption_through_stop": 5640.0,
+      "cumulative_gdp_through_stop": 9656.00390625,
+      "total_bank_profit_distributed": 0.0,
+      "maximum_transaction_balance_sheet_error": 2.5579538487363607e-13,
+      "bank_capital_depleted": false,
+      "bank_insolvent": false,
+      "wage_arrears": 0.0
+    },
+    "periods": [
+      {
+        "period": 0,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 1,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 2,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 3,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 4,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 5,
+        "workers": 8,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 6,
+        "workers": 8,
+        "gdp": 94.0,
+        "worker_consumption": 48.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 7,
+        "workers": 6,
+        "gdp": 91.0,
+        "worker_consumption": 48.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 8,
+        "workers": 6,
+        "gdp": 83.5,
+        "worker_consumption": 36.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 9,
+        "workers": 4,
+        "gdp": 79.75,
+        "worker_consumption": 36.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 10,
+        "workers": 4,
+        "gdp": 71.875,
+        "worker_consumption": 24.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 11,
+        "workers": 2,
+        "gdp": 67.9375,
+        "worker_consumption": 24.000000000000007,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 12,
+        "workers": 2,
+        "gdp": 59.96875,
+        "worker_consumption": 12.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 13,
+        "workers": 0,
+        "gdp": 55.984375,
+        "worker_consumption": 12.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 14,
+        "workers": 0,
+        "gdp": 47.9921875,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 15,
+        "workers": 10,
+        "gdp": 43.99609375,
+        "worker_consumption": 0.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 16,
+        "workers": 10,
+        "gdp": 80.0,
+        "worker_consumption": 59.99999999999999,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 17,
+        "workers": 10,
+        "gdp": 90.0,
+        "worker_consumption": 59.99999999999999,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 18,
+        "workers": 10,
+        "gdp": 95.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 19,
+        "workers": 10,
+        "gdp": 97.5,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 20,
+        "workers": 10,
+        "gdp": 98.74999999999999,
+        "worker_consumption": 59.999999999999986,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 21,
+        "workers": 10,
+        "gdp": 99.375,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 22,
+        "workers": 10,
+        "gdp": 99.6875,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 23,
+        "workers": 10,
+        "gdp": 99.84375,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 24,
+        "workers": 10,
+        "gdp": 99.921875,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 25,
+        "workers": 10,
+        "gdp": 99.9609375,
+        "worker_consumption": 59.99999999999999,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 26,
+        "workers": 10,
+        "gdp": 99.98046875,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 27,
+        "workers": 10,
+        "gdp": 99.990234375,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 28,
+        "workers": 10,
+        "gdp": 99.9951171875,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 29,
+        "workers": 10,
+        "gdp": 99.99755859375,
+        "worker_consumption": 59.99999999999999,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 30,
+        "workers": 10,
+        "gdp": 99.998779296875,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 31,
+        "workers": 10,
+        "gdp": 99.99938964843751,
+        "worker_consumption": 60.000000000000014,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 32,
+        "workers": 10,
+        "gdp": 99.99969482421875,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 33,
+        "workers": 10,
+        "gdp": 99.99984741210938,
+        "worker_consumption": 59.99999999999999,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 34,
+        "workers": 10,
+        "gdp": 99.99992370605467,
+        "worker_consumption": 59.999999999999986,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 35,
+        "workers": 10,
+        "gdp": 99.99996185302734,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 36,
+        "workers": 10,
+        "gdp": 99.99998092651367,
+        "worker_consumption": 60.00000000000001,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 37,
+        "workers": 10,
+        "gdp": 99.99999046325684,
+        "worker_consumption": 59.99999999999999,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 38,
+        "workers": 10,
+        "gdp": 99.99999523162842,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 39,
+        "workers": 10,
+        "gdp": 99.99999761581421,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 40,
+        "workers": 10,
+        "gdp": 99.9999988079071,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 41,
+        "workers": 10,
+        "gdp": 99.99999940395355,
+        "worker_consumption": 59.99999999999999,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 42,
+        "workers": 10,
+        "gdp": 99.99999970197678,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 43,
+        "workers": 10,
+        "gdp": 99.99999985098839,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 44,
+        "workers": 10,
+        "gdp": 99.9999999254942,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 45,
+        "workers": 10,
+        "gdp": 99.9999999627471,
+        "worker_consumption": 59.99999999999999,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 46,
+        "workers": 10,
+        "gdp": 99.99999998137355,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 47,
+        "workers": 10,
+        "gdp": 99.99999999068677,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 48,
+        "workers": 10,
+        "gdp": 99.99999999534339,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 49,
+        "workers": 10,
+        "gdp": 99.9999999976717,
+        "worker_consumption": 59.99999999999999,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 50,
+        "workers": 10,
+        "gdp": 99.99999999883585,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 51,
+        "workers": 10,
+        "gdp": 99.99999999941792,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 52,
+        "workers": 10,
+        "gdp": 99.99999999970898,
+        "worker_consumption": 60.000000000000014,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 53,
+        "workers": 10,
+        "gdp": 99.99999999985448,
+        "worker_consumption": 59.99999999999999,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 54,
+        "workers": 10,
+        "gdp": 99.99999999992724,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 55,
+        "workers": 10,
+        "gdp": 99.99999999996362,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 56,
+        "workers": 10,
+        "gdp": 99.99999999998181,
+        "worker_consumption": 60.00000000000001,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 57,
+        "workers": 10,
+        "gdp": 99.9999999999909,
+        "worker_consumption": 59.99999999999999,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 58,
+        "workers": 10,
+        "gdp": 99.99999999999545,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 59,
+        "workers": 10,
+        "gdp": 99.99999999999773,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 60,
+        "workers": 10,
+        "gdp": 99.99999999999886,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 61,
+        "workers": 10,
+        "gdp": 99.99999999999943,
+        "worker_consumption": 59.99999999999999,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 62,
+        "workers": 10,
+        "gdp": 99.99999999999972,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 63,
+        "workers": 10,
+        "gdp": 99.99999999999986,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 64,
+        "workers": 10,
+        "gdp": 99.99999999999994,
+        "worker_consumption": 60.000000000000014,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 65,
+        "workers": 10,
+        "gdp": 99.99999999999997,
+        "worker_consumption": 59.99999999999999,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 66,
+        "workers": 10,
+        "gdp": 99.99999999999999,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 67,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 68,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 69,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 70,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 71,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 72,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 73,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 74,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 75,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 76,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 77,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 78,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 79,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 80,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 81,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 82,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 83,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 84,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 85,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 86,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 87,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 88,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 89,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 90,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 91,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 92,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 93,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 94,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 95,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 96,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 97,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 98,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 99,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      }
+    ]
+  },
+  {
+    "summary": {
+      "name": "gradual_then_wages_return_credit",
+      "outcome": "fully_repaid",
+      "stop_reason": null,
+      "last_completed_period": 99,
+      "requested_periods": 100,
+      "initial_reserves": 200.0,
+      "initial_deposits": 180.0,
+      "initial_bank_equity": 20.0,
+      "initial_firm_deposits": 80,
+      "total_principal_advanced": 147.11782362430802,
+      "total_principal_repaid": 147.11782362430802,
+      "total_principal_forgiven": 0.0,
+      "total_interest_paid": 13.15925717229877,
+      "total_interest_forgiven": 0.0,
+      "terminal_outstanding_principal": 0.0,
+      "terminal_unpaid_interest": 0.0,
+      "terminal_total_debt_owed": 0.0,
+      "default_count": 0,
+      "refusal_count": 5,
+      "first_debt_free_period": 25,
+      "minimum_bank_equity": 20.0,
+      "maximum_outstanding_principal": 120.0,
+      "minimum_gdp": 46.3848645848635,
+      "terminal_gdp": 100.0,
+      "terminal_worker_consumption": 60.0,
+      "terminal_owner_consumption": 20.0,
+      "cumulative_worker_consumption_through_stop": 5626.840742827701,
+      "cumulative_gdp_through_stop": 9640.455878242838,
+      "total_bank_profit_distributed": 13.159257172298762,
+      "maximum_transaction_balance_sheet_error": 3.126388037344441e-13,
+      "bank_capital_depleted": false,
+      "bank_insolvent": false,
+      "wage_arrears": 0.0
+    },
+    "periods": [
+      {
+        "period": 0,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 1,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 2,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 3,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 4,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 5,
+        "workers": 8,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 6,
+        "workers": 8,
+        "gdp": 106.0,
+        "worker_consumption": 60.0,
+        "debt": 12.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 7,
+        "workers": 6,
+        "gdp": 109.0,
+        "worker_consumption": 60.0,
+        "debt": 16.92,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 8,
+        "workers": 6,
+        "gdp": 116.56,
+        "worker_consumption": 60.0,
+        "debt": 41.0892,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 9,
+        "workers": 4,
+        "gdp": 120.3646,
+        "worker_consumption": 60.0,
+        "debt": 67.588092,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 10,
+        "workers": 4,
+        "gdp": 128.231746,
+        "worker_consumption": 60.0,
+        "debt": 103.63997292,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 11,
+        "workers": 2,
+        "gdp": 107.70184054,
+        "worker_consumption": 35.56002708,
+        "debt": 118.5403997292,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 12,
+        "workers": 2,
+        "gdp": 79.3807204054,
+        "worker_consumption": 11.059600270799997,
+        "debt": 117.90180372649199,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 13,
+        "workers": 0,
+        "gdp": 65.539458339454,
+        "worker_consumption": 11.698196273508005,
+        "debt": 120.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 14,
+        "workers": 0,
+        "gdp": 52.769729169727,
+        "worker_consumption": 0.0,
+        "debt": 120.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 15,
+        "workers": 10,
+        "gdp": 46.3848645848635,
+        "worker_consumption": 0.0,
+        "debt": 108.84246529127077,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 16,
+        "workers": 10,
+        "gdp": 68.42123264563537,
+        "worker_consumption": 48.0,
+        "debt": 97.01171170794039,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 17,
+        "workers": 10,
+        "gdp": 72.2952395311525,
+        "worker_consumption": 48.00000000000001,
+        "debt": 87.55865058877671,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 18,
+        "workers": 10,
+        "gdp": 75.4210892059944,
+        "worker_consumption": 48.0,
+        "debt": 75.8270588584214,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 19,
+        "workers": 10,
+        "gdp": 75.84474873781956,
+        "worker_consumption": 48.00000000000001,
+        "debt": 63.97815121076253,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 20,
+        "workers": 10,
+        "gdp": 75.99792054508035,
+        "worker_consumption": 48.0,
+        "debt": 56.09075448662708,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 21,
+        "workers": 10,
+        "gdp": 78.05526191047244,
+        "worker_consumption": 48.0,
+        "debt": 44.45248379525027,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 22,
+        "workers": 10,
+        "gdp": 77.20849560954782,
+        "worker_consumption": 48.00000000000001,
+        "debt": 32.69783039695969,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 23,
+        "workers": 10,
+        "gdp": 76.72692110562862,
+        "worker_consumption": 48.0,
+        "debt": 20.825630464686206,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 24,
+        "workers": 10,
+        "gdp": 76.42736058667757,
+        "worker_consumption": 47.99999999999999,
+        "debt": 10.961512053489988,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 25,
+        "workers": 10,
+        "gdp": 77.28162108774069,
+        "worker_consumption": 48.00000000000001,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 26,
+        "workers": 10,
+        "gdp": 77.42151411882196,
+        "worker_consumption": 48.52291920339322,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 27,
+        "workers": 10,
+        "gdp": 88.71075705941098,
+        "worker_consumption": 59.99999999999999,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 28,
+        "workers": 10,
+        "gdp": 94.35537852970549,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 29,
+        "workers": 10,
+        "gdp": 97.17768926485275,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 30,
+        "workers": 10,
+        "gdp": 98.58884463242637,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 31,
+        "workers": 10,
+        "gdp": 99.29442231621319,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 32,
+        "workers": 10,
+        "gdp": 99.64721115810659,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 33,
+        "workers": 10,
+        "gdp": 99.8236055790533,
+        "worker_consumption": 59.99999999999999,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 34,
+        "workers": 10,
+        "gdp": 99.91180278952665,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 35,
+        "workers": 10,
+        "gdp": 99.95590139476332,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 36,
+        "workers": 10,
+        "gdp": 99.97795069738166,
+        "worker_consumption": 59.99999999999999,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 37,
+        "workers": 10,
+        "gdp": 99.98897534869083,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 38,
+        "workers": 10,
+        "gdp": 99.99448767434541,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 39,
+        "workers": 10,
+        "gdp": 99.9972438371727,
+        "worker_consumption": 59.99999999999999,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 40,
+        "workers": 10,
+        "gdp": 99.99862191858635,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 41,
+        "workers": 10,
+        "gdp": 99.99931095929318,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 42,
+        "workers": 10,
+        "gdp": 99.99965547964659,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 43,
+        "workers": 10,
+        "gdp": 99.9998277398233,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 44,
+        "workers": 10,
+        "gdp": 99.99991386991165,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 45,
+        "workers": 10,
+        "gdp": 99.99995693495583,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 46,
+        "workers": 10,
+        "gdp": 99.99997846747792,
+        "worker_consumption": 60.00000000000001,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 47,
+        "workers": 10,
+        "gdp": 99.99998923373896,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 48,
+        "workers": 10,
+        "gdp": 99.99999461686949,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 49,
+        "workers": 10,
+        "gdp": 99.99999730843474,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 50,
+        "workers": 10,
+        "gdp": 99.99999865421736,
+        "worker_consumption": 59.99999999999999,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 51,
+        "workers": 10,
+        "gdp": 99.99999932710868,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 52,
+        "workers": 10,
+        "gdp": 99.99999966355433,
+        "worker_consumption": 59.99999999999999,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 53,
+        "workers": 10,
+        "gdp": 99.99999983177716,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 54,
+        "workers": 10,
+        "gdp": 99.99999991588857,
+        "worker_consumption": 59.99999999999999,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 55,
+        "workers": 10,
+        "gdp": 99.99999995794428,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 56,
+        "workers": 10,
+        "gdp": 99.99999997897213,
+        "worker_consumption": 59.999999999999986,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 57,
+        "workers": 10,
+        "gdp": 99.99999998948607,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 58,
+        "workers": 10,
+        "gdp": 99.99999999474304,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 59,
+        "workers": 10,
+        "gdp": 99.99999999737153,
+        "worker_consumption": 60.000000000000014,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 60,
+        "workers": 10,
+        "gdp": 99.99999999868575,
+        "worker_consumption": 59.99999999999999,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 61,
+        "workers": 10,
+        "gdp": 99.99999999934286,
+        "worker_consumption": 59.99999999999999,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 62,
+        "workers": 10,
+        "gdp": 99.99999999967142,
+        "worker_consumption": 59.999999999999986,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 63,
+        "workers": 10,
+        "gdp": 99.9999999998357,
+        "worker_consumption": 59.999999999999986,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 64,
+        "workers": 10,
+        "gdp": 99.99999999991783,
+        "worker_consumption": 59.99999999999999,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 65,
+        "workers": 10,
+        "gdp": 99.9999999999589,
+        "worker_consumption": 59.99999999999999,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 66,
+        "workers": 10,
+        "gdp": 99.99999999997945,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 67,
+        "workers": 10,
+        "gdp": 99.99999999998973,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 68,
+        "workers": 10,
+        "gdp": 99.99999999999486,
+        "worker_consumption": 59.99999999999999,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 69,
+        "workers": 10,
+        "gdp": 99.99999999999741,
+        "worker_consumption": 59.99999999999999,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 70,
+        "workers": 10,
+        "gdp": 99.99999999999869,
+        "worker_consumption": 59.99999999999999,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 71,
+        "workers": 10,
+        "gdp": 99.99999999999935,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 72,
+        "workers": 10,
+        "gdp": 99.99999999999967,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 73,
+        "workers": 10,
+        "gdp": 99.99999999999983,
+        "worker_consumption": 59.99999999999999,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 74,
+        "workers": 10,
+        "gdp": 99.99999999999991,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 75,
+        "workers": 10,
+        "gdp": 99.99999999999994,
+        "worker_consumption": 59.999999999999986,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 76,
+        "workers": 10,
+        "gdp": 99.99999999999997,
+        "worker_consumption": 59.99999999999999,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 77,
+        "workers": 10,
+        "gdp": 99.99999999999999,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 78,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 79,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 80,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 81,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 82,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 83,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 84,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 85,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 86,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 87,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 88,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 89,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 90,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 91,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 92,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 93,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 94,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 95,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 96,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 97,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 98,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 99,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      }
+    ]
+  },
+  {
+    "summary": {
+      "name": "gradual_then_ownership_income",
+      "outcome": "default_with_forgiveness",
+      "stop_reason": null,
+      "last_completed_period": 99,
+      "requested_periods": 100,
+      "initial_reserves": 200.0,
+      "initial_deposits": 180.0,
+      "initial_bank_equity": 20.0,
+      "initial_firm_deposits": 80,
+      "total_principal_advanced": 147.11782362430802,
+      "total_principal_repaid": 138.82633060247633,
+      "total_principal_forgiven": 8.291493021831673,
+      "total_interest_paid": 18.06519751175798,
+      "total_interest_forgiven": 0.0,
+      "terminal_outstanding_principal": 0.0,
+      "terminal_unpaid_interest": 0.0,
+      "terminal_total_debt_owed": 0.0,
+      "default_count": 1,
+      "refusal_count": 5,
+      "first_debt_free_period": null,
+      "minimum_bank_equity": 11.86731024090923,
+      "maximum_outstanding_principal": 120.0,
+      "minimum_gdp": 46.3848645848635,
+      "terminal_gdp": 99.99998669224101,
+      "terminal_worker_consumption": 59.99999001918076,
+      "terminal_owner_consumption": 19.999996673060252,
+      "cumulative_worker_consumption_through_stop": 5108.406805636036,
+      "cumulative_gdp_through_stop": 9115.848931356759,
+      "total_bank_profit_distributed": 17.21581690289056,
+      "maximum_transaction_balance_sheet_error": 1.2789769243681803e-13,
+      "bank_capital_depleted": false,
+      "bank_insolvent": false,
+      "wage_arrears": 0.0
+    },
+    "periods": [
+      {
+        "period": 0,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 1,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 2,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 3,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 4,
+        "workers": 10,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 5,
+        "workers": 8,
+        "gdp": 100.0,
+        "worker_consumption": 60.0,
+        "debt": 0.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 6,
+        "workers": 8,
+        "gdp": 106.0,
+        "worker_consumption": 60.0,
+        "debt": 12.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 7,
+        "workers": 6,
+        "gdp": 109.0,
+        "worker_consumption": 60.0,
+        "debt": 16.92,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 8,
+        "workers": 6,
+        "gdp": 116.56,
+        "worker_consumption": 60.0,
+        "debt": 41.0892,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 9,
+        "workers": 4,
+        "gdp": 120.3646,
+        "worker_consumption": 60.0,
+        "debt": 67.588092,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 10,
+        "workers": 4,
+        "gdp": 128.231746,
+        "worker_consumption": 60.0,
+        "debt": 103.63997292,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 11,
+        "workers": 2,
+        "gdp": 107.70184054,
+        "worker_consumption": 35.56002708,
+        "debt": 118.5403997292,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 12,
+        "workers": 2,
+        "gdp": 79.3807204054,
+        "worker_consumption": 11.059600270799997,
+        "debt": 117.90180372649199,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 13,
+        "workers": 0,
+        "gdp": 65.539458339454,
+        "worker_consumption": 11.698196273508005,
+        "debt": 120.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 14,
+        "workers": 0,
+        "gdp": 52.769729169727,
+        "worker_consumption": 0.0,
+        "debt": 120.0,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 15,
+        "workers": 0,
+        "gdp": 46.3848645848635,
+        "worker_consumption": 0.0,
+        "debt": 115.27628154108714,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 16,
+        "workers": 0,
+        "gdp": 51.96294056334256,
+        "worker_consumption": 22.264735000734483,
+        "debt": 109.27431325265383,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 17,
+        "workers": 0,
+        "gdp": 55.451591872656834,
+        "worker_consumption": 24.94221147040443,
+        "debt": 102.79368712421847,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 18,
+        "workers": 0,
+        "gdp": 57.793864921548376,
+        "worker_consumption": 26.61676409887528,
+        "debt": 95.96718196863176,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 19,
+        "workers": 0,
+        "gdp": 59.354207464152445,
+        "worker_consumption": 27.741055162343216,
+        "debt": 91.917823624308,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 20,
+        "workers": 0,
+        "gdp": 61.897434351310935,
+        "worker_consumption": 28.490019582793174,
+        "debt": 84.88947853421939,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 21,
+        "workers": 0,
+        "gdp": 62.28992887492579,
+        "worker_consumption": 29.71076848862925,
+        "debt": 77.65640361832742,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 22,
+        "workers": 0,
+        "gdp": 62.47800990949909,
+        "worker_consumption": 29.899165859964373,
+        "debt": 70.32842822912772,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 23,
+        "workers": 0,
+        "gdp": 62.56973963842948,
+        "worker_consumption": 29.989444756559568,
+        "debt": 62.916165518564384,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 24,
+        "workers": 0,
+        "gdp": 62.59547597715614,
+        "worker_consumption": 30.033475026446148,
+        "debt": 60.717823624308,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 25,
+        "workers": 0,
+        "gdp": 65.22148127596736,
+        "worker_consumption": 30.04582846903495,
+        "debt": 53.72011406713213,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 26,
+        "workers": 0,
+        "gdp": 64.76504136562791,
+        "worker_consumption": 31.30631101246433,
+        "debt": 46.28633200768502,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 27,
+        "workers": 0,
+        "gdp": 64.20923958084109,
+        "worker_consumption": 31.08721985550139,
+        "debt": 38.84490834181786,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 28,
+        "workers": 0,
+        "gdp": 63.79412545688882,
+        "worker_consumption": 30.82043499880372,
+        "debt": 31.378884134166302,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 29,
+        "workers": 0,
+        "gdp": 63.474640734271944,
+        "worker_consumption": 30.621180219306627,
+        "debt": 23.87653785115225,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 30,
+        "workers": 0,
+        "gdp": 63.22006100185421,
+        "worker_consumption": 30.467827552450533,
+        "debt": 19.438122818398185,
+        "bank_equity": 20.0
+      },
+      {
+        "period": 31,
+        "workers": 0,
+        "gdp": 64.5636376249951,
+        "worker_consumption": 30.345629280890023,
+        "debt": 3.5577965443080046,
+        "bank_equity": 11.86731024090923
+      },
+      {
+        "period": 32,
+        "workers": 0,
+        "gdp": 63.90327358499666,
+        "worker_consumption": 30.99054605999764,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 33,
+        "workers": 0,
+        "gdp": 66.8742449775628,
+        "worker_consumption": 34.09359026056347,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 34,
+        "workers": 0,
+        "gdp": 73.49939598205023,
+        "worker_consumption": 40.12454698653768,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 35,
+        "workers": 0,
+        "gdp": 78.7995167856402,
+        "worker_consumption": 44.09963758923014,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 36,
+        "workers": 0,
+        "gdp": 83.03961342851215,
+        "worker_consumption": 47.279710071384116,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 37,
+        "workers": 0,
+        "gdp": 86.43169074280972,
+        "worker_consumption": 49.82376805710729,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 38,
+        "workers": 0,
+        "gdp": 89.14535259424778,
+        "worker_consumption": 51.85901444568583,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 39,
+        "workers": 0,
+        "gdp": 91.31628207539822,
+        "worker_consumption": 53.487211556548665,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 40,
+        "workers": 0,
+        "gdp": 93.05302566031858,
+        "worker_consumption": 54.78976924523893,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 41,
+        "workers": 0,
+        "gdp": 94.44242052825487,
+        "worker_consumption": 55.831815396191146,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 42,
+        "workers": 0,
+        "gdp": 95.5539364226039,
+        "worker_consumption": 56.66545231695292,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 43,
+        "workers": 0,
+        "gdp": 96.44314913808311,
+        "worker_consumption": 57.33236185356234,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 44,
+        "workers": 0,
+        "gdp": 97.1545193104665,
+        "worker_consumption": 57.865889482849866,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 45,
+        "workers": 0,
+        "gdp": 97.72361544837321,
+        "worker_consumption": 58.2927115862799,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 46,
+        "workers": 0,
+        "gdp": 98.17889235869856,
+        "worker_consumption": 58.63416926902392,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 47,
+        "workers": 0,
+        "gdp": 98.54311388695885,
+        "worker_consumption": 58.90733541521913,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 48,
+        "workers": 0,
+        "gdp": 98.83449110956708,
+        "worker_consumption": 59.125868332175315,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 49,
+        "workers": 0,
+        "gdp": 99.06759288765366,
+        "worker_consumption": 59.300694665740245,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 50,
+        "workers": 0,
+        "gdp": 99.25407431012293,
+        "worker_consumption": 59.440555732592195,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 51,
+        "workers": 0,
+        "gdp": 99.40325944809834,
+        "worker_consumption": 59.552444586073754,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 52,
+        "workers": 0,
+        "gdp": 99.52260755847867,
+        "worker_consumption": 59.641955668859,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 53,
+        "workers": 0,
+        "gdp": 99.61808604678293,
+        "worker_consumption": 59.7135645350872,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 54,
+        "workers": 0,
+        "gdp": 99.69446883742634,
+        "worker_consumption": 59.77085162806976,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 55,
+        "workers": 0,
+        "gdp": 99.75557506994107,
+        "worker_consumption": 59.8166813024558,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 56,
+        "workers": 0,
+        "gdp": 99.80446005595286,
+        "worker_consumption": 59.853345041964644,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 57,
+        "workers": 0,
+        "gdp": 99.84356804476229,
+        "worker_consumption": 59.88267603357171,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 58,
+        "workers": 0,
+        "gdp": 99.87485443580984,
+        "worker_consumption": 59.906140826857374,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 59,
+        "workers": 0,
+        "gdp": 99.89988354864786,
+        "worker_consumption": 59.9249126614859,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 60,
+        "workers": 0,
+        "gdp": 99.9199068389183,
+        "worker_consumption": 59.93993012918872,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 61,
+        "workers": 0,
+        "gdp": 99.93592547113462,
+        "worker_consumption": 59.95194410335097,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 62,
+        "workers": 0,
+        "gdp": 99.9487403769077,
+        "worker_consumption": 59.96155528268076,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 63,
+        "workers": 0,
+        "gdp": 99.95899230152615,
+        "worker_consumption": 59.96924422614461,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 64,
+        "workers": 0,
+        "gdp": 99.96719384122092,
+        "worker_consumption": 59.97539538091569,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 65,
+        "workers": 0,
+        "gdp": 99.97375507297673,
+        "worker_consumption": 59.98031630473255,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 66,
+        "workers": 0,
+        "gdp": 99.97900405838138,
+        "worker_consumption": 59.98425304378603,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 67,
+        "workers": 0,
+        "gdp": 99.9832032467051,
+        "worker_consumption": 59.98740243502883,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 68,
+        "workers": 0,
+        "gdp": 99.98656259736408,
+        "worker_consumption": 59.98992194802307,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 69,
+        "workers": 0,
+        "gdp": 99.98925007789126,
+        "worker_consumption": 59.99193755841845,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 70,
+        "workers": 0,
+        "gdp": 99.991400062313,
+        "worker_consumption": 59.993550046734754,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 71,
+        "workers": 0,
+        "gdp": 99.9931200498504,
+        "worker_consumption": 59.994840037387796,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 72,
+        "workers": 0,
+        "gdp": 99.99449603988032,
+        "worker_consumption": 59.99587202991023,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 73,
+        "workers": 0,
+        "gdp": 99.99559683190427,
+        "worker_consumption": 59.99669762392819,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 74,
+        "workers": 0,
+        "gdp": 99.99647746552341,
+        "worker_consumption": 59.99735809914256,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 75,
+        "workers": 0,
+        "gdp": 99.99718197241873,
+        "worker_consumption": 59.99788647931405,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 76,
+        "workers": 0,
+        "gdp": 99.99774557793498,
+        "worker_consumption": 59.998309183451234,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 77,
+        "workers": 0,
+        "gdp": 99.99819646234798,
+        "worker_consumption": 59.99864734676098,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 78,
+        "workers": 0,
+        "gdp": 99.99855716987838,
+        "worker_consumption": 59.998917877408786,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 79,
+        "workers": 0,
+        "gdp": 99.9988457359027,
+        "worker_consumption": 59.99913430192703,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 80,
+        "workers": 0,
+        "gdp": 99.99907658872216,
+        "worker_consumption": 59.999307441541625,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 81,
+        "workers": 0,
+        "gdp": 99.99926127097774,
+        "worker_consumption": 59.999445953233305,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 82,
+        "workers": 0,
+        "gdp": 99.9994090167822,
+        "worker_consumption": 59.99955676258665,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 83,
+        "workers": 0,
+        "gdp": 99.99952721342575,
+        "worker_consumption": 59.99964541006931,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 84,
+        "workers": 0,
+        "gdp": 99.99962177074059,
+        "worker_consumption": 59.99971632805545,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 85,
+        "workers": 0,
+        "gdp": 99.99969741659248,
+        "worker_consumption": 59.999773062444355,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 86,
+        "workers": 0,
+        "gdp": 99.99975793327398,
+        "worker_consumption": 59.999818449955484,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 87,
+        "workers": 0,
+        "gdp": 99.99980634661918,
+        "worker_consumption": 59.999854759964386,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 88,
+        "workers": 0,
+        "gdp": 99.99984507729535,
+        "worker_consumption": 59.999883807971514,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 89,
+        "workers": 0,
+        "gdp": 99.99987606183629,
+        "worker_consumption": 59.99990704637721,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 90,
+        "workers": 0,
+        "gdp": 99.99990084946903,
+        "worker_consumption": 59.999925637101775,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 91,
+        "workers": 0,
+        "gdp": 99.99992067957521,
+        "worker_consumption": 59.99994050968141,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 92,
+        "workers": 0,
+        "gdp": 99.99993654366017,
+        "worker_consumption": 59.99995240774513,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 93,
+        "workers": 0,
+        "gdp": 99.99994923492814,
+        "worker_consumption": 59.9999619261961,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 94,
+        "workers": 0,
+        "gdp": 99.99995938794251,
+        "worker_consumption": 59.99996954095688,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 95,
+        "workers": 0,
+        "gdp": 99.99996751035401,
+        "worker_consumption": 59.99997563276551,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 96,
+        "workers": 0,
+        "gdp": 99.9999740082832,
+        "worker_consumption": 59.9999805062124,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 97,
+        "workers": 0,
+        "gdp": 99.99997920662656,
+        "worker_consumption": 59.999984404969915,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 98,
+        "workers": 0,
+        "gdp": 99.99998336530126,
+        "worker_consumption": 59.99998752397594,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      },
+      {
+        "period": 99,
+        "workers": 0,
+        "gdp": 99.99998669224101,
+        "worker_consumption": 59.99999001918076,
+        "debt": 0.0,
+        "bank_equity": 12.55788758703575
+      }
+    ]
+  }
+]

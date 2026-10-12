@@ -1,0 +1,322 @@
+[
+  {
+    "id": "01-town",
+    "title": "Meet the same town each time",
+    "description": "Ten workers and ten owners, with five pairs of businesses. People remain in the town after their wages stop.",
+    "height": 700,
+    "steps": [
+      {
+        "title": "Meet the people",
+        "text": "Green always means workers or former workers. Gold always means owners. These are two household groups, not twenty individually modeled budgets."
+      },
+      {
+        "title": "Meet their businesses",
+        "text": "There are two businesses in each of five sectors. The rows show the cast of the story, not every supplier connection."
+      },
+      {
+        "title": "Keep the boundary in mind",
+        "text": "This town has no imports, exports, government or bank loans. Those possible real-world responses are deliberately outside this experiment."
+      }
+    ]
+  },
+  {
+    "id": "02-income",
+    "title": "One round of production creates income",
+    "description": "Final output of 100 becomes wages 60 and gross owner income 40. These are two views of the same 100, not 200.",
+    "height": 470,
+    "steps": [
+      {
+        "title": "Start with output",
+        "text": "During one round, customers buy 100 of final output. This is a flow during a round, not the town’s total cash balance."
+      },
+      {
+        "title": "Follow the income",
+        "text": "The 100 becomes 60 of wages and 40 of gross owner income. The branches divide one total; they do not create another 100."
+      }
+    ]
+  },
+  {
+    "id": "03-spending",
+    "title": "Where the income goes next",
+    "description": "Workers spend 60 on household goods. Owners spend 20 on household goods and finance 20 of equipment. Household consumption 80 plus equipment 20 equals GDP 100.",
+    "height": 685,
+    "steps": [
+      {
+        "title": "Workers spend their 60",
+        "text": "Workers use all 60 of their wages for household purchases. This group saves none of its current income in the starting example."
+      },
+      {
+        "title": "Owners divide their 40",
+        "text": "Owners buy 20 of household goods and put the other 20 into businesses to finance new equipment. That 20 is actually spent on equipment, not left idle."
+      },
+      {
+        "title": "Count the final purchases once",
+        "text": "Households buy 80 in total: 60 from workers plus 20 from owners. Businesses buy 20 of new equipment. Those purchases are the next 100 of final demand. The financing transfer is not counted again."
+      }
+    ]
+  },
+  {
+    "id": "04-incentive",
+    "title": "One firm keeps the saving; others share the lost sales",
+    "description": "Separate equal-share firm example: payroll saving 6 minus own lost sales 1 gives recurring gain 5 before setup cost. Total lost sales 10 are split 1 at adopter and 9 at other firms.",
+    "height": 540,
+    "steps": [
+      {
+        "title": "The firm saves 6",
+        "text": "In this separate equal-share example, adopting avoids a wage bill of 6. The installation cost still has to be paid; it is not included in this recurring gain."
+      },
+      {
+        "title": "It loses only 1 of sales",
+        "text": "Under the specified demand response, town sales fall 10. The adopting firm receives one tenth of sales, so it bears 1 of that loss. Other firms bear 9."
+      },
+      {
+        "title": "The private gain can still be positive",
+        "text": "For the adopter, 6 saved minus 1 lost means 5 more per round before setup costs. The full town’s sales fall from 100 to 90. A private gain does not mean the town gains."
+      }
+    ]
+  },
+  {
+    "id": "05-no-wages",
+    "title": "Output survives; former workers have no purchases",
+    "description": "After wages stop, owner consumption 80 and equipment 20 sustain GDP 100 in the owner-spending 80% case. Former-worker consumption is zero.",
+    "height": 490,
+    "steps": [
+      {
+        "title": "Keep the former workers in view",
+        "text": "The workers have lost their wage income, not disappeared. They own none of the businesses in this run, so their household purchases eventually reach zero."
+      },
+      {
+        "title": "Other purchases fill the total",
+        "text": "In this run, owners consume 80% of their income. Their 80 of consumption and 20 of equipment purchases support 100 of final output. This is after inherited wage spending has passed through."
+      }
+    ]
+  },
+  {
+    "id": "06-ownership",
+    "title": "The starting spending pattern can return without wages",
+    "description": "A separate ownership run: former workers receive 60 of dividends; owners retain 40 and consume half. Purchases are 60 former-worker consumption, 20 owner consumption and 20 equipment.",
+    "height": 650,
+    "steps": [
+      {
+        "title": "Replace the source of income",
+        "text": "Go back to the starting 60/40 income split. In this run, the former workers receive 60 through ownership distributions instead of wages. Owners retain 40."
+      },
+      {
+        "title": "Follow the same starting budgets",
+        "text": "Former workers spend their 60. Other owners spend half their 40 on household purchases and finance 20 of equipment. Their spending rule is 50%, not the 80% used in the previous run."
+      },
+      {
+        "title": "Check who gets to consume",
+        "text": "The purchases match the starting town: 60 for the worker group, 20 for other owners and 20 of equipment. GDP is 100 and the former-worker group has purchasing power again."
+      }
+    ]
+  },
+  {
+    "id": "07-smaller",
+    "title": "Fixed equipment orders support a smaller economy",
+    "description": "Baseline purchases 60 workers+20 owners+20 equipment=100. With no wages, owner consumption 20 plus fixed equipment 20 supports GDP 40. Empty bar length means less output, not destroyed money.",
+    "height": 480,
+    "steps": [
+      {
+        "title": "Remember the starting purchases",
+        "text": "At the start, workers buy 60, owners buy 20 and businesses buy 20 of equipment. The whole bar is 100."
+      },
+      {
+        "title": "Keep equipment orders fixed",
+        "text": "After wages stop, owners consuming half their income eventually buy 20. Fixed equipment orders add 20. The former-worker group buys zero. Final output settles at 40."
+      }
+    ]
+  },
+  {
+    "id": "08-shrinking",
+    "title": "Each round starts with the previous round’s sales",
+    "description": "After workers have spent their last wages, all income goes to owners. Owners consume 50% and equipment orders are 20% of prior output.100 yields 50+20=70, 70 yields 35+14=49, 49 yields 24.5+9.8=34.3. Total cash remains 200; these are spending flows.",
+    "height": 690,
+    "steps": [
+      {
+        "title": "From 100 to 70",
+        "text": "Previous income is 100, all received by owners after inherited wage spending has ended. Owners buy 50 of household goods and firms buy 20 of equipment. That makes 70 of new sales, which becomes income for the next round."
+      },
+      {
+        "title": "From 70 to 49",
+        "text": "Previous income is 70, all received by owners after inherited wage spending has ended. Owners buy 35 of household goods and firms buy 14 of equipment. That makes 49 of new sales, which becomes income for the next round."
+      },
+      {
+        "title": "From 49 to 34.3",
+        "text": "Previous income is 49, all received by owners after inherited wage spending has ended. Owners buy 24.5 of household goods and firms buy 9.8 of equipment. That makes 34.3 of new sales, which becomes income for the next round."
+      }
+    ]
+  },
+  {
+    "id": "09-payroll",
+    "title": "Payday at one equipment producer",
+    "description": "Each of two equipment makers has 1 of cash available for wages 3, leaving 2 unpaid. Together arrears 4. Town GDP 67.75 exceeds contracted wages 60 but is not cash in these firms’ accounts.",
+    "height": 540,
+    "steps": [
+      {
+        "title": "The bill arrives",
+        "text": "This is a different experiment: equipment orders pause temporarily while each firm keeps its payroll commitments. One equipment maker owes wages of 3 today."
+      },
+      {
+        "title": "Pay what the firm actually has",
+        "text": "It has only 1 available to pay. There is no automatic loan or transfer from another company’s account in this model."
+      },
+      {
+        "title": "See the gap",
+        "text": "It pays 1 and leaves 2 unpaid. Both equipment makers face the same gap, so unpaid wages total 4. Aggregate GDP is an income flow, not a shared company bank account."
+      }
+    ]
+  },
+  {
+    "id": "10-recovery",
+    "title": "A town can survive without restoring all purchases",
+    "description": "Separate 15-period equipment-freeze run, all workers retained. Long-run purchases 60 workers+0 owners+20 equipment=80 versus initial 60+20+20=100. Income-only spending and finance priority explain path dependence.",
+    "height": 490,
+    "steps": [
+      {
+        "title": "Reset to the starting town",
+        "text": "All ten workers remain employed, but their hours can shift between businesses as orders change. Individual firms no longer have fixed wage bills. Before a temporary pause in equipment buying, purchases total 100."
+      },
+      {
+        "title": "Survive, then restart equipment buying",
+        "text": "After a 15-round pause, this run avoids unpaid wages and resumes 20 of equipment purchases. Workers buy 60. Owners’ available cash goes to equipment finance, leaving zero for their household purchases."
+      }
+    ]
+  },
+  {
+    "id": "11-replacement",
+    "title": "New equipment has two different jobs",
+    "description": "Conceptual diagram: replacement restores worn-out capacity; additional equipment can expand capacity under the assumed technology. Icons do not represent measured quantities.",
+    "height": 470,
+    "steps": [
+      {
+        "title": "First, replace what wears out",
+        "text": "Some new equipment takes the place of old equipment that no longer works. This spending can keep capacity from shrinking without expanding it."
+      },
+      {
+        "title": "Then, add capacity",
+        "text": "Equipment beyond replacement can expand production capacity. Whether that capacity becomes more sales depends on customers, and whether extra equipment remains productive depends on technology and resources."
+      }
+    ]
+  },
+  {
+    "id": "12-maxima",
+    "title": "More gross output need not leave more for households",
+    "description": "Separate diminishing-return physical model. At investment share 50%, long-run real GDP 250 divides 125 consumption and 125 replacement. At 100%, real GDP 500 all replaces equipment and consumption is zero. Same scale 500.",
+    "height": 590,
+    "steps": [
+      {
+        "title": "Leave some output for households",
+        "text": "In the separate diminishing-return model, investing half the output eventually supports 250 of real output: 125 for household use and 125 to replace equipment. This gives maximum stationary consumption under this technology."
+      },
+      {
+        "title": "Put all output into replacement",
+        "text": "Investing all output eventually supports 500 of real output, but all 500 is needed to replace the large stock of equipment as it wears out. Household consumption is zero. GDP is higher, not household access."
+      }
+    ]
+  },
+  {
+    "id": "13-bank-opening",
+    "title": "Fund the bank from the same town",
+    "description": "Workers keep 60 in deposits, owners 40 and firms 80. Customer deposits total 180. Firm buffers supply the bank's 20 equity, ultimately owned by the town's owners. The bank holds the inherited 200 settlement asset. Credit-on and credit-off comparisons start identically.",
+    "height": 675,
+    "steps": [
+      {
+        "title": "Use existing money",
+        "text": "Before any loans, firm cash buffers supply 20 to establish bank capital. The owners ultimately own both the firms and the bank. Firm deposits fall from 100 to 80; this is not new wealth."
+      },
+      {
+        "title": "Count the spendable deposits",
+        "text": "Workers have 60, owners 40 and firms 80 in customer accounts. That adds to 180 of spendable deposits. Bank equity is a different kind of claim; it is not another deposit to spend."
+      },
+      {
+        "title": "Keep the comparison matched",
+        "text": "The bank holds the original settlement asset of 200, backing deposits of 180 and bank equity of 20. Do not add the backing asset to its claims and call that 400 of money. Both compared towns have exactly this opening bank; only lending is switched on or off."
+      }
+    ]
+  },
+  {
+    "id": "14-bank-money",
+    "title": "A loan creates money—and a promise",
+    "description": "The bank creates a deposit of 2 and a matching debt of 2. Paying workers transfers that deposit. Repaying principal later removes deposit money and debt together. The loan itself is not GDP.",
+    "height": 680,
+    "steps": [
+      {
+        "title": "Approve the loan",
+        "text": "At the first payroll shortfall, the bank lends 2 across the two equipment firms. Their combined bank balance rises by 2. They also owe 2. This is new deposit money, not income earned from production."
+      },
+      {
+        "title": "Pay the wages",
+        "text": "The firms transfer the borrowed deposit money to workers. The money changes hands; the firms still owe the bank. The arrow shows a transfer, not a second loan."
+      },
+      {
+        "title": "Repay after earning revenue",
+        "text": "Later revenue can provide money to repay the bank. For every 2 of principal repaid, deposit money and loan principal both fall by 2. Interest is a separate payment, omitted from this zero-interest illustration."
+      }
+    ]
+  },
+  {
+    "id": "15-bank-bridge",
+    "title": "Can the firms reach the next order?",
+    "description": "Matched bank experiment. Without credit, wages first go unpaid in round 7. With zero-interest credit, loans total 14 by round 9, fall to 10 when orders return in round 10, and reach zero in round 13. Every wage is paid.",
+    "height": 740,
+    "steps": [
+      {
+        "title": "Orders pause",
+        "text": "Equipment orders pause in rounds 5 through 9. In the matched run without lending, the equipment firms first miss wages in round 7. The bank-enabled firms borrow 2 and make those payments."
+      },
+      {
+        "title": "The bridge gets longer",
+        "text": "Borrowing continues while orders are absent. By round 9, outstanding principal is 14. This is debt still owed at that date, not extra GDP."
+      },
+      {
+        "title": "Orders return",
+        "text": "Orders return in round 10. The firms begin paying down debt from operating surplus before distributing profits. In this zero-interest version, debt falls to 10 that round."
+      },
+      {
+        "title": "Finish repaying",
+        "text": "By round 13 the debt is gone. This loan bridges a temporary gap successfully. At the separate 1%-per-round rate, repayment also finishes in round 13, with about 0.43 of total interest."
+      }
+    ]
+  },
+  {
+    "id": "16-bank-households",
+    "title": "Today's bridge has a later bill",
+    "description": "Worker households borrow during a temporary wage gap. Purchases are maintained at 60. Once wages return, full debt service of 12 leaves 48 for the next round's purchases. After repayment, purchases return to 60. These are group totals.",
+    "height": 660,
+    "steps": [
+      {
+        "title": "Borrow during the wage gap",
+        "text": "Worker households together borrow 120 across two rounds to maintain purchases of 60 each round. The 120 is total new loans, not peak closing debt: repayment begins before the second borrowing round ends."
+      },
+      {
+        "title": "Service the debt after wages return",
+        "text": "Once wages return to 60, up to 12 of current income goes toward principal and interest. During full repayment rounds, only 48 is left for the next round's purchases. Purple is debt service, not household goods."
+      },
+      {
+        "title": "Return to the old spending level",
+        "text": "At 1% interest per round, all debt is repaid in round 17. Purchases return to 60 in round 19. Total interest over the loan is about 6.35. The bank smooths spending; it does not give the households a permanent extra income."
+      }
+    ]
+  },
+  {
+    "id": "17-bank-loss",
+    "title": "What if the expected income never arrives?",
+    "description": "The bank mistakenly expects wages to return. It lends 20, which borrowers spend. At maturity, unpayable principal is forgiven. The 20 loss consumes the bank's 20 equity. Customer deposits are not erased. The experiment stops at zero bank capital.",
+    "height": 660,
+    "steps": [
+      {
+        "title": "Make a mistaken forecast",
+        "text": "The bank expects wages to recover and lends 20. Workers buy goods; the deposit money moves to sellers. This is a forecast error, not a bank knowingly lending to a borrower with no repayment income."
+      },
+      {
+        "title": "Recognize the failed promise",
+        "text": "Wages never return. At maturity, the model explicitly forgives the unpayable 20 principal with zero recovery. The bank loses its loan asset and workers no longer owe that principal. This is not repayment."
+      },
+      {
+        "title": "Let the bank owners bear the loss",
+        "text": "The 20 loss absorbs the bank's 20 equity, leaving zero. Forgiveness does not erase customer deposits; the original receipts may have changed hands again. The simulation stops here; it supplies no recapitalization, bailout or deposit haircut."
+      }
+    ]
+  }
+]

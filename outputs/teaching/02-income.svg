@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 470" width="560" height="470" role="img" aria-labelledby="02-income-title 02-income-desc">
+<title id="02-income-title">One round of production creates income</title>
+<desc id="02-income-desc">Final output of 100 becomes wages 60 and gross owner income 40. These are two views of the same 100, not 200.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="470" fill="#fffdf8"/>
+<g class="teaching-stage" data-step="1">
+<rect x="120" y="20" width="320" height="112" rx="12" fill="#edf1ea"/>
+<rect x="120" y="20" width="6" height="112" rx="0" fill="#223c36"/>
+<text x="138" y="55" font-size="26" fill="#223c36" text-anchor="start">Final output</text>
+<text x="138" y="103" font-size="42" fill="#223c36" text-anchor="start">100</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<line x1="280" y1="133" x2="280" y2="170" stroke="#58675f" stroke-width="3"/>
+<line x1="147" y1="170" x2="413" y2="170" stroke="#58675f" stroke-width="3"/>
+<line x1="147" y1="170" x2="147" y2="225" stroke="#236654" stroke-width="3"/>
+<line x1="140.7889327926546" y1="215.92130823599354" x2="147" y2="225" stroke="#236654" stroke-width="3"/>
+<line x1="153.2110672073454" y1="215.92130823599354" x2="147" y2="225" stroke="#236654" stroke-width="3"/>
+<circle class="travel-token" data-step="2" data-from="147,170" data-to="147,225" r="8" fill="#236654"/>
+<line x1="413" y1="170" x2="413" y2="225" stroke="#a66d13" stroke-width="3"/>
+<line x1="406.78893279265463" y1="215.92130823599354" x2="413" y2="225" stroke="#a66d13" stroke-width="3"/>
+<line x1="419.21106720734537" y1="215.92130823599354" x2="413" y2="225" stroke="#a66d13" stroke-width="3"/>
+<circle class="travel-token" data-step="2" data-from="413,170" data-to="413,225" r="8" fill="#a66d13"/>
+<rect x="24" y="245" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="24" y="245" width="6" height="112" rx="0" fill="#236654"/>
+<text x="42" y="280" font-size="26" fill="#236654" text-anchor="start">Worker wages</text>
+<text x="42" y="328" font-size="42" fill="#236654" text-anchor="start">60</text>
+<rect x="290" y="245" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="290" y="245" width="6" height="112" rx="0" fill="#a66d13"/>
+<text x="308" y="280" font-size="26" fill="#a66d13" text-anchor="start">Owner income</text>
+<text x="308" y="328" font-size="42" fill="#a66d13" text-anchor="start">40</text>
+<text x="280" y="427" font-size="30" fill="#223c36" text-anchor="middle">60 + 40 = the same 100</text>
+</g>
+</svg>

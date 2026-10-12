@@ -1,0 +1,127 @@
+.introduction h2 {
+  margin-top:0
+}
+.bank-controls label,.timeline-controls label {
+  display:block;
+  font-weight:650;
+  margin-bottom:10px
+}
+.bank-controls select {
+  font:inherit;
+  padding:12px;
+  width:100%;
+  color:var(--ink);
+  background:#fffdf8;
+  border:1px solid #9caea5;
+  border-radius:6px
+}
+.timeline-controls {
+  border-top:1px solid var(--rule);
+  padding-top:24px;
+  margin-top:24px
+}
+.timeline-controls input {
+  width:100%;
+  accent-color:#75608c;
+  min-height:36px
+}
+.timeline-controls button {
+  margin:8px 8px 0 0
+}
+.timeline-controls button:disabled {
+  opacity:.45;
+  cursor:default
+}
+.bank-metrics {
+  grid-template-columns:repeat(4,minmax(0,1fr))
+}
+.bank-metrics strong {
+  font-size:36px
+}
+.money-flow {
+  display:grid;
+  grid-template-columns:1fr 1.4fr 1fr;
+  gap:18px;
+  align-items:center;
+  margin:28px 0
+}
+.flow-book {
+  border:1px solid #c7bcd3;
+  border-radius:10px;
+  padding:20px;
+  background:#f2edf5;
+  text-align:center
+}
+.flow-book span,.flow-book small {
+  display:block
+}
+.flow-book strong {
+  display:block;
+  font-size:38px;
+  color:#75608c;
+  font-family:Georgia,serif
+}
+.flow-changes p {
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  font-size:15px;
+  border-bottom:1px solid var(--rule);
+  padding-bottom:8px
+}
+.flow-changes strong {
+  white-space:nowrap
+}
+.bank-controls .explanation {
+  margin-bottom:0
+}
+svg {
+  display:block;
+  max-width:100%;
+  height:auto;
+  margin-top:25px
+}
+.danger {
+  background:#f7e8e2;
+  padding:18px;
+  border-radius:6px
+}
+.bank-controls p {
+  max-width:78ch
+}
+@media(max-width:700px) {
+  .bank-metrics {
+    grid-template-columns:1fr 1fr
+  }
+  .money-flow {
+    grid-template-columns:1fr
+  }
+  .flow-book {
+    padding:12px
+  }
+  .flow-changes {
+    padding:0 12px
+  }
+  .flow-changes p {
+    font-size:16px
+  }
+  .bank-controls select {
+    font-size:16px
+  }
+  .bank-metrics strong {
+    font-size:32px
+  }
+  
+}
+@media print {
+  .timeline-controls {
+    display:none
+  }
+  .panel {
+    break-inside:auto
+  }
+  details {
+    display:block
+  }
+  
+}

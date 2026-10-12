@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 740" width="560" height="740" role="img" aria-labelledby="15-bank-bridge-title 15-bank-bridge-desc">
+<title id="15-bank-bridge-title">Can the firms reach the next order?</title>
+<desc id="15-bank-bridge-desc">Matched bank experiment. Without credit, wages first go unpaid in round 7. With zero-interest credit, loans total 14 by round 9, fall to 10 when orders return in round 10, and reach zero in round 13. Every wage is paid.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="740" fill="#fffdf8"/>
+<g class="teaching-stage" data-step="1">
+<text x="24" y="42" font-size="27" fill="#223c36" text-anchor="start">Same town. Same opening balances.</text>
+<rect x="24" y="66" width="512" height="126" rx="12" fill="#edf1ea"/>
+<text x="44" y="105" font-size="29" fill="#a44432" text-anchor="start">No credit: round 7</text>
+<text x="44" y="155" font-size="28" fill="#a44432" text-anchor="start">58 of 60 wages paid; 2 unpaid</text>
+<text x="24" y="236" font-size="28" fill="#236654" text-anchor="start">With credit: every wage is paid</text>
+<rect x="24" y="263" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="24" y="263" width="6" height="112" rx="0" fill="#75608c"/>
+<text x="42" y="298" font-size="26" fill="#75608c" text-anchor="start">Round 7 debt</text>
+<text x="42" y="346" font-size="42" fill="#75608c" text-anchor="start">2</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<rect x="290" y="263" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="290" y="263" width="6" height="112" rx="0" fill="#75608c"/>
+<text x="308" y="298" font-size="26" fill="#75608c" text-anchor="start">Round 9 debt</text>
+<text x="308" y="346" font-size="42" fill="#75608c" text-anchor="start">14</text>
+</g>
+<g class="teaching-stage" data-step="3">
+<text x="280" y="432" font-size="28" fill="#376d9a" text-anchor="middle">Orders return in round 10</text>
+<line x1="280" y1="452" x2="280" y2="485" stroke="#376d9a" stroke-width="3"/>
+<line x1="273.78893279265463" y1="475.92130823599354" x2="280" y2="485" stroke="#376d9a" stroke-width="3"/>
+<line x1="286.21106720734537" y1="475.92130823599354" x2="280" y2="485" stroke="#376d9a" stroke-width="3"/>
+<circle class="travel-token" data-step="3" data-from="280,452" data-to="280,485" r="8" fill="#376d9a"/>
+<rect x="24" y="507" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="24" y="507" width="6" height="112" rx="0" fill="#75608c"/>
+<text x="42" y="542" font-size="26" fill="#75608c" text-anchor="start">Round 10 debt</text>
+<text x="42" y="590" font-size="42" fill="#75608c" text-anchor="start">10</text>
+</g>
+<g class="teaching-stage" data-step="4">
+<rect x="290" y="507" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="290" y="507" width="6" height="112" rx="0" fill="#75608c"/>
+<text x="308" y="542" font-size="26" fill="#75608c" text-anchor="start">Round 13 debt</text>
+<text x="308" y="590" font-size="42" fill="#75608c" text-anchor="start">0</text>
+<text x="280" y="687" font-size="27" fill="#223c36" text-anchor="middle">Future sales make the bridge work.</text>
+</g>
+</svg>

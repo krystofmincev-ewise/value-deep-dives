@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 590" width="560" height="590" role="img" aria-labelledby="12-maxima-title 12-maxima-desc">
+<title id="12-maxima-title">More gross output need not leave more for households</title>
+<desc id="12-maxima-desc">Separate diminishing-return physical model. At investment share 50%, long-run real GDP 250 divides 125 consumption and 125 replacement. At 100%, real GDP 500 all replaces equipment and consumption is zero. Same scale 500.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="590" fill="#fffdf8"/>
+<g class="teaching-stage" data-step="1">
+<text x="24" y="55" font-size="27" fill="#223c36" text-anchor="start">Invest half the output</text>
+<rect x="24" y="72" width="512" height="34" rx="0" fill="#edf1ea"/>
+<rect x="24.0" y="72" width="128.0" height="34" rx="0" fill="#a66d13"/>
+<rect x="152.0" y="72" width="128.0" height="34" rx="0" fill="#376d9a"/>
+<text x="536" y="144" font-size="32" fill="#223c36" text-anchor="end">Real GDP 250</text>
+<text x="24" y="190" font-size="29" fill="#a66d13" text-anchor="start">Household use 125</text>
+<text x="24" y="234" font-size="29" fill="#376d9a" text-anchor="start">Equipment replacement 125</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<text x="24" y="330" font-size="27" fill="#223c36" text-anchor="start">Invest all the output</text>
+<rect x="24" y="347" width="512" height="34" rx="0" fill="#edf1ea"/>
+<rect x="24.0" y="347" width="512.0" height="34" rx="0" fill="#376d9a"/>
+<text x="536" y="419" font-size="32" fill="#223c36" text-anchor="end">Real GDP 500</text>
+<text x="24" y="466" font-size="29" fill="#a66d13" text-anchor="start">Household use 0</text>
+<text x="24" y="510" font-size="29" fill="#376d9a" text-anchor="start">Equipment replacement 500</text>
+<text x="280" y="569" font-size="27" fill="#58675f" text-anchor="middle">Same scale. Different destinations.</text>
+</g>
+</svg>

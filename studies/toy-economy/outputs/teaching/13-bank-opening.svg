@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 675" width="560" height="675" role="img" aria-labelledby="13-bank-opening-title 13-bank-opening-desc">
+<title id="13-bank-opening-title">Fund the bank from the same town</title>
+<desc id="13-bank-opening-desc">Workers keep 60 in deposits, owners 40 and firms 80. Customer deposits total 180. Firm buffers supply the bank&#x27;s 20 equity, ultimately owned by the town&#x27;s owners. The bank holds the inherited 200 settlement asset. Credit-on and credit-off comparisons start identically.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="675" fill="#fffdf8"/>
+<g class="teaching-stage" data-step="1">
+<text x="24" y="43" font-size="27" fill="#376d9a" text-anchor="start">Firm buffers: 100 before → 80 after</text>
+<line x1="280" y1="67" x2="280" y2="112" stroke="#a66d13" stroke-width="3"/>
+<line x1="273.78893279265463" y1="102.92130823599354" x2="280" y2="112" stroke="#a66d13" stroke-width="3"/>
+<line x1="286.21106720734537" y1="102.92130823599354" x2="280" y2="112" stroke="#a66d13" stroke-width="3"/>
+<circle class="travel-token" data-step="1" data-from="280,67" data-to="280,112" r="8" fill="#a66d13"/>
+<rect x="110" y="130" width="340" height="112" rx="12" fill="#edf1ea"/>
+<rect x="110" y="130" width="6" height="112" rx="0" fill="#a66d13"/>
+<text x="128" y="165" font-size="26" fill="#a66d13" text-anchor="start">Bank owners&#x27; capital</text>
+<text x="128" y="213" font-size="42" fill="#a66d13" text-anchor="start">20 at risk</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<text x="24" y="323" font-size="28" fill="#223c36" text-anchor="start">Customer deposits after funding</text>
+<rect x="24" y="348" width="512" height="124" rx="12" fill="#edf1ea"/>
+<text x="45" y="392" font-size="29" fill="#223c36" text-anchor="start">Workers 60 + owners 40</text>
+<text x="45" y="441" font-size="29" fill="#223c36" text-anchor="start">+ firms 80 = deposits 180</text>
+</g>
+<g class="teaching-stage" data-step="3">
+<text x="280" y="532" font-size="28" fill="#75608c" text-anchor="middle">Bank’s base cash: 200</text>
+<text x="280" y="579" font-size="27" fill="#223c36" text-anchor="middle">Deposits 180 + equity 20 = 200</text>
+<text x="280" y="634" font-size="26" fill="#58675f" text-anchor="middle">Same opening with credit on or off.</text>
+</g>
+</svg>

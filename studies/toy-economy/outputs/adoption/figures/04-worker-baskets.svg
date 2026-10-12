@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 775" width="560" height="775" role="img" aria-labelledby="04-worker-baskets-title 04-worker-baskets-desc">
+<title id="04-worker-baskets-title">What can worker households buy?</title>
+<desc id="04-worker-baskets-desc">Baskets purchased by all worker households together. The four adoption cases use the same task automation path, but different pay and time rules. Values are from each case’s last recorded period; they are not welfare scores.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="775" fill="#fffdf8"/>
+<text x="24" y="46" font-size="32" fill="#223c36" text-anchor="start">What can workers buy?</text>
+<text x="24" y="94" font-size="26" fill="#58675f" text-anchor="start">Baskets for the whole worker group</text>
+<g class="teaching-stage" data-step="1">
+<text x="24" y="158" font-size="26" fill="#58675f" text-anchor="start">Before AI</text>
+<text x="536" y="158" font-size="30" fill="#58675f" text-anchor="end">60</text>
+<rect x="24" y="178" width="512" height="31" rx="0" fill="#edf1ea"/>
+<rect x="24" y="178" width="438.85714285714283" height="31" rx="0" fill="#58675f"/>
+</g>
+<g class="teaching-stage" data-step="2">
+<text x="24" y="269" font-size="26" fill="#236654" text-anchor="start">Same pay; more capacity</text>
+<text x="536" y="269" font-size="30" fill="#236654" text-anchor="end">68.2</text>
+<rect x="24" y="289" width="512" height="31" rx="0" fill="#edf1ea"/>
+<rect x="24" y="289" width="498.70129870129875" height="31" rx="0" fill="#236654"/>
+</g>
+<g class="teaching-stage" data-step="3">
+<text x="24" y="380" font-size="26" fill="#236654" text-anchor="start">Same pay; less time</text>
+<text x="536" y="380" font-size="30" fill="#236654" text-anchor="end">53.6</text>
+<rect x="24" y="400" width="512" height="31" rx="0" fill="#edf1ea"/>
+<rect x="24" y="400" width="391.8367346938775" height="31" rx="0" fill="#236654"/>
+</g>
+<g class="teaching-stage" data-step="4">
+<text x="24" y="491" font-size="26" fill="#236654" text-anchor="start">Hourly pay; less time</text>
+<text x="536" y="491" font-size="30" fill="#236654" text-anchor="end">40.9</text>
+<rect x="24" y="511" width="512" height="31" rx="0" fill="#edf1ea"/>
+<rect x="24" y="511" width="299.2207792207792" height="31" rx="0" fill="#236654"/>
+</g>
+<g class="teaching-stage" data-step="5">
+<text x="24" y="602" font-size="26" fill="#236654" text-anchor="start">Layoffs</text>
+<text x="536" y="602" font-size="30" fill="#236654" text-anchor="end">40.9</text>
+<rect x="24" y="622" width="512" height="31" rx="0" fill="#edf1ea"/>
+<rect x="24" y="622" width="299.2207792207792" height="31" rx="0" fill="#236654"/>
+<text x="24" y="745" font-size="29" fill="#223c36" text-anchor="start">Same AI. Different contracts.</text>
+</g>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 680" width="560" height="680" role="img" aria-labelledby="14-bank-money-title 14-bank-money-desc">
+<title id="14-bank-money-title">A loan creates money—and a promise</title>
+<desc id="14-bank-money-desc">The bank creates a deposit of 2 and a matching debt of 2. Paying workers transfers that deposit. Repaying principal later removes deposit money and debt together. The loan itself is not GDP.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="680" fill="#fffdf8"/>
+<g class="teaching-stage" data-step="1">
+<text x="24" y="43" font-size="28" fill="#75608c" text-anchor="start">1. The bank approves the loan</text>
+<rect x="24" y="68" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="24" y="68" width="6" height="112" rx="0" fill="#376d9a"/>
+<text x="42" y="103" font-size="26" fill="#376d9a" text-anchor="start">Firm deposits</text>
+<text x="42" y="151" font-size="42" fill="#376d9a" text-anchor="start">+2</text>
+<rect x="290" y="68" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="290" y="68" width="6" height="112" rx="0" fill="#75608c"/>
+<text x="308" y="103" font-size="26" fill="#75608c" text-anchor="start">Firm debt</text>
+<text x="308" y="151" font-size="42" fill="#75608c" text-anchor="start">+2</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<text x="24" y="235" font-size="28" fill="#223c36" text-anchor="start">2. The firms pay their workers</text>
+<text x="45" y="295" font-size="29" fill="#376d9a" text-anchor="start">Firms</text>
+<line x1="160" y1="286" x2="362" y2="286" stroke="#236654" stroke-width="3"/>
+<line x1="352.92130823599354" y1="292.21106720734537" x2="362" y2="286" stroke="#236654" stroke-width="3"/>
+<line x1="352.92130823599354" y1="279.78893279265463" x2="362" y2="286" stroke="#236654" stroke-width="3"/>
+<circle class="travel-token" data-step="2" data-from="160,286" data-to="362,286" r="8" fill="#236654"/>
+<text x="400" y="295" font-size="28" fill="#236654" text-anchor="start">Workers</text>
+<text x="280" y="347" font-size="27" fill="#58675f" text-anchor="middle">Same deposit money. New holder.</text>
+</g>
+<g class="teaching-stage" data-step="3">
+<text x="24" y="421" font-size="28" fill="#75608c" text-anchor="start">3. Later, repay the principal</text>
+<rect x="24" y="450" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="24" y="450" width="6" height="112" rx="0" fill="#376d9a"/>
+<text x="42" y="485" font-size="26" fill="#376d9a" text-anchor="start">Deposits</text>
+<text x="42" y="533" font-size="42" fill="#376d9a" text-anchor="start">−2</text>
+<rect x="290" y="450" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="290" y="450" width="6" height="112" rx="0" fill="#75608c"/>
+<text x="308" y="485" font-size="26" fill="#75608c" text-anchor="start">Debt</text>
+<text x="308" y="533" font-size="42" fill="#75608c" text-anchor="start">−2</text>
+<text x="280" y="624" font-size="27" fill="#223c36" text-anchor="middle">The loan itself is not new output.</text>
+</g>
+</svg>

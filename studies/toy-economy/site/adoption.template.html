@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Watch the town adopt AI</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="adoption.css">
+  <script src="adoption.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#experiment">Skip to the experiment</a>
+  <main id="experiment">
+    <header>
+      <p class="eyebrow">The gradual AI experiment · a small invented economy</p>
+      <h1>Watch the town change.</h1>
+      <p class="lede">
+        The same ten people. Two competing shops. Follow the paychecks, purchases
+        and AI bills one round at a time.
+      </p>
+      <nav>
+        <a href="04-ai-arrives-one-shop-at-a-time.html">Read the illustrated story</a>
+        <a href="03-when-the-economy-breaks.html">The earlier paper</a>
+        <a href="banking.html">The separate banking experiment</a>
+      </nav>
+    </header>
+
+    <section class="panel">
+      <label for="adoption-case"><strong>Choose a path</strong></label>
+      <select id="adoption-case">@@OPTIONS@@</select>
+      <p id="case-explanation"></p>
+      <p id="case-status" role="status"></p>
+      <div class="round-controls">
+        <button id="previous-round" type="button">Previous</button>
+        <label for="adoption-round">
+          Round <output id="round-label" for="adoption-round">0</output>
+        </label>
+        <input id="adoption-round" type="range" min="0" max="79" value="0">
+        <button id="next-round" type="button">Next</button>
+        <button id="play-rounds" type="button">Play rounds</button>
+      </div>
+      <p class="fine">
+        Round 0 is the first period. No model period represents a calendar year.
+        Play moves through saved Python results; changing the view does not rerun
+        the economy.
+      </p>
+    </section>
+
+    <section class="metrics adoption-metrics" aria-label="This round">
+      <div class="metric">
+        <span class="label">Worker households buy</span>
+        <strong id="worker-baskets"></strong>
+        <small>baskets · baseline 60</small>
+      </div>
+      <div class="metric">
+        <span class="label">All households buy</span>
+        <strong id="all-baskets"></strong>
+        <small>baskets · baseline 80</small>
+      </div>
+      <div class="metric">
+        <span class="label">Real GDP</span>
+        <strong id="real-gdp"></strong>
+        <small>baskets + equipment at starting prices</small>
+      </div>
+      <div class="metric">
+        <span class="label">Nominal GDP</span>
+        <strong id="nominal-gdp"></strong>
+        <small>coins spent on final goods</small>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Who is working—and getting paid?</h2>
+      <div id="firm-cards" class="firm-cards"></div>
+      <p id="labor-note" class="explanation"></p>
+      <p class="fine">
+        The shop cards show actual results for the selected round. A full shift
+        is one person's normal work time per round. Contracted time and time
+        actually needed for orders can differ. Headcount alone cannot tell you
+        the wage bill.
+      </p>
+
+      <details class="decision-details">
+        <summary>Inspect each shop's adoption prediction and choice</summary>
+        <p>
+          A shop that chooses whether to adopt compares two one-step predictions
+          before making its choice. These are predictions, not actual results or
+          forecasts of the complete path. Operating surplus means sales minus
+          wages and AI fees, before new equipment and depreciation. A scheduled
+          path simply sets each shop's automation stage.
+        </p>
+        <div id="adoption-decisions" class="decision-cards"></div>
+      </details>
+
+      <details>
+        <summary>Follow the ten worker households</summary>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Household</th>
+                <th>Cash income</th>
+                <th>Purchases, coins</th>
+                <th>Purchases, baskets</th>
+                <th>Closing cash</th>
+              </tr>
+            </thead>
+            <tbody id="worker-rows"></tbody>
+          </table>
+        </div>
+      </details>
+    </section>
+
+    <section class="panel">
+      <h2>Where does the money go?</h2>
+      <div class="money-cards">
+        <p><strong id="ai-revenue"></strong><br>coins paid to the AI supplier</p>
+        <p><strong id="equipment"></strong><br>coins spent on new equipment</p>
+        <p><strong id="unspent"></strong><br>coins of intended consumption left unspent</p>
+      </div>
+      <p id="flow-note" class="explanation"></p>
+      <p class="fine">
+        AI services are an input into the shops' products. Count their value once:
+        the supplier's value added offsets the shops' input costs. Buying an
+        existing company is an ownership transaction, not new production.
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>The complete saved path</h2>
+      <p>
+        Solid dark line: real GDP. Dashed green line: worker households' baskets. The dot marks
+        the selected round; both lines show every saved round, including later
+        rounds.
+      </p>
+      <svg id="path-chart" viewBox="0 0 720 290" role="img"
+           aria-label="Complete saved time paths of real GDP and worker consumption"></svg>
+      <p id="chart-note" class="fine"></p>
+    </section>
+
+    <details class="panel">
+      <summary>Inspect the rules and accounts</summary>
+      <p>
+        The price rule, spending behavior and adoption opportunities are
+        assumptions. These runs establish what can happen inside those rules.
+        They are not forecasts or a solved competitive equilibrium.
+      </p>
+      <pre id="case-inputs"></pre>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Account</th>
+              <th>Opening cash</th>
+              <th>Closing cash</th>
+            </tr>
+          </thead>
+          <tbody id="account-rows"></tbody>
+        </table>
+      </div>
+      <p id="cash-check"></p>
+      <a href="../research/adoption-model.md">Model specification and limits</a> ·
+      <a href="../outputs/adoption/results.json">Full results JSON</a>
+    </details>
+
+    <footer>
+      Local research draft. The bank is tested in a separate model, linked above;
+      it is not silently included in these paths.
+      <a href="../research/adoption-validation.md">Verification record</a>.
+    </footer>
+  </main>
+  <script type="application/json" id="adoption-data">@@DATA@@</script>
+</body>
+</html>

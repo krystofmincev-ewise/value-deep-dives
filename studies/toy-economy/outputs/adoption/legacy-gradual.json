@@ -1,0 +1,7298 @@
+[
+  {
+    "schedule": "unchanged",
+    "investment_rule": "fixed_utilization",
+    "series": [
+      {
+        "period": 0,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 1,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 2,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 3,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 4,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 5,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 6,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 7,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 8,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 9,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 10,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 11,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 12,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 13,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 14,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 15,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 16,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 17,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 18,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 19,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 20,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 21,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 22,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 23,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 24,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 25,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 26,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 27,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 28,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 29,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 30,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 31,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 32,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 33,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 34,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 35,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 36,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 37,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 38,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 39,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 40,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 41,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 42,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 43,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 44,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 45,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 46,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 47,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 48,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 49,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 50,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 51,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 52,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 53,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 54,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 55,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 56,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 57,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 58,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 59,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 60,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 61,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 62,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 63,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 64,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 65,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 66,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 67,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 68,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 69,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 70,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 71,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 72,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 73,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 74,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 75,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 76,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 77,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 78,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 79,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 80,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 81,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 82,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 83,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 84,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 85,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 86,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 87,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 88,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 89,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 90,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 91,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 92,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 93,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 94,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 95,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 96,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 97,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 98,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 99,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      }
+    ],
+    "summary": {
+      "last_gdp": 100.0,
+      "minimum_gdp": 100.0,
+      "cumulative_gdp": 10000.0,
+      "periods": 100
+    }
+  },
+  {
+    "schedule": "sudden",
+    "investment_rule": "fixed_utilization",
+    "series": [
+      {
+        "period": 0,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 1,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 2,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 3,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 4,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 5,
+        "workers": 0,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 6,
+        "workers": 0,
+        "gdp": 70.0,
+        "consumption": 50.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 7,
+        "workers": 0,
+        "gdp": 55.0,
+        "consumption": 35.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 8,
+        "workers": 0,
+        "gdp": 47.5,
+        "consumption": 27.5,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 9,
+        "workers": 0,
+        "gdp": 43.75,
+        "consumption": 23.75,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 10,
+        "workers": 0,
+        "gdp": 41.875,
+        "consumption": 21.875,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 11,
+        "workers": 0,
+        "gdp": 40.9375,
+        "consumption": 20.9375,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 12,
+        "workers": 0,
+        "gdp": 40.46875,
+        "consumption": 20.46875,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 13,
+        "workers": 0,
+        "gdp": 40.234375,
+        "consumption": 20.234375,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 14,
+        "workers": 0,
+        "gdp": 40.1171875,
+        "consumption": 20.1171875,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 15,
+        "workers": 0,
+        "gdp": 40.05859375,
+        "consumption": 20.05859375,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 16,
+        "workers": 0,
+        "gdp": 40.029296875,
+        "consumption": 20.029296875,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 17,
+        "workers": 0,
+        "gdp": 40.0146484375,
+        "consumption": 20.0146484375,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 18,
+        "workers": 0,
+        "gdp": 40.00732421875,
+        "consumption": 20.00732421875,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 19,
+        "workers": 0,
+        "gdp": 40.003662109375,
+        "consumption": 20.003662109375,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 20,
+        "workers": 0,
+        "gdp": 40.0018310546875,
+        "consumption": 20.0018310546875,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 21,
+        "workers": 0,
+        "gdp": 40.00091552734375,
+        "consumption": 20.00091552734375,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 22,
+        "workers": 0,
+        "gdp": 40.000457763671875,
+        "consumption": 20.000457763671875,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 23,
+        "workers": 0,
+        "gdp": 40.00022888183594,
+        "consumption": 20.000228881835938,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 24,
+        "workers": 0,
+        "gdp": 40.00011444091797,
+        "consumption": 20.00011444091797,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 25,
+        "workers": 0,
+        "gdp": 40.000057220458984,
+        "consumption": 20.000057220458984,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 26,
+        "workers": 0,
+        "gdp": 40.00002861022949,
+        "consumption": 20.000028610229492,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 27,
+        "workers": 0,
+        "gdp": 40.000014305114746,
+        "consumption": 20.000014305114746,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 28,
+        "workers": 0,
+        "gdp": 40.00000715255737,
+        "consumption": 20.000007152557373,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 29,
+        "workers": 0,
+        "gdp": 40.00000357627869,
+        "consumption": 20.000003576278687,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 30,
+        "workers": 0,
+        "gdp": 40.00000178813934,
+        "consumption": 20.000001788139343,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 31,
+        "workers": 0,
+        "gdp": 40.00000089406967,
+        "consumption": 20.00000089406967,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 32,
+        "workers": 0,
+        "gdp": 40.000000447034836,
+        "consumption": 20.000000447034836,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 33,
+        "workers": 0,
+        "gdp": 40.00000022351742,
+        "consumption": 20.000000223517418,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 34,
+        "workers": 0,
+        "gdp": 40.00000011175871,
+        "consumption": 20.00000011175871,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 35,
+        "workers": 0,
+        "gdp": 40.000000055879354,
+        "consumption": 20.000000055879354,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 36,
+        "workers": 0,
+        "gdp": 40.00000002793968,
+        "consumption": 20.000000027939677,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 37,
+        "workers": 0,
+        "gdp": 40.00000001396984,
+        "consumption": 20.00000001396984,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 38,
+        "workers": 0,
+        "gdp": 40.00000000698492,
+        "consumption": 20.00000000698492,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 39,
+        "workers": 0,
+        "gdp": 40.00000000349246,
+        "consumption": 20.00000000349246,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 40,
+        "workers": 0,
+        "gdp": 40.00000000174623,
+        "consumption": 20.00000000174623,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 41,
+        "workers": 0,
+        "gdp": 40.000000000873115,
+        "consumption": 20.000000000873115,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 42,
+        "workers": 0,
+        "gdp": 40.00000000043656,
+        "consumption": 20.000000000436557,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 43,
+        "workers": 0,
+        "gdp": 40.00000000021828,
+        "consumption": 20.00000000021828,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 44,
+        "workers": 0,
+        "gdp": 40.00000000010914,
+        "consumption": 20.00000000010914,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 45,
+        "workers": 0,
+        "gdp": 40.00000000005457,
+        "consumption": 20.00000000005457,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 46,
+        "workers": 0,
+        "gdp": 40.000000000027285,
+        "consumption": 20.000000000027285,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 47,
+        "workers": 0,
+        "gdp": 40.00000000001364,
+        "consumption": 20.000000000013642,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 48,
+        "workers": 0,
+        "gdp": 40.00000000000682,
+        "consumption": 20.00000000000682,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 49,
+        "workers": 0,
+        "gdp": 40.00000000000341,
+        "consumption": 20.00000000000341,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 50,
+        "workers": 0,
+        "gdp": 40.000000000001705,
+        "consumption": 20.000000000001705,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 51,
+        "workers": 0,
+        "gdp": 40.00000000000085,
+        "consumption": 20.000000000000853,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 52,
+        "workers": 0,
+        "gdp": 40.000000000000426,
+        "consumption": 20.000000000000426,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 53,
+        "workers": 0,
+        "gdp": 40.00000000000021,
+        "consumption": 20.000000000000213,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 54,
+        "workers": 0,
+        "gdp": 40.00000000000011,
+        "consumption": 20.000000000000107,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 55,
+        "workers": 0,
+        "gdp": 40.00000000000006,
+        "consumption": 20.000000000000053,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 56,
+        "workers": 0,
+        "gdp": 40.00000000000003,
+        "consumption": 20.00000000000003,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 57,
+        "workers": 0,
+        "gdp": 40.000000000000014,
+        "consumption": 20.000000000000014,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 58,
+        "workers": 0,
+        "gdp": 40.00000000000001,
+        "consumption": 20.000000000000007,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 59,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.000000000000004,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 60,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 61,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 62,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 63,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 64,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 65,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 66,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 67,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 68,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 69,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 70,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 71,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 72,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 73,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 74,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 75,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 76,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 77,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 78,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 79,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 80,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 81,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 82,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 83,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 84,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 85,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 86,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 87,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 88,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 89,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 90,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 91,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 92,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 93,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 94,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 95,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 96,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 97,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 98,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 99,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      }
+    ],
+    "summary": {
+      "last_gdp": 40.0,
+      "minimum_gdp": 40.0,
+      "cumulative_gdp": 4420.0,
+      "periods": 100
+    }
+  },
+  {
+    "schedule": "gradual_fast",
+    "investment_rule": "fixed_utilization",
+    "series": [
+      {
+        "period": 0,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 1,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 2,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 3,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 4,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 5,
+        "workers": 8,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 48.0,
+        "insolvency": false
+      },
+      {
+        "period": 6,
+        "workers": 8,
+        "gdp": 94.0,
+        "consumption": 74.0,
+        "investment": 20.0,
+        "wages": 48.0,
+        "insolvency": false
+      },
+      {
+        "period": 7,
+        "workers": 6,
+        "gdp": 91.0,
+        "consumption": 71.0,
+        "investment": 20.0,
+        "wages": 36.0,
+        "insolvency": false
+      },
+      {
+        "period": 8,
+        "workers": 6,
+        "gdp": 83.5,
+        "consumption": 63.5,
+        "investment": 20.0,
+        "wages": 36.0,
+        "insolvency": false
+      },
+      {
+        "period": 9,
+        "workers": 4,
+        "gdp": 79.75,
+        "consumption": 59.75,
+        "investment": 20.0,
+        "wages": 24.0,
+        "insolvency": false
+      },
+      {
+        "period": 10,
+        "workers": 4,
+        "gdp": 71.875,
+        "consumption": 51.875,
+        "investment": 20.0,
+        "wages": 24.000000000000007,
+        "insolvency": false
+      },
+      {
+        "period": 11,
+        "workers": 2,
+        "gdp": 67.9375,
+        "consumption": 47.93750000000001,
+        "investment": 20.0,
+        "wages": 12.0,
+        "insolvency": false
+      },
+      {
+        "period": 12,
+        "workers": 2,
+        "gdp": 59.96875,
+        "consumption": 39.96875,
+        "investment": 20.0,
+        "wages": 12.0,
+        "insolvency": false
+      },
+      {
+        "period": 13,
+        "workers": 0,
+        "gdp": 55.984375,
+        "consumption": 35.984375,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 14,
+        "workers": 0,
+        "gdp": 47.9921875,
+        "consumption": 27.9921875,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 15,
+        "workers": 0,
+        "gdp": 43.99609375,
+        "consumption": 23.99609375,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 16,
+        "workers": 0,
+        "gdp": 41.998046875,
+        "consumption": 21.998046875,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 17,
+        "workers": 0,
+        "gdp": 40.9990234375,
+        "consumption": 20.9990234375,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 18,
+        "workers": 0,
+        "gdp": 40.49951171875,
+        "consumption": 20.49951171875,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 19,
+        "workers": 0,
+        "gdp": 40.249755859375,
+        "consumption": 20.249755859375,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 20,
+        "workers": 0,
+        "gdp": 40.1248779296875,
+        "consumption": 20.1248779296875,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 21,
+        "workers": 0,
+        "gdp": 40.06243896484375,
+        "consumption": 20.06243896484375,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 22,
+        "workers": 0,
+        "gdp": 40.031219482421875,
+        "consumption": 20.031219482421875,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 23,
+        "workers": 0,
+        "gdp": 40.01560974121094,
+        "consumption": 20.015609741210938,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 24,
+        "workers": 0,
+        "gdp": 40.00780487060547,
+        "consumption": 20.00780487060547,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 25,
+        "workers": 0,
+        "gdp": 40.003902435302734,
+        "consumption": 20.003902435302734,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 26,
+        "workers": 0,
+        "gdp": 40.00195121765137,
+        "consumption": 20.001951217651367,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 27,
+        "workers": 0,
+        "gdp": 40.000975608825684,
+        "consumption": 20.000975608825684,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 28,
+        "workers": 0,
+        "gdp": 40.00048780441284,
+        "consumption": 20.000487804412842,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 29,
+        "workers": 0,
+        "gdp": 40.00024390220642,
+        "consumption": 20.00024390220642,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 30,
+        "workers": 0,
+        "gdp": 40.00012195110321,
+        "consumption": 20.00012195110321,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 31,
+        "workers": 0,
+        "gdp": 40.000060975551605,
+        "consumption": 20.000060975551605,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 32,
+        "workers": 0,
+        "gdp": 40.0000304877758,
+        "consumption": 20.000030487775803,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 33,
+        "workers": 0,
+        "gdp": 40.0000152438879,
+        "consumption": 20.0000152438879,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 34,
+        "workers": 0,
+        "gdp": 40.00000762194395,
+        "consumption": 20.00000762194395,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 35,
+        "workers": 0,
+        "gdp": 40.000003810971975,
+        "consumption": 20.000003810971975,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 36,
+        "workers": 0,
+        "gdp": 40.00000190548599,
+        "consumption": 20.000001905485988,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 37,
+        "workers": 0,
+        "gdp": 40.000000952742994,
+        "consumption": 20.000000952742994,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 38,
+        "workers": 0,
+        "gdp": 40.0000004763715,
+        "consumption": 20.000000476371497,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 39,
+        "workers": 0,
+        "gdp": 40.00000023818575,
+        "consumption": 20.00000023818575,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 40,
+        "workers": 0,
+        "gdp": 40.000000119092874,
+        "consumption": 20.000000119092874,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 41,
+        "workers": 0,
+        "gdp": 40.00000005954644,
+        "consumption": 20.000000059546437,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 42,
+        "workers": 0,
+        "gdp": 40.00000002977322,
+        "consumption": 20.00000002977322,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 43,
+        "workers": 0,
+        "gdp": 40.00000001488661,
+        "consumption": 20.00000001488661,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 44,
+        "workers": 0,
+        "gdp": 40.000000007443305,
+        "consumption": 20.000000007443305,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 45,
+        "workers": 0,
+        "gdp": 40.00000000372165,
+        "consumption": 20.000000003721652,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 46,
+        "workers": 0,
+        "gdp": 40.000000001860826,
+        "consumption": 20.000000001860826,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 47,
+        "workers": 0,
+        "gdp": 40.00000000093041,
+        "consumption": 20.000000000930413,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 48,
+        "workers": 0,
+        "gdp": 40.00000000046521,
+        "consumption": 20.000000000465207,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 49,
+        "workers": 0,
+        "gdp": 40.0000000002326,
+        "consumption": 20.000000000232603,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 50,
+        "workers": 0,
+        "gdp": 40.0000000001163,
+        "consumption": 20.0000000001163,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 51,
+        "workers": 0,
+        "gdp": 40.00000000005815,
+        "consumption": 20.00000000005815,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 52,
+        "workers": 0,
+        "gdp": 40.000000000029075,
+        "consumption": 20.000000000029075,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 53,
+        "workers": 0,
+        "gdp": 40.00000000001454,
+        "consumption": 20.000000000014538,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 54,
+        "workers": 0,
+        "gdp": 40.00000000000727,
+        "consumption": 20.00000000000727,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 55,
+        "workers": 0,
+        "gdp": 40.00000000000364,
+        "consumption": 20.000000000003638,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 56,
+        "workers": 0,
+        "gdp": 40.00000000000182,
+        "consumption": 20.00000000000182,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 57,
+        "workers": 0,
+        "gdp": 40.00000000000091,
+        "consumption": 20.00000000000091,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 58,
+        "workers": 0,
+        "gdp": 40.000000000000455,
+        "consumption": 20.000000000000455,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 59,
+        "workers": 0,
+        "gdp": 40.00000000000023,
+        "consumption": 20.000000000000227,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 60,
+        "workers": 0,
+        "gdp": 40.000000000000114,
+        "consumption": 20.000000000000114,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 61,
+        "workers": 0,
+        "gdp": 40.00000000000006,
+        "consumption": 20.000000000000057,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 62,
+        "workers": 0,
+        "gdp": 40.00000000000003,
+        "consumption": 20.00000000000003,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 63,
+        "workers": 0,
+        "gdp": 40.000000000000014,
+        "consumption": 20.000000000000014,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 64,
+        "workers": 0,
+        "gdp": 40.00000000000001,
+        "consumption": 20.000000000000007,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 65,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.000000000000004,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 66,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 67,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 68,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 69,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 70,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 71,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 72,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 73,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 74,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 75,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 76,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 77,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 78,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 79,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 80,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 81,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 82,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 83,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 84,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 85,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 86,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 87,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 88,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 89,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 90,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 91,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 92,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 93,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 94,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 95,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 96,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 97,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 98,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 99,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      }
+    ],
+    "summary": {
+      "last_gdp": 40.0,
+      "minimum_gdp": 40.0,
+      "cumulative_gdp": 4660.0,
+      "periods": 100
+    }
+  },
+  {
+    "schedule": "gradual_slow",
+    "investment_rule": "fixed_utilization",
+    "series": [
+      {
+        "period": 0,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 1,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 2,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 3,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 4,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 5,
+        "workers": 8,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 48.0,
+        "insolvency": false
+      },
+      {
+        "period": 6,
+        "workers": 8,
+        "gdp": 94.0,
+        "consumption": 74.0,
+        "investment": 20.0,
+        "wages": 48.0,
+        "insolvency": false
+      },
+      {
+        "period": 7,
+        "workers": 8,
+        "gdp": 91.0,
+        "consumption": 71.0,
+        "investment": 20.0,
+        "wages": 48.0,
+        "insolvency": false
+      },
+      {
+        "period": 8,
+        "workers": 8,
+        "gdp": 89.5,
+        "consumption": 69.5,
+        "investment": 20.0,
+        "wages": 48.000000000000014,
+        "insolvency": false
+      },
+      {
+        "period": 9,
+        "workers": 8,
+        "gdp": 88.75,
+        "consumption": 68.75,
+        "investment": 20.0,
+        "wages": 48.0,
+        "insolvency": false
+      },
+      {
+        "period": 10,
+        "workers": 8,
+        "gdp": 88.375,
+        "consumption": 68.375,
+        "investment": 20.0,
+        "wages": 48.0,
+        "insolvency": false
+      },
+      {
+        "period": 11,
+        "workers": 8,
+        "gdp": 88.1875,
+        "consumption": 68.1875,
+        "investment": 20.0,
+        "wages": 48.0,
+        "insolvency": false
+      },
+      {
+        "period": 12,
+        "workers": 8,
+        "gdp": 88.09375,
+        "consumption": 68.09375,
+        "investment": 20.0,
+        "wages": 48.0,
+        "insolvency": false
+      },
+      {
+        "period": 13,
+        "workers": 6,
+        "gdp": 88.046875,
+        "consumption": 68.046875,
+        "investment": 20.0,
+        "wages": 36.0,
+        "insolvency": false
+      },
+      {
+        "period": 14,
+        "workers": 6,
+        "gdp": 82.0234375,
+        "consumption": 62.0234375,
+        "investment": 20.0,
+        "wages": 36.0,
+        "insolvency": false
+      },
+      {
+        "period": 15,
+        "workers": 6,
+        "gdp": 79.01171875,
+        "consumption": 59.01171875,
+        "investment": 20.0,
+        "wages": 36.0,
+        "insolvency": false
+      },
+      {
+        "period": 16,
+        "workers": 6,
+        "gdp": 77.505859375,
+        "consumption": 57.505859375,
+        "investment": 20.0,
+        "wages": 36.0,
+        "insolvency": false
+      },
+      {
+        "period": 17,
+        "workers": 6,
+        "gdp": 76.7529296875,
+        "consumption": 56.7529296875,
+        "investment": 20.0,
+        "wages": 35.99999999999999,
+        "insolvency": false
+      },
+      {
+        "period": 18,
+        "workers": 6,
+        "gdp": 76.37646484375,
+        "consumption": 56.37646484375,
+        "investment": 20.0,
+        "wages": 36.00000000000001,
+        "insolvency": false
+      },
+      {
+        "period": 19,
+        "workers": 6,
+        "gdp": 76.188232421875,
+        "consumption": 56.188232421875,
+        "investment": 20.0,
+        "wages": 36.0,
+        "insolvency": false
+      },
+      {
+        "period": 20,
+        "workers": 6,
+        "gdp": 76.0941162109375,
+        "consumption": 56.0941162109375,
+        "investment": 20.0,
+        "wages": 36.0,
+        "insolvency": false
+      },
+      {
+        "period": 21,
+        "workers": 4,
+        "gdp": 76.04705810546875,
+        "consumption": 56.04705810546875,
+        "investment": 20.0,
+        "wages": 23.999999999999993,
+        "insolvency": false
+      },
+      {
+        "period": 22,
+        "workers": 4,
+        "gdp": 70.02352905273438,
+        "consumption": 50.02352905273437,
+        "investment": 20.0,
+        "wages": 23.999999999999996,
+        "insolvency": false
+      },
+      {
+        "period": 23,
+        "workers": 4,
+        "gdp": 67.01176452636719,
+        "consumption": 47.01176452636719,
+        "investment": 20.0,
+        "wages": 24.0,
+        "insolvency": false
+      },
+      {
+        "period": 24,
+        "workers": 4,
+        "gdp": 65.5058822631836,
+        "consumption": 45.505882263183594,
+        "investment": 20.0,
+        "wages": 23.999999999999993,
+        "insolvency": false
+      },
+      {
+        "period": 25,
+        "workers": 4,
+        "gdp": 64.7529411315918,
+        "consumption": 44.75294113159179,
+        "investment": 20.0,
+        "wages": 24.0,
+        "insolvency": false
+      },
+      {
+        "period": 26,
+        "workers": 4,
+        "gdp": 64.3764705657959,
+        "consumption": 44.3764705657959,
+        "investment": 20.0,
+        "wages": 24.0,
+        "insolvency": false
+      },
+      {
+        "period": 27,
+        "workers": 4,
+        "gdp": 64.18823528289795,
+        "consumption": 44.18823528289795,
+        "investment": 20.0,
+        "wages": 24.0,
+        "insolvency": false
+      },
+      {
+        "period": 28,
+        "workers": 4,
+        "gdp": 64.09411764144897,
+        "consumption": 44.094117641448975,
+        "investment": 20.0,
+        "wages": 23.999999999999993,
+        "insolvency": false
+      },
+      {
+        "period": 29,
+        "workers": 2,
+        "gdp": 64.04705882072447,
+        "consumption": 44.04705882072447,
+        "investment": 20.0,
+        "wages": 12.0,
+        "insolvency": false
+      },
+      {
+        "period": 30,
+        "workers": 2,
+        "gdp": 58.02352941036223,
+        "consumption": 38.02352941036223,
+        "investment": 20.0,
+        "wages": 12.0,
+        "insolvency": false
+      },
+      {
+        "period": 31,
+        "workers": 2,
+        "gdp": 55.011764705181115,
+        "consumption": 35.011764705181115,
+        "investment": 20.0,
+        "wages": 12.0,
+        "insolvency": false
+      },
+      {
+        "period": 32,
+        "workers": 2,
+        "gdp": 53.50588235259056,
+        "consumption": 33.50588235259056,
+        "investment": 20.0,
+        "wages": 12.0,
+        "insolvency": false
+      },
+      {
+        "period": 33,
+        "workers": 2,
+        "gdp": 52.75294117629528,
+        "consumption": 32.75294117629528,
+        "investment": 20.0,
+        "wages": 12.0,
+        "insolvency": false
+      },
+      {
+        "period": 34,
+        "workers": 2,
+        "gdp": 52.37647058814764,
+        "consumption": 32.37647058814764,
+        "investment": 20.0,
+        "wages": 12.0,
+        "insolvency": false
+      },
+      {
+        "period": 35,
+        "workers": 2,
+        "gdp": 52.18823529407382,
+        "consumption": 32.18823529407382,
+        "investment": 20.0,
+        "wages": 11.999999999999998,
+        "insolvency": false
+      },
+      {
+        "period": 36,
+        "workers": 2,
+        "gdp": 52.09411764703691,
+        "consumption": 32.09411764703691,
+        "investment": 20.0,
+        "wages": 12.0,
+        "insolvency": false
+      },
+      {
+        "period": 37,
+        "workers": 0,
+        "gdp": 52.047058823518455,
+        "consumption": 32.047058823518455,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 38,
+        "workers": 0,
+        "gdp": 46.02352941175923,
+        "consumption": 26.023529411759228,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 39,
+        "workers": 0,
+        "gdp": 43.011764705879614,
+        "consumption": 23.011764705879614,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 40,
+        "workers": 0,
+        "gdp": 41.50588235293981,
+        "consumption": 21.505882352939807,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 41,
+        "workers": 0,
+        "gdp": 40.7529411764699,
+        "consumption": 20.752941176469903,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 42,
+        "workers": 0,
+        "gdp": 40.37647058823495,
+        "consumption": 20.37647058823495,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 43,
+        "workers": 0,
+        "gdp": 40.188235294117476,
+        "consumption": 20.188235294117476,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 44,
+        "workers": 0,
+        "gdp": 40.09411764705874,
+        "consumption": 20.094117647058738,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 45,
+        "workers": 0,
+        "gdp": 40.04705882352937,
+        "consumption": 20.04705882352937,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 46,
+        "workers": 0,
+        "gdp": 40.023529411764684,
+        "consumption": 20.023529411764684,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 47,
+        "workers": 0,
+        "gdp": 40.01176470588234,
+        "consumption": 20.011764705882342,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 48,
+        "workers": 0,
+        "gdp": 40.00588235294117,
+        "consumption": 20.00588235294117,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 49,
+        "workers": 0,
+        "gdp": 40.002941176470586,
+        "consumption": 20.002941176470586,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 50,
+        "workers": 0,
+        "gdp": 40.00147058823529,
+        "consumption": 20.001470588235293,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 51,
+        "workers": 0,
+        "gdp": 40.000735294117646,
+        "consumption": 20.000735294117646,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 52,
+        "workers": 0,
+        "gdp": 40.00036764705882,
+        "consumption": 20.000367647058823,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 53,
+        "workers": 0,
+        "gdp": 40.00018382352941,
+        "consumption": 20.00018382352941,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 54,
+        "workers": 0,
+        "gdp": 40.000091911764706,
+        "consumption": 20.000091911764706,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 55,
+        "workers": 0,
+        "gdp": 40.00004595588236,
+        "consumption": 20.000045955882353,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 56,
+        "workers": 0,
+        "gdp": 40.00002297794118,
+        "consumption": 20.00002297794118,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 57,
+        "workers": 0,
+        "gdp": 40.000011488970586,
+        "consumption": 20.000011488970586,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 58,
+        "workers": 0,
+        "gdp": 40.00000574448529,
+        "consumption": 20.000005744485293,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 59,
+        "workers": 0,
+        "gdp": 40.000002872242646,
+        "consumption": 20.000002872242646,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 60,
+        "workers": 0,
+        "gdp": 40.00000143612132,
+        "consumption": 20.000001436121323,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 61,
+        "workers": 0,
+        "gdp": 40.00000071806066,
+        "consumption": 20.00000071806066,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 62,
+        "workers": 0,
+        "gdp": 40.00000035903033,
+        "consumption": 20.00000035903033,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 63,
+        "workers": 0,
+        "gdp": 40.00000017951517,
+        "consumption": 20.000000179515165,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 64,
+        "workers": 0,
+        "gdp": 40.000000089757584,
+        "consumption": 20.000000089757584,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 65,
+        "workers": 0,
+        "gdp": 40.00000004487879,
+        "consumption": 20.000000044878792,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 66,
+        "workers": 0,
+        "gdp": 40.000000022439394,
+        "consumption": 20.000000022439394,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 67,
+        "workers": 0,
+        "gdp": 40.0000000112197,
+        "consumption": 20.000000011219697,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 68,
+        "workers": 0,
+        "gdp": 40.00000000560985,
+        "consumption": 20.00000000560985,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 69,
+        "workers": 0,
+        "gdp": 40.000000002804924,
+        "consumption": 20.000000002804924,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 70,
+        "workers": 0,
+        "gdp": 40.00000000140246,
+        "consumption": 20.000000001402462,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 71,
+        "workers": 0,
+        "gdp": 40.000000000701235,
+        "consumption": 20.00000000070123,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 72,
+        "workers": 0,
+        "gdp": 40.00000000035062,
+        "consumption": 20.000000000350617,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 73,
+        "workers": 0,
+        "gdp": 40.000000000175305,
+        "consumption": 20.00000000017531,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 74,
+        "workers": 0,
+        "gdp": 40.00000000008765,
+        "consumption": 20.000000000087653,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 75,
+        "workers": 0,
+        "gdp": 40.000000000043826,
+        "consumption": 20.000000000043826,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 76,
+        "workers": 0,
+        "gdp": 40.00000000002191,
+        "consumption": 20.000000000021913,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 77,
+        "workers": 0,
+        "gdp": 40.00000000001096,
+        "consumption": 20.000000000010957,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 78,
+        "workers": 0,
+        "gdp": 40.00000000000548,
+        "consumption": 20.00000000000548,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 79,
+        "workers": 0,
+        "gdp": 40.00000000000274,
+        "consumption": 20.00000000000274,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 80,
+        "workers": 0,
+        "gdp": 40.00000000000137,
+        "consumption": 20.00000000000137,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 81,
+        "workers": 0,
+        "gdp": 40.00000000000068,
+        "consumption": 20.000000000000686,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 82,
+        "workers": 0,
+        "gdp": 40.00000000000034,
+        "consumption": 20.00000000000034,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 83,
+        "workers": 0,
+        "gdp": 40.00000000000017,
+        "consumption": 20.00000000000017,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 84,
+        "workers": 0,
+        "gdp": 40.000000000000085,
+        "consumption": 20.000000000000085,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 85,
+        "workers": 0,
+        "gdp": 40.00000000000004,
+        "consumption": 20.000000000000043,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 86,
+        "workers": 0,
+        "gdp": 40.00000000000002,
+        "consumption": 20.00000000000002,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 87,
+        "workers": 0,
+        "gdp": 40.000000000000014,
+        "consumption": 20.00000000000001,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 88,
+        "workers": 0,
+        "gdp": 40.00000000000001,
+        "consumption": 20.000000000000007,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 89,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.000000000000004,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 90,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 91,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 92,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 93,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 94,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 95,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 96,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 97,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 98,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 99,
+        "workers": 0,
+        "gdp": 40.0,
+        "consumption": 20.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      }
+    ],
+    "summary": {
+      "last_gdp": 40.0,
+      "minimum_gdp": 40.0,
+      "cumulative_gdp": 5380.0,
+      "periods": 100
+    }
+  },
+  {
+    "schedule": "unchanged",
+    "investment_rule": "replacement_adjustment",
+    "series": [
+      {
+        "period": 0,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 1,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 2,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 3,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 4,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 5,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 6,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 7,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 8,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 9,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 10,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 11,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 12,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 13,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 14,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 15,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 16,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 17,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 18,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 19,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 20,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 21,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 22,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 23,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 24,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 25,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 26,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 27,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 28,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 29,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 30,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 31,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 32,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 33,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 34,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 35,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 36,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 37,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 38,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 39,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 40,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 41,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 42,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 43,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 44,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 45,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 46,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 47,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 48,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 49,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 50,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 51,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 52,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 53,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 54,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 55,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 56,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 57,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 58,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 59,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 60,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 61,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 62,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 63,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 64,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 65,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 66,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 67,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 68,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 69,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 70,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 71,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 72,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 73,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 74,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 75,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 76,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 77,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 78,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 79,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 80,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 81,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 82,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 83,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 84,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 85,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 86,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 87,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 88,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 89,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 90,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 91,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 92,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 93,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 94,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 95,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 96,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 97,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 98,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 99,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      }
+    ],
+    "summary": {
+      "last_gdp": 100.0,
+      "minimum_gdp": 100.0,
+      "cumulative_gdp": 10000.0,
+      "periods": 100
+    }
+  },
+  {
+    "schedule": "sudden",
+    "investment_rule": "replacement_adjustment",
+    "series": [
+      {
+        "period": 0,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 1,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 2,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 3,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 4,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 5,
+        "workers": 0,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 6,
+        "workers": 0,
+        "gdp": 70.0,
+        "consumption": 50.0,
+        "investment": 20.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 7,
+        "workers": 0,
+        "gdp": 49.0,
+        "consumption": 35.0,
+        "investment": 14.0,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 8,
+        "workers": 0,
+        "gdp": 34.3,
+        "consumption": 24.5,
+        "investment": 9.8,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 9,
+        "workers": 0,
+        "gdp": 24.009999999999998,
+        "consumption": 17.15,
+        "investment": 6.859999999999999,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 10,
+        "workers": 0,
+        "gdp": 16.807,
+        "consumption": 12.004999999999999,
+        "investment": 4.802,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 11,
+        "workers": 0,
+        "gdp": 11.764899999999999,
+        "consumption": 8.4035,
+        "investment": 3.3613999999999997,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 12,
+        "workers": 0,
+        "gdp": 8.235430000000001,
+        "consumption": 5.88245,
+        "investment": 2.35298,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 13,
+        "workers": 0,
+        "gdp": 5.764801,
+        "consumption": 4.117715,
+        "investment": 1.6470860000000003,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 14,
+        "workers": 0,
+        "gdp": 4.035360700000001,
+        "consumption": 2.8824005000000006,
+        "investment": 1.1529602,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 15,
+        "workers": 0,
+        "gdp": 2.8247524900000007,
+        "consumption": 2.0176803500000005,
+        "investment": 0.8070721400000003,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 16,
+        "workers": 0,
+        "gdp": 1.9773267430000008,
+        "consumption": 1.4123762450000006,
+        "investment": 0.5649504980000002,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 17,
+        "workers": 0,
+        "gdp": 1.3841287201000005,
+        "consumption": 0.9886633715000004,
+        "investment": 0.39546534860000015,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 18,
+        "workers": 0,
+        "gdp": 0.9688901040700004,
+        "consumption": 0.6920643600500003,
+        "investment": 0.2768257440200001,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 19,
+        "workers": 0,
+        "gdp": 0.6782230728490002,
+        "consumption": 0.4844450520350001,
+        "investment": 0.19377802081400008,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 20,
+        "workers": 0,
+        "gdp": 0.47475615099430013,
+        "consumption": 0.3391115364245001,
+        "investment": 0.13564461456980004,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 21,
+        "workers": 0,
+        "gdp": 0.3323293056960101,
+        "consumption": 0.23737807549715007,
+        "investment": 0.09495123019886004,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 22,
+        "workers": 0,
+        "gdp": 0.23263051398720705,
+        "consumption": 0.16616465284800502,
+        "investment": 0.06646586113920203,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 23,
+        "workers": 0,
+        "gdp": 0.16284135979104492,
+        "consumption": 0.11631525699360351,
+        "investment": 0.046526102797441404,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 24,
+        "workers": 0,
+        "gdp": 0.11398895185373145,
+        "consumption": 0.08142067989552246,
+        "investment": 0.03256827195820899,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 25,
+        "workers": 0,
+        "gdp": 0.07979226629761202,
+        "consumption": 0.056994475926865726,
+        "investment": 0.022797790370746293,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 26,
+        "workers": 0,
+        "gdp": 0.055854586408328424,
+        "consumption": 0.039896133148806016,
+        "investment": 0.015958453259522404,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 27,
+        "workers": 0,
+        "gdp": 0.0390982104858299,
+        "consumption": 0.027927293204164212,
+        "investment": 0.011170917281665686,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 28,
+        "workers": 0,
+        "gdp": 0.027368747340080928,
+        "consumption": 0.01954910524291495,
+        "investment": 0.00781964209716598,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 29,
+        "workers": 0,
+        "gdp": 0.019158123138056652,
+        "consumption": 0.013684373670040465,
+        "investment": 0.005473749468016186,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 30,
+        "workers": 0,
+        "gdp": 0.013410686196639654,
+        "consumption": 0.009579061569028324,
+        "investment": 0.0038316246276113306,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 31,
+        "workers": 0,
+        "gdp": 0.009387480337647757,
+        "consumption": 0.006705343098319827,
+        "investment": 0.002682137239327931,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 32,
+        "workers": 0,
+        "gdp": 0.006571236236353431,
+        "consumption": 0.004693740168823879,
+        "investment": 0.0018774960675295516,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 33,
+        "workers": 0,
+        "gdp": 0.004599865365447401,
+        "consumption": 0.0032856181181767155,
+        "investment": 0.0013142472472706863,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 34,
+        "workers": 0,
+        "gdp": 0.0032199057558131815,
+        "consumption": 0.002299932682723701,
+        "investment": 0.0009199730730894804,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 35,
+        "workers": 0,
+        "gdp": 0.002253934029069227,
+        "consumption": 0.0016099528779065907,
+        "investment": 0.0006439811511626363,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 36,
+        "workers": 0,
+        "gdp": 0.001577753820348459,
+        "consumption": 0.0011269670145346135,
+        "investment": 0.00045078680581384545,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 37,
+        "workers": 0,
+        "gdp": 0.0011044276742439214,
+        "consumption": 0.0007888769101742295,
+        "investment": 0.0003155507640696918,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 38,
+        "workers": 0,
+        "gdp": 0.0007730993719707449,
+        "consumption": 0.0005522138371219606,
+        "investment": 0.00022088553484878428,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 39,
+        "workers": 0,
+        "gdp": 0.0005411695603795214,
+        "consumption": 0.00038654968598537243,
+        "investment": 0.00015461987439414898,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 40,
+        "workers": 0,
+        "gdp": 0.000378818692265665,
+        "consumption": 0.0002705847801897607,
+        "investment": 0.00010823391207590428,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 41,
+        "workers": 0,
+        "gdp": 0.0002651730845859655,
+        "consumption": 0.0001894093461328325,
+        "investment": 7.5763738453133e-05,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 42,
+        "workers": 0,
+        "gdp": 0.00018562115921017582,
+        "consumption": 0.00013258654229298273,
+        "investment": 5.3034616917193106e-05,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 43,
+        "workers": 0,
+        "gdp": 0.00012993481144712307,
+        "consumption": 9.281057960508791e-05,
+        "investment": 3.7124231842035166e-05,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 44,
+        "workers": 0,
+        "gdp": 9.095436801298616e-05,
+        "consumption": 6.496740572356154e-05,
+        "investment": 2.5986962289424615e-05,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 45,
+        "workers": 0,
+        "gdp": 6.366805760909031e-05,
+        "consumption": 4.547718400649308e-05,
+        "investment": 1.819087360259723e-05,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 46,
+        "workers": 0,
+        "gdp": 4.456764032636322e-05,
+        "consumption": 3.1834028804545155e-05,
+        "investment": 1.2733611521818062e-05,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 47,
+        "workers": 0,
+        "gdp": 3.119734822845425e-05,
+        "consumption": 2.228382016318161e-05,
+        "investment": 8.913528065272644e-06,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 48,
+        "workers": 0,
+        "gdp": 2.1838143759917978e-05,
+        "consumption": 1.559867411422713e-05,
+        "investment": 6.2394696456908494e-06,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 49,
+        "workers": 0,
+        "gdp": 1.528670063194258e-05,
+        "consumption": 1.0919071879958987e-05,
+        "investment": 4.367628751983596e-06,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 50,
+        "workers": 0,
+        "gdp": 1.0700690442359807e-05,
+        "consumption": 7.64335031597129e-06,
+        "investment": 3.0573401263885167e-06,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 51,
+        "workers": 0,
+        "gdp": 7.490483309651865e-06,
+        "consumption": 5.350345221179903e-06,
+        "investment": 2.1401380884719614e-06,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 52,
+        "workers": 0,
+        "gdp": 5.2433383167563055e-06,
+        "consumption": 3.7452416548259324e-06,
+        "investment": 1.4980966619303731e-06,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 53,
+        "workers": 0,
+        "gdp": 3.6703368217294143e-06,
+        "consumption": 2.621669158378153e-06,
+        "investment": 1.048667663351261e-06,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 54,
+        "workers": 0,
+        "gdp": 2.5692357752105904e-06,
+        "consumption": 1.8351684108647073e-06,
+        "investment": 7.340673643458829e-07,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 55,
+        "workers": 0,
+        "gdp": 1.798465042647413e-06,
+        "consumption": 1.284617887605295e-06,
+        "investment": 5.138471550421181e-07,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 56,
+        "workers": 0,
+        "gdp": 1.258925529853189e-06,
+        "consumption": 8.992325213237065e-07,
+        "investment": 3.596930085294826e-07,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 57,
+        "workers": 0,
+        "gdp": 8.812478708972325e-07,
+        "consumption": 6.294627649265946e-07,
+        "investment": 2.517851059706378e-07,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 58,
+        "workers": 0,
+        "gdp": 6.168735096280628e-07,
+        "consumption": 4.4062393544861625e-07,
+        "investment": 1.7624957417944652e-07,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 59,
+        "workers": 0,
+        "gdp": 4.31811456739644e-07,
+        "consumption": 3.0843675481403144e-07,
+        "investment": 1.2337470192561257e-07,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 60,
+        "workers": 0,
+        "gdp": 3.022680197177508e-07,
+        "consumption": 2.1590572836982202e-07,
+        "investment": 8.63622913479288e-08,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 61,
+        "workers": 0,
+        "gdp": 2.1158761380242557e-07,
+        "consumption": 1.511340098588754e-07,
+        "investment": 6.045360394355016e-08,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 62,
+        "workers": 0,
+        "gdp": 1.481113296616979e-07,
+        "consumption": 1.0579380690121279e-07,
+        "investment": 4.2317522760485115e-08,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 63,
+        "workers": 0,
+        "gdp": 1.0367793076318851e-07,
+        "consumption": 7.405566483084894e-08,
+        "investment": 2.962226593233958e-08,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 64,
+        "workers": 0,
+        "gdp": 7.257455153423198e-08,
+        "consumption": 5.183896538159427e-08,
+        "investment": 2.07355861526377e-08,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 65,
+        "workers": 0,
+        "gdp": 5.080218607396238e-08,
+        "consumption": 3.628727576711599e-08,
+        "investment": 1.4514910306846396e-08,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 66,
+        "workers": 0,
+        "gdp": 3.5561530251773675e-08,
+        "consumption": 2.5401093036981197e-08,
+        "investment": 1.0160437214792478e-08,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 67,
+        "workers": 0,
+        "gdp": 2.489307117624157e-08,
+        "consumption": 1.7780765125886834e-08,
+        "investment": 7.112306050354735e-09,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 68,
+        "workers": 0,
+        "gdp": 1.74251498233691e-08,
+        "consumption": 1.2446535588120785e-08,
+        "investment": 4.978614235248314e-09,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 69,
+        "workers": 0,
+        "gdp": 1.2197604876358368e-08,
+        "consumption": 8.712574911684548e-09,
+        "investment": 3.48502996467382e-09,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 70,
+        "workers": 0,
+        "gdp": 8.538323413450857e-09,
+        "consumption": 6.098802438179183e-09,
+        "investment": 2.439520975271674e-09,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 71,
+        "workers": 0,
+        "gdp": 5.9768263894156e-09,
+        "consumption": 4.269161706725429e-09,
+        "investment": 1.7076646826901715e-09,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 72,
+        "workers": 0,
+        "gdp": 4.1837784725909206e-09,
+        "consumption": 2.9884131947078e-09,
+        "investment": 1.1953652778831202e-09,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 73,
+        "workers": 0,
+        "gdp": 2.9286449308136444e-09,
+        "consumption": 2.0918892362954603e-09,
+        "investment": 8.367556945181841e-10,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 74,
+        "workers": 0,
+        "gdp": 2.0500514515695512e-09,
+        "consumption": 1.4643224654068222e-09,
+        "investment": 5.857289861627288e-10,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 75,
+        "workers": 0,
+        "gdp": 1.4350360160986857e-09,
+        "consumption": 1.0250257257847754e-09,
+        "investment": 4.1001029031391025e-10,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 76,
+        "workers": 0,
+        "gdp": 1.00452521126908e-09,
+        "consumption": 7.175180080493428e-10,
+        "investment": 2.8700720321973716e-10,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 77,
+        "workers": 0,
+        "gdp": 7.03167647888356e-10,
+        "consumption": 5.0226260563454e-10,
+        "investment": 2.00905042253816e-10,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 78,
+        "workers": 0,
+        "gdp": 4.922173535218492e-10,
+        "consumption": 3.5158382394417795e-10,
+        "investment": 1.4063352957767122e-10,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 79,
+        "workers": 0,
+        "gdp": 3.445521474652944e-10,
+        "consumption": 2.4610867676092456e-10,
+        "investment": 9.844347070436985e-11,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 80,
+        "workers": 0,
+        "gdp": 2.411865032257061e-10,
+        "consumption": 1.7227607373264718e-10,
+        "investment": 6.891042949305889e-11,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 81,
+        "workers": 0,
+        "gdp": 1.6883055225799426e-10,
+        "consumption": 1.2059325161285304e-10,
+        "investment": 4.8237300645141216e-11,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 82,
+        "workers": 0,
+        "gdp": 1.18181386580596e-10,
+        "consumption": 8.441527612899713e-11,
+        "investment": 3.3766110451598855e-11,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 83,
+        "workers": 0,
+        "gdp": 8.27269706064172e-11,
+        "consumption": 5.9090693290298e-11,
+        "investment": 2.36362773161192e-11,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 84,
+        "workers": 0,
+        "gdp": 5.790887942449203e-11,
+        "consumption": 4.1363485303208594e-11,
+        "investment": 1.6545394121283442e-11,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 85,
+        "workers": 0,
+        "gdp": 4.0536215597144427e-11,
+        "consumption": 2.895443971224602e-11,
+        "investment": 1.1581775884898407e-11,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 86,
+        "workers": 0,
+        "gdp": 2.8375350918001096e-11,
+        "consumption": 2.026810779857221e-11,
+        "investment": 8.107243119428886e-12,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 87,
+        "workers": 0,
+        "gdp": 1.9862745642600766e-11,
+        "consumption": 1.4187675459000546e-11,
+        "investment": 5.6750701836002195e-12,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 88,
+        "workers": 0,
+        "gdp": 1.3903921949820536e-11,
+        "consumption": 9.931372821300383e-12,
+        "investment": 3.9725491285201535e-12,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 89,
+        "workers": 0,
+        "gdp": 9.732745364874376e-12,
+        "consumption": 6.951960974910268e-12,
+        "investment": 2.7807843899641075e-12,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 90,
+        "workers": 0,
+        "gdp": 6.812921755412062e-12,
+        "consumption": 4.866372682437187e-12,
+        "investment": 1.946549072974875e-12,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 91,
+        "workers": 0,
+        "gdp": 4.769045228788443e-12,
+        "consumption": 3.4064608777060306e-12,
+        "investment": 1.3625843510824124e-12,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 92,
+        "workers": 0,
+        "gdp": 3.3383316601519106e-12,
+        "consumption": 2.384522614394222e-12,
+        "investment": 9.538090457576885e-13,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 93,
+        "workers": 0,
+        "gdp": 2.3368321621063374e-12,
+        "consumption": 1.6691658300759553e-12,
+        "investment": 6.676663320303821e-13,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 94,
+        "workers": 0,
+        "gdp": 1.635782513474436e-12,
+        "consumption": 1.1684160810531685e-12,
+        "investment": 4.673664324212675e-13,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 95,
+        "workers": 0,
+        "gdp": 1.1450477594321052e-12,
+        "consumption": 8.17891256737218e-13,
+        "investment": 3.2715650269488723e-13,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 96,
+        "workers": 0,
+        "gdp": 8.015334316024737e-13,
+        "consumption": 5.725238797160526e-13,
+        "investment": 2.2900955188642107e-13,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 97,
+        "workers": 0,
+        "gdp": 5.610734021217317e-13,
+        "consumption": 4.0076671580123687e-13,
+        "investment": 1.6030668632049478e-13,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 98,
+        "workers": 0,
+        "gdp": 3.927513814852122e-13,
+        "consumption": 2.8053670106086585e-13,
+        "investment": 1.1221468042434634e-13,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 99,
+        "workers": 0,
+        "gdp": 2.7492596703964855e-13,
+        "consumption": 1.9637569074260611e-13,
+        "investment": 7.855027629704244e-14,
+        "wages": 0.0,
+        "insolvency": false
+      }
+    ],
+    "summary": {
+      "last_gdp": 2.7492596703964855e-13,
+      "minimum_gdp": 2.7492596703964855e-13,
+      "cumulative_gdp": 833.3333333333327,
+      "periods": 100
+    }
+  },
+  {
+    "schedule": "gradual_fast",
+    "investment_rule": "replacement_adjustment",
+    "series": [
+      {
+        "period": 0,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 1,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 2,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 3,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 4,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 5,
+        "workers": 8,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 48.0,
+        "insolvency": false
+      },
+      {
+        "period": 6,
+        "workers": 8,
+        "gdp": 94.0,
+        "consumption": 74.0,
+        "investment": 20.0,
+        "wages": 48.0,
+        "insolvency": false
+      },
+      {
+        "period": 7,
+        "workers": 6,
+        "gdp": 89.8,
+        "consumption": 71.0,
+        "investment": 18.8,
+        "wages": 36.00000000000001,
+        "insolvency": false
+      },
+      {
+        "period": 8,
+        "workers": 6,
+        "gdp": 80.86000000000001,
+        "consumption": 62.900000000000006,
+        "investment": 17.96,
+        "wages": 36.0,
+        "insolvency": false
+      },
+      {
+        "period": 9,
+        "workers": 4,
+        "gdp": 74.602,
+        "consumption": 58.43000000000001,
+        "investment": 16.172000000000004,
+        "wages": 24.0,
+        "insolvency": false
+      },
+      {
+        "period": 10,
+        "workers": 4,
+        "gdp": 64.2214,
+        "consumption": 49.301,
+        "investment": 14.9204,
+        "wages": 24.0,
+        "insolvency": false
+      },
+      {
+        "period": 11,
+        "workers": 2,
+        "gdp": 56.954980000000006,
+        "consumption": 44.11070000000001,
+        "investment": 12.844280000000001,
+        "wages": 12.000000000000004,
+        "insolvency": false
+      },
+      {
+        "period": 12,
+        "workers": 2,
+        "gdp": 45.868486000000004,
+        "consumption": 34.47749,
+        "investment": 11.390996000000001,
+        "wages": 12.0,
+        "insolvency": false
+      },
+      {
+        "period": 13,
+        "workers": 0,
+        "gdp": 38.1079402,
+        "consumption": 28.934243,
+        "investment": 9.173697200000001,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 14,
+        "workers": 0,
+        "gdp": 26.67555814,
+        "consumption": 19.053970099999997,
+        "investment": 7.621588040000001,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 15,
+        "workers": 0,
+        "gdp": 18.672890698000003,
+        "consumption": 13.337779070000002,
+        "investment": 5.335111628,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 16,
+        "workers": 0,
+        "gdp": 13.071023488599998,
+        "consumption": 9.336445348999998,
+        "investment": 3.734578139600001,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 17,
+        "workers": 0,
+        "gdp": 9.14971644202,
+        "consumption": 6.535511744300001,
+        "investment": 2.61420469772,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 18,
+        "workers": 0,
+        "gdp": 6.404801509414001,
+        "consumption": 4.57485822101,
+        "investment": 1.8299432884040003,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 19,
+        "workers": 0,
+        "gdp": 4.483361056589801,
+        "consumption": 3.2024007547070004,
+        "investment": 1.2809603018828004,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 20,
+        "workers": 0,
+        "gdp": 3.1383527396128605,
+        "consumption": 2.2416805282949004,
+        "investment": 0.8966722113179602,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 21,
+        "workers": 0,
+        "gdp": 2.196846917729002,
+        "consumption": 1.56917636980643,
+        "investment": 0.6276705479225722,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 22,
+        "workers": 0,
+        "gdp": 1.5377928424103013,
+        "consumption": 1.098423458864501,
+        "investment": 0.4393693835458004,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 23,
+        "workers": 0,
+        "gdp": 1.0764549896872109,
+        "consumption": 0.7688964212051506,
+        "investment": 0.3075585684820603,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 24,
+        "workers": 0,
+        "gdp": 0.7535184927810477,
+        "consumption": 0.5382274948436054,
+        "investment": 0.2152909979374422,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 25,
+        "workers": 0,
+        "gdp": 0.5274629449467333,
+        "consumption": 0.3767592463905237,
+        "investment": 0.15070369855620955,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 26,
+        "workers": 0,
+        "gdp": 0.3692240614627133,
+        "consumption": 0.26373147247336665,
+        "investment": 0.10549258898934666,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 27,
+        "workers": 0,
+        "gdp": 0.25845684302389926,
+        "consumption": 0.18461203073135662,
+        "investment": 0.07384481229254267,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 28,
+        "workers": 0,
+        "gdp": 0.18091979011672948,
+        "consumption": 0.12922842151194963,
+        "investment": 0.05169136860477985,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 29,
+        "workers": 0,
+        "gdp": 0.12664385308171064,
+        "consumption": 0.09045989505836474,
+        "investment": 0.0361839580233459,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 30,
+        "workers": 0,
+        "gdp": 0.08865069715719745,
+        "consumption": 0.06332192654085532,
+        "investment": 0.02532877061634213,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 31,
+        "workers": 0,
+        "gdp": 0.062055488010038226,
+        "consumption": 0.04432534857859874,
+        "investment": 0.01773013943143949,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 32,
+        "workers": 0,
+        "gdp": 0.04343884160702676,
+        "consumption": 0.031027744005019117,
+        "investment": 0.012411097602007645,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 33,
+        "workers": 0,
+        "gdp": 0.030407189124918733,
+        "consumption": 0.02171942080351338,
+        "investment": 0.008687768321405352,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 34,
+        "workers": 0,
+        "gdp": 0.021285032387443115,
+        "consumption": 0.015203594562459368,
+        "investment": 0.0060814378249837465,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 35,
+        "workers": 0,
+        "gdp": 0.01489952267121018,
+        "consumption": 0.010642516193721557,
+        "investment": 0.004257006477488623,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 36,
+        "workers": 0,
+        "gdp": 0.010429665869847126,
+        "consumption": 0.007449761335605091,
+        "investment": 0.0029799045342420363,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 37,
+        "workers": 0,
+        "gdp": 0.007300766108892989,
+        "consumption": 0.005214832934923564,
+        "investment": 0.002085933173969425,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 38,
+        "workers": 0,
+        "gdp": 0.005110536276225092,
+        "consumption": 0.0036503830544464943,
+        "investment": 0.0014601532217785977,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 39,
+        "workers": 0,
+        "gdp": 0.0035773753933575642,
+        "consumption": 0.002555268138112546,
+        "investment": 0.0010221072552450184,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 40,
+        "workers": 0,
+        "gdp": 0.002504162775350295,
+        "consumption": 0.0017886876966787825,
+        "investment": 0.0007154750786715128,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 41,
+        "workers": 0,
+        "gdp": 0.0017529139427452066,
+        "consumption": 0.0012520813876751476,
+        "investment": 0.000500832555070059,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 42,
+        "workers": 0,
+        "gdp": 0.0012270397599216448,
+        "consumption": 0.0008764569713726033,
+        "investment": 0.0003505827885490414,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 43,
+        "workers": 0,
+        "gdp": 0.0008589278319451514,
+        "consumption": 0.0006135198799608224,
+        "investment": 0.000245407951984329,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 44,
+        "workers": 0,
+        "gdp": 0.000601249482361606,
+        "consumption": 0.00042946391597257567,
+        "investment": 0.00017178556638903033,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 45,
+        "workers": 0,
+        "gdp": 0.0004208746376531242,
+        "consumption": 0.000300624741180803,
+        "investment": 0.00012024989647232122,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 46,
+        "workers": 0,
+        "gdp": 0.000294612246357187,
+        "consumption": 0.00021043731882656216,
+        "investment": 8.417492753062485e-05,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 47,
+        "workers": 0,
+        "gdp": 0.00020622857245003088,
+        "consumption": 0.00014730612317859348,
+        "investment": 5.892244927143741e-05,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 48,
+        "workers": 0,
+        "gdp": 0.00014436000071502164,
+        "consumption": 0.00010311428622501545,
+        "investment": 4.124571449000618e-05,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 49,
+        "workers": 0,
+        "gdp": 0.00010105200050051515,
+        "consumption": 7.218000035751082e-05,
+        "investment": 2.8872000143004326e-05,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 50,
+        "workers": 0,
+        "gdp": 7.073640035036059e-05,
+        "consumption": 5.052600025025757e-05,
+        "investment": 2.021040010010303e-05,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 51,
+        "workers": 0,
+        "gdp": 4.9515480245252416e-05,
+        "consumption": 3.5368200175180296e-05,
+        "investment": 1.414728007007212e-05,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 52,
+        "workers": 0,
+        "gdp": 3.466083617167669e-05,
+        "consumption": 2.4757740122626204e-05,
+        "investment": 9.903096049050484e-06,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 53,
+        "workers": 0,
+        "gdp": 2.4262585320173683e-05,
+        "consumption": 1.7330418085838344e-05,
+        "investment": 6.9321672343353385e-06,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 54,
+        "workers": 0,
+        "gdp": 1.6983809724121578e-05,
+        "consumption": 1.2131292660086841e-05,
+        "investment": 4.852517064034737e-06,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 55,
+        "workers": 0,
+        "gdp": 1.1888666806885104e-05,
+        "consumption": 8.491904862060787e-06,
+        "investment": 3.3967619448243158e-06,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 56,
+        "workers": 0,
+        "gdp": 8.322066764819573e-06,
+        "consumption": 5.944333403442552e-06,
+        "investment": 2.377733361377021e-06,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 57,
+        "workers": 0,
+        "gdp": 5.825446735373701e-06,
+        "consumption": 4.161033382409786e-06,
+        "investment": 1.6644133529639149e-06,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 58,
+        "workers": 0,
+        "gdp": 4.07781271476159e-06,
+        "consumption": 2.91272336768685e-06,
+        "investment": 1.1650893470747401e-06,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 59,
+        "workers": 0,
+        "gdp": 2.854468900333113e-06,
+        "consumption": 2.038906357380795e-06,
+        "investment": 8.15562542952318e-07,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 60,
+        "workers": 0,
+        "gdp": 1.998128230233179e-06,
+        "consumption": 1.4272344501665564e-06,
+        "investment": 5.708937800666226e-07,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 61,
+        "workers": 0,
+        "gdp": 1.3986897611632252e-06,
+        "consumption": 9.990641151165895e-07,
+        "investment": 3.996256460466358e-07,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 62,
+        "workers": 0,
+        "gdp": 9.790828328142575e-07,
+        "consumption": 6.993448805816125e-07,
+        "investment": 2.7973795223264503e-07,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 63,
+        "workers": 0,
+        "gdp": 6.853579829699803e-07,
+        "consumption": 4.895414164071287e-07,
+        "investment": 1.958165665628515e-07,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 64,
+        "workers": 0,
+        "gdp": 4.797505880789862e-07,
+        "consumption": 3.426789914849901e-07,
+        "investment": 1.3707159659399606e-07,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 65,
+        "workers": 0,
+        "gdp": 3.3582541165529035e-07,
+        "consumption": 2.398752940394931e-07,
+        "investment": 9.595011761579725e-08,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 66,
+        "workers": 0,
+        "gdp": 2.3507778815870322e-07,
+        "consumption": 1.6791270582764515e-07,
+        "investment": 6.716508233105808e-08,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 67,
+        "workers": 0,
+        "gdp": 1.6455445171109226e-07,
+        "consumption": 1.1753889407935161e-07,
+        "investment": 4.701555763174065e-08,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 68,
+        "workers": 0,
+        "gdp": 1.1518811619776457e-07,
+        "consumption": 8.227722585554612e-08,
+        "investment": 3.291089034221845e-08,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 69,
+        "workers": 0,
+        "gdp": 8.06316813384352e-08,
+        "consumption": 5.759405809888229e-08,
+        "investment": 2.3037623239552915e-08,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 70,
+        "workers": 0,
+        "gdp": 5.644217693690464e-08,
+        "consumption": 4.03158406692176e-08,
+        "investment": 1.612633626768704e-08,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 71,
+        "workers": 0,
+        "gdp": 3.9509523855833254e-08,
+        "consumption": 2.8221088468452323e-08,
+        "investment": 1.1288435387380928e-08,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 72,
+        "workers": 0,
+        "gdp": 2.765666669908327e-08,
+        "consumption": 1.975476192791662e-08,
+        "investment": 7.90190477116665e-09,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 73,
+        "workers": 0,
+        "gdp": 1.935966668935829e-08,
+        "consumption": 1.3828333349541635e-08,
+        "investment": 5.5313333398166535e-09,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 74,
+        "workers": 0,
+        "gdp": 1.3551766682550802e-08,
+        "consumption": 9.679833344679143e-09,
+        "investment": 3.871933337871658e-09,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 75,
+        "workers": 0,
+        "gdp": 9.48623667778556e-09,
+        "consumption": 6.775883341275401e-09,
+        "investment": 2.7103533365101604e-09,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 76,
+        "workers": 0,
+        "gdp": 6.640365674449894e-09,
+        "consumption": 4.743118338892781e-09,
+        "investment": 1.8972473355571124e-09,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 77,
+        "workers": 0,
+        "gdp": 4.648255972114925e-09,
+        "consumption": 3.320182837224946e-09,
+        "investment": 1.328073134889979e-09,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 78,
+        "workers": 0,
+        "gdp": 3.253779180480447e-09,
+        "consumption": 2.324127986057462e-09,
+        "investment": 9.296511944229851e-10,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 79,
+        "workers": 0,
+        "gdp": 2.277645426336313e-09,
+        "consumption": 1.6268895902402234e-09,
+        "investment": 6.507558360960895e-10,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 80,
+        "workers": 0,
+        "gdp": 1.5943517984354188e-09,
+        "consumption": 1.1388227131681562e-09,
+        "investment": 4.555290852672626e-10,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 81,
+        "workers": 0,
+        "gdp": 1.1160462589047932e-09,
+        "consumption": 7.971758992177094e-10,
+        "investment": 3.188703596870838e-10,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 82,
+        "workers": 0,
+        "gdp": 7.812323812333551e-10,
+        "consumption": 5.580231294523965e-10,
+        "investment": 2.2320925178095865e-10,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 83,
+        "workers": 0,
+        "gdp": 5.468626668633487e-10,
+        "consumption": 3.9061619061667765e-10,
+        "investment": 1.56246476246671e-10,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 84,
+        "workers": 0,
+        "gdp": 3.828038668043441e-10,
+        "consumption": 2.7343133343167436e-10,
+        "investment": 1.0937253337266975e-10,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 85,
+        "workers": 0,
+        "gdp": 2.679627067630409e-10,
+        "consumption": 1.914019334021721e-10,
+        "investment": 7.656077336086882e-11,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 86,
+        "workers": 0,
+        "gdp": 1.8757389473412863e-10,
+        "consumption": 1.3398135338152045e-10,
+        "investment": 5.359254135260818e-11,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 87,
+        "workers": 0,
+        "gdp": 1.3130172631389005e-10,
+        "consumption": 9.378694736706431e-11,
+        "investment": 3.751477894682573e-11,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 88,
+        "workers": 0,
+        "gdp": 9.191120841972302e-11,
+        "consumption": 6.565086315694501e-11,
+        "investment": 2.626034526277801e-11,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 89,
+        "workers": 0,
+        "gdp": 6.433784589380612e-11,
+        "consumption": 4.5955604209861516e-11,
+        "investment": 1.8382241683944606e-11,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 90,
+        "workers": 0,
+        "gdp": 4.503649212566429e-11,
+        "consumption": 3.2168922946903066e-11,
+        "investment": 1.2867569178761224e-11,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 91,
+        "workers": 0,
+        "gdp": 3.1525544487965e-11,
+        "consumption": 2.251824606283214e-11,
+        "investment": 9.007298425132858e-12,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 92,
+        "workers": 0,
+        "gdp": 2.2067881141575502e-11,
+        "consumption": 1.5762772243982502e-11,
+        "investment": 6.305108897593e-12,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 93,
+        "workers": 0,
+        "gdp": 1.5447516799102852e-11,
+        "consumption": 1.1033940570787751e-11,
+        "investment": 4.4135762283151005e-12,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 94,
+        "workers": 0,
+        "gdp": 1.0813261759371995e-11,
+        "consumption": 7.723758399551426e-12,
+        "investment": 3.08950335982057e-12,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 95,
+        "workers": 0,
+        "gdp": 7.569283231560397e-12,
+        "consumption": 5.4066308796859984e-12,
+        "investment": 2.162652351874399e-12,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 96,
+        "workers": 0,
+        "gdp": 5.298498262092278e-12,
+        "consumption": 3.7846416157801985e-12,
+        "investment": 1.5138566463120795e-12,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 97,
+        "workers": 0,
+        "gdp": 3.708948783464594e-12,
+        "consumption": 2.6492491310461387e-12,
+        "investment": 1.0596996524184556e-12,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 98,
+        "workers": 0,
+        "gdp": 2.5962641484252158e-12,
+        "consumption": 1.854474391732297e-12,
+        "investment": 7.417897566929189e-13,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 99,
+        "workers": 0,
+        "gdp": 1.817384903897651e-12,
+        "consumption": 1.2981320742126079e-12,
+        "investment": 5.192528296850432e-13,
+        "wages": 0.0,
+        "insolvency": false
+      }
+    ],
+    "summary": {
+      "last_gdp": 1.817384903897651e-12,
+      "minimum_gdp": 1.817384903897651e-12,
+      "cumulative_gdp": 1233.3333333333292,
+      "periods": 100
+    }
+  },
+  {
+    "schedule": "gradual_slow",
+    "investment_rule": "replacement_adjustment",
+    "series": [
+      {
+        "period": 0,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 1,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 2,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 3,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 4,
+        "workers": 10,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 60.0,
+        "insolvency": false
+      },
+      {
+        "period": 5,
+        "workers": 8,
+        "gdp": 100.0,
+        "consumption": 80.0,
+        "investment": 20.0,
+        "wages": 48.0,
+        "insolvency": false
+      },
+      {
+        "period": 6,
+        "workers": 8,
+        "gdp": 94.0,
+        "consumption": 74.0,
+        "investment": 20.0,
+        "wages": 48.0,
+        "insolvency": false
+      },
+      {
+        "period": 7,
+        "workers": 8,
+        "gdp": 89.8,
+        "consumption": 71.0,
+        "investment": 18.8,
+        "wages": 48.0,
+        "insolvency": false
+      },
+      {
+        "period": 8,
+        "workers": 8,
+        "gdp": 86.85999999999999,
+        "consumption": 68.89999999999999,
+        "investment": 17.96,
+        "wages": 48.0,
+        "insolvency": false
+      },
+      {
+        "period": 9,
+        "workers": 8,
+        "gdp": 84.80199999999999,
+        "consumption": 67.42999999999999,
+        "investment": 17.371999999999996,
+        "wages": 48.0,
+        "insolvency": false
+      },
+      {
+        "period": 10,
+        "workers": 8,
+        "gdp": 83.3614,
+        "consumption": 66.401,
+        "investment": 16.9604,
+        "wages": 48.0,
+        "insolvency": false
+      },
+      {
+        "period": 11,
+        "workers": 8,
+        "gdp": 82.35298,
+        "consumption": 65.6807,
+        "investment": 16.67228,
+        "wages": 48.0,
+        "insolvency": false
+      },
+      {
+        "period": 12,
+        "workers": 8,
+        "gdp": 81.647086,
+        "consumption": 65.17649,
+        "investment": 16.470596,
+        "wages": 48.0,
+        "insolvency": false
+      },
+      {
+        "period": 13,
+        "workers": 6,
+        "gdp": 81.1529602,
+        "consumption": 64.823543,
+        "investment": 16.3294172,
+        "wages": 36.0,
+        "insolvency": false
+      },
+      {
+        "period": 14,
+        "workers": 6,
+        "gdp": 74.80707214,
+        "consumption": 58.5764801,
+        "investment": 16.23059204,
+        "wages": 36.00000000000001,
+        "insolvency": false
+      },
+      {
+        "period": 15,
+        "workers": 6,
+        "gdp": 70.364950498,
+        "consumption": 55.40353607,
+        "investment": 14.961414428000001,
+        "wages": 36.0,
+        "insolvency": false
+      },
+      {
+        "period": 16,
+        "workers": 6,
+        "gdp": 67.2554653486,
+        "consumption": 53.18247524899999,
+        "investment": 14.0729900996,
+        "wages": 36.0,
+        "insolvency": false
+      },
+      {
+        "period": 17,
+        "workers": 6,
+        "gdp": 65.07882574402,
+        "consumption": 51.62773267429999,
+        "investment": 13.451093069720002,
+        "wages": 35.99999999999999,
+        "insolvency": false
+      },
+      {
+        "period": 18,
+        "workers": 6,
+        "gdp": 63.55517802081399,
+        "consumption": 50.53941287200999,
+        "investment": 13.015765148804,
+        "wages": 36.0,
+        "insolvency": false
+      },
+      {
+        "period": 19,
+        "workers": 6,
+        "gdp": 62.4886246145698,
+        "consumption": 49.777589010407,
+        "investment": 12.711035604162799,
+        "wages": 36.0,
+        "insolvency": false
+      },
+      {
+        "period": 20,
+        "workers": 6,
+        "gdp": 61.74203723019886,
+        "consumption": 49.2443123072849,
+        "investment": 12.49772492291396,
+        "wages": 36.0,
+        "insolvency": false
+      },
+      {
+        "period": 21,
+        "workers": 4,
+        "gdp": 61.2194260611392,
+        "consumption": 48.87101861509943,
+        "investment": 12.348407446039772,
+        "wages": 24.0,
+        "insolvency": false
+      },
+      {
+        "period": 22,
+        "workers": 4,
+        "gdp": 54.853598242797446,
+        "consumption": 42.6097130305696,
+        "investment": 12.243885212227841,
+        "wages": 24.0,
+        "insolvency": false
+      },
+      {
+        "period": 23,
+        "workers": 4,
+        "gdp": 50.39751876995821,
+        "consumption": 39.42679912139872,
+        "investment": 10.970719648559491,
+        "wages": 24.0,
+        "insolvency": false
+      },
+      {
+        "period": 24,
+        "workers": 4,
+        "gdp": 47.27826313897075,
+        "consumption": 37.198759384979105,
+        "investment": 10.079503753991643,
+        "wages": 23.999999999999993,
+        "insolvency": false
+      },
+      {
+        "period": 25,
+        "workers": 4,
+        "gdp": 45.094784197279516,
+        "consumption": 35.639131569485365,
+        "investment": 9.45565262779415,
+        "wages": 23.999999999999993,
+        "insolvency": false
+      },
+      {
+        "period": 26,
+        "workers": 4,
+        "gdp": 43.56634893809565,
+        "consumption": 34.54739209863975,
+        "investment": 9.018956839455903,
+        "wages": 24.0,
+        "insolvency": false
+      },
+      {
+        "period": 27,
+        "workers": 4,
+        "gdp": 42.49644425666696,
+        "consumption": 33.78317446904783,
+        "investment": 8.713269787619131,
+        "wages": 23.999999999999993,
+        "insolvency": false
+      },
+      {
+        "period": 28,
+        "workers": 4,
+        "gdp": 41.74751097966687,
+        "consumption": 33.248222128333474,
+        "investment": 8.499288851333393,
+        "wages": 24.0,
+        "insolvency": false
+      },
+      {
+        "period": 29,
+        "workers": 2,
+        "gdp": 41.22325768576681,
+        "consumption": 32.873755489833435,
+        "investment": 8.349502195933374,
+        "wages": 12.0,
+        "insolvency": false
+      },
+      {
+        "period": 30,
+        "workers": 2,
+        "gdp": 34.856280380036765,
+        "consumption": 26.611628842883405,
+        "investment": 8.244651537153363,
+        "wages": 12.000000000000002,
+        "insolvency": false
+      },
+      {
+        "period": 31,
+        "workers": 2,
+        "gdp": 30.399396266025743,
+        "consumption": 23.42814019001839,
+        "investment": 6.971256076007354,
+        "wages": 12.0,
+        "insolvency": false
+      },
+      {
+        "period": 32,
+        "workers": 2,
+        "gdp": 27.279577386218023,
+        "consumption": 21.199698133012873,
+        "investment": 6.079879253205149,
+        "wages": 12.0,
+        "insolvency": false
+      },
+      {
+        "period": 33,
+        "workers": 2,
+        "gdp": 25.095704170352615,
+        "consumption": 19.63978869310901,
+        "investment": 5.455915477243605,
+        "wages": 12.0,
+        "insolvency": false
+      },
+      {
+        "period": 34,
+        "workers": 2,
+        "gdp": 23.566992919246832,
+        "consumption": 18.54785208517631,
+        "investment": 5.019140834070523,
+        "wages": 12.0,
+        "insolvency": false
+      },
+      {
+        "period": 35,
+        "workers": 2,
+        "gdp": 22.496895043472783,
+        "consumption": 17.783496459623414,
+        "investment": 4.713398583849367,
+        "wages": 12.0,
+        "insolvency": false
+      },
+      {
+        "period": 36,
+        "workers": 2,
+        "gdp": 21.74782653043095,
+        "consumption": 17.24844752173639,
+        "investment": 4.499379008694556,
+        "wages": 12.0,
+        "insolvency": false
+      },
+      {
+        "period": 37,
+        "workers": 0,
+        "gdp": 21.223478571301666,
+        "consumption": 16.873913265215474,
+        "investment": 4.34956530608619,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 38,
+        "workers": 0,
+        "gdp": 14.856434999911166,
+        "consumption": 10.611739285650833,
+        "investment": 4.244695714260334,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 39,
+        "workers": 0,
+        "gdp": 10.399504499937816,
+        "consumption": 7.428217499955583,
+        "investment": 2.971286999982233,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 40,
+        "workers": 0,
+        "gdp": 7.279653149956472,
+        "consumption": 5.199752249968908,
+        "investment": 2.0799008999875634,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 41,
+        "workers": 0,
+        "gdp": 5.09575720496953,
+        "consumption": 3.639826574978236,
+        "investment": 1.4559306299912944,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 42,
+        "workers": 0,
+        "gdp": 3.5670300434786713,
+        "consumption": 2.547878602484765,
+        "investment": 1.019151440993906,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 43,
+        "workers": 0,
+        "gdp": 2.4969210304350695,
+        "consumption": 1.7835150217393352,
+        "investment": 0.7134060086957343,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 44,
+        "workers": 0,
+        "gdp": 1.747844721304549,
+        "consumption": 1.248460515217535,
+        "investment": 0.49938420608701395,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 45,
+        "workers": 0,
+        "gdp": 1.2234913049131844,
+        "consumption": 0.8739223606522746,
+        "investment": 0.3495689442609098,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 46,
+        "workers": 0,
+        "gdp": 0.8564439134392291,
+        "consumption": 0.6117456524565922,
+        "investment": 0.2446982609826369,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 47,
+        "workers": 0,
+        "gdp": 0.5995107394074605,
+        "consumption": 0.4282219567196146,
+        "investment": 0.17128878268784586,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 48,
+        "workers": 0,
+        "gdp": 0.4196575175852223,
+        "consumption": 0.2997553697037302,
+        "investment": 0.1199021478814921,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 49,
+        "workers": 0,
+        "gdp": 0.29376026230965563,
+        "consumption": 0.20982875879261115,
+        "investment": 0.08393150351704447,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 50,
+        "workers": 0,
+        "gdp": 0.20563218361675892,
+        "consumption": 0.1468801311548278,
+        "investment": 0.05875205246193113,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 51,
+        "workers": 0,
+        "gdp": 0.14394252853173126,
+        "consumption": 0.10281609180837947,
+        "investment": 0.041126436723351784,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 52,
+        "workers": 0,
+        "gdp": 0.10075976997221188,
+        "consumption": 0.07197126426586563,
+        "investment": 0.02878850570634625,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 53,
+        "workers": 0,
+        "gdp": 0.07053183898054832,
+        "consumption": 0.05037988498610595,
+        "investment": 0.020151953994442376,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 54,
+        "workers": 0,
+        "gdp": 0.04937228728638383,
+        "consumption": 0.03526591949027416,
+        "investment": 0.014106367796109666,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 55,
+        "workers": 0,
+        "gdp": 0.03456060110046868,
+        "consumption": 0.02468614364319191,
+        "investment": 0.009874457457276766,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 56,
+        "workers": 0,
+        "gdp": 0.024192420770328075,
+        "consumption": 0.01728030055023434,
+        "investment": 0.006912120220093736,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 57,
+        "workers": 0,
+        "gdp": 0.016934694539229654,
+        "consumption": 0.01209621038516404,
+        "investment": 0.004838484154065615,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 58,
+        "workers": 0,
+        "gdp": 0.011854286177460756,
+        "consumption": 0.008467347269614825,
+        "investment": 0.003386938907845931,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 59,
+        "workers": 0,
+        "gdp": 0.008298000324222529,
+        "consumption": 0.005927143088730377,
+        "investment": 0.0023708572354921515,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 60,
+        "workers": 0,
+        "gdp": 0.005808600226955771,
+        "consumption": 0.004149000162111264,
+        "investment": 0.0016596000648445059,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 61,
+        "workers": 0,
+        "gdp": 0.0040660201588690395,
+        "consumption": 0.002904300113477885,
+        "investment": 0.0011617200453911541,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 62,
+        "workers": 0,
+        "gdp": 0.002846214111208328,
+        "consumption": 0.0020330100794345198,
+        "investment": 0.0008132040317738079,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 63,
+        "workers": 0,
+        "gdp": 0.0019923498778458295,
+        "consumption": 0.001423107055604164,
+        "investment": 0.0005692428222416656,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 64,
+        "workers": 0,
+        "gdp": 0.0013946449144920806,
+        "consumption": 0.0009961749389229147,
+        "investment": 0.0003984699755691659,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 65,
+        "workers": 0,
+        "gdp": 0.0009762514401444563,
+        "consumption": 0.0006973224572460402,
+        "investment": 0.00027892898289841615,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 66,
+        "workers": 0,
+        "gdp": 0.0006833760081011195,
+        "consumption": 0.0004881257200722282,
+        "investment": 0.00019525028802889127,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 67,
+        "workers": 0,
+        "gdp": 0.00047836320567078367,
+        "consumption": 0.00034168800405055973,
+        "investment": 0.0001366752016202239,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 68,
+        "workers": 0,
+        "gdp": 0.00033485424396954855,
+        "consumption": 0.0002391816028353918,
+        "investment": 9.567264113415674e-05,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 69,
+        "workers": 0,
+        "gdp": 0.00023439797077868401,
+        "consumption": 0.0001674271219847743,
+        "investment": 6.697084879390971e-05,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 70,
+        "workers": 0,
+        "gdp": 0.00016407857954507882,
+        "consumption": 0.00011719898538934201,
+        "investment": 4.687959415573681e-05,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 71,
+        "workers": 0,
+        "gdp": 0.00011485500568155519,
+        "consumption": 8.203928977253941e-05,
+        "investment": 3.281571590901577e-05,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 72,
+        "workers": 0,
+        "gdp": 8.039850397708863e-05,
+        "consumption": 5.742750284077759e-05,
+        "investment": 2.2971001136311037e-05,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 73,
+        "workers": 0,
+        "gdp": 5.6278952783962044e-05,
+        "consumption": 4.0199251988544315e-05,
+        "investment": 1.6079700795417725e-05,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 74,
+        "workers": 0,
+        "gdp": 3.939526694877343e-05,
+        "consumption": 2.8139476391981022e-05,
+        "investment": 1.125579055679241e-05,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 75,
+        "workers": 0,
+        "gdp": 2.7576686864141405e-05,
+        "consumption": 1.9697633474386717e-05,
+        "investment": 7.879053389754686e-06,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 76,
+        "workers": 0,
+        "gdp": 1.9303680804898982e-05,
+        "consumption": 1.3788343432070702e-05,
+        "investment": 5.515337372828281e-06,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 77,
+        "workers": 0,
+        "gdp": 1.3512576563429292e-05,
+        "consumption": 9.651840402449494e-06,
+        "investment": 3.860736160979797e-06,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 78,
+        "workers": 0,
+        "gdp": 9.458803594400504e-06,
+        "consumption": 6.756288281714645e-06,
+        "investment": 2.7025153126858587e-06,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 79,
+        "workers": 0,
+        "gdp": 6.621162516080352e-06,
+        "consumption": 4.729401797200252e-06,
+        "investment": 1.8917607188801005e-06,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 80,
+        "workers": 0,
+        "gdp": 4.6348137612562464e-06,
+        "consumption": 3.310581258040176e-06,
+        "investment": 1.3242325032160705e-06,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 81,
+        "workers": 0,
+        "gdp": 3.2443696328793724e-06,
+        "consumption": 2.3174068806281232e-06,
+        "investment": 9.269627522512494e-07,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 82,
+        "workers": 0,
+        "gdp": 2.2710587430155605e-06,
+        "consumption": 1.622184816439686e-06,
+        "investment": 6.488739265758745e-07,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 83,
+        "workers": 0,
+        "gdp": 1.5897411201108922e-06,
+        "consumption": 1.13552937150778e-06,
+        "investment": 4.542117486031121e-07,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 84,
+        "workers": 0,
+        "gdp": 1.1128187840776248e-06,
+        "consumption": 7.948705600554463e-07,
+        "investment": 3.179482240221785e-07,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 85,
+        "workers": 0,
+        "gdp": 7.789731488543373e-07,
+        "consumption": 5.564093920388124e-07,
+        "investment": 2.2256375681552496e-07,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 86,
+        "workers": 0,
+        "gdp": 5.452812041980362e-07,
+        "consumption": 3.8948657442716866e-07,
+        "investment": 1.5579462977086748e-07,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 87,
+        "workers": 0,
+        "gdp": 3.8169684293862534e-07,
+        "consumption": 2.726406020990181e-07,
+        "investment": 1.0905624083960724e-07,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 88,
+        "workers": 0,
+        "gdp": 2.6718779005703775e-07,
+        "consumption": 1.9084842146931267e-07,
+        "investment": 7.633936858772508e-08,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 89,
+        "workers": 0,
+        "gdp": 1.8703145303992646e-07,
+        "consumption": 1.335938950285189e-07,
+        "investment": 5.343755801140755e-08,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 90,
+        "workers": 0,
+        "gdp": 1.3092201712794853e-07,
+        "consumption": 9.351572651996323e-08,
+        "investment": 3.74062906079853e-08,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 91,
+        "workers": 0,
+        "gdp": 9.164541198956398e-08,
+        "consumption": 6.546100856397428e-08,
+        "investment": 2.6184403425589707e-08,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 92,
+        "workers": 0,
+        "gdp": 6.41517883926948e-08,
+        "consumption": 4.5822705994782e-08,
+        "investment": 1.8329082397912796e-08,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 93,
+        "workers": 0,
+        "gdp": 4.490625187488636e-08,
+        "consumption": 3.20758941963474e-08,
+        "investment": 1.283035767853896e-08,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 94,
+        "workers": 0,
+        "gdp": 3.1434376312420456e-08,
+        "consumption": 2.2453125937443185e-08,
+        "investment": 8.981250374977272e-09,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 95,
+        "workers": 0,
+        "gdp": 2.200406341869432e-08,
+        "consumption": 1.5717188156210228e-08,
+        "investment": 6.286875262484092e-09,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 96,
+        "workers": 0,
+        "gdp": 1.5402844393086023e-08,
+        "consumption": 1.1002031709347159e-08,
+        "investment": 4.400812683738865e-09,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 97,
+        "workers": 0,
+        "gdp": 1.0781991075160217e-08,
+        "consumption": 7.701422196543012e-09,
+        "investment": 3.0805688786172053e-09,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 98,
+        "workers": 0,
+        "gdp": 7.54739375261215e-09,
+        "consumption": 5.390995537580108e-09,
+        "investment": 2.1563982150320435e-09,
+        "wages": 0.0,
+        "insolvency": false
+      },
+      {
+        "period": 99,
+        "workers": 0,
+        "gdp": 5.283175626828505e-09,
+        "consumption": 3.773696876306075e-09,
+        "investment": 1.5094787505224302e-09,
+        "wages": 0.0,
+        "insolvency": false
+      }
+    ],
+    "summary": {
+      "last_gdp": 5.283175626828505e-09,
+      "minimum_gdp": 5.283175626828505e-09,
+      "cumulative_gdp": 2433.3333333210057,
+      "periods": 100
+    }
+  }
+]

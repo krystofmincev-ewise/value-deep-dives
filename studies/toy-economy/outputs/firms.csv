@@ -1,0 +1,11 @@
+firm_id,gross_turnover,intermediate_expenses,value_added,wage_bill,gross_surplus,worker_equivalents
+raw_materials_1,6.7,0.0,6.7,4.0200000000000005,2.6799999999999997,0.67
+raw_materials_2,6.7,0.0,6.7,4.0200000000000005,2.6799999999999997,0.67
+processing_1,13.0,5.2,7.8,4.68,3.12,0.78
+processing_2,13.0,5.2,7.8,4.68,3.12,0.78
+intermediates_services_1,15.0,4.500000000000001,10.5,6.3,4.2,1.05
+intermediates_services_2,15.0,4.500000000000001,10.5,6.3,4.2,1.05
+consumption_goods_1,40.0,20.0,20.0,12.0,8.0,2.0
+consumption_goods_2,40.0,20.0,20.0,12.0,8.0,2.0
+capital_goods_1,10.0,5.0,5.0,3.0,2.0,0.5
+capital_goods_2,10.0,5.0,5.0,3.0,2.0,0.5

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 865" width="560" height="865" role="img" aria-labelledby="03-private-choice-title 03-private-choice-desc">
+<title id="03-private-choice-title">A tempting choice can disappoint both shops</title>
+<desc id="03-private-choice-desc">At their first accepted adoption decision in period 5, each shop forecasts its own operating surplus with the rival’s inherited price and automation held fixed. Both choose AI. The later recorded surplus, after both reach 40% automation, is lower. This compares an initial one-step incentive with a later outcome, not a forecast for that later period.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="865" fill="#fffdf8"/>
+<text x="24" y="46" font-size="32" fill="#223c36" text-anchor="start">A tempting choice.</text>
+<text x="24" y="89" font-size="32" fill="#223c36" text-anchor="start">A weaker result.</text>
+<g class="teaching-stage" data-step="1">
+<text x="24" y="146" font-size="27" fill="#58675f" text-anchor="start">First forecast, at 20% AI</text>
+<rect x="24" y="178" width="246" height="139" rx="12" fill="#edf1ea"/>
+<text x="147" y="221" font-size="28" fill="#223c36" text-anchor="middle">Shop A</text>
+<text x="147" y="278" font-size="39" fill="#236654" text-anchor="middle">10 → 10.6</text>
+<rect x="290" y="178" width="246" height="139" rx="12" fill="#edf1ea"/>
+<text x="413" y="221" font-size="28" fill="#223c36" text-anchor="middle">Shop B</text>
+<text x="413" y="278" font-size="39" fill="#236654" text-anchor="middle">10 → 10.6</text>
+<text x="24" y="361" font-size="26" fill="#58675f" text-anchor="start">Predicted profit before → after</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<text x="280" y="419" font-size="30" fill="#223c36" text-anchor="middle">Both choose to adopt</text>
+<line x1="280" y1="440" x2="280" y2="479" stroke="#376d9a" stroke-width="3"/>
+<line x1="273.78893279265463" y1="469.92130823599354" x2="280" y2="479" stroke="#376d9a" stroke-width="3"/>
+<line x1="286.21106720734537" y1="469.92130823599354" x2="280" y2="479" stroke="#376d9a" stroke-width="3"/>
+<circle class="travel-token" data-step="2" data-from="280,440" data-to="280,479" r="8" fill="#376d9a"/>
+</g>
+<g class="teaching-stage" data-step="3">
+<rect x="24" y="495" width="246" height="145" rx="12" fill="#edf1ea"/>
+<text x="147" y="537" font-size="28" fill="#223c36" text-anchor="middle">Shop A</text>
+<text x="147" y="590" font-size="42" fill="#a44432" text-anchor="middle">5.2</text>
+<text x="147" y="625" font-size="26" fill="#58675f" text-anchor="middle">later profit</text>
+<rect x="290" y="495" width="246" height="145" rx="12" fill="#edf1ea"/>
+<text x="413" y="537" font-size="28" fill="#223c36" text-anchor="middle">Shop B</text>
+<text x="413" y="590" font-size="42" fill="#a44432" text-anchor="middle">5.2</text>
+<text x="413" y="625" font-size="26" fill="#58675f" text-anchor="middle">later profit</text>
+<text x="24" y="696" font-size="26" fill="#223c36" text-anchor="start">Both now use AI for 40% of tasks.</text>
+<text x="24" y="741" font-size="26" fill="#58675f" text-anchor="start">Wage cuts weaken customer spending.</text>
+<text x="24" y="782" font-size="26" fill="#58675f" text-anchor="start">AI fees also cost the shops.</text>
+<line x1="24" y1="807" x2="536" y2="807" stroke="#edf1ea" stroke-width="3"/>
+<text x="24" y="846" font-size="26" fill="#58675f" text-anchor="start">Profit is before replacing equipment.</text>
+</g>
+</svg>

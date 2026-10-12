@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 660" width="560" height="660" role="img" aria-labelledby="17-bank-loss-title 17-bank-loss-desc">
+<title id="17-bank-loss-title">What if the expected income never arrives?</title>
+<desc id="17-bank-loss-desc">The bank mistakenly expects wages to return. It lends 20, which borrowers spend. At maturity, unpayable principal is forgiven. The 20 loss consumes the bank&#x27;s 20 equity. Customer deposits are not erased. The experiment stops at zero bank capital.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="660" fill="#fffdf8"/>
+<g class="teaching-stage" data-step="1">
+<text x="24" y="43" font-size="27" fill="#223c36" text-anchor="start">The bank expects income to return.</text>
+<rect x="24" y="70" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="24" y="70" width="6" height="112" rx="0" fill="#75608c"/>
+<text x="42" y="105" font-size="26" fill="#75608c" text-anchor="start">Bank lends</text>
+<text x="42" y="153" font-size="42" fill="#75608c" text-anchor="start">20</text>
+<rect x="290" y="70" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="290" y="70" width="6" height="112" rx="0" fill="#236654"/>
+<text x="308" y="105" font-size="26" fill="#236654" text-anchor="start">Workers spend</text>
+<text x="308" y="153" font-size="42" fill="#236654" text-anchor="start">20</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<text x="280" y="259" font-size="30" fill="#a44432" text-anchor="middle">Income never returns.</text>
+<line x1="280" y1="286" x2="280" y2="330" stroke="#a44432" stroke-width="3"/>
+<line x1="273.78893279265463" y1="320.92130823599354" x2="280" y2="330" stroke="#a44432" stroke-width="3"/>
+<line x1="286.21106720734537" y1="320.92130823599354" x2="280" y2="330" stroke="#a44432" stroke-width="3"/>
+<circle class="travel-token" data-step="2" data-from="280,286" data-to="280,330" r="8" fill="#a44432"/>
+<text x="280" y="381" font-size="29" fill="#a44432" text-anchor="middle">Unpayable loan is forgiven.</text>
+</g>
+<g class="teaching-stage" data-step="3">
+<rect x="24" y="424" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="24" y="424" width="6" height="112" rx="0" fill="#a66d13"/>
+<text x="42" y="459" font-size="26" fill="#a66d13" text-anchor="start">Bank capital</text>
+<text x="42" y="507" font-size="42" fill="#a66d13" text-anchor="start">20 → 0</text>
+<rect x="290" y="424" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="290" y="424" width="6" height="112" rx="0" fill="#a44432"/>
+<text x="308" y="459" font-size="26" fill="#a44432" text-anchor="start">Capital left</text>
+<text x="308" y="507" font-size="42" fill="#a44432" text-anchor="start">0</text>
+<text x="280" y="598" font-size="28" fill="#223c36" text-anchor="middle">Customer deposits are not erased.</text>
+</g>
+</svg>

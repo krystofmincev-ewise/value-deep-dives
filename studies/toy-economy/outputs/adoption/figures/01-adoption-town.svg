@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 835" width="560" height="835" role="img" aria-labelledby="01-adoption-town-title 01-adoption-town-desc">
+<title id="01-adoption-town-title">The same starting town</title>
+<desc id="01-adoption-town-desc">Two consumer shops employ 10 workers. The AI supplier and equipment maker are already automated. Baseline household purchases 80 plus equipment 20 equal GDP 100. Wages 60 plus gross surplus 40 are the income from that same output. Total cash is 200.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="835" fill="#fffdf8"/>
+<text x="24" y="47" font-size="32" fill="#223c36" text-anchor="start">The same starting town</text>
+<g class="teaching-stage" data-step="1">
+<rect x="24" y="83" width="246" height="115" rx="12" fill="#edf1ea"/>
+<rect x="44" y="105" width="34" height="16" rx="0" fill="#376d9a"/>
+<rect x="78" y="105" width="34" height="16" rx="0" fill="#223c36"/>
+<rect x="112" y="105" width="34" height="16" rx="0" fill="#376d9a"/>
+<rect x="146" y="105" width="34" height="16" rx="0" fill="#223c36"/>
+<rect x="180" y="105" width="34" height="16" rx="0" fill="#376d9a"/>
+<rect x="214" y="105" width="34" height="16" rx="0" fill="#223c36"/>
+<rect x="51" y="132" width="42" height="44" rx="2" fill="#376d9a"/>
+<rect x="108" y="132" width="40" height="44" rx="2" fill="#fffdf8"/>
+<text x="255" y="162" font-size="30" fill="#223c36" text-anchor="end">Shop A</text>
+<circle cx="63" cy="232" r="8" fill="#236654"/>
+<rect x="54" y="244" width="18" height="24" rx="5" fill="#236654"/>
+<circle cx="105" cy="232" r="8" fill="#236654"/>
+<rect x="96" y="244" width="18" height="24" rx="5" fill="#236654"/>
+<circle cx="147" cy="232" r="8" fill="#236654"/>
+<rect x="138" y="244" width="18" height="24" rx="5" fill="#236654"/>
+<circle cx="189" cy="232" r="8" fill="#236654"/>
+<rect x="180" y="244" width="18" height="24" rx="5" fill="#236654"/>
+<circle cx="231" cy="232" r="8" fill="#236654"/>
+<rect x="222" y="244" width="18" height="24" rx="5" fill="#236654"/>
+<text x="147" y="307" font-size="26" fill="#236654" text-anchor="middle">5 workers</text>
+<rect x="290" y="83" width="246" height="115" rx="12" fill="#edf1ea"/>
+<rect x="310" y="105" width="34" height="16" rx="0" fill="#376d9a"/>
+<rect x="344" y="105" width="34" height="16" rx="0" fill="#223c36"/>
+<rect x="378" y="105" width="34" height="16" rx="0" fill="#376d9a"/>
+<rect x="412" y="105" width="34" height="16" rx="0" fill="#223c36"/>
+<rect x="446" y="105" width="34" height="16" rx="0" fill="#376d9a"/>
+<rect x="480" y="105" width="34" height="16" rx="0" fill="#223c36"/>
+<rect x="317" y="132" width="42" height="44" rx="2" fill="#376d9a"/>
+<rect x="374" y="132" width="40" height="44" rx="2" fill="#fffdf8"/>
+<text x="521" y="162" font-size="30" fill="#223c36" text-anchor="end">Shop B</text>
+<circle cx="329" cy="232" r="8" fill="#236654"/>
+<rect x="320" y="244" width="18" height="24" rx="5" fill="#236654"/>
+<circle cx="371" cy="232" r="8" fill="#236654"/>
+<rect x="362" y="244" width="18" height="24" rx="5" fill="#236654"/>
+<circle cx="413" cy="232" r="8" fill="#236654"/>
+<rect x="404" y="244" width="18" height="24" rx="5" fill="#236654"/>
+<circle cx="455" cy="232" r="8" fill="#236654"/>
+<rect x="446" y="244" width="18" height="24" rx="5" fill="#236654"/>
+<circle cx="497" cy="232" r="8" fill="#236654"/>
+<rect x="488" y="244" width="18" height="24" rx="5" fill="#236654"/>
+<text x="413" y="307" font-size="26" fill="#236654" text-anchor="middle">5 workers</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<rect x="24" y="343" width="246" height="116" rx="12" fill="#edf1ea"/>
+<text x="147" y="385" font-size="26" fill="#376d9a" text-anchor="middle">AI supplier</text>
+<text x="147" y="429" font-size="26" fill="#58675f" text-anchor="middle">Automated</text>
+<rect x="290" y="343" width="246" height="116" rx="12" fill="#edf1ea"/>
+<text x="413" y="385" font-size="26" fill="#376d9a" text-anchor="middle">Equipment maker</text>
+<text x="413" y="429" font-size="26" fill="#58675f" text-anchor="middle">Automated</text>
+</g>
+<g class="teaching-stage" data-step="3">
+<text x="24" y="516" font-size="26" fill="#58675f" text-anchor="start">One period’s final purchases</text>
+<rect x="24" y="538" width="512" height="76" rx="12" fill="#edf1ea"/>
+<text x="280" y="586" font-size="27" fill="#223c36" text-anchor="middle">Baskets 80 + equipment 20</text>
+<text x="24" y="665" font-size="27" fill="#223c36" text-anchor="start">Wages 60 + gross surplus 40</text>
+<text x="24" y="707" font-size="30" fill="#223c36" text-anchor="start">= the same GDP 100</text>
+<line x1="24" y1="744" x2="536" y2="744" stroke="#edf1ea" stroke-width="3"/>
+<text x="24" y="791" font-size="28" fill="#58675f" text-anchor="start">Total cash in the town: 200</text>
+</g>
+</svg>

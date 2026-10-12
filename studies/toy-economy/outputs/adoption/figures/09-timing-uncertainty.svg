@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 877" width="560" height="877" role="img" aria-labelledby="09-timing-uncertainty-title 09-timing-uncertainty-desc">
+<title id="09-timing-uncertainty-title">Random adoption dates give a range of paths</title>
+<desc id="09-timing-uncertainty-desc">Illustrative paired random adoption opportunities. Ranges are the fifth to ninety-fifth percentiles of cumulative real GDP among completed runs, expressed as a percentage of the no-adoption baseline over the same horizon. Dots show medians. Stopped runs are reported separately. The first two cases choose whether to adopt; the sharing case follows scheduled adoption. These are not real-world probabilities.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="877" fill="#fffdf8"/>
+<text x="24" y="46" font-size="31" fill="#223c36" text-anchor="start">What if adoption dates vary?</text>
+<text x="24" y="94" font-size="26" fill="#58675f" text-anchor="start">Total output over 80 periods</text>
+<text x="24" y="136" font-size="26" fill="#58675f" text-anchor="start">No AI baseline = 100%</text>
+<g class="teaching-stage" data-step="1">
+<text x="24" y="205" font-size="28" fill="#236654" text-anchor="start">Same pay; firms choose</text>
+<text x="536" y="250" font-size="27" fill="#236654" text-anchor="end">Median 100%</text>
+<line x1="94" y1="283" x2="512" y2="283" stroke="#edf1ea" stroke-width="7"/>
+<line x1="512.0" y1="283" x2="512.0" y2="283" stroke="#236654" stroke-width="6"/>
+<line x1="512.0" y1="271" x2="512.0" y2="295" stroke="#236654" stroke-width="3"/>
+<line x1="512.0" y1="271" x2="512.0" y2="295" stroke="#236654" stroke-width="3"/>
+<circle cx="512.0" cy="283" r="7" fill="#236654"/>
+<text x="24" y="337" font-size="26" fill="#58675f" text-anchor="start">Stopped: 0 of 1000 runs</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<text x="24" y="371" font-size="28" fill="#376d9a" text-anchor="start">Hourly pay; firms choose</text>
+<text x="536" y="416" font-size="27" fill="#376d9a" text-anchor="end">Median 70.3%</text>
+<line x1="94" y1="449" x2="512" y2="449" stroke="#edf1ea" stroke-width="7"/>
+<line x1="179.27594909504975" y1="449" x2="235.53351242515924" y2="449" stroke="#376d9a" stroke-width="6"/>
+<line x1="179.27594909504975" y1="437" x2="179.27594909504975" y2="461" stroke="#376d9a" stroke-width="3"/>
+<line x1="235.53351242515924" y1="437" x2="235.53351242515924" y2="461" stroke="#376d9a" stroke-width="3"/>
+<circle cx="201.66363673208" cy="449" r="7" fill="#376d9a"/>
+<text x="24" y="503" font-size="26" fill="#58675f" text-anchor="start">Stopped: 58 of 1000 runs</text>
+</g>
+<g class="teaching-stage" data-step="3">
+<text x="24" y="537" font-size="28" fill="#a66d13" text-anchor="start">Hourly + sharing; scheduled</text>
+<text x="536" y="582" font-size="27" fill="#a66d13" text-anchor="end">Median 100%</text>
+<line x1="94" y1="615" x2="512" y2="615" stroke="#edf1ea" stroke-width="7"/>
+<line x1="512.0" y1="615" x2="512.0" y2="615" stroke="#a66d13" stroke-width="6"/>
+<line x1="512.0" y1="603" x2="512.0" y2="627" stroke="#a66d13" stroke-width="3"/>
+<line x1="512.0" y1="603" x2="512.0" y2="627" stroke="#a66d13" stroke-width="3"/>
+<circle cx="512.0" cy="615" r="7" fill="#a66d13"/>
+<text x="24" y="669" font-size="26" fill="#58675f" text-anchor="start">Stopped: 0 of 1000 runs</text>
+<text x="94.0" y="700" font-size="26" fill="#58675f" text-anchor="middle">60%</text>
+<text x="303.0" y="700" font-size="26" fill="#58675f" text-anchor="middle">80%</text>
+<text x="512.0" y="700" font-size="26" fill="#58675f" text-anchor="middle">100%</text>
+<text x="24" y="762" font-size="26" fill="#223c36" text-anchor="start">AI offered for up to 80% of tasks.</text>
+<text x="24" y="804" font-size="26" fill="#223c36" text-anchor="start">Middle 90% of completed runs.</text>
+<text x="24" y="846" font-size="26" fill="#58675f" text-anchor="start">Invented timing, not a forecast.</text>
+</g>
+</svg>

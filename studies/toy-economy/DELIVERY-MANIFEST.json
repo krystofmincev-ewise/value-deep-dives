@@ -683,6 +683,11 @@
       "sha256": "f3ed2592f014760f07d052778fc244b7f8194f45e7a17a50f71f88674a070317"
     },
     {
+      "path": "research/publication-record.md",
+      "bytes": 2551,
+      "sha256": "caa6c16eea7d8cbc7eecc294bb875f1bde97a24a0c6ca867eff0830feca3c643"
+    },
+    {
       "path": "research/shock-cash-results.md",
       "bytes": 12455,
       "sha256": "db41a63534030e509e13af7fd8620e27adac126655731fcc88876e679d13c9bd"

@@ -1,0 +1,276 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Economic foundations for the toy economy</title><link rel="stylesheet" href="style.css"></head><body><main class="article"><nav><a href="index.html">← Interactive economy</a><a href="01-who-buys-the-output.html">Part one</a><a href="02-an-economy-without-paychecks.html">Part two</a></nav><h1>Economic foundations for the toy economy</h1>
+<p>Draft research note. Information cutoff and source access: 10 October 2026. The calculations below are original conditional examples, not a forecast, estimated multiplier, or calibrated model of a country. Source metadata and verification limits are in <a href="../research/sources-economics.json">sources-economics.json</a>.</p>
+<h2>What the exercise can establish</h2>
+<p>Ten firms, ten workers and ten owners are enough to illustrate the circular flow of income. They are not enough to identify how an actual economy will respond to AI. In a symmetric model, ten firms merely divide aggregate amounts by ten. Firm-level detail becomes informative only when firms have different technologies, customers, prices or adoption decisions.</p>
+<p>The central answer is conditional. Automation can expand productive capacity while sales stagnate or fall. Real GDP can also grow while the wage bill falls, including a logically possible endpoint with zero paid workers. The dividing assumptions concern the ability of capital to produce, who receives income, what they spend it on, and how prices, investment and policy respond.</p>
+<p>Use three distinct quantities throughout:</p>
+<ul>
+<li><strong>Capacity:</strong> the most final output the technology could produce during the period.</li>
+<li><strong>Real GDP:</strong> actual final production valued at fixed reference prices in this toy.</li>
+<li><strong>Nominal GDP:</strong> actual final production valued at current transaction prices.</li>
+</ul>
+<p>Report worker consumption and owner consumption separately. Neither nominal GDP nor real GDP reveals whether displaced workers can buy necessities.</p>
+<h2>Accounting rules before behavior</h2>
+<p>Use nominal value added as the accounting backbone. In the deliberately stripped-down economy, with no production taxes, depreciation or foreign income, income can be written as <code>Y = W + Π</code>. Here <code>Π</code> is the residual accruing to owners. In actual accounts, gross operating surplus is not identical to distributable corporate profit. <a href="https://www.bea.gov/help/faq/1197">BEA value-added definitions</a>.</p>
+<p>With no trade or government, <code>Y = C + I</code>. Investment means newly produced capital and inventory change. Software and R&amp;D can qualify as capital; an operating AI subscription need not. A purchase of an existing financial security is not newly produced capital. Keep the toy's classification rule visible. <a href="https://www.bea.gov/resources/methodologies/nipa-handbook/pdf/chapter-06.pdf">BEA private fixed investment</a>.</p>
+<p>If government is introduced, distinguish purchases from transfers. A transfer changes disposable income and potentially consumption; counting it again in <code>G</code> would double count. For a version with private investment <code>I</code>, government purchases <code>G</code>, and net taxes <code>T</code> including transfers, private saving is <code>S_private = Y − T − C</code>, so the simplified closed-economy identity is <code>S_private = I + G − T</code>. Setting <code>G=T=0</code> gives <code>S=I</code>. These are rearrangements of the declared toy identities, not behavioral equations. Government capital can instead be included in total investment, but then subtract government consumption rather than all of <code>G</code> when defining national saving. <a href="https://www.bea.gov/resources/methodologies/nipa-handbook/pdf/chapter-02.pdf">BEA fundamental concepts</a>.</p>
+<p>Goods produced and added to inventories count as investment even if a hoped-for sale fails. Therefore a sales decline need not immediately lower GDP by the same amount. A simulation that reduces production instantly to orders is imposing a just-in-time production assumption; one that leaves production unchanged must record inventory accumulation. Services that cannot be stored require a different adjustment. <a href="https://www.bea.gov/resources/methodologies/nipa-handbook/pdf/chapter-07.pdf">BEA inventories methodology</a>.</p>
+<h3>Saving equals investment does not choose the adjustment</h3>
+<p>The identity does not require additional desired saving to become additional planned investment at the old level of output. Output and income may fall, inventories may rise unexpectedly, interest rates and asset prices may change, or another sector may borrow and spend. A financial purchase can fund new investment, transfer purchasing power to someone who spends, or acquire an existing asset. Its eventual effect is a mechanism to specify.</p>
+<p>It is also misleading to describe bank lending as simply handing firms an unchanged pool of prior household deposits. The Bank of England explains how lending creates deposits and discusses profitability, regulation and monetary policy constraints. This toy need not contain banks, but its omission should not become a claim about how all real investment is financed. <a href="https://www.bankofengland.co.uk/quarterly-bulletin/2014/q1/money-creation-in-the-modern-economy">Bank of England, 2014</a>.</p>
+<h2>The purchased-service example needs consolidation</h2>
+<p>Replacing a purchased business service with in-house AI does not by itself lower aggregate GDP by the avoided invoice. Consider a wholly domestic chain, with unchanged final sales and no other intermediate inputs:</p>
+<table>
+<thead>
+<tr>
+<th>Conditional illustration</th>
+<th style="text-align: right;">Final producer's value added</th>
+<th style="text-align: right;">Supplier's value added</th>
+<th style="text-align: right;">Aggregate value added</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Final sales 100,000; purchased HR service 10,000</td>
+<td style="text-align: right;">90,000</td>
+<td style="text-align: right;">10,000</td>
+<td style="text-align: right;">100,000</td>
+</tr>
+<tr>
+<td>Same final sales; in-house HR uses AI tokens costing 10</td>
+<td style="text-align: right;">99,990</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">100,000</td>
+</tr>
+</tbody>
+</table>
+<p>The supplier loses gross sales and the final producer gains value added. Income can shift from the supplier's workers to the final producer's owners; a later change in spending can then change production. That is a separate causal step. Summing business turnover would incorrectly count the HR invoice twice. The example applies BEA's definition of value added as gross output less intermediate inputs. <a href="https://www.bea.gov/help/faq/1197">BEA gross output versus GDP</a>.</p>
+<p>Three cases must remain separate:</p>
+<ol>
+<li><strong>Business internalization:</strong> an intermediate service moves inside another producer. Consolidate the domestic chain as above.</li>
+<li><strong>A cheaper final purchased service:</strong> nominal expenditure can fall while its real quantity stays unchanged or rises, if the price measure captures the equivalent service and its quality.</li>
+<li><strong>Household self-production:</strong> replacing paid household services with unpaid work at home can move activity outside the conventional production boundary. The treatment has exceptions, including owner-occupied housing and certain own-use goods and capital. Do not generalize all own-use production as excluded. <a href="https://www.bea.gov/resources/methodologies/nipa-handbook/pdf/chapter-02.pdf">BEA production boundary</a>.</li>
+</ol>
+<p>Service productivity is difficult to measure, not literally unmeasurable. Customization, intangible quality, implicit prices and nonmarket output complicate deflation and volume measurement. These difficulties can obscure genuine gains, but do not justify treating every saved business invoice as missing GDP. <a href="https://www.oecd.org/en/publications/oecd-compendium-of-productivity-indicators-2026_734a5e68-en/full-report/productivity-patterns-across-industries_8238f2eb.html">OECD 2026, Box 4.1</a>.</p>
+<p>GDP also differs from welfare. Experimental BEA work proposes accounting extensions for free digital content and AI; that is evidence of a measurement research problem, not proof that the official accounts already include all consumer benefits. <a href="https://www.bea.gov/research/papers/2026/progression-free-digital-content-ai-impacts-us-economic-growth-and">BEA research, June 2026</a>.</p>
+<h2>A solved benchmark for the demand channel</h2>
+<p>This is an analytical check for a simulation, not a required implementation. Assume one homogeneous domestic final good, current price <code>p=1</code>, slack productive capacity, no inventories, no government, no depreciation, and nonnegative aggregate profits. Let:</p>
+<pre><code class="language-text">L = employed workers, 0 to 10
+w = fixed money wage per employed worker
+W = wL
+Y = nominal GDP = real GDP at p=1
+Π = Y − W
+c_w = worker consumption share of wage income
+c_o = owner consumption share of current profit income
+A = autonomous final spending, initially planned real-capital spending I
+C = c_w W + c_o Π
+</code></pre>
+<p>The behavioral spending shares are assumptions. Empirical research supports substantial household heterogeneity in responses to income shocks, but a short-run marginal response to an unexpected shock is not the same object as a permanent fixed consumption share. Do not label the illustrative values as empirical estimates. <a href="https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp1655.pdf">Carroll, Slacalek and Tokuoka, 2014</a>.</p>
+<p>Solving <code>Y=C+A</code>, rather than repeatedly counting the same income, gives:</p>
+<pre><code class="language-text">Y* = [(c_w − c_o)W + A] / (1 − c_o), for c_o &lt; 1
+Π* = Y* − W
+</code></pre>
+<p>The solution is applicable only if <code>Y*</code> is within available capacity and <code>Π*≥0</code>, unless losses and their financing are explicitly allowed. Algebraically, <code>Π*≥0</code> requires <code>A≥(1−c_w)W</code>. If <code>c_o=1</code>, the denominator vanishes; use the original equations and a different scale-setting closure. Do not report an infinite multiplier as an economic prediction.</p>
+<p>For the study's synthetic baseline, take <code>w=6</code>, <code>c_w=1</code>, <code>c_o=.5</code>, and <code>I=A=20</code>. Baseline output is 100, the wage bill is 60, owner income is 40, consumption is 80 and investment is 20. All money quantities are invented units per period.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Workers laid off</th>
+<th style="text-align: right;">Workers employed</th>
+<th style="text-align: right;">Wage bill</th>
+<th style="text-align: right;">GDP at fixed price</th>
+<th style="text-align: right;">Owner income</th>
+<th style="text-align: right;">Worker consumption</th>
+<th style="text-align: right;">Owner consumption</th>
+<th style="text-align: right;">Investment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">54</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">54</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+</tr>
+</tbody>
+</table>
+<p>This is the demand-risk mechanism in a fully reconciled example. With workers consuming all their wages, owner income stays 40 while GDP falls dollar for dollar with the wage bill. Zero wages leave positive output because investment spending remains positive. The example assumes that firms continue to buy 20 of newly produced capital even with weak consumer demand; it does not explain why they would do so forever.</p>
+<p>An optional sensitivity uses <code>c_w=.9</code> and recalibrates <code>I=26</code> to preserve the starting GDP of 100. Then the 0/1/3/5/10 layoff cases give GDP <code>100/95.2/85.6/76/52</code> and owner income <code>40/41.2/43.6/46/52</code>. Owner income can therefore rise while GDP and worker income fall, but this is a separate spending specification rather than the study's baseline.</p>
+<p>The benchmark also makes the productivity-only result transparent. If capacity doubles while <code>L</code>, <code>w</code>, spending shares, <code>I</code> and <code>p</code> stay unchanged, demand and actual output remain 100. Capacity is higher; realized GDP is unchanged. If firms initially produce at the new capacity anyway, the missing expenditure is inventory investment, subject to durability, valuation and later production adjustment.</p>
+<h3>Thresholds worth showing</h3>
+<p>For fixed price and slack capacity, a loss of <code>ΔW&lt;0</code> changes output by:</p>
+<pre><code class="language-text">ΔY = [(c_w − c_o)ΔW + ΔA] / (1 − c_o)
+</code></pre>
+<p>The additional autonomous final spending needed to keep GDP unchanged is <code>ΔA = (c_w−c_o)|ΔW|</code>. In the baseline, each lost wage of 6 requires 3 additional investment, autonomous consumption or purchases. The optional <code>c_w=.9</code> sensitivity requires 2.4. These are exact results of the specified models, not universal fiscal multipliers.</p>
+<p>A tax-financed transfer <code>R</code> from owners to workers adds <code>(c_w−c_o)R</code> to the numerator. Replacing a lost wage bill one for one therefore restores the baseline demand in this stripped-down benchmark, subject to the ability to levy and pay the transfer. Counting <code>R</code> again as <code>G</code> would be wrong. Giving workers ownership can achieve a related income-routing effect, but must reduce other owners' shares so total ownership stays 100%.</p>
+<p>One useful sensitivity is to let <code>ρ</code> describe how an additional unit of owner saving generates additional current real-capital expenditure. Then the effective propensity to spend owner income is:</p>
+<pre><code class="language-text">b = c_o + ρ(1−c_o)
+I = I_0 + ρ(1−c_o)Π
+Y* = [(c_w−b)W + I_0] / (1−b), for b&lt;1
+ρ_threshold = (c_w−c_o)/(1−c_o)
+</code></pre>
+<p>With the optional <code>c_w=.9</code> values, the threshold is <code>.8</code>. At that value, workers and owners have the same total current-spending propensity once additional investment is included. Above it, layoffs can raise demand under this closure; below it they lower demand. In the study baseline <code>c_w=1</code>, the threshold is <code>1</code>, where the equations become singular rather than defining an ordinary interior benchmark. This is an assumed investment response, not an inference from <code>S=I</code>. The remaining saving must finance <code>I_0</code> or another sector's spending in the reconciled accounts. Do not describe <code>ρ</code> as the fraction of all national saving that becomes investment while silently discarding the rest. At <code>ρ=1</code>, return to the original equations and supply another scale-setting condition; with positive autonomous spending there may be no finite solution.</p>
+<h2>The strongest counterexample: price adjustment</h2>
+<p>Repeat the benchmark while allowing the single price to clear the market at a chosen feasible real output <code>Q</code>. Keep <strong>money wages and nominal autonomous spending</strong> fixed. The same spending equations determine nominal expenditure <code>Y*</code>; the clearing price is <code>p=Y*/Q</code>.</p>
+<p>For capacity and output of 200, the example gives:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Layoffs</th>
+<th style="text-align: right;">Real GDP Q</th>
+<th style="text-align: right;">Nominal GDP Y</th>
+<th style="text-align: right;">Clearing price p</th>
+<th style="text-align: right;">Real worker consumption</th>
+<th style="text-align: right;">Real owner consumption</th>
+<th style="text-align: right;">Real investment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">.500</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">40</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">.470</td>
+<td style="text-align: right;">114.894</td>
+<td style="text-align: right;">42.553</td>
+<td style="text-align: right;">42.553</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">.410</td>
+<td style="text-align: right;">102.439</td>
+<td style="text-align: right;">48.780</td>
+<td style="text-align: right;">48.780</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">.350</td>
+<td style="text-align: right;">85.714</td>
+<td style="text-align: right;">57.143</td>
+<td style="text-align: right;">57.143</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">.200</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">100</td>
+</tr>
+</tbody>
+</table>
+<p>Amounts in the last three columns are divided by the common current price; rounding can create small differences. Here real GDP doubles, even at zero employees, and workers without jobs receive none of it. The price drop raises the purchasing power of continuing nominal spending. This is an existence example requiring fully flexible prices, the relevant single consumption/investment good, feasible autonomous investment and capital-only production. It is not an assertion that rent, debts, food and every other household expense fall together.</p>
+<p>Do not change from fixed money wages to fixed real wages without saying so. Price changes make those different assumptions. Do not clear the market by reducing the price and then separately apply another quantity-demand increase on top; that counts the same adjustment twice.</p>
+<h3>When zero-worker growth is possible</h3>
+<p>It requires <strong>both</strong> an appropriate technology and a spending/valuation closure. A production function <code>Q=A K^α L^(1−α)</code> with <code>0&lt;α&lt;1</code> forces <code>Q=0</code> at <code>L=0</code>; this reflects essential labor in that function. A capital-only production technology can permit positive output. Choosing between them settles an assumption about the endpoint, not an empirical fact about whether current AI can perform all tasks.</p>
+<p>Also distinguish zero paid employees from zero human work. Owners may still manage production. A literal zero-human-work example must assume machines also maintain equipment, replenish inputs, run firms and produce replacement capital, or explicitly limit the experiment to one period with inherited capital. Paid employment and hours are different measures; ten people on shorter hours need not be ten full jobs.</p>
+<p>At <code>L=0</code>, fixed-price output in the simple demand closure is <code>Y=A/(1−c_o)</code>. With <code>A=0</code> and <code>c_o&lt;1</code>, the only nonnegative equilibrium is zero. That collapse comes from the absence of an autonomous spending flow and the imposed saving behavior. It is not a general law about robots. With positive investment or autonomous owner consumption, output can stay positive; with growing spending or falling prices and growing feasible capacity, real output can grow.</p>
+<p>Investment can be a large destination for output, including an automated capital sector supplying itself. Accounting places no fixed limit on its share. Economic interpretation still requires a purpose for the capital, resource feasibility and a reason for continuing accumulation. Infinite horizons with depletion, depreciation, inventories, borrowing or negative profits require the corresponding stock equations; a one-period illustration cannot prove sustainability.</p>
+<h3>A capital-only growth example</h3>
+<p>A compact dynamic counterexample makes the capital stock explicit. Assume one automated good can serve consumption or build new capital, <code>Q_t=aK_t</code>, a real investment share <code>s</code>, and depreciation rate <code>δ</code>:</p>
+<pre><code class="language-text">I_t = sQ_t
+C_t = (1−s)Q_t
+K_(t+1) = (1−δ)K_t + I_t
+Q_(t+1)/Q_t = 1 + sa − δ
+</code></pre>
+<p>Real output and consumption grow together with zero labor if <code>δ/a &lt; s &lt; 1</code>. Such a saving share exists when <code>a&gt;δ</code>. The assumptions, especially capital-only production and scalable nonlabor inputs, deliver the result; it is not a forecast about current AI. At <code>s=1</code>, consumption is zero even if output grows rapidly, so that mathematical path does not establish prosperity or a welfare-maximizing choice.</p>
+<p>For <code>K_0=200</code>, <code>a=.5</code>, <code>s=.3</code>, and <code>δ=.1</code>, initial real GDP is 100 and each period's growth is 5%. After 20 periods, real GDP is approximately 265.3298 and consumption is 185.7308. Nominal GDP can remain 100 if the single price falls to about .376889. Ownership can place all consumption with the ten capital owners and none with displaced workers, illustrating growth without broad participation.</p>
+<p>Depreciation is present in this extension, unlike the first static benchmark. GDP <code>Q</code> is gross value added; the example has no intermediate inputs. At zero labor, net capital income is <code>Q−δK</code>, not all of <code>Q</code>. Distinguish gross operating surplus, replacement investment, net investment and distributable income. The constant real investment share here is also a different behavioral rule from the static example's fixed nominal investment bill; do not splice their paths together silently.</p>
+<p>Task-based research distinguishes labor displacement, productivity effects and the creation of new tasks for humans. New products alone do not guarantee replacement employment. <a href="https://www.aeaweb.org/articles?id=10.1257/jep.33.2.3">Acemoglu and Restrepo, 2019</a>. Formal models can generate rising output and worsening distribution, including long transitions; those outcomes depend on substitution and saving assumptions. <a href="https://www.imf.org/en/publications/wp/issues/2018/05/21/should-we-fear-the-robot-revolution-the-correct-answer-is-yes-44923">Berg, Buffie and Zanna, 2018</a>.</p>
+<h2>What current research supports</h2>
+<p>Fornaro and Wolf's April 2026 working paper directly studies higher automation, unequal spending propensities and nominal rigidities in a closed economy. Their framework permits a demand slump under one policy regime and a boom under another. The authors explicitly do not predict that a slump is necessary or most likely. It is a close theoretical precedent, not independent empirical validation of the toy's parameters. <a href="https://econ-papers.upf.edu/papers/1943.pdf">Primary university paper</a>.</p>
+<p>BIS's 2026 report, Box C, considers demand as a constraint on returns to further automation alongside supply bottlenecks. Its underlying demand-bottleneck manuscript is listed as a mimeo; this note has not reproduced that model. <a href="https://www.bis.org/publications/aer-2026/progress-peril">BIS report</a>.</p>
+<p>These sources support showing different closures. They do not establish that AI executives' statements caused an aggregate spending decline, that current automation has eliminated a specified fraction of all jobs, or that any given savings rate forecasts a recession.</p>
+<h2>Labor share: an accurately bounded historical statement</h2>
+<p>In BLS's 15 September 2026 release, US <strong>nonfarm business</strong> labor compensation is 52.8% of output in 2026Q2, compared with 65.5% in 1947Q1 and 62.8% in 2000Q4. Those same-vintage endpoints imply declines of 12.7 and 10.0 <strong>percentage points</strong>, respectively. Relative to 1947Q1 the decline is about 19.4%. Do not call it a 12.7% decline, whole-economy wages/GDP, or evidence of AI causation. <a href="https://www.bls.gov/opub/ted/2026/labor-share-at-its-lowest-level-52-8-percent-in-second-quarter-2026.htm">BLS release</a>.</p>
+<p>The measure includes nonwage compensation; BLS's treatment of self-employed labor uses estimation assumptions. The residual includes more than pure net shareholder profit. Alternative sector boundaries and self-employment methods change the measured level and trend. Older BLS publications contain historical values from earlier vintages; mixing them with current endpoints manufactures a comparison. <a href="https://www.bls.gov/opub/mlr/2017/article/estimating-the-us-labor-share.htm">BLS methodology</a>.</p>
+<p>Falling labor share does not entail falling labor dollars. For example, output rising from 100 to 150 while labor share falls from 60% to 50% raises aggregate real compensation from 60 to 75. Per-worker income and household outcomes further depend on employment, hours, prices and distribution within labor income. In the user's initial fixed-wage, fixed-employment phase, <code>W</code> is mechanically flat while <code>Y</code> can grow. That establishes the arithmetic possibility, not its macroeconomic cause.</p>
+<h2>China: a useful analogy with strict limits</h2>
+<p>IMF's 2025 China consultation describes weak domestic demand, property-related household concerns and reliance on investment and exports; it recommends more support for consumption. In the report's Table 1, 2025 estimates put capital formation at 38.8% of GDP, national saving at 42.1%, and the current-account surplus at 3.3%. These are national aggregates, not the saving rate of ten capitalists. <a href="https://www.imf.org/-/media/files/publications/cr/2026/english/1chnea2026001-source-pdf.pdf">IMF report, February 2026</a>.</p>
+<p>The analogy is that extensive investment can coexist with weak household demand, and that the quality and utilization of new capital matter. It does not show that investment cannot raise GDP, that China has no consumers, or that AI causes its imbalances. China also has trade, government, a financial system, household property wealth, demographic change and institutional features absent from the baseline. Its excess national saving can correspond to external lending; the toy has explicitly removed that route. An open-economy extension would use <code>S−I=CA</code> with a clearly defined current account, not quietly append exports to rescue the closed-economy baseline.</p>
+<p>The public press-release rendering showed several misaligned table-year excerpts when retrieved. The numerical claims above were checked in the actual report's Table 1, PDF page 66, and repeated indicator table on PDF page 5. Use the PDF table, not search snippets or a copied web summary, for values.</p>
+<h2>Relationship to the earlier article</h2>
+<p>Read inputs: the 25 September 2026 <code>article.md</code>, <code>substack.md</code>, <code>research-notes.md</code>, <code>editorial-notes.md</code>, <code>adversarial-review.md</code>, and <code>review-checks.md</code> in the local <code>ai-demand</code> article package. These are author working material, not independent economic evidence. No paid article text was copied into this note.</p>
+<p>The published manuscript already separates nominal accounting from real output, planned first-round spending from equilibrium GDP, financial transactions from capital expenditure, and GDP growth from shared prosperity. Its reviewed correction explicitly rejects broad household participation as an accounting prerequisite for GDP doubling. Preserve those distinctions rather than claiming the study has discovered a basic error in the existing essay.</p>
+<p>The strongest extensions are concrete:</p>
+<ol>
+<li>Put workers, owners and firm accounts in one closed loop and reconcile every payment.</li>
+<li>Show the initially fixed wage bill alongside higher capacity; distinguish realized sales from the technological possibility.</li>
+<li>Solve the 1/3/5/10 layoff cases and the zero-worker endpoint under declared spending and price rules.</li>
+<li>Show the investment offset threshold and a full price-clearing counterexample beside the adverse case.</li>
+<li>Add a clean historical labor-share statement with geography, compensation definition, dates and data vintage.</li>
+<li>Correct the avoided-intermediate-invoice inference if it is introduced from outside the original manuscript.</li>
+<li>Use China only to illustrate investment, demand and capital-allocation tensions, with its open-economy difference stated immediately.</li>
+</ol>
+<p>The voice is first-person, skeptical but conditional, with a concrete customer or business owner before abstract machinery. Short paragraphs and specific numbers do the work. The article's notes explicitly reject fabricated anecdotes, invented terminology, em/en dash punctuation and claims of measured probabilities. Its five numbered Substack sections and simple figures give a reader a clear path. A companion study should keep the narrative approachable while locating formulas, assumption tables and accounting checks in expandable or clearly labeled supporting material. Do not replace the central question about access to output with a deterministic claim that all GDP must collapse.</p>
+<h2>Implementation checks and honest limits</h2>
+<ul>
+<li>Every scenario must satisfy final expenditure, income and value-added identities within a declared tolerance. Report inventories explicitly or set them to zero by assumption.</li>
+<li>Show planned and realized consumption/investment separately when capacity binds. <code>min(capacity, desired spending)</code> alone does not reconcile unfilled orders, household budgets and realized investment.</li>
+<li>Keep stocks and flows separate: money balances, debt, equity and capital are stocks; wages, consumption, saving and investment are period flows. A circular flow does not require a new unit of money for every new unit of GDP.</li>
+<li>Choose simultaneous equilibrium or lagged spending. A lagged model needs initial wealth, a payroll funding rule, transaction timing, profit distributions and a limit on losses/borrowing. A lagged path and its static benchmark must use comparable definitions before their differences are interpreted.</li>
+<li>Keep owner distributions and retained earnings from being spent twice. Capital expenditure is not simply deducted from GDP operating surplus as though all investment were a current intermediate expense.</li>
+<li>Define the automation cost and the domestic supplier receiving it. An intermediate cost is someone else's domestic revenue and is consolidated; imported AI inputs would violate the baseline unless explicitly added.</li>
+<li>At zero employment, real GDP per worker and aggregate labor productivity are undefined. Display a missing value with an explanation, not a finite or infinite productivity claim.</li>
+<li>Any demand-sensitive investment response, precautionary-saving response, price elasticity or adoption game is a synthetic sensitivity. Estimates require evidence beyond this exercise.</li>
+<li>A larger GDP alongside zero worker consumption is an accounting-consistent but unequal outcome. A welfare score would require preferences and distributional weights; do not invent one implicitly.</li>
+</ul>
+<p>AI assistance: Codex, GPT-6.1 Sol with the user-selected Ultra setting, 10 October 2026, assisted source discovery, original derivations and drafting. Public primary sources were opened and relevant claims inspected. The toy parameters and equations are author calculations. No external paid run or separately billed model/API call was used for this research note.</p><footer>Draft research · 10 October 2026 · Original uncalibrated simulations. <a href="index.html">Explore the assumptions.</a></footer></main></body></html>

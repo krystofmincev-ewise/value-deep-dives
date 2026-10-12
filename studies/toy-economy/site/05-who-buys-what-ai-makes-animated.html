@@ -1,0 +1,980 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Who buys what AI makes?</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="teaching.css"><style>.table-scroll{overflow-x:auto}.table-scroll table{min-width:560px}.teaching-article code{overflow-wrap:anywhere}.teaching-article pre{overflow-x:auto}html{scroll-behavior:auto}</style><script src="teaching.js" defer></script></head><body><a class="skip-link" href="#article">Skip to the article</a><main class="article teaching-article" id="article"><nav><a href="https://krystofmincev.substack.com/p/ai-needs-a-customer">The original GDP paper</a><a href="05-who-buys-what-ai-makes.html">Combined paper</a><a href="05-appendix.html">Appendix</a><a href="adoption.html">Explore the accounts</a></nav><aside class="reading-guide"><strong>Follow the people, then the payments</strong><p>Use Next step to follow a picture, or Show all to see it complete. Nothing plays automatically.</p><div class="role-key"><span class="worker-key">Workers and former workers</span><span class="owner-key">Owners</span><span class="equipment-key">Equipment</span></div></aside><h1 id="who-buys-what-ai-makes">Who buys what AI makes?</h1>
+<p><em>A small town, ten workers, and ten lessons about an economy that needs less human work.</em></p>
+<p><strong>Step-by-step edition · <a href="../site/05-who-buys-what-ai-makes.html">See every picture at once →</a></strong></p>
+<p><a href="https://github.com/krystofmincev-ewise/value-deep-dives/tree/main/studies/toy-economy">Public repository: run the experiments and inspect the results →</a></p>
+<p>You are thinking about buying a car. Then your employer introduces an AI system that can do part of your job.</p>
+<p>Perhaps this is good news. You might finish earlier. Perhaps the car will become cheaper too.</p>
+<p>But perhaps your next paycheck will be smaller. Until you know, you keep the old car.</p>
+<p>Across town, someone who makes cars sees another customer disappear.</p>
+<p>That was the question behind <a href="https://krystofmincev.substack.com/p/ai-needs-a-customer">AI needs a customer</a>: if businesses need fewer workers, who buys what those businesses produce?</p>
+<p>We built two small computer experiments to follow the question through. One follows money around ten connected businesses. The other looks more closely at two competing shops as they introduce AI, a little at a time. Separate experiments let us add a bank or let machines accumulate. We will say when we switch experiments; these are different views of an invented town, not one model that contains everything.</p>
+<p>The answer is more hopeful, and more demanding, than “no jobs means no growth.” <strong>People do not have to work to buy things. But they do need a way to pay for them.</strong></p>
+<p>Let us follow that distinction from the first AI installation to a town with no jobs at all.</p>
+<h2 id="meet-the-town-before-anything-changes">Meet the town before anything changes</h2>
+<p>Forget the car for a moment. Our shops sell baskets of useful things: food, clothing, and whatever else people want. Each basket initially costs one coin.</p>
+<p>Ten workers receive sixty coins between them each round. The owners receive forty from the businesses. For now, a round just means the next payday and shopping trip; it is not a year.</p>
+<figure class="teaching-figure" id="figure-02-income" data-diagram="02-income"><figcaption><span class="figure-number">PICTURE 01</span><h3>One round of production creates income</h3></figcaption><div class="figure-body"><div class="motion-controls" role="group" aria-label="Steps for One round of production creates income" hidden data-steps="[{&quot;title&quot;: &quot;Start with output&quot;, &quot;text&quot;: &quot;During one round, customers buy 100 of final output. This is a flow during a round, not the town’s total cash balance.&quot;}, {&quot;title&quot;: &quot;Follow the income&quot;, &quot;text&quot;: &quot;The 100 becomes 60 of wages and 40 of gross owner income. The branches divide one total; they do not create another 100.&quot;}]">
+<div class="step-status" aria-live="polite" aria-atomic="true"></div>
+<div class="motion-buttons"><button type="button" data-action="previous">Previous</button><button type="button" data-action="next">Next step</button><button type="button" data-action="play">Play steps</button><button type="button" data-action="reset">Show all</button></div><p class="motion-explanation"></p></div><div class="diagram-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 470" width="560" height="470" role="img" aria-labelledby="02-income-title 02-income-desc">
+<title id="02-income-title">One round of production creates income</title>
+<desc id="02-income-desc">Final output of 100 becomes wages 60 and gross owner income 40. These are two views of the same 100, not 200.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="470" fill="#fffdf8"/>
+<g class="teaching-stage" data-step="1">
+<rect x="120" y="20" width="320" height="112" rx="12" fill="#edf1ea"/>
+<rect x="120" y="20" width="6" height="112" rx="0" fill="#223c36"/>
+<text x="138" y="55" font-size="26" fill="#223c36" text-anchor="start">Final output</text>
+<text x="138" y="103" font-size="42" fill="#223c36" text-anchor="start">100</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<line x1="280" y1="133" x2="280" y2="170" stroke="#58675f" stroke-width="3"/>
+<line x1="147" y1="170" x2="413" y2="170" stroke="#58675f" stroke-width="3"/>
+<line x1="147" y1="170" x2="147" y2="225" stroke="#236654" stroke-width="3"/>
+<line x1="140.7889327926546" y1="215.92130823599354" x2="147" y2="225" stroke="#236654" stroke-width="3"/>
+<line x1="153.2110672073454" y1="215.92130823599354" x2="147" y2="225" stroke="#236654" stroke-width="3"/>
+<circle class="travel-token" data-step="2" data-from="147,170" data-to="147,225" r="8" fill="#236654"/>
+<line x1="413" y1="170" x2="413" y2="225" stroke="#a66d13" stroke-width="3"/>
+<line x1="406.78893279265463" y1="215.92130823599354" x2="413" y2="225" stroke="#a66d13" stroke-width="3"/>
+<line x1="419.21106720734537" y1="215.92130823599354" x2="413" y2="225" stroke="#a66d13" stroke-width="3"/>
+<circle class="travel-token" data-step="2" data-from="413,170" data-to="413,225" r="8" fill="#a66d13"/>
+<rect x="24" y="245" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="24" y="245" width="6" height="112" rx="0" fill="#236654"/>
+<text x="42" y="280" font-size="26" fill="#236654" text-anchor="start">Worker wages</text>
+<text x="42" y="328" font-size="42" fill="#236654" text-anchor="start">60</text>
+<rect x="290" y="245" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="290" y="245" width="6" height="112" rx="0" fill="#a66d13"/>
+<text x="308" y="280" font-size="26" fill="#a66d13" text-anchor="start">Owner income</text>
+<text x="308" y="328" font-size="42" fill="#a66d13" text-anchor="start">40</text>
+<text x="280" y="427" font-size="30" fill="#223c36" text-anchor="middle">60 + 40 = the same 100</text>
+</g>
+</svg>
+</div></div><div class="figure-caption"><em>One hundred coins of new production generates one hundred coins of income. Sixty goes to workers; forty goes to owners. This is the same hundred seen from two sides, not two separate hundreds.</em></div></figure>
+<p>Workers spend their sixty on baskets. Owners buy twenty baskets and use their remaining twenty to finance equipment for the businesses. That equipment replaces machines wearing out.</p>
+<figure class="teaching-figure" id="figure-03-spending" data-diagram="03-spending"><figcaption><span class="figure-number">PICTURE 02</span><h3>Where the income goes next</h3></figcaption><div class="figure-body"><div class="motion-controls" role="group" aria-label="Steps for Where the income goes next" hidden data-steps="[{&quot;title&quot;: &quot;Workers spend their 60&quot;, &quot;text&quot;: &quot;Workers use all 60 of their wages for household purchases. This group saves none of its current income in the starting example.&quot;}, {&quot;title&quot;: &quot;Owners divide their 40&quot;, &quot;text&quot;: &quot;Owners buy 20 of household goods and put the other 20 into businesses to finance new equipment. That 20 is actually spent on equipment, not left idle.&quot;}, {&quot;title&quot;: &quot;Count the final purchases once&quot;, &quot;text&quot;: &quot;Households buy 80 in total: 60 from workers plus 20 from owners. Businesses buy 20 of new equipment. Those purchases are the next 100 of final demand. The financing transfer is not counted again.&quot;}]">
+<div class="step-status" aria-live="polite" aria-atomic="true"></div>
+<div class="motion-buttons"><button type="button" data-action="previous">Previous</button><button type="button" data-action="next">Next step</button><button type="button" data-action="play">Play steps</button><button type="button" data-action="reset">Show all</button></div><p class="motion-explanation"></p></div><div class="diagram-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 685" width="560" height="685" role="img" aria-labelledby="03-spending-title 03-spending-desc">
+<title id="03-spending-title">Where the income goes next</title>
+<desc id="03-spending-desc">Workers spend 60 on household goods. Owners spend 20 on household goods and finance 20 of equipment. Household consumption 80 plus equipment 20 equals GDP 100.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="685" fill="#fffdf8"/>
+<g class="teaching-stage" data-step="1">
+<rect x="24" y="20" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="24" y="20" width="6" height="112" rx="0" fill="#236654"/>
+<text x="42" y="55" font-size="26" fill="#236654" text-anchor="start">Workers receive</text>
+<text x="42" y="103" font-size="42" fill="#236654" text-anchor="start">60</text>
+<line x1="147" y1="134" x2="147" y2="195" stroke="#236654" stroke-width="3"/>
+<line x1="140.7889327926546" y1="185.92130823599354" x2="147" y2="195" stroke="#236654" stroke-width="3"/>
+<line x1="153.2110672073454" y1="185.92130823599354" x2="147" y2="195" stroke="#236654" stroke-width="3"/>
+<circle class="travel-token" data-step="1" data-from="147,134" data-to="147,195" r="8" fill="#236654"/>
+<rect x="24" y="210" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="24" y="210" width="6" height="112" rx="0" fill="#236654"/>
+<text x="42" y="245" font-size="26" fill="#236654" text-anchor="start">Household use</text>
+<text x="42" y="293" font-size="42" fill="#236654" text-anchor="start">60</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<rect x="290" y="20" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="290" y="20" width="6" height="112" rx="0" fill="#a66d13"/>
+<text x="308" y="55" font-size="26" fill="#a66d13" text-anchor="start">Owners receive</text>
+<text x="308" y="103" font-size="42" fill="#a66d13" text-anchor="start">40</text>
+<line x1="413" y1="134" x2="413" y2="195" stroke="#a66d13" stroke-width="3"/>
+<line x1="406.78893279265463" y1="185.92130823599354" x2="413" y2="195" stroke="#a66d13" stroke-width="3"/>
+<line x1="419.21106720734537" y1="185.92130823599354" x2="413" y2="195" stroke="#a66d13" stroke-width="3"/>
+<circle class="travel-token" data-step="2" data-from="413,134" data-to="413,195" r="8" fill="#a66d13"/>
+<rect x="290" y="210" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="290" y="210" width="6" height="112" rx="0" fill="#a66d13"/>
+<text x="308" y="245" font-size="26" fill="#a66d13" text-anchor="start">Household use</text>
+<text x="308" y="293" font-size="42" fill="#a66d13" text-anchor="start">20</text>
+<rect x="290" y="355" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="290" y="355" width="6" height="112" rx="0" fill="#376d9a"/>
+<text x="308" y="390" font-size="26" fill="#376d9a" text-anchor="start">New equipment</text>
+<text x="308" y="438" font-size="42" fill="#376d9a" text-anchor="start">20</text>
+<line x1="413" y1="133" x2="547" y2="133" stroke="#376d9a" stroke-width="3"/>
+<line x1="547" y1="133" x2="547" y2="340" stroke="#376d9a" stroke-width="3"/>
+<line x1="413" y1="340" x2="547" y2="340" stroke="#376d9a" stroke-width="3"/>
+<line x1="413" y1="340" x2="413" y2="353" stroke="#376d9a" stroke-width="3"/>
+<line x1="406.78893279265463" y1="343.92130823599354" x2="413" y2="353" stroke="#376d9a" stroke-width="3"/>
+<line x1="419.21106720734537" y1="343.92130823599354" x2="413" y2="353" stroke="#376d9a" stroke-width="3"/>
+<circle class="travel-token" data-step="2" data-from="413,133" data-via="547,133;547,340;413,340" data-to="413,353" r="8" fill="#376d9a"/>
+</g>
+<g class="teaching-stage" data-step="3">
+<text x="24" y="522" font-size="29" fill="#223c36" text-anchor="start">Households 80 + equipment 20</text>
+<text x="24" y="563" font-size="27" fill="#223c36" text-anchor="start">Final purchases</text>
+<rect x="24" y="580" width="512" height="34" rx="0" fill="#edf1ea"/>
+<rect x="24.0" y="580" width="307.2" height="34" rx="0" fill="#236654"/>
+<rect x="331.2" y="580" width="102.4" height="34" rx="0" fill="#a66d13"/>
+<rect x="433.6" y="580" width="102.4" height="34" rx="0" fill="#376d9a"/>
+<text x="536" y="652" font-size="32" fill="#223c36" text-anchor="end">GDP 100</text>
+</g>
+</svg>
+</div></div><div class="figure-caption"><em>Keep this picture in mind: sixty for workers' shopping, twenty for owners' shopping, twenty for equipment. No part of the owners' forty is left idle in this starting round.</em></div></figure>
+<p>The town's GDP is one hundred: eighty of things for people, plus twenty of new equipment. GDP counts new production, including equipment bought by businesses. It does not tell us who enjoys the output.</p>
+<p>As prices change, we will mostly talk about <strong>baskets</strong>, so that cheaper prices do not look like less production. When we say <em>real GDP</em>, we value the goods at their original prices to measure how much was produced.</p>
+<p>Every numerical result below belongs to these invented experiments. They help us understand mechanisms; they do not tell us how likely a particular AI future is. The <a href="../site/05-appendix.html">appendix</a> holds the full map of assumptions, results and code.</p>
+<h2 id="1-ai-removes-tasks-the-paycheck-is-a-separate-decision">1. AI removes tasks. The paycheck is a separate decision.</h2>
+<p>Now zoom in on two competing shops. Each employs five of our ten workers. An AI supplier and an equipment maker serve them. We simplify those suppliers as already automated.</p>
+<figure class="teaching-figure" id="figure-01-adoption-town" data-diagram="01-adoption-town"><figcaption><span class="figure-number">PICTURE 03</span><h3>The same starting town</h3></figcaption><div class="figure-body"><div class="motion-controls" role="group" aria-label="Steps for The same starting town" hidden data-steps="[{&quot;title&quot;: &quot;Two shops and their workers&quot;, &quot;text&quot;: &quot;Each consumer shop starts with five workers. Each of the ten workers has a separate cash account.&quot;}, {&quot;title&quot;: &quot;Two automated suppliers&quot;, &quot;text&quot;: &quot;The equipment maker produces investment goods. The AI supplier is present from the beginning, but receives no AI fees before adoption.&quot;}, {&quot;title&quot;: &quot;Count output and income&quot;, &quot;text&quot;: &quot;Final purchases and the income they create are two views of the same GDP. The cash stock is a separate quantity; money can circulate more than once.&quot;}]">
+<div class="step-status" aria-live="polite" aria-atomic="true"></div>
+<div class="motion-buttons"><button type="button" data-action="previous">Previous</button><button type="button" data-action="next">Next step</button><button type="button" data-action="play">Play steps</button><button type="button" data-action="reset">Show all</button></div><p class="motion-explanation"></p></div><div class="diagram-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 835" width="560" height="835" role="img" aria-labelledby="01-adoption-town-title 01-adoption-town-desc">
+<title id="01-adoption-town-title">The same starting town</title>
+<desc id="01-adoption-town-desc">Two consumer shops employ 10 workers. The AI supplier and equipment maker are already automated. Baseline household purchases 80 plus equipment 20 equal GDP 100. Wages 60 plus gross surplus 40 are the income from that same output. Total cash is 200.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="835" fill="#fffdf8"/>
+<text x="24" y="47" font-size="32" fill="#223c36" text-anchor="start">The same starting town</text>
+<g class="teaching-stage" data-step="1">
+<rect x="24" y="83" width="246" height="115" rx="12" fill="#edf1ea"/>
+<rect x="44" y="105" width="34" height="16" rx="0" fill="#376d9a"/>
+<rect x="78" y="105" width="34" height="16" rx="0" fill="#223c36"/>
+<rect x="112" y="105" width="34" height="16" rx="0" fill="#376d9a"/>
+<rect x="146" y="105" width="34" height="16" rx="0" fill="#223c36"/>
+<rect x="180" y="105" width="34" height="16" rx="0" fill="#376d9a"/>
+<rect x="214" y="105" width="34" height="16" rx="0" fill="#223c36"/>
+<rect x="51" y="132" width="42" height="44" rx="2" fill="#376d9a"/>
+<rect x="108" y="132" width="40" height="44" rx="2" fill="#fffdf8"/>
+<text x="255" y="162" font-size="30" fill="#223c36" text-anchor="end">Shop A</text>
+<circle cx="63" cy="232" r="8" fill="#236654"/>
+<rect x="54" y="244" width="18" height="24" rx="5" fill="#236654"/>
+<circle cx="105" cy="232" r="8" fill="#236654"/>
+<rect x="96" y="244" width="18" height="24" rx="5" fill="#236654"/>
+<circle cx="147" cy="232" r="8" fill="#236654"/>
+<rect x="138" y="244" width="18" height="24" rx="5" fill="#236654"/>
+<circle cx="189" cy="232" r="8" fill="#236654"/>
+<rect x="180" y="244" width="18" height="24" rx="5" fill="#236654"/>
+<circle cx="231" cy="232" r="8" fill="#236654"/>
+<rect x="222" y="244" width="18" height="24" rx="5" fill="#236654"/>
+<text x="147" y="307" font-size="26" fill="#236654" text-anchor="middle">5 workers</text>
+<rect x="290" y="83" width="246" height="115" rx="12" fill="#edf1ea"/>
+<rect x="310" y="105" width="34" height="16" rx="0" fill="#376d9a"/>
+<rect x="344" y="105" width="34" height="16" rx="0" fill="#223c36"/>
+<rect x="378" y="105" width="34" height="16" rx="0" fill="#376d9a"/>
+<rect x="412" y="105" width="34" height="16" rx="0" fill="#223c36"/>
+<rect x="446" y="105" width="34" height="16" rx="0" fill="#376d9a"/>
+<rect x="480" y="105" width="34" height="16" rx="0" fill="#223c36"/>
+<rect x="317" y="132" width="42" height="44" rx="2" fill="#376d9a"/>
+<rect x="374" y="132" width="40" height="44" rx="2" fill="#fffdf8"/>
+<text x="521" y="162" font-size="30" fill="#223c36" text-anchor="end">Shop B</text>
+<circle cx="329" cy="232" r="8" fill="#236654"/>
+<rect x="320" y="244" width="18" height="24" rx="5" fill="#236654"/>
+<circle cx="371" cy="232" r="8" fill="#236654"/>
+<rect x="362" y="244" width="18" height="24" rx="5" fill="#236654"/>
+<circle cx="413" cy="232" r="8" fill="#236654"/>
+<rect x="404" y="244" width="18" height="24" rx="5" fill="#236654"/>
+<circle cx="455" cy="232" r="8" fill="#236654"/>
+<rect x="446" y="244" width="18" height="24" rx="5" fill="#236654"/>
+<circle cx="497" cy="232" r="8" fill="#236654"/>
+<rect x="488" y="244" width="18" height="24" rx="5" fill="#236654"/>
+<text x="413" y="307" font-size="26" fill="#236654" text-anchor="middle">5 workers</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<rect x="24" y="343" width="246" height="116" rx="12" fill="#edf1ea"/>
+<text x="147" y="385" font-size="26" fill="#376d9a" text-anchor="middle">AI supplier</text>
+<text x="147" y="429" font-size="26" fill="#58675f" text-anchor="middle">Automated</text>
+<rect x="290" y="343" width="246" height="116" rx="12" fill="#edf1ea"/>
+<text x="413" y="385" font-size="26" fill="#376d9a" text-anchor="middle">Equipment maker</text>
+<text x="413" y="429" font-size="26" fill="#58675f" text-anchor="middle">Automated</text>
+</g>
+<g class="teaching-stage" data-step="3">
+<text x="24" y="516" font-size="26" fill="#58675f" text-anchor="start">One period’s final purchases</text>
+<rect x="24" y="538" width="512" height="76" rx="12" fill="#edf1ea"/>
+<text x="280" y="586" font-size="27" fill="#223c36" text-anchor="middle">Baskets 80 + equipment 20</text>
+<text x="24" y="665" font-size="27" fill="#223c36" text-anchor="start">Wages 60 + gross surplus 40</text>
+<text x="24" y="707" font-size="30" fill="#223c36" text-anchor="start">= the same GDP 100</text>
+<line x1="24" y1="744" x2="536" y2="744" stroke="#edf1ea" stroke-width="3"/>
+<text x="24" y="791" font-size="28" fill="#58675f" text-anchor="start">Total cash in the town: 200</text>
+</g>
+</svg>
+</div></div><div class="figure-caption"><em>This is the closer view used for gradual AI adoption. The ten workers are split between two shops. The starting wages, household purchases and equipment orders match the budget we have just followed.</em></div></figure>
+<p>At first, making eighty baskets takes ten full human shifts. AI takes over a fifth of the tasks. The same baskets now need eight human shifts. Later, they need six.</p>
+<figure class="teaching-figure" id="figure-02-adoption-shifts" data-diagram="02-adoption-shifts"><figcaption><span class="figure-number">PICTURE 04</span><h3>Same baskets, fewer human shifts</h3></figcaption><div class="figure-body"><div class="motion-controls" role="group" aria-label="Steps for Same baskets, fewer human shifts" hidden data-steps="[{&quot;title&quot;: &quot;AI does 0% of tasks&quot;, &quot;text&quot;: &quot;For the same baseline output, human work is 10 full-shift equivalents. These are reference task requirements, not this period’s actual production or headcount.&quot;}, {&quot;title&quot;: &quot;AI does 20% of tasks&quot;, &quot;text&quot;: &quot;For the same baseline output, human work is 8 full-shift equivalents. These are reference task requirements, not this period’s actual production or headcount.&quot;}, {&quot;title&quot;: &quot;AI does 40% of tasks&quot;, &quot;text&quot;: &quot;For the same baseline output, human work is 6 full-shift equivalents. These are reference task requirements, not this period’s actual production or headcount.&quot;}, {&quot;title&quot;: &quot;A task is not a job&quot;, &quot;text&quot;: &quot;People, agreed working time, actual productive time, and pay are different variables. AI task replacement alone does not choose an employment contract.&quot;}]">
+<div class="step-status" aria-live="polite" aria-atomic="true"></div>
+<div class="motion-buttons"><button type="button" data-action="previous">Previous</button><button type="button" data-action="next">Next step</button><button type="button" data-action="play">Play steps</button><button type="button" data-action="reset">Show all</button></div><p class="motion-explanation"></p></div><div class="diagram-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 740" width="560" height="740" role="img" aria-labelledby="02-adoption-shifts-title 02-adoption-shifts-desc">
+<title id="02-adoption-shifts-title">Same baskets, fewer human shifts</title>
+<desc id="02-adoption-shifts-desc">For the baseline 80 baskets, the recorded reference labor requirement falls as tasks move to AI. Each block is one full shift of tasks, not one person. Whether jobs or pay fall is a separate rule.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="740" fill="#fffdf8"/>
+<text x="24" y="45" font-size="32" fill="#223c36" text-anchor="start">Same baskets.</text>
+<text x="24" y="88" font-size="32" fill="#223c36" text-anchor="start">Fewer human shifts.</text>
+<text x="24" y="140" font-size="26" fill="#58675f" text-anchor="start">80 baskets in every row</text>
+<g class="teaching-stage" data-step="1">
+<text x="24" y="198" font-size="26" fill="#223c36" text-anchor="start">AI does 0% of tasks</text>
+<rect x="24.0" y="221" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="76.0" y="221" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="128.0" y="221" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="180.0" y="221" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="232.0" y="221" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="284.0" y="221" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="336.0" y="221" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="388.0" y="221" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="440.0" y="221" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="492.0" y="221" width="44.0" height="36" rx="4" fill="#236654"/>
+<text x="24" y="300" font-size="29" fill="#236654" text-anchor="start">10 human shifts</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<text x="24" y="350" font-size="26" fill="#223c36" text-anchor="start">AI does 20% of tasks</text>
+<rect x="24.0" y="373" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="76.0" y="373" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="128.0" y="373" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="180.0" y="373" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="232.0" y="373" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="284.0" y="373" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="336.0" y="373" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="388.0" y="373" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="440.0" y="373" width="44.0" height="36" rx="4" fill="#376d9a"/>
+<rect x="492.0" y="373" width="44.0" height="36" rx="4" fill="#376d9a"/>
+<text x="24" y="452" font-size="29" fill="#236654" text-anchor="start">8 human shifts</text>
+</g>
+<g class="teaching-stage" data-step="3">
+<text x="24" y="502" font-size="26" fill="#223c36" text-anchor="start">AI does 40% of tasks</text>
+<rect x="24.0" y="525" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="76.0" y="525" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="128.0" y="525" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="180.0" y="525" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="232.0" y="525" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="284.0" y="525" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="336.0" y="525" width="44.0" height="36" rx="4" fill="#376d9a"/>
+<rect x="388.0" y="525" width="44.0" height="36" rx="4" fill="#376d9a"/>
+<rect x="440.0" y="525" width="44.0" height="36" rx="4" fill="#376d9a"/>
+<rect x="492.0" y="525" width="44.0" height="36" rx="4" fill="#376d9a"/>
+<text x="24" y="604" font-size="29" fill="#236654" text-anchor="start">6 human shifts</text>
+</g>
+<g class="teaching-stage" data-step="4">
+<rect x="24" y="645" width="24" height="24" rx="3" fill="#236654"/>
+<text x="60" y="666" font-size="26" fill="#236654" text-anchor="start">Human</text>
+<rect x="273" y="645" width="24" height="24" rx="3" fill="#376d9a"/>
+<text x="309" y="666" font-size="26" fill="#376d9a" text-anchor="start">AI</text>
+<text x="24" y="718" font-size="28" fill="#223c36" text-anchor="start">A shift is time, not a person.</text>
+</g>
+</svg>
+</div></div><div class="figure-caption"><em>These blocks show work needed for the original eighty baskets. They do not yet tell us how many people have a job or how much anyone earns.</em></div></figure>
+<p>Imagine a washing machine arriving in a laundry. Finishing the old workload sooner creates a choice. The staff could wash more clothes, go home earlier with the same pay, or lose paid hours.</p>
+<p>Our AI shops face that choice too. Ten people might share six paid shifts. Six might keep full shifts while four lose their jobs. Or all ten might keep their salaries and use the spare time to make more goods.</p>
+<p>This is our first important separation: <strong>less work required is a technological result. Less income received depends on what happens next.</strong></p>
+<p>For AI, that distinction matters from the first task automated, long before an entire occupation disappears.</p>
+<h2 id="2-a-flat-paycheck-can-buy-more-a-smaller-one-might-not">2. A flat paycheck can buy more. A smaller one might not.</h2>
+<p>Give both shops the same technology: AI now handles two fifths of their tasks. Reset the town between three versions, changing what happens to pay and freed time.</p>
+<p>In the first, workers keep their pay and stay available to make more baskets. The shops spread their wage costs over more potential output and reduce prices under our pricing rule. Workers' sixty coins now buy about sixty-eight baskets.</p>
+<p>Nobody needed a pay rise to buy more. The price of a basket fell.</p>
+<p>In the second, workers keep their salaries but take shorter shifts. The shops still pay for AI, while keeping their planned output smaller. Their prices rise. Workers get more time off but can buy only about fifty-four baskets. Whether that is a good exchange depends on how much they value the time.</p>
+<p>In the third, the shops cut paid hours. Workers' pay falls from sixty coins to thirty-six. Prices fall too, but not enough: workers can buy only about forty-one baskets.</p>
+<figure class="teaching-figure" id="figure-04-worker-baskets" data-diagram="04-worker-baskets"><figcaption><span class="figure-number">PICTURE 05</span><h3>What can worker households buy?</h3></figcaption><div class="figure-body"><div class="motion-controls" role="group" aria-label="Steps for What can worker households buy?" hidden data-steps="[{&quot;title&quot;: &quot;Before AI&quot;, &quot;text&quot;: &quot;In the last recorded period, worker households buy 60 baskets under this rule. The baseline is 60 baskets. Household groups are aggregates; this does not show who within the group receives income.&quot;}, {&quot;title&quot;: &quot;Same pay; more capacity&quot;, &quot;text&quot;: &quot;In the last recorded period, worker households buy 68.2 baskets under this rule. The baseline is 60 baskets. Household groups are aggregates; this does not show who within the group receives income.&quot;}, {&quot;title&quot;: &quot;Same pay; less time&quot;, &quot;text&quot;: &quot;In the last recorded period, worker households buy 53.6 baskets under this rule. The baseline is 60 baskets. Household groups are aggregates; this does not show who within the group receives income.&quot;}, {&quot;title&quot;: &quot;Hourly pay; less time&quot;, &quot;text&quot;: &quot;In the last recorded period, worker households buy 40.9 baskets under this rule. The baseline is 60 baskets. Household groups are aggregates; this does not show who within the group receives income.&quot;}, {&quot;title&quot;: &quot;Layoffs&quot;, &quot;text&quot;: &quot;In the last recorded period, worker households buy 40.9 baskets under this rule. The baseline is 60 baskets. Household groups are aggregates; this does not show who within the group receives income.&quot;}]">
+<div class="step-status" aria-live="polite" aria-atomic="true"></div>
+<div class="motion-buttons"><button type="button" data-action="previous">Previous</button><button type="button" data-action="next">Next step</button><button type="button" data-action="play">Play steps</button><button type="button" data-action="reset">Show all</button></div><p class="motion-explanation"></p></div><div class="diagram-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 775" width="560" height="775" role="img" aria-labelledby="04-worker-baskets-title 04-worker-baskets-desc">
+<title id="04-worker-baskets-title">What can worker households buy?</title>
+<desc id="04-worker-baskets-desc">Baskets purchased by all worker households together. The four adoption cases use the same task automation path, but different pay and time rules. Values are from each case’s last recorded period; they are not welfare scores.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="775" fill="#fffdf8"/>
+<text x="24" y="46" font-size="32" fill="#223c36" text-anchor="start">What can workers buy?</text>
+<text x="24" y="94" font-size="26" fill="#58675f" text-anchor="start">Baskets for the whole worker group</text>
+<g class="teaching-stage" data-step="1">
+<text x="24" y="158" font-size="26" fill="#58675f" text-anchor="start">Before AI</text>
+<text x="536" y="158" font-size="30" fill="#58675f" text-anchor="end">60</text>
+<rect x="24" y="178" width="512" height="31" rx="0" fill="#edf1ea"/>
+<rect x="24" y="178" width="438.85714285714283" height="31" rx="0" fill="#58675f"/>
+</g>
+<g class="teaching-stage" data-step="2">
+<text x="24" y="269" font-size="26" fill="#236654" text-anchor="start">Same pay; more capacity</text>
+<text x="536" y="269" font-size="30" fill="#236654" text-anchor="end">68.2</text>
+<rect x="24" y="289" width="512" height="31" rx="0" fill="#edf1ea"/>
+<rect x="24" y="289" width="498.70129870129875" height="31" rx="0" fill="#236654"/>
+</g>
+<g class="teaching-stage" data-step="3">
+<text x="24" y="380" font-size="26" fill="#236654" text-anchor="start">Same pay; less time</text>
+<text x="536" y="380" font-size="30" fill="#236654" text-anchor="end">53.6</text>
+<rect x="24" y="400" width="512" height="31" rx="0" fill="#edf1ea"/>
+<rect x="24" y="400" width="391.8367346938775" height="31" rx="0" fill="#236654"/>
+</g>
+<g class="teaching-stage" data-step="4">
+<text x="24" y="491" font-size="26" fill="#236654" text-anchor="start">Hourly pay; less time</text>
+<text x="536" y="491" font-size="30" fill="#236654" text-anchor="end">40.9</text>
+<rect x="24" y="511" width="512" height="31" rx="0" fill="#edf1ea"/>
+<rect x="24" y="511" width="299.2207792207792" height="31" rx="0" fill="#236654"/>
+</g>
+<g class="teaching-stage" data-step="5">
+<text x="24" y="602" font-size="26" fill="#236654" text-anchor="start">Layoffs</text>
+<text x="536" y="602" font-size="30" fill="#236654" text-anchor="end">40.9</text>
+<rect x="24" y="622" width="512" height="31" rx="0" fill="#edf1ea"/>
+<rect x="24" y="622" width="299.2207792207792" height="31" rx="0" fill="#236654"/>
+<text x="24" y="745" font-size="29" fill="#223c36" text-anchor="start">Same AI. Different contracts.</text>
+</g>
+</svg>
+</div></div><div class="figure-caption"><em>Read each row as a fresh version of the same town. Compare workers' purchases with the original sixty baskets. The technology is the same; contracts and the use of freed time differ. The layoffs row cuts the same total paid time as shorter hours, but some people lose all their pay instead of everybody losing part.</em></div></figure>
+<p>The useful question is therefore not just “Will AI make things cheaper?” It is <strong>“Will things become cheaper faster than people's incomes fall?”</strong> A half-price basket is little comfort to somebody whose income has disappeared.</p>
+<h2 id="3-what-looks-sensible-for-one-shop-can-disappoint-both">3. What looks sensible for one shop can disappoint both.</h2>
+<p>Return to the version that cuts paid hours. Before adopting, a shop estimates its next profit. Saving wages looks more valuable than the AI bill. The first step appears to lift profit from ten coins to roughly ten and a half.</p>
+<p>Its rival sees the same opportunity. Both adopt.</p>
+<p>But those workers were also customers. Once both shops have automated two fifths of their tasks, weaker purchasing power has worked its way through the town. Each shop now earns only about five coins.</p>
+<figure class="teaching-figure" id="figure-03-private-choice" data-diagram="03-private-choice"><figcaption><span class="figure-number">PICTURE 06</span><h3>A tempting choice can disappoint both shops</h3></figcaption><div class="figure-body"><div class="motion-controls" role="group" aria-label="Steps for A tempting choice can disappoint both shops" hidden data-steps="[{&quot;title&quot;: &quot;Each forecasts its own gain&quot;, &quot;text&quot;: &quot;Each shop compares its own predicted operating surplus before and after one adoption step, holding the household spending budget and the rival’s inherited price and automation fixed. Neither forecasts later wage-demand feedback or rival responses.&quot;}, {&quot;title&quot;: &quot;Both choose before seeing the other’s choice&quot;, &quot;text&quot;: &quot;The two shops choose simultaneously. Their pay rules shorten hours and reduce wages. Later customer spending responds to those lower wages; the private forecast did not include this feedback.&quot;}, {&quot;title&quot;: &quot;Read the later outcome&quot;, &quot;text&quot;: &quot;In period 79, after both reach 40% task automation, their operating surpluses are [&#x27;5.2&#x27;, &#x27;5.2&#x27;]. Profit here is sales minus wages and AI fees, before equipment investment or depreciation. The earlier forecast was for the first step, not this later period.&quot;}]">
+<div class="step-status" aria-live="polite" aria-atomic="true"></div>
+<div class="motion-buttons"><button type="button" data-action="previous">Previous</button><button type="button" data-action="next">Next step</button><button type="button" data-action="play">Play steps</button><button type="button" data-action="reset">Show all</button></div><p class="motion-explanation"></p></div><div class="diagram-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 865" width="560" height="865" role="img" aria-labelledby="03-private-choice-title 03-private-choice-desc">
+<title id="03-private-choice-title">A tempting choice can disappoint both shops</title>
+<desc id="03-private-choice-desc">At their first accepted adoption decision in period 5, each shop forecasts its own operating surplus with the rival’s inherited price and automation held fixed. Both choose AI. The later recorded surplus, after both reach 40% automation, is lower. This compares an initial one-step incentive with a later outcome, not a forecast for that later period.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="865" fill="#fffdf8"/>
+<text x="24" y="46" font-size="32" fill="#223c36" text-anchor="start">A tempting choice.</text>
+<text x="24" y="89" font-size="32" fill="#223c36" text-anchor="start">A weaker result.</text>
+<g class="teaching-stage" data-step="1">
+<text x="24" y="146" font-size="27" fill="#58675f" text-anchor="start">First forecast, at 20% AI</text>
+<rect x="24" y="178" width="246" height="139" rx="12" fill="#edf1ea"/>
+<text x="147" y="221" font-size="28" fill="#223c36" text-anchor="middle">Shop A</text>
+<text x="147" y="278" font-size="39" fill="#236654" text-anchor="middle">10 → 10.6</text>
+<rect x="290" y="178" width="246" height="139" rx="12" fill="#edf1ea"/>
+<text x="413" y="221" font-size="28" fill="#223c36" text-anchor="middle">Shop B</text>
+<text x="413" y="278" font-size="39" fill="#236654" text-anchor="middle">10 → 10.6</text>
+<text x="24" y="361" font-size="26" fill="#58675f" text-anchor="start">Predicted profit before → after</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<text x="280" y="419" font-size="30" fill="#223c36" text-anchor="middle">Both choose to adopt</text>
+<line x1="280" y1="440" x2="280" y2="479" stroke="#376d9a" stroke-width="3"/>
+<line x1="273.78893279265463" y1="469.92130823599354" x2="280" y2="479" stroke="#376d9a" stroke-width="3"/>
+<line x1="286.21106720734537" y1="469.92130823599354" x2="280" y2="479" stroke="#376d9a" stroke-width="3"/>
+<circle class="travel-token" data-step="2" data-from="280,440" data-to="280,479" r="8" fill="#376d9a"/>
+</g>
+<g class="teaching-stage" data-step="3">
+<rect x="24" y="495" width="246" height="145" rx="12" fill="#edf1ea"/>
+<text x="147" y="537" font-size="28" fill="#223c36" text-anchor="middle">Shop A</text>
+<text x="147" y="590" font-size="42" fill="#a44432" text-anchor="middle">5.2</text>
+<text x="147" y="625" font-size="26" fill="#58675f" text-anchor="middle">later profit</text>
+<rect x="290" y="495" width="246" height="145" rx="12" fill="#edf1ea"/>
+<text x="413" y="537" font-size="28" fill="#223c36" text-anchor="middle">Shop B</text>
+<text x="413" y="590" font-size="42" fill="#a44432" text-anchor="middle">5.2</text>
+<text x="413" y="625" font-size="26" fill="#58675f" text-anchor="middle">later profit</text>
+<text x="24" y="696" font-size="26" fill="#223c36" text-anchor="start">Both now use AI for 40% of tasks.</text>
+<text x="24" y="741" font-size="26" fill="#58675f" text-anchor="start">Wage cuts weaken customer spending.</text>
+<text x="24" y="782" font-size="26" fill="#58675f" text-anchor="start">AI fees also cost the shops.</text>
+<line x1="24" y1="807" x2="536" y2="807" stroke="#edf1ea" stroke-width="3"/>
+<text x="24" y="846" font-size="26" fill="#58675f" text-anchor="start">Profit is before replacing equipment.</text>
+</g>
+</svg>
+</div></div><div class="figure-caption"><em>The first profit is a forecast for the next step. The later profit is the recorded result after both shops adopt further and household spending changes. They are different moments, not a like-for-like claim about one installation.</em></div></figure>
+<p>It is like two shopkeepers each thinking, “My customers work somewhere else.” Across the whole town, there is no somewhere else.</p>
+<p>Our shops have limited foresight: they use current customer budgets and the rival's existing price. This is how that particular decision rule can backfire, not a proof that every well-informed business would make the same mistake.</p>
+<p>Still, it exposes a tension worth watching as AI spreads. A company can capture a saving on its own payroll while part of the cost arrives at other companies' checkouts.</p>
+<h2 id="4-the-money-can-remain-while-the-customers-disappear">4. The money can remain while the customers disappear.</h2>
+<p>Where did the money go?</p>
+<p>Some went to the AI supplier. That invoice is someone else's income. Some may remain in owners' or businesses' accounts instead of being spent again.</p>
+<figure class="teaching-figure" id="figure-06-ai-fee" data-diagram="06-ai-fee"><figcaption><span class="figure-number">PICTURE 07</span><h3>The AI bill has a destination</h3></figcaption><div class="figure-body"><div class="motion-controls" role="group" aria-label="Steps for The AI bill has a destination" hidden data-steps="[{&quot;title&quot;: &quot;Start with shop sales&quot;, &quot;text&quot;: &quot;Household payments are consumer-shop revenue. Part of that revenue pays the AI supplier for an intermediate service.&quot;}, {&quot;title&quot;: &quot;Split the receipt&quot;, &quot;text&quot;: &quot;Shop value added is revenue minus the AI bill. The domestic AI supplier receives that bill as its own revenue and value added. Under this case’s rules, it distributes its surplus to owners.&quot;}, {&quot;title&quot;: &quot;Add the value once&quot;, &quot;text&quot;: &quot;Add value created by consumer shops, the AI supplier, and the equipment maker. Do not add AI revenue to final spending again: the intermediate fee is part of the same final-goods receipt.&quot;}]">
+<div class="step-status" aria-live="polite" aria-atomic="true"></div>
+<div class="motion-buttons"><button type="button" data-action="previous">Previous</button><button type="button" data-action="next">Next step</button><button type="button" data-action="play">Play steps</button><button type="button" data-action="reset">Show all</button></div><p class="motion-explanation"></p></div><div class="diagram-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 765" width="560" height="765" role="img" aria-labelledby="06-ai-fee-title 06-ai-fee-desc">
+<title id="06-ai-fee-title">The AI bill has a destination</title>
+<desc id="06-ai-fee-desc">Consumer shops receive 80 and pay 13.6 to the domestic AI supplier. Their value added is 66.4; adding AI value added 13.6 and equipment 20 reconciles to nominal GDP 100. The AI fee is already included.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="765" fill="#fffdf8"/>
+<text x="24" y="46" font-size="31" fill="#223c36" text-anchor="start">The AI bill goes somewhere</text>
+<g class="teaching-stage" data-step="1">
+<rect x="105" y="91" width="350" height="118" rx="12" fill="#edf1ea"/>
+<text x="280" y="134" font-size="28" fill="#223c36" text-anchor="middle">Shops receive</text>
+<text x="280" y="185" font-size="42" fill="#223c36" text-anchor="middle">80</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<line x1="280" y1="211" x2="280" y2="244" stroke="#58675f" stroke-width="3"/>
+<line x1="147" y1="244" x2="413" y2="244" stroke="#58675f" stroke-width="3"/>
+<line x1="147" y1="244" x2="147" y2="280" stroke="#236654" stroke-width="3"/>
+<line x1="140.7889327926546" y1="270.92130823599354" x2="147" y2="280" stroke="#236654" stroke-width="3"/>
+<line x1="153.2110672073454" y1="270.92130823599354" x2="147" y2="280" stroke="#236654" stroke-width="3"/>
+<circle class="travel-token" data-step="2" data-from="147,244" data-to="147,280" r="8" fill="#236654"/>
+<line x1="413" y1="244" x2="413" y2="280" stroke="#376d9a" stroke-width="3"/>
+<line x1="406.78893279265463" y1="270.92130823599354" x2="413" y2="280" stroke="#376d9a" stroke-width="3"/>
+<line x1="419.21106720734537" y1="270.92130823599354" x2="413" y2="280" stroke="#376d9a" stroke-width="3"/>
+<circle class="travel-token" data-step="2" data-from="413,244" data-to="413,280" r="8" fill="#376d9a"/>
+<rect x="24" y="298" width="246" height="121" rx="12" fill="#edf1ea"/>
+<text x="147" y="343" font-size="28" fill="#236654" text-anchor="middle">Shops’ value</text>
+<text x="147" y="394" font-size="42" fill="#236654" text-anchor="middle">66.4</text>
+<rect x="290" y="298" width="246" height="121" rx="12" fill="#edf1ea"/>
+<text x="413" y="343" font-size="28" fill="#376d9a" text-anchor="middle">AI receives</text>
+<text x="413" y="394" font-size="42" fill="#376d9a" text-anchor="middle">13.6</text>
+<text x="413" y="466" font-size="26" fill="#a66d13" text-anchor="middle">Then to owners</text>
+</g>
+<g class="teaching-stage" data-step="3">
+<rect x="24" y="516" width="512" height="126" rx="12" fill="#edf1ea"/>
+<text x="280" y="558" font-size="28" fill="#223c36" text-anchor="middle">Shops 66.4 + AI 13.6</text>
+<text x="280" y="610" font-size="28" fill="#223c36" text-anchor="middle">+ equipment 20 = GDP 100</text>
+<text x="24" y="700" font-size="28" fill="#223c36" text-anchor="start">The AI fee is inside this total.</text>
+<text x="24" y="741" font-size="26" fill="#58675f" text-anchor="start">It is not extra final spending.</text>
+</g>
+</svg>
+</div></div><div class="figure-caption"><em>This picture follows coins in the protected-pay version. Shops receive eighty and pay about fourteen to the AI supplier; the roughly sixty-six left covers wages and shop profit. The supplier passes its income to owners. With twenty of equipment purchases, current-price GDP is still one hundred. The AI bill is already inside that total; cheaper baskets let the same coins buy more.</em></div></figure>
+<p>A coin sitting in an account is still a coin. But it is not currently buying a basket. The same stock of money can support very different amounts of shopping over successive rounds.</p>
+<p>To see this clearly, return to the ten-business experiment and remove all wages. Suppose owners spend half their income on household goods, while equipment purchases stay fixed at twenty. The town eventually sells only forty of output: twenty to households, twenty to businesses. Its two hundred coins still exist.</p>
+<figure class="teaching-figure" id="figure-07-smaller" data-diagram="07-smaller"><figcaption><span class="figure-number">PICTURE 08</span><h3>Fixed equipment orders support a smaller economy</h3></figcaption><div class="figure-body"><div class="motion-controls" role="group" aria-label="Steps for Fixed equipment orders support a smaller economy" hidden data-steps="[{&quot;title&quot;: &quot;Remember the starting purchases&quot;, &quot;text&quot;: &quot;At the start, workers buy 60, owners buy 20 and businesses buy 20 of equipment. The whole bar is 100.&quot;}, {&quot;title&quot;: &quot;Keep equipment orders fixed&quot;, &quot;text&quot;: &quot;After wages stop, owners consuming half their income eventually buy 20. Fixed equipment orders add 20. The former-worker group buys zero. Final output settles at 40.&quot;}]">
+<div class="step-status" aria-live="polite" aria-atomic="true"></div>
+<div class="motion-buttons"><button type="button" data-action="previous">Previous</button><button type="button" data-action="next">Next step</button><button type="button" data-action="play">Play steps</button><button type="button" data-action="reset">Show all</button></div><p class="motion-explanation"></p></div><div class="diagram-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 480" width="560" height="480" role="img" aria-labelledby="07-smaller-title 07-smaller-desc">
+<title id="07-smaller-title">Fixed equipment orders support a smaller economy</title>
+<desc id="07-smaller-desc">Baseline purchases 60 workers+20 owners+20 equipment=100. With no wages, owner consumption 20 plus fixed equipment 20 supports GDP 40. Empty bar length means less output, not destroyed money.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="480" fill="#fffdf8"/>
+<g class="teaching-stage" data-step="1">
+<text x="24" y="50" font-size="27" fill="#223c36" text-anchor="start">Starting town</text>
+<rect x="24" y="67" width="512" height="34" rx="0" fill="#edf1ea"/>
+<rect x="24.0" y="67" width="307.2" height="34" rx="0" fill="#236654"/>
+<rect x="331.2" y="67" width="102.4" height="34" rx="0" fill="#a66d13"/>
+<rect x="433.6" y="67" width="102.4" height="34" rx="0" fill="#376d9a"/>
+<text x="536" y="139" font-size="32" fill="#223c36" text-anchor="end">60 + 20 + 20 = 100</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<line x1="280" y1="170" x2="280" y2="215" stroke="#223c36" stroke-width="3"/>
+<line x1="273.78893279265463" y1="205.92130823599354" x2="280" y2="215" stroke="#223c36" stroke-width="3"/>
+<line x1="286.21106720734537" y1="205.92130823599354" x2="280" y2="215" stroke="#223c36" stroke-width="3"/>
+<circle class="travel-token" data-step="2" data-from="280,170" data-to="280,215" r="8" fill="#223c36"/>
+<text x="24" y="266" font-size="27" fill="#223c36" text-anchor="start">No wages; equipment stays 20</text>
+<rect x="24" y="283" width="512" height="34" rx="0" fill="#edf1ea"/>
+<rect x="24.0" y="283" width="102.4" height="34" rx="0" fill="#a66d13"/>
+<rect x="126.4" y="283" width="102.4" height="34" rx="0" fill="#376d9a"/>
+<text x="536" y="355" font-size="32" fill="#223c36" text-anchor="end">0 + 20 + 20 = 40</text>
+<text x="280" y="439" font-size="27" fill="#58675f" text-anchor="middle">Same scale. Less output sold.</text>
+</g>
+</svg>
+</div></div><div class="figure-caption"><em>The missing part of the lower bar is production no longer bought. It is not a pile of coins that has been destroyed. Former workers have no income in this version.</em></div></figure>
+<p>This does not mean saving always causes a slump. In our starting town, the owners' unconsumed income financed equipment purchases. The distinction is whether money set aside supports another purchase, or simply stays aside under the rules we have chosen.</p>
+<p>For the AI story, “the profits went to someone” is the beginning of the answer. We still need to follow what that someone does with them.</p>
+<h2 id="5-investment-can-support-the-townand-then-retreat-with-it">5. Investment can support the town—and then retreat with it.</h2>
+<p>Perhaps businesses will keep buying equipment even if households buy less. Those orders pay the equipment maker, which creates income for someone else. Household consumption is not the only source of demand.</p>
+<p>But imagine owning a shop with unsold baskets. Would you order more shelving?</p>
+<p>Change one rule in the wage-free town: equipment orders now follow sales instead of staying fixed. Owners spend half the previous round's income on consumption, and businesses order equipment worth another fifth. Together, they return seventy percent as new purchases.</p>
+<figure class="teaching-figure" id="figure-08-shrinking" data-diagram="08-shrinking"><figcaption><span class="figure-number">PICTURE 09</span><h3>Each round starts with the previous round’s sales</h3></figcaption><div class="figure-body"><div class="motion-controls" role="group" aria-label="Steps for Each round starts with the previous round’s sales" hidden data-steps="[{&quot;title&quot;: &quot;From 100 to 70&quot;, &quot;text&quot;: &quot;Previous income is 100, all received by owners after inherited wage spending has ended. Owners buy 50 of household goods and firms buy 20 of equipment. That makes 70 of new sales, which becomes income for the next round.&quot;}, {&quot;title&quot;: &quot;From 70 to 49&quot;, &quot;text&quot;: &quot;Previous income is 70, all received by owners after inherited wage spending has ended. Owners buy 35 of household goods and firms buy 14 of equipment. That makes 49 of new sales, which becomes income for the next round.&quot;}, {&quot;title&quot;: &quot;From 49 to 34.3&quot;, &quot;text&quot;: &quot;Previous income is 49, all received by owners after inherited wage spending has ended. Owners buy 24.5 of household goods and firms buy 9.8 of equipment. That makes 34.3 of new sales, which becomes income for the next round.&quot;}]">
+<div class="step-status" aria-live="polite" aria-atomic="true"></div>
+<div class="motion-buttons"><button type="button" data-action="previous">Previous</button><button type="button" data-action="next">Next step</button><button type="button" data-action="play">Play steps</button><button type="button" data-action="reset">Show all</button></div><p class="motion-explanation"></p></div><div class="diagram-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 690" width="560" height="690" role="img" aria-labelledby="08-shrinking-title 08-shrinking-desc">
+<title id="08-shrinking-title">Each round starts with the previous round’s sales</title>
+<desc id="08-shrinking-desc">After workers have spent their last wages, all income goes to owners. Owners consume 50% and equipment orders are 20% of prior output.100 yields 50+20=70, 70 yields 35+14=49, 49 yields 24.5+9.8=34.3. Total cash remains 200; these are spending flows.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="690" fill="#fffdf8"/>
+<g class="teaching-stage" data-step="1">
+<rect x="24" y="20" width="512" height="155" rx="12" fill="#edf1ea"/>
+<text x="42" y="59" font-size="28" fill="#223c36" text-anchor="start">Previous income: 100</text>
+<text x="42" y="107" font-size="26" fill="#223c36" text-anchor="start">50 household + 20 equipment</text>
+<text x="514" y="150" font-size="31" fill="#223c36" text-anchor="end">= 70 new sales</text>
+<line x1="280" y1="180" x2="280" y2="208" stroke="#223c36" stroke-width="3"/>
+<line x1="273.78893279265463" y1="198.92130823599354" x2="280" y2="208" stroke="#223c36" stroke-width="3"/>
+<line x1="286.21106720734537" y1="198.92130823599354" x2="280" y2="208" stroke="#223c36" stroke-width="3"/>
+<circle class="travel-token" data-step="1" data-from="280,180" data-to="280,208" r="8" fill="#223c36"/>
+</g>
+<g class="teaching-stage" data-step="2">
+<rect x="24" y="215" width="512" height="155" rx="12" fill="#edf1ea"/>
+<text x="42" y="254" font-size="28" fill="#223c36" text-anchor="start">Previous income: 70</text>
+<text x="42" y="302" font-size="26" fill="#223c36" text-anchor="start">35 household + 14 equipment</text>
+<text x="514" y="345" font-size="31" fill="#223c36" text-anchor="end">= 49 new sales</text>
+<text class="travel-token" data-step="2" data-from="311.765625,150" data-to="290.1875,254" font-size="31" font-weight="bold" fill="#223c36" stroke="#fffdf8" stroke-width="5" paint-order="stroke">70</text>
+<line x1="280" y1="375" x2="280" y2="403" stroke="#223c36" stroke-width="3"/>
+<line x1="273.78893279265463" y1="393.92130823599354" x2="280" y2="403" stroke="#223c36" stroke-width="3"/>
+<line x1="286.21106720734537" y1="393.92130823599354" x2="280" y2="403" stroke="#223c36" stroke-width="3"/>
+<circle class="travel-token" data-step="2" data-from="280,375" data-to="280,403" r="8" fill="#223c36"/>
+</g>
+<g class="teaching-stage" data-step="3">
+<rect x="24" y="410" width="512" height="155" rx="12" fill="#edf1ea"/>
+<text x="42" y="449" font-size="28" fill="#223c36" text-anchor="start">Previous income: 49</text>
+<text x="42" y="497" font-size="26" fill="#223c36" text-anchor="start">24.5 household + 9.8 equipment</text>
+<text x="514" y="540" font-size="31" fill="#223c36" text-anchor="end">= 34.3 new sales</text>
+<text class="travel-token" data-step="3" data-from="311.765625,345" data-to="290.1875,449" font-size="31" font-weight="bold" fill="#223c36" stroke="#fffdf8" stroke-width="5" paint-order="stroke">49</text>
+<text x="280" y="638" font-size="27" fill="#58675f" text-anchor="middle">Money in all accounts: still 200</text>
+<text x="280" y="675" font-size="25" fill="#58675f" text-anchor="middle">Less of it buys new output each round.</text>
+</g>
+</svg>
+</div></div><div class="figure-caption"><em>Start at the top. One hundred of income generates seventy of spending. Seventy generates forty-nine. Forty-nine generates about thirty-four. The rule repeats; it is not a one-off loss.</em></div></figure>
+<p>A smaller market now causes smaller equipment orders, which cause a still smaller market. Eventually, too little replacement also leaves less working equipment.</p>
+<p>This is the question behind an AI investment boom: <strong>what keeps the next order worthwhile?</strong> Investment can support today's income. Whether it supports a lasting expansion depends on what the equipment produces, who will buy that output, and whether the purchases remain financeable.</p>
+<p>These experiments cannot validate a dollar forecast for AI revenue or capital spending. They tell us which spending and income links such a forecast needs to explain.</p>
+<h2 id="6-a-slower-transition-buys-time-what-happens-during-that-time-matters">6. A slower transition buys time. What happens during that time matters.</h2>
+<p>AI is unlikely to arrive everywhere on one payday. In our experiments, shops can automate in steps, or reach useful stages at different times.</p>
+<p>If paid work is shrinking, a slower transition leaves households with more paychecks along the way. They can keep shopping for longer. But in the ten-business tests, spreading the same losses over more rounds does not by itself replace the missing income at the end.</p>
+<p>Now reverse the situation. Salaries are protected and AI makes baskets cheaper. Here, waiting means postponing a benefit.</p>
+<figure class="teaching-figure" id="figure-07-transition" data-diagram="07-transition"><figcaption><span class="figure-number">PICTURE 10</span><h3>Fast and gradual adoption follow different routes</h3></figcaption><div class="figure-body"><div class="motion-controls" role="group" aria-label="Steps for Fast and gradual adoption follow different routes" hidden data-steps="[{&quot;title&quot;: &quot;Watch tasks move&quot;, &quot;text&quot;: &quot;The sudden path jumps to its last automation stage. The gradual path reaches the same stage later. The x-axis is model periods, not calendar years.&quot;}, {&quot;title&quot;: &quot;Follow realized output&quot;, &quot;text&quot;: &quot;Real GDP values final goods at baseline prices. The path depends on wages, prices, demand, fees and capacity as well as the automation schedule. A slower route does not by itself imply a different final state.&quot;}]">
+<div class="step-status" aria-live="polite" aria-atomic="true"></div>
+<div class="motion-buttons"><button type="button" data-action="previous">Previous</button><button type="button" data-action="next">Next step</button><button type="button" data-action="play">Play steps</button><button type="button" data-action="reset">Show all</button></div><p class="motion-explanation"></p></div><div class="diagram-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 855" width="560" height="855" role="img" aria-labelledby="07-transition-title 07-transition-desc">
+<title id="07-transition-title">Fast and gradual adoption follow different routes</title>
+<desc id="07-transition-desc">Actual saved paths for sudden and gradual adoption, shown through period 30. Both cases protect pay and allow capacity expansion. The upper chart shows task automation; the lower chart shows real GDP at baseline prices. Endpoints and timing are results under the declared rules, not a forecast.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="855" fill="#fffdf8"/>
+<text x="24" y="46" font-size="32" fill="#223c36" text-anchor="start">The route matters, too</text>
+<line x1="24" y1="88" x2="62" y2="88" stroke="#376d9a" stroke-width="4"/>
+<text x="75" y="97" font-size="26" fill="#376d9a" text-anchor="start">Sudden</text>
+<line x1="290" y1="88" x2="328" y2="88" stroke="#236654" stroke-width="4"/>
+<text x="341" y="97" font-size="26" fill="#236654" text-anchor="start">Gradual</text>
+<g class="teaching-stage" data-step="1">
+<text x="24" y="154" font-size="27" fill="#223c36" text-anchor="start">Share of tasks done by AI</text>
+<line x1="94" y1="365.0" x2="512" y2="365.0" stroke="#edf1ea" stroke-width="2"/>
+<text x="78" y="374.0" font-size="26" fill="#58675f" text-anchor="end">0%</text>
+<line x1="94" y1="275.0" x2="512" y2="275.0" stroke="#edf1ea" stroke-width="2"/>
+<text x="78" y="284.0" font-size="26" fill="#58675f" text-anchor="end">20%</text>
+<line x1="94" y1="185.0" x2="512" y2="185.0" stroke="#edf1ea" stroke-width="2"/>
+<text x="78" y="194.0" font-size="26" fill="#58675f" text-anchor="end">40%</text>
+<line x1="94" y1="365" x2="512" y2="365" stroke="#58675f" stroke-width="2"/>
+<text x="94.0" y="404" font-size="26" fill="#58675f" text-anchor="middle">0</text>
+<text x="303.0" y="404" font-size="26" fill="#58675f" text-anchor="middle">15</text>
+<text x="512.0" y="404" font-size="26" fill="#58675f" text-anchor="middle">30</text>
+<line x1="94.0" y1="365.0" x2="107.93333333333334" y2="365.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="107.93333333333334" y1="365.0" x2="107.93333333333334" y2="365.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="107.93333333333334" y1="365.0" x2="121.86666666666667" y2="365.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="121.86666666666667" y1="365.0" x2="121.86666666666667" y2="365.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="121.86666666666667" y1="365.0" x2="135.8" y2="365.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="135.8" y1="365.0" x2="135.8" y2="365.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="135.8" y1="365.0" x2="149.73333333333335" y2="365.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="149.73333333333335" y1="365.0" x2="149.73333333333335" y2="365.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="149.73333333333335" y1="365.0" x2="163.66666666666666" y2="365.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="163.66666666666666" y1="365.0" x2="163.66666666666666" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="163.66666666666666" y1="185.0" x2="177.60000000000002" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="177.60000000000002" y1="185.0" x2="177.60000000000002" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="177.60000000000002" y1="185.0" x2="191.53333333333333" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="191.53333333333333" y1="185.0" x2="191.53333333333333" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="191.53333333333333" y1="185.0" x2="205.46666666666667" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="205.46666666666667" y1="185.0" x2="205.46666666666667" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="205.46666666666667" y1="185.0" x2="219.39999999999998" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="219.39999999999998" y1="185.0" x2="219.39999999999998" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="219.39999999999998" y1="185.0" x2="233.33333333333331" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="233.33333333333331" y1="185.0" x2="233.33333333333331" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="233.33333333333331" y1="185.0" x2="247.26666666666665" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="247.26666666666665" y1="185.0" x2="247.26666666666665" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="247.26666666666665" y1="185.0" x2="261.20000000000005" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="261.20000000000005" y1="185.0" x2="261.20000000000005" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="261.20000000000005" y1="185.0" x2="275.1333333333333" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="275.1333333333333" y1="185.0" x2="275.1333333333333" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="275.1333333333333" y1="185.0" x2="289.06666666666666" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="289.06666666666666" y1="185.0" x2="289.06666666666666" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="289.06666666666666" y1="185.0" x2="303.0" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="303.0" y1="185.0" x2="303.0" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="303.0" y1="185.0" x2="316.93333333333334" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="316.93333333333334" y1="185.0" x2="316.93333333333334" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="316.93333333333334" y1="185.0" x2="330.8666666666667" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="330.8666666666667" y1="185.0" x2="330.8666666666667" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="330.8666666666667" y1="185.0" x2="344.79999999999995" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="344.79999999999995" y1="185.0" x2="344.79999999999995" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="344.79999999999995" y1="185.0" x2="358.73333333333335" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="358.73333333333335" y1="185.0" x2="358.73333333333335" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="358.73333333333335" y1="185.0" x2="372.66666666666663" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="372.66666666666663" y1="185.0" x2="372.66666666666663" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="372.66666666666663" y1="185.0" x2="386.59999999999997" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="386.59999999999997" y1="185.0" x2="386.59999999999997" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="386.59999999999997" y1="185.0" x2="400.5333333333333" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="400.5333333333333" y1="185.0" x2="400.5333333333333" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="400.5333333333333" y1="185.0" x2="414.4666666666667" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="414.4666666666667" y1="185.0" x2="414.4666666666667" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="414.4666666666667" y1="185.0" x2="428.40000000000003" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="428.40000000000003" y1="185.0" x2="428.40000000000003" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="428.40000000000003" y1="185.0" x2="442.33333333333337" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="442.33333333333337" y1="185.0" x2="442.33333333333337" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="442.33333333333337" y1="185.0" x2="456.26666666666665" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="456.26666666666665" y1="185.0" x2="456.26666666666665" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="456.26666666666665" y1="185.0" x2="470.2" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="470.2" y1="185.0" x2="470.2" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="470.2" y1="185.0" x2="484.1333333333333" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="484.1333333333333" y1="185.0" x2="484.1333333333333" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="484.1333333333333" y1="185.0" x2="498.06666666666666" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="498.06666666666666" y1="185.0" x2="498.06666666666666" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="498.06666666666666" y1="185.0" x2="512.0" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="512.0" y1="185.0" x2="512.0" y2="185.0" stroke="#376d9a" stroke-width="4"/>
+<circle cx="512.0" cy="185.0" r="5" fill="#376d9a"/>
+<line x1="94.0" y1="365.0" x2="107.93333333333334" y2="365.0" stroke="#236654" stroke-width="4"/>
+<line x1="107.93333333333334" y1="365.0" x2="107.93333333333334" y2="365.0" stroke="#236654" stroke-width="4"/>
+<line x1="107.93333333333334" y1="365.0" x2="121.86666666666667" y2="365.0" stroke="#236654" stroke-width="4"/>
+<line x1="121.86666666666667" y1="365.0" x2="121.86666666666667" y2="365.0" stroke="#236654" stroke-width="4"/>
+<line x1="121.86666666666667" y1="365.0" x2="135.8" y2="365.0" stroke="#236654" stroke-width="4"/>
+<line x1="135.8" y1="365.0" x2="135.8" y2="365.0" stroke="#236654" stroke-width="4"/>
+<line x1="135.8" y1="365.0" x2="149.73333333333335" y2="365.0" stroke="#236654" stroke-width="4"/>
+<line x1="149.73333333333335" y1="365.0" x2="149.73333333333335" y2="365.0" stroke="#236654" stroke-width="4"/>
+<line x1="149.73333333333335" y1="365.0" x2="163.66666666666666" y2="365.0" stroke="#236654" stroke-width="4"/>
+<line x1="163.66666666666666" y1="365.0" x2="163.66666666666666" y2="275.0" stroke="#236654" stroke-width="4"/>
+<line x1="163.66666666666666" y1="275.0" x2="177.60000000000002" y2="275.0" stroke="#236654" stroke-width="4"/>
+<line x1="177.60000000000002" y1="275.0" x2="177.60000000000002" y2="275.0" stroke="#236654" stroke-width="4"/>
+<line x1="177.60000000000002" y1="275.0" x2="191.53333333333333" y2="275.0" stroke="#236654" stroke-width="4"/>
+<line x1="191.53333333333333" y1="275.0" x2="191.53333333333333" y2="275.0" stroke="#236654" stroke-width="4"/>
+<line x1="191.53333333333333" y1="275.0" x2="205.46666666666667" y2="275.0" stroke="#236654" stroke-width="4"/>
+<line x1="205.46666666666667" y1="275.0" x2="205.46666666666667" y2="275.0" stroke="#236654" stroke-width="4"/>
+<line x1="205.46666666666667" y1="275.0" x2="219.39999999999998" y2="275.0" stroke="#236654" stroke-width="4"/>
+<line x1="219.39999999999998" y1="275.0" x2="219.39999999999998" y2="275.0" stroke="#236654" stroke-width="4"/>
+<line x1="219.39999999999998" y1="275.0" x2="233.33333333333331" y2="275.0" stroke="#236654" stroke-width="4"/>
+<line x1="233.33333333333331" y1="275.0" x2="233.33333333333331" y2="275.0" stroke="#236654" stroke-width="4"/>
+<line x1="233.33333333333331" y1="275.0" x2="247.26666666666665" y2="275.0" stroke="#236654" stroke-width="4"/>
+<line x1="247.26666666666665" y1="275.0" x2="247.26666666666665" y2="275.0" stroke="#236654" stroke-width="4"/>
+<line x1="247.26666666666665" y1="275.0" x2="261.20000000000005" y2="275.0" stroke="#236654" stroke-width="4"/>
+<line x1="261.20000000000005" y1="275.0" x2="261.20000000000005" y2="275.0" stroke="#236654" stroke-width="4"/>
+<line x1="261.20000000000005" y1="275.0" x2="275.1333333333333" y2="275.0" stroke="#236654" stroke-width="4"/>
+<line x1="275.1333333333333" y1="275.0" x2="275.1333333333333" y2="275.0" stroke="#236654" stroke-width="4"/>
+<line x1="275.1333333333333" y1="275.0" x2="289.06666666666666" y2="275.0" stroke="#236654" stroke-width="4"/>
+<line x1="289.06666666666666" y1="275.0" x2="289.06666666666666" y2="275.0" stroke="#236654" stroke-width="4"/>
+<line x1="289.06666666666666" y1="275.0" x2="303.0" y2="275.0" stroke="#236654" stroke-width="4"/>
+<line x1="303.0" y1="275.0" x2="303.0" y2="275.0" stroke="#236654" stroke-width="4"/>
+<line x1="303.0" y1="275.0" x2="316.93333333333334" y2="275.0" stroke="#236654" stroke-width="4"/>
+<line x1="316.93333333333334" y1="275.0" x2="316.93333333333334" y2="275.0" stroke="#236654" stroke-width="4"/>
+<line x1="316.93333333333334" y1="275.0" x2="330.8666666666667" y2="275.0" stroke="#236654" stroke-width="4"/>
+<line x1="330.8666666666667" y1="275.0" x2="330.8666666666667" y2="275.0" stroke="#236654" stroke-width="4"/>
+<line x1="330.8666666666667" y1="275.0" x2="344.79999999999995" y2="275.0" stroke="#236654" stroke-width="4"/>
+<line x1="344.79999999999995" y1="275.0" x2="344.79999999999995" y2="275.0" stroke="#236654" stroke-width="4"/>
+<line x1="344.79999999999995" y1="275.0" x2="358.73333333333335" y2="275.0" stroke="#236654" stroke-width="4"/>
+<line x1="358.73333333333335" y1="275.0" x2="358.73333333333335" y2="275.0" stroke="#236654" stroke-width="4"/>
+<line x1="358.73333333333335" y1="275.0" x2="372.66666666666663" y2="275.0" stroke="#236654" stroke-width="4"/>
+<line x1="372.66666666666663" y1="275.0" x2="372.66666666666663" y2="185.0" stroke="#236654" stroke-width="4"/>
+<line x1="372.66666666666663" y1="185.0" x2="386.59999999999997" y2="185.0" stroke="#236654" stroke-width="4"/>
+<line x1="386.59999999999997" y1="185.0" x2="386.59999999999997" y2="185.0" stroke="#236654" stroke-width="4"/>
+<line x1="386.59999999999997" y1="185.0" x2="400.5333333333333" y2="185.0" stroke="#236654" stroke-width="4"/>
+<line x1="400.5333333333333" y1="185.0" x2="400.5333333333333" y2="185.0" stroke="#236654" stroke-width="4"/>
+<line x1="400.5333333333333" y1="185.0" x2="414.4666666666667" y2="185.0" stroke="#236654" stroke-width="4"/>
+<line x1="414.4666666666667" y1="185.0" x2="414.4666666666667" y2="185.0" stroke="#236654" stroke-width="4"/>
+<line x1="414.4666666666667" y1="185.0" x2="428.40000000000003" y2="185.0" stroke="#236654" stroke-width="4"/>
+<line x1="428.40000000000003" y1="185.0" x2="428.40000000000003" y2="185.0" stroke="#236654" stroke-width="4"/>
+<line x1="428.40000000000003" y1="185.0" x2="442.33333333333337" y2="185.0" stroke="#236654" stroke-width="4"/>
+<line x1="442.33333333333337" y1="185.0" x2="442.33333333333337" y2="185.0" stroke="#236654" stroke-width="4"/>
+<line x1="442.33333333333337" y1="185.0" x2="456.26666666666665" y2="185.0" stroke="#236654" stroke-width="4"/>
+<line x1="456.26666666666665" y1="185.0" x2="456.26666666666665" y2="185.0" stroke="#236654" stroke-width="4"/>
+<line x1="456.26666666666665" y1="185.0" x2="470.2" y2="185.0" stroke="#236654" stroke-width="4"/>
+<line x1="470.2" y1="185.0" x2="470.2" y2="185.0" stroke="#236654" stroke-width="4"/>
+<line x1="470.2" y1="185.0" x2="484.1333333333333" y2="185.0" stroke="#236654" stroke-width="4"/>
+<line x1="484.1333333333333" y1="185.0" x2="484.1333333333333" y2="185.0" stroke="#236654" stroke-width="4"/>
+<line x1="484.1333333333333" y1="185.0" x2="498.06666666666666" y2="185.0" stroke="#236654" stroke-width="4"/>
+<line x1="498.06666666666666" y1="185.0" x2="498.06666666666666" y2="185.0" stroke="#236654" stroke-width="4"/>
+<line x1="498.06666666666666" y1="185.0" x2="512.0" y2="185.0" stroke="#236654" stroke-width="4"/>
+<line x1="512.0" y1="185.0" x2="512.0" y2="185.0" stroke="#236654" stroke-width="4"/>
+<circle cx="512.0" cy="185.0" r="5" fill="#236654"/>
+</g>
+<g class="teaching-stage" data-step="2">
+<text x="24" y="472" font-size="27" fill="#223c36" text-anchor="start">Real GDP · starting level = 100</text>
+<line x1="94" y1="684.0" x2="512" y2="684.0" stroke="#edf1ea" stroke-width="2"/>
+<text x="78" y="693.0" font-size="26" fill="#58675f" text-anchor="end">100</text>
+<line x1="94" y1="594.0" x2="512" y2="594.0" stroke="#edf1ea" stroke-width="2"/>
+<text x="78" y="603.0" font-size="26" fill="#58675f" text-anchor="end">110</text>
+<line x1="94" y1="504.0" x2="512" y2="504.0" stroke="#edf1ea" stroke-width="2"/>
+<text x="78" y="513.0" font-size="26" fill="#58675f" text-anchor="end">120</text>
+<line x1="94" y1="684" x2="512" y2="684" stroke="#58675f" stroke-width="2"/>
+<text x="94.0" y="723" font-size="26" fill="#58675f" text-anchor="middle">0</text>
+<text x="303.0" y="723" font-size="26" fill="#58675f" text-anchor="middle">15</text>
+<text x="512.0" y="723" font-size="26" fill="#58675f" text-anchor="middle">30</text>
+<line x1="94.0" y1="684.0" x2="107.93333333333334" y2="684.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="107.93333333333334" y1="684.0" x2="121.86666666666667" y2="684.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="121.86666666666667" y1="684.0" x2="135.8" y2="684.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="135.8" y1="684.0" x2="149.73333333333335" y2="684.0" stroke="#376d9a" stroke-width="4"/>
+<line x1="149.73333333333335" y1="684.0" x2="163.66666666666666" y2="585.8181818181819" stroke="#376d9a" stroke-width="4"/>
+<line x1="163.66666666666666" y1="585.8181818181819" x2="177.60000000000002" y2="585.8181818181819" stroke="#376d9a" stroke-width="4"/>
+<line x1="177.60000000000002" y1="585.8181818181819" x2="191.53333333333333" y2="585.8181818181819" stroke="#376d9a" stroke-width="4"/>
+<line x1="191.53333333333333" y1="585.8181818181819" x2="205.46666666666667" y2="585.8181818181819" stroke="#376d9a" stroke-width="4"/>
+<line x1="205.46666666666667" y1="585.8181818181819" x2="219.39999999999998" y2="585.8181818181819" stroke="#376d9a" stroke-width="4"/>
+<line x1="219.39999999999998" y1="585.8181818181819" x2="233.33333333333331" y2="585.8181818181819" stroke="#376d9a" stroke-width="4"/>
+<line x1="233.33333333333331" y1="585.8181818181819" x2="247.26666666666665" y2="585.8181818181819" stroke="#376d9a" stroke-width="4"/>
+<line x1="247.26666666666665" y1="585.8181818181819" x2="261.20000000000005" y2="585.8181818181819" stroke="#376d9a" stroke-width="4"/>
+<line x1="261.20000000000005" y1="585.8181818181819" x2="275.1333333333333" y2="585.8181818181819" stroke="#376d9a" stroke-width="4"/>
+<line x1="275.1333333333333" y1="585.8181818181819" x2="289.06666666666666" y2="585.8181818181819" stroke="#376d9a" stroke-width="4"/>
+<line x1="289.06666666666666" y1="585.8181818181819" x2="303.0" y2="585.8181818181819" stroke="#376d9a" stroke-width="4"/>
+<line x1="303.0" y1="585.8181818181819" x2="316.93333333333334" y2="585.8181818181819" stroke="#376d9a" stroke-width="4"/>
+<line x1="316.93333333333334" y1="585.8181818181819" x2="330.8666666666667" y2="585.8181818181819" stroke="#376d9a" stroke-width="4"/>
+<line x1="330.8666666666667" y1="585.8181818181819" x2="344.79999999999995" y2="585.8181818181819" stroke="#376d9a" stroke-width="4"/>
+<line x1="344.79999999999995" y1="585.8181818181819" x2="358.73333333333335" y2="585.8181818181819" stroke="#376d9a" stroke-width="4"/>
+<line x1="358.73333333333335" y1="585.8181818181819" x2="372.66666666666663" y2="585.8181818181819" stroke="#376d9a" stroke-width="4"/>
+<line x1="372.66666666666663" y1="585.8181818181819" x2="386.59999999999997" y2="585.8181818181819" stroke="#376d9a" stroke-width="4"/>
+<line x1="386.59999999999997" y1="585.8181818181819" x2="400.5333333333333" y2="585.8181818181819" stroke="#376d9a" stroke-width="4"/>
+<line x1="400.5333333333333" y1="585.8181818181819" x2="414.4666666666667" y2="585.8181818181819" stroke="#376d9a" stroke-width="4"/>
+<line x1="414.4666666666667" y1="585.8181818181819" x2="428.40000000000003" y2="585.8181818181819" stroke="#376d9a" stroke-width="4"/>
+<line x1="428.40000000000003" y1="585.8181818181819" x2="442.33333333333337" y2="585.8181818181819" stroke="#376d9a" stroke-width="4"/>
+<line x1="442.33333333333337" y1="585.8181818181819" x2="456.26666666666665" y2="585.8181818181819" stroke="#376d9a" stroke-width="4"/>
+<line x1="456.26666666666665" y1="585.8181818181819" x2="470.2" y2="585.8181818181819" stroke="#376d9a" stroke-width="4"/>
+<line x1="470.2" y1="585.8181818181819" x2="484.1333333333333" y2="585.8181818181819" stroke="#376d9a" stroke-width="4"/>
+<line x1="484.1333333333333" y1="585.8181818181819" x2="498.06666666666666" y2="585.8181818181819" stroke="#376d9a" stroke-width="4"/>
+<line x1="498.06666666666666" y1="585.8181818181819" x2="512.0" y2="585.8181818181819" stroke="#376d9a" stroke-width="4"/>
+<circle cx="512.0" cy="585.8181818181819" r="5" fill="#376d9a"/>
+<line x1="94.0" y1="684.0" x2="107.93333333333334" y2="684.0" stroke="#236654" stroke-width="4"/>
+<line x1="107.93333333333334" y1="684.0" x2="121.86666666666667" y2="684.0" stroke="#236654" stroke-width="4"/>
+<line x1="121.86666666666667" y1="684.0" x2="135.8" y2="684.0" stroke="#236654" stroke-width="4"/>
+<line x1="135.8" y1="684.0" x2="149.73333333333335" y2="684.0" stroke="#236654" stroke-width="4"/>
+<line x1="149.73333333333335" y1="684.0" x2="163.66666666666666" y2="638.0425531914893" stroke="#236654" stroke-width="4"/>
+<line x1="163.66666666666666" y1="638.0425531914893" x2="177.60000000000002" y2="638.0425531914893" stroke="#236654" stroke-width="4"/>
+<line x1="177.60000000000002" y1="638.0425531914893" x2="191.53333333333333" y2="638.0425531914893" stroke="#236654" stroke-width="4"/>
+<line x1="191.53333333333333" y1="638.0425531914893" x2="205.46666666666667" y2="638.0425531914893" stroke="#236654" stroke-width="4"/>
+<line x1="205.46666666666667" y1="638.0425531914893" x2="219.39999999999998" y2="638.0425531914893" stroke="#236654" stroke-width="4"/>
+<line x1="219.39999999999998" y1="638.0425531914893" x2="233.33333333333331" y2="638.0425531914893" stroke="#236654" stroke-width="4"/>
+<line x1="233.33333333333331" y1="638.0425531914893" x2="247.26666666666665" y2="638.0425531914893" stroke="#236654" stroke-width="4"/>
+<line x1="247.26666666666665" y1="638.0425531914893" x2="261.20000000000005" y2="638.0425531914893" stroke="#236654" stroke-width="4"/>
+<line x1="261.20000000000005" y1="638.0425531914893" x2="275.1333333333333" y2="638.0425531914893" stroke="#236654" stroke-width="4"/>
+<line x1="275.1333333333333" y1="638.0425531914893" x2="289.06666666666666" y2="638.0425531914893" stroke="#236654" stroke-width="4"/>
+<line x1="289.06666666666666" y1="638.0425531914893" x2="303.0" y2="638.0425531914893" stroke="#236654" stroke-width="4"/>
+<line x1="303.0" y1="638.0425531914893" x2="316.93333333333334" y2="638.0425531914893" stroke="#236654" stroke-width="4"/>
+<line x1="316.93333333333334" y1="638.0425531914893" x2="330.8666666666667" y2="638.0425531914893" stroke="#236654" stroke-width="4"/>
+<line x1="330.8666666666667" y1="638.0425531914893" x2="344.79999999999995" y2="638.0425531914893" stroke="#236654" stroke-width="4"/>
+<line x1="344.79999999999995" y1="638.0425531914893" x2="358.73333333333335" y2="638.0425531914893" stroke="#236654" stroke-width="4"/>
+<line x1="358.73333333333335" y1="638.0425531914893" x2="372.66666666666663" y2="585.8181818181819" stroke="#236654" stroke-width="4"/>
+<line x1="372.66666666666663" y1="585.8181818181819" x2="386.59999999999997" y2="585.8181818181819" stroke="#236654" stroke-width="4"/>
+<line x1="386.59999999999997" y1="585.8181818181819" x2="400.5333333333333" y2="585.8181818181819" stroke="#236654" stroke-width="4"/>
+<line x1="400.5333333333333" y1="585.8181818181819" x2="414.4666666666667" y2="585.8181818181819" stroke="#236654" stroke-width="4"/>
+<line x1="414.4666666666667" y1="585.8181818181819" x2="428.40000000000003" y2="585.8181818181819" stroke="#236654" stroke-width="4"/>
+<line x1="428.40000000000003" y1="585.8181818181819" x2="442.33333333333337" y2="585.8181818181819" stroke="#236654" stroke-width="4"/>
+<line x1="442.33333333333337" y1="585.8181818181819" x2="456.26666666666665" y2="585.8181818181819" stroke="#236654" stroke-width="4"/>
+<line x1="456.26666666666665" y1="585.8181818181819" x2="470.2" y2="585.8181818181819" stroke="#236654" stroke-width="4"/>
+<line x1="470.2" y1="585.8181818181819" x2="484.1333333333333" y2="585.8181818181819" stroke="#236654" stroke-width="4"/>
+<line x1="484.1333333333333" y1="585.8181818181819" x2="498.06666666666666" y2="585.8181818181819" stroke="#236654" stroke-width="4"/>
+<line x1="498.06666666666666" y1="585.8181818181819" x2="512.0" y2="585.8181818181819" stroke="#236654" stroke-width="4"/>
+<circle cx="512.0" cy="585.8181818181819" r="5" fill="#236654"/>
+<text x="280" y="771" font-size="26" fill="#58675f" text-anchor="middle">Model periods</text>
+<text x="24" y="824" font-size="28" fill="#223c36" text-anchor="start">Both cases protect pay.</text>
+</g>
+</svg>
+</div></div><div class="figure-caption"><em>These paths keep pay protected. The destination is similar, but the number of baskets bought along the way differs. This picture illustrates delayed gains; the wage-loss tests separately illustrate delayed losses.</em></div></figure>
+<p>Think of moving house in stages. Extra time helps if it lets you arrange somewhere to live. It does not help indefinitely if you never find a destination.</p>
+<p>For AI, a gradual transition creates an opportunity to change contracts, ownership or financing before old income disappears. Gradual change alone is not that replacement arrangement.</p>
+<h2 id="7-a-bank-can-carry-spending-across-a-temporary-gap">7. A bank can carry spending across a temporary gap.</h2>
+<p>Give the earlier town a fair bank. No penalties or tricks: the central example even charges no interest.</p>
+<p>Equipment orders temporarily stop. An equipment maker still owes wages, but its cash runs out before orders return. Without credit, it misses a payday. With credit, it pays its workers, receives revenue when orders restart, and repays the loan.</p>
+<figure class="teaching-figure" id="figure-15-bank-bridge" data-diagram="15-bank-bridge"><figcaption><span class="figure-number">PICTURE 11</span><h3>Can the firms reach the next order?</h3></figcaption><div class="figure-body"><div class="motion-controls" role="group" aria-label="Steps for Can the firms reach the next order?" hidden data-steps="[{&quot;title&quot;: &quot;Orders pause&quot;, &quot;text&quot;: &quot;Equipment orders pause in rounds 5 through 9. In the matched run without lending, the equipment firms first miss wages in round 7. The bank-enabled firms borrow 2 and make those payments.&quot;}, {&quot;title&quot;: &quot;The bridge gets longer&quot;, &quot;text&quot;: &quot;Borrowing continues while orders are absent. By round 9, outstanding principal is 14. This is debt still owed at that date, not extra GDP.&quot;}, {&quot;title&quot;: &quot;Orders return&quot;, &quot;text&quot;: &quot;Orders return in round 10. The firms begin paying down debt from operating surplus before distributing profits. In this zero-interest version, debt falls to 10 that round.&quot;}, {&quot;title&quot;: &quot;Finish repaying&quot;, &quot;text&quot;: &quot;By round 13 the debt is gone. This loan bridges a temporary gap successfully. At the separate 1%-per-round rate, repayment also finishes in round 13, with about 0.43 of total interest.&quot;}]">
+<div class="step-status" aria-live="polite" aria-atomic="true"></div>
+<div class="motion-buttons"><button type="button" data-action="previous">Previous</button><button type="button" data-action="next">Next step</button><button type="button" data-action="play">Play steps</button><button type="button" data-action="reset">Show all</button></div><p class="motion-explanation"></p></div><div class="diagram-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 740" width="560" height="740" role="img" aria-labelledby="15-bank-bridge-title 15-bank-bridge-desc">
+<title id="15-bank-bridge-title">Can the firms reach the next order?</title>
+<desc id="15-bank-bridge-desc">Matched bank experiment. Without credit, wages first go unpaid in round 7. With zero-interest credit, loans total 14 by round 9, fall to 10 when orders return in round 10, and reach zero in round 13. Every wage is paid.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="740" fill="#fffdf8"/>
+<g class="teaching-stage" data-step="1">
+<text x="24" y="42" font-size="27" fill="#223c36" text-anchor="start">Same town. Same opening balances.</text>
+<rect x="24" y="66" width="512" height="126" rx="12" fill="#edf1ea"/>
+<text x="44" y="105" font-size="29" fill="#a44432" text-anchor="start">No credit: round 7</text>
+<text x="44" y="155" font-size="28" fill="#a44432" text-anchor="start">58 of 60 wages paid; 2 unpaid</text>
+<text x="24" y="236" font-size="28" fill="#236654" text-anchor="start">With credit: every wage is paid</text>
+<rect x="24" y="263" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="24" y="263" width="6" height="112" rx="0" fill="#75608c"/>
+<text x="42" y="298" font-size="26" fill="#75608c" text-anchor="start">Round 7 debt</text>
+<text x="42" y="346" font-size="42" fill="#75608c" text-anchor="start">2</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<rect x="290" y="263" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="290" y="263" width="6" height="112" rx="0" fill="#75608c"/>
+<text x="308" y="298" font-size="26" fill="#75608c" text-anchor="start">Round 9 debt</text>
+<text x="308" y="346" font-size="42" fill="#75608c" text-anchor="start">14</text>
+</g>
+<g class="teaching-stage" data-step="3">
+<text x="280" y="432" font-size="28" fill="#376d9a" text-anchor="middle">Orders return in round 10</text>
+<line x1="280" y1="452" x2="280" y2="485" stroke="#376d9a" stroke-width="3"/>
+<line x1="273.78893279265463" y1="475.92130823599354" x2="280" y2="485" stroke="#376d9a" stroke-width="3"/>
+<line x1="286.21106720734537" y1="475.92130823599354" x2="280" y2="485" stroke="#376d9a" stroke-width="3"/>
+<circle class="travel-token" data-step="3" data-from="280,452" data-to="280,485" r="8" fill="#376d9a"/>
+<rect x="24" y="507" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="24" y="507" width="6" height="112" rx="0" fill="#75608c"/>
+<text x="42" y="542" font-size="26" fill="#75608c" text-anchor="start">Round 10 debt</text>
+<text x="42" y="590" font-size="42" fill="#75608c" text-anchor="start">10</text>
+</g>
+<g class="teaching-stage" data-step="4">
+<rect x="290" y="507" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="290" y="507" width="6" height="112" rx="0" fill="#75608c"/>
+<text x="308" y="542" font-size="26" fill="#75608c" text-anchor="start">Round 13 debt</text>
+<text x="308" y="590" font-size="42" fill="#75608c" text-anchor="start">0</text>
+<text x="280" y="687" font-size="27" fill="#223c36" text-anchor="middle">Future sales make the bridge work.</text>
+</g>
+</svg>
+</div></div><div class="figure-caption"><em>Outstanding debt grows during the interruption and falls after orders return. Each box is a balance at a different date; the boxes should not be added together.</em></div></figure>
+<p>The bank has changed the outcome. A payment failure was avoidable because the borrower had income on the other side of the gap.</p>
+<p>Households can borrow too. But repayment uses income that could otherwise buy things. In our household example, a loan keeps shopping going through two missing paychecks. When wages return, part goes to repayment, so shopping temporarily falls below normal.</p>
+<figure class="teaching-figure" id="figure-16-bank-households" data-diagram="16-bank-households"><figcaption><span class="figure-number">PICTURE 12</span><h3>Today&#x27;s bridge has a later bill</h3></figcaption><div class="figure-body"><div class="motion-controls" role="group" aria-label="Steps for Today&#x27;s bridge has a later bill" hidden data-steps="[{&quot;title&quot;: &quot;Borrow during the wage gap&quot;, &quot;text&quot;: &quot;Worker households together borrow 120 across two rounds to maintain purchases of 60 each round. The 120 is total new loans, not peak closing debt: repayment begins before the second borrowing round ends.&quot;}, {&quot;title&quot;: &quot;Service the debt after wages return&quot;, &quot;text&quot;: &quot;Once wages return to 60, up to 12 of current income goes toward principal and interest. During full repayment rounds, only 48 is left for the next round&#x27;s purchases. Purple is debt service, not household goods.&quot;}, {&quot;title&quot;: &quot;Return to the old spending level&quot;, &quot;text&quot;: &quot;At 1% interest per round, all debt is repaid in round 17. Purchases return to 60 in round 19. Total interest over the loan is about 6.35. The bank smooths spending; it does not give the households a permanent extra income.&quot;}]">
+<div class="step-status" aria-live="polite" aria-atomic="true"></div>
+<div class="motion-buttons"><button type="button" data-action="previous">Previous</button><button type="button" data-action="next">Next step</button><button type="button" data-action="play">Play steps</button><button type="button" data-action="reset">Show all</button></div><p class="motion-explanation"></p></div><div class="diagram-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 660" width="560" height="660" role="img" aria-labelledby="16-bank-households-title 16-bank-households-desc">
+<title id="16-bank-households-title">Today&#x27;s bridge has a later bill</title>
+<desc id="16-bank-households-desc">Worker households borrow during a temporary wage gap. Purchases are maintained at 60. Once wages return, full debt service of 12 leaves 48 for the next round&#x27;s purchases. After repayment, purchases return to 60. These are group totals.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="660" fill="#fffdf8"/>
+<g class="teaching-stage" data-step="1">
+<text x="24" y="44" font-size="27" fill="#223c36" text-anchor="start">During the gap: purchases</text>
+<rect x="24" y="61" width="512" height="34" rx="0" fill="#edf1ea"/>
+<rect x="24.0" y="61" width="512.0" height="34" rx="0" fill="#236654"/>
+<text x="536" y="133" font-size="32" fill="#223c36" text-anchor="end">60 for goods</text>
+<text x="24" y="174" font-size="26" fill="#58675f" text-anchor="start">Borrowing covers missing paychecks.</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<text x="24" y="257" font-size="27" fill="#223c36" text-anchor="start">During full repayment: wage 60</text>
+<rect x="24" y="274" width="512" height="34" rx="0" fill="#edf1ea"/>
+<rect x="24.0" y="274" width="409.6" height="34" rx="0" fill="#236654"/>
+<rect x="433.6" y="274" width="102.4" height="34" rx="0" fill="#75608c"/>
+<text x="536" y="346" font-size="32" fill="#223c36" text-anchor="end">48 goods + 12 debt service</text>
+<text x="24" y="387" font-size="26" fill="#58675f" text-anchor="start">The missing slice pays the bank.</text>
+</g>
+<g class="teaching-stage" data-step="3">
+<text x="24" y="469" font-size="27" fill="#223c36" text-anchor="start">After repayment: purchases</text>
+<rect x="24" y="486" width="512" height="34" rx="0" fill="#edf1ea"/>
+<rect x="24.0" y="486" width="512.0000000000001" height="34" rx="0" fill="#236654"/>
+<text x="536" y="558" font-size="32" fill="#223c36" text-anchor="end">60 for goods</text>
+<text x="24" y="610" font-size="27" fill="#223c36" text-anchor="start">Same people. Different dates.</text>
+</g>
+</svg>
+</div></div><div class="figure-caption"><em>The middle bar divides a restored wage between shopping and debt payments. Borrowing moved some purchases forward; it did not provide a permanent replacement for income.</em></div></figure>
+<p>If income never returns, a prudent bank refuses the loan. If it lends on a mistaken recovery forecast, someone bears the loss. In one test, forgiveness consumes the bank's capital—the funds its owners had put at risk.</p>
+<p>That future income need not be wages. It could be dividends from an automated business. But <strong>credit does not remove the question of who ultimately pays</strong>. These banking tests cover temporary payroll and shopping gaps, not loans that build new productive capacity.</p>
+<h2 id="8-the-town-can-prosper-without-jobsif-people-still-have-claims-on-its-output">8. The town can prosper without jobs—if people still have claims on its output.</h2>
+<p>Now take the AI-shop experiment to its end: all the shops' productive tasks are automated, and the AI supplier has enough capacity.</p>
+<p>Run it twice from matching starting conditions.</p>
+<p>In the first version, former workers receive no dividends. Their consumption eventually falls to zero. The machines can make things, but those people cannot buy them.</p>
+<p>In the second, former workers are given a right to sixty percent of the businesses' cash dividends once the final automation stage arrives. A dividend is profit paid to an owner. Here, it replaces the paycheck as their route to income.</p>
+<figure class="teaching-figure" id="figure-08-zero-jobs-sharing" data-diagram="08-zero-jobs-sharing"><figcaption><span class="figure-number">PICTURE 13</span><h3>Zero jobs, two different endings</h3></figcaption><div class="figure-body"><div class="motion-controls" role="group" aria-label="Steps for Zero jobs, two different endings" hidden data-steps="[{&quot;title&quot;: &quot;No shared dividends&quot;, &quot;text&quot;: &quot;No shared dividends: 0 employed workers; worker households buy 0 baskets and owner households buy 28.6. Real GDP is 48.6, including equipment investment. Shared dividend rights are an assumed grant, not a funded worker acquisition.&quot;}, {&quot;title&quot;: &quot;Share dividends with workers&quot;, &quot;text&quot;: &quot;Share dividends with workers: 0 employed workers; worker households buy 82.6 baskets and owner households buy 26.5. Real GDP is 129.1, including equipment investment. Shared dividend rights are an assumed grant, not a funded worker acquisition.&quot;}, {&quot;title&quot;: &quot;The rule changes access&quot;, &quot;text&quot;: &quot;The result is conditional on fixed owner-financed equipment investment, ample AI capacity, the spending rules, and the granted dividend rights. No utility function is modeled; the picture is about access to goods, not an optimal economy.&quot;}]">
+<div class="step-status" aria-live="polite" aria-atomic="true"></div>
+<div class="motion-buttons"><button type="button" data-action="previous">Previous</button><button type="button" data-action="next">Next step</button><button type="button" data-action="play">Play steps</button><button type="button" data-action="reset">Show all</button></div><p class="motion-explanation"></p></div><div class="diagram-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 824" width="560" height="824" role="img" aria-labelledby="08-zero-jobs-sharing-title 08-zero-jobs-sharing-desc">
+<title id="08-zero-jobs-sharing-title">Zero jobs, two different endings</title>
+<desc id="08-zero-jobs-sharing-desc">Two matched cases use full automation, layoffs, expansion and ample AI capacity. One grants worker households 60% of dividends from period 25. The bars split final baskets between worker and owner households, on the same scale. Equipment investment is additional to these baskets. Values are last recorded periods.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="824" fill="#fffdf8"/>
+<text x="24" y="45" font-size="32" fill="#223c36" text-anchor="start">Zero jobs.</text>
+<text x="24" y="88" font-size="32" fill="#223c36" text-anchor="start">Two different endings.</text>
+<g class="teaching-stage" data-step="1">
+<text x="24" y="192" font-size="27" fill="#223c36" text-anchor="start">No shared dividends</text>
+<text x="24" y="236" font-size="27" fill="#58675f" text-anchor="start">0 jobs · real GDP 48.6</text>
+<rect x="24" y="264" width="512" height="40" rx="0" fill="#edf1ea"/>
+<rect x="24" y="264" width="0.0" height="40" rx="0" fill="#236654"/>
+<rect x="24.0" y="264" width="132.987012987013" height="40" rx="0" fill="#a66d13"/>
+<text x="24" y="349" font-size="28" fill="#236654" text-anchor="start">Workers: 0 baskets</text>
+<text x="24" y="390" font-size="28" fill="#a66d13" text-anchor="start">Owners: 28.6 baskets</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<text x="24" y="437" font-size="27" fill="#223c36" text-anchor="start">Share dividends with workers</text>
+<text x="24" y="481" font-size="27" fill="#58675f" text-anchor="start">0 jobs · real GDP 129.1</text>
+<rect x="24" y="509" width="512" height="40" rx="0" fill="#edf1ea"/>
+<rect x="24" y="509" width="384.5984415584416" height="40" rx="0" fill="#236654"/>
+<rect x="408.5984415584416" y="509" width="123.41194805194812" height="40" rx="0" fill="#a66d13"/>
+<text x="24" y="594" font-size="28" fill="#236654" text-anchor="start">Workers: 82.6 baskets</text>
+<text x="24" y="635" font-size="28" fill="#a66d13" text-anchor="start">Owners: 26.5 baskets</text>
+</g>
+<g class="teaching-stage" data-step="3">
+<text x="24" y="142" font-size="26" fill="#58675f" text-anchor="start">All tasks automated</text>
+<line x1="24" y1="699" x2="536" y2="699" stroke="#edf1ea" stroke-width="3"/>
+<text x="24" y="746" font-size="26" fill="#223c36" text-anchor="start">Workers receive 60% of dividends</text>
+<text x="24" y="785" font-size="26" fill="#58675f" text-anchor="start">from period 25, by assumption.</text>
+</g>
+</svg>
+</div></div><div class="figure-caption"><em>Both versions remove the jobs. Only the second gives former workers dividend rights. They buy about eighty-three baskets, compared with sixty before automation. The bars show household baskets only; add twenty of equipment in each version to get the GDP number above it. Sharing dividends is an explicit change in ownership income, not an automatic benefit of AI.</em></div></figure>
+<p>That is a town with no jobs and more consumption for the former workers. Real GDP is higher too.</p>
+<p>The ownership rights are gifted in this experiment; we have not made unemployed people pay for shares with income they no longer have. The original owners still finance the equipment purchases. Nor have we modeled a government transfer system. We are isolating a principle: access to output can come from ownership as well as employment.</p>
+<p>There is also a less attractive possibility. In the earlier experiment, owners alone can spend enough to sustain the original GDP while former workers consume nothing. <strong>An economy continuing to produce is not the same thing as everyone continuing to participate.</strong></p>
+<h2 id="9-still-running-is-a-lower-bar-than-doing-well">9. “Still running” is a lower bar than “doing well.”</h2>
+<p>Suppose a shop responds to falling sales by cutting paid hours. It may avoid missing payroll. That does not mean the town has recovered: its customers may now earn and buy much less.</p>
+<p>And a business can look steady while spending its last reserves.</p>
+<p>In a more finely spaced AI experiment, one apparently strong result lasts through all eighty planned rounds. Output has settled. But each shop is losing a little cash every round. Extend the same run and it misses payroll in round ninety.</p>
+<figure class="teaching-figure" id="figure-01-buffer" data-diagram="01-buffer"><figcaption><span class="figure-number">PICTURE 14</span><h3>Steady output. Shrinking reserves.</h3></figcaption><div class="figure-body"><div class="motion-controls" role="group" aria-label="Steps for Steady output. Shrinking reserves." hidden data-steps="[{&quot;title&quot;: &quot;The output chart&quot;, &quot;text&quot;: &quot;Production has settled, and the original 80-round run finishes.&quot;}, {&quot;title&quot;: &quot;The cash account&quot;, &quot;text&quot;: &quot;Each shop is losing about 0.31 coins a round. Its remaining cash is about 3.27 coins.&quot;}, {&quot;title&quot;: &quot;Run it longer&quot;, &quot;text&quot;: &quot;The unchanged path misses payroll in round 90. A completed run was not proof of sustainability.&quot;}]">
+<div class="step-status" aria-live="polite" aria-atomic="true"></div>
+<div class="motion-buttons"><button type="button" data-action="previous">Previous</button><button type="button" data-action="next">Next step</button><button type="button" data-action="play">Play steps</button><button type="button" data-action="reset">Show all</button></div><p class="motion-explanation"></p></div><div class="diagram-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 610" width="560" height="610" role="img" aria-labelledby="01-buffer-title 01-buffer-desc">
+<title id="01-buffer-title">Steady output. Shrinking reserves.</title>
+<desc id="01-buffer-desc">One protected-pay path completes 80 rounds while each shop loses money. Each has about 3.27 coins left after round 79; extending the run gives wage arrears in round 90.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="610" fill="#fffdf8"/>
+<g class="teaching-stage" data-step="1">
+<rect x="24" y="20" width="512" height="112" rx="12" fill="#edf1ea"/>
+<rect x="24" y="20" width="6" height="112" rx="0" fill="#236654"/>
+<text x="42" y="55" font-size="26" fill="#236654" text-anchor="start">After 80 recorded rounds</text>
+<text x="42" y="103" font-size="42" fill="#236654" text-anchor="start">Still producing</text>
+<text x="42" y="166" font-size="25" fill="#223c36" text-anchor="start">The GDP chart looks steady.</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<rect x="24" y="210" width="512" height="112" rx="12" fill="#edf1ea"/>
+<rect x="24" y="210" width="6" height="112" rx="0" fill="#a66d13"/>
+<text x="42" y="245" font-size="26" fill="#a66d13" text-anchor="start">Cash left in EACH shop</text>
+<text x="42" y="293" font-size="42" fill="#a66d13" text-anchor="start">3.27 coins</text>
+<text x="42" y="356" font-size="25" fill="#223c36" text-anchor="start">Losing 0.31 coins each round.</text>
+</g>
+<g class="teaching-stage" data-step="3">
+<rect x="24" y="400" width="512" height="112" rx="12" fill="#edf1ea"/>
+<rect x="24" y="400" width="6" height="112" rx="0" fill="#a44432"/>
+<text x="42" y="435" font-size="26" fill="#a44432" text-anchor="start">Extend the same experiment</text>
+<text x="42" y="483" font-size="42" fill="#a44432" text-anchor="start">Payroll fails</text>
+<text x="42" y="546" font-size="25" fill="#223c36" text-anchor="start">Round 90: a payment goes unpaid.</text>
+</g>
+</svg>
+</div></div><div class="figure-caption"><em>This is one specific protected-pay run with ample AI capacity and 58% task automation. Eighty rounds were not long enough to reveal its payment failure. The pattern matters more than that particular round number.</em></div></figure>
+<p>Even a genuine recovery can stop short. In an earlier shock experiment, equipment orders and wages return, but owners' household purchases do not. GDP settles at eighty instead of its original hundred under that spending rule.</p>
+<p>These are three different tests: can every bill be paid today; has purchasing recovered; and can the arrangement continue without using up its buffers?</p>
+<p>For AI, a stable-looking output chart answers only part of the question. We also need the household budgets and the businesses' accounts underneath it.</p>
+<h2 id="10-the-biggest-gdp-is-not-necessarily-the-best-ending">10. The biggest GDP is not necessarily the best ending.</h2>
+<p>Finally, suppose we want to make the town as prosperous as possible. Should we simply maximize GDP?</p>
+<p>First, we must distinguish what the town <em>could make</em> from what it can sell. In one AI-shop test, inherited resources could support one hundred and sixty baskets. At the best tested automation level for that pricing rule, customers actually buy only about ninety-four. More machines do not automatically bring more customers through the door.</p>
+<figure class="teaching-figure" id="figure-11-capacity-and-customers" data-diagram="11-capacity-and-customers"><figcaption><span class="figure-number">PICTURE 15</span><h3>Room to produce still needs a customer</h3></figcaption><div class="figure-body"><div class="motion-controls" role="group" aria-label="Steps for Room to produce still needs a customer" hidden data-steps="[{&quot;title&quot;: &quot;Count the physical room&quot;, &quot;text&quot;: &quot;Ten human shifts plus ten AI task-shifts can perform the work for 160 baskets when half the tasks are automated. Installed consumer equipment can handle that quantity. This is a physical bound, not promised sales.&quot;}, {&quot;title&quot;: &quot;Look at actual purchases&quot;, &quot;text&quot;: &quot;At the prices chosen by the shops, household budgets buy much less than the physical limit. This is the highest completed GDP endpoint in this particular one-percentage-point automation grid.&quot;}, {&quot;title&quot;: &quot;Keep the maximum conditional&quot;, &quot;text&quot;: &quot;This selected run pays all obligations without drawing down shop buffers at the endpoint. A larger AI supplier, different prices, different spending or a different contract changes the comparison. It is not a universal optimal automation percentage.&quot;}]">
+<div class="step-status" aria-live="polite" aria-atomic="true"></div>
+<div class="motion-buttons"><button type="button" data-action="previous">Previous</button><button type="button" data-action="next">Next step</button><button type="button" data-action="play">Play steps</button><button type="button" data-action="reset">Show all</button></div><p class="motion-explanation"></p></div><div class="diagram-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 780" width="560" height="780" role="img" aria-labelledby="11-capacity-and-customers-title 11-capacity-and-customers-desc">
+<title id="11-capacity-and-customers-title">Room to produce still needs a customer</title>
+<desc id="11-capacity-and-customers-desc">At the highest completed endpoint in the protected-pay, standard-AI-capacity grid, half of tasks use AI. The static physical envelope allows 160 baskets, but the saved run sells about 94.1. The price and demand rules matter. A physical upper bound is not a financeable market equilibrium.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="780" fill="#fffdf8"/>
+<text x="24" y="47" font-size="30" fill="#223c36" text-anchor="start">How much could the town make?</text>
+<text x="24" y="92" font-size="26" fill="#58675f" text-anchor="start">Protected pay · room for more sales</text>
+<g class="teaching-stage" data-step="1">
+<text x="24" y="160" font-size="27" fill="#376d9a" text-anchor="start">Physical room to make baskets</text>
+<rect x="24" y="187" width="512" height="47" rx="0" fill="#376d9a"/>
+<text x="536" y="285" font-size="33" fill="#376d9a" text-anchor="end">160 baskets</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<text x="24" y="359" font-size="27" fill="#236654" text-anchor="start">Baskets actually bought</text>
+<rect x="24" y="386" width="512" height="47" rx="0" fill="#edf1ea"/>
+<rect x="24" y="386" width="301.1764705882353" height="47" rx="0" fill="#236654"/>
+<text x="536" y="484" font-size="33" fill="#236654" text-anchor="end">94.1 baskets</text>
+</g>
+<g class="teaching-stage" data-step="3">
+<line x1="24" y1="536" x2="536" y2="536" stroke="#edf1ea" stroke-width="3"/>
+<text x="24" y="587" font-size="28" fill="#223c36" text-anchor="start">AI does 50% of tasks here.</text>
+<text x="24" y="632" font-size="28" fill="#223c36" text-anchor="start">Real GDP: 114.1</text>
+<text x="24" y="678" font-size="26" fill="#58675f" text-anchor="start">Including 20 equipment units.</text>
+<text x="24" y="738" font-size="26" fill="#223c36" text-anchor="start">A peak under these rules, not all rules.</text>
+</g>
+</svg>
+</div></div><div class="figure-caption"><em>This is a comparison within one declared experiment, not a universal best amount of AI. A different price rule, AI fee or distribution of income changes the result.</em></div></figure>
+<p>Then there is what GDP counts. Imagine a war destroys a bridge. Rebuilding it is new production, but people have used effort merely to regain a crossing they already had. This is why production and wealth must be kept separate. It does <strong>not</strong> mean war raises GDP overall: destruction also disrupts production. National accounts record exceptional destruction separately from ordinary wear and tear. <a href="https://www.bea.gov/help/faq/1013">The BEA explains the distinction.</a></p>
+<p>Our machines wear out rather than being destroyed by war. But the same everyday question helps: <strong>are we adding something useful, or using today's output to replace what we lost?</strong></p>
+<figure class="teaching-figure" id="figure-11-replacement" data-diagram="11-replacement"><figcaption><span class="figure-number">PICTURE 16</span><h3>New equipment has two different jobs</h3></figcaption><div class="figure-body"><div class="motion-controls" role="group" aria-label="Steps for New equipment has two different jobs" hidden data-steps="[{&quot;title&quot;: &quot;First, replace what wears out&quot;, &quot;text&quot;: &quot;Some new equipment takes the place of old equipment that no longer works. This spending can keep capacity from shrinking without expanding it.&quot;}, {&quot;title&quot;: &quot;Then, add capacity&quot;, &quot;text&quot;: &quot;Equipment beyond replacement can expand production capacity. Whether that capacity becomes more sales depends on customers, and whether extra equipment remains productive depends on technology and resources.&quot;}]">
+<div class="step-status" aria-live="polite" aria-atomic="true"></div>
+<div class="motion-buttons"><button type="button" data-action="previous">Previous</button><button type="button" data-action="next">Next step</button><button type="button" data-action="play">Play steps</button><button type="button" data-action="reset">Show all</button></div><p class="motion-explanation"></p></div><div class="diagram-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 470" width="560" height="470" role="img" aria-labelledby="11-replacement-title 11-replacement-desc">
+<title id="11-replacement-title">New equipment has two different jobs</title>
+<desc id="11-replacement-desc">Conceptual diagram: replacement restores worn-out capacity; additional equipment can expand capacity under the assumed technology. Icons do not represent measured quantities.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="470" fill="#fffdf8"/>
+<g class="teaching-stage" data-step="1">
+<rect x="24" y="20" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="24" y="20" width="6" height="112" rx="0" fill="#376d9a"/>
+<text x="42" y="55" font-size="26" fill="#376d9a" text-anchor="start">Worn capacity</text>
+<text x="42" y="103" font-size="42" fill="#376d9a" text-anchor="start">Replace it</text>
+<line x1="275" y1="75" x2="286" y2="75" stroke="#376d9a" stroke-width="3"/>
+<line x1="276.92130823599354" y1="81.2110672073454" x2="286" y2="75" stroke="#376d9a" stroke-width="3"/>
+<line x1="276.92130823599354" y1="68.7889327926546" x2="286" y2="75" stroke="#376d9a" stroke-width="3"/>
+<circle class="travel-token" data-step="1" data-from="275,75" data-to="286,75" r="8" fill="#376d9a"/>
+<rect x="300" y="20" width="236" height="112" rx="12" fill="#edf1ea"/>
+<rect x="300" y="20" width="6" height="112" rx="0" fill="#376d9a"/>
+<text x="318" y="55" font-size="26" fill="#376d9a" text-anchor="start">Result</text>
+<text x="318" y="103" font-size="42" fill="#376d9a" text-anchor="start">Maintain</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<rect x="24" y="205" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="24" y="205" width="6" height="112" rx="0" fill="#376d9a"/>
+<text x="42" y="240" font-size="26" fill="#376d9a" text-anchor="start">Extra capacity</text>
+<text x="42" y="288" font-size="42" fill="#376d9a" text-anchor="start">Add to it</text>
+<line x1="275" y1="260" x2="286" y2="260" stroke="#376d9a" stroke-width="3"/>
+<line x1="276.92130823599354" y1="266.21106720734537" x2="286" y2="260" stroke="#376d9a" stroke-width="3"/>
+<line x1="276.92130823599354" y1="253.7889327926546" x2="286" y2="260" stroke="#376d9a" stroke-width="3"/>
+<circle class="travel-token" data-step="2" data-from="275,260" data-to="286,260" r="8" fill="#376d9a"/>
+<rect x="300" y="205" width="236" height="112" rx="12" fill="#edf1ea"/>
+<rect x="300" y="205" width="6" height="112" rx="0" fill="#223c36"/>
+<text x="318" y="240" font-size="26" fill="#223c36" text-anchor="start">Result</text>
+<text x="318" y="288" font-size="42" fill="#223c36" text-anchor="start">Expand</text>
+<text x="280" y="403" font-size="27" fill="#58675f" text-anchor="middle">A new machine is not always</text>
+<text x="280" y="440" font-size="27" fill="#58675f" text-anchor="middle">an extra working machine.</text>
+</g>
+</svg>
+</div></div><div class="figure-caption"><em>New equipment counts as production in either case. Only the extra equipment increases the stock of working machines.</em></div></figure>
+<p>In a separate long-run machinery experiment, making the machine stock larger eventually gives smaller additional gains. Keeping that stock running also requires more replacements.</p>
+<p>One sustainable arrangement produces two hundred and fifty units each round. Half replaces equipment; half is available to households. Another produces five hundred—but needs all five hundred to replace its machinery. Nothing is left for households.</p>
+<figure class="teaching-figure" id="figure-12-maxima" data-diagram="12-maxima"><figcaption><span class="figure-number">PICTURE 17</span><h3>More gross output need not leave more for households</h3></figcaption><div class="figure-body"><div class="motion-controls" role="group" aria-label="Steps for More gross output need not leave more for households" hidden data-steps="[{&quot;title&quot;: &quot;Leave some output for households&quot;, &quot;text&quot;: &quot;In the separate diminishing-return model, investing half the output eventually supports 250 of real output: 125 for household use and 125 to replace equipment. This gives maximum stationary consumption under this technology.&quot;}, {&quot;title&quot;: &quot;Put all output into replacement&quot;, &quot;text&quot;: &quot;Investing all output eventually supports 500 of real output, but all 500 is needed to replace the large stock of equipment as it wears out. Household consumption is zero. GDP is higher, not household access.&quot;}]">
+<div class="step-status" aria-live="polite" aria-atomic="true"></div>
+<div class="motion-buttons"><button type="button" data-action="previous">Previous</button><button type="button" data-action="next">Next step</button><button type="button" data-action="play">Play steps</button><button type="button" data-action="reset">Show all</button></div><p class="motion-explanation"></p></div><div class="diagram-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 590" width="560" height="590" role="img" aria-labelledby="12-maxima-title 12-maxima-desc">
+<title id="12-maxima-title">More gross output need not leave more for households</title>
+<desc id="12-maxima-desc">Separate diminishing-return physical model. At investment share 50%, long-run real GDP 250 divides 125 consumption and 125 replacement. At 100%, real GDP 500 all replaces equipment and consumption is zero. Same scale 500.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="590" fill="#fffdf8"/>
+<g class="teaching-stage" data-step="1">
+<text x="24" y="55" font-size="27" fill="#223c36" text-anchor="start">Invest half the output</text>
+<rect x="24" y="72" width="512" height="34" rx="0" fill="#edf1ea"/>
+<rect x="24.0" y="72" width="128.0" height="34" rx="0" fill="#a66d13"/>
+<rect x="152.0" y="72" width="128.0" height="34" rx="0" fill="#376d9a"/>
+<text x="536" y="144" font-size="32" fill="#223c36" text-anchor="end">Real GDP 250</text>
+<text x="24" y="190" font-size="29" fill="#a66d13" text-anchor="start">Household use 125</text>
+<text x="24" y="234" font-size="29" fill="#376d9a" text-anchor="start">Equipment replacement 125</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<text x="24" y="330" font-size="27" fill="#223c36" text-anchor="start">Invest all the output</text>
+<rect x="24" y="347" width="512" height="34" rx="0" fill="#edf1ea"/>
+<rect x="24.0" y="347" width="512.0" height="34" rx="0" fill="#376d9a"/>
+<text x="536" y="419" font-size="32" fill="#223c36" text-anchor="end">Real GDP 500</text>
+<text x="24" y="466" font-size="29" fill="#a66d13" text-anchor="start">Household use 0</text>
+<text x="24" y="510" font-size="29" fill="#376d9a" text-anchor="start">Equipment replacement 500</text>
+<text x="280" y="569" font-size="27" fill="#58675f" text-anchor="middle">Same scale. Different destinations.</text>
+</g>
+</svg>
+</div></div><div class="figure-caption"><em>These arrangements can replace their worn-out equipment indefinitely under one invented technology. This separate calculation assumes the purchases can be financed. The biggest GDP is not the arrangement with the most household consumption. Neither calculation puts a value on free time.</em></div></figure>
+<p>The extreme makes a simple point. An AI economy full of busy factories, replacement servers and investment orders might report impressive production. We still need to ask what reaches people's lives.</p>
+<h2 id="back-to-the-car">Back to the car</h2>
+<p>Return to your employer's AI announcement.</p>
+<p>If you keep your income and the car gets cheaper, you may buy it sooner. If you get a shorter week with the same pay, you may welcome the extra time. If wages disappear but dividends take their place, a job need not remain your ticket to the showroom.</p>
+<p>If your income disappears without a replacement, you probably keep the old car. A loan might postpone that decision; it cannot settle it forever. Other businesses then experience your employer's saving as a missing customer.</p>
+<p>The first paper's concern survives, with a more precise condition. <strong>Growth does not require everyone to keep earning wages. In our town, a lasting market needs purchases that people or businesses can finance. Shared prosperity requires those gains to reach people too.</strong></p>
+<p>The AI system changes what work is necessary. What happens to pay, prices, ownership and investment determines which ending this town gets.</p>
+<hr />
+<p><a href="../site/05-appendix.html">Read the appendix: how the experiments work, detailed results and limitations →</a></p>
+<p><a href="../site/adoption.html">Explore the AI shops round by round</a> · <a href="../site/shocks.html">Explore sudden shocks</a> · <a href="../site/banking.html">Explore the bank</a></p>
+<p><em>Research explainer · 12 October 2026 · Original analysis with Codex assistance. The earlier papers and simulations remain available. No model round represents a calendar year; no simulated frequency is a real-world probability.</em></p><footer>Research explainer · 12 October 2026 · Two simulation families, with separate extensions · <a href="../README.md">Code and reproduction</a></footer></main></body></html>

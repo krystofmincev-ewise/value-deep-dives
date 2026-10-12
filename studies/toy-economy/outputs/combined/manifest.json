@@ -1,0 +1,32 @@
+[
+  {
+    "id": "01-buffer",
+    "title": "Steady output. Shrinking reserves.",
+    "description": "One protected-pay path completes 80 rounds while each shop loses money. Each has about 3.27 coins left after round 79; extending the run gives wage arrears in round 90.",
+    "height": 610,
+    "steps": [
+      {
+        "title": "The output chart",
+        "text": "Production has settled, and the original 80-round run finishes."
+      },
+      {
+        "title": "The cash account",
+        "text": "Each shop is losing about 0.31 coins a round. Its remaining cash is about 3.27 coins."
+      },
+      {
+        "title": "Run it longer",
+        "text": "The unchanged path misses payroll in round 90. A completed run was not proof of sustainability."
+      }
+    ],
+    "displayed_values": {
+      "cash_per_shop": 3.268883332497019,
+      "loss_per_round_per_shop": 0.30672708260717485,
+      "failure_round": 90
+    },
+    "source_sha256": {
+      "outputs/adoption/frontier.json": "f76b823d22ae8fe8c1b567bc784e4d29df4a55336570f4702a6136168dfc8bb7",
+      "research/adoption-frontier.md": "2cefeaacc6e8f035c55ce095d50f402114b49e03a9d103e11062f81a2f1ca37a"
+    },
+    "interpretation": "Snapshot values from saved grid; extension failure from the frontier verification note."
+  }
+]

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 690" width="560" height="690" role="img" aria-labelledby="08-shrinking-title 08-shrinking-desc">
+<title id="08-shrinking-title">Each round starts with the previous round’s sales</title>
+<desc id="08-shrinking-desc">After workers have spent their last wages, all income goes to owners. Owners consume 50% and equipment orders are 20% of prior output.100 yields 50+20=70, 70 yields 35+14=49, 49 yields 24.5+9.8=34.3. Total cash remains 200; these are spending flows.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="690" fill="#fffdf8"/>
+<g class="teaching-stage" data-step="1">
+<rect x="24" y="20" width="512" height="155" rx="12" fill="#edf1ea"/>
+<text x="42" y="59" font-size="28" fill="#223c36" text-anchor="start">Previous income: 100</text>
+<text x="42" y="107" font-size="26" fill="#223c36" text-anchor="start">50 household + 20 equipment</text>
+<text x="514" y="150" font-size="31" fill="#223c36" text-anchor="end">= 70 new sales</text>
+<line x1="280" y1="180" x2="280" y2="208" stroke="#223c36" stroke-width="3"/>
+<line x1="273.78893279265463" y1="198.92130823599354" x2="280" y2="208" stroke="#223c36" stroke-width="3"/>
+<line x1="286.21106720734537" y1="198.92130823599354" x2="280" y2="208" stroke="#223c36" stroke-width="3"/>
+<circle class="travel-token" data-step="1" data-from="280,180" data-to="280,208" r="8" fill="#223c36"/>
+</g>
+<g class="teaching-stage" data-step="2">
+<rect x="24" y="215" width="512" height="155" rx="12" fill="#edf1ea"/>
+<text x="42" y="254" font-size="28" fill="#223c36" text-anchor="start">Previous income: 70</text>
+<text x="42" y="302" font-size="26" fill="#223c36" text-anchor="start">35 household + 14 equipment</text>
+<text x="514" y="345" font-size="31" fill="#223c36" text-anchor="end">= 49 new sales</text>
+<text class="travel-token" data-step="2" data-from="311.765625,150" data-to="290.1875,254" font-size="31" font-weight="bold" fill="#223c36" stroke="#fffdf8" stroke-width="5" paint-order="stroke">70</text>
+<line x1="280" y1="375" x2="280" y2="403" stroke="#223c36" stroke-width="3"/>
+<line x1="273.78893279265463" y1="393.92130823599354" x2="280" y2="403" stroke="#223c36" stroke-width="3"/>
+<line x1="286.21106720734537" y1="393.92130823599354" x2="280" y2="403" stroke="#223c36" stroke-width="3"/>
+<circle class="travel-token" data-step="2" data-from="280,375" data-to="280,403" r="8" fill="#223c36"/>
+</g>
+<g class="teaching-stage" data-step="3">
+<rect x="24" y="410" width="512" height="155" rx="12" fill="#edf1ea"/>
+<text x="42" y="449" font-size="28" fill="#223c36" text-anchor="start">Previous income: 49</text>
+<text x="42" y="497" font-size="26" fill="#223c36" text-anchor="start">24.5 household + 9.8 equipment</text>
+<text x="514" y="540" font-size="31" fill="#223c36" text-anchor="end">= 34.3 new sales</text>
+<text class="travel-token" data-step="3" data-from="311.765625,345" data-to="290.1875,449" font-size="31" font-weight="bold" fill="#223c36" stroke="#fffdf8" stroke-width="5" paint-order="stroke">49</text>
+<text x="280" y="638" font-size="27" fill="#58675f" text-anchor="middle">Money in all accounts: still 200</text>
+<text x="280" y="675" font-size="25" fill="#58675f" text-anchor="middle">Less of it buys new output each round.</text>
+</g>
+</svg>

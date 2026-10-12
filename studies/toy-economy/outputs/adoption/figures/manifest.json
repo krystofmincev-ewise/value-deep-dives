@@ -1,0 +1,1124 @@
+[
+  {
+    "id": "01-adoption-town",
+    "title": "The same starting town",
+    "description": "Two consumer shops employ 10 workers. The AI supplier and equipment maker are already automated. Baseline household purchases 80 plus equipment 20 equal GDP 100. Wages 60 plus gross surplus 40 are the income from that same output. Total cash is 200.",
+    "height": 835,
+    "steps": [
+      {
+        "title": "Two shops and their workers",
+        "text": "Each consumer shop starts with five workers. Each of the ten workers has a separate cash account."
+      },
+      {
+        "title": "Two automated suppliers",
+        "text": "The equipment maker produces investment goods. The AI supplier is present from the beginning, but receives no AI fees before adoption."
+      },
+      {
+        "title": "Count output and income",
+        "text": "Final purchases and the income they create are two views of the same GDP. The cash stock is a separate quantity; money can circulate more than once."
+      }
+    ],
+    "source_cases": [
+      "baseline"
+    ],
+    "source_periods": {
+      "baseline": 0
+    },
+    "displayed_values": {
+      "wages": 60.0,
+      "gross_surplus": 40.0,
+      "consumption": 80.0,
+      "investment": 20.0,
+      "gdp": 100.0,
+      "money_stock": 200.0,
+      "workers_per_firm": [
+        5,
+        5
+      ]
+    },
+    "source_results": "outputs/adoption/results.json",
+    "source_sha256": "a4a648dfd71d642f6ed1a055300ae56506d6983fe8d630a4ddf5a8de346df27b",
+    "interpretation": "Illustrative model output under declared rules; not an empirical forecast."
+  },
+  {
+    "id": "02-adoption-shifts",
+    "title": "Same baskets, fewer human shifts",
+    "description": "For the baseline 80 baskets, the recorded reference labor requirement falls as tasks move to AI. Each block is one full shift of tasks, not one person. Whether jobs or pay fall is a separate rule.",
+    "height": 740,
+    "steps": [
+      {
+        "title": "AI does 0% of tasks",
+        "text": "For the same baseline output, human work is 10 full-shift equivalents. These are reference task requirements, not this period’s actual production or headcount."
+      },
+      {
+        "title": "AI does 20% of tasks",
+        "text": "For the same baseline output, human work is 8 full-shift equivalents. These are reference task requirements, not this period’s actual production or headcount."
+      },
+      {
+        "title": "AI does 40% of tasks",
+        "text": "For the same baseline output, human work is 6 full-shift equivalents. These are reference task requirements, not this period’s actual production or headcount."
+      },
+      {
+        "title": "A task is not a job",
+        "text": "People, agreed working time, actual productive time, and pay are different variables. AI task replacement alone does not choose an employment contract."
+      }
+    ],
+    "source_cases": [
+      "baseline",
+      "protected_time"
+    ],
+    "source_periods": {
+      "baseline": 0,
+      "protected_time": 10
+    },
+    "displayed_values": {
+      "fixed_baskets": 80.0,
+      "stages": [
+        {
+          "period": 0,
+          "automation_fraction": 0.0,
+          "reference_human_shifts": 10.0
+        },
+        {
+          "period": 5,
+          "automation_fraction": 0.2,
+          "reference_human_shifts": 8.0
+        },
+        {
+          "period": 10,
+          "automation_fraction": 0.4,
+          "reference_human_shifts": 6.0
+        }
+      ]
+    },
+    "source_results": "outputs/adoption/results.json",
+    "source_sha256": "a4a648dfd71d642f6ed1a055300ae56506d6983fe8d630a4ddf5a8de346df27b",
+    "interpretation": "Illustrative model output under declared rules; not an empirical forecast."
+  },
+  {
+    "id": "03-private-choice",
+    "title": "A tempting choice can disappoint both shops",
+    "description": "At their first accepted adoption decision in period 5, each shop forecasts its own operating surplus with the rival’s inherited price and automation held fixed. Both choose AI. The later recorded surplus, after both reach 40% automation, is lower. This compares an initial one-step incentive with a later outcome, not a forecast for that later period.",
+    "height": 865,
+    "steps": [
+      {
+        "title": "Each forecasts its own gain",
+        "text": "Each shop compares its own predicted operating surplus before and after one adoption step, holding the household spending budget and the rival’s inherited price and automation fixed. Neither forecasts later wage-demand feedback or rival responses."
+      },
+      {
+        "title": "Both choose before seeing the other’s choice",
+        "text": "The two shops choose simultaneously. Their pay rules shorten hours and reduce wages. Later customer spending responds to those lower wages; the private forecast did not include this feedback."
+      },
+      {
+        "title": "Read the later outcome",
+        "text": "In period 79, after both reach 40% task automation, their operating surpluses are ['5.2', '5.2']. Profit here is sales minus wages and AI fees, before equipment investment or depreciation. The earlier forecast was for the first step, not this later period."
+      }
+    ],
+    "source_cases": [
+      "myopic_hourly"
+    ],
+    "source_periods": {
+      "first_accepted_choice": 5,
+      "last_recorded_outcome": 79
+    },
+    "displayed_values": {
+      "initial_adoption_decisions": [
+        {
+          "firm_id": "consumer_a",
+          "rule": "bounded_myopic",
+          "available_automation": 0.2,
+          "previous_automation": 0.0,
+          "candidate_automation": 0.2,
+          "chosen_automation": 0.2,
+          "forecast_consumption_budget": 80.0,
+          "predicted_current_surplus": 10.0,
+          "predicted_candidate_surplus": 10.599999999999994,
+          "predicted_current_quantity": 40.0,
+          "predicted_candidate_quantity": 39.99999999999999,
+          "predicted_current_price": 1.0,
+          "predicted_candidate_price": 0.94,
+          "reason": "predicted_surplus_improves"
+        },
+        {
+          "firm_id": "consumer_b",
+          "rule": "bounded_myopic",
+          "available_automation": 0.2,
+          "previous_automation": 0.0,
+          "candidate_automation": 0.2,
+          "chosen_automation": 0.2,
+          "forecast_consumption_budget": 80.0,
+          "predicted_current_surplus": 10.0,
+          "predicted_candidate_surplus": 10.599999999999994,
+          "predicted_current_quantity": 40.0,
+          "predicted_candidate_quantity": 39.99999999999999,
+          "predicted_current_price": 1.0,
+          "predicted_candidate_price": 0.94,
+          "reason": "predicted_surplus_improves"
+        }
+      ],
+      "later_firms": [
+        {
+          "firm_id": "consumer_a",
+          "automation_fraction": 0.4,
+          "gross_surplus": 5.227272727272727
+        },
+        {
+          "firm_id": "consumer_b",
+          "automation_fraction": 0.4,
+          "gross_surplus": 5.227272727272727
+        }
+      ],
+      "forecast_scope": "First adoption step; rival and spending budget held fixed. Not a forecast of the terminal period."
+    },
+    "source_results": "outputs/adoption/results.json",
+    "source_sha256": "a4a648dfd71d642f6ed1a055300ae56506d6983fe8d630a4ddf5a8de346df27b",
+    "interpretation": "Illustrative model output under declared rules; not an empirical forecast."
+  },
+  {
+    "id": "04-worker-baskets",
+    "title": "What can worker households buy?",
+    "description": "Baskets purchased by all worker households together. The four adoption cases use the same task automation path, but different pay and time rules. Values are from each case’s last recorded period; they are not welfare scores.",
+    "height": 775,
+    "steps": [
+      {
+        "title": "Before AI",
+        "text": "In the last recorded period, worker households buy 60 baskets under this rule. The baseline is 60 baskets. Household groups are aggregates; this does not show who within the group receives income."
+      },
+      {
+        "title": "Same pay; more capacity",
+        "text": "In the last recorded period, worker households buy 68.2 baskets under this rule. The baseline is 60 baskets. Household groups are aggregates; this does not show who within the group receives income."
+      },
+      {
+        "title": "Same pay; less time",
+        "text": "In the last recorded period, worker households buy 53.6 baskets under this rule. The baseline is 60 baskets. Household groups are aggregates; this does not show who within the group receives income."
+      },
+      {
+        "title": "Hourly pay; less time",
+        "text": "In the last recorded period, worker households buy 40.9 baskets under this rule. The baseline is 60 baskets. Household groups are aggregates; this does not show who within the group receives income."
+      },
+      {
+        "title": "Layoffs",
+        "text": "In the last recorded period, worker households buy 40.9 baskets under this rule. The baseline is 60 baskets. Household groups are aggregates; this does not show who within the group receives income."
+      }
+    ],
+    "source_cases": [
+      "baseline",
+      "protected_redeploy",
+      "protected_time",
+      "hourly_time",
+      "layoffs"
+    ],
+    "source_periods": {
+      "baseline": 79,
+      "protected_redeploy": 79,
+      "protected_time": 79,
+      "hourly_time": 79,
+      "layoffs": 79
+    },
+    "displayed_values": {
+      "worker_baskets": [
+        {
+          "case": "baseline",
+          "period": 79,
+          "worker_baskets": 60.0
+        },
+        {
+          "case": "protected_redeploy",
+          "period": 79,
+          "worker_baskets": 68.18181818181819
+        },
+        {
+          "case": "protected_time",
+          "period": 79,
+          "worker_baskets": 53.57142857142856
+        },
+        {
+          "case": "hourly_time",
+          "period": 79,
+          "worker_baskets": 40.90909090909091
+        },
+        {
+          "case": "layoffs",
+          "period": 79,
+          "worker_baskets": 40.90909090909091
+        }
+      ],
+      "shared_bar_scale": 70
+    },
+    "source_results": "outputs/adoption/results.json",
+    "source_sha256": "a4a648dfd71d642f6ed1a055300ae56506d6983fe8d630a4ddf5a8de346df27b",
+    "interpretation": "Illustrative model output under declared rules; not an empirical forecast."
+  },
+  {
+    "id": "05-paid-work",
+    "title": "People, agreed time and work done",
+    "description": "For each matched adoption case, compare headcount, contracted hours, and actual productive hours. Time is expressed as full-shift equivalents for the whole worker group. A person can remain employed while their hours fall.",
+    "height": 980,
+    "steps": [
+      {
+        "title": "Same pay; more capacity",
+        "text": "Same pay; more capacity: 10 employed people, 10 contracted full-shift equivalents, and 6.8 full-shift equivalents of actual productive work. Actual time can be below agreed time when demand or physical capacity binds."
+      },
+      {
+        "title": "Same pay; less time",
+        "text": "Same pay; less time: 10 employed people, 6 contracted full-shift equivalents, and 5.4 full-shift equivalents of actual productive work. Actual time can be below agreed time when demand or physical capacity binds."
+      },
+      {
+        "title": "Hourly pay; less time",
+        "text": "Hourly pay; less time: 10 employed people, 6 contracted full-shift equivalents, and 4.8 full-shift equivalents of actual productive work. Actual time can be below agreed time when demand or physical capacity binds."
+      },
+      {
+        "title": "Layoffs",
+        "text": "Layoffs: 6 employed people, 6 contracted full-shift equivalents, and 4.8 full-shift equivalents of actual productive work. Actual time can be below agreed time when demand or physical capacity binds."
+      },
+      {
+        "title": "Read each measure literally",
+        "text": "Contract means agreed working time. Work done means time actually used to produce goods. A reduction in actual productive time is not automatically free leisure."
+      }
+    ],
+    "source_cases": [
+      "protected_redeploy",
+      "protected_time",
+      "hourly_time",
+      "layoffs"
+    ],
+    "source_periods": {
+      "protected_redeploy": 79,
+      "protected_time": 79,
+      "hourly_time": 79,
+      "layoffs": 79
+    },
+    "displayed_values": {
+      "labor": [
+        {
+          "case": "protected_redeploy",
+          "period": 79,
+          "headcount": 10,
+          "contracted_shifts": 10.0,
+          "productive_shifts": 6.8181818181818175
+        },
+        {
+          "case": "protected_time",
+          "period": 79,
+          "headcount": 10,
+          "contracted_shifts": 6.0,
+          "productive_shifts": 5.357142857142856
+        },
+        {
+          "case": "hourly_time",
+          "period": 79,
+          "headcount": 10,
+          "contracted_shifts": 6.0,
+          "productive_shifts": 4.7727272727272725
+        },
+        {
+          "case": "layoffs",
+          "period": 79,
+          "headcount": 6,
+          "contracted_shifts": 6.0,
+          "productive_shifts": 4.7727272727272725
+        }
+      ]
+    },
+    "source_results": "outputs/adoption/results.json",
+    "source_sha256": "a4a648dfd71d642f6ed1a055300ae56506d6983fe8d630a4ddf5a8de346df27b",
+    "interpretation": "Illustrative model output under declared rules; not an empirical forecast."
+  },
+  {
+    "id": "06-ai-fee",
+    "title": "The AI bill has a destination",
+    "description": "Consumer shops receive 80 and pay 13.6 to the domestic AI supplier. Their value added is 66.4; adding AI value added 13.6 and equipment 20 reconciles to nominal GDP 100. The AI fee is already included.",
+    "height": 765,
+    "steps": [
+      {
+        "title": "Start with shop sales",
+        "text": "Household payments are consumer-shop revenue. Part of that revenue pays the AI supplier for an intermediate service."
+      },
+      {
+        "title": "Split the receipt",
+        "text": "Shop value added is revenue minus the AI bill. The domestic AI supplier receives that bill as its own revenue and value added. Under this case’s rules, it distributes its surplus to owners."
+      },
+      {
+        "title": "Add the value once",
+        "text": "Add value created by consumer shops, the AI supplier, and the equipment maker. Do not add AI revenue to final spending again: the intermediate fee is part of the same final-goods receipt."
+      }
+    ],
+    "source_cases": [
+      "protected_redeploy"
+    ],
+    "source_periods": {
+      "protected_redeploy": 79
+    },
+    "displayed_values": {
+      "shop_receipts": 80.0,
+      "shop_value_added": 66.36363636363636,
+      "ai_value_added": 13.636363636363637,
+      "equipment_value_added": 20.0,
+      "nominal_gdp": 100.0
+    },
+    "source_results": "outputs/adoption/results.json",
+    "source_sha256": "a4a648dfd71d642f6ed1a055300ae56506d6983fe8d630a4ddf5a8de346df27b",
+    "interpretation": "Illustrative model output under declared rules; not an empirical forecast."
+  },
+  {
+    "id": "07-transition",
+    "title": "Fast and gradual adoption follow different routes",
+    "description": "Actual saved paths for sudden and gradual adoption, shown through period 30. Both cases protect pay and allow capacity expansion. The upper chart shows task automation; the lower chart shows real GDP at baseline prices. Endpoints and timing are results under the declared rules, not a forecast.",
+    "height": 855,
+    "steps": [
+      {
+        "title": "Watch tasks move",
+        "text": "The sudden path jumps to its last automation stage. The gradual path reaches the same stage later. The x-axis is model periods, not calendar years."
+      },
+      {
+        "title": "Follow realized output",
+        "text": "Real GDP values final goods at baseline prices. The path depends on wages, prices, demand, fees and capacity as well as the automation schedule. A slower route does not by itself imply a different final state."
+      }
+    ],
+    "source_cases": [
+      "sudden",
+      "slow"
+    ],
+    "source_periods": {
+      "sudden": 30,
+      "slow": 30
+    },
+    "displayed_values": {
+      "shown_through_period": 30,
+      "paths": {
+        "sudden": [
+          {
+            "period": 0,
+            "real_gdp": 100.0,
+            "automation": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "period": 1,
+            "real_gdp": 100.0,
+            "automation": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "period": 2,
+            "real_gdp": 100.0,
+            "automation": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "period": 3,
+            "real_gdp": 100.0,
+            "automation": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "period": 4,
+            "real_gdp": 100.0,
+            "automation": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "period": 5,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 6,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 7,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 8,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 9,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 10,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 11,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 12,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 13,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 14,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 15,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 16,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 17,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 18,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 19,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 20,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 21,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 22,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 23,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 24,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 25,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 26,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 27,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 28,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 29,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 30,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          }
+        ],
+        "slow": [
+          {
+            "period": 0,
+            "real_gdp": 100.0,
+            "automation": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "period": 1,
+            "real_gdp": 100.0,
+            "automation": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "period": 2,
+            "real_gdp": 100.0,
+            "automation": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "period": 3,
+            "real_gdp": 100.0,
+            "automation": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "period": 4,
+            "real_gdp": 100.0,
+            "automation": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "period": 5,
+            "real_gdp": 105.1063829787234,
+            "automation": [
+              0.2,
+              0.2
+            ]
+          },
+          {
+            "period": 6,
+            "real_gdp": 105.1063829787234,
+            "automation": [
+              0.2,
+              0.2
+            ]
+          },
+          {
+            "period": 7,
+            "real_gdp": 105.1063829787234,
+            "automation": [
+              0.2,
+              0.2
+            ]
+          },
+          {
+            "period": 8,
+            "real_gdp": 105.1063829787234,
+            "automation": [
+              0.2,
+              0.2
+            ]
+          },
+          {
+            "period": 9,
+            "real_gdp": 105.1063829787234,
+            "automation": [
+              0.2,
+              0.2
+            ]
+          },
+          {
+            "period": 10,
+            "real_gdp": 105.1063829787234,
+            "automation": [
+              0.2,
+              0.2
+            ]
+          },
+          {
+            "period": 11,
+            "real_gdp": 105.1063829787234,
+            "automation": [
+              0.2,
+              0.2
+            ]
+          },
+          {
+            "period": 12,
+            "real_gdp": 105.1063829787234,
+            "automation": [
+              0.2,
+              0.2
+            ]
+          },
+          {
+            "period": 13,
+            "real_gdp": 105.1063829787234,
+            "automation": [
+              0.2,
+              0.2
+            ]
+          },
+          {
+            "period": 14,
+            "real_gdp": 105.1063829787234,
+            "automation": [
+              0.2,
+              0.2
+            ]
+          },
+          {
+            "period": 15,
+            "real_gdp": 105.1063829787234,
+            "automation": [
+              0.2,
+              0.2
+            ]
+          },
+          {
+            "period": 16,
+            "real_gdp": 105.1063829787234,
+            "automation": [
+              0.2,
+              0.2
+            ]
+          },
+          {
+            "period": 17,
+            "real_gdp": 105.1063829787234,
+            "automation": [
+              0.2,
+              0.2
+            ]
+          },
+          {
+            "period": 18,
+            "real_gdp": 105.1063829787234,
+            "automation": [
+              0.2,
+              0.2
+            ]
+          },
+          {
+            "period": 19,
+            "real_gdp": 105.1063829787234,
+            "automation": [
+              0.2,
+              0.2
+            ]
+          },
+          {
+            "period": 20,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 21,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 22,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 23,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 24,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 25,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 26,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 27,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 28,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 29,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          },
+          {
+            "period": 30,
+            "real_gdp": 110.9090909090909,
+            "automation": [
+              0.4,
+              0.4
+            ]
+          }
+        ]
+      }
+    },
+    "source_results": "outputs/adoption/results.json",
+    "source_sha256": "a4a648dfd71d642f6ed1a055300ae56506d6983fe8d630a4ddf5a8de346df27b",
+    "interpretation": "Illustrative model output under declared rules; not an empirical forecast."
+  },
+  {
+    "id": "08-zero-jobs-sharing",
+    "title": "Zero jobs, two different endings",
+    "description": "Two matched cases use full automation, layoffs, expansion and ample AI capacity. One grants worker households 60% of dividends from period 25. The bars split final baskets between worker and owner households, on the same scale. Equipment investment is additional to these baskets. Values are last recorded periods.",
+    "height": 824,
+    "steps": [
+      {
+        "title": "No shared dividends",
+        "text": "No shared dividends: 0 employed workers; worker households buy 0 baskets and owner households buy 28.6. Real GDP is 48.6, including equipment investment. Shared dividend rights are an assumed grant, not a funded worker acquisition."
+      },
+      {
+        "title": "Share dividends with workers",
+        "text": "Share dividends with workers: 0 employed workers; worker households buy 82.6 baskets and owner households buy 26.5. Real GDP is 129.1, including equipment investment. Shared dividend rights are an assumed grant, not a funded worker acquisition."
+      },
+      {
+        "title": "The rule changes access",
+        "text": "The result is conditional on fixed owner-financed equipment investment, ample AI capacity, the spending rules, and the granted dividend rights. No utility function is modeled; the picture is about access to goods, not an optimal economy."
+      }
+    ],
+    "source_cases": [
+      "full_automation_ample_ai",
+      "shared_ownership_expand"
+    ],
+    "source_periods": {
+      "full_automation_ample_ai": 79,
+      "shared_ownership_expand": 79
+    },
+    "displayed_values": {
+      "outcomes": [
+        {
+          "case": "full_automation_ample_ai",
+          "period": 79,
+          "headcount": 0,
+          "worker_baskets": 0.0,
+          "owner_baskets": 28.571428571428573,
+          "real_gdp": 48.57142857142857,
+          "investment": 20.0
+        },
+        {
+          "case": "shared_ownership_expand",
+          "period": 79,
+          "headcount": 0,
+          "worker_baskets": 82.62857142857143,
+          "owner_baskets": 26.514285714285727,
+          "real_gdp": 129.14285714285717,
+          "investment": 20.0
+        }
+      ],
+      "worker_dividend_share": 0.6,
+      "share_start_period": 25,
+      "shared_basket_scale": 110
+    },
+    "source_results": "outputs/adoption/results.json",
+    "source_sha256": "a4a648dfd71d642f6ed1a055300ae56506d6983fe8d630a4ddf5a8de346df27b",
+    "interpretation": "Illustrative model output under declared rules; not an empirical forecast."
+  },
+  {
+    "id": "09-timing-uncertainty",
+    "title": "Random adoption dates give a range of paths",
+    "description": "Illustrative paired random adoption opportunities. Ranges are the fifth to ninety-fifth percentiles of cumulative real GDP among completed runs, expressed as a percentage of the no-adoption baseline over the same horizon. Dots show medians. Stopped runs are reported separately. The first two cases choose whether to adopt; the sharing case follows scheduled adoption. These are not real-world probabilities.",
+    "height": 877,
+    "steps": [
+      {
+        "title": "Same pay; firms choose",
+        "text": "Same pay; firms choose: the middle 90% of completed runs gives total output from 100% to 100% of the no-adoption baseline, with median 100%. 0 of 1000 runs stop. The randomness is invented timing, not estimated forecast uncertainty."
+      },
+      {
+        "title": "Hourly pay; firms choose",
+        "text": "Hourly pay; firms choose: the middle 90% of completed runs gives total output from 68.2% to 73.5% of the no-adoption baseline, with median 70.3%. 58 of 1000 runs stop. The randomness is invented timing, not estimated forecast uncertainty."
+      },
+      {
+        "title": "Hourly + sharing; scheduled",
+        "text": "Hourly + sharing; scheduled: the middle 90% of completed runs gives total output from 100% to 100% of the no-adoption baseline, with median 100%. 0 of 1000 runs stop. The randomness is invented timing, not estimated forecast uncertainty."
+      }
+    ],
+    "source_cases": [
+      "myopic_protected",
+      "myopic_hourly",
+      "hourly_shared"
+    ],
+    "source_periods": {},
+    "displayed_values": {
+      "no_adoption_cumulative_gdp": 8000.0,
+      "distributions": [
+        {
+          "case": "myopic_protected",
+          "cumulative_real_gdp": {
+            "mean": 8000.0,
+            "p05": 8000.0,
+            "median": 8000.0,
+            "p95": 8000.0,
+            "min": 8000.0,
+            "max": 8000.0
+          },
+          "completed": 1000,
+          "stopped": 0,
+          "samples": 1000
+        },
+        {
+          "case": "myopic_hourly",
+          "cumulative_real_gdp": {
+            "mean": 5638.91379197558,
+            "p05": 5452.830232306601,
+            "median": 5624.219228570947,
+            "p95": 5883.510142967727,
+            "min": 5346.330376940133,
+            "max": 6471.5101494814835
+          },
+          "completed": 942,
+          "stopped": 58,
+          "samples": 1000
+        },
+        {
+          "case": "hourly_shared",
+          "cumulative_real_gdp": {
+            "mean": 7999.9228422559045,
+            "p05": 8000.0,
+            "median": 8000.0,
+            "p95": 8000.0,
+            "min": 7945.359239734294,
+            "max": 8000.0
+          },
+          "completed": 1000,
+          "stopped": 0,
+          "samples": 1000
+        }
+      ],
+      "distribution_scope": "completed runs only; stopped counts displayed"
+    },
+    "source_results": "outputs/adoption/results.json",
+    "source_sha256": "a4a648dfd71d642f6ed1a055300ae56506d6983fe8d630a4ddf5a8de346df27b",
+    "interpretation": "Illustrative model output under declared rules; not an empirical forecast."
+  },
+  {
+    "id": "10-ai-enters",
+    "title": "Buying a shop and building one are different",
+    "description": "A separate controlled experiment holds household budgets and prices fixed. An acquisition transfers existing equity and adds no GDP. New equipment is production. The new business then shares the same consumer spending.",
+    "height": 960,
+    "steps": [
+      {
+        "title": "Buy an existing shop",
+        "text": "The AI provider pays from its existing cash to the original owner. Ownership changes, but no new basket or machine has been produced by the transaction."
+      },
+      {
+        "title": "Build an additional business",
+        "text": "Here the provider instead pays the equipment maker for a newly produced asset. It is investment this round and becomes productive next round."
+      },
+      {
+        "title": "Follow the next round",
+        "text": "Customers still buy eighty baskets at the fixed prices. The entrant wins sales from the incumbents. Additional replacement equipment raises gross GDP, but it replaces the additional capital wearing out."
+      }
+    ],
+    "source_cases": [
+      "acquisition_no_synergy",
+      "funded_entry"
+    ],
+    "source_periods": {
+      "acquisition_no_synergy": 5,
+      "funded_entry": 6
+    },
+    "displayed_values": {
+      "acquisition_price": 20.0,
+      "acquisition_round_gdp": 100.0,
+      "entry_setup_investment": 20.0,
+      "entry_setup_round_gdp": 120.0,
+      "operating_consumption": 80.0,
+      "operating_investment": 22.0,
+      "operating_gdp": 102.0,
+      "operating_firm_quantities": [
+        29.999999999999996,
+        29.999999999999996,
+        20.0,
+        0
+      ]
+    },
+    "source_results": "outputs/adoption/structure.json",
+    "source_sha256": "baf9ff0ab44f84242d696d5abf4a45f168d27f68dbe16771964ccaff7816f3a0",
+    "interpretation": "Controlled toy experiment; no empirical or universal optimum claim."
+  },
+  {
+    "id": "11-capacity-and-customers",
+    "title": "Room to produce still needs a customer",
+    "description": "At the highest completed endpoint in the protected-pay, standard-AI-capacity grid, half of tasks use AI. The static physical envelope allows 160 baskets, but the saved run sells about 94.1. The price and demand rules matter. A physical upper bound is not a financeable market equilibrium.",
+    "height": 780,
+    "steps": [
+      {
+        "title": "Count the physical room",
+        "text": "Ten human shifts plus ten AI task-shifts can perform the work for 160 baskets when half the tasks are automated. Installed consumer equipment can handle that quantity. This is a physical bound, not promised sales."
+      },
+      {
+        "title": "Look at actual purchases",
+        "text": "At the prices chosen by the shops, household budgets buy much less than the physical limit. This is the highest completed GDP endpoint in this particular one-percentage-point automation grid."
+      },
+      {
+        "title": "Keep the maximum conditional",
+        "text": "This selected run pays all obligations without drawing down shop buffers at the endpoint. A larger AI supplier, different prices, different spending or a different contract changes the comparison. It is not a universal optimal automation percentage."
+      }
+    ],
+    "source_cases": [
+      "salary_protected_redeploy_ai10_fee3"
+    ],
+    "source_periods": {
+      "salary_protected_redeploy_ai10_fee3": 79
+    },
+    "displayed_values": {
+      "automation": 0.5,
+      "real_consumption": 94.11764705882354,
+      "real_gdp": 114.11764705882354,
+      "investment": 20.0,
+      "physical_basket_upper_bound": 160.0,
+      "physical_bound_inputs": {
+        "human_task_hours": 10.0,
+        "ai_task_hours": 10,
+        "units_per_task_hour": 8.0,
+        "inherited_consumer_capital_capacity": 200.0,
+        "maximum_consumer_quantity": 160.0,
+        "maximizing_task_share_interval": [
+          0.5,
+          0.5
+        ],
+        "equipment_purchases_assumed": 20.0,
+        "potential_real_gdp_if_equipment_delivered": 180.0,
+        "scope": "Static inherited-capacity envelope with retained/redeployed labor and freely chosen task share. No claim of affordable demand, cash feasibility, profitable prices, long-run sustainability, net output, welfare or optimal investment."
+      }
+    },
+    "source_results": "outputs/adoption/frontier.json",
+    "source_sha256": "f76b823d22ae8fe8c1b567bc784e4d29df4a55336570f4702a6136168dfc8bb7",
+    "interpretation": "Controlled toy experiment; no empirical or universal optimum claim."
+  }
+]

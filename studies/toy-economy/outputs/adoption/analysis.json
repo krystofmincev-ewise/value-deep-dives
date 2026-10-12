@@ -1,0 +1,175 @@
+{
+  "results_sha256": "a4a648dfd71d642f6ed1a055300ae56506d6983fe8d630a4ddf5a8de346df27b",
+  "paired_scope": "Differences in cumulative real GDP and cumulative worker real consumption over all 80 rounds, treatment minus control on identical seeds completing both policies. Stop outcomes are separate, not imputed.",
+  "paired_comparisons": {
+    "hourly_shared_minus_hourly": {
+      "samples": 1000,
+      "both_completed": 942,
+      "treatment_only_stopped": 0,
+      "control_only_stopped": 58,
+      "both_stopped": 0,
+      "excluded_from_full_horizon_differences": 58,
+      "cumulative_real_gdp_difference": {
+        "mean": 2361.004299591197,
+        "p05": 2116.489857032273,
+        "median": 2375.780771429053,
+        "p95": 2547.169767693399,
+        "min": 1473.8490902528101,
+        "max": 2653.6696230598673
+      },
+      "cumulative_worker_real_consumption_difference": {
+        "mean": 3701.7099341923586,
+        "p05": 3491.2694966768145,
+        "median": 3714.8872901816703,
+        "p95": 3854.4074498508726,
+        "min": 2963.617491535883,
+        "max": 3941.4806218620306
+      },
+      "fraction_common_runs_with_higher_cumulative_worker_consumption": 1.0
+    },
+    "myopic_flexible_minus_myopic_hourly": {
+      "samples": 1000,
+      "both_completed": 942,
+      "treatment_only_stopped": 0,
+      "control_only_stopped": 58,
+      "both_stopped": 0,
+      "excluded_from_full_horizon_differences": 58,
+      "cumulative_real_gdp_difference": {
+        "mean": -486.2102267362123,
+        "p05": -569.9252134810844,
+        "median": -484.6522997373959,
+        "p95": -407.0567121247305,
+        "min": -638.1323528566245,
+        "max": -296.75820370273414
+      },
+      "cumulative_worker_real_consumption_difference": {
+        "mean": -495.6055072128471,
+        "p05": -569.3434419066505,
+        "median": -496.701410850524,
+        "p95": -418.5204317905973,
+        "min": -627.4428659053281,
+        "max": -308.9559297216988
+      },
+      "fraction_common_runs_with_higher_cumulative_worker_consumption": 0.0
+    },
+    "myopic_protected_minus_protected": {
+      "samples": 1000,
+      "both_completed": 14,
+      "treatment_only_stopped": 0,
+      "control_only_stopped": 986,
+      "both_stopped": 0,
+      "excluded_from_full_horizon_differences": 986,
+      "cumulative_real_gdp_difference": {
+        "mean": 279.33103152292085,
+        "p05": 161.33808726019643,
+        "median": 306.5333335301416,
+        "p95": 363.66254301810716,
+        "min": 102.01901947192073,
+        "max": 368.8848588272149
+      },
+      "cumulative_worker_real_consumption_difference": {
+        "mean": 239.2392895503664,
+        "p05": 146.48276583629985,
+        "median": 260.74243064727943,
+        "p95": 304.50060433173684,
+        "min": 104.3411964977413,
+        "max": 308.0583573888616
+      },
+      "fraction_common_runs_with_higher_cumulative_worker_consumption": 1.0
+    },
+    "myopic_hourly_minus_hourly": {
+      "samples": 1000,
+      "both_completed": 942,
+      "treatment_only_stopped": 0,
+      "control_only_stopped": 0,
+      "both_stopped": 58,
+      "excluded_from_full_horizon_differences": 58,
+      "cumulative_real_gdp_difference": {
+        "mean": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "cumulative_worker_real_consumption_difference": {
+        "mean": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "fraction_common_runs_with_higher_cumulative_worker_consumption": 0.0
+    }
+  },
+  "grid_scope": "192 declared points. Highest completed endpoint only; not a global optimum, welfare ranking, or an optimization over time paths.",
+  "grid_stopped": 73,
+  "grid_completed": 119,
+  "grid_maxima": {
+    "last_real_gdp": {
+      "value": 134.28571428571428,
+      "source_grid_index": 57,
+      "case": {
+        "pay_contract": "salary_protected",
+        "capacity_use": "redeploy",
+        "ai_fee": 0,
+        "price_pass_through": 1,
+        "final_stage": 0.4,
+        "recorded_periods": 80,
+        "requested_periods": 80,
+        "stop_reason": null,
+        "last_recorded_period": 79,
+        "last_nominal_gdp": 100.0,
+        "last_real_gdp": 134.28571428571428,
+        "last_real_consumption": 114.28571428571429,
+        "last_worker_real_consumption": 85.71428571428572,
+        "last_owner_real_consumption": 28.57142857142857,
+        "last_wages_paid": 60.0,
+        "last_headcount": 10,
+        "last_contracted_hours": 10.0,
+        "last_actual_hours": 8.571428571428571,
+        "last_ai_revenue": 0.0,
+        "minimum_real_gdp": 100.0,
+        "maximum_real_gdp": 134.28571428571428,
+        "peak_real_gdp_period": 10,
+        "cumulative_real_gdp_through_stop": 10470.588235294117,
+        "cumulative_worker_real_consumption_through_stop": 6652.941176470589,
+        "maximum_money_error": 0.0,
+        "maximum_value_added_error": 0.0
+      }
+    },
+    "last_worker_real_consumption": {
+      "value": 85.71428571428572,
+      "source_grid_index": 57,
+      "case": {
+        "pay_contract": "salary_protected",
+        "capacity_use": "redeploy",
+        "ai_fee": 0,
+        "price_pass_through": 1,
+        "final_stage": 0.4,
+        "recorded_periods": 80,
+        "requested_periods": 80,
+        "stop_reason": null,
+        "last_recorded_period": 79,
+        "last_nominal_gdp": 100.0,
+        "last_real_gdp": 134.28571428571428,
+        "last_real_consumption": 114.28571428571429,
+        "last_worker_real_consumption": 85.71428571428572,
+        "last_owner_real_consumption": 28.57142857142857,
+        "last_wages_paid": 60.0,
+        "last_headcount": 10,
+        "last_contracted_hours": 10.0,
+        "last_actual_hours": 8.571428571428571,
+        "last_ai_revenue": 0.0,
+        "minimum_real_gdp": 100.0,
+        "maximum_real_gdp": 134.28571428571428,
+        "peak_real_gdp_period": 10,
+        "cumulative_real_gdp_through_stop": 10470.588235294117,
+        "cumulative_worker_real_consumption_through_stop": 6652.941176470589,
+        "maximum_money_error": 0.0,
+        "maximum_value_added_error": 0.0
+      }
+    }
+  }
+}

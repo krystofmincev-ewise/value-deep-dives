@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 490" width="560" height="490" role="img" aria-labelledby="05-no-wages-title 05-no-wages-desc">
+<title id="05-no-wages-title">Output survives; former workers have no purchases</title>
+<desc id="05-no-wages-desc">After wages stop, owner consumption 80 and equipment 20 sustain GDP 100 in the owner-spending 80% case. Former-worker consumption is zero.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="490" fill="#fffdf8"/>
+<g class="teaching-stage" data-step="1">
+<rect x="24" y="20" width="512" height="112" rx="12" fill="#edf1ea"/>
+<rect x="24" y="20" width="6" height="112" rx="0" fill="#236654"/>
+<text x="42" y="55" font-size="26" fill="#236654" text-anchor="start">Former workers buy</text>
+<text x="42" y="103" font-size="42" fill="#236654" text-anchor="start">0</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<rect x="24" y="160" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="24" y="160" width="6" height="112" rx="0" fill="#a66d13"/>
+<text x="42" y="195" font-size="26" fill="#a66d13" text-anchor="start">Owners buy</text>
+<text x="42" y="243" font-size="42" fill="#a66d13" text-anchor="start">80</text>
+<rect x="290" y="160" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="290" y="160" width="6" height="112" rx="0" fill="#376d9a"/>
+<text x="308" y="195" font-size="26" fill="#376d9a" text-anchor="start">Equipment</text>
+<text x="308" y="243" font-size="42" fill="#376d9a" text-anchor="start">20</text>
+<line x1="147" y1="278" x2="147" y2="323" stroke="#a66d13" stroke-width="3"/>
+<line x1="140.7889327926546" y1="313.92130823599354" x2="147" y2="323" stroke="#a66d13" stroke-width="3"/>
+<line x1="153.2110672073454" y1="313.92130823599354" x2="147" y2="323" stroke="#a66d13" stroke-width="3"/>
+<circle class="travel-token" data-step="2" data-from="147,278" data-to="147,323" r="8" fill="#a66d13"/>
+<line x1="413" y1="278" x2="413" y2="323" stroke="#376d9a" stroke-width="3"/>
+<line x1="406.78893279265463" y1="313.92130823599354" x2="413" y2="323" stroke="#376d9a" stroke-width="3"/>
+<line x1="419.21106720734537" y1="313.92130823599354" x2="413" y2="323" stroke="#376d9a" stroke-width="3"/>
+<circle class="travel-token" data-step="2" data-from="413,278" data-to="413,323" r="8" fill="#376d9a"/>
+<text x="24" y="352" font-size="27" fill="#223c36" text-anchor="start">Final purchases</text>
+<rect x="24" y="369" width="512" height="34" rx="0" fill="#edf1ea"/>
+<rect x="24.0" y="369" width="409.6" height="34" rx="0" fill="#a66d13"/>
+<rect x="433.6" y="369" width="102.4" height="34" rx="0" fill="#376d9a"/>
+<text x="536" y="441" font-size="32" fill="#223c36" text-anchor="end">GDP 100</text>
+</g>
+</svg>

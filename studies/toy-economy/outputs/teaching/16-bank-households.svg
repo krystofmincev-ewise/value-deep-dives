@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 660" width="560" height="660" role="img" aria-labelledby="16-bank-households-title 16-bank-households-desc">
+<title id="16-bank-households-title">Today&#x27;s bridge has a later bill</title>
+<desc id="16-bank-households-desc">Worker households borrow during a temporary wage gap. Purchases are maintained at 60. Once wages return, full debt service of 12 leaves 48 for the next round&#x27;s purchases. After repayment, purchases return to 60. These are group totals.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="660" fill="#fffdf8"/>
+<g class="teaching-stage" data-step="1">
+<text x="24" y="44" font-size="27" fill="#223c36" text-anchor="start">During the gap: purchases</text>
+<rect x="24" y="61" width="512" height="34" rx="0" fill="#edf1ea"/>
+<rect x="24.0" y="61" width="512.0" height="34" rx="0" fill="#236654"/>
+<text x="536" y="133" font-size="32" fill="#223c36" text-anchor="end">60 for goods</text>
+<text x="24" y="174" font-size="26" fill="#58675f" text-anchor="start">Borrowing covers missing paychecks.</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<text x="24" y="257" font-size="27" fill="#223c36" text-anchor="start">During full repayment: wage 60</text>
+<rect x="24" y="274" width="512" height="34" rx="0" fill="#edf1ea"/>
+<rect x="24.0" y="274" width="409.6" height="34" rx="0" fill="#236654"/>
+<rect x="433.6" y="274" width="102.4" height="34" rx="0" fill="#75608c"/>
+<text x="536" y="346" font-size="32" fill="#223c36" text-anchor="end">48 goods + 12 debt service</text>
+<text x="24" y="387" font-size="26" fill="#58675f" text-anchor="start">The missing slice pays the bank.</text>
+</g>
+<g class="teaching-stage" data-step="3">
+<text x="24" y="469" font-size="27" fill="#223c36" text-anchor="start">After repayment: purchases</text>
+<rect x="24" y="486" width="512" height="34" rx="0" fill="#edf1ea"/>
+<rect x="24.0" y="486" width="512.0000000000001" height="34" rx="0" fill="#236654"/>
+<text x="536" y="558" font-size="32" fill="#223c36" text-anchor="end">60 for goods</text>
+<text x="24" y="610" font-size="27" fill="#223c36" text-anchor="start">Same people. Different dates.</text>
+</g>
+</svg>

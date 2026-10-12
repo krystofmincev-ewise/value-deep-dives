@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 740" width="560" height="740" role="img" aria-labelledby="02-adoption-shifts-title 02-adoption-shifts-desc">
+<title id="02-adoption-shifts-title">Same baskets, fewer human shifts</title>
+<desc id="02-adoption-shifts-desc">For the baseline 80 baskets, the recorded reference labor requirement falls as tasks move to AI. Each block is one full shift of tasks, not one person. Whether jobs or pay fall is a separate rule.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="740" fill="#fffdf8"/>
+<text x="24" y="45" font-size="32" fill="#223c36" text-anchor="start">Same baskets.</text>
+<text x="24" y="88" font-size="32" fill="#223c36" text-anchor="start">Fewer human shifts.</text>
+<text x="24" y="140" font-size="26" fill="#58675f" text-anchor="start">80 baskets in every row</text>
+<g class="teaching-stage" data-step="1">
+<text x="24" y="198" font-size="26" fill="#223c36" text-anchor="start">AI does 0% of tasks</text>
+<rect x="24.0" y="221" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="76.0" y="221" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="128.0" y="221" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="180.0" y="221" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="232.0" y="221" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="284.0" y="221" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="336.0" y="221" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="388.0" y="221" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="440.0" y="221" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="492.0" y="221" width="44.0" height="36" rx="4" fill="#236654"/>
+<text x="24" y="300" font-size="29" fill="#236654" text-anchor="start">10 human shifts</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<text x="24" y="350" font-size="26" fill="#223c36" text-anchor="start">AI does 20% of tasks</text>
+<rect x="24.0" y="373" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="76.0" y="373" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="128.0" y="373" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="180.0" y="373" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="232.0" y="373" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="284.0" y="373" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="336.0" y="373" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="388.0" y="373" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="440.0" y="373" width="44.0" height="36" rx="4" fill="#376d9a"/>
+<rect x="492.0" y="373" width="44.0" height="36" rx="4" fill="#376d9a"/>
+<text x="24" y="452" font-size="29" fill="#236654" text-anchor="start">8 human shifts</text>
+</g>
+<g class="teaching-stage" data-step="3">
+<text x="24" y="502" font-size="26" fill="#223c36" text-anchor="start">AI does 40% of tasks</text>
+<rect x="24.0" y="525" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="76.0" y="525" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="128.0" y="525" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="180.0" y="525" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="232.0" y="525" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="284.0" y="525" width="44.0" height="36" rx="4" fill="#236654"/>
+<rect x="336.0" y="525" width="44.0" height="36" rx="4" fill="#376d9a"/>
+<rect x="388.0" y="525" width="44.0" height="36" rx="4" fill="#376d9a"/>
+<rect x="440.0" y="525" width="44.0" height="36" rx="4" fill="#376d9a"/>
+<rect x="492.0" y="525" width="44.0" height="36" rx="4" fill="#376d9a"/>
+<text x="24" y="604" font-size="29" fill="#236654" text-anchor="start">6 human shifts</text>
+</g>
+<g class="teaching-stage" data-step="4">
+<rect x="24" y="645" width="24" height="24" rx="3" fill="#236654"/>
+<text x="60" y="666" font-size="26" fill="#236654" text-anchor="start">Human</text>
+<rect x="273" y="645" width="24" height="24" rx="3" fill="#376d9a"/>
+<text x="309" y="666" font-size="26" fill="#376d9a" text-anchor="start">AI</text>
+<text x="24" y="718" font-size="28" fill="#223c36" text-anchor="start">A shift is time, not a person.</text>
+</g>
+</svg>

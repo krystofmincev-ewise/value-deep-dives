@@ -1,0 +1,1221 @@
+{
+  "description": "Combined paper reviewed by two independent subagents; original engines, source, results, tests and reading editions. See research/publication-record.md for subsequent public delivery status.",
+  "entrypoint": "START-HERE.html",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 99,
+      "sha256": "7fab50613dba0a9d9c4a705fadd2a128749567a1c9b887374199ae205ed83787"
+    },
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "LICENSE-CODE.md",
+      "bytes": 1071,
+      "sha256": "db9d3c7868a846097fe9f2232cd1110a4ccd74f5b7a4239ad3925f912bebb085"
+    },
+    {
+      "path": "LICENSE.md",
+      "bytes": 801,
+      "sha256": "426f0257b72f497da7623651f0646468f2a617d1af5e28f41344da2197a2a9ff"
+    },
+    {
+      "path": "README.md",
+      "bytes": 15044,
+      "sha256": "08be6dfb0b233f82f6adeae38a25052f4edd6208347bc230fc6993eb0a9a10d3"
+    },
+    {
+      "path": "START-HERE.html",
+      "bytes": 1559,
+      "sha256": "e0c9b95b112f23c67aae286d4a9d9e0b271c69a444970b3b8f7229dfabb6c36f"
+    },
+    {
+      "path": "articles/00-gdp-without-wages.md",
+      "bytes": 13794,
+      "sha256": "f2f5398416cde9641c8eae5a57e92835c2cb3b2cdf181cd804721177705cb887"
+    },
+    {
+      "path": "articles/01-who-buys-the-output.md",
+      "bytes": 11254,
+      "sha256": "c276ff3a2b47f7dc6d13a5da47abf976175dbf4b1c9a7c43f8df4b95c7d60fc2"
+    },
+    {
+      "path": "articles/02-an-economy-without-paychecks.md",
+      "bytes": 13726,
+      "sha256": "7cec2a1bf97da2ed71b0f670bbc389a54b3132b04cb656b2692138fda13abbdc"
+    },
+    {
+      "path": "articles/03-when-the-economy-breaks.md",
+      "bytes": 30161,
+      "sha256": "ca8ce790c24bd5d6e2ec00d3e4c0a048ec17822e8a2579d91ad100d1b1da3e8b"
+    },
+    {
+      "path": "articles/04-ai-arrives-one-shop-at-a-time.md",
+      "bytes": 14701,
+      "sha256": "bc7ba2cbe93e45fd7c3834b0abcd665af4129e512f820bc2657ecc3eaba52cf3"
+    },
+    {
+      "path": "articles/05-appendix.md",
+      "bytes": 21763,
+      "sha256": "bf4a7813167f43bb30277ef8fa6c3e88611e9ab16811eef3d8b88fb035aa14fe"
+    },
+    {
+      "path": "articles/05-who-buys-what-ai-makes.md",
+      "bytes": 22062,
+      "sha256": "c83b66e7fc3c1ba5e9ea93799c42114abd9d601894e4524c25c3a209ddcb0dab"
+    },
+    {
+      "path": "index.html",
+      "bytes": 1559,
+      "sha256": "e0c9b95b112f23c67aae286d4a9d9e0b271c69a444970b3b8f7229dfabb6c36f"
+    },
+    {
+      "path": "model-spec.md",
+      "bytes": 14493,
+      "sha256": "a00b5c81542cf9b5307ddfaafd72889153724c9cc0e59adb4adf11ab6da7a41a"
+    },
+    {
+      "path": "outputs/adoption/analysis.json",
+      "bytes": 6208,
+      "sha256": "f135be9322e479ce745e0a2882364b7e007fa36324b8380c2686d8adfa641045"
+    },
+    {
+      "path": "outputs/adoption/figures/01-adoption-town.png",
+      "bytes": 98761,
+      "sha256": "2cb76b07601ed148eb258885da0f361d8009df12583e63646db39f3ae24311e3"
+    },
+    {
+      "path": "outputs/adoption/figures/01-adoption-town.svg",
+      "bytes": 4846,
+      "sha256": "bbb96ef96f16fa3f51b8f9371c1f8d76c6d7b2a657cdee8d6de4ff4d02b4afd9"
+    },
+    {
+      "path": "outputs/adoption/figures/02-adoption-shifts.png",
+      "bytes": 96873,
+      "sha256": "3baadb5d3d99b665612256ae11968235583185026663888f8b3996252bbbe303"
+    },
+    {
+      "path": "outputs/adoption/figures/02-adoption-shifts.svg",
+      "bytes": 4270,
+      "sha256": "dcbf6659fa32d94b2bd02b210994d6345ed02782bc528e12ad760d993b5dc9fd"
+    },
+    {
+      "path": "outputs/adoption/figures/03-private-choice.png",
+      "bytes": 121360,
+      "sha256": "4713a32de9e5a0176912f01d63ec37e5dfff8ec85ba8cabd362089e7d6e9d09f"
+    },
+    {
+      "path": "outputs/adoption/figures/03-private-choice.svg",
+      "bytes": 3529,
+      "sha256": "4c33a4e047731ca5e6cb5c09f95c332bbde02f59ca84a1dd9bb9806538c7478a"
+    },
+    {
+      "path": "outputs/adoption/figures/04-worker-baskets.png",
+      "bytes": 91422,
+      "sha256": "48f921326e0349ba641cc787bb369aff01235f5e2c7a0ed75b88e2f15740ff53"
+    },
+    {
+      "path": "outputs/adoption/figures/04-worker-baskets.svg",
+      "bytes": 2842,
+      "sha256": "f1b69e9a3df2f10dd875fc5912b8a36ab827cb59e8b5c63b446b4d9d90ee74ab"
+    },
+    {
+      "path": "outputs/adoption/figures/05-paid-work.png",
+      "bytes": 133128,
+      "sha256": "10354619aea158eb22d001bf36fabd14710501782de21461d620bb34c928d592"
+    },
+    {
+      "path": "outputs/adoption/figures/05-paid-work.svg",
+      "bytes": 4008,
+      "sha256": "9de74beae2ec6acd7ab97bbbf7d63490a77b26e389c9b87bc2781ea7c945c203"
+    },
+    {
+      "path": "outputs/adoption/figures/06-ai-fee.png",
+      "bytes": 92068,
+      "sha256": "aaf62de47400251bf24ffec59d97dec3d3b5981037b95e32ae0c3737cca7c4f0"
+    },
+    {
+      "path": "outputs/adoption/figures/06-ai-fee.svg",
+      "bytes": 3123,
+      "sha256": "bf9d27c3cca29ffb5aad9db50db99282a0ea553d46b4493ad3acfd72a0d0ef13"
+    },
+    {
+      "path": "outputs/adoption/figures/07-transition.png",
+      "bytes": 84789,
+      "sha256": "7df4f90d66f9ec9aa9b55c5d285342ac143ff233f51842fbbceb27afb13e1dd0"
+    },
+    {
+      "path": "outputs/adoption/figures/07-transition.svg",
+      "bytes": 24211,
+      "sha256": "944e17a9a8aeab2d18e6ab90c112c732cf2ead54ce1f5dcf5b99e2d152a09359"
+    },
+    {
+      "path": "outputs/adoption/figures/08-zero-jobs-sharing.png",
+      "bytes": 137366,
+      "sha256": "1e6cbf8324f5bcddca9f74d2a0789842722a1414f7236b5c0fce40f073280f0b"
+    },
+    {
+      "path": "outputs/adoption/figures/08-zero-jobs-sharing.svg",
+      "bytes": 2749,
+      "sha256": "9f18086030d9a6f701aec33c30c01cd5e47dd2e7f7697ef267f381ab3d37e8d8"
+    },
+    {
+      "path": "outputs/adoption/figures/09-timing-uncertainty.png",
+      "bytes": 159777,
+      "sha256": "bd1b10ff968211e5e1bc70c940bbf06aed4dbfa2debe25cf84ebe79083c8b490"
+    },
+    {
+      "path": "outputs/adoption/figures/09-timing-uncertainty.svg",
+      "bytes": 3994,
+      "sha256": "d9c5d127eb0c2fdef3d7717d7e0516a383e1824a366c4acc4eef8de93b626bea"
+    },
+    {
+      "path": "outputs/adoption/figures/10-ai-enters.png",
+      "bytes": 171027,
+      "sha256": "a7a2f117dbb61e29e42e959d961a0295d3aa660827794f47105ccefcce1eadd5"
+    },
+    {
+      "path": "outputs/adoption/figures/10-ai-enters.svg",
+      "bytes": 3698,
+      "sha256": "fff880c4b3d8863a371255068f3c60c5902ffaf2330037784e5cb30f15caecce"
+    },
+    {
+      "path": "outputs/adoption/figures/11-capacity-and-customers.png",
+      "bytes": 101553,
+      "sha256": "0f6366e5fc104fe0a6194e53a78477dc6eb08e6d7a721b804b7cedef8fda3fea"
+    },
+    {
+      "path": "outputs/adoption/figures/11-capacity-and-customers.svg",
+      "bytes": 2222,
+      "sha256": "2df007174939fce38319232fe1549421fa78a5c0a13aa84ce86dc59c9ec120a5"
+    },
+    {
+      "path": "outputs/adoption/figures/manifest.json",
+      "bytes": 37507,
+      "sha256": "74a73a750a32628eda9894eb3cc73eefc553aed429c98915fed1809a4bc152d3"
+    },
+    {
+      "path": "outputs/adoption/frontier.json",
+      "bytes": 1530624,
+      "sha256": "f76b823d22ae8fe8c1b567bc784e4d29df4a55336570f4702a6136168dfc8bb7"
+    },
+    {
+      "path": "outputs/adoption/legacy-gradual-banking.json",
+      "bytes": 104231,
+      "sha256": "8914a301416bd4da37463e43685d0f9a8df27d21648a7a6c14b134d03bd2328f"
+    },
+    {
+      "path": "outputs/adoption/legacy-gradual.json",
+      "bytes": 171585,
+      "sha256": "8861f24ae1488994b86d602d7c75f728d29692973245a22332fdfb4f52d75751"
+    },
+    {
+      "path": "outputs/adoption/results.json",
+      "bytes": 43091466,
+      "sha256": "a4a648dfd71d642f6ed1a055300ae56506d6983fe8d630a4ddf5a8de346df27b"
+    },
+    {
+      "path": "outputs/adoption/structure.json",
+      "bytes": 3811966,
+      "sha256": "baf9ff0ab44f84242d696d5abf4a45f168d27f68dbe16771964ccaff7816f3a0"
+    },
+    {
+      "path": "outputs/banking/results.json",
+      "bytes": 6730909,
+      "sha256": "5c29123ea005b0739d880f0db0d95f4ebbf24778c6779d4514dddab44a46773a"
+    },
+    {
+      "path": "outputs/combined/01-buffer.png",
+      "bytes": 90359,
+      "sha256": "7f729b9dc9c8442c81542aaac46049da922dd2acc41152d5415ce48fc16543dc"
+    },
+    {
+      "path": "outputs/combined/01-buffer.svg",
+      "bytes": 2023,
+      "sha256": "fcf1aeb425d3b6b8ddd31dc7ab9f82e1085d194489a4033f30081b9e4c9573d2"
+    },
+    {
+      "path": "outputs/combined/build-manifest.json",
+      "bytes": 4199,
+      "sha256": "b3ad82e4867f576f8d3d9bd57cd7f4106d6266e550bee538558c90988b6a1198"
+    },
+    {
+      "path": "outputs/combined/manifest.json",
+      "bytes": 1287,
+      "sha256": "bb1842be1938bce8deec24879509281762ed52a8bc0aefa686356c36e38236f7"
+    },
+    {
+      "path": "outputs/equilibrium.csv",
+      "bytes": 1439,
+      "sha256": "6e22b43f4cdec62882a0273ab8100120e4286cfab7dc10f6224b084495834f21"
+    },
+    {
+      "path": "outputs/explorer.json",
+      "bytes": 1949572,
+      "sha256": "c01d1af21e7159c71cbaaf7ea0556379bf7769b6abec353c1892dec0b2eaaba8"
+    },
+    {
+      "path": "outputs/figures/automated-growth.png",
+      "bytes": 84393,
+      "sha256": "3eeab426589be91e3676a37f7691ae52aeab3466233dca82dfba8841c420a1c9"
+    },
+    {
+      "path": "outputs/figures/automated-growth.svg",
+      "bytes": 45741,
+      "sha256": "9824169dfbe301a20c267f3b33d40e8428d2e4d21f4b1548234afb62be958b33"
+    },
+    {
+      "path": "outputs/figures/prices.png",
+      "bytes": 48193,
+      "sha256": "4a7a6950fdaef5e8d7132f3cc6b1c29d359e705f0539dff2590d25d353c5b506"
+    },
+    {
+      "path": "outputs/figures/prices.svg",
+      "bytes": 39111,
+      "sha256": "08a5c0026ad25dbb773557b52af224fdcbac8443905e35595156f3c43b85fbcb"
+    },
+    {
+      "path": "outputs/figures/transition.png",
+      "bytes": 75618,
+      "sha256": "b4fba5aae0993dc00fbe2540ca9337052e44784dd36d6cd37747f31fcc7b0bb4"
+    },
+    {
+      "path": "outputs/figures/transition.svg",
+      "bytes": 51376,
+      "sha256": "20a9fb97972ec2c90b31ba969ee193f890e5142b6a80b4396730fc7d7b1c58eb"
+    },
+    {
+      "path": "outputs/firms.csv",
+      "bytes": 645,
+      "sha256": "eb2ed557910194fdba452e266e325e0b2c7799f5c22efc60028126f03f2a22f1"
+    },
+    {
+      "path": "outputs/results.json",
+      "bytes": 842118,
+      "sha256": "0f169322fdb7119d8cd5dcc448ce966c4c304dd784925e0109f9a12d774d9c5a"
+    },
+    {
+      "path": "outputs/shocks/figures/demand-loop.png",
+      "bytes": 74183,
+      "sha256": "8ee461b593073e37469cb92ff4b69b50d52d364d4537a17fc28f71ab93cecc4a"
+    },
+    {
+      "path": "outputs/shocks/figures/demand-loop.svg",
+      "bytes": 53502,
+      "sha256": "c290aa270136726a6b11043cefd9410a6ecf5b822079472cd7d759a6d7134f42"
+    },
+    {
+      "path": "outputs/shocks/figures/firm-liquidity.png",
+      "bytes": 78800,
+      "sha256": "c717b0cbaccb6e5b314a0626cc7b5258c3b5783e78e1c347906fd7bf7aad01dc"
+    },
+    {
+      "path": "outputs/shocks/figures/firm-liquidity.svg",
+      "bytes": 54338,
+      "sha256": "5e5fb5ea2eb52c50a2ac6c734386fe24f8a71fe7d5831b2419094ac900d6a491"
+    },
+    {
+      "path": "outputs/shocks/figures/growth-limits.png",
+      "bytes": 99178,
+      "sha256": "fab56219bcf16c1abfc76a710f8cb320958d150431a01233de28a640b609c57e"
+    },
+    {
+      "path": "outputs/shocks/figures/growth-limits.svg",
+      "bytes": 58476,
+      "sha256": "fedec62c080553981061e28b729237fc5c2989288599036750ceca5ed020a27a"
+    },
+    {
+      "path": "outputs/shocks/figures/investment-cycles.png",
+      "bytes": 106881,
+      "sha256": "4485b3f98e970f4f82ea99a9772c09f52cd9bc2fc0f766784656042e688a410a"
+    },
+    {
+      "path": "outputs/shocks/figures/investment-cycles.svg",
+      "bytes": 52293,
+      "sha256": "7b3ffa7bbe047f93fc8b63900dd99a6fd92a70d7197d512aaf040f1923925f3f"
+    },
+    {
+      "path": "outputs/shocks/incentives.json",
+      "bytes": 155820,
+      "sha256": "962cb5ff62f9d67f5396ba5d376c0f6cce7208358424e730da58b3f500c4885d"
+    },
+    {
+      "path": "outputs/shocks/limits.json",
+      "bytes": 1327428,
+      "sha256": "c0c70b6e3ba094317445b3cf8359091ce3fc73f3ee7d17c9ef90a67fde494a7c"
+    },
+    {
+      "path": "outputs/shocks/results.json",
+      "bytes": 16649731,
+      "sha256": "70abb218384b9b969b1b5df2888f4b6d24b47f3fc0b74dcf553e5f682f607d02"
+    },
+    {
+      "path": "outputs/shocks/strategic-game.json",
+      "bytes": 815683,
+      "sha256": "e7c548b21d98a2d446ebdf14b3daccff9e7ef3d1d2802dc6f1657648664a94a7"
+    },
+    {
+      "path": "outputs/shocks/summary.csv",
+      "bytes": 11978,
+      "sha256": "b22564153d2f6c3921c24fb782eb1c0be0724156a1a15b0058f5e372433e6da9"
+    },
+    {
+      "path": "outputs/teaching/01-town.png",
+      "bytes": 85338,
+      "sha256": "c23ed6b05d04be2b01e4302a19f2c8b155e999b5c0dba0709cef722046e8cd56"
+    },
+    {
+      "path": "outputs/teaching/01-town.svg",
+      "bytes": 3954,
+      "sha256": "8cb65a335012234512b9cf74e202f4ab093d90fd6489bce0904e7b163057e180"
+    },
+    {
+      "path": "outputs/teaching/02-income.png",
+      "bytes": 42928,
+      "sha256": "f8f77c94604f89c838acf3e76a93d2ada3fcc61e2f2c63f2fc7910fa22bdf601"
+    },
+    {
+      "path": "outputs/teaching/02-income.svg",
+      "bytes": 2591,
+      "sha256": "874cc44ac93a32cb1344cb2ddb455ab0fe6168ad5e7b3756ba6e0135acbf398c"
+    },
+    {
+      "path": "outputs/teaching/03-spending.png",
+      "bytes": 77278,
+      "sha256": "98784e549aee972dcc4c03ececbb9536ae09fe965a48115d5b31b5f20d8bf308"
+    },
+    {
+      "path": "outputs/teaching/03-spending.svg",
+      "bytes": 4297,
+      "sha256": "f07839df56f684cd0b034b3574d9ff1cd794874064aa443ce4ee1c93d92d8048"
+    },
+    {
+      "path": "outputs/teaching/04-incentive.png",
+      "bytes": 57344,
+      "sha256": "df812412a918d89adedae3d68e5cc57eff1fc9504439c3e8a842cb8002d9b67b"
+    },
+    {
+      "path": "outputs/teaching/04-incentive.svg",
+      "bytes": 2420,
+      "sha256": "0482feb45438ee17bbb0c094366de843d739b171670f97082976ddbc0507a6db"
+    },
+    {
+      "path": "outputs/teaching/05-no-wages.png",
+      "bytes": 45361,
+      "sha256": "4dfe017373e9b31ab8820b46eb8c8761ae7c216d8b7d108a2d4be89c2ba39468"
+    },
+    {
+      "path": "outputs/teaching/05-no-wages.svg",
+      "bytes": 2770,
+      "sha256": "7bbd31ef950f15fa4d6b0ce324858eef0a8f8c50281f283af5c2dfe45876abc2"
+    },
+    {
+      "path": "outputs/teaching/06-ownership.png",
+      "bytes": 72310,
+      "sha256": "33868adda8e46bf90b2f078bc63beb90232c12a16ce9a7dd58874efdc7d1ea1e"
+    },
+    {
+      "path": "outputs/teaching/06-ownership.svg",
+      "bytes": 4428,
+      "sha256": "803aef53d3c000a9aee79db0acb78a56258144d645716ee262f29d11a80f0567"
+    },
+    {
+      "path": "outputs/teaching/07-smaller.png",
+      "bytes": 44289,
+      "sha256": "ee8238ab94692cbc5c80660e1a469ba9c35e5446ddabc2e5c0c4d1842962c384"
+    },
+    {
+      "path": "outputs/teaching/07-smaller.svg",
+      "bytes": 2093,
+      "sha256": "c0d771f9864201d9c37794768f50559ab23cb4168549d7b39b83b23dc19ed48f"
+    },
+    {
+      "path": "outputs/teaching/08-shrinking.png",
+      "bytes": 105574,
+      "sha256": "fb485eb76b32603d602c4eb4157eff48dff99c45af089bb525570b281572b042"
+    },
+    {
+      "path": "outputs/teaching/08-shrinking.svg",
+      "bytes": 3353,
+      "sha256": "79d6017e0291f1ba2600c1887ed26dd4258daa2e99cb69dcfb19055ad3367aae"
+    },
+    {
+      "path": "outputs/teaching/09-payroll.png",
+      "bytes": 56875,
+      "sha256": "b8b536f5bff6109711ffaf55a44428f718b66ca992307d5be3d9a7c6bf3d8b44"
+    },
+    {
+      "path": "outputs/teaching/09-payroll.svg",
+      "bytes": 2387,
+      "sha256": "c100d473b5aeeaf5d7d857b585edb66bcd7e1901bd6ba8a2dbca628e8387ea24"
+    },
+    {
+      "path": "outputs/teaching/10-recovery.png",
+      "bytes": 48191,
+      "sha256": "be1b57e4381cda8735456c37d12903fd01b4156a93993899beaf50dac1e6977d"
+    },
+    {
+      "path": "outputs/teaching/10-recovery.svg",
+      "bytes": 2215,
+      "sha256": "4e5c1f8759c422efca42928578d1bb3835d0d4593fda584dd7f4beb588f27903"
+    },
+    {
+      "path": "outputs/teaching/11-replacement.png",
+      "bytes": 63643,
+      "sha256": "69347b16f572ed87dbe11dd3ef3b4b734c55efe49bb8ff7c1a9ac79d976c63e5"
+    },
+    {
+      "path": "outputs/teaching/11-replacement.svg",
+      "bytes": 2943,
+      "sha256": "0b254d8193069ae6b002c06b467348dead72bef0507cf8800d76983ae2a5e448"
+    },
+    {
+      "path": "outputs/teaching/12-maxima.png",
+      "bytes": 79757,
+      "sha256": "fea294d65a84db775fe2bac12f0488fa1b02715da38b9e19b7047bd51798a96e"
+    },
+    {
+      "path": "outputs/teaching/12-maxima.svg",
+      "bytes": 1974,
+      "sha256": "d8b9f76730e8177a090176df056f17a94b277a3b8414420428a0ca10f846b146"
+    },
+    {
+      "path": "outputs/teaching/13-bank-opening.png",
+      "bytes": 98192,
+      "sha256": "f331f9505d2577214e631c418f33104dc26dc4929e70d551b0e8fc023e861d46"
+    },
+    {
+      "path": "outputs/teaching/13-bank-opening.svg",
+      "bytes": 2397,
+      "sha256": "2bb83f139c91244b60542b0fca8cf82f3bdb1a218f4aec071629f1b49fc31ddd"
+    },
+    {
+      "path": "outputs/teaching/14-bank-money.png",
+      "bytes": 85116,
+      "sha256": "6d5212724aad755ff8a2ddab71c51a8568d5a36eddc582a22b0d65197676f02a"
+    },
+    {
+      "path": "outputs/teaching/14-bank-money.svg",
+      "bytes": 3098,
+      "sha256": "bb7cf46630fe0fdf655a121a4d312fb75962367db69242f4e035e19556b74296"
+    },
+    {
+      "path": "outputs/teaching/15-bank-bridge.png",
+      "bytes": 93054,
+      "sha256": "dffa2383b3a0de829ca6a5bd12046052b04fc18c94cf5dbca5eb4b3bff1d73c1"
+    },
+    {
+      "path": "outputs/teaching/15-bank-bridge.svg",
+      "bytes": 3185,
+      "sha256": "844b23274592bda9690f081cdc2acd978f5ce7533282b1aea8d3726de32e4b47"
+    },
+    {
+      "path": "outputs/teaching/16-bank-households.png",
+      "bytes": 97486,
+      "sha256": "4a408534b0215c28500d7dbef20910368e09f71369955de46e743fa428dba968"
+    },
+    {
+      "path": "outputs/teaching/16-bank-households.svg",
+      "bytes": 2254,
+      "sha256": "9003419b880614e71bb2471149e6664d49de63c81840baf10b28e0f4f6f8096d"
+    },
+    {
+      "path": "outputs/teaching/17-bank-loss.png",
+      "bytes": 79628,
+      "sha256": "8c41d1590e94be1e9e680b5d1414cdd5dd2b3425815cf8089f0d8e2f9241ff72"
+    },
+    {
+      "path": "outputs/teaching/17-bank-loss.svg",
+      "bytes": 2889,
+      "sha256": "d782e0b0328619801cd26b64f61d39e185bf6cfc49645cc0a17ab2f097b4b3b2"
+    },
+    {
+      "path": "outputs/teaching/manifest.json",
+      "bytes": 17770,
+      "sha256": "0a1f634d3f29ba6e6dfbac836ed87cb25f4c0e5974ff356e73553cc054836a37"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 495,
+      "sha256": "928cb43d8c0b966659cda797c609ad64bdbc9f0675f29cda609b602271ce29b7"
+    },
+    {
+      "path": "requirements-dev.lock",
+      "bytes": 330,
+      "sha256": "43204ab0dd8ebaf4391b7557fbf1c94d8806a31cb823858bbd5dff2dc866444c"
+    },
+    {
+      "path": "research/adoption-astra-review.md",
+      "bytes": 29106,
+      "sha256": "ab18f227b9de530274ee9743255f24d384147eee33a353e6c354a1a17ef729e4"
+    },
+    {
+      "path": "research/adoption-experiment-log.md",
+      "bytes": 8081,
+      "sha256": "fb4ade67b7a649ebba6bc0dd481c679564add7c79eb31b8bd18981ec2b0366b5"
+    },
+    {
+      "path": "research/adoption-foundations.md",
+      "bytes": 15940,
+      "sha256": "2f3d05df44fc31519c3a2dc4d8ffa8073039b19f2c7f338e6bd34d58e77b9dc0"
+    },
+    {
+      "path": "research/adoption-frontier.md",
+      "bytes": 10036,
+      "sha256": "2cefeaacc6e8f035c55ce095d50f402114b49e03a9d103e11062f81a2f1ca37a"
+    },
+    {
+      "path": "research/adoption-model.md",
+      "bytes": 15537,
+      "sha256": "b66759144a648b51b66620ede65f1be7e62d6f1b5a1f4557de0a06f9c84dae8e"
+    },
+    {
+      "path": "research/adoption-protocol.md",
+      "bytes": 3292,
+      "sha256": "af23a4c8695ae559a371d1fae434a953badaba2d2a379b615b59d8c233d3fa0d"
+    },
+    {
+      "path": "research/adoption-sol-review.md",
+      "bytes": 22089,
+      "sha256": "af12a00e167f68171fd992bf861240b7e39e9d0d4eb16e2bf0c6f0b947baa33d"
+    },
+    {
+      "path": "research/adoption-sources.md",
+      "bytes": 10923,
+      "sha256": "e86bfbf9c51e01ea217b77f8c08ebb7829ea8427bca54c7aacc9b7b7611cd3cc"
+    },
+    {
+      "path": "research/adoption-storyboard.md",
+      "bytes": 3097,
+      "sha256": "cfc0e00eda5f5c87bf274dbb4fb1b2571ebd79dd16f555847e613b10ff857ecd"
+    },
+    {
+      "path": "research/adoption-structure.md",
+      "bytes": 7953,
+      "sha256": "bcc03ce8630a4848e181a379db5078127fabe5168608d7b39a4b879f9f0adb4e"
+    },
+    {
+      "path": "research/adoption-validation.md",
+      "bytes": 6427,
+      "sha256": "80d4123b3016ff6c04256b188410791cfc645770330be49f9d382a0ed444ac68"
+    },
+    {
+      "path": "research/adversarial-review.md",
+      "bytes": 10756,
+      "sha256": "3ef36af9ffe90593d6d5ca1f624ae626d1108c9859c16ddd639f098ee95b6c14"
+    },
+    {
+      "path": "research/article-source-review.md",
+      "bytes": 5060,
+      "sha256": "dd55a4270a0fe9f05ad5701bc12cee446daa02be9e4c665be2c657a8cde29849"
+    },
+    {
+      "path": "research/banking-foundations.md",
+      "bytes": 14954,
+      "sha256": "fbdd257b52fb5712363fb7469c4c9a0f304f0b55e8b2fedda2034632ed9e965f"
+    },
+    {
+      "path": "research/banking-model.md",
+      "bytes": 15270,
+      "sha256": "91df3f86bdd2208aa7bc40955c6e284cfecee5829b076e74bc04183c09353686"
+    },
+    {
+      "path": "research/banking-protocol.md",
+      "bytes": 4239,
+      "sha256": "cb6560c1f0b06ece4576154df5c7114bd3c9c97947bd7341ec1c7169c4c51708"
+    },
+    {
+      "path": "research/banking-review.md",
+      "bytes": 11357,
+      "sha256": "9021ed1dc5393c618a427158957da77fdff1bebc45ff8fc610428ec29b4c7344"
+    },
+    {
+      "path": "research/banking-sources.md",
+      "bytes": 12841,
+      "sha256": "3c1294bbfe103bc4737fd45366ca4eec3b789a374697842b6afd8ed257ae8ea4"
+    },
+    {
+      "path": "research/banking-validation.md",
+      "bytes": 10201,
+      "sha256": "0a34e0879cbdb524ea53a4ddd95e3347792731f315454bed48d94a976b0081d3"
+    },
+    {
+      "path": "research/combined-economics-review.md",
+      "bytes": 10866,
+      "sha256": "2c18249aa0153515a5e9c4a074ef30478d570b26274d862ee4b421131d2b1c76"
+    },
+    {
+      "path": "research/combined-edition-verification.md",
+      "bytes": 3990,
+      "sha256": "c9e2a8c36966fd10bf59fee0134bf599797818314e334ee7d80a8dd5f69a4f4d"
+    },
+    {
+      "path": "research/combined-readability-review.md",
+      "bytes": 7424,
+      "sha256": "60855705f03bc8be7ac78e9deb7affc98f60efa04bfa880d04dd1a34d184b23f"
+    },
+    {
+      "path": "research/economic-foundations.md",
+      "bytes": 27403,
+      "sha256": "09bd3f27e25f42685876a44ee0d252d63d4bf0128d05812e1a5e026786e1e2c7"
+    },
+    {
+      "path": "research/editorial-revision.md",
+      "bytes": 2880,
+      "sha256": "7f1e15ec66766d11a41ba36170b41e77ff043a7a84ed37f36d133b1ffbb8c5a3"
+    },
+    {
+      "path": "research/experiment-log.md",
+      "bytes": 6240,
+      "sha256": "0786a4e41ad19c4608ad86902050b27af5463affcc46b41340bc81526e31e29c"
+    },
+    {
+      "path": "research/interview-notes.md",
+      "bytes": 6709,
+      "sha256": "333d9207d4ec8213b51d9a27ce823792efe61dc57de210b6faa15580b3155e7a"
+    },
+    {
+      "path": "research/protocol.md",
+      "bytes": 4576,
+      "sha256": "f3ed2592f014760f07d052778fc244b7f8194f45e7a17a50f71f88674a070317"
+    },
+    {
+      "path": "research/shock-cash-results.md",
+      "bytes": 12455,
+      "sha256": "db41a63534030e509e13af7fd8620e27adac126655731fcc88876e679d13c9bd"
+    },
+    {
+      "path": "research/shock-design-review.md",
+      "bytes": 16185,
+      "sha256": "75827b9261f4eb179a1a54e21e6124aef41316651b7c435b014af19a57dbeb7f"
+    },
+    {
+      "path": "research/shock-protocol.md",
+      "bytes": 4059,
+      "sha256": "41c541e3d02694f73bd0e51497b8d3fe2b6443a719a3504c03354c30d5419577"
+    },
+    {
+      "path": "research/shock-review.md",
+      "bytes": 14773,
+      "sha256": "2a4b209de368cf9637257066fa393198e61b0f53cec79b519e7a2c4ea92328ce"
+    },
+    {
+      "path": "research/shock-specification.md",
+      "bytes": 9912,
+      "sha256": "67a9a22b92e75d6c35471c2477fcb4b78df0e8228730c8b050f14df2cb79ab27"
+    },
+    {
+      "path": "research/shock-validation.md",
+      "bytes": 2597,
+      "sha256": "95e8c7b09a88346504bf41483e6326a0b296e626e0731bf47815cdb45da827ac"
+    },
+    {
+      "path": "research/sources-economics.json",
+      "bytes": 24057,
+      "sha256": "57e1732a6e1f0e4060230c1b8dc298c74efbb9ae300029ca598d90ea26e207b7"
+    },
+    {
+      "path": "research/sources-interviews.json",
+      "bytes": 5215,
+      "sha256": "2e26e94c4714e668874641b2a5261964fc77eca22fe0148c24647986195f0d83"
+    },
+    {
+      "path": "research/strategic-game-note.md",
+      "bytes": 11243,
+      "sha256": "f38b611a2d15b29fefe2c2b25cdd06af769549fae4d8166716963b70071cb5ba"
+    },
+    {
+      "path": "research/visual-data-review.md",
+      "bytes": 9178,
+      "sha256": "2037165cf60596cfed591664bb43048e9fa13ffbe6f4ee9d5b6bb50825f5e345"
+    },
+    {
+      "path": "research/visual-editorial-review.md",
+      "bytes": 6855,
+      "sha256": "72cbc3ee015f01d7bd68e045a784edea34c9532cf4c5b7c943a5c8d68a536896"
+    },
+    {
+      "path": "research/visual-qa.md",
+      "bytes": 7660,
+      "sha256": "9321a8ab33af63c6bd4a7b5d71f8040ac0f780626699f5139b2d2b3a721c02be"
+    },
+    {
+      "path": "research/visual-storyboard.md",
+      "bytes": 3114,
+      "sha256": "a049cc7bb67792fbc76f6c6dc4fcd02f398916e26637aa36bca3d83c1c7c284d"
+    },
+    {
+      "path": "scripts/adoption_extra_figures.py",
+      "bytes": 8022,
+      "sha256": "2d752d236e4c6e74393f5d205b295d0063bf2e903a28b7c35330a3243149f6d0"
+    },
+    {
+      "path": "scripts/adoption_figures.py",
+      "bytes": 37662,
+      "sha256": "35fec044f85d2ffe60462a2d8507c46d1f086e3611d23b95845f89cae47dff8e"
+    },
+    {
+      "path": "scripts/analyze_adoption.py",
+      "bytes": 2944,
+      "sha256": "7700feb17a0910bdc48351d389a84df915508e192fd73131b9236a594b0c20d4"
+    },
+    {
+      "path": "scripts/banking_figures.py",
+      "bytes": 11049,
+      "sha256": "f57b2df6a425013a99d99fc57ddf34714d72322c903dc7bf5bacd95fa1354a55"
+    },
+    {
+      "path": "scripts/build_adoption_report.py",
+      "bytes": 5278,
+      "sha256": "90e4f989d7b2dc9e568f633c094b6909cc4d4c99679d2a4cac13b5912fd5fda6"
+    },
+    {
+      "path": "scripts/build_banking_report.py",
+      "bytes": 7536,
+      "sha256": "d97815036b0400934093b27d052104aaef031037ce719690e474797436643e35"
+    },
+    {
+      "path": "scripts/build_combined_report.py",
+      "bytes": 5846,
+      "sha256": "cd1cecd70442df6fbb51c9199ee93fe2fde7cee189ace530aa69a8f548e4c0ab"
+    },
+    {
+      "path": "scripts/build_report.py",
+      "bytes": 8246,
+      "sha256": "23589546ae1c56d6bbaf6b0675e69bbb84dd69b8ab5c3e1c64d1497a41f060f3"
+    },
+    {
+      "path": "scripts/build_shock_report.py",
+      "bytes": 10241,
+      "sha256": "7cde02620cef82934668e54e528b7bfff10610d5738f415e4e3ce0eafa63952c"
+    },
+    {
+      "path": "scripts/build_substack_export.py",
+      "bytes": 1800,
+      "sha256": "c8ba4ee4972d47f420cc4c966fc3f7b25c43f53d29390ca391e3c74540c98988"
+    },
+    {
+      "path": "scripts/build_teaching.py",
+      "bytes": 5177,
+      "sha256": "212faf762141adc317c10a49a7e03ae685c930400f8967952df64af8db5bf453"
+    },
+    {
+      "path": "scripts/combined_figures.py",
+      "bytes": 2654,
+      "sha256": "0432e7aaa0170999ca2a2f22bb06b097b5653499f6658c5b82dcb738be172ebf"
+    },
+    {
+      "path": "scripts/run_adoption.py",
+      "bytes": 16651,
+      "sha256": "b2a61c77788e77139a4d883fbfdd9028f917cd803f07ec8c8a83e52eca77648e"
+    },
+    {
+      "path": "scripts/run_adoption_frontier.py",
+      "bytes": 13499,
+      "sha256": "a008818479a68dca7ed7142200b8148e26b14638449f86edfd628d67b3593f1c"
+    },
+    {
+      "path": "scripts/run_adoption_structure.py",
+      "bytes": 6523,
+      "sha256": "1535e029c353ee9aa48bc2db7835119e721b8f19428efe7e2cfc1ef9cdb16e8c"
+    },
+    {
+      "path": "scripts/run_banking.py",
+      "bytes": 800,
+      "sha256": "bafe74a5f815de5a13dd94213b8c864f77e561c53e2babf23d986f89155998a5"
+    },
+    {
+      "path": "scripts/run_gradual_banking.py",
+      "bytes": 2506,
+      "sha256": "e660e50b0b3cfd6ddf53844119c7c695f553ba7d37bfa8acae1a266e3f2780cf"
+    },
+    {
+      "path": "scripts/run_gradual_legacy.py",
+      "bytes": 2067,
+      "sha256": "5b8efb61701dc3171c770f2eb536906d055c49fc14a4b64a213b1b18d1bb6b04"
+    },
+    {
+      "path": "scripts/visual_figures.py",
+      "bytes": 23318,
+      "sha256": "6f5156890ef73d5a9562aba7c24c52480625160d9be68a984396e1ee0dea205b"
+    },
+    {
+      "path": "site/00-gdp-without-wages.html",
+      "bytes": 16332,
+      "sha256": "a67148f48418b2561897846de6c66988c3b9c57567a3bc47cff36410a24df8bb"
+    },
+    {
+      "path": "site/01-who-buys-the-output.html",
+      "bytes": 13402,
+      "sha256": "bbe178b770ca36bfcc9b7f904702eb02e0bac9bb348b1b4db791a38f463d99db"
+    },
+    {
+      "path": "site/02-an-economy-without-paychecks.html",
+      "bytes": 14968,
+      "sha256": "eb8a7e42ff8cb52387e8c74f54130a1c54dff3ef1f86378d2d45a9d1156ee40f"
+    },
+    {
+      "path": "site/03-when-the-economy-breaks-animated.html",
+      "bytes": 106761,
+      "sha256": "b5089d1bf43ac305165088700fb387e549c5de407e53c33b1e147299cb2851b9"
+    },
+    {
+      "path": "site/03-when-the-economy-breaks.html",
+      "bytes": 85442,
+      "sha256": "1e700f6adc8cfc79ebeee1e6a1a979e7c4101c9a079c40889d2573d06be817f9"
+    },
+    {
+      "path": "site/04-ai-arrives-one-shop-at-a-time-animated.html",
+      "bytes": 94565,
+      "sha256": "b656bb4718a3349775974f55d79e93428e6e4f3e126c4b50eb129700bbd3b640"
+    },
+    {
+      "path": "site/04-ai-arrives-one-shop-at-a-time.html",
+      "bytes": 78468,
+      "sha256": "7d4fbf03591e2d9e604784103633ea9705239872e958aef5ccd0b7a6f28c7ab1"
+    },
+    {
+      "path": "site/05-appendix.html",
+      "bytes": 27207,
+      "sha256": "8811aaca0a301a52069eda46b07be2cb9e886ab29292b208ba5d4c3bf8cf10b4"
+    },
+    {
+      "path": "site/05-who-buys-what-ai-makes-animated.html",
+      "bytes": 123162,
+      "sha256": "1d93ac46f9e9ff4acb12fa296251da2e7e1454e7030884ad76b25d1273ad01f9"
+    },
+    {
+      "path": "site/05-who-buys-what-ai-makes-substack.html",
+      "bytes": 25169,
+      "sha256": "8a70a4e8fce61a45fcfac8b839b5c434a64b7290cf849e8578c3b7afdb0247bd"
+    },
+    {
+      "path": "site/05-who-buys-what-ai-makes.html",
+      "bytes": 101108,
+      "sha256": "41a260b5e3580dfb098ad0f36e4d1323dd5ad8c4a92f97a313e3327c1108b5bf"
+    },
+    {
+      "path": "site/adoption.css",
+      "bytes": 2643,
+      "sha256": "52014a97be8f14c993fff8a7ba377cd37ef57a7a71abf4df503254853d476c0e"
+    },
+    {
+      "path": "site/adoption.html",
+      "bytes": 12869278,
+      "sha256": "f29adf6fe19523e05a7fc32aecc7c52da55698406ba00c7c2b1adab92f90ef28"
+    },
+    {
+      "path": "site/adoption.js",
+      "bytes": 12844,
+      "sha256": "a872c5cc9a32557c2e758419a618d7b6cccb35c38eb884afa7cfdc3540b5fc05"
+    },
+    {
+      "path": "site/adoption.template.html",
+      "bytes": 6691,
+      "sha256": "0b0bd1d00ec27b4d2b989e0dfec9a9eca21274ba001570d0c079743a14f7d4b7"
+    },
+    {
+      "path": "site/banking.css",
+      "bytes": 2044,
+      "sha256": "b336951234e312b7a3f8b9ef03c32e4e4426445d531b773eed49434d7925f131"
+    },
+    {
+      "path": "site/banking.html",
+      "bytes": 1366349,
+      "sha256": "fca624fa9a7a48f5ec6551296db753f154dc0a55705b4d029e20897a8e6bdff8"
+    },
+    {
+      "path": "site/banking.js",
+      "bytes": 7438,
+      "sha256": "00ca2e285e5869275e4cc9bcae79f9f4de3fd187bb3dace9f76627e246269712"
+    },
+    {
+      "path": "site/banking.template.html",
+      "bytes": 6760,
+      "sha256": "e7b3ec7cfe635464cd0fd25ffbf66ad45f96cd78433e63f2b9f7f853994ad997"
+    },
+    {
+      "path": "site/economic-foundations.html",
+      "bytes": 33555,
+      "sha256": "5daf850da1e4e72f92aa39d09ebb42a5d4aa1f717dbcc0afccd64e8adf2d1a85"
+    },
+    {
+      "path": "site/explorer.js",
+      "bytes": 2947,
+      "sha256": "4d7450f24bf332f5f2ae4e2ba97910e5c4da4d287ef9f55699d76403162b9354"
+    },
+    {
+      "path": "site/index.html",
+      "bytes": 1461983,
+      "sha256": "1926ec709aba3cff4d94cd8e7930530995f7d52e3aa3c6c624976a39794d8df8"
+    },
+    {
+      "path": "site/index.template.html",
+      "bytes": 8919,
+      "sha256": "1eaa7e79d1471b896886cf0f65c4ce0da3fc62aadd0611d70e6d7a9e2a1bb052"
+    },
+    {
+      "path": "site/interview-notes.html",
+      "bytes": 7702,
+      "sha256": "075ecf6da5de0f6d0cc648b8a3aae6d3a4e82dadb09538993edc4c682f3167b4"
+    },
+    {
+      "path": "site/model-spec.html",
+      "bytes": 16912,
+      "sha256": "a0ffbde32c9b92c4f7b92bcf669cd4f2464fd3bde164fec8fca028c49bbd98f0"
+    },
+    {
+      "path": "site/shocks.html",
+      "bytes": 1603095,
+      "sha256": "3fd65a0c5696aed55161ffdbeb1f873c8b4b715b98aab64ac8ca2c40c02862d2"
+    },
+    {
+      "path": "site/shocks.js",
+      "bytes": 6621,
+      "sha256": "5329815aa788797d25864b04c75d068c346ae792d747c7bec9ef8a625bcd60ce"
+    },
+    {
+      "path": "site/shocks.template.html",
+      "bytes": 8725,
+      "sha256": "038781dc526cf5c5b5ae3344cef244f28dc7c621edcbe9a77f19ba666b299e21"
+    },
+    {
+      "path": "site/style.css",
+      "bytes": 4663,
+      "sha256": "38f7eb758dfb8e1817510f45b56cb14510331ca066f04b047ae04656949c8439"
+    },
+    {
+      "path": "site/teaching.css",
+      "bytes": 3715,
+      "sha256": "33ae2d49b43f7ee63e1e99a97cf9c0df807be101ea65b257718c97ddba257a89"
+    },
+    {
+      "path": "site/teaching.js",
+      "bytes": 11910,
+      "sha256": "ca53ad4e36989614e899a2a4afa7da9f68832989a62036f36ffbefa8e2b76caf"
+    },
+    {
+      "path": "src/toy_economy/__init__.py",
+      "bytes": 344,
+      "sha256": "312056de1b4bdce72d3bb7bc11a5acd73b1e24cfd407f772212b43f4c642a041"
+    },
+    {
+      "path": "src/toy_economy/adoption.py",
+      "bytes": 17047,
+      "sha256": "5b9cc8e9754c8040f2a8cc8b9fdbf1ba3f2eb1d51422fd32d431878c6922534b"
+    },
+    {
+      "path": "src/toy_economy/adoption_analysis.py",
+      "bytes": 2624,
+      "sha256": "10c4b4d039480543480acc3528f2e7aa5cebc9caf3ef75c3bba7cb3155d824b4"
+    },
+    {
+      "path": "src/toy_economy/adoption_decisions.py",
+      "bytes": 4307,
+      "sha256": "5aa62aab5c6dc1d1a491256bbb421b7f4ab0de414e22c56da62cedee07b16a76"
+    },
+    {
+      "path": "src/toy_economy/adoption_engine.py",
+      "bytes": 14676,
+      "sha256": "11b367d60381a84869b221cb1fed57196911b8d07a5da55a5e50a554f6e1921a"
+    },
+    {
+      "path": "src/toy_economy/adoption_experiments.py",
+      "bytes": 5694,
+      "sha256": "049975c18a505a377cc27dff9fa60cbe88e38972eb24cc24b4eacff00ef68d48"
+    },
+    {
+      "path": "src/toy_economy/adoption_structure.py",
+      "bytes": 18477,
+      "sha256": "4618053ee32c58c84841c41c4c601fd28ccebdca8b7cdc4c10d5d2f4d2b3bf70"
+    },
+    {
+      "path": "src/toy_economy/bank.py",
+      "bytes": 13693,
+      "sha256": "ef85404c5098053ffe596e5c11e28e0258235dfb524ed618f13149ee3599bc21"
+    },
+    {
+      "path": "src/toy_economy/bank_cases.py",
+      "bytes": 13628,
+      "sha256": "041d5ff7270dfea06797ee56fc4c1ab049628064968319a8f02e8e657a90e5c2"
+    },
+    {
+      "path": "src/toy_economy/bank_dynamics.py",
+      "bytes": 16670,
+      "sha256": "eeb41a18a4319030865ee72bf46b0dff2ed6966194f3c55502ac105a745825f5"
+    },
+    {
+      "path": "src/toy_economy/cli.py",
+      "bytes": 2043,
+      "sha256": "d895fc6a5976d6777e682237898000fe71cc2fe8845ed7e90613f20325153e49"
+    },
+    {
+      "path": "src/toy_economy/closure.py",
+      "bytes": 7084,
+      "sha256": "4ed2ec311244824e7c37339ae0620e0af550c27f11ae0c06251ff2b05058803b"
+    },
+    {
+      "path": "src/toy_economy/dynamics.py",
+      "bytes": 16464,
+      "sha256": "439cb5b9b3455c69bbb9002d8a15e0da0c7c200cba3c3e142af0cf5633b00b88"
+    },
+    {
+      "path": "src/toy_economy/growth.py",
+      "bytes": 3225,
+      "sha256": "e12efd9a74a25d52feaf35c4299720c0e1ad90fe1b50e7e3beaaf51a748415e0"
+    },
+    {
+      "path": "src/toy_economy/incentives.py",
+      "bytes": 5334,
+      "sha256": "fbac3565903f06c6ed78e3366eb3e669350a60f58674d54de72c882caebb5546"
+    },
+    {
+      "path": "src/toy_economy/ledger.py",
+      "bytes": 2574,
+      "sha256": "a57bdc65d086b1a3de642e5ebc59ed7794806392a1eabc30a376ebe6a5c48261"
+    },
+    {
+      "path": "src/toy_economy/limits.py",
+      "bytes": 5255,
+      "sha256": "1add59212ccdfce76db5a5c6f264a933ea81fa7bb358bc5bcc2dce1fdfc333db"
+    },
+    {
+      "path": "src/toy_economy/production.py",
+      "bytes": 4631,
+      "sha256": "b95282bc5c1e24dabbd014fe6a2930faeca70d1c85e6cd2198014c6e5a02b081"
+    },
+    {
+      "path": "src/toy_economy/scenarios.py",
+      "bytes": 6598,
+      "sha256": "e05d7ec1843da72589600e007dac525f1c6d159dc972e986464b5c2a0678505b"
+    },
+    {
+      "path": "src/toy_economy/shock_cases.py",
+      "bytes": 15863,
+      "sha256": "a6b6c499c543072371319bcd1f3213bf4d9300c2a6afa6e2686d287c66c106e7"
+    },
+    {
+      "path": "src/toy_economy/shocks.py",
+      "bytes": 5105,
+      "sha256": "a2604c311a6fee8ad260046fb50b6287133216e3fa2ce1e94f31f896a96bed87"
+    },
+    {
+      "path": "src/toy_economy/strategic_game.py",
+      "bytes": 10361,
+      "sha256": "8e2b37c61303f502ac92a0d16706c6c85f30a587eb7cc83b80d126aa8fbfa311"
+    },
+    {
+      "path": "tests/teaching.test.cjs",
+      "bytes": 4535,
+      "sha256": "c05cec3344936ef434ba50b2271d65e86043fdd7790293be4b189885b88a547e"
+    },
+    {
+      "path": "tests/test_adoption_analysis.py",
+      "bytes": 1421,
+      "sha256": "1b628e0f614117759133291ce0e445e4404ae01d9647ceb8d87e4f2ded5524f1"
+    },
+    {
+      "path": "tests/test_adoption_assets.py",
+      "bytes": 3340,
+      "sha256": "bbac30fb815789cb1e688c75b67786a1ee866be1b3e025125ddf85c93671d2f9"
+    },
+    {
+      "path": "tests/test_adoption_core.py",
+      "bytes": 12574,
+      "sha256": "e510cba7ab29e367111c2160ce9637a15ca0ac05c949efe5c1f39e0d5386a408"
+    },
+    {
+      "path": "tests/test_adoption_decisions.py",
+      "bytes": 8175,
+      "sha256": "02013520cdefe6ef23db941f1da4070db87eab8251b732f9029bc7aaa3912bca"
+    },
+    {
+      "path": "tests/test_adoption_experiments.py",
+      "bytes": 2005,
+      "sha256": "1546a31a451f72b868ee4b3e8f47bdf412705cd4def922c23ab4f393d785efb7"
+    },
+    {
+      "path": "tests/test_adoption_frontier.py",
+      "bytes": 3160,
+      "sha256": "b801d750a8c237539453e423eedd5196d6677290894e2c0f1e9e0f0ae52c1fcb"
+    },
+    {
+      "path": "tests/test_adoption_shifts.py",
+      "bytes": 5871,
+      "sha256": "6f3b5299b78c7696d00694c4c855f4069a422cf85c4bec211868a5101dfa8bc1"
+    },
+    {
+      "path": "tests/test_adoption_structure.py",
+      "bytes": 11492,
+      "sha256": "40f5106716ca3b9b8dcc94a40b14098d4844ed42bdcb8abc0965b54268dd8d08"
+    },
+    {
+      "path": "tests/test_bank.py",
+      "bytes": 10754,
+      "sha256": "0eed28c9e20b58a4a06688eb834a57b7fe1bebd2d6372b7e61fb51a2e258870a"
+    },
+    {
+      "path": "tests/test_bank_dynamics.py",
+      "bytes": 11518,
+      "sha256": "2c2482f23568ce151d27461cba4acbe95fef8938f2480e219bbbfc305cb8a76c"
+    },
+    {
+      "path": "tests/test_banking_assets.py",
+      "bytes": 4357,
+      "sha256": "62bcb5aa076957b064a262988bc13bcd75c54bde86f3842d978e84d18c874cc6"
+    },
+    {
+      "path": "tests/test_closure.py",
+      "bytes": 7623,
+      "sha256": "00423ca595bce92c7f65b033e80f23767c2b9b8495c7536a8176a4a953f99501"
+    },
+    {
+      "path": "tests/test_dynamics.py",
+      "bytes": 9546,
+      "sha256": "943d6f79e209513897ebca685187f152a171d09f0364efae85427e370333e43b"
+    },
+    {
+      "path": "tests/test_growth.py",
+      "bytes": 2236,
+      "sha256": "ea90c2a162b58118bdf4e1efed06ef328f242efaa1f5fb022fd4c5ce6245d4a1"
+    },
+    {
+      "path": "tests/test_incentives.py",
+      "bytes": 3715,
+      "sha256": "8e6a89fa0e73273e664e88b204654fab1717d5eaa65e5a019a4e91b86a768346"
+    },
+    {
+      "path": "tests/test_limits.py",
+      "bytes": 2808,
+      "sha256": "5640f371616e761b932c23aaa6487ea34e4e2452e076c3e706745e060b7e1598"
+    },
+    {
+      "path": "tests/test_production.py",
+      "bytes": 2579,
+      "sha256": "8b3a6a6c7e028e9314686c1bb7e35d52e81d07d58efa3626da9af2b0c64f61a0"
+    },
+    {
+      "path": "tests/test_scenarios.py",
+      "bytes": 2387,
+      "sha256": "7960d8383c07ddd3a724aa66168d9aea3c2d71a2cc8914ea9c857dcbafb5985d"
+    },
+    {
+      "path": "tests/test_shocks.py",
+      "bytes": 12641,
+      "sha256": "952f40b6bdff67ceb99413825e5d46672c77f09750e409fcb442e7ef24b1159b"
+    },
+    {
+      "path": "tests/test_strategic_game.py",
+      "bytes": 6164,
+      "sha256": "da893ecd70b3c65874381711654503a807de22aa4ba56f032d8805a5a05152db"
+    },
+    {
+      "path": "tests/test_teaching_assets.py",
+      "bytes": 3013,
+      "sha256": "6d4fa8f966ec6d3f4651d3773515cbb5d7be7231b8a2f2fb14a88d2e54ec3f4c"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 980" width="560" height="980" role="img" aria-labelledby="05-paid-work-title 05-paid-work-desc">
+<title id="05-paid-work-title">People, agreed time and work done</title>
+<desc id="05-paid-work-desc">For each matched adoption case, compare headcount, contracted hours, and actual productive hours. Time is expressed as full-shift equivalents for the whole worker group. A person can remain employed while their hours fall.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="980" fill="#fffdf8"/>
+<text x="24" y="46" font-size="31" fill="#223c36" text-anchor="start">People and time are different</text>
+<text x="24" y="92" font-size="26" fill="#58675f" text-anchor="start">Time is in full-shift units</text>
+<g class="teaching-stage" data-step="1">
+<rect x="24" y="124" width="512" height="164" rx="12" fill="#edf1ea"/>
+<text x="42" y="163" font-size="27" fill="#236654" text-anchor="start">Same pay; more capacity</text>
+<text x="104" y="207" font-size="26" fill="#58675f" text-anchor="middle">People</text>
+<text x="104" y="260" font-size="39" fill="#223c36" text-anchor="middle">10</text>
+<text x="280" y="207" font-size="26" fill="#58675f" text-anchor="middle">Contract</text>
+<text x="280" y="260" font-size="39" fill="#223c36" text-anchor="middle">10</text>
+<text x="456" y="207" font-size="26" fill="#58675f" text-anchor="middle">Work done</text>
+<text x="456" y="260" font-size="39" fill="#223c36" text-anchor="middle">6.8</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<rect x="24" y="309" width="512" height="164" rx="12" fill="#edf1ea"/>
+<text x="42" y="348" font-size="27" fill="#236654" text-anchor="start">Same pay; less time</text>
+<text x="104" y="392" font-size="26" fill="#58675f" text-anchor="middle">People</text>
+<text x="104" y="445" font-size="39" fill="#223c36" text-anchor="middle">10</text>
+<text x="280" y="392" font-size="26" fill="#58675f" text-anchor="middle">Contract</text>
+<text x="280" y="445" font-size="39" fill="#223c36" text-anchor="middle">6</text>
+<text x="456" y="392" font-size="26" fill="#58675f" text-anchor="middle">Work done</text>
+<text x="456" y="445" font-size="39" fill="#223c36" text-anchor="middle">5.4</text>
+</g>
+<g class="teaching-stage" data-step="3">
+<rect x="24" y="494" width="512" height="164" rx="12" fill="#edf1ea"/>
+<text x="42" y="533" font-size="27" fill="#236654" text-anchor="start">Hourly pay; less time</text>
+<text x="104" y="577" font-size="26" fill="#58675f" text-anchor="middle">People</text>
+<text x="104" y="630" font-size="39" fill="#223c36" text-anchor="middle">10</text>
+<text x="280" y="577" font-size="26" fill="#58675f" text-anchor="middle">Contract</text>
+<text x="280" y="630" font-size="39" fill="#223c36" text-anchor="middle">6</text>
+<text x="456" y="577" font-size="26" fill="#58675f" text-anchor="middle">Work done</text>
+<text x="456" y="630" font-size="39" fill="#223c36" text-anchor="middle">4.8</text>
+</g>
+<g class="teaching-stage" data-step="4">
+<rect x="24" y="679" width="512" height="164" rx="12" fill="#edf1ea"/>
+<text x="42" y="718" font-size="27" fill="#236654" text-anchor="start">Layoffs</text>
+<text x="104" y="762" font-size="26" fill="#58675f" text-anchor="middle">People</text>
+<text x="104" y="815" font-size="39" fill="#223c36" text-anchor="middle">6</text>
+<text x="280" y="762" font-size="26" fill="#58675f" text-anchor="middle">Contract</text>
+<text x="280" y="815" font-size="39" fill="#223c36" text-anchor="middle">6</text>
+<text x="456" y="762" font-size="26" fill="#58675f" text-anchor="middle">Work done</text>
+<text x="456" y="815" font-size="39" fill="#223c36" text-anchor="middle">4.8</text>
+</g>
+<g class="teaching-stage" data-step="5">
+<text x="24" y="911" font-size="26" fill="#58675f" text-anchor="start">Contract = agreed time.</text>
+<text x="24" y="953" font-size="26" fill="#58675f" text-anchor="start">Work done = productive time.</text>
+</g>
+</svg>

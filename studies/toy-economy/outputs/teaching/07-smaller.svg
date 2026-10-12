@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 480" width="560" height="480" role="img" aria-labelledby="07-smaller-title 07-smaller-desc">
+<title id="07-smaller-title">Fixed equipment orders support a smaller economy</title>
+<desc id="07-smaller-desc">Baseline purchases 60 workers+20 owners+20 equipment=100. With no wages, owner consumption 20 plus fixed equipment 20 supports GDP 40. Empty bar length means less output, not destroyed money.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="480" fill="#fffdf8"/>
+<g class="teaching-stage" data-step="1">
+<text x="24" y="50" font-size="27" fill="#223c36" text-anchor="start">Starting town</text>
+<rect x="24" y="67" width="512" height="34" rx="0" fill="#edf1ea"/>
+<rect x="24.0" y="67" width="307.2" height="34" rx="0" fill="#236654"/>
+<rect x="331.2" y="67" width="102.4" height="34" rx="0" fill="#a66d13"/>
+<rect x="433.6" y="67" width="102.4" height="34" rx="0" fill="#376d9a"/>
+<text x="536" y="139" font-size="32" fill="#223c36" text-anchor="end">60 + 20 + 20 = 100</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<line x1="280" y1="170" x2="280" y2="215" stroke="#223c36" stroke-width="3"/>
+<line x1="273.78893279265463" y1="205.92130823599354" x2="280" y2="215" stroke="#223c36" stroke-width="3"/>
+<line x1="286.21106720734537" y1="205.92130823599354" x2="280" y2="215" stroke="#223c36" stroke-width="3"/>
+<circle class="travel-token" data-step="2" data-from="280,170" data-to="280,215" r="8" fill="#223c36"/>
+<text x="24" y="266" font-size="27" fill="#223c36" text-anchor="start">No wages; equipment stays 20</text>
+<rect x="24" y="283" width="512" height="34" rx="0" fill="#edf1ea"/>
+<rect x="24.0" y="283" width="102.4" height="34" rx="0" fill="#a66d13"/>
+<rect x="126.4" y="283" width="102.4" height="34" rx="0" fill="#376d9a"/>
+<text x="536" y="355" font-size="32" fill="#223c36" text-anchor="end">0 + 20 + 20 = 40</text>
+<text x="280" y="439" font-size="27" fill="#58675f" text-anchor="middle">Same scale. Less output sold.</text>
+</g>
+</svg>

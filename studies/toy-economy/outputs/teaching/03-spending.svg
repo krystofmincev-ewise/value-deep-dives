@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 685" width="560" height="685" role="img" aria-labelledby="03-spending-title 03-spending-desc">
+<title id="03-spending-title">Where the income goes next</title>
+<desc id="03-spending-desc">Workers spend 60 on household goods. Owners spend 20 on household goods and finance 20 of equipment. Household consumption 80 plus equipment 20 equals GDP 100.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="685" fill="#fffdf8"/>
+<g class="teaching-stage" data-step="1">
+<rect x="24" y="20" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="24" y="20" width="6" height="112" rx="0" fill="#236654"/>
+<text x="42" y="55" font-size="26" fill="#236654" text-anchor="start">Workers receive</text>
+<text x="42" y="103" font-size="42" fill="#236654" text-anchor="start">60</text>
+<line x1="147" y1="134" x2="147" y2="195" stroke="#236654" stroke-width="3"/>
+<line x1="140.7889327926546" y1="185.92130823599354" x2="147" y2="195" stroke="#236654" stroke-width="3"/>
+<line x1="153.2110672073454" y1="185.92130823599354" x2="147" y2="195" stroke="#236654" stroke-width="3"/>
+<circle class="travel-token" data-step="1" data-from="147,134" data-to="147,195" r="8" fill="#236654"/>
+<rect x="24" y="210" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="24" y="210" width="6" height="112" rx="0" fill="#236654"/>
+<text x="42" y="245" font-size="26" fill="#236654" text-anchor="start">Household use</text>
+<text x="42" y="293" font-size="42" fill="#236654" text-anchor="start">60</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<rect x="290" y="20" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="290" y="20" width="6" height="112" rx="0" fill="#a66d13"/>
+<text x="308" y="55" font-size="26" fill="#a66d13" text-anchor="start">Owners receive</text>
+<text x="308" y="103" font-size="42" fill="#a66d13" text-anchor="start">40</text>
+<line x1="413" y1="134" x2="413" y2="195" stroke="#a66d13" stroke-width="3"/>
+<line x1="406.78893279265463" y1="185.92130823599354" x2="413" y2="195" stroke="#a66d13" stroke-width="3"/>
+<line x1="419.21106720734537" y1="185.92130823599354" x2="413" y2="195" stroke="#a66d13" stroke-width="3"/>
+<circle class="travel-token" data-step="2" data-from="413,134" data-to="413,195" r="8" fill="#a66d13"/>
+<rect x="290" y="210" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="290" y="210" width="6" height="112" rx="0" fill="#a66d13"/>
+<text x="308" y="245" font-size="26" fill="#a66d13" text-anchor="start">Household use</text>
+<text x="308" y="293" font-size="42" fill="#a66d13" text-anchor="start">20</text>
+<rect x="290" y="355" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="290" y="355" width="6" height="112" rx="0" fill="#376d9a"/>
+<text x="308" y="390" font-size="26" fill="#376d9a" text-anchor="start">New equipment</text>
+<text x="308" y="438" font-size="42" fill="#376d9a" text-anchor="start">20</text>
+<line x1="413" y1="133" x2="547" y2="133" stroke="#376d9a" stroke-width="3"/>
+<line x1="547" y1="133" x2="547" y2="340" stroke="#376d9a" stroke-width="3"/>
+<line x1="413" y1="340" x2="547" y2="340" stroke="#376d9a" stroke-width="3"/>
+<line x1="413" y1="340" x2="413" y2="353" stroke="#376d9a" stroke-width="3"/>
+<line x1="406.78893279265463" y1="343.92130823599354" x2="413" y2="353" stroke="#376d9a" stroke-width="3"/>
+<line x1="419.21106720734537" y1="343.92130823599354" x2="413" y2="353" stroke="#376d9a" stroke-width="3"/>
+<circle class="travel-token" data-step="2" data-from="413,133" data-via="547,133;547,340;413,340" data-to="413,353" r="8" fill="#376d9a"/>
+</g>
+<g class="teaching-stage" data-step="3">
+<text x="24" y="522" font-size="29" fill="#223c36" text-anchor="start">Households 80 + equipment 20</text>
+<text x="24" y="563" font-size="27" fill="#223c36" text-anchor="start">Final purchases</text>
+<rect x="24" y="580" width="512" height="34" rx="0" fill="#edf1ea"/>
+<rect x="24.0" y="580" width="307.2" height="34" rx="0" fill="#236654"/>
+<rect x="331.2" y="580" width="102.4" height="34" rx="0" fill="#a66d13"/>
+<rect x="433.6" y="580" width="102.4" height="34" rx="0" fill="#376d9a"/>
+<text x="536" y="652" font-size="32" fill="#223c36" text-anchor="end">GDP 100</text>
+</g>
+</svg>

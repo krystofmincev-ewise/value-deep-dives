@@ -1,0 +1,106 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Who buys what the machines make?</title><link rel="stylesheet" href="style.css"></head><body><main class="article"><nav><a href="index.html">← Interactive economy</a><a href="01-who-buys-the-output.html">Part one</a><a href="02-an-economy-without-paychecks.html">Part two</a></nav><h1>Who buys what the machines make?</h1>
+<p><em>A follow-up to “AI needs a customer”. Draft for review, 10 October 2026. All model numbers are invented examples, not economic forecasts.</em></p>
+<p>A machine arrives in a small town. It lets every business make twice as much. Nobody gets a pay rise.</p>
+<p>The obvious question is who buys the extra output.</p>
+<p>My first instinct is to look at the workers. Their pay packets have not changed. How can they buy twice as much? If the machine then takes their jobs, the question becomes harder.</p>
+<p>But there is someone else in the town. The owners receive income too. And there is something else that can change: the price.</p>
+<p>That is the distinction I wanted to make more concrete after listening to Dylan Patel on <a href="https://www.youtube.com/watch?v=LwMtHI7BHWI&amp;t=909s">Big Technology</a>. He described a world in which labor income stays roughly flat while the rest of the economy grows much faster. I had already discussed falling prices, investment and ownership in <a href="https://krystofmincev.substack.com/p/ai-needs-a-customer">AI needs a customer</a>. This time I wanted to follow the money all the way around.</p>
+<p>So I imagined a town small enough to fit in a spreadsheet, and modeled it in code.</p>
+<h2>Ten businesses and twenty people</h2>
+<p>There are ten workers and ten owners. There are two businesses extracting raw materials, two processing them, two supplying intermediate goods and services, two making things people consume, and two making equipment for businesses.</p>
+<p>No stage has a single supplier. That does not magically create perfect competition: the model does not calculate how rivals set prices. It lets us change prices and see what follows.</p>
+<p>For spending, the code pools the workers into one household group and the owners into another. It does not calculate the individual budget of each partially displaced worker. Workers can divide their time across businesses. Each employed worker earns 6 per period, so ten workers receive 60. There is no government, foreign trade or borrowing. All figures are invented money units. A period is simply one round of the model, not a prediction about a calendar year.</p>
+<p>We start with 100 of final output. Households buy 80; businesses buy 20 of newly produced equipment.</p>
+<p>The businesses also buy from one another. Add all ten companies' invoices and turnover is 169.4. That does not make GDP 169.4. Intermediate purchases account for 69.4 of those invoices. Subtract them and value added is 100. Counting both the steel and the finished machine as separate final output would count part of the machine twice. <a href="https://www.bea.gov/help/faq/1197">BEA's definition</a>.</p>
+<p>The 100 becomes income: 60 goes to workers and 40 to owners. For now, “owner income” means gross operating surplus. It has not yet been reduced for worn-out capital, taxes or interest.</p>
+<p>Workers spend their entire 60. Owners spend half their 40, or 20. That gives us the 80 of household consumption. The other 20 buys new equipment.</p>
+<p>In the payment simulation, owners explicitly put saving into the businesses before the equipment orders are paid. Money moves from owners to businesses, through suppliers, and back to households as wages and distributions. We do not create a second 20 by counting the financing and the equipment purchase twice.</p>
+<p>The town starts with enough cash to make these payments. Across every account, the amount of money stays fixed. Money can pay for more than one transaction as it passes from hand to hand.</p>
+<h2>A better machine does not create an order</h2>
+<p>Now double the town's productive capacity. Keep pay, prices, spending habits and equipment purchases unchanged.</p>
+<p>Actual GDP remains 100.</p>
+<p>The businesses could make more. They have no additional orders. In this version they produce to order, so unused capacity stays idle. If they produced goods anyway and kept them in a warehouse, those goods would initially count as inventory investment. That is another possible response, but it is not a lasting customer. <a href="https://www.bea.gov/resources/methodologies/nipa-handbook/pdf/chapter-07.pdf">How inventories enter GDP</a>.</p>
+<p>This is the part of the demand argument that survives intact. Better technology and higher realized output are different things.</p>
+<p>Now let prices fall by half, with enough capacity available. The same 100 buys 200 units of final output. Workers still receive 60 and buy 120 units instead of 60. Owners buy 40 instead of 20. Businesses buy 40 units of equipment instead of 20.</p>
+<p><strong>Nominal GDP stays at 100. Real GDP doubles. Nobody needs a nominal pay rise.</strong></p>
+<p>This is a deliberately strong assumption: the price of every consumption and investment good falls together. Rent, debts and groceries do not necessarily follow the price of software. But it answers the logical question. A fixed money wage bill is not a ceiling on real GDP.</p>
+<p>Reverse the experiment and raise the common price by 25%. With the same spending, real output falls from 100 to 80. Charging more does not, by itself, make the town richer. Better quality might change the comparison, but quality improvements would need to be measured separately.</p>
+<p><img alt="Capacity, nominal spending and real output under three price assumptions" src="../outputs/figures/prices.png" /></p>
+<p><em>Toy results. Same wage bill, spending rules and nominal equipment expenditure; all prices move together. This is not a model of any particular firm's ability to raise its price.</em></p>
+<h2>Let one worker go. Then three. Then five.</h2>
+<p>Return prices to their original level. Owners continue to spend half their income. Businesses continue to buy 20 of equipment. Automation lets them maintain production capacity with fewer workers.</p>
+<p>The comparison after incomes and spending have adjusted looks like this:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Workers who lose their wages</th>
+<th style="text-align: right;">Wage bill</th>
+<th style="text-align: right;">Household consumption</th>
+<th style="text-align: right;">Equipment purchases</th>
+<th style="text-align: right;">GDP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">54</td>
+<td style="text-align: right;">74</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">94</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">62</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">82</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">70</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">40</td>
+</tr>
+</tbody>
+</table>
+<p>These are conditional results, not a law that a particular number of layoffs causes a recession. The first lost wage lowers GDP in this version because we have held the offsets still.</p>
+<p>There is a result here that initially feels strange. Owners' aggregate income remains 40 in every row.</p>
+<p>At an individual business, cutting pay can increase profit. Across the whole town, lower wages also mean lower sales. With these particular spending rules, the loss of sales eventually absorbs the payroll saving. Their eventual aggregate income flow does not rise simply because every business cuts its wage bill. Their wealth is a separate matter: during the transition, cash can move from workers to owners.</p>
+<p>Change the spending rules and that result changes too. The companion research includes a case in which workers also save some income; there, profits rise while GDP falls. The point is to follow the consequences of an assumption, not choose the one that produces the most dramatic ending.</p>
+<p>The last row also answers a question I had not made concrete enough before. <strong>Even after every wage disappears, GDP does not necessarily disappear.</strong> Owners buy 20 of consumption and firms buy 20 of equipment. There is still production and income.</p>
+<p>The former workers, however, buy nothing. They are still alive in the model. They have simply lost their claim on its output.</p>
+<p>That is a distributional catastrophe which an aggregate GDP figure alone does not describe.</p>
+<h2>Three ways to change the ending</h2>
+<p>First, owners can consume more. If they spend 80% rather than 50% of their income, the town with ten employed workers has GDP of 160 under our other assumptions. This requires enough production capacity. The additional demand comes from a different spending choice, not a new worker.</p>
+<p>Second, businesses can buy more equipment. After all ten jobs disappear, increasing investment from 20 to 50 restores GDP to 100 in the fixed-price model. Owners receive 100, consume 50 and direct the other 50 into equipment.</p>
+<p>GDP is back. Household consumption is only 50, down from the original 80. Former workers still consume nothing. Restoring GDP and restoring their lives are different objectives.</p>
+<p>Third, income can reach the former workers through another route. In the same zero-job economy, a transfer of 60 from owners to the former workers restores GDP to 100, consumption to 80 and investment to 20. Owners' gross income is 100; after the transfer they keep 40 and consume 20. The recipients consume 60.</p>
+<p>The transfer is counted once. It changes who spends income; it is not another 60 of production. Broader ownership can accomplish something similar: in our separate payment experiment, giving the worker households 60% of dividends lets the economy approach the original output even after wage income ends. Ownership and employment are different claims on income.</p>
+<p>These examples assume that transfers can be collected and that equipment purchases can be financed. They are not free policy recommendations. They show why a statement about jobs alone leaves the macroeconomic outcome unfinished.</p>
+<h2>What does the falling labor share tell us?</h2>
+<p>Patel's historical observation has support, with a necessary definition. BLS reports that labor compensation's share of <strong>US nonfarm business output</strong> was 62.8% in the fourth quarter of 2000 and 52.8% in the second quarter of 2026. That is a decline of ten percentage points in this particular series. It includes compensation beyond wages and is not the wage share of the entire economy. <a href="https://www.bls.gov/opub/ted/2026/labor-share-at-its-lowest-level-52-8-percent-in-second-quarter-2026.htm">BLS, September 2026</a>.</p>
+<p>A smaller share does not mean a smaller amount. If output rises from 100 to 150 and labor's share falls from 60% to 50%, labor income rises from 60 to 75. Whether a particular household benefits depends on employment, hours, prices and which workers receive that income.</p>
+<p>The historical series does not prove Patel's forecast. It does show that labor income and total output need not grow at the same rate.</p>
+<h2>The question after the job disappears</h2>
+<p>The toy town changes how I would phrase my original concern.</p>
+<p>Somebody must buy the market output, or hold newly produced capital and inventories. That somebody need not be a wage earner. Owners can consume. Businesses can invest. Prices can fall enough for unchanged spending to buy more. Income can also be distributed through ownership or transfers.</p>
+<p>None of that guarantees a good transition. In the version with unchanged prices, spending habits and investment, layoffs reduce demand and production. In other versions, GDP grows while former workers get nothing. In another, falling prices make unchanged wages worth much more.</p>
+<p>The machine answers what the town could produce. The spending rules determine what it sells. Ownership determines who gets to enjoy it.</p>
+<p>The person wondering whether to buy the car needs all three answers.</p>
+<hr />
+<p><em>The <a href="index.html">interactive companion</a> lets you change the assumptions. The <a href="model-spec.html">model specification</a> explains the equations, payment timing and omitted mechanisms. These are reproducible examples, not estimated probabilities. Part two asks whether the investment cycle can keep going after every job has gone.</em></p><footer>Draft research · 10 October 2026 · Original uncalibrated simulations. <a href="index.html">Explore the assumptions.</a></footer></main></body></html>

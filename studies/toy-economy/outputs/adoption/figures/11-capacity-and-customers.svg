@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 780" width="560" height="780" role="img" aria-labelledby="11-capacity-and-customers-title 11-capacity-and-customers-desc">
+<title id="11-capacity-and-customers-title">Room to produce still needs a customer</title>
+<desc id="11-capacity-and-customers-desc">At the highest completed endpoint in the protected-pay, standard-AI-capacity grid, half of tasks use AI. The static physical envelope allows 160 baskets, but the saved run sells about 94.1. The price and demand rules matter. A physical upper bound is not a financeable market equilibrium.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="780" fill="#fffdf8"/>
+<text x="24" y="47" font-size="30" fill="#223c36" text-anchor="start">How much could the town make?</text>
+<text x="24" y="92" font-size="26" fill="#58675f" text-anchor="start">Protected pay · room for more sales</text>
+<g class="teaching-stage" data-step="1">
+<text x="24" y="160" font-size="27" fill="#376d9a" text-anchor="start">Physical room to make baskets</text>
+<rect x="24" y="187" width="512" height="47" rx="0" fill="#376d9a"/>
+<text x="536" y="285" font-size="33" fill="#376d9a" text-anchor="end">160 baskets</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<text x="24" y="359" font-size="27" fill="#236654" text-anchor="start">Baskets actually bought</text>
+<rect x="24" y="386" width="512" height="47" rx="0" fill="#edf1ea"/>
+<rect x="24" y="386" width="301.1764705882353" height="47" rx="0" fill="#236654"/>
+<text x="536" y="484" font-size="33" fill="#236654" text-anchor="end">94.1 baskets</text>
+</g>
+<g class="teaching-stage" data-step="3">
+<line x1="24" y1="536" x2="536" y2="536" stroke="#edf1ea" stroke-width="3"/>
+<text x="24" y="587" font-size="28" fill="#223c36" text-anchor="start">AI does 50% of tasks here.</text>
+<text x="24" y="632" font-size="28" fill="#223c36" text-anchor="start">Real GDP: 114.1</text>
+<text x="24" y="678" font-size="26" fill="#58675f" text-anchor="start">Including 20 equipment units.</text>
+<text x="24" y="738" font-size="26" fill="#223c36" text-anchor="start">A peak under these rules, not all rules.</text>
+</g>
+</svg>

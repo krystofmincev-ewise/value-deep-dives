@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 700" width="560" height="700" role="img" aria-labelledby="01-town-title 01-town-desc">
+<title id="01-town-title">Meet the same town each time</title>
+<desc id="01-town-desc">Ten workers and ten owners, with five pairs of businesses. People remain in the town after their wages stop.</desc>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif}.travel-token{opacity:0}</style>
+<rect width="560" height="700" fill="#fffdf8"/>
+<g class="teaching-stage" data-step="1">
+<rect x="24" y="20" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="24" y="20" width="6" height="112" rx="0" fill="#236654"/>
+<text x="42" y="55" font-size="26" fill="#236654" text-anchor="start">Workers</text>
+<text x="42" y="103" font-size="42" fill="#236654" text-anchor="start">10 people</text>
+<rect x="290" y="20" width="246" height="112" rx="12" fill="#edf1ea"/>
+<rect x="290" y="20" width="6" height="112" rx="0" fill="#a66d13"/>
+<text x="308" y="55" font-size="26" fill="#a66d13" text-anchor="start">Owners</text>
+<text x="308" y="103" font-size="42" fill="#a66d13" text-anchor="start">10 people</text>
+</g>
+<g class="teaching-stage" data-step="2">
+<rect x="24" y="163" width="512" height="70" rx="12" fill="#edf1ea"/>
+<rect x="40" y="180" width="34" height="34" rx="2" fill="#223c36"/>
+<rect x="52" y="198" width="10" height="16" rx="0" fill="#fffdf8"/>
+<rect x="90" y="180" width="34" height="34" rx="2" fill="#223c36"/>
+<rect x="102" y="198" width="10" height="16" rx="0" fill="#fffdf8"/>
+<text x="145" y="207" font-size="27" fill="#223c36" text-anchor="start">Raw materials</text>
+<text x="508" y="207" font-size="27" fill="#223c36" text-anchor="end">×2</text>
+<rect x="24" y="251" width="512" height="70" rx="12" fill="#edf1ea"/>
+<rect x="40" y="268" width="34" height="34" rx="2" fill="#223c36"/>
+<rect x="52" y="286" width="10" height="16" rx="0" fill="#fffdf8"/>
+<rect x="90" y="268" width="34" height="34" rx="2" fill="#223c36"/>
+<rect x="102" y="286" width="10" height="16" rx="0" fill="#fffdf8"/>
+<text x="145" y="295" font-size="27" fill="#223c36" text-anchor="start">Processing</text>
+<text x="508" y="295" font-size="27" fill="#223c36" text-anchor="end">×2</text>
+<rect x="24" y="339" width="512" height="70" rx="12" fill="#edf1ea"/>
+<rect x="40" y="356" width="34" height="34" rx="2" fill="#223c36"/>
+<rect x="52" y="374" width="10" height="16" rx="0" fill="#fffdf8"/>
+<rect x="90" y="356" width="34" height="34" rx="2" fill="#223c36"/>
+<rect x="102" y="374" width="10" height="16" rx="0" fill="#fffdf8"/>
+<text x="145" y="383" font-size="27" fill="#223c36" text-anchor="start">Business inputs</text>
+<text x="508" y="383" font-size="27" fill="#223c36" text-anchor="end">×2</text>
+<rect x="24" y="427" width="512" height="70" rx="12" fill="#edf1ea"/>
+<rect x="40" y="444" width="34" height="34" rx="2" fill="#223c36"/>
+<rect x="52" y="462" width="10" height="16" rx="0" fill="#fffdf8"/>
+<rect x="90" y="444" width="34" height="34" rx="2" fill="#223c36"/>
+<rect x="102" y="462" width="10" height="16" rx="0" fill="#fffdf8"/>
+<text x="145" y="471" font-size="27" fill="#223c36" text-anchor="start">Consumer goods</text>
+<text x="508" y="471" font-size="27" fill="#223c36" text-anchor="end">×2</text>
+<rect x="24" y="515" width="512" height="70" rx="12" fill="#edf1ea"/>
+<rect x="40" y="532" width="34" height="34" rx="2" fill="#376d9a"/>
+<rect x="52" y="550" width="10" height="16" rx="0" fill="#fffdf8"/>
+<rect x="90" y="532" width="34" height="34" rx="2" fill="#376d9a"/>
+<rect x="102" y="550" width="10" height="16" rx="0" fill="#fffdf8"/>
+<text x="145" y="559" font-size="27" fill="#223c36" text-anchor="start">New equipment</text>
+<text x="508" y="559" font-size="27" fill="#376d9a" text-anchor="end">×2</text>
+</g>
+<g class="teaching-stage" data-step="3">
+<text x="280" y="660" font-size="25" fill="#58675f" text-anchor="middle">No trade • no government • no loans</text>
+</g>
+</svg>

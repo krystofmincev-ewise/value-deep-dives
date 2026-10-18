@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/value-deep-dives/review-artifact-manifest.schema.json",
+  "title": "Reviewed inputs, evidence, and model dependencies",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["type", "schema_version", "coverage_cycle_id", "source_cutoff_at", "artifacts"],
+  "properties": {
+    "type": { "const": "review_artifact_manifest" },
+    "schema_version": { "const": 1 },
+    "coverage_cycle_id": { "type": "string", "minLength": 1 },
+    "source_cutoff_at": { "type": "string", "format": "date-time" },
+    "artifacts": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "role", "sha256"],
+        "properties": {
+          "path": { "type": "string", "minLength": 1 },
+          "role": { "enum": ["model_input", "evidence", "model_dependency", "generated_output"] },
+          "sha256": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" }
+        }
+      },
+      "allOf": [
+        { "contains": { "properties": { "role": { "const": "model_input" } }, "required": ["role"] } },
+        { "contains": { "properties": { "role": { "const": "evidence" } }, "required": ["role"] } }
+      ]
+    }
+  }
+}

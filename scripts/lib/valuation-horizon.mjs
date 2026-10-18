@@ -301,28 +301,18 @@ export function validateValuationHorizonContract(record) {
         ) {
           add("Transition bands require unique non-empty labels.");
         }
-        if (means.some((value) => !finite(value))) {
-          add("Transition-band later means must be finite.");
+        if (means.some((value) => !finite(value) || value < 0)) {
+          add("Transition-band later means must be finite and non-negative.");
         }
-        else if (means.some((value, index) => index > 0 && value < means[index - 1])) {
-          add("Transition-band later means must be ordered by the earlier state.");
-        }
-        if (medians.some((value) => !finite(value))) {
-          add("Transition-band later medians must be finite.");
-        } else if (
-          medians.some((value, index) => index > 0 && value < medians[index - 1])
-        ) {
-          add("Transition-band later medians must be ordered by the earlier state.");
+        if (medians.some((value) => !finite(value) || value < 0)) {
+          add("Transition-band later medians must be finite and non-negative.");
         }
         if (downsideProbabilities.some((value) => !probability(value))) {
           add("Transition-band downside probabilities must be in [0, 1].");
-        } else if (
-          downsideProbabilities.some(
-            (value, index) => index > 0 && value > downsideProbabilities[index - 1],
-          )
-        ) {
-          add("Transition-band downside probabilities must decline with the earlier state.");
         }
+        // Bands are ordered by the earlier state. Later conditional outcomes may
+        // persist, reverse, or be non-monotonic; direction belongs to the model,
+        // not to the shared contract's mathematical invariants.
         if (
           upperProbabilities.some((value) => !finite(value) || value <= 0 || value > 1) ||
           upperProbabilities.some(

@@ -7,6 +7,7 @@ import {
   valuationTableSemanticErrors,
 } from "./valuation-horizon.mjs";
 import { validateOperatingForecastContract } from "./operating-forecast.mjs";
+import { validateReviewArtifactManifest } from "./review-artifact-manifest.mjs";
 
 export {
   validateValuationHorizonContract,
@@ -227,6 +228,17 @@ async function validateManifest(repositoryRoot, manifestPath) {
   const add = (check, message, level = "error") => {
     findings.push(finding(level, check, message, displayPath(repositoryRoot, manifestPath)));
   };
+  const reviewContractVersion = record.review_contract_version ?? 1;
+  if (![1, 2].includes(reviewContractVersion)) {
+    add("coverage-cycle-review", "review_contract_version must be 1 (legacy) or 2 (dependency snapshot).");
+  }
+  if (record.review_artifact_manifest_path) {
+    findings.push(...await validateReviewArtifactManifest({
+      repositoryRoot, companyRoot, cyclePath: manifestPath, cycle: record,
+    }));
+  } else if (record.review_artifact_manifest_hash) {
+    add("coverage-cycle-review", "review_artifact_manifest_hash requires review_artifact_manifest_path.");
+  }
 
   required(
     record,
@@ -938,6 +950,16 @@ async function validateManifest(repositoryRoot, manifestPath) {
     }
   }
   if (record.review_status === "passed") {
+    const bindsDependencies = reviewContractVersion === 2 || Boolean(record.review_artifact_manifest_path);
+    if (bindsDependencies) {
+      required(record, ["review_artifact_manifest_path", "review_artifact_manifest_hash"], add);
+    } else {
+      add(
+        "coverage-cycle-review-legacy",
+        "Legacy review binds canonical files only; external model inputs and evidence are not freshness-checked. Use review_contract_version: 2 for the next review.",
+        "warning",
+      );
+    }
     required(
       record,
       [
@@ -977,6 +999,7 @@ async function validateManifest(repositoryRoot, manifestPath) {
         reviewed_verifier_hash: "verifier_hash",
       };
       if (forecastContractPath) reviewHashFields.reviewed_forecast_hash = "forecast_hash";
+      if (bindsDependencies) reviewHashFields.reviewed_artifact_manifest_hash = "review_artifact_manifest_hash";
       for (const [reviewField, manifestField] of Object.entries(reviewHashFields)) {
         if (!review[reviewField] || review[reviewField] !== record[manifestField]) {
           reviewAdd(`${reviewField} must match manifest ${manifestField}.`);

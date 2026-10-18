@@ -5,6 +5,11 @@ These documents define how research is created, versioned, evaluated, and disclo
 - [Investment process](INVESTMENT_PROCESS.md): the funnel from discovery to retrospective
 - [Research standards](RESEARCH_STANDARDS.md): evidence, sourcing, LLM use, and publication rules
 - [Research tooling](RESEARCH_TOOLING.md): APIs, browsers, authenticated sources, and credential boundaries
+- [Article craft](ARTICLE_CRAFT.md): evidence-earned insight, causal narrative, complete-article review and correction learning
+- [Substack publishing](SUBSTACK_PUBLISHING.md): packaging, authorized delivery, native discovery and measurement
+- [Public repository maintenance](PUBLIC_REPOSITORY.md): publication privacy checks, CI and safe Git cleanup
+- [October harness audit](2026-10-18-HARNESS-AUDIT.md): observed failure patterns, implemented changes and verification limits
+- [Harness options](2026-10-18-HARNESS-OPTIONS.md): source-verified Harness² and Promptfoo evaluation
 - [Biopharma evidence research](BIOPHARMA_RESEARCH.md): papers, trials, targets, regulatory evidence, and probability-of-success workflow
 - [Research capability architecture](CAPABILITY_ARCHITECTURE.md): canonical entities, deterministic/agent boundaries, and capability roadmap
 - [Event-driven research](EVENT_DRIVEN_RESEARCH.md): catalyst pre-registration, leakage controls, outcome resolution, and calibration

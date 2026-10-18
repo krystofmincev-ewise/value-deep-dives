@@ -26,6 +26,7 @@ Do not build a brittle pseudo-API around a changing website just to call it a CL
 ```bash
 # Validate all skills, schemas, CLI routes, billing boundaries, and automated tests
 npm run research:validate
+npm run research:public -- --staged
 
 # Validate canonical report/valuation/decision cardinality, paths, cutoffs, links, and finalization hashes
 npm run research:company -- validate
@@ -76,7 +77,9 @@ npm run research:biomed -- literature search --query "V940 pembrolizumab" --open
 npm run research:biomed -- trials get NCT05933577 --json
 ```
 
-`research:validate` is the repeatable release gate. It discovers skills dynamically, checks their `SKILL.md` and `agents/openai.yaml` contracts, parses every JSON schema and JSON template, verifies required research commands and methodology files, rejects runtime markers for separately credentialed Gemini, OpenAI, YouTube, Revelio, or brokerage APIs, and runs the full Node test suite. It reports—but never reads—the presence of `SEC_USER_AGENT`. Authenticated Chrome state remains a runtime check because a repository command must never inspect account identity, cookies, or browser storage.
+`research:validate` is the repeatable research-harness gate. It discovers skills dynamically, checks their `SKILL.md` and `agents/openai.yaml` contracts, parses every JSON schema and JSON template, verifies required research commands and methodology files, rejects runtime markers for separately credentialed Gemini, OpenAI, YouTube, Revelio, or brokerage APIs, and runs the root Node test suite. Study-specific model suites remain separate. It reports—but never reads—the presence of `SEC_USER_AGENT`. Authenticated Chrome state remains a runtime check because a repository command must never inspect account identity, cookies, or browser storage.
+
+`research:public -- --staged` checks the exact Git index before a commit; `--ref HEAD` checks a committed snapshot and `--history HEAD` checks its reachable history. Findings omit matched values. Binary and oversized files require manual review, and no scanner proves source rights or absence of private data. Follow the [public repository gate](PUBLIC_REPOSITORY.md) as well as the full staged-diff inspection. Neither this check nor contract validation certifies the economic argument or [article quality](ARTICLE_CRAFT.md).
 
 From a Codex task, call the authenticated Gemini workflow directly:
 

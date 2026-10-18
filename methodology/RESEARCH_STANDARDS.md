@@ -69,6 +69,18 @@ horizon contract, canonical valuation, report, or decision invalidates the prior
 review snapshot. Mark it stale and rerun review before describing the dossier as
 reviewed, passed, release-ready, published, or complete.
 
+New coverage cycles use review contract v2: an explicit, hashed artifact manifest
+also binds the external model inputs, evidence and dependencies. Reviewers must
+check its completeness and source-to-input reasoning. Hash agreement establishes
+freshness of declared files, not economic validity. Older passed reviews retain
+their historical status with a visible legacy-coverage warning until migrated.
+
+For a research article or substantive rewrite, use [article craft](ARTICLE_CRAFT.md).
+Keep the original insight, causal explanation and strongest countercase in the
+reader-facing argument. Technical completeness and readable writing are separate
+acceptance questions. Article revisions must preserve the quantity, cutoff,
+assumptions, model disagreement and uncertainty of the underlying analysis.
+
 ## Intellectual honesty
 
 - Seek the strongest disconfirming case, not merely a token bear case.

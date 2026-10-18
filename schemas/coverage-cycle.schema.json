@@ -41,6 +41,9 @@
     "decision_path": { "type": "string", "minLength": 1 },
     "valuation_contract_path": { "type": "string", "minLength": 1 },
     "forecast_path": { "type": ["string", "null"] },
+    "review_contract_version": { "type": "integer", "enum": [1, 2], "default": 1 },
+    "review_artifact_manifest_path": { "type": ["string", "null"], "minLength": 1 },
+    "review_artifact_manifest_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" },
     "review_status": {
       "type": "string",
       "enum": ["not_requested", "pending", "passed", "failed", "stale"]
@@ -58,6 +61,24 @@
     "verifier_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" }
   },
   "allOf": [
+    {
+      "if": {
+        "allOf": [
+          { "properties": { "review_status": { "const": "passed" } }, "required": ["review_status"] },
+          { "anyOf": [
+            { "properties": { "review_contract_version": { "const": 2 } }, "required": ["review_contract_version"] },
+            { "properties": { "review_artifact_manifest_path": { "type": "string", "minLength": 1 } }, "required": ["review_artifact_manifest_path"] }
+          ] }
+        ]
+      },
+      "then": {
+        "properties": {
+          "review_artifact_manifest_path": { "type": "string", "minLength": 1 },
+          "review_artifact_manifest_hash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" }
+        },
+        "required": ["review_artifact_manifest_path", "review_artifact_manifest_hash"]
+      }
+    },
     {
       "if": {
         "anyOf": [

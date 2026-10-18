@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { spawnSync } from "node:child_process";
+import { existsSync, readdirSync } from "node:fs";
 import { test } from "node:test";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -48,19 +49,15 @@ test("status reports only configuration presence, never values", () => {
   assert.deepEqual(status.configuration, {
     SEC_USER_AGENT: true,
   });
-  assert.deepEqual(status.repository.skills, {
-    "ai-capability-investment-research": true,
-    "animated-investment-shorts": true,
-    "gemini-deep-research": true,
-    "archive-ph-research": true,
-    "biopharma-evidence-research": true,
-    "company-investment-research": true,
-    "event-driven-investment-research": true,
-    "forecast-evaluation": true,
-    "ft-source-discovery": true,
-    "youtube-interview-research": true,
-    "revelio-workforce-research": true,
-  });
+  const skillsDirectory = join(scriptDirectory, "..", ".agents", "skills");
+  const expectedSkills = Object.fromEntries(
+    readdirSync(skillsDirectory, { withFileTypes: true })
+      .filter((entry) => entry.isDirectory())
+      .map(({ name }) => [name, existsSync(join(skillsDirectory, name, "SKILL.md"))]),
+  );
+  assert.deepEqual(status.repository.skills, expectedSkills);
+  assert.equal(status.repository.skills["company-investment-research"], true);
+  assert.equal(status.repository.skills["substack-publishing"], true);
 
   for (const value of Object.values(secretValues)) {
     assert.doesNotMatch(result.stdout, new RegExp(value));

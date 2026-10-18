@@ -17,6 +17,19 @@ tags: []
 
 State the decision this research must support.
 
+- Requested questions and deliverables, including article/appendix format:
+- Time budget and intended completion point:
+- Existing work to reuse, and assumptions to challenge:
+- What evidence would justify completion or an early stop:
+
+## Decision-changing questions
+
+| Question / hypothesis | Why the decision depends on it | Primary evidence sought | Finding and consequence for model/article | Remaining gap / next useful search |
+| --- | --- | --- | --- | --- |
+| | | | | |
+
+Track actual investigation, not a source quota. Reserve enough time to integrate findings, verify the numbers and cold-read the final article. Distinguish new scope from a correction to the original request.
+
 ## Starting hypothesis
 
 State a tentative hypothesis without presenting it as a conclusion.
@@ -47,6 +60,13 @@ State a tentative hypothesis without presenting it as a conclusion.
 
 - Quantity and horizon questions, including whether multiple horizons are
   `joint`, `independent`, or only qualitative checkpoints
+
+| Decisive value driver | Observed source vs author judgment | Plausible bound and reason | Value/stance sensitivity | Evidence or break-even threshold needed |
+| --- | --- | --- | --- | --- |
+| | | | | |
+
+Surface economically different methods' disagreement alongside the headline.
+Do not let numerical precision conceal an unidentified decisive input.
 
 ### Falsification
 

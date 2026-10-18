@@ -1,0 +1,4 @@
+interface:
+  display_name: "Substack Publishing"
+  short_description: "Audit readership and improve research publishing"
+  default_prompt: "Use $substack-publishing to audit my Substack, improve the authorized publication content, and verify the live result and measurement plan."

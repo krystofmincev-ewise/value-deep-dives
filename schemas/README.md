@@ -7,6 +7,7 @@ These JSON Schemas describe the flat YAML front matter used by machine-checked r
 - [`valuation-horizon-contract.schema.json`](valuation-horizon-contract.schema.json)
 - [`operating-forecast-contract.schema.json`](operating-forecast-contract.schema.json)
 - [`independent-review.schema.json`](independent-review.schema.json)
+- [`review-artifact-manifest.schema.json`](review-artifact-manifest.schema.json)
 - [`company-ledger.schema.json`](company-ledger.schema.json)
 - [`event-forecast.schema.json`](event-forecast.schema.json)
 - [`event-outcome.schema.json`](event-outcome.schema.json)
@@ -27,6 +28,12 @@ completeness and semantics, model/verifier paths, structured-review identity and
 snapshot parity, immutable operating-forecast hashes when a JSON forecast contract
 is present, review freshness, prior-cycle status, and finalized
 artifact/review hashes.
+
+New cycles use review contract v2: passed reviews also bind a JSON manifest of
+external inputs, evidence, local model dependencies, and generated outputs. Each
+listed file is freshness-checked, including symlink containment. The reviewer
+must still check completeness and economic validity. Existing v1 reviews remain
+valid with a legacy-coverage warning; adopt v2 at their next review refresh.
 
 Run `npm run research:records -- validate-identity <path>`, `validate-event <path>`, `validate-outcome <path>`, `validate-evaluation-spec <path>`, `validate-source <path>`, `validate-fact <path>`, `validate-fact-snapshot <path>`, `validate-calendar-snapshot <path>`, `validate-market-observations <path>`, `validate-market-capture <path>`, or `validate-company-ledger <path>` for dependency-free record validation. Run `score-events track-record/event-forecast-ledger.csv` for ledger validation, candidate/forecast/outcome ancestry checks, source/fact cutoff checks, calendar-session selection, committed market-observation/capture reconciliation, deterministic target resolution, and scoring. The validators enforce publication gates and cross-field rules that JSON Schema alone cannot express.
 

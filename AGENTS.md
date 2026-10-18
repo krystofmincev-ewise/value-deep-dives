@@ -36,8 +36,15 @@ Use these skills for analysis and prospective records:
 - `$forecast-evaluation`: outcome resolution, calibration, scoring, and track-record audit.
 - `$biopharma-evidence-research`: drug, target, trial, regulatory, and probability evidence.
 - `$animated-investment-shorts`: stage-gated story, narration, HTML/CSS/JavaScript motion, and rendered QA for research-driven 9:16 videos.
+- `$substack-publishing`: research-to-article synthesis, reader-focused editing, publication verification, and aggregate readership measurement.
 
 Each skill requires the applicable Chrome or Computer Use skill before UI interaction. Treat browser availability and sign-in as runtime state; a repository capability check never proves an authenticated session is usable.
+
+## Research and article completion
+
+For a substantial deep dive, preserve the requested questions, depth, time budget and deliverables in the research plan. Track which decision-critical questions were investigated, what changed the view, and what remains unknown. A valid model or a long source list does not establish that the requested research is complete. Stop early only with a concrete completion or diminishing-value reason, not because a first plausible answer exists.
+
+For a new article or material body rewrite, use [the article craft workflow](methodology/ARTICLE_CRAFT.md) and its short evidence brief. Establish the supported insight and causal argument before polishing. One writer integrates the article; research notes and specialist reviews supply evidence, not paragraphs to concatenate. Diagnose evidence/model, story, explanation and rendering failures separately. Preserve accepted strengths and distinguish corrections from new scope. Keep private feedback and comparison drafts under `.local/`.
 
 ## Animated research shorts
 
@@ -56,6 +63,7 @@ Each skill requires the applicable Chrome or Computer Use skill before UI intera
 - When two horizons support one thesis or decision path, model them jointly or state explicitly that they are independent. A joint model must declare the transition mechanism, carry shared risks only once, report cross-horizon diagnostics, and stress the linkage assumptions. Contract schema v1 supports at most two formal horizons; extend the schema with pairwise transition records before publishing three or more.
 - Store formal horizon outputs in the schema-backed valuation-horizon contract and make the executable verifier reconcile the contract, model, canonical valuation, report, and decision. Hand-copied agreement is not verification.
 - A material change to evidence, model code, horizon contract, valuation, report, or decision makes an earlier review stale. Do not call a dossier reviewed or release-ready until the review snapshot is refreshed; a calendar date such as `method_reviewed_at` is not a freshness proof.
+- New coverage cycles use review contract v2 to bind external model inputs, evidence and dependencies as well as canonical outputs. Legacy review warnings identify narrower historical coverage; passing checks does not establish economic validity or article quality.
 
 ## Trust boundary
 
@@ -101,5 +109,7 @@ Each skill requires the applicable Chrome or Computer Use skill before UI intera
 ## Git gate
 
 Before committing, inspect every staged filename and staged diff for secrets, cookies, tokens, private data, authenticated URLs, account identifiers, watermarks, and restricted source content. Never force-add ignored auth or `.local` files.
+
+Run `npm run research:public -- --staged` against the exact index before committing. Resolve blocking findings and inspect any files requiring manual review. The scanner is a limited guard, not proof of anonymity, redistribution rights, or a clean Git history. See [public repository maintenance](methodology/PUBLIC_REPOSITORY.md).
 
 If a credential or session artifact was staged, unstage it and remove it from the working tree. If it was committed or pushed, stop, rotate or revoke it, and treat history cleanup as a separate reviewed operation. Deleting only the latest copy is insufficient.

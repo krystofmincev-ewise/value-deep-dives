@@ -123,6 +123,15 @@ outcomes, and sensitivity to linkage strength. Reconcile embedded allowances at
 each date so a shared legal, regulatory, financing, dilution, or survival branch
 is applied once rather than layered onto an anchor that already contains it.
 
+Order transition bands by the earlier state's quantile boundaries. Do not force
+later conditional values to rise, or downside probabilities to fall, across
+those bands: a declared model can imply persistence, reversal, or a non-monotonic
+relationship. The generic contract checks complete statistics, non-negative
+per-share values, valid probability/correlation ranges, ordered band boundaries,
+and normalized band weights. A model-specific verifier should test the dependence
+mechanism it actually declares; a positive-persistence assumption is not a
+universal validity condition.
+
 Schema version 1 supports at most two formal horizons, ordered earliest to
 latest; its dependence and transition statistics describe that pair. Before
 publishing three or more, extend the schema and verifier with explicit pairwise

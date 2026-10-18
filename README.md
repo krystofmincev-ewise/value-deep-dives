@@ -4,20 +4,6 @@ Value Deep Dives is a public, time-stamped investment research notebook for comp
 
 > Independent research for education and documentation—not investment advice or a solicitation. I may hold securities discussed here. See the [full disclaimer](DISCLAIMER.md).
 
-## Why this exists
-
-This repository grew out of a small but encouraging set of LLM-assisted idea-generation exercises. I started with a rough screening heuristic: companies whose trailing revenue was near their equity market value (a price-to-sales ratio around 1×), then used deep-research tools to compare candidates across a consistent set of rebound and survival indicators.
-
-That work surfaced Wix, Snap, and Amplitude. I supplemented the model output with primary and qualitative research, including a 20VC interview with Wix's founder and roughly four hours of interviews and other material featuring Evan Spiegel. I bought all three. The retrospective, user-reported purchase timeline is:
-
-- **Snap:** purchased at approximately **$4.70 per share** sometime after Snap's [16 June 2026 consumer SPECS announcement](https://newsroom.snap.com/introducing-specs-augmented-reality-glasses?lang=en-GB). The exact trade date and fill are not broker-verified.
-- **Wix:** the first stake was purchased around **29 June 2026**, approximately two weeks before Avishai Abrahami's [13 July 2026 20VC interview](https://www.youtube.com/watch?v=TdQyVXN0GF8). I added to the position on or shortly after **13 July 2026**, immediately after reviewing that interview. These are approximate recollections rather than brokerage timestamps.
-- **Amplitude:** purchased one day before earnings; the exact date and fill are not recorded here.
-
-Each subsequently appreciated after its next reported results. In a separate exercise, I studied Leopold Aschenbrenner's publicly disclosed holdings and asked LLMs to propose adjacent companies he might plausibly own. Deeper research on one of the results led me to IREN, which also appreciated after purchase.
-
-Those outcomes are motivation, not proof. The sample is tiny and selected, the holding periods are short, the research was not prospectively registered, and the results may reflect market exposure, event timing, selection bias, or luck. They are not an audited or benchmark-adjusted track record. The point of this repository is to move from memorable anecdotes to a prospective, falsifiable record: what I believed, why I believed it, what would prove me wrong, and what happened.
-
 ## What changes with this repository
 
 From 17 August 2026 onward, formal ideas can be judged from contemporaneous records rather than reconstructed memories:
@@ -50,13 +36,40 @@ market / sector / theme research
 
 The detailed process lives in [methodology](methodology/README.md). A completed deep dive should make it easy to find the source cutoff, reference price, target horizon, bull/base/bear valuation, variant view, key assumptions, catalysts, risks, falsifiers, confidence, and position disclosure.
 
-## Current research
+## Read the research
 
-| Company | Ticker | Status | Current target | Workspace |
-| --- | --- | --- | --- | --- |
-| Snap Inc. | SNAP | Draft deep dive complete; prospective registration pending | [Draft valuation available](companies/snap/valuation/2026-W34-valuation.md) | [Open the Snap deep dive](companies/snap/README.md) |
+These are dated records, not continuously updated recommendations. Use each
+coverage manifest for its information cutoff and review status; a report title
+containing “final” does not make a draft prospectively registered.
 
-The Snap dossier is self-contained under [`companies/snap/`](companies/snap/README.md), including identity, sources, research modules, one canonical final report and valuation for each coverage cycle, decisions, and company-specific experiments. Its [first coverage-cycle manifest](companies/snap/coverage-cycles/2026-W34-01-initial/README.md) binds the current records into one valuation generation. The records remain drafts until the documented market-price and prospective-registration gates are complete.
+| Work | What it explains | State and evidence cutoff | Start here |
+| --- | --- | --- | --- |
+| Snap | Advertising repair, regional economics, subscriptions and dilution | Draft; 22 August 2026; review marked stale | [Dossier](companies/snap/README.md) · [Cycle](companies/snap/coverage-cycles/2026-W34-01-initial/README.md) |
+| Wix | AI page generation versus operating a business, cash returns and capital allocation | Draft; 31 August 2026; historical review binds canonical files only | [Dossier](companies/wix/README.md) · [Cycle](companies/wix/coverage-cycles/2026-W35-01-initial/README.md) |
+| Who buys what AI makes? | Wages, prices, ownership, spending and financing in reproducible toy economies | Published companion, 12 October 2026; conditional experiments, not forecasts | [Reading guide](studies/toy-economy/README.md) · [Publication record](studies/toy-economy/research/publication-record.md) |
+
+New company work may exist in local drafts before it appears here. See the
+[company index](companies/README.md) for the public dossier structure and
+[studies](studies/README.md) for cross-company work.
+
+## Write and verify a deep dive
+
+Start with a decision-changing research question and an [evidence plan](templates/research-plan.md).
+For an article, connect the distinctive finding to its evidence, causal mechanism
+and reader consequence using the [short article brief](templates/article-evidence-brief.md).
+Follow [article craft](methodology/ARTICLE_CRAFT.md) for synthesis and
+[Substack publishing](methodology/SUBSTACK_PUBLISHING.md) for authorized delivery.
+
+The checks have different jobs:
+
+- `npm run research:company -- validate` checks coverage contracts and review freshness.
+- `npm run research:validate` runs the research-system checks and automated tests.
+- `npm run research:public -- --staged` checks the exact Git index for publication risks.
+- A complete article read checks whether the evidence earns the conclusion and a reader can follow it. No script certifies insight or engaging writing.
+
+Private drafts, audience data, authenticated captures and chat feedback stay in
+ignored `.local/`. [Public repository maintenance](methodology/PUBLIC_REPOSITORY.md)
+explains the Git gate, CI, history limits and safe cleanup.
 
 ## Repository map
 
@@ -64,6 +77,7 @@ The Snap dossier is self-contained under [`companies/snap/`](companies/snap/READ
 | --- | --- |
 | [Companies](companies/README.md) | Self-contained company dossiers and dated research history |
 | [Discovery](discovery/README.md) | Screens, sector maps, and cross-company themes |
+| [Studies](studies/README.md) | Cross-company research articles, simulations and public companions |
 | [Track record](track-record/README.md) | Prospective forecasts, decisions, and retrospectives |
 | [Research schemas](schemas/README.md) | Machine-readable identity, evidence, event, and evaluation contracts |
 | [Experiments](experiments/README.md) | Reusable or cross-company software and empirical work |
@@ -72,7 +86,7 @@ The Snap dossier is self-contained under [`companies/snap/`](companies/snap/READ
 | [Research tooling](methodology/RESEARCH_TOOLING.md) | Layered APIs, CLIs, authenticated Chrome, Browser, and Computer Use workflows |
 | [Templates](templates/README.md) | Standard starting points for new research |
 
-Run `npm run research:company -- validate` while editing a company cycle and `npm run research:validate` before publishing or committing research-system changes. The company validator enforces one canonical report, valuation, and decision per cycle plus aligned paths, IDs, cutoffs, navigation, supersession rules, and finalized hashes. The repository gate also discovers every skill, validates metadata and resources, parses all JSON schemas and templates, checks required CLI routes and public-data contracts, rejects separately billable API markers in runtime code, and runs the complete automated test suite. Runtime subscription sign-in is deliberately a visible Chrome check rather than a credential inspection.
+Run `npm run research:company -- validate` while editing a company cycle and `npm run research:validate` before publishing or committing research-system changes. The company validator enforces one canonical report, valuation, and decision per cycle plus aligned paths, IDs, cutoffs, navigation, supersession rules, and finalized hashes. The repository gate also discovers every skill, validates metadata and resources, parses all JSON schemas and templates, checks required CLI routes and public-data contracts, rejects separately billable API markers in runtime code, and runs the root harness test suite. Study-specific model suites remain separate. Runtime subscription sign-in is deliberately a visible Chrome check rather than a credential inspection.
 
 Company-specific notes, data, and experiments stay inside that company's folder. Root-level experiments and data are reserved for work that genuinely serves several companies or studies.
 
@@ -129,6 +143,25 @@ caches, temporary captures, and licensed material that must not be published.
 Chrome authentication and extension settings are also local-only. Back up any
 of that private state separately in encrypted storage if you need to preserve
 it; a fresh clone will recreate the directory structure, not those contents.
+
+<details>
+<summary>Research origins and retrospective disclosures</summary>
+
+## Why this exists
+
+This repository grew out of a small but encouraging set of LLM-assisted idea-generation exercises. I started with a rough screening heuristic: companies whose trailing revenue was near their equity market value (a price-to-sales ratio around 1×), then used deep-research tools to compare candidates across a consistent set of rebound and survival indicators.
+
+That work surfaced Wix, Snap, and Amplitude. I supplemented the model output with primary and qualitative research, including a 20VC interview with Wix's founder and roughly four hours of interviews and other material featuring Evan Spiegel. I bought all three. The retrospective, user-reported purchase timeline is:
+
+- **Snap:** purchased at approximately **$4.70 per share** sometime after Snap's [16 June 2026 consumer SPECS announcement](https://newsroom.snap.com/introducing-specs-augmented-reality-glasses?lang=en-GB). The exact trade date and fill are not broker-verified.
+- **Wix:** the first stake was purchased around **29 June 2026**, approximately two weeks before Avishai Abrahami's [13 July 2026 20VC interview](https://www.youtube.com/watch?v=TdQyVXN0GF8). I added to the position on or shortly after **13 July 2026**, immediately after reviewing that interview. These are approximate recollections rather than brokerage timestamps.
+- **Amplitude:** purchased one day before earnings; the exact date and fill are not recorded here.
+
+Each subsequently appreciated after its next reported results. In a separate exercise, I studied Leopold Aschenbrenner's publicly disclosed holdings and asked LLMs to propose adjacent companies he might plausibly own. Deeper research on one of the results led me to IREN, which also appreciated after purchase.
+
+Those outcomes are motivation, not proof. The sample is tiny and selected, the holding periods are short, the research was not prospectively registered, and the results may reflect market exposure, event timing, selection bias, or luck. They are not an audited or benchmark-adjusted track record. The point of this repository is to move from memorable anecdotes to a prospective, falsifiable record: what I believed, why I believed it, what would prove me wrong, and what happened.
+
+</details>
 
 ## How LLMs are used
 

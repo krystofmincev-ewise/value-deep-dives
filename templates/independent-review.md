@@ -12,6 +12,7 @@ reviewed_decision_hash: null
 reviewed_contract_hash: null
 reviewed_model_hash: null
 reviewed_verifier_hash: null
+reviewed_artifact_manifest_hash: null
 ---
 
 # {Company} independent review — {date}
@@ -27,6 +28,14 @@ review covers. Do not call a same-session self-check independent.
 Copy the SHA-256 values from the coverage-cycle manifest only after reviewing
 the exact report, valuation, decision, horizon contract, model, and verifier.
 `review_status: passed` is invalid if any hash is null or mismatched.
+
+For review contract v2, inspect the artifact manifest as well: check that it
+includes every external model input, relevant source log/evidence note, imported
+model dependency, generator, and generated result relied upon. Record its exact
+hash as `reviewed_artifact_manifest_hash`. A matching manifest hash alone is not
+enough: run the company validator to verify every file listed inside it. Adding
+or rehashing files does not grant review approval; the reviewer must assess the
+changed snapshot. List any intentionally excluded dependency and its consequence.
 
 ## Findings
 

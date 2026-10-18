@@ -29,6 +29,8 @@ Start from the claims that could change the decision. Build a compact question/e
 - variant perception, catalysts, risks, strongest countercase, and falsifiers;
 - valuation methods, sensitivities, reference price, and benchmark.
 
+Record the requested depth, budget and required deliverables in the research plan. Track a decision-changing question through evidence sought, findings, model consequences and remaining uncertainty. For broad discovery, retain the candidate funnel and reasons for rejection or renewed investigation; do not equate a familiar low multiple with an edge. Use remaining research time on the uncertainty most likely to change the decision. Report an early stop's substantive reason; a mechanically complete dossier is not evidence that a requested deep investigation is finished.
+
 Use the smallest sector reference that fits:
 
 - AI, software, internet, cloud, or semiconductors: read `references/sector-ai-software-semiconductors.md`.
@@ -54,6 +56,8 @@ Do not silently substitute yfinance, a scraped page, current revised data, or an
 Reconcile periods, fiscal calendars, units, currencies, segments, restatements, amendments, discontinued operations, one-offs, stock compensation, leases, working capital, capex, debt, cash restrictions, share classes, dilution, and partner economics. Preserve both economic validity and when the fact became public.
 
 Use deterministic calculations for statement bridges, growth, margins, unit economics, enterprise value, per-share values, expected return, and sensitivities. Fail closed when an input is missing; never hide an opinion inside a default constant.
+
+Before choosing distribution shapes, identify the few inputs that dominate value. For each, show the source or elicitation, plausible bound, economic rationale and whether its uncertainty changes the stance. If an unidentified contract term or completion cost drives the answer, lead with the conditional value or break-even threshold; extra simulation draws cannot identify it. Surface disagreement between economically distinct methods beside the headline conclusion, not only in an appendix. Preserve the complete formal output contract when a distribution is actually modeled.
 
 ## Explain the decision-critical mechanics in place
 
@@ -130,6 +134,8 @@ Run an adversarial pass on the same frozen fact set:
 
 ## Produce stance and action separately
 
+When the deliverable is a reader-facing article, apply `methodology/ARTICLE_CRAFT.md` and the article evidence brief. Preserve the canonical valuation and evidence while explaining their causal logic; distinguish research/model corrections from editorial changes. Keep task history and tool troubleshooting out of the article. The research dossier remains available for audit, with one clear reader-facing argument rather than concatenated workstream reports.
+
 Apply `references/decision-and-valuation.md`. Predeclare the horizon, benchmark, excess-return hurdle, downside or permanent-loss limit, and evidence gate.
 
 Return:
@@ -153,5 +159,10 @@ dossier reviewed or release-ready. A material change to a model, horizon
 contract, canonical valuation, report, or decision makes the prior review stale;
 refresh the review snapshot instead of updating a review date or editing an old
 approval in place.
+
+New cycles use review contract v2 and `templates/review-artifact-manifest.json`
+to bind the external input files, evidence and dependencies used by the model.
+The reviewer checks that the manifest is complete; matching hashes only prove
+those declared bytes are unchanged. A legacy review warning is not v2 coverage.
 
 Use `$event-driven-investment-research` for any catalyst that merits a prospective probability and price-reaction record. Never let a single near-term catalyst replace survival, capital structure, or long-term value analysis.

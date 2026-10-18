@@ -8,10 +8,13 @@ Copy the smallest template that fits the work, then delete instructions and sect
 | [Company identity](company-identity.md) | Resolve the legal entity, security, identifiers, aliases, and data-join perimeter |
 | [Coverage-cycle manifest](coverage-cycle-readme.md) | Package an initial or repeat valuation under an ISO-week and sequence identifier |
 | [Research plan](research-plan.md) | Define questions and publication gates |
+| [Article evidence brief](article-evidence-brief.md) | Connect research, a distinctive supported insight, and the reader's questions before a substantial draft |
+| [Substack publication brief](substack-publication-brief.md) | Package, inspect and verify an authorized publication or update |
 | [Canonical company report](company-report.md) | Integrate the final thesis, valuation summary, stance, risks, and monitoring plan for one coverage cycle |
 | [Valuation](valuation.md) | Record dated narrative anchors, distribution outputs, methods, and sensitivities |
 | [Valuation-horizon contract](valuation-horizon-contract.json) | Freeze the modeled quantity, exact horizon outputs, model paths, and multi-horizon relationship |
 | [Independent review](independent-review.md) | Bind a review disposition to exact canonical, contract, model, and verifier hashes |
+| [Review artifact manifest](review-artifact-manifest.json) | Bind external inputs, evidence, local dependencies, and generated results to a v2 review |
 | [Source log](sources.md) | Track source provenance and AI assistance |
 | [Source record](source-record.md) | Validate one source's timing, rights, retrieval, verification, and intended use |
 | [Fact record](fact-record.md) | Preserve one bitemporal fact or model input with stable subject and source IDs |

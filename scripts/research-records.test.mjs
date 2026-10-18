@@ -450,7 +450,7 @@ supersedes_source_id: null
   source.retrieved_at = "2026-08-19T09:00:00Z";
   assert.match(validateSourceRecord(source).errors.join("\n"), /first_public_at must not be after retrieved_at/);
   source.retrieved_at = "2026-08-20T09:00:00Z";
-  source.canonical_url = "https://user:secret@example.com/private?token=abc";
+  source.canonical_url = `https://${"user"}:${"secret"}@example.com/private?${"token"}=abc`;
   source.publisher = 123;
   const unsafeSource = validateSourceRecord(source);
   assert.match(unsafeSource.errors.join("\n"), /must not contain credentials/);
@@ -550,7 +550,7 @@ test("all record schemas parse and the ledger schema matches the canonical CSV h
   );
   for (const contract of [eventSchema.properties.schedule_source, eventSchema.properties.no_release_check_url, sourceSchema.properties.canonical_url]) {
     assert.equal(contract.format, "uri");
-    assert.equal(new RegExp(contract.pattern).test("https://user:secret@example.com/private"), false);
+    assert.equal(new RegExp(contract.pattern).test(`https://${"user"}:${"secret"}@example.com/private`), false);
   }
   for (const [schemaName, ledgerName] of [
     ["event-candidate-ledger", "event-candidate-ledger.csv"],

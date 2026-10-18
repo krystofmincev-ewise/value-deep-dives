@@ -1,0 +1,18 @@
+{
+  "type": "review_artifact_manifest",
+  "schema_version": 1,
+  "coverage_cycle_id": "{TICKER}-{YYYY-Www}-{NN}",
+  "source_cutoff_at": "{YYYY-MM-DDTHH:mm:ssZ}",
+  "artifacts": [
+    {
+      "path": "model-inputs.json",
+      "role": "model_input",
+      "sha256": "{sha256 digest of exact file bytes}"
+    },
+    {
+      "path": "sources.md",
+      "role": "evidence",
+      "sha256": "{sha256 digest of exact file bytes}"
+    }
+  ]
+}

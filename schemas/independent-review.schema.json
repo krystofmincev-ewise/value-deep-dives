@@ -32,7 +32,8 @@
     "reviewed_contract_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" },
     "reviewed_forecast_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" },
     "reviewed_model_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" },
-    "reviewed_verifier_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" }
+    "reviewed_verifier_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" },
+    "reviewed_artifact_manifest_hash": { "type": ["string", "null"], "pattern": "^sha256:[a-f0-9]{64}$" }
   },
   "allOf": [
     {

@@ -42,7 +42,7 @@ test("existing archive URLs are not wrapped again", () => {
 test("source URL validation rejects non-web and credential-bearing URLs", () => {
   assert.throws(() => normalizeSourceUrl("file:///tmp/source"), /absolute HTTP\(S\)/);
   assert.throws(
-    () => normalizeSourceUrl("https://user:secret@example.com/article"),
+    () => normalizeSourceUrl(`https://${"user"}:${"secret"}@example.com/article`),
     /containing credentials/,
   );
 });

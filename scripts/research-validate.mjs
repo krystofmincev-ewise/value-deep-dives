@@ -29,6 +29,7 @@ const requiredScripts = {
   "research:browser": "scripts/research-browser.mjs",
   "research:check": "scripts/research-tools.mjs",
   "research:company": "scripts/research-company.mjs",
+  "research:public": "scripts/research-public.mjs",
   "research:gemini": "scripts/research-workflow.mjs",
   "research:init": "scripts/research-tools.mjs",
   "research:records": "scripts/research-records.mjs",

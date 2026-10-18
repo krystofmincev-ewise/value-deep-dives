@@ -22,6 +22,10 @@ downloads/
 /.codex/local/
 /.gemini/
 /.mcp.local.json
+/.playwright-cli/
+/.playwright-mcp/
+/test-results/
+/playwright-report/
 .envrc
 .direnv/
 **/.auth/
